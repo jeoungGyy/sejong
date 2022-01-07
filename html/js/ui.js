@@ -1,28 +1,42 @@
 const header = {
+	set : () => {
+		header.textCopy();
+	},
+	/* header 제목 넣기 */
+	textCopy : () => {
+		let headerClone = document.querySelector('.headerClone');
+		const subHeading = document.querySelector('.subHeader h2');
+
+		let headerCloneText = headerClone.innerHTML;
+		subHeading.innerText = headerCloneText;
+	},
+}
+
+const container = {
 	top: 0,
 	currentTop : 0,
 	set : () => {
-		header.scrollAct();
+		container.scrollAct();
 	},
-  /* 헤더 className 추가 */
+  /* Container 스크롤에 따른 클래스명 추가 */
 	scrollAct : () => {
-		let headerWrap = document.querySelector('.header');
+		let containerWrap = document.querySelector('.container');
 		window.addEventListener('scroll', function(){
-			if(header.currentTop > window.scrollY && window.scrollY+window.innerHeight < document.body.offsetHeight) {
-				if(headerWrap.classList.contains('scrollDown')) headerWrap.classList.remove('scrollDown');
+			if(container.currentTop > window.scrollY && window.scrollY+window.innerHeight < document.body.offsetHeight) {
+				if(containerWrap.classList.contains('scrollDown')) containerWrap.classList.remove('scrollDown');
 			} else {
 				if(window.scrollY > 0) {
-					if(!headerWrap.classList.contains('scrollDown')) headerWrap.classList.add('scrollDown');
+					if(!containerWrap.classList.contains('scrollDown')) containerWrap.classList.add('scrollDown');
 				}
 			}
-			header.currentTop = window.scrollY;
-			if(header.top < window.scrollY) {
-				if(!headerWrap.classList.contains('stickyHeader')) headerWrap.classList.add('stickyHeader');
+			container.currentTop = window.scrollY;
+			if(container.top < window.scrollY) {
+				if(!containerWrap.classList.contains('stickyHeader')) containerWrap.classList.add('stickyHeader');
 			} else {
-				if(headerWrap.classList.contains('stickyHeader')) headerWrap.classList.remove('stickyHeader');
+				if(containerWrap.classList.contains('stickyHeader')) containerWrap.classList.remove('stickyHeader');
 			}
 		})
-	}
+	},
 }
 
 if(typeof _lazy === 'undefined' || _lazy !== true) {
@@ -33,4 +47,5 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 
 function _lazyLoad() {
   header.set();
+  container.set();
 }

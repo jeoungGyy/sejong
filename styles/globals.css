@@ -12,33 +12,33 @@
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
+	src: url(../public/fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
-	src: url(../fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
+	src: url(../public/fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Gmarket Sans';
 	font-style: normal;
 	font-weight: 700;
-	src: url(../fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
+	src: url(../public/fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../fonts/Roboto/Roboto-Regular.woff2) format('woff2');
+	src: url(../public/fonts/Roboto/Roboto-Regular.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
-	src: url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
+	src: url(../public/fonts/Roboto/Roboto-Bold.woff2) format('woff2');
 }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strong,sub,sup,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file] {
@@ -82,7 +82,7 @@ fieldset,
 img { border:0;}
 ul, ol { list-style:none;}
 legend,
-caption { position:absolute; top:-9999px; width: 0; height: 0; overflow: hidden; padding: 0; line-height: 0;}
+caption { position:absolute; top:-99999px; width: 0; height: 0; overflow: hidden; padding: 0; line-height: 0;}
 table { width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells:show;}
 table th,
 table td { vertical-align: middle;}
@@ -115,7 +115,7 @@ table td { vertical-align: middle;}
 
 /* header */
 .header { position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 10; background-color: #fff;}
-.header.stickyHeader { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
+.stickyHeader .header { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -99999px; background: url(../public/image/common/header_prev.png) no-repeat center/auto 100%;}
@@ -129,15 +129,13 @@ table td { vertical-align: middle;}
 /* 공통 STYLE
 **********************************************/
 
-
-
-
 /* 정렬 */
 .textLeft { text-align:left !important;}
 .textCenter { text-align:center !important;}
 .textRight { text-align:right !important;}
 
 .ellipsis { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.visible { display: none;}
 .invisible { position: relative; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 
 /* 마진 */
@@ -146,6 +144,7 @@ table td { vertical-align: middle;}
 
 
 /* 버튼 */
+
 
 
 /* 레이어

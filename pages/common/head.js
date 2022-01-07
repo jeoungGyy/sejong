@@ -21,7 +21,6 @@ str += '<link rel="stylesheet" href="../../styles/gbSin.css"/>';
 str += '<link rel="stylesheet" href="../../styles/gbInfo.css" />';
 str += '<link rel="stylesheet" href="../../styles/gbMap.css" />';
 str += '<link rel="stylesheet" href="../../styles/globals.css" />';
-str += '<script src="../js/jquery-3.6.0.js"></script>';
 str += '<script src="../js//swiper-bundle.min.js"></script>';
 str += '<script src="../js/slider.js"></script>';
 str += '<script src="../js/ui.js"></script>';
