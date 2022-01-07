@@ -18,7 +18,7 @@
 .info .facility .fList li a { display: block; overflow: hidden; position: relative; height: 7.7rem; text-align: center; background-color: #F4F5F7;}
 .info .facility .fList li a img { width: 100%; height: 100%;}
 .info .facility .fList li a figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
-.info .facility .fList li a figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 14px; color: #fff; letter-spacing: -0.04em;}
+.info .facility .fList li a figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.04em;}
 .info .facility .fList li a figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
 
 .info .economy { padding: 1.6rem 2rem 3.2rem; border-top: 0.6rem solid #F4F5F7;}
