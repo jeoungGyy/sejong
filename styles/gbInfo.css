@@ -56,6 +56,87 @@
 .info .morebutton .moreButton i { width: 1.4rem; height: 1.4rem; text-indent: -99999px; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
 .stickyHeader .info .morebutton { bottom: 3.5rem; transform: rotateZ(180deg); opacity: 1;}
 
+/* 공유 경제 등록 - UI-SJN-04-004U */
+.info .grayBox { padding: 3.2rem 2rem; background-color: #F4F5F7;}
+.info .grayBox .text { line-height: 2.3rem; letter-spacing: -0.04em;}
+.info .approval { margin-top: 3.2rem; padding: 2.4rem 2rem; background-color: #fff;}
+.info .approval .title { font-size: 1.6rem; letter-spacing: -0.04em;}
+.info .approval ul { margin-top: 1.6rem;}
+.info .approval ul li { position: relative; padding-left: 1.6rem; line-height: 2.3rem; letter-spacing: -0.04em;}
+.info .approval ul li::after { content: ''; position: absolute; left: 0.7rem; top: 0.9rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.info .approval ul li ~ li { margin-top: 0.8rem;}
+
+.info .ecoForm { margin-top: 3.2rem; padding: 0 2rem;}
+.info .ecoForm .list >li ~ li { margin-top: 1.6rem;}
+.info .ecoForm .list >li .labelH { display: flex; align-items: center; height: 4rem;}
+.info .ecoForm .list >li .labelH label { font-size: 1.6rem; font-weight: 700; color: #111; letter-spacing: -0.04em;}
+.info .ecoForm .list >li .labelH .required { margin-left: 0.8rem; font-size: 1.1rem; color: #FD2020;}
+.info .ecoForm .list >li .labelH.between { justify-content: space-between;}
+.info .ecoForm .list >li .labelH.between >div { display: flex; align-items: center;}
+.info .ecoForm .list >li .labelH.between >span { font-size: 1.4rem; color: #aaa;}
+.info .ecoForm .list >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa; letter-spacing: -0.04em;}
+.info .ecoForm .list >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; letter-spacing: -0.04em; border: 1px solid #ddd;}
+.info .ecoForm .list >li .btnOpen span { display: inline-block; position: relative; padding-left: 2.4rem;}
+.info .ecoForm .list >li .btnOpen span::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../public/image/info/ico_form.png) no-repeat; background-size: 2rem;}
+.info .ecoForm .list >li .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
+.info .ecoForm .list >li .textareaForm textarea { height: 11rem; border: none;}
+.info .ecoForm .list >li .textareaForm .byte { padding: 0 1.2rem 1.2rem 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+.info .ecoForm .list >li .textareaForm .byte span { color: #111;}
+.info .ecoForm .list >li .phoneForm { display: flex;}
+.info .ecoForm .list >li .phoneForm span { margin: 0 0.2rem;}
+.info .ecoForm .list >li .adressForm input { margin-top: 0.8rem;}
+.info .ecoForm .list >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; letter-spacing: -0.04em; border: 1px solid #ddd;}
+.info .ecoForm .list >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
+.info .ecoForm .list >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../public/image/info/ico_check.png) no-repeat; background-size: 2rem;}
+.info .ecoForm .list >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
+.info .ecoForm .list >li .fileForm .ffH .all { color: #6684EA; letter-spacing: -0.04em;}
+.info .ecoForm .list >li .fileForm .ffH .delete { letter-spacing: -0.04em;}
+.info .ecoForm .list >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
+.info .ecoForm .list >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: #CDD0D8 url(../public/image/info/ico_delete.png) no-repeat center/1.4rem; border-radius: 50%;}
+.info .ecoForm .list >li .fileForm .pictureList { display: grid; grid-template-columns: repeat(3, 1fr);}
+.info .ecoForm .list >li .fileForm .pictureList li:nth-child(3) ~ li { grid-column-end: span 3;}
+.info .ecoForm .list >li .fileForm .pictureList li:nth-child(3) ~ li label { height: 18rem;}
+.info .ecoForm .list >li .fileForm .pictureList li { margin: 0.4rem 0.2rem 0;}
+.info .ecoForm .list >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
+.info .ecoForm .list >li .fileForm .pictureList li label img { width: 100%; height: auto;}
+.info .ecoForm .list >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background-color: #fff; background-image: url(../public/image/info/ico_checkbox.png); background-repeat: no-repeat; background-size: 2rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.info .ecoForm .list >li .fileForm .pictureList li input { position: absolute; opacity: 0;}
+.info .ecoForm .list >li .fileForm .pictureList li input:checked + label::after { background-color: #111; background-position-y: -2rem;}
+.info .ecoForm .list >li .fileForm .btnGroup { margin-top: 3.2rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

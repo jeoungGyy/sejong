@@ -7,8 +7,11 @@ const header = {
 		let headerClone = document.querySelector('.headerClone');
 		const subHeading = document.querySelector('.subHeader h2');
 
-		let headerCloneText = headerClone.innerHTML;
-		subHeading.innerText = headerCloneText;
+		if(headerClone) {
+			let headerCloneText = headerClone.innerHTML;
+			subHeading.innerText = headerCloneText;
+			return;
+		}
 	},
 }
 
