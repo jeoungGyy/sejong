@@ -1,0 +1,155 @@
+/* 초기화
+**********************************************/
+
+@media screen and (min-width: 0) { html {font-size: 48%;}}
+@media screen and (min-width: 320px) { html {font-size: 53.33%;}}
+@media screen and (min-width: 360px) { html {font-size: 62.5%;}}
+@media screen and (min-width: 412px) { html {font-size: 67%;}}
+@media screen and (min-width: 768px) { html {font-size: 100%;}}
+
+/* Fonts */
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Gmarket Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Roboto/Roboto-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
+}
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strong,sub,sup,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file] {
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	background:transparent;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-webkit-text-size-adjust : none;
+  -moz-text-size-adjust : none;
+  text-size-adjust : none;
+}
+body {
+	font: 1.5rem/1.5 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+	color:#111;
+	-webkit-text-size-adjust: none;
+}
+
+a:link,
+a:visited { text-decoration:none;}
+select { font-size:100%; vertical-align:middle; background-color:#fff;}
+select[disabled] { background-color: #ccc;}
+input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
+input[type=checkbox] { border:1px solid #ddd;}
+input[type=checkbox], input[type=radio] { width:19px; height:19px; margin-top:-1px; vertical-align:middle;}
+input[type=file], 
+input[type=text], 
+input[type=password] { padding:0 3px; font-size:100%; vertical-align:middle; border:1px solid #ddd; background-color:#fff; -webkit-appearance: none;}
+input[type=text]:focus, input[type=password]:focus { background-color:#ecf9ff;}
+input[readonly],
+input[disabled] { background-color:#ccc;}
+button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+button::-moz-focus-inner { margin: -1px; padding: 0;}
+address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
+textarea { width:100%; padding:5px; font-size:100%; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
+textarea[disabled],
+textarea[readonly] { background-color:#ccc;}
+fieldset,
+img { border:0;}
+ul, ol { list-style:none;}
+legend,
+caption { position:absolute; top:-9999px; width: 0; height: 0; overflow: hidden; padding: 0; line-height: 0;}
+table { width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells:show;}
+table th,
+table td { vertical-align: middle;}
+
+/* root */
+:root {
+  --default: #111;
+  /* --black0: #000;
+  --black3: #333;
+  --black5: #555;
+  --black7: #777;
+  --blue: #6684ea;
+  --skyBlue: #32bbed;
+  --green: #4EC457;
+  --orange: #d69630;
+  --pink: #d37398;
+  --white: #fff;
+  --gray: #eaeaea; */
+  --fontPretendard: 'Pretendard';
+  --fontGmarketSans: 'Gmarket Sans';
+  --fontRoboto: 'Roboto';
+}
+
+
+/* 공통 구조
+**********************************************/
+
+/* container */
+.container { max-width: 57rem; padding: 4.4rem 0 2rem; margin: 0 auto;}
+
+/* header */
+.header { position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 10; background-color: #fff;}
+.header.stickyHeader { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
+.subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
+.subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
+.subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -99999px; background: url(../public/image/common/header_prev.png) no-repeat center/auto 100%;}
+.subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
+
+/* LNB */
+
+/* 푸터 */
+
+
+/* 공통 STYLE
+**********************************************/
+
+
+
+
+/* 정렬 */
+.textLeft { text-align:left !important;}
+.textCenter { text-align:center !important;}
+.textRight { text-align:right !important;}
+
+.ellipsis { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.invisible { position: relative; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
+
+/* 마진 */
+
+/* Split 아이콘 */
+
+
+/* 버튼 */
+
+
+/* 레이어
+**********************************************/
+
+
+

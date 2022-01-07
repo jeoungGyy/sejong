@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../../pages/common/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../../pages/common/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<div class="lineBody">
+				<nav id="infoMenuSwiper" class="infoMenu">
+					<div class="slideContainer">
+						<ul class="swiper-wrapper slideContainer">
+							<li class="swiper-slide"><a href="#" class="active">우리가게</a></li>
+							<li class="swiper-slide"><a href="#">장소공유</a></li>
+							<li class="swiper-slide"><a href="#">지식ᆞ재능공유</a></li>
+							<li class="swiper-slide"><a href="#">물품공유</a></li>
+							<li class="swiper-slide"><a href="#">홍보ᆞ행사</a></li>
+						</ul>
+					</div>
+				</nav>
+				<script>
+					slider.active('infoMenuSwiper')
+				</script>
+			</div>
+
+			<div class="facility">
+				<div class="fHeader">
+					<h3>예약가능 시설대관</h3>
+					<a href="#">통합예약시스템 &gt;</a>
+				</div>
+				<ul class="fList">
+					<li>
+						<a href="#">
+							<figure>
+								<img src="../../public/image/info/info_flist0.png" alt="" />
+								<figcaption>
+									<p>미술실</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<img src="../../public/image/info/info_flist1.png" alt="" />
+								<figcaption>
+									<p>다목적강당</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<img src="../../public/image/info/info_flist2.png" alt="" />
+								<figcaption>
+									<p>시청각실</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<img src="../../public/image/info/info_flist3.png" alt="" />
+								<figcaption> 
+									<p>문화교실</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<img src="../../public/image/info/info_flist4.png" alt="" />
+								<figcaption>
+									<p>G.X룸</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<figcaption>
+									<p>음악실</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<figcaption>
+									<p>회의실</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<figcaption>
+									<p>기타시설</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="economy">
+				<div class="eHeader">
+					<span>30건</span>
+					<div>
+						<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+						<button type="button">추천순</button>
+						<button type="button">내가쓴글</button>
+					</div>
+				</div>
+				<ul class="eList">
+					<li>
+						<figure>
+							<span class="pay">유료</span>
+							<img src="../../public/image/info/info_eList0.png" alt="" />
+						</figure>
+						<div class="eBody">
+							<div>
+								<button type="button" class="good" title="추천 수">12</button>
+								<button type="button" class="comment" title="댓글 수">1,234</button>
+							</div>
+							<button type="button" class="favorite">즐겨찾기</button>
+						</div>
+						<a href="#">
+							<h4>공유경제를 위한 세종시의 올바른 정책</h4>
+							<p>경제 활성화를 위한 세종시 거시 공유정책을 만나보세요</p>
+						</a>
+						<div class="visibleButton">
+							<button type="button">수정</button>
+							<button type="button">삭제</button>
+						</div>
+					</li>
+					<li>
+						<figure>
+							<span class="free">무료</span>
+							<img src="../../public/image/info/info_eList1.png" alt="" />
+						</figure>
+						<div class="eBody">
+							<div>
+								<button type="button" class="good" title="추천 수">0</button>
+								<button type="button" class="comment" title="댓글 수">1,234</button>
+							</div>
+							<button type="button" class="favorite">즐겨찾기</button>
+						</div>
+						<a href="#">
+							<h4>공유경제를 위한 세종시의 올바른 정책</h4>
+							<p>경제 활성화를 위한 세종시 거시 공유정책을 세종엔에서 만나보세요</p>
+						</a>
+						<div class="visibleButton">
+							<button type="button">수정</button>
+							<button type="button">삭제</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="morebutton">
+				<button type="button" class="moreButton"><i>공유경제 등록/수정</i></button>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

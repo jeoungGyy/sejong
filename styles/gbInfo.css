@@ -1,0 +1,73 @@
+/* 정보 업무 글로벌 CSS
+**********************************************/
+
+/* 소통/참여 - UI-SJN-04-001U */
+.info .lineBody { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
+.info .infoMenu { overflow: hidden;}
+.info .infoMenu .swiper-wrapper { width: inherit;}
+.info .infoMenu li { width: inherit;}
+.info .infoMenu li a { display: flex; align-items: center; position: relative; z-index: 1; height: 4.8rem; font-size: 1.6rem; color: #555; letter-spacing: -0.04em;}
+.info .infoMenu li a.active { font-weight: 700; color: #111; border-bottom: 1px solid #000;}
+
+.info .facility { padding: 1.6rem 2rem 3.2rem;}
+.info .facility .fHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.info .facility .fHeader h3 { font-size: 1.8rem; color: #000; letter-spacing: -0.04em;}
+.info .facility .fHeader a { color: #6684ea;}
+.info .facility .fList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.4rem;}
+.info .facility .fList li { width: calc(100% / 4 - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
+.info .facility .fList li a { display: block; overflow: hidden; position: relative; height: 7.7rem; text-align: center; background-color: #F4F5F7;}
+.info .facility .fList li a img { width: 100%; height: 100%;}
+.info .facility .fList li a figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
+.info .facility .fList li a figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 14px; color: #fff; letter-spacing: -0.04em;}
+.info .facility .fList li a figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
+
+.info .economy { padding: 1.6rem 2rem 3.2rem; border-top: 0.6rem solid #F4F5F7;}
+.info .economy .eHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
+.info .economy .eHeader span { color: #000; letter-spacing: -0.04em;}
+.info .economy .eHeader button { color: #777; letter-spacing: -0.04em;}
+.info .economy .eHeader button.active { color: #6684EA;}
+.info .economy .eHeader >div { display: flex;}
+.info .economy .eHeader >div button { margin-left: 1.2rem;}
+.info .economy .eList li { margin-top: 1.6rem;}
+.info .economy .eList li ~ li { margin-top: 2.4rem;}
+.info .economy .eList li figure { position: relative;}
+.info .economy .eList li figure img { max-width: 100%; height: auto;}
+.info .economy .eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
+.info .economy .eList li figure span.pay { background-color: rgba(102, 132, 234, 0.8);}
+.info .economy .eList li figure span.free { background-color: rgba(85, 85, 85, 0.8);}
+.info .economy .eList li .eBody { display: flex; justify-content: space-between; align-items: center;}
+.info .economy .eList li .eBody button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
+.info .economy .eList li .eBody button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem;}
+.info .economy .eList li .eBody button.good { padding-left: 2.2rem;}
+.info .economy .eList li .eBody button.good::after { left: 0; background: url(../public/image/info/ico_good.png) no-repeat center/auto 100%;}
+.info .economy .eList li .eBody button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
+.info .economy .eList li .eBody button.comment::after { left: 0; background: url(../public/image/info/ico_comment.png) no-repeat center/auto 100%;}
+.info .economy .eList li .eBody button.favorite { text-indent: -99999px;}
+.info .economy .eList li .eBody button.favorite::after  { right: 0; background: url(../public/image/info/ico_favorite.png) no-repeat center/auto 100%;}
+.info .economy .eList li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem; letter-spacing: -0.04em;}
+.info .economy .eList li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem; letter-spacing: -0.04em;}
+.info .economy .eList li .visibleButton { margin-top: 0.9rem;}
+.info .economy .eList li .visibleButton button { position: relative; font-size: 1.4rem; color: #6684EA; line-height: 2.2rem; letter-spacing: -0.04em;}
+.info .economy .eList li .visibleButton button ~ button { margin-left: 0.3rem; padding-left: 0.6rem;}
+.info .economy .eList li .visibleButton button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+
+.info .morebutton { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem;}
+.info .morebutton .moreButton { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
+.info .morebutton .moreButton i { width: 1.4rem; height: 1.4rem; text-indent: -99999px; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
+
+
+
+
+
+
+
+
+.main .favoriteMenu #fmSwiper { overflow: hidden;}
+.main .favoriteMenu .fmLinks { display: flex;}
+.main .favoriteMenu .fmLinks li { width: initial !important;}
+.main .favoriteMenu .fmLinks li ~ li { margin-left: 2rem;}
+.main .favoriteMenu .fmLinks li a { border: 1px solid #000;}
+
+.main .news .notice { overflow: hidden;}
+.main .news .notice ul { display: flex; padding: 0 2rem;}
+.main .news .notice ul li { height: 10rem; border: 1px solid #000;}
