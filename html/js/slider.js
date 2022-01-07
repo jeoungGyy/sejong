@@ -17,6 +17,7 @@ const slideOpt = {
 		// observer: true,
 		// observeParents: true,
 	},
+	/* UI-SJN-04-001U */
 	infoMenuSwiper: {
 		autoplay: false,
     slidesPerView: 'auto',

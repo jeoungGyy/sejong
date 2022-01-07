@@ -103,15 +103,18 @@
 .info .ecoForm .list >li .fileForm .pictureList li input { position: absolute; opacity: 0;}
 .info .ecoForm .list >li .fileForm .pictureList li input:checked + label::after { background-color: #111; background-position-y: -2rem;}
 .info .ecoForm .list >li .fileForm .btnGroup { margin-top: 3.2rem;}
-
-
-
-
-
-
-
-
-
+.info .ecoForm .list >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; letter-spacing: -0.04em; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
+.info .ecoForm .list >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../public/image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
+.info .ecoForm .list >li .selectForm .target { margin-top: 1.6rem;}
+.info .ecoForm .list >li .selectForm .target ul { display: flex; flex-wrap: wrap; margin: -0.4rem 0 0 -0.4rem;}
+.info .ecoForm .list >li .selectForm .target ul li { width: calc(25% - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
+.info .ecoForm .list >li .selectForm .target ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.4rem; font-size: 1.6rem; color: #555; letter-spacing: -0.04em; border: 1px solid #ddd;}
+.info .ecoForm .list >li .selectForm .target ul li button:hover,
+.info .ecoForm .list >li .selectForm .target ul li button:active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.cont { display: none;}
+.cont.open { display: block;}
+.info .ecoForm .list >li .selectForm .row.active .selectBtn { border-color: #aaa;}
+.info .ecoForm .list >li .selectForm .row.active .selectBtn::after { transform: rotate(180deg);}
 
 
 
