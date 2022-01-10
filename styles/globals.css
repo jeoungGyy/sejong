@@ -5,7 +5,7 @@
 @media screen and (min-width: 320px) { html {font-size: 53.33%;}}
 @media screen and (min-width: 360px) { html {font-size: 62.5%;}}
 @media screen and (min-width: 412px) { html {font-size: 67%;}}
-@media screen and (min-width: 768px) { html {font-size: 100%;}}
+@media screen and (min-width: 768px) { html {font-size: 80%;}}
 
 /* Fonts */
 @font-face {
@@ -163,14 +163,14 @@ table td { vertical-align: middle;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -99999px; background: url(../public/image/common/ico_layer_close.png) no-repeat; background-size: cover;}
-
+.layerPopup.ready { display: block;}
+.layerPopup.show { opacity: 1;}
+.layerPopup.show .layerWrap { transform: translateY(0);}
 .layerWrap .layerBody { padding-top: 0.8rem;}
 .layerWrap .layerBody .pGroup p { font-size: 1.6rem; color: #555; letter-spacing: -0.04em; line-height: 2.4rem;}
 .layerWrap .layerBody .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem;}
 
-.layerPopup.ready { display: block;}
-.layerPopup.show { opacity: 1;}
-.layerPopup.show .layerWrap { transform: translateY(0);}
+
 
 
 

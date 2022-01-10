@@ -7,12 +7,14 @@
 .fHeader h3 .cWood { color: #D69630;}
 .fHeader a { color: #6684ea;}
 .eHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
-.eHeader .num { color: #000; letter-spacing: -0.04em;}
+.eHeader .sel { width: 8rem; height: 4rem; padding-left: 0; border: none;}
+.eHeader .sel + .num { color: #555;}
+.eHeader .num { min-width: 5rem; color: #000; letter-spacing: -0.04em;}
 .eHeader h3 { font-size: 1.8rem; color: #000; letter-spacing: -0.04em;}
 .eHeader h3 .cWood { color: #D69630;}
 .eHeader button { color: #777; letter-spacing: -0.04em;}
 .eHeader button.active { color: #6684EA;}
-.eHeader >div { display: flex;}
+.eHeader >div { display: flex; align-items: center;}
 .eHeader >div button { margin-left: 1.2rem;}
 .eBody { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
 .eBody button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
@@ -21,10 +23,10 @@
 .eBody button.good::after { left: 0; background: url(../public/image/info/ico_good.png) no-repeat center/auto 100%;}
 .eBody button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
 .eBody button.comment::after { left: 0; background: url(../public/image/info/ico_comment.png) no-repeat center/auto 100%;}
-.eBody button.favorite { text-indent: -99999px;}
-.eBody button.favorite::after  { right: 0; background: url(../public/image/info/ico_favorite.png) no-repeat center/auto 100%;}
-
-.stickyHeader .info .morebutton { bottom: 3.5rem; transform: rotateZ(180deg); opacity: 1;}
+.eBody button.favorite { width: 2rem; text-indent: -99999px;}
+.eBody button.favorite::after { right: 0; background: url(../public/image/info/ico_favorite.png) no-repeat center/auto 100%;}
+.eBody button.sharing { width: 2rem; text-indent: -99999px;}
+.eBody button.sharing::after { right: 0; background: url(../public/image/info/ico_sharing.png) no-repeat center/auto 100%;}
 
 .ecoForm { margin-top: 3.2rem; padding: 0 2rem;}
 .ecoForm .list >li ~ li { margin-top: 1.6rem;}
@@ -84,6 +86,29 @@
 .ecoForm .list >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; letter-spacing: -0.04em; text-align: center;}
 .ecoForm .list >li input:focus + label { outline: 2px solid #000; border-radius: 2px;}
 
+.eList li { margin-top: 1.6rem;}
+.eList li ~ li { margin-top: 2.4rem;}
+.eList li figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
+
+
+
+.eList li figure img { max-width: 100%; height: auto; vertical-align: top;}
+.eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
+.eList li figure span.blue { background-color: rgba(102, 132, 234, 0.8);}
+.eList li figure span.gray { background-color: rgba(85, 85, 85, 0.8);}
+.eList li a { display: block;}
+.eList li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem; letter-spacing: -0.04em;}
+.eList li a h4 .allTime { display: inline-block; height: 1.8rem; margin-left: 0.3rem; padding: 0 0.3rem; font-size: 1.3rem; font-weight: 400; color: #fff; line-height: 1.8rem; background-color: #D69630;}
+.eList li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem; letter-spacing: -0.04em;}
+.eList li .hashTag { margin-top: 0.4rem;}
+.eList li .hashTag span { display: inline-block; margin-right: 0.3rem; padding: 0.4rem; font-size: 1.4rem; color: #777; background-color: #F8F8F8;}
+.eList li .hashTag span::before { content: '#';}
+
+.visibleButton { margin-top: 0.3rem;}
+.visibleButton button { position: relative; font-size: 1.4rem; color: #6684EA; line-height: 2.2rem; letter-spacing: -0.04em;}
+.visibleButton button ~ button { margin-left: 0.3rem; padding-left: 0.6rem;}
+.visibleButton button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+
 
 /* 소통ㆍ참여 - 장소공유 UI-SJN-04-001U */
 .info .lineBody { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
@@ -92,7 +117,6 @@
 .info .infoMenu li { width: inherit;}
 .info .infoMenu li a { display: flex; align-items: center; position: relative; z-index: 1; height: 4.8rem; font-size: 1.6rem; color: #555; letter-spacing: -0.04em;}
 .info .infoMenu li a.active { font-weight: 700; color: #111; border-bottom: 1px solid #000;}
-
 .info .facility { padding: 1.6rem 2rem 3.2rem;}
 .info .facility .fList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.4rem;}
 .info .facility .fList li { width: calc(100% / 4 - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
@@ -101,25 +125,10 @@
 .info .facility .fList li a figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
 .info .facility .fList li a figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.04em;}
 .info .facility .fList li a figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
-
-.info .economy { padding: 1.6rem 2rem 3.2rem; border-top: 0.6rem solid #F4F5F7;}
-.info .economy .eList li { margin-top: 1.6rem;}
-.info .economy .eList li ~ li { margin-top: 2.4rem;}
-.info .economy .eList li figure { position: relative;}
-.info .economy .eList li figure img { max-width: 100%; height: auto; vertical-align: top;}
-.info .economy .eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
-.info .economy .eList li figure span.pay { background-color: rgba(102, 132, 234, 0.8);}
-.info .economy .eList li figure span.free { background-color: rgba(85, 85, 85, 0.8);}
-.info .economy .eList li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem; letter-spacing: -0.04em;}
-.info .economy .eList li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem; letter-spacing: -0.04em;}
-.info .economy .eList li .visibleButton { margin-top: 0.9rem;}
-.info .economy .eList li .visibleButton button { position: relative; font-size: 1.4rem; color: #6684EA; line-height: 2.2rem; letter-spacing: -0.04em;}
-.info .economy .eList li .visibleButton button ~ button { margin-left: 0.3rem; padding-left: 0.6rem;}
-.info .economy .eList li .visibleButton button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-
-.info .morebutton { position: fixed; left: 50%; bottom: 0; margin-left: -2.4rem; opacity: 0; transition: all .5s ease;}
+.info .economy { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .morebutton { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem;}
 .info .morebutton .moreButton { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
-.info .morebutton .moreButton i { width: 1.4rem; height: 1.4rem; text-indent: -99999px; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
+.info .morebutton .moreButton i { width: 2.3rem; height: 2.3rem; text-indent: -99999px; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
 /* 공유 경제 등록 - UI-SJN-04-004U */
 .info .grayBox { padding: 3.2rem 2rem; background-color: #F4F5F7;}
@@ -132,25 +141,21 @@
 .info .approval ul li span { position: relative; margin-left: 0.2rem; padding-left: 0.6rem;}
 .info .approval ul li span::after { content: ''; display: block; position: absolute; left: 0; top: 0.3rem; width: 0.1rem; height: 1.4rem; background-color: #ddd;}
 .info .approval ul li ~ li { margin-top: 0.8rem;}
-
-
-
 .info .ecoForm .btnGroup { margin-top: 3.2rem;}
 .cont { display: none;}
 .cont.open { display: block;}
 .info .ecoForm .list >li .selectForm .row.active .selectBtn { border-color: #aaa;}
 .info .ecoForm .list >li .selectForm .row.active .selectBtn::after { transform: rotate(180deg);}
 
-
 /* 소통ㆍ참여 - 우리가게 UI-SJN-04-005U */
 .info .newStore { padding: 1.6rem 2rem 3rem;}
 .info .ourStore { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
 .info .newStoreBody { overflow: hidden;}
 .info .storeList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
-.info .storeList li { width: calc(100% / 2 - 0.8rem); min-height: 18.4rem; margin: 0.8rem 0 0 0.8rem;}
+.info .storeList li { width: calc(100% / 2 - 0.8rem); min-height: 20.4rem; margin: 0.8rem 0 0 0.8rem;}
 .info .storeList li a.picture { display: block; overflow: hidden;}
 .info .storeList li a.picture figure { display: block; overflow: hidden; position: relative; height: 10rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.info .storeList li a.picture figure img { max-width: 100%; height: auto; vertical-align: top;}
+.info .storeList li a.picture figure img { width: 100%; height: auto; vertical-align: top;}
 .info .storeList li a.picture figure span { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: rgba(51, 51, 51, 0.8);}
 .info .storeList li a.text { display: block; margin-top: 1.2rem; color: #555; letter-spacing: -0.04em;}
 .info .storeList li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
@@ -159,6 +164,24 @@
 .info .storeList.inline { flex-wrap: nowrap;}
 .info .storeList.inline,
 .info .storeList.inline li { width: 50%; margin: 0;}
+
+/* 소통ㆍ참여 - 홍보 행사 UI-SJN-04-007U */
+.info .promote { padding: 1.6rem 2rem 6rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
