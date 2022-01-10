@@ -82,6 +82,7 @@
 .ecoForm .list >li .serviceList li input { position: absolute; opacity: 0;}
 .ecoForm .list >li .serviceList li input:checked + label::after { background-color: #111; background-position-y: -2rem;}
 .ecoForm .list >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; letter-spacing: -0.04em; text-align: center;}
+.ecoForm .list >li input:focus + label { outline: 2px solid #000; border-radius: 2px;}
 
 
 /* 소통ㆍ참여 - 장소공유 UI-SJN-04-001U */
@@ -158,7 +159,6 @@
 .info .storeList.inline { flex-wrap: nowrap;}
 .info .storeList.inline,
 .info .storeList.inline li { width: 50%; margin: 0;}
-
 
 
 

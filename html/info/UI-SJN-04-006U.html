@@ -194,11 +194,30 @@
 					</li>
 				</ul>
 				<div class="btnGroup">
-					<button type="button" class="button blue">저장</button>
+					<button type="button" class="button blue" onclick="layerPopup.open('layerPrdOptionSel4')">저장</button>
 				</div>
 			</fieldset>
 		</main>
 		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div class="layerPopup" id="layerPrdOptionSel4">
+			<div class="layerWrap typeBot">
+				<h4>세종엔에서 알려드립니다.</h4>
+				<div class="layerBody">
+					<div class="pGroup">
+						<p>
+							세종특별자치시내 소상공인 누구나 홍보 하고자 하는 내용을 등록할 수 있습니다. 등록한 우리가게 정보는 검토 후 절차를 통해 승인해 드리고 있습니다.<br />
+							공공목적에 위배되거나 세종특별자치시 우리가게 기준에 부합되지 않는 정보는 등록이 제한될 수 있음 알려드립니다.
+						</p>
+					</div>
+					<button type="button" class="button blue">확인</button>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 </div>
 </body>
