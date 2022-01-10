@@ -8,8 +8,8 @@ const header = {
 		const subHeading = document.querySelector('.subHeader h2');
 
 		if(headerClone) {
-			let headerCloneText = headerClone.innerHTML;
-			subHeading.innerText = headerCloneText;
+			let headerCloneText = headerClone.cloneNode(true);
+			subHeading.appendChild(headerCloneText);
 			return;
 		}
 	},

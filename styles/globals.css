@@ -127,6 +127,7 @@ table td { vertical-align: middle;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -99999px; background: url(../public/image/common/header_prev.png) no-repeat center/auto 100%;}
 .subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
+.subHeader h2 .number { color: #6684EA;}
 
 /* LNB */
 
