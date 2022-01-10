@@ -1,7 +1,32 @@
 /* 정보 업무 글로벌 CSS
 **********************************************/
 
-/* 소통/참여 - UI-SJN-04-001U */
+/* 공통 */
+.fHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.fHeader h3 { font-size: 1.8rem; color: #000; letter-spacing: -0.04em;}
+.fHeader h3 .cWood { color: #D69630;}
+.fHeader a { color: #6684ea;}
+.eHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
+.eHeader .num { color: #000; letter-spacing: -0.04em;}
+.eHeader h3 { font-size: 1.8rem; color: #000; letter-spacing: -0.04em;}
+.eHeader h3 .cWood { color: #D69630;}
+.eHeader button { color: #777; letter-spacing: -0.04em;}
+.eHeader button.active { color: #6684EA;}
+.eHeader >div { display: flex;}
+.eHeader >div button { margin-left: 1.2rem;}
+.eBody { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
+.eBody button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
+.eBody button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem;}
+.eBody button.good { padding-left: 2.2rem;}
+.eBody button.good::after { left: 0; background: url(../public/image/info/ico_good.png) no-repeat center/auto 100%;}
+.eBody button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
+.eBody button.comment::after { left: 0; background: url(../public/image/info/ico_comment.png) no-repeat center/auto 100%;}
+.eBody button.favorite { text-indent: -99999px;}
+.eBody button.favorite::after  { right: 0; background: url(../public/image/info/ico_favorite.png) no-repeat center/auto 100%;}
+
+.stickyHeader .info .morebutton { bottom: 3.5rem; transform: rotateZ(180deg); opacity: 1;}
+
+/* 소통ㆍ참여 - 장소공유 UI-SJN-04-001U */
 .info .lineBody { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .info .infoMenu { overflow: hidden;}
 .info .infoMenu .swiper-wrapper { width: inherit;}
@@ -10,9 +35,6 @@
 .info .infoMenu li a.active { font-weight: 700; color: #111; border-bottom: 1px solid #000;}
 
 .info .facility { padding: 1.6rem 2rem 3.2rem;}
-.info .facility .fHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
-.info .facility .fHeader h3 { font-size: 1.8rem; color: #000; letter-spacing: -0.04em;}
-.info .facility .fHeader a { color: #6684ea;}
 .info .facility .fList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.4rem;}
 .info .facility .fList li { width: calc(100% / 4 - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
 .info .facility .fList li a { display: block; overflow: hidden; position: relative; height: 7.7rem; text-align: center; background-color: #F4F5F7;}
@@ -22,28 +44,13 @@
 .info .facility .fList li a figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
 
 .info .economy { padding: 1.6rem 2rem 3.2rem; border-top: 0.6rem solid #F4F5F7;}
-.info .economy .eHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
-.info .economy .eHeader span { color: #000; letter-spacing: -0.04em;}
-.info .economy .eHeader button { color: #777; letter-spacing: -0.04em;}
-.info .economy .eHeader button.active { color: #6684EA;}
-.info .economy .eHeader >div { display: flex;}
-.info .economy .eHeader >div button { margin-left: 1.2rem;}
 .info .economy .eList li { margin-top: 1.6rem;}
 .info .economy .eList li ~ li { margin-top: 2.4rem;}
 .info .economy .eList li figure { position: relative;}
-.info .economy .eList li figure img { max-width: 100%; height: auto;}
+.info .economy .eList li figure img { max-width: 100%; height: auto; vertical-align: top;}
 .info .economy .eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
 .info .economy .eList li figure span.pay { background-color: rgba(102, 132, 234, 0.8);}
 .info .economy .eList li figure span.free { background-color: rgba(85, 85, 85, 0.8);}
-.info .economy .eList li .eBody { display: flex; justify-content: space-between; align-items: center;}
-.info .economy .eList li .eBody button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
-.info .economy .eList li .eBody button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem;}
-.info .economy .eList li .eBody button.good { padding-left: 2.2rem;}
-.info .economy .eList li .eBody button.good::after { left: 0; background: url(../public/image/info/ico_good.png) no-repeat center/auto 100%;}
-.info .economy .eList li .eBody button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
-.info .economy .eList li .eBody button.comment::after { left: 0; background: url(../public/image/info/ico_comment.png) no-repeat center/auto 100%;}
-.info .economy .eList li .eBody button.favorite { text-indent: -99999px;}
-.info .economy .eList li .eBody button.favorite::after  { right: 0; background: url(../public/image/info/ico_favorite.png) no-repeat center/auto 100%;}
 .info .economy .eList li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem; letter-spacing: -0.04em;}
 .info .economy .eList li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem; letter-spacing: -0.04em;}
 .info .economy .eList li .visibleButton { margin-top: 0.9rem;}
@@ -54,7 +61,6 @@
 .info .morebutton { position: fixed; left: 50%; bottom: 0; margin-left: -2.4rem; opacity: 0; transition: all .5s ease;}
 .info .morebutton .moreButton { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .info .morebutton .moreButton i { width: 1.4rem; height: 1.4rem; text-indent: -99999px; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
-.stickyHeader .info .morebutton { bottom: 3.5rem; transform: rotateZ(180deg); opacity: 1;}
 
 /* 공유 경제 등록 - UI-SJN-04-004U */
 .info .grayBox { padding: 3.2rem 2rem; background-color: #F4F5F7;}
@@ -117,20 +123,23 @@
 .info .ecoForm .list >li .selectForm .row.active .selectBtn::after { transform: rotate(180deg);}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 소통ㆍ참여 - 우리가게 UI-SJN-04-005U */
+.info .newStore { padding: 1.6rem 2rem 3rem;}
+.info .ourStore { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .newStoreBody { overflow: hidden;}
+.info .storeList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
+.info .storeList li { width: calc(100% / 2 - 0.8rem); min-height: 18.4rem; margin: 0.8rem 0 0 0.8rem;}
+.info .storeList li a.picture { display: block; overflow: hidden;}
+.info .storeList li a.picture figure { display: block; overflow: hidden; position: relative; height: 10rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
+.info .storeList li a.picture figure img { max-width: 100%; height: auto; vertical-align: top;}
+.info .storeList li a.picture figure span { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: rgba(51, 51, 51, 0.8);}
+.info .storeList li a.text { display: block; margin-top: 1.2rem; color: #555; letter-spacing: -0.04em;}
+.info .storeList li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
+.info .storeList li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
+.info .storeList li a.text p { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 2.2rem;}
+.info .storeList.inline { flex-wrap: nowrap;}
+.info .storeList.inline,
+.info .storeList.inline li { width: 50%; margin: 0;}
 
 
 

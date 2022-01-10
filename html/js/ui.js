@@ -181,9 +181,6 @@ const accordion = {
 	idx : null,
 	active : function() {
 		let acco = document.querySelectorAll('.accordion');
-
-		console.log(3)
-
 		if(accordion.idx == null) {
 			[].forEach.call(acco, (_this, idx)=>{
 				this.set(_this, idx);
