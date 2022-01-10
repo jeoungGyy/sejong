@@ -103,7 +103,7 @@
 .eList li { margin-top: 1.6rem;}
 .eList li ~ li { margin-top: 2.4rem;}
 .eList li figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.eList li figure img { max-width: 100%; height: auto; vertical-align: top;}
+.eList li figure img { width: 100%; height: auto; vertical-align: top;}
 .eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
 .eList li figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
 .eList li figure span.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
@@ -183,17 +183,19 @@
 
 /* 소통ㆍ참여 - 리뷰대상 UI-SJN-04-009U */
 .info .reviewGroup .pictureReview { padding: 1.6rem 2rem;}
-
 .info .reviewGroup .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
+.info .reviewGroup .pictureBody .pictureList li.empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
 .info .reviewGroup .pictureBody .pictureList a { display: block; position: relative;}
 .info .reviewGroup .pictureBody .pictureList a img { width: 100%; height: auto; vertical-align: top;}
 .info .reviewGroup .pictureBody .pictureList .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
 .info .reviewGroup .pictureBody .pictureList .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
 .info .reviewGroup .pictureBody .pictureList .lastMore .blind span::before { content: '+';}
-
 .info .reviewGroup .textReview { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
 .info .reviewGroup .textList li { padding-top: 0.8rem;}
 .info .reviewGroup .textList li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
+.info .reviewGroup .textList li.empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.info .reviewGroup .textList li.empty p { position: relative; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
+.info .reviewGroup .textList li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../public/image/common/ico_empty.png) no-repeat center/2.3rem 2.55rem; border-radius: 50%;}
 .info .reviewGroup .textList .tlHead { display: flex; align-items: center; height: 4rem;}
 .info .reviewGroup .textList .tlHead .profile { width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/info/ico_profile.png) no-repeat center/cover;}
 .info .reviewGroup .textList .tlHead strong { margin-left: 0.4rem; letter-spacing: -0.04em;}
