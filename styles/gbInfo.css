@@ -36,9 +36,11 @@
 .ecoForm .list >li .labelH { display: flex; align-items: center; height: 4rem;}
 .ecoForm .list >li .labelH label { font-size: 1.6rem; font-weight: 700; color: #111; letter-spacing: -0.04em;}
 .ecoForm .list >li .labelH .required { margin-left: 0.8rem; font-size: 1.1rem; color: #FD2020;}
+.ecoForm .list >li .labelH .sub { margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
 .ecoForm .list >li .labelH.between { justify-content: space-between;}
 .ecoForm .list >li .labelH.between >div { display: flex; align-items: center;}
 .ecoForm .list >li .labelH.between >span { font-size: 1.4rem; color: #aaa;}
+.ecoForm .list >li .labelH.highlight { height: 7.2rem; font-size: 1.8rem;}
 .ecoForm .list >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa; letter-spacing: -0.04em;}
 .ecoForm .list >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; letter-spacing: -0.04em; border: 1px solid #ddd;}
 .ecoForm .list >li .btnOpen span { display: inline-block; position: relative; padding-left: 2.4rem;}
@@ -99,6 +101,7 @@
 .ecoForm .list >li .period .pHead .switch input:checked + label:before { background-color: #6684EA;}
 .ecoForm .list >li .period .pList { margin-top: 0.7rem; border-top: 1px solid #F4F5F7;}
 .ecoForm .list >li .period .pList li { display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
+.ecoForm.otherStyle { margin-top: 0;}
 
 .eList li { margin-top: 1.6rem;}
 .eList li ~ li { margin-top: 2.4rem;}
@@ -215,8 +218,8 @@
 .info .reviewGroup .textList .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../public/image/info/ico_more_small.png) no-repeat center/cover;}
 .info .reviewGroup .textList .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
 
-
-
+/* 소통ㆍ참여 - 리뷰 등록 UI-SJN-04-010P */
+.info .reviewForm { padding: 0 2rem 6rem;}
     
 
 
