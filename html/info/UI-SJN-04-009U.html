@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../../pages/common/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../../pages/common/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<h2 class="visible headerClone">리뷰대상명</h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="reviewGroup">
+				<div class="pictureReview">
+					<div class="fHeader">
+						<h3>사진리뷰 <span class="num">12,098건</span></h3>
+						<a href="#">지도에서 보기 &gt;</a>
+					</div>
+
+					<div id="infoReviewSwiper" class="pictureBody">
+						<div class="slideContainer">
+							<ul class="pictureList swiper-wrapper">
+								<li class="swiper-slide">
+									<a href="#">
+										<figure>
+											<img src="../../public/image/info/info_review0.png" alt="">
+										</figure>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#">
+										<figure>
+											<img src="../../public/image/info/info_review1.png" alt="">
+										</figure>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#">
+										<figure>
+											<img src="../../public/image/info/info_review2.png" alt="">
+										</figure>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#">
+										<figure>
+											<img src="../../public/image/info/info_review0.png" alt="">
+										</figure>
+									</a>
+								</li>
+								<li class="swiper-slide lastMore"> <!-- 20개 초과 등록 시 lastMore 클래스 추가 -->
+									<a href="#">
+										<figure>
+											<img src="../../public/image/info/info_review3.png" alt="">
+										</figure>
+										<div class="blind">
+											<span>100</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<script>
+						slider.active('infoReviewSwiper')
+					</script>
+				</div>
+				<div class="textReview">
+					<div class="eHeader">
+						<h3>리뷰 <span class="num">3건</span></h3>
+						<div>
+							<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+							<button type="button">도움많은순</button>
+							<button type="button">내가쓴글</button>
+						</div>
+					</div>
+					<ul class="textList">
+						<li>
+							<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+								<div class="profile">개인 이미지</div>
+								<strong class="my">홍길동</strong>
+								<span>2021.12.28</span>
+								<button type="button" class="report">신고하기</button>
+							</div>
+							<figure>
+								<img src="../../public/image/info/info_store0.png" alt="">
+								<button type="button" class="zoom">이미지 크게보기</button>
+							</figure>
+							<p class="text">
+								가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+							</p>
+							<div class="tlControls">
+								<button type="button" class="more">더보기</button>
+								<button type="button" class="recommend">도움돼요 3</button>
+							</div>
+							<div class="visibleButton">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="tlHead">
+								<div class="profile">개인 이미지</div>
+								<strong>홍길동</strong>
+								<span>2021.12.28</span>
+								<button type="button" class="report">신고하기</button>
+							</div>
+							<p class="text show">
+								가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+							</p>
+							<div class="tlControls">
+								<button type="button" class="more">더보기</button>
+								<button type="button" class="recommend">도움돼요 3</button>
+							</div>
+						</li>
+						<li>
+							<div class="tlHead">
+								<div class="profile">개인 이미지</div>
+								<strong>홍길동</strong>
+								<span>2021.12.28</span>
+								<button type="button" class="report">신고하기</button>
+							</div>
+							<figure>
+								<img src="../../public/image/info/info_store0.png" alt="">
+								<button type="button" class="zoom">이미지 크게보기</button>
+							</figure>
+							<p class="text">
+								가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+							</p>
+							<div class="tlControls">
+								<button type="button" class="more">더보기</button>
+								<button type="button" class="recommend">도움돼요 3</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>
