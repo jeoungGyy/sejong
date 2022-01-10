@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../../pages/common/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../../pages/common/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<h2 class="visible headerClone">우리가게 등록</h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="grayBox">
+				<p class="text">
+					세종특별자치시내 개인, 소상공인, 기업, 단체 누구나 내용을 등록할 수 있습니다.<br />
+					등록한 정보는 검토 후 절차를 통해 승인해 드리고 있습니다.<br />
+					공공목적에 위배되거나 세종특별자치시 기준에 부합 되지 않는 정보는 등록이 제한될 수 있음 알려드립니다.
+				</p>
+				<div class="approval">
+					<p class="title">심사 및 승인시간</p>
+					<ul>
+						<li>평일 9시 ~ 16시 <span>등록 17시</span></li>
+						<li>평일 16시 ~ 익일 9시 <span>등록 익일 9시 이후</span></li>
+						<li>전화 문의</li>
+						<li>메일 문의</li>
+					</ul>
+				</div>
+			</div>
+
+			<fieldset class="ecoForm">
+				<legend>우리가게 등록 폼</legend>
+				<ul class="list">
+					<li>
+						<div class="labelH">
+							<label for="tempText0">업종 선택</label> <span class="required">필수</span>
+						</div>
+						<div class="selectMarginForm">
+							<select title="업종 선택" required="required">
+								<option>업종을 선택하세요</option>
+							</select>
+							<select title="세부 업종 선택" required="required">
+								<option>세부 업종을 선택하세요</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="tempText1">상호</label> <span class="required">필수</span>
+						</div>
+						<div>
+							<input type="text" id="tempText1" required="required" required="required" placeholder="업소명을 입력하세요" />
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="tempText2">사업자등록번호</label> <span class="required">필수</span>
+						</div>
+						<div>
+							<div class="businessForm">
+								<input type="tel" id="tempText2" required="required" placeholder="사업자등록번호를 - 없이 입력해주세요" />
+								<button type="button">확인</button>
+							</div>
+							<p class="hWord">예) 111-22-000000 → 1112233334</p>
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="">주소</label> <span class="required">필수</span>
+						</div>
+						<div class="adressForm">
+							<button type="button" class="btnOpen"><span>주소 찾기</span></button>
+							<input type="text" required="required" placeholder="주소 찾기" />
+							<input type="text" required="required" placeholder="상세 주소를 입력해주세요" />
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label>전화번호</label> <span class="required">필수</span>
+						</div>
+						<div class="phoneForm">
+							<span><input type="tel" required="required" title="전화번호 국번 입력"></span>
+							<span><input type="tel" required="required" title="전화번호 앞자리 입력"></span>
+							<span><input type="tel" required="required" title="전화번호 뒷자리 입력"></span>
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="tempText3">소개글</label>
+						</div>
+						<div>
+							<input type="text" id="tempText3" placeholder="우리가게의 짧은 소개글을 입력하세요(30자 내외)" />
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="tempText4">상세내용</label> <span class="required">필수</span>
+						</div>
+						<div class="textareaForm">
+							<textarea id="tempText4" cols="10" rows="10" required="required" placeholder="우리가게에 대한 설명을 입력해 주세요.&#13;&#10;(최소 10자 이상)"></textarea>
+							<div class="byte">
+								<span>49</span>/300
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label for="tempText5">홈페이지</label>
+						</div>
+						<div>
+							<input type="text" id="tempText5" placeholder="홈페이지 주소(URL)를 입력하세요">
+							<p class="hWord">예) https://smartsejong.kr</p>
+						</div>
+					</li>
+					<li>
+						<div class="labelH">
+							<label>제공서비스</label>
+						</div>
+						<div>
+							<ul class="serviceList">
+								<li>
+									<input type="checkbox" id="service0" checked="checked">
+									<label for="service0"></label>
+									<p>여민전</p>
+								</li>
+								<li>
+									<input type="checkbox" id="service1">
+									<label for="service1"></label>
+									<p>주차</p>
+								</li>
+								<li>
+									<input type="checkbox" id="service2">
+									<label for="service2"></label>
+									<p>반려동물</p>
+								</li>
+								<li>
+									<input type="checkbox" id="service3">
+									<label for="service3"></label>
+									<p>와이파이</p>
+								</li>
+								<li>
+									<input type="checkbox" id="service4">
+									<label for="service4"></label>
+									<p>놀이방</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="labelH between">
+							<div>
+								<label>사진등록</label> <span class="required">필수</span>
+							</div>
+							<span>(최대 15장)</span>
+						</div>
+						<div class="fileForm">
+							<button type="button" class="upload"><span>사진 선택하기</span></button>
+							<div class="ffH">
+								<button type="button" class="all">전체선택</button>
+								<button type="button" class="delete"><span>삭제</span></button>
+							</div>
+							<ul class="pictureList">
+								<li>
+									<input type="checkbox" id="list0" checked="checked">
+									<label for="list0">
+										<img src="../../public/image/info/info_file0.png" alt="">
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" id="list1">
+									<label for="list1"></label>
+								</li>
+								<li>
+									<input type="checkbox" id="list2">
+									<label for="list2"></label>
+								</li>
+								<li>
+									<input type="checkbox" id="list3">
+									<label for="list3">
+										<img src="../../public/image/info/info_file0.png" alt="">
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" id="list4">
+									<label for="list4"></label>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="btnGroup">
+					<button type="button" class="button blue">저장</button>
+				</div>
+			</fieldset>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

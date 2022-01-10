@@ -118,7 +118,7 @@ table td { vertical-align: middle;}
 **********************************************/
 
 /* container */
-.container { max-width: 57rem; padding: 4.4rem 0 2rem; margin: 0 auto;}
+.container { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
 .header { position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 10; background-color: #fff;}
