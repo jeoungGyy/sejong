@@ -12,33 +12,33 @@
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../public/fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
+	src: url(../fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
-	src: url(../public/fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
+	src: url(../fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Gmarket Sans';
 	font-style: normal;
 	font-weight: 700;
-	src: url(../public/fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
+	src: url(../fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../public/fonts/Roboto/Roboto-Regular.woff2) format('woff2');
+	src: url(../fonts/Roboto/Roboto-Regular.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
-	src: url(../public/fonts/Roboto/Roboto-Bold.woff2) format('woff2');
+	src: url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
 }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,dfn,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file], input[type=tel], input[type=search]   {
@@ -61,7 +61,7 @@ body {
 
 a:link,
 a:visited { text-decoration:none;}
-select { width: 100%; height: 4.8rem; padding:0 2rem; font-size:100%; letter-spacing: -0.04em; vertical-align:middle; border:1px solid #ddd; background: #fff url(../public/image/common/ico_select.png) no-repeat right 1.2rem center/2rem; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
+select { width: 100%; height: 4.8rem; padding:0 3rem 0 2rem; font-size:100%; letter-spacing: -0.04em; vertical-align:middle; border:1px solid #ddd; background: #fff url(../image/common/ico_select.png) no-repeat right 1.2rem center/2rem; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
 select[disabled] { background-color: #F4F5F7;}
 input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
 input[type=checkbox] { border:1px solid #ddd;}
@@ -125,9 +125,9 @@ table td { vertical-align: middle;}
 .stickyHeader .header { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -9999rem; background: url(../public/image/common/header_prev.png) no-repeat center/auto 100%;}
+.subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/auto 100%;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/common/header_list.png) no-repeat center/auto 100%;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/header_list.png) no-repeat center/auto 100%;}
 .subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
 .subHeader h2 .number { color: #6684EA;}
 
@@ -162,9 +162,9 @@ table td { vertical-align: middle;}
 .swiper-button-prev,
 .swiper-button-next { display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; z-index: 10; width: 4rem; height: 4rem; margin-top: -2rem; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); cursor: pointer;}
 .swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after { content: ''; width: 1.85rem; height: 1.45rem; background: url(../public/image/common/ico_swiper_right.png) no-repeat center/cover;}
+.swiper-rtl .swiper-button-prev:after { content: ''; width: 1.85rem; height: 1.45rem; background: url(../image/common/ico_swiper_right.png) no-repeat center/cover;}
 .swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after { content: ''; width: 1.85rem; height: 1.45rem; background: url(../public/image/common/ico_swiper_left.png) no-repeat center/cover;}
+.swiper-rtl .swiper-button-next:after { content: ''; width: 1.85rem; height: 1.45rem; background: url(../image/common/ico_swiper_left.png) no-repeat center/cover;}
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next { left: -1.2rem; right: auto;}
 .swiper-button-next,
@@ -181,7 +181,7 @@ table td { vertical-align: middle;}
 .layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem); background: #fff; border-radius: 0.4rem; vertical-align: middle; text-align: left; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/common/ico_layer_close.png) no-repeat; background-size: cover;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/ico_layer_close.png) no-repeat; background-size: cover;}
 .layerWrap .layerBody { padding-top: 0.8rem;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
@@ -195,13 +195,13 @@ table td { vertical-align: middle;}
 .layerBody .snsList li { width: 25%; margin-top: 0.8rem;}
 .layerBody .snsList li button { display: block; width: 100%; text-align: center;}
 .layerBody .snsList li button i { display: inline-block; width: 4.8rem; height: 4.8rem;}
-.layerBody .snsList li button.facebook i { background: url(../public/image/info/ico_social_facebook.png) no-repeat center/cover;}
-.layerBody .snsList li button.twitter i { background: url(../public/image/info/ico_social_twitter.png) no-repeat center/cover;}
-.layerBody .snsList li button.kakaotalk i { background: url(../public/image/info/ico_social_kakaotalk.png) no-repeat center/cover;}
-.layerBody .snsList li button.kakaostory i { background: url(../public/image/info/ico_social_kakaostory.png) no-repeat center/cover;}
-.layerBody .snsList li button.band i { background: url(../public/image/info/ico_social_naverBand.png) no-repeat center/cover;}
-.layerBody .snsList li button.line i { background: url(../public/image/info/ico_social_naverLine.png) no-repeat center/cover;}
-.layerBody .snsList li button.blog i { background: url(../public/image/info/ico_social_naverBlog.png) no-repeat center/cover;}
+.layerBody .snsList li button.facebook i { background: url(../image/info/ico_social_facebook.png) no-repeat center/cover;}
+.layerBody .snsList li button.twitter i { background: url(../image/info/ico_social_twitter.png) no-repeat center/cover;}
+.layerBody .snsList li button.kakaotalk i { background: url(../image/info/ico_social_kakaotalk.png) no-repeat center/cover;}
+.layerBody .snsList li button.kakaostory i { background: url(../image/info/ico_social_kakaostory.png) no-repeat center/cover;}
+.layerBody .snsList li button.band i { background: url(../image/info/ico_social_naverBand.png) no-repeat center/cover;}
+.layerBody .snsList li button.line i { background: url(../image/info/ico_social_naverLine.png) no-repeat center/cover;}
+.layerBody .snsList li button.blog i { background: url(../image/info/ico_social_naverBlog.png) no-repeat center/cover;}
 .layerBody .snsList li span { display: block; padding: 0.7rem 0 0.6rem; font-size: 1.4rem; color: #555; letter-spacing: -0.04em;}
 .layerBody .snsCopy { display: flex; margin-top: 1.6rem;}
 .layerBody .snsCopy input { flex: 1;}
@@ -210,8 +210,8 @@ table td { vertical-align: middle;}
 /* UI-SJN-04-101L */
 .calendarBody .cbHead { display: flex; align-items: center; height: 4.8rem;}
 .calendarBody .cbHead >button { display: block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem;}
-.calendarBody .cbHead >button.prev { background: url(../public/image/common/ico_calendar_prev.png) no-repeat center/cover;}
-.calendarBody .cbHead >button.next { background: url(../public/image/common/ico_calendar_next.png) no-repeat center/cover;}
+.calendarBody .cbHead >button.prev { background: url(../image/common/ico_calendar_prev.png) no-repeat center/cover;}
+.calendarBody .cbHead >button.next { background: url(../image/common/ico_calendar_next.png) no-repeat center/cover;}
 .calendarBody .cbHead .year { flex: 1; display: flex; align-items: center; justify-content: center;}
 .calendarBody .cbHead .year .ymBtn { font-size: 1.8rem; font-weight: 700;}
 .calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(7, 1fr); height: 4rem;}

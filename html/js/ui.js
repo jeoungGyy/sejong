@@ -100,6 +100,168 @@ const layerPopup = {
 	},
 }
 
+class Tab {
+	constructor(props) {
+		this.tabWrap = props;
+		this.menu;
+		this.btn;
+		this.tabContWrap;
+		this.tabCont;
+		this.selType;
+		this.slideWrap;
+		this.slide;
+		this.act;
+		this.set();
+	}
+	set() {
+		this.menu = this.tabWrap.querySelector('.btnTab');
+		this.btn = this.menu.querySelectorAll('button');
+
+		if(this.tabWrap.querySelector('.tabContent')) {
+			this.tabContWrap = this.tabWrap.querySelector('.tabContent');
+			this.tabCont = findEl.child(this.tabContWrap, 'div');
+		}
+
+		this.addEvent(this.btn);
+
+		if(this.menu.classList.contains('swiper-wrapper')) this.addSwiper();
+	}
+	addSwiper() {
+		let list = this.menu.querySelectorAll('.itemBtn');
+
+		[].forEach.call(list, _this => {
+			_this.classList.add('swiper-slide');
+		});
+
+		this.slideWrap = document.createElement('div');
+
+		this.slideWrap.classList.add('slideContainer');
+		this.slideWrap.appendChild(this.menu);
+
+		this.tabWrap.prepend(this.slideWrap);
+
+		this.slide = new Swiper(this.slideWrap, {
+			slidesPerView: 'auto',
+			observeParents: true,
+			observer: true,
+		});
+	}
+	addEvent() {
+		this.act = () => {
+			let _this = event.currentTarget;
+			let idx = 0;
+			this.btn.forEach((btn,current)=>{
+				if(btn === _this) idx = current;
+			});
+			(this.selType) ? this.active(idx, _this.getAttribute('aria-controls')) : this.active(idx);
+		}
+		[].forEach.call(this.btn, (_this, idx)=>{
+			if(_this.getAttribute('aria-controls')) this.selType = true;
+			_this.addEventListener('click', this.act);
+		});
+	}
+	removeEvent() {
+		for(let i = 0 ; i < this.btn.length ; i++ ) {
+			this.btn[i].removeEventListener('click', this.act);
+		}
+	}
+	active(idx, aria) {
+		[].forEach.call(this.btn, (_this)=>{
+			_this.classList.remove('active');
+		});
+		this.btn[idx].classList.add('active');
+
+		if(this.tabCont) {
+			if(this.selType) {
+				[].forEach.call(this.tabCont, (_this)=>{
+					_this.classList.remove('active');
+					if(_this.getAttribute('id') == aria) {
+						_this.classList.add('active');
+					}
+				});
+			} else {
+				[].forEach.call(this.tabCont, (_this)=>{
+					_this.classList.remove('active');
+				});
+				this.tabCont[idx].classList.add('active');
+				if(this.slide) {this.slide.slideTo(idx);}
+			}
+		}
+	}
+	add(arg) {
+		this.menu.insertAdjacentHTML('beforeend', arg.btn);
+		this.btn = this.menu.querySelectorAll('button');
+		let idx = this.btn.length - 1;
+
+		this.addEvent(this.btn[idx], idx);
+
+		this.tabContWrap.insertAdjacentHTML('beforeend', arg.cont);
+		this.tabCont = findEl.child(this.tabContWrap, 'div');
+	}
+	update() {
+		let list = this.menu.querySelectorAll('.itemBtn');
+		this.btn = this.menu.querySelectorAll('button');
+		this.removeEvent();
+		this.addEvent();
+		if(this.slide) {
+			[].forEach.call(list, _this => {
+				_this.classList.add('swiper-slide');
+			});
+			this.slide = new Swiper(this.slideMenu, {
+				slidesPerView: 'auto',
+				observeParents: true,
+				observer: true,
+			});
+		}
+	}
+}
+const tab = {
+	obj : {},
+	idx : null,
+	active : function() {
+		
+		let tabs = document.querySelectorAll('.boxTab');
+
+		if(tab.idx == null) {
+			[].forEach.call(tabs, (_this, idx)=>{
+				this.set(_this, idx);
+			});
+		} else {
+			[].forEach.call(tabs, (_this, idx)=>{
+				let state = true;
+				for (const key in tab.obj) {
+					if(tab.obj[key].tabWrap == _this) {
+						state = false;
+						return false;
+					}
+				}
+				if (state == false) {
+					return;
+				} else {
+					tab.set(_this, idx);
+				}
+			});
+		}
+	},
+	set : function(_this, idx) {
+		if(idx >= 0) {
+			tab.idx = idx;
+		} else {
+			tab.idx += 1;
+		}
+		if(!_this.getAttribute('id')) {
+			this.obj['tab'+idx] = new Tab(_this);
+		} else {
+			let id = _this.getAttribute('id');
+			this.obj[id] = new Tab(_this);
+		}
+	},
+	reset : () => {
+		tab.obj = {};
+		tab.active();
+	}
+}
+
 const findEl = {
 	obj: null,
 	parent: (el, str) => {
@@ -285,4 +447,5 @@ function _lazyLoad() {
   header.set();
   container.set();
 	accordion.active();
+	tab.active();
 }
