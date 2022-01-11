@@ -95,9 +95,9 @@
 .ecoForm .list >li .period .pHead span { display: inline-block; margin-right: 1.6rem; color: #555; letter-spacing: -0.04em;}
 .ecoForm .list >li .period .pHead .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
 .ecoForm .list >li .period .pHead .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
-.ecoForm .list >li .period .pHead .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: margin-left 0.3s;}
+.ecoForm .list >li .period .pHead .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
 .ecoForm .list >li .period .pHead .switch label::after { content: ""; position: absolute; display: block; left: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
-.ecoForm .list >li .period .pHead .switch input:checked + label:after { margin-left: 2.2rem;}
+.ecoForm .list >li .period .pHead .switch input:checked + label:after { margin-left: 2.3rem;}
 .ecoForm .list >li .period .pHead .switch input:checked + label:before { background-color: #6684EA;}
 .ecoForm .list >li .period .pList { margin-top: 0.7rem; border-top: 1px solid #F4F5F7;}
 .ecoForm .list >li .period .pList li { display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
@@ -125,9 +125,38 @@
 .visibleButton button ~ button { margin-left: 0.3rem; padding-left: 0.6rem;}
 .visibleButton button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
+.headTitle .tlHead { display: flex; align-items: center; height: 4rem;}
+.headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/info/ico_profile.png) no-repeat center/cover; border-radius: 50%;}
+.headTitle .tlHead strong { margin-left: 0.4rem; letter-spacing: -0.04em;}
+.headTitle .tlHead span { margin-left: 0.8rem; color: #aaa;}
+.headTitle .tlHead span::after { content: 'ㆍ';}
+.headTitle .tlHead .report { color: #aaa; letter-spacing: -0.04em;}
+.headTitle .tlHead.my strong::after { content: '나'; display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.5rem; font-size: 1.1rem; font-weight: 700; color: #fff; vertical-align: middle; background-color: #6684EA; border-radius: 50%;}
+.headTitle .tlHead.my span::after,
+.headTitle .tlHead.my .report { display: none;}
+.headTitle figure { overflow: hidden; position: relative; height: 18rem; margin-top: 0.8rem;}
+.headTitle figure img { width: 100%; height: auto; vertical-align: top;}
+.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/info/ico_zoom.png) no-repeat center/cover;}
+.headTitle .text { overflow: hidden; display: -webkit-box; margin-top: 1.2rem; font-size: 1.6rem; letter-spacing: -0.04em; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 2.2rem; line-height: 2.4rem;}
+.headTitle .text.show { -webkit-line-clamp: inherit;}
+.headTitle .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
+.headTitle .tlControls .more { color: #777; letter-spacing: -0.04em;}
+.headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../public/image/info/ico_more_small.png) no-repeat center/cover;}
+.headTitle .tlControls .guide { font-size: 1.4rem; color: #aaa; letter-spacing: -0.04em;}
+.headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
 
-/* 소통ㆍ참여 - 장소공유 UI-SJN-04-001U */
-.info .lineBody { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
+
+
+
+
+
+
+
+
+
+
+/* 장소공유 UI-SJN-04-001U */
+.info .subMenuGroup { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .info .infoMenu { overflow: hidden;}
 .info .infoMenu .swiper-wrapper { width: inherit;}
 .info .infoMenu li { width: inherit;}
@@ -163,7 +192,7 @@
 .info .ecoForm .list >li .selectForm .row.active .selectBtn { border-color: #aaa;}
 .info .ecoForm .list >li .selectForm .row.active .selectBtn::after { transform: rotate(180deg);}
 
-/* 소통ㆍ참여 - 우리가게 UI-SJN-04-005U */
+/* 우리가게 UI-SJN-04-005U */
 .info .newStore { padding: 1.6rem 2rem 3rem;}
 .info .ourStore { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
 .info .newStoreBody { overflow: hidden;}
@@ -181,53 +210,65 @@
 .info .storeList.inline,
 .info .storeList.inline li { width: 50%; margin: 0;}
 
-/* 소통ㆍ참여 - 홍보 행사 UI-SJN-04-007U */
+/* 홍보 행사 UI-SJN-04-007U */
 .info .promote { padding: 1.6rem 2rem 6rem;}
 
-/* 소통ㆍ참여 - 리뷰대상 UI-SJN-04-009U */
-.info .reviewGroup .pictureReview { padding: 1.6rem 2rem;}
-.info .reviewGroup .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
-.info .reviewGroup .pictureBody .pictureList li.empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
-.info .reviewGroup .pictureBody .pictureList a { display: block; position: relative;}
-.info .reviewGroup .pictureBody .pictureList a img { width: 100%; height: auto; vertical-align: top;}
-.info .reviewGroup .pictureBody .pictureList .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
-.info .reviewGroup .pictureBody .pictureList .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
-.info .reviewGroup .pictureBody .pictureList .lastMore .blind span::before { content: '+';}
-.info .reviewGroup .textReview { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
-.info .reviewGroup .textList li { padding-top: 0.8rem;}
-.info .reviewGroup .textList li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
-.info .reviewGroup .textList li.empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.info .reviewGroup .textList li.empty p { position: relative; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
-.info .reviewGroup .textList li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../public/image/common/ico_empty.png) no-repeat center/2.3rem 2.55rem; border-radius: 50%;}
-.info .reviewGroup .textList .tlHead { display: flex; align-items: center; height: 4rem;}
-.info .reviewGroup .textList .tlHead .profile { width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/info/ico_profile.png) no-repeat center/cover;}
-.info .reviewGroup .textList .tlHead strong { margin-left: 0.4rem; letter-spacing: -0.04em;}
-.info .reviewGroup .textList .tlHead span { margin-left: 0.8rem; color: #aaa;}
-.info .reviewGroup .textList .tlHead span::after { content: 'ㆍ';}
-.info .reviewGroup .textList .tlHead .report { color: #aaa; letter-spacing: -0.04em;}
-.info .reviewGroup .textList .tlHead.my strong::after { content: '나'; display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.5rem; font-size: 1.1rem; font-weight: 700; color: #fff; vertical-align: middle; background-color: #6684EA; border-radius: 50%;}
-.info .reviewGroup .textList .tlHead.my span::after,
-.info .reviewGroup .textList .tlHead.my .report { display: none;}
-.info .reviewGroup .textList figure { overflow: hidden; position: relative; height: 18rem; margin-top: 0.8rem;}
-.info .reviewGroup .textList figure img { width: 100%; height: auto; vertical-align: top;}
-.info .reviewGroup .textList figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/info/ico_zoom.png) no-repeat center/cover;}
-.info .reviewGroup .textList .text { overflow: hidden; display: -webkit-box; margin-top: 1.2rem; font-size: 1.6rem; letter-spacing: -0.04em; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 2.2rem; line-height: 2.4rem;}
-.info .reviewGroup .textList .text.show { -webkit-line-clamp: inherit;}
-.info .reviewGroup .textList .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
-.info .reviewGroup .textList .tlControls .more { color: #777; letter-spacing: -0.04em;}
-.info .reviewGroup .textList .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../public/image/info/ico_more_small.png) no-repeat center/cover;}
-.info .reviewGroup .textList .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
+/* 리뷰대상 UI-SJN-04-009U */
+.info .pictureReview { padding: 1.6rem 2rem;}
+.info .pictureReview .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
+.info .pictureReview .pictureBody .pictureList li.empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
+.info .pictureReview .pictureBody .pictureList a { display: block; position: relative;}
+.info .pictureReview .pictureBody .pictureList a img { width: 100%; height: auto; vertical-align: top;}
+.info .pictureReview .pictureBody .pictureList .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+.info .pictureReview .pictureBody .pictureList .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
+.info .pictureReview .pictureBody .pictureList .lastMore .blind span::before { content: '+';}
+.info .textReview { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .textReview .textList li { padding-top: 0.8rem;}
+.info .textReview .textList li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
+.info .textReview .textList li.empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.info .textReview .textList li.empty p { position: relative; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
+.info .textReview .textList li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../public/image/common/ico_empty.png) no-repeat center/2.3rem 2.55rem; border-radius: 50%;}
 
-/* 소통ㆍ참여 - 리뷰 등록 UI-SJN-04-010P */
+/* 리뷰 등록 UI-SJN-04-010P */
 .info .reviewForm { padding: 0 2rem 6rem;}
  
-/* 소통ㆍ참여 - 사진 리뷰 UI-SJN-04-011P */
+/* 사진 리뷰 UI-SJN-04-011P */
 .info .pictureGrid { display: grid; grid-template-columns: repeat(3, 1fr); margin: -0.4rem -0.2rem 0; padding: 1.6rem 2rem 6rem;}
 .info .pictureGrid li { position: relative; margin: 0.4rem 0.2rem 0;}
 .info .pictureGrid li figure { overflow: hidden; height: 10.4rem; background: #F4F5F7 url(../public/image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
 .info .pictureGrid li figure img { width: 100%; vertical-align: top;}
 .info .pictureGrid li .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.8rem; bottom: 0.8rem; height: 2.4rem; padding: 0 0.8rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
 .info .pictureGrid li .blind span::before { content: '+';}
+
+/* 사진 리뷰 UI-SJN-04-012P */
+.info .pictureGroup { padding: 1.6rem 2rem 4rem;}
+.info .pictureGroup .pgList >li ~ li { margin-top: 0.4rem;}
+.info .pictureGroup .pgList >li figure img { width: 100%; height: auto; vertical-align: top;}
+.info .pictureGroup .pictureBody { position: relative;}
+.info .pictureGroup .pictureBody .slideContainer { overflow: hidden;}
+.info .pictureGroup .headTitle { margin-top: 1.6rem;}
+.info .pictureGroup .swiper-button-next,
+.info .pictureGroup .swiper-button-prev { text-indent: -9999rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

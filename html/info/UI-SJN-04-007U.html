@@ -16,148 +16,150 @@
 		<main class="contents info"> <!-- [생활정보 Class] info-->
 			<h2 class="visible"><div class="headerClone">소통ㆍ참여</div></h2> <!-- [헤더에 넣어줄 제목] -->
 			
-			<div class="lineBody">
-				<nav id="infoMenuSwiper" class="infoMenu">
-					<div class="slideContainer">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide"><a href="#">우리가게</a></li>
-							<li class="swiper-slide"><a href="#">장소공유</a></li>
-							<li class="swiper-slide"><a href="#">지식ㆍ재능공유</a></li>
-							<li class="swiper-slide"><a href="#">물품공유</a></li>
-							<li class="swiper-slide"><a href="#" class="active">홍보 행사</a></li>
-						</ul>
-					</div>
-				</nav>
-				<script>
-					slider.active('infoMenuSwiper')
-				</script>
-			</div>
-
-			<div class="promote">
-				<div class="eHeader">
-					<div>
-						<select class="sel">
-							<option>전체</option>
-							<option>이벤트</option>
-							<option>행사</option>
-							<option>공연</option>
-							<option>전시</option>
-						</select>
-						<span class="num">30건</span>
-					</div>
-					<div>
-						<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
-						<button type="button">추천순</button>
-						<button type="button">내가쓴글</button>
-					</div>
+			<div class="infoWrap">
+				<div class="subMenuGroup">
+					<nav id="infoMenuSwiper" class="infoMenu">
+						<div class="slideContainer">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><a href="#">우리가게</a></li>
+								<li class="swiper-slide"><a href="#">장소공유</a></li>
+								<li class="swiper-slide"><a href="#">지식ㆍ재능공유</a></li>
+								<li class="swiper-slide"><a href="#">물품공유</a></li>
+								<li class="swiper-slide"><a href="#" class="active">홍보 행사</a></li>
+							</ul>
+						</div>
+					</nav>
+					<script>
+						slider.active('infoMenuSwiper')
+					</script>
 				</div>
-				<ul class="eList">
-					<li>
-						<a href="#">
-							<figure>
-								<span class="wood">공연</span>
-								<img src="../../public/image/info/info_eList2.png" alt="">
-							</figure>
-						</a>
-						<div class="eBody">
-							<div>
-								<button type="button" class="good" title="추천 수">12</button>
-								<button type="button" class="comment" title="댓글 수">1,234</button>
-							</div>
-							<div>
-								<button type="button" class="favorite">즐겨찾기</button>
-								<button type="button" class="sharing">공유하기</button>
-							</div>
-						</div>
-						<a href="#">
-							<h4>국문화 상영(영화, 공연) 행사 개최</h4>
-							<p>
-								일정 : 2021.01.01 - 2021.12.31<br />
-								주소 : 세종대로 31 나성동 18번지
-							</p>
-						</a>
-						<div class="hashTag">
-							<span>기간한정</span>
-							<span>이베리코</span>
-							<span>불금</span>
-						</div>
-						<div class="visibleButton">
-							<button type="button">수정</button>
-							<button type="button">삭제</button>
-						</div>
-					</li>
-					<li>
-						<a href="#">
-							<figure>
-								<span class="darkBlue">이벤트</span>
-								<img src="../../public/image/info/info_eList3.png" alt="">
-							</figure>
-						</a>
-						<div class="eBody">
-							<div>
-								<button type="button" class="good" title="추천 수">12</button>
-								<button type="button" class="comment" title="댓글 수">1,234</button>
-							</div>
-							<div>
-								<button type="button" class="favorite">즐겨찾기</button>
-								<button type="button" class="sharing">공유하기</button>
-							</div>
-						</div>
-						<a href="#">
-							<h4>세종 충남대 병원 (송년 음악회) <span class="allTime">상시</span></h4>
-							<p>
-								일정 : 2021.01.01 - 2021.12.31<br />
-								주소 : 세종대로 31 나성동 18번지
-							</p>
-						</a>
-						<div class="hashTag">
-							<span>기간한정</span>
-							<span>이베리코</span>
-							<span>불금</span>
-						</div>
-						<div class="visibleButton">
-							<button type="button">수정</button>
-							<button type="button">삭제</button>
-						</div>
-					</li>
-					<li>
-						<a href="#">
-							<figure>
-								<span class="darkBlue">이벤트</span>
-							</figure>
-						</a>
-						<div class="eBody">
-							<div>
-								<button type="button" class="good" title="추천 수">12</button>
-								<button type="button" class="comment" title="댓글 수">1,234</button>
-							</div>
-							<div>
-								<button type="button" class="favorite">즐겨찾기</button>
-								<button type="button" class="sharing">공유하기</button>
-							</div>
-						</div>
-						<a href="#">
-							<h4>세종 충남대 병원 (송년 음악회) <span class="allTime">상시</span></h4>
-							<p>
-								일정 : 2021.01.01 - 2021.12.31<br />
-								주소 : 세종대로 31 나성동 18번지
-							</p>
-						</a>
-						<div class="hashTag">
-							<span>기간한정</span>
-							<span>이베리코</span>
-							<span>불금</span>
-						</div>
-						<div class="visibleButton">
-							<button type="button">수정</button>
-							<button type="button">삭제</button>
-						</div>
-					</li>
-				</ul>
-			</div>
 
-			<div class="morebutton">
-				<a href="#" class="moreButton"><i>홍보 행사 더보기</i></a>
+				<div class="promote">
+					<div class="eHeader">
+						<div>
+							<select class="sel">
+								<option>전체</option>
+								<option>이벤트</option>
+								<option>행사</option>
+								<option>공연</option>
+								<option>전시</option>
+							</select>
+							<span class="num">30건</span>
+						</div>
+						<div>
+							<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+							<button type="button">추천순</button>
+							<button type="button">내가쓴글</button>
+						</div>
+					</div>
+					<ul class="eList">
+						<li>
+							<a href="#">
+								<figure>
+									<span class="wood">공연</span>
+									<img src="../../public/image/info/info_eList2.png" alt="">
+								</figure>
+							</a>
+							<div class="eBody">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+									<button type="button" class="sharing">공유하기</button>
+								</div>
+							</div>
+							<a href="#">
+								<h4>국문화 상영(영화, 공연) 행사 개최</h4>
+								<p>
+									일정 : 2021.01.01 - 2021.12.31<br />
+									주소 : 세종대로 31 나성동 18번지
+								</p>
+							</a>
+							<div class="hashTag">
+								<span>기간한정</span>
+								<span>이베리코</span>
+								<span>불금</span>
+							</div>
+							<div class="visibleButton">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<figure>
+									<span class="darkBlue">이벤트</span>
+									<img src="../../public/image/info/info_eList3.png" alt="">
+								</figure>
+							</a>
+							<div class="eBody">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+									<button type="button" class="sharing">공유하기</button>
+								</div>
+							</div>
+							<a href="#">
+								<h4>세종 충남대 병원 (송년 음악회) <span class="allTime">상시</span></h4>
+								<p>
+									일정 : 2021.01.01 - 2021.12.31<br />
+									주소 : 세종대로 31 나성동 18번지
+								</p>
+							</a>
+							<div class="hashTag">
+								<span>기간한정</span>
+								<span>이베리코</span>
+								<span>불금</span>
+							</div>
+							<div class="visibleButton">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<figure>
+									<span class="darkBlue">이벤트</span>
+								</figure>
+							</a>
+							<div class="eBody">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+									<button type="button" class="sharing">공유하기</button>
+								</div>
+							</div>
+							<a href="#">
+								<h4>세종 충남대 병원 (송년 음악회) <span class="allTime">상시</span></h4>
+								<p>
+									일정 : 2021.01.01 - 2021.12.31<br />
+									주소 : 세종대로 31 나성동 18번지
+								</p>
+							</a>
+							<div class="hashTag">
+								<span>기간한정</span>
+								<span>이베리코</span>
+								<span>불금</span>
+							</div>
+							<div class="visibleButton">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="morebutton">
+					<a href="#" class="moreButton"><i>홍보 행사 더보기</i></a>
+				</div>
 			</div>
 		</main>
 		<!-- //본문 -->

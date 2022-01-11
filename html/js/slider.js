@@ -32,12 +32,20 @@ const slideOpt = {
 		spaceBetween: 8,
 		slidesPerView: 2,
 	},
-	/* UI-SJN-04-005 */
+	/* UI-SJN-04-009 */
 	infoReviewSwiper: {
 		autoplay: false,
     slidesPerView: 'auto',
 		spaceBetween: 4,
 		slidesPerView: 3,
+	},
+	/* UI-SJN-04-012 */
+	infoPictureSwiper: {
+		autoplay: false,
+    navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
 	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
