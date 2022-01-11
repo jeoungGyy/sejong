@@ -299,11 +299,12 @@
 .info .tabContent .searchForm .send { flex: 1; position: relative; margin-left: 0.8rem;}
 .info .tabContent .searchForm .send input { height: 4rem; padding: 0 3rem 0 1.2rem; background-color: #F4F5F7; border: 1px solid #EAEAEA; border-radius: 2rem;}
 .info .tabContent .searchForm .send .btnSend { display: block; position: absolute; right: 0; top: 0; width: 2rem; height: 2rem; padding: 2rem; text-indent: -9999rem; background: url(../image/info/ico_form.png) no-repeat center/2rem;}
-.info .tabContent .sortHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
-.info .tabContent .sortHeader select { border: none;}
-
-
-
+.info .tabContent .sortHeader { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
+.info .tabContent .sortHeader div { display: flex;}
+.info .tabContent .sortHeader div select { height: 4rem; padding-left: 0; border: none;}
+.info .tabContent .sortHeader div select:nth-child(1) { width: 12rem;}
+.info .tabContent .sortHeader div select:nth-child(2) { width: 10rem;}
+.info .tabContent .sortHeader .btnSort { width: 2rem; height: 2rem; padding: 2rem 0 2rem 2rem; text-indent: -9999rem; background: url(../image/info/ico_filter.png) no-repeat center/2rem;}
 
 
 
