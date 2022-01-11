@@ -67,7 +67,7 @@
 								</div>
 								<div>
 									<button type="button" class="favorite">즐겨찾기</button>
-									<button type="button" class="sharing">공유하기</button>
+									<button type="button" class="sharing" onclick="layerPopup.open('layerSharing')">공유하기</button>
 								</div>
 							</div>
 							<a href="#">
@@ -101,7 +101,7 @@
 								</div>
 								<div>
 									<button type="button" class="favorite">즐겨찾기</button>
-									<button type="button" class="sharing">공유하기</button>
+									<button type="button" class="sharing" onclick="layerPopup.open('layerSharing')">공유하기</button>
 								</div>
 							</div>
 							<a href="#">
@@ -134,7 +134,7 @@
 								</div>
 								<div>
 									<button type="button" class="favorite">즐겨찾기</button>
-									<button type="button" class="sharing">공유하기</button>
+									<button type="button" class="sharing" onclick="layerPopup.open('layerSharing')">공유하기</button>
 								</div>
 							</div>
 							<a href="#">
@@ -163,6 +163,65 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+		<!-- 레이어 -->
+		<div id="layerSharing" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<h4>공유하기</h4>
+				<div class="layerBody">
+					<ul class="snsList">
+						<li>
+							<button type="button" class="facebook">
+								<i></i>
+								<span>페이스북</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="twitter">
+								<i></i>
+								<span>트위터</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="kakaotalk">
+								<i></i>
+								<span>카카오톡</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="kakaostory">
+								<i></i>
+								<span>카카오스토리</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="band">
+								<i></i>
+								<span>밴드</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="line">
+								<i></i>
+								<span>라인</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="blog">
+								<i></i>
+								<span>블로그</span>
+							</button>
+						</li>
+					</ul>
+					<div class="snsCopy">
+						<input type="text" readonly="readonly" />
+						<button type="button" class="btn">URL복사</button>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 </div>
 </body>

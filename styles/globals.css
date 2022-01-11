@@ -154,8 +154,9 @@ table td { vertical-align: middle;}
 
 
 /* 버튼 */
-.button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em; box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);}
+.button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
 .button.blue { color: #fff; background-color: #6684EA;}
+.button.whiteLine { color: #555; border: 1px solid #ddd;}
 
 /* Swipe */
 .swiper-button-prev,
@@ -172,33 +173,64 @@ table td { vertical-align: middle;}
 /* 레이어
 **********************************************/
 
+/* 공통 */
 .layerPopup { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
+.layerPopup.ready { display: block;}
+.layerPopup.show { opacity: 1;}
+.layerPopup.show .layerWrap { transform: translateY(0);}
 .layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem); background: #fff; border-radius: 0.4rem; vertical-align: middle; text-align: left; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/common/ico_layer_close.png) no-repeat; background-size: cover;}
-.layerPopup.ready { display: block;}
-.layerPopup.show { opacity: 1;}
-.layerPopup.show .layerWrap { transform: translateY(0);}
 .layerWrap .layerBody { padding-top: 0.8rem;}
-.layerWrap .layerBody .pGroup p { font-size: 1.6rem; color: #555; letter-spacing: -0.04em; line-height: 2.4rem;}
-.layerWrap .layerBody .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem;}
+.layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem;}
 
+.scrollLock body { overflow: hidden;}
 
+/* UI-SJN-04-006U–1 */
+.layerBody .pGroup p { font-size: 1.6rem; color: #555; letter-spacing: -0.04em; line-height: 2.4rem;}
 
+/* UI-SJN-04-100L */
+.layerBody .snsList { display: flex; flex-wrap: wrap; margin-top: -0.8rem;}
+.layerBody .snsList li { width: 25%; margin-top: 0.8rem;}
+.layerBody .snsList li button { display: block; width: 100%; text-align: center;}
+.layerBody .snsList li button i { display: inline-block; width: 4.8rem; height: 4.8rem;}
+.layerBody .snsList li button.facebook i { background: url(../public/image/info/ico_social_facebook.png) no-repeat center/cover;}
+.layerBody .snsList li button.twitter i { background: url(../public/image/info/ico_social_twitter.png) no-repeat center/cover;}
+.layerBody .snsList li button.kakaotalk i { background: url(../public/image/info/ico_social_kakaotalk.png) no-repeat center/cover;}
+.layerBody .snsList li button.kakaostory i { background: url(../public/image/info/ico_social_kakaostory.png) no-repeat center/cover;}
+.layerBody .snsList li button.band i { background: url(../public/image/info/ico_social_naverBand.png) no-repeat center/cover;}
+.layerBody .snsList li button.line i { background: url(../public/image/info/ico_social_naverLine.png) no-repeat center/cover;}
+.layerBody .snsList li button.blog i { background: url(../public/image/info/ico_social_naverBlog.png) no-repeat center/cover;}
+.layerBody .snsList li span { display: block; padding: 0.7rem 0 0.6rem; font-size: 1.4rem; color: #555; letter-spacing: -0.04em;}
+.layerBody .snsCopy { display: flex; margin-top: 1.6rem;}
+.layerBody .snsCopy input { flex: 1;}
+.layerBody .snsCopy .btn { width: 7.4rem; margin-left: 0.8rem; text-align: center; letter-spacing: -0.04em; border: 1px solid #ddd;}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* UI-SJN-04-101L */
+.calendarBody .cbHead { display: flex; align-items: center; height: 4.8rem;}
+.calendarBody .cbHead >button { display: block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem;}
+.calendarBody .cbHead >button.prev { background: url(../public/image/common/ico_calendar_prev.png) no-repeat center/cover;}
+.calendarBody .cbHead >button.next { background: url(../public/image/common/ico_calendar_next.png) no-repeat center/cover;}
+.calendarBody .cbHead .year { flex: 1; display: flex; align-items: center; justify-content: center;}
+.calendarBody .cbHead .year .ymBtn { font-size: 1.8rem; font-weight: 700;}
+.calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(7, 1fr); height: 4rem;}
+.calendarBody .calendar .cHead li { display: flex; align-items: center; justify-content: center; color: #777; letter-spacing: -0.04em;}
+.calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(7, 1fr);}
+.calendarBody .calendar .cList li { display: flex; align-items: center; justify-content: center; height: 3.6rem; letter-spacing: -0.04em;}
+.calendarBody .calendar .cList li button { display: block; width: 3.2rem; height: 3.2rem; font-family: var(--fontRoboto); font-size: 16px; color: #777;}
+.calendarBody .calendar .cList li button.today { font-weight: 700; color: #6684EA;}
+.calendarBody .calendar .cList li button.select { font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 50%;}
+.calendarBody .time { display: flex;}
+.calendarBody .time .slideContainer { overflow: hidden; height: 16.8rem;}
+.calendarBody .time .apmBody { flex: 1;}
+.calendarBody .time .apmBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
+.calendarBody .time .hourBody { width: 7.6rem; margin: 0 0.8rem;}
+.calendarBody .time .hourBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
+.calendarBody .time .minuteBody { width: 7.6rem;}
+.calendarBody .time .minuteBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
+.calendarBody .buttonFlex { display: flex; margin: 3.2rem -0.4rem 0;}
+.calendarBody .buttonFlex button { margin: 0 0.4rem;}
 
 
 

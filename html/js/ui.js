@@ -59,9 +59,8 @@ const layerPopup = {
 			});
 		}
 	},
-	open : (id, callBack) => {
+	open : (id) => {
 		if(!layerPopup.obj[id]) {
-
 			layerPopup.init(id);
 			let layer = layerPopup.obj[id];
 			layer.wrap.addEventListener('click', ()=>{
@@ -70,25 +69,21 @@ const layerPopup = {
 		}
 
 		let layer = layerPopup.obj[id];
-
 		layer.wrap.classList.add('ready');
 		document.querySelector('html').classList.add('scrollLock');
 
 		setTimeout(()=>{
 			layer.wrap.classList.add('show');
 			layer.wrap.focus();
-			if(callBack) callBack();
 		},1)
 	},
-	close : (id, callBack) => {
+	close : (id) => {
 		let layer;
 		if(!id) {
 			let parent = findEl.parent(event.target, 'layerPopup');
 			id = parent.getAttribute('id');
 		}
-
 		layer = layerPopup.obj[id];
-
 		layer.wrap.classList.remove('show');
 		setTimeout(()=>{
 			if(layer.btn && layer.btn.tagName) layer.btn.focus();
@@ -101,30 +96,8 @@ const layerPopup = {
 					delete layerPopup.obj[id];
 				},1);
 			}
-			if(callBack) callBack();
 		},500);
 	},
-	loadOpen : (id, url, callBack) => {
-		let target = document.querySelector('.container');
-		let btn = event.currentTarget;
-
-		let httpRequest = new XMLHttpRequest();
-
-		httpRequest.onreadystatechange = function(){
-			if(this.readyState == 4 && this.status == 200) {
-				target.insertAdjacentHTML('beforeend', this.responseText);
-				layerPopup.open(id);
-				layerPopup.obj[id]['loadState'] = true;
-				if(btn) layerPopup.obj[id]['btn'] = btn;
-
-				tab.active();
-
-				if(callBack) callBack();
-			}
-		}
-		httpRequest.open('GET', url, true);
-		httpRequest.send();
-	}
 }
 
 const findEl = {

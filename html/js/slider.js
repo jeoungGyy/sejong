@@ -14,12 +14,12 @@ const slideOpt = {
 			delay: 5000,
 		},
 		speed: 500,
+		autoplay: false,
 		// observer: true,
 		// observeParents: true,
 	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
-		autoplay: false,
     slidesPerView: 'auto',
     spaceBetween: 20,
     slidesOffsetBefore : 20,
@@ -27,25 +27,35 @@ const slideOpt = {
 	},
 	/* UI-SJN-04-005 */
 	infoStoreSwiper: {
-		autoplay: false,
     slidesPerView: 'auto',
 		spaceBetween: 8,
 		slidesPerView: 2,
 	},
 	/* UI-SJN-04-009 */
 	infoReviewSwiper: {
-		autoplay: false,
     slidesPerView: 'auto',
 		spaceBetween: 4,
 		slidesPerView: 3,
 	},
 	/* UI-SJN-04-012 */
 	infoPictureSwiper: {
-		autoplay: false,
     navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+	},
+	/* UI-SJN-04-101L */
+	timeApmSwiper: {
+    direction: "vertical",
+		slidesPerView: 2,
+	},
+	timeHourSwiper: {
+		direction: "vertical",
+		slidesPerView: 3,
+	},
+	timeMinuteSwiper: {
+    direction: "vertical",
+		slidesPerView: 3,
 	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
