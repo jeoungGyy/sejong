@@ -1,4 +1,4 @@
-/* 정보 업무 글로벌 CSS
+/* 소통참여
 **********************************************/
 
 /* 공통 */
@@ -146,16 +146,6 @@
 .headTitle .tlControls .guide { font-size: 1.4rem; color: #aaa; letter-spacing: -0.04em;}
 .headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
 
-
-
-
-
-
-
-
-
-
-
 /* 장소공유 UI-SJN-04-001U */
 .info .subMenuGroup { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .info .infoMenu { overflow: hidden;}
@@ -176,7 +166,7 @@
 .info .morebutton .moreButton { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .info .morebutton .moreButton i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../public/image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
-/* 공유 경제 등록 - UI-SJN-04-004U */
+/* 공유경제 등록/수정 UI-SJN-04-004U */
 .info .grayBox { padding: 3.2rem 2rem; background-color: #F4F5F7;}
 .info .grayBox .text { line-height: 2.3rem; letter-spacing: -0.04em;}
 .info .approval { margin-top: 3.2rem; padding: 2.4rem 2rem; background-color: #fff;}
@@ -211,10 +201,10 @@
 .info .storeList.inline,
 .info .storeList.inline li { width: 50%; margin: 0;}
 
-/* 홍보 행사 UI-SJN-04-007U */
+/* 홍보/행사 UI-SJN-04-007U */
 .info .promote { padding: 1.6rem 2rem 6rem;}
 
-/* 리뷰대상 UI-SJN-04-009U */
+/* 리뷰 목록 UI-SJN-04-009U */
 .info .pictureReview { padding: 1.6rem 2rem;}
 .info .pictureReview .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
 .info .pictureReview .pictureBody .pictureList li.empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777; letter-spacing: -0.04em;}
@@ -261,24 +251,28 @@
 
 
 
+/* 민원
+**********************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 척척세종 UI-SJN-06-001L */
+.info .compHeader { padding: 0 2rem 1.6rem;}
+.info .compHeader h3 { display: flex; flex-direction: column; justify-content: center; height: 7.2rem; font-size: 2rem; letter-spacing: -0.04em;}
+.info .compHeader h3 .style { display: block; color: #6684EA;}
+.info .compHeader .operation { display: flex; align-items: center; height: 4rem; letter-spacing: -0.04em;}
+.info .compHeader .operation .box { display: flex; align-items: center; justify-content: center; width: 3.9rem; height: 2.4rem; margin-right: 0.8rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
+.info .compHeader .operation .box strong .gray { color: #555;}
+.info .compArea { padding: 2rem; background-color: #F4F5F7;}
+.info .compArea .caCon { padding: 1.6rem 1.6rem 3.2rem; letter-spacing: -0.04em; background-color: #fff;}
+.info .compArea .caCon ~ .caCon { margin-top: 1.6rem;}
+.info .compArea .caCon h4 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem; color: #000;}
+.info .compArea .caItem ~ .caItem { margin-top: 1.6rem;}
+.info .compArea .caItem .service { display: flex; align-items: center; height: 4rem;}
+.info .compArea .caItem .service .box { display: inline-flex; align-items: center; justify-content: center; height: 3.2rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd; border-radius: 1.6rem;}
+.info .compArea .caItem .caList { margin-top: 0.8rem;}
+.info .compArea .caItem .caList li { position: relative; padding-left: 1.6rem; line-height: 2.4rem;}
+.info .compArea .caItem .caList li::after { content: ''; position: absolute; left: 0; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.info .compArea .caItem .caList li .gray { color: #777;}
+.info .compArea .caItem .caList li .orange { color: #FD2020;}
 
 
 
