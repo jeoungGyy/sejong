@@ -154,7 +154,7 @@ table td { vertical-align: middle;}
 
 
 /* 버튼 */
-.button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
+.button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em; box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);}
 .button.blue { color: #fff; background-color: #6684EA;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 
@@ -183,7 +183,7 @@ table td { vertical-align: middle;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../public/image/common/ico_layer_close.png) no-repeat; background-size: cover;}
 .layerWrap .layerBody { padding-top: 0.8rem;}
-.layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem;}
+.layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
 .scrollLock body { overflow: hidden;}
 

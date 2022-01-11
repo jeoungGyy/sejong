@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../../pages/common/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../../pages/common/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<h2 class="visible"><div class="headerClone">신고하기</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="infoWrap">
+				<div class="reportArea">
+					<fieldset>
+						<legend>신고하기 선택</legend>
+						<ul class="labelList">
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list0" />
+									<label for="list0">개인정보 노출</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list1" />
+									<label for="list1">욕설/인신공격</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list2" />
+									<label for="list2">음란/선정성</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list3" />
+									<label for="list3">불법정보</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list4" />
+									<label for="list4">같은 내용 도배</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list5" />
+									<label for="list5">불법촬영물 등 유통신고</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="checkbox" id="list6" checked="checked" />
+									<label for="list6">기타</label>
+								</div>
+								<div class="textareaForm">
+									<textarea cols="10" rows="10" required="required" title="기사 사유 작성" placeholder="기타 사유를 작성해 주세요"></textarea>
+									<div class="byte">
+										<span>49</span>/300
+									</div>
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+
+					<div class="btnGroup">
+						<button type="button" class="button blue" onclick="layerPopup.open('layerReport');">확인</button>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div id="layerReport" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<h4>세종엔에서 알려드립니다.</h4>
+				<div class="layerBody">
+					<div class="pGroup">
+						<p>
+							정상적으로 신고 접수 되었습니다.<br />
+							세종엔 이용약관 및 운영정책에 따라 순차적으로 처리될 예정이며, 처리결 과는 별도로 답변드리지 않습니다.
+						</p>
+					</div>
+					<button type="button" class="button blue">확인</button>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+</div>
+</body>
+</html>
