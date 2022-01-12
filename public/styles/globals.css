@@ -174,15 +174,16 @@ table td { vertical-align: middle;}
 **********************************************/
 
 /* 공통 */
-.layerPopup { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
+.layerPopup { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; text-align: center; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
+.layerPopup::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
 .layerPopup.ready { display: block;}
 .layerPopup.show { opacity: 1;}
 .layerPopup.show .layerWrap { transform: translateY(0);}
-.layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem); background: #fff; border-radius: 0.4rem; vertical-align: middle; text-align: left; outline: none;}
+.layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem);  vertical-align: middle; text-align: left; background: #fff; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/ico_layer_close.png) no-repeat; background-size: cover;}
-.layerWrap .layerBody { padding-top: 0.8rem;}
+.layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
 .scrollLock body { overflow: hidden;}
@@ -231,6 +232,20 @@ table td { vertical-align: middle;}
 .calendarBody .time .minuteBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
 .calendarBody .buttonFlex { display: flex; margin: 3.2rem -0.4rem 0;}
 .calendarBody .buttonFlex button { margin: 0 0.4rem;}
+
+/* UI-SJN-08-001P */
+.labelBody .labelList li ~ li { border-top: 1px solid #f1f1f1;}
+.labelBody .labelList .labelForm { padding: 0 2rem;}
+
+
+
+
+
+
+
+
+
+
 
 
 

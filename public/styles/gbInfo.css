@@ -146,6 +146,21 @@
 .headTitle .tlControls .guide { font-size: 1.4rem; color: #aaa; letter-spacing: -0.04em;}
 .headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
 
+.labelList .labelForm { display: flex; align-items: center;}
+.labelList .labelForm label { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; font-size: 1.6rem; letter-spacing: -0.04em; cursor: pointer;}
+.labelList .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem;; background-color: #EAEDF2; background-image: url(../image/info/ico_checkbox2.png); background-repeat: no-repeat; background-position: center center; background-size: 1.3rem 0.95rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.labelList .labelForm input { position: absolute; opacity: 0;}
+.labelList .labelForm input:checked + label::after { background-color: #6684EA;}
+
+
+
+
+
+
+
+
+
+
 /* 장소공유 UI-SJN-04-001U */
 .info .subMenuGroup { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .info .infoMenu { overflow: hidden;}
@@ -243,11 +258,6 @@
 
 /* 신고하기 UI-SJN-04-102U */
 .info .reportArea { padding: 1.6rem 2rem 0;}
-.info .labelList .labelForm { display: flex; align-items: center;}
-.info .labelList .labelForm label { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; font-size: 1.6rem; letter-spacing: -0.04em; cursor: pointer;}
-.info .labelList .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem;; background-color: #EAEDF2; background-image: url(../image/info/ico_checkbox2.png); background-repeat: no-repeat; background-position: center center; background-size: 1.3rem 0.95rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.info .labelList .labelForm input { position: absolute; opacity: 0;}
-.info .labelList .labelForm input:checked + label::after { background-color: #6684EA;}
 
 
 
@@ -306,12 +316,11 @@
 .info .tabContent .sortHeader div select:nth-child(2) { width: 10rem;}
 .info .tabContent .sortHeader .btnSort { width: 2rem; height: 2rem; padding: 2rem 0 2rem 2rem; text-indent: -9999rem; background: url(../image/info/ico_filter.png) no-repeat center/2rem;}
 .info .tabContent .btnCompGroup { display: flex; align-items: center; justify-content: center; height: 4.8rem; margin-top: 3.5rem; border-top: 1px solid #F2F2F2;}
-.info .tabContent .btnCompGroup .btnBody { color: #777;}
+.info .tabContent .btnCompGroup .btnBody { display: block; color: #777; letter-spacing: -0.04em;}
 .info .tabContent .btnCompGroup .btnBody::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-top: -0.2rem; vertical-align: middle; background: url(../image/info/ico_button_blet.png) no-repeat center/cover;}
 .info .tabContent .btnCompGroup .btnBody .blue { color: #6684EA;}
-
+.info .sortList { margin-top: 1.6rem;}
 .info .sortList >li ~ li { margin-top: 3.5rem;}
-.info .sortList >li a { display: block; color: #555; letter-spacing: -0.04em;}
 .info .sortList >li figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
 .info .sortList >li figure img { width: 100%; height: auto; vertical-align: top;}
 .info .sortList >li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
@@ -319,23 +328,25 @@
 .info .sortList >li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
 .info .sortList >li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .info .sortList >li figure figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
-.info .sortList >li h4 { padding: 1.2rem 0 0.9rem; font-size: 1.6rem; color: #111;}
-.info .sortList >li h4 span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
-.info .sortList >li h4 span.ing { background-color: #32BBED;}
-.info .sortList >li h4 span.schedule { background-color: #4EC457;}
-.info .sortList >li h4 span.closing { background-attachment: #AAA;}
-.info .sortList >li .text { margin-top: 0.9rem;}
-.info .sortList >li .text .center { display: flex; align-items: center; justify-content: space-between;}
+.info .sortList >li .text .center { display: flex; align-items: center; justify-content: space-between; letter-spacing: -0.04em;}
 .info .sortList >li .text .center p { font-size: 1.4rem; color: #777;}
+.info .sortList >li .text .center p.skyblue { color: #32BBED;}
 .info .sortList >li .text .items { margin-top: 1.3rem;}
-.info .sortList >li .text .items li { position: relative; padding-left: 1.2rem; line-height: 2.4rem;}
+.info .sortList >li .text .items li { position: relative; padding-left: 1.2rem; color: #555; line-height: 2.4rem; letter-spacing: -0.04em;}
 .info .sortList >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
-
-
-
-
-
-
+.info .sortList >li .title { padding: 1.2rem 0 0.9rem;}
+.info .sortList >li .title h4 { display: inline-block; font-size: 1.6rem; color: #111; letter-spacing: -0.04em; vertical-align: middle;}
+.info .sortList >li .title .sub { display: inline-block; vertical-align: middle;}
+.info .sortList >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
+.info .sortList >li .title .sub span.ing { background-color: #32BBED;}
+.info .sortList >li .title .sub span.schedule { background-color: #4EC457;}
+.info .sortList >li .title .sub span.closing { background-color: #aaa;}
+.info .sortList >li .title .sub span.blue { background-color: #6684EA;}
+.info .sortList >li .title .sub span.wood { background-color: #D69630;}
+.info .sortList.boxStyle >li { padding: 1.9rem 1.6rem 2.2rem; border: 1px solid #EAEAEA;}
+.info .sortList.boxStyle >li ~ li { margin-top: 1.6rem;}
+.info .sortList.boxStyle >li .title .sub { display: block;}
+.info .sortList.boxStyle >li .title h4 { display: block; margin-top: 0.9rem;}
 
 
 
