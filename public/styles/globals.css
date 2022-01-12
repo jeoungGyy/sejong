@@ -235,8 +235,8 @@ table td { vertical-align: middle;}
 .calendarBody .buttonFlex button { margin: 0 0.4rem;}
 
 /* UI-SJN-08-001P */
-.labelBody .labelList li ~ li { border-top: 1px solid #f1f1f1;}
-.labelBody .labelList .labelForm { padding: 0 2rem;}
+.labelBody .items-label li ~ li { border-top: 1px solid #f1f1f1;}
+.labelBody .items-label .labelForm { padding: 0 2rem;}
 
 
 
