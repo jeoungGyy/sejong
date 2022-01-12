@@ -35,7 +35,7 @@
 
 .ecoForm { margin-top: 3.2rem; padding: 0 2rem;}
 .ecoForm .list >li ~ li { margin-top: 1.6rem;}
-.ecoForm .list >li input:focus + label { outline: 2px solid #000; border-radius: 2px;}
+/* .ecoForm .list >li input:focus + label { outline: 2px solid #000; border-radius: 2px;} */
 .ecoForm .list >li .labelH { display: flex; align-items: center; height: 4rem;}
 .ecoForm .list >li .labelH label { font-size: 1.6rem; font-weight: 700; color: #111; letter-spacing: -0.04em;}
 .ecoForm .list >li .labelH .required { margin-left: 0.8rem; font-size: 1.1rem; color: #FD2020;}
@@ -108,13 +108,7 @@
 
 .eList li { margin-top: 1.6rem;}
 .eList li ~ li { margin-top: 2.4rem;}
-.eList li figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.eList li figure img { width: 100%; height: auto; vertical-align: top;}
-.eList li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
-.eList li figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
-.eList li figure span.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
-.eList li figure span.gray { background-color: rgba(85, 85, 85, 0.9);}
-.eList li figure span.wood { background-color: #D69630;}
+.eList li figure { height: 18rem;}
 .eList li a { display: block;}
 .eList li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem; letter-spacing: -0.04em;}
 .eList li a h4 .allTime { display: inline-block; height: 1.8rem; margin-left: 0.3rem; padding: 0 0.3rem; font-size: 1.3rem; font-weight: 400; color: #fff; line-height: 1.8rem; background-color: #D69630;}
@@ -122,6 +116,15 @@
 .eList li .hashTag { margin-top: 0.4rem;}
 .eList li .hashTag span { display: inline-block; margin-right: 0.3rem; padding: 0.4rem; font-size: 1.4rem; color: #777; background-color: #F8F8F8;}
 .eList li .hashTag span::before { content: '#';}
+
+figure { overflow: hidden; position: relative; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}
+figure img { width: 100%; height: auto; vertical-align: top;}
+figure .label { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
+figure .label.blue { background-color: rgba(102, 132, 234, 0.9);}
+figure .label.skyBlue { background-color: rgba(50, 187, 237, 0.9);}
+figure .label.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
+figure .label.wood { background-color: #D69630;}
+figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 
 .visibleButton { margin-top: 0.3rem;}
 .visibleButton button { position: relative; font-size: 1.4rem; color: #6684EA; line-height: 2.2rem; letter-spacing: -0.04em;}
@@ -154,6 +157,22 @@
 .labelList .labelForm input { position: absolute; opacity: 0;}
 .labelList .labelForm input:checked + label::after { background-color: #6684EA;}
 
+.btnCompGroup { display: flex; align-items: center; justify-content: center; height: 4.8rem;}
+.btnCompGroup .btnBody { display: block; color: #777; letter-spacing: -0.04em;}
+.btnCompGroup .btnBody::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-top: -0.2rem; vertical-align: middle; background: url(../image/info/ico_button_blet.png) no-repeat center/cover;}
+.btnCompGroup .btnBody .blue { color: #6684EA;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,11 +192,11 @@
 .info .facility { padding: 1.6rem 2rem 3.2rem;}
 .info .facility .fList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.4rem;}
 .info .facility .fList li { width: calc(100% / 4 - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
-.info .facility .fList li a { display: block; overflow: hidden; position: relative; height: 7.7rem; text-align: center; background-color: #F4F5F7;}
-.info .facility .fList li a img { width: 100%; height: 100%;}
-.info .facility .fList li a figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
-.info .facility .fList li a figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.04em;}
-.info .facility .fList li a figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
+.info .facility .fList li figure { display: block; height: 7.7rem; text-align: center;}
+.info .facility .fList li figure img { width: 100%; height: 100%;}
+.info .facility .fList li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
+.info .facility .fList li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.04em;}
+.info .facility .fList li figure figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
 .info .economy { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
 .info .morebutton { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem;}
 .info .morebutton .moreButton { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
@@ -207,9 +226,7 @@
 .info .storeList { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
 .info .storeList li { width: calc(100% / 2 - 0.8rem); min-height: 20.4rem; margin: 0.8rem 0 0 0.8rem;}
 .info .storeList li a.picture { display: block; overflow: hidden;}
-.info .storeList li a.picture figure { display: block; overflow: hidden; position: relative; height: 10rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.info .storeList li a.picture figure img { width: 100%; height: auto; vertical-align: top;}
-.info .storeList li a.picture figure span { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: rgba(51, 51, 51, 0.8);}
+.info .storeList li a.picture figure { display: block; height: 10rem;}
 .info .storeList li a.text { display: block; margin-top: 1.2rem; color: #555; letter-spacing: -0.04em;}
 .info .storeList li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
 .info .storeList li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
@@ -241,12 +258,13 @@
 .info .reviewForm { padding: 0 2rem 6rem;}
  
 /* 사진 리뷰 UI-SJN-04-011P */
-.info .pictureGridArea { display: grid; grid-template-columns: repeat(3, 1fr); margin: -0.4rem -0.2rem 0; padding: 1.6rem 2rem 6rem;}
-.info .pictureGridArea li { position: relative; margin: 0.4rem 0.2rem 0;}
-.info .pictureGridArea li figure { overflow: hidden; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.info .pictureGridArea li figure img { width: 100%; vertical-align: top;}
-.info .pictureGridArea li .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.8rem; bottom: 0.8rem; height: 2.4rem; padding: 0 0.8rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
-.info .pictureGridArea li .blind span::before { content: '+';}
+.info .pictureGridArea { padding: 1.6rem 2rem 6rem;}
+.info .pgList { display: grid; grid-template-columns: repeat(3, 1fr); margin: -0.4rem -0.2rem 0;}
+.info .pgList li { position: relative; margin: 0.4rem 0.2rem 0;}
+.info .pgList li figure { height: 10.4rem;}
+.info .pgList li figure img { height: 100%;}
+.info .pgList li .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.8rem; bottom: 0.8rem; height: 2.4rem; padding: 0 0.8rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
+.info .pgList li .blind span::before { content: '+';}
 
 /* 사진 리뷰 UI-SJN-04-012P */
 .info .pictureArea { padding: 1.6rem 2rem 4rem;}
@@ -288,13 +306,44 @@
 
 
 
-/* 민원
+/* 문화
 **********************************************/
 
-
-
-
-
+/* 문화행사캘린더 UI-SJN-09-001P */
+.info .calendarHeader { overflow: hidden;}
+.info .calendarHeader ul { display: flex; align-items: center; height: 7.6rem;}
+.info .calendarHeader ul li { width: 4.4rem; height: 6rem;}
+.info .calendarHeader ul li button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 100%; height: 100%; border: 1px solid #EAEAEA;}
+.info .calendarHeader ul li button .tD { display: block; font-size: 1.6rem;}
+.info .calendarHeader ul li button .tW { display: block; font-size: 1.4rem; color: #555;}
+.info .calendarHeader ul li button.doday { border-color: #6684EA; background-color: #6684EA;}
+.info .calendarHeader ul li button.doday .tD { font-weight: 700; color: #fff;}
+.info .calendarHeader ul li button.doday .tW { color: #fff;}
+.info .character { background-color: #34384E;}
+.info .character a { display: flex; justify-content: center; flex-direction: column; position: relative; height: 7.2rem; padding-left: 6.4rem; letter-spacing: -0.04em;}
+.info .character a .t { font-size: 1.4rem; color: #D69630;}
+.info .character a .st { margin-top: 0.4rem; font-size: 1.4rem; color: #fff;}
+.info .character a .link { position: absolute; right: 1.8rem; top: 50%; margin-top: -1.1rem; font-size: 1.6rem; font-weight: bold; color: #fff;}
+.info .character a .link::after { content: ''; display: inline-block; width: 0.7rem; height: 1.15rem; margin-left: 0.5rem; background: url(../image/info/ico_arrow_right.png) no-repeat center/cover;}
+.info .character a .icon { display: flex; align-items: center; justify-content: center; position: absolute; left: 2rem; top: 50%; width: 3.2rem; height: 3.2rem; margin-top: -1.6rem; text-align: center; background-color: #D69630; border-radius: 50%;}
+.info .character a .icon span { display: inline-block; width: 1.8rem; height: 1.9rem; background: url(../image/info/ico_doco_bell.png) no-repeat center/cover;}
+.info .festival { padding: 1.6rem 2rem 3rem;}
+.info .festival .fList { margin-top: 0.8rem;}
+.info .festival .fList figure img { width: 100%; height: auto; vertical-align: top;}
+.info .festival .fList .flFlex { display: flex; justify-content: space-between; flex: 1; margin-top: 1.6rem ;}
+.info .festival .fList .flFlex .flHeader { letter-spacing: -0.04em;}
+.info .festival .fList .flFlex .flHeader h4 { font-size: 1.6rem;}
+.info .festival .fList .flFlex .flHeader p { margin-top: 0.8rem; color: #555;}
+.info .festival .fList .flFlex .movie { width: 9.2rem; height: 5.2rem; margin-left: 1rem; background-color: #ddd;}
+.info .culture { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .culture .cList li { display: flex; justify-content: space-between;}
+.info .culture .cList li ~ li { margin-top: 1.6rem;}
+.info .culture .cList li figure { width: 12rem; height: 16rem; margin-right: 1.2rem;}
+.info .culture .cList li .text { flex: 1; letter-spacing: -0.04em;}
+.info .culture .cList li .text h4 { font-size: 1.6rem;}
+.info .culture .cList li .text .t { margin-top: 0.4rem; color: #555;}
+.info .culture .cList li .text .st { margin-top: 0.8rem; color: #555; line-height: 2.2rem;}
+.info .culture .btnCompGroup { margin-top: 1.6rem;}
 
 
 /* 교육
@@ -317,14 +366,10 @@
 .info .tabContent .sortHeader div select:nth-child(1) { width: 12rem;}
 .info .tabContent .sortHeader div select:nth-child(2) { width: 10rem;}
 .info .tabContent .sortHeader .btnSort { width: 2rem; height: 2rem; padding: 2rem 0 2rem 2rem; text-indent: -9999rem; background: url(../image/info/ico_filter.png) no-repeat center/2rem;}
-.info .tabContent .btnCompGroup { display: flex; align-items: center; justify-content: center; height: 4.8rem; margin-top: 3.5rem; border-top: 1px solid #F2F2F2;}
-.info .tabContent .btnCompGroup .btnBody { display: block; color: #777; letter-spacing: -0.04em;}
-.info .tabContent .btnCompGroup .btnBody::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-top: -0.2rem; vertical-align: middle; background: url(../image/info/ico_button_blet.png) no-repeat center/cover;}
-.info .tabContent .btnCompGroup .btnBody .blue { color: #6684EA;}
+.info .tabContent .btnCompGroup { margin-top: 3.5rem; border-top: 1px solid #F2F2F2;}
 .info .sortList { margin-top: 1.6rem;}
 .info .sortList >li ~ li { margin-top: 3.5rem;}
-.info .sortList >li figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem;}
-.info .sortList >li figure img { width: 100%; height: auto; vertical-align: top;}
+.info .sortList >li figure { height: 18rem;}
 .info .sortList >li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center; letter-spacing: -0.04em;}
 .info .sortList >li figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
 .info .sortList >li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }

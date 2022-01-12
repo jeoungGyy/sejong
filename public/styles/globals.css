@@ -54,7 +54,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,d
   text-size-adjust : none;
 }
 body {
-	font: 1.5rem/1.5 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+	font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
 	color:#111;
 	-webkit-text-size-adjust: none;
 }

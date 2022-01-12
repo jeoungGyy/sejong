@@ -57,6 +57,13 @@ const slideOpt = {
     direction: "vertical",
 		slidesPerView: 3,
 	},
+	/* UI-SJN-09-001P */
+	infoCalendarSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 4,
+    slidesOffsetBefore : 20,
+    slidesOffsetAfter: 20,
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;
