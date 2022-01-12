@@ -145,6 +145,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/info/ico_zoom.png) no-repeat center/cover;}
 .headTitle .text { overflow: hidden; display: -webkit-box; margin-top: 1.2rem; font-size: 1.6rem; letter-spacing: -0.04em; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 2.2rem; line-height: 2.4rem;}
 .headTitle .text.show { -webkit-line-clamp: inherit;}
+.headTitle .text.short { margin-top: 0.4rem;}
 .headTitle .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
 .headTitle .tlControls .more { color: #777; letter-spacing: -0.04em;}
 .headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
@@ -268,10 +269,9 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 
 /* 사진 리뷰 UI-SJN-04-012P */
 .info .pictureArea { padding: 1.6rem 2rem 4rem;}
-.info .pictureArea .pgList >li ~ li { margin-top: 0.4rem;}
-.info .pictureArea .pgList >li figure img { width: 100%; height: auto; vertical-align: top;}
-.info .pictureArea .pictureBody { position: relative;}
-.info .pictureArea .pictureBody .slideContainer { overflow: hidden;}
+.info .pictureArea .pictureList { overflow: hidden; margin: 1.6rem -2rem 0; padding: 0 2rem;}
+.info .pictureArea .pictureList li { width: 10rem;}
+.info .pictureArea .pictureList li figure { height: 5.6rem;}
 .info .pictureArea .headTitle { margin-top: 1.6rem;}
 .info .pictureArea .swiper-button-next,
 .info .pictureArea .swiper-button-prev { text-indent: -9999rem;}

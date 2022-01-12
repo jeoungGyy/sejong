@@ -39,10 +39,8 @@ const slideOpt = {
 	},
 	/* UI-SJN-04-012 */
 	infoPictureSwiper: {
-    navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+    slidesPerView: 'auto',
+		spaceBetween: 4,
 	},
 	/* UI-SJN-04-101L */
 	timeApmSwiper: {
