@@ -37,11 +37,6 @@ const slideOpt = {
 		spaceBetween: 4,
 		slidesPerView: 3,
 	},
-	/* UI-SJN-04-012 */
-	infoPictureSwiper: {
-    slidesPerView: 'auto',
-		spaceBetween: 4,
-	},
 	/* UI-SJN-04-101L */
 	timeApmSwiper: {
     direction: "vertical",
@@ -66,4 +61,28 @@ const slideOpt = {
     let merged = {...this.default, ...this[key]}
 		return merged;
 	}
+}
+
+/* 
+	UI-SJN-04-012 
+	- 썸네일 있는 Swipe 별도 관리
+*/
+function gallerySlide() {
+	const gThumb = document.querySelector('.galleryThumb');
+	const gView = document.querySelector('.galleryView');
+	const galleryThumb = new Swiper(gThumb, {
+		slidesPerView: 'auto',
+		spaceBetween: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	const galleryView = new Swiper(gView, {
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
+		thumbs: {
+			swiper: galleryThumb,
+		},
+	});
 }

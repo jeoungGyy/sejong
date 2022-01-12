@@ -169,6 +169,7 @@ table td { vertical-align: middle;}
 .swiper-rtl .swiper-button-next { left: -1.2rem; right: auto;}
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev { right: -1.2rem; left: auto;}
+.swiper-slide-thumb-active figure {	border: 1px solid #000;}
 
 /* 레이어
 **********************************************/
