@@ -128,7 +128,7 @@ table td { vertical-align: middle;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -9.6rem 0/48rem 4.8rem;;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -9.6rem 0/48rem 4.8rem;}
 .subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
 .subHeader h2 .number { color: #6684EA;}
 
@@ -188,7 +188,7 @@ table td { vertical-align: middle;}
 .layerWrap.full .headerBtn .btnClose { position: inherit; right: inherit; top: inherit;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -14.4rem 0/48rem 4.8rem;;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -14.4rem 0/48rem 4.8rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
