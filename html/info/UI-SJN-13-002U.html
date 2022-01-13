@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<h2 class="visible"><div class="headerClone">견학신청</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="infoWrap bottomFixed">
+				<div class="tripHead">
+					<a href="#" class="intro">
+						스마트도시 세종! 도시통합정보센터를 소개합니다
+					</a>
+					<div class="reserve">
+						<p class="t">반드시 <b>5인 이상</b>, 방문 7일 전 까지 예약</p>
+						<p class="st">25인 이상은 별도 문의</p>
+						<ul>
+							<li class="tel">044-300-2499</li>
+							<li class="email">enable@korea.kr</li>
+						</ul>
+						<a href="#" class="link">
+							<strong>견학<br />절차</strong>
+							<i class="deco"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="tripCalendar calendarBody">
+					<div id="infoNotesSwiper" class="notes">
+						<div class="slideContainer">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide complete">예약완료</div>
+								<div class="swiper-slide wait">예약대기</div>
+								<div class="swiper-slide possible">예약가능</div>
+								<div class="swiper-slide impossible">예약불가</div>
+								<div class="swiper-slide companion">예약반려</div>
+								<div class="swiper-slide modify">예약수정</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						slider.active('infoNotesSwiper')
+					</script>
+
+					<div class="calendar">
+						<div class="cbHead">
+							<button type="button" class="prev">이전 달</button>
+							<div class="year">
+								<select title="년도 선택">
+									<option>2021</option>
+									<option>2022</option>
+									<option>2023</option>
+								</select>년
+								<select title="월 선택">
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>월
+							</div>
+							<button type="button" class="next">다음 달</button>
+						</div>
+						<ul class="cHead">
+							<li>일</li>
+							<li>월</li>
+							<li>화</li>
+							<li>수</li>
+							<li>목</li>
+							<li>금</li>
+							<li>토</li>
+						</ul>
+						<ul class="cList reservation">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li><button type="button">1</button></li>
+							<li><button type="button">2</button><span class="complete">01:00</span></li>
+							<li><button type="button">3</button><span class="wait">24:00</span></li>
+							<li><button type="button">4</button><span class="possible">14:00</span></li>
+							<li><button type="button">5</button><span class="impossible">14:00</span></li>
+							<li><button type="button" class="today">오늘</button></li>
+							<li><button type="button">7</button><span class="companion">14:00</span></li>
+							<li><button type="button">8</button><span class="modify">14:00</span></li>
+							<li><button type="button">9</button></li>
+							<li><button type="button">10</button></li>
+							<li><button type="button">11</button></li>
+							<li><button type="button">12</button></li>
+							<li><button type="button">13</button></li>
+							<li><button type="button">14</button></li> <!-- today 오늘 표시 -->
+							<li><button type="button">15</button></li>
+							<li><button type="button">16</button></li>
+							<li><button type="button">17</button></li>
+							<li><button type="button">18</button></li>
+							<li><button type="button">19</button></li>
+							<li><button type="button">20</button></li>
+							<li><button type="button">21</button></li>
+							<li><button type="button">22</button></li>
+							<li><button type="button">23</button></li>
+							<li><button type="button">24</button></li>
+							<li><button type="button">25</button></li> <!-- select 선택일 -->
+							<li><button type="button">26</button></li>
+							<li><button type="button">27</button></li>
+							<li><button type="button">28</button></li>
+							<li><button type="button">29</button></li>
+							<li><button type="button">30</button></li>
+							<li><button type="button">31</button></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="line-default">
+					<fieldset class="form-default">
+						<legend>견학 신청 폼</legend>
+						<ul class="items-form">
+							<li>
+								<div class="labelH">
+									<label for="tempText0">견학희망일</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText0" readonly="readonly" required="required" value="2021-12-21(목) 14:00" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText1">이름</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText1" required="required" placeholder="이름을 입력하세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText2">휴대전화</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText2" required="required" placeholder="&quot; -&quot;  없이 입력하세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText3">견학인원</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText3" required="required" placeholder="숫자만 입력하세요" />
+									<p class="hWord">정부방역지침에 따라 최대 12명까지 신청 가능합니다.</p>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText2">구분</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<ul class="item-switch">
+										<li>
+											<p>미취학</p>
+											<div class="switch">
+												<input type="checkbox" id="switch0" title="구분 - 미취학 설정">
+												<label for="switch0"></label>
+											</div>
+										</li>
+										<li>
+											<p>초등학생</p>
+											<div class="switch">
+												<input type="checkbox" id="switch1" title="구분 - 초등학생 설정">
+												<label for="switch1"></label>
+											</div>
+										</li>
+										<li>
+											<p>중학생</p>
+											<div class="switch">
+												<input type="checkbox" id="switch2" checked="checked" title="구분 - 중학생 설정">
+												<label for="switch2"></label>
+											</div>
+										</li>
+										<li>
+											<p>고등학생</p>
+											<div class="switch">
+												<input type="checkbox" id="switch3" title="구분 - 고등학생 설정">
+												<label for="switch3"></label>
+											</div>
+										</li>
+										<li>
+											<p>일반인</p>
+											<div class="switch">
+												<input type="checkbox" id="switch4" title="구분 - 일반인 설정">
+												<label for="switch4"></label>
+											</div>
+										</li>
+										<li>
+											<p>외국인</p>
+											<div class="switch">
+												<input type="checkbox" id="switch5" title="구분 - 외국인 설정">
+												<label for="switch5"></label>
+											</div>
+										</li>
+										<li>
+											<p>대학생</p>
+											<div class="switch">
+												<input type="checkbox" id="switch6" title="구분 - 대학생 설정">
+												<label for="switch6"></label>
+											</div>
+										</li>
+										<li>
+											<p>공공기관</p>
+											<div class="switch">
+												<input type="checkbox" id="switch7" title="구분 - 공공기관 설정">
+												<label for="switch7"></label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>장소</label> <span class="required">필수</span>
+								</div>
+								<div class="adressForm">
+									<button type="button" class="btnOpen"><span>장소 찾기</span></button>
+									<input type="text" required="required" placeholder="장소 검색" />
+									<input type="text" required="required" placeholder="장소명을 입력해주세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText4">방문 목적</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<select id="tempText4 " required="required">
+										<option>기타</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText5">추가 요청 사항</label>
+								</div>
+								<div class="textareaForm">
+									<textarea id="tempText5" cols="10" rows="10" placeholder="추가 요청 사항을 입력하세요"></textarea>
+									<div class="byte">
+										<span>49</span>/300
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText5">개인정보 수집 및 활용동의</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<textarea id="tempText5" cols="10" rows="5" readonly="readonly">도시통합정보센터 견학신청
+관련
+개인정보보호법정보주체의동의를받은범위에서만수집가능(법제15조)
+개인정보 항목
+기본인적사항 : 성명, 휴대전화번호, 주소
+보유기간 : 견학신청 종료 후 5일 이내
+고지사항
+귀하가 입력하신 정보는 견학신청 접수용도로만 활용되며, 그 외 다른 목적으로는 활용되지 않습니다.
+									</textarea>
+									<div class="agree">
+										<input type="checkbox" id="list0"><label for="list0">동의함</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
+
+				<div class="btnGroup">
+					<button type="button" class="button blue">확인</button>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

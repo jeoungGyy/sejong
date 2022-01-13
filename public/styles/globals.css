@@ -2,8 +2,8 @@
 **********************************************/
 
 @media screen and (min-width: 0) { html {font-size: 48%;}}
-@media screen and (min-width: 320px) { html {font-size: 53.33%;}}
-@media screen and (min-width: 360px) { html {font-size: 62.5%;}}
+@media screen and (min-width: 300px) { html {font-size: 53.33%;}}
+@media screen and (min-width: 350px) { html {font-size: 62.5%;}}
 @media screen and (min-width: 412px) { html {font-size: 67%;}}
 @media screen and (min-width: 768px) { html {font-size: 80%;}}
 
@@ -56,6 +56,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,d
 body {
 	font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
 	color:#111;
+	letter-spacing: -0.04em;
 	-webkit-text-size-adjust: none;
 }
 
@@ -82,9 +83,9 @@ textarea::placeholder { letter-spacing: -0.04em;}
 button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
-textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.2rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
+textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.4rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
 textarea[disabled],
-textarea[readonly] { background-color:#ccc;}
+textarea[readonly] { color: #aaa; background-color:#F4F5F7;}
 fieldset,
 img { border:0;}
 ul, ol { list-style:none;}
@@ -215,14 +216,25 @@ table td { vertical-align: middle;}
 .calendarBody .cbHead >button.prev { background: url(../image/common/ico_calendar_prev.png) no-repeat center/cover;}
 .calendarBody .cbHead >button.next { background: url(../image/common/ico_calendar_next.png) no-repeat center/cover;}
 .calendarBody .cbHead .year { flex: 1; display: flex; align-items: center; justify-content: center;}
-.calendarBody .cbHead .year .ymBtn { font-size: 1.8rem; font-weight: 700;}
+.calendarBody .cbHead .year select { padding-left: 0; font-weight: 700; border: none;}
+.calendarBody .cbHead .year select:nth-child(1) { width: 7rem;}
+.calendarBody .cbHead .year select:nth-child(2) { width: 5rem; margin-left: 1rem;}
 .calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(7, 1fr); height: 4rem;}
 .calendarBody .calendar .cHead li { display: flex; align-items: center; justify-content: center; color: #777; letter-spacing: -0.04em;}
 .calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(7, 1fr);}
 .calendarBody .calendar .cList li { display: flex; align-items: center; justify-content: center; height: 3.6rem; letter-spacing: -0.04em;}
-.calendarBody .calendar .cList li button { display: block; width: 3.2rem; height: 3.2rem; font-family: var(--fontRoboto); font-size: 16px; color: #777;}
+.calendarBody .calendar .cList li button { display: block; width: 3.2rem; height: 3.2rem; font-family: var(--fontRoboto); font-size: 1.6rem; color: #777;}
 .calendarBody .calendar .cList li button.today { font-weight: 700; color: #6684EA;}
 .calendarBody .calendar .cList li button.select { font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 50%;}
+.calendarBody .calendar .cList.reservation li { height: 6rem; align-items: flex-start; flex-wrap: wrap;}
+.calendarBody .calendar .cList.reservation li span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-top: -0.8rem; padding: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #fff; letter-spacing: 0; border-radius: 1rem;}
+.calendarBody .calendar .cList.reservation li span.complete { background-color: #555;}
+.calendarBody .calendar .cList.reservation li span.wait { background-color: #CDD0D8;}
+.calendarBody .calendar .cList.reservation li span.possible { background-color: #6684EA;}
+.calendarBody .calendar .cList.reservation li span.impossible { background-color: #FD2020;}
+.calendarBody .calendar .cList.reservation li span.companion { background-color: #32BBED;}
+.calendarBody .calendar .cList.reservation li span.modify { background-color: #D69630;}
+
 .calendarBody .time { display: flex;}
 .calendarBody .time .slideContainer { overflow: hidden; height: 16.8rem;}
 .calendarBody .time .apmBody { flex: 1;}

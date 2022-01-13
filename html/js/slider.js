@@ -57,11 +57,19 @@ const slideOpt = {
     slidesOffsetBefore : 20,
     slidesOffsetAfter: 20,
 	},
+	/* UI-SJN-13-002U */
+	infoNotesSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 10,
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;
 	}
 }
+
+
+
 
 /* 
 	UI-SJN-04-012 
