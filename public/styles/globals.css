@@ -126,9 +126,9 @@ table td { vertical-align: middle;}
 .stickyHeader .header { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPrev i { display: inline-block; width: 1.8rem; height: 1.4rem; margin-top: 0.4rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/auto 100%;}
+.subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/header_list.png) no-repeat center/auto 100%;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -9.6rem 0/24rem 4.8rem;;}
 .subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
 .subHeader h2 .number { color: #6684EA;}
 
@@ -184,7 +184,7 @@ table td { vertical-align: middle;}
 .layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem);  vertical-align: middle; text-align: left; background: #fff; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; bottom: 0; left: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/ico_layer_close.png) no-repeat; background-size: cover;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -14.4rem 0/24rem 4.8rem;;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
@@ -223,10 +223,11 @@ table td { vertical-align: middle;}
 .calendarBody .calendar .cHead li { display: flex; align-items: center; justify-content: center; color: #777; letter-spacing: -0.04em;}
 .calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(7, 1fr);}
 .calendarBody .calendar .cList li { display: flex; align-items: center; justify-content: center; height: 3.6rem; letter-spacing: -0.04em;}
-.calendarBody .calendar .cList li button { display: block; width: 100%; height: 3.2rem; font-family: var(--fontRoboto); font-size: 1.6rem; color: #777;}
+.calendarBody .calendar .cList li button { display: block; width: 3.2rem; height: 3.2rem; font-family: var(--fontRoboto); font-size: 1.6rem; color: #777;}
 .calendarBody .calendar .cList li button.today { font-weight: 700; color: #6684EA;}
 .calendarBody .calendar .cList li button.select { font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 50%;}
 .calendarBody .calendar .cList.reservation li { height: 6rem; align-items: flex-start; flex-wrap: wrap;}
+.calendarBody .calendar .cList.reservation li button { width: 100%;}
 .calendarBody .calendar .cList.reservation li span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-top: -0.8rem; padding: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #fff; letter-spacing: 0; border-radius: 1rem;}
 .calendarBody .calendar .cList.reservation li span.complete { background-color: #555;}
 .calendarBody .calendar .cList.reservation li span.wait { background-color: #CDD0D8;}

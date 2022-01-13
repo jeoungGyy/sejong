@@ -118,7 +118,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .button-visible button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
 .headTitle .tlHead { display: flex; align-items: center; height: 4rem;}
-.headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/info/ico_profile.png) no-repeat center/cover; border-radius: 50%;}
+.headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -19.2rem 0/24rem 4.8rem; border-radius: 50%;}
 .headTitle .tlHead strong { margin-left: 0.4rem;}
 .headTitle .tlHead span { margin-left: 0.8rem; color: #aaa;}
 .headTitle .tlHead span::after { content: 'ㆍ';}
@@ -128,7 +128,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .headTitle .tlHead.my .report { display: none;}
 .headTitle figure { overflow: hidden; position: relative; height: 18rem; margin-top: 0.8rem;}
 .headTitle figure img { width: 100%; height: auto; vertical-align: top;}
-.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/info/ico_zoom.png) no-repeat center/cover;}
+.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -16.8rem 0/24rem 4.8rem;;}
 .headTitle .text { overflow: hidden; margin-top: 1.2rem; font-size: 1.6rem; line-height: 2.4rem;}
 .headTitle .text.show { -webkit-line-clamp: inherit;}
 .headTitle .text.short { margin-top: 0.4rem;}
@@ -159,16 +159,16 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 
 .header-icons { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
 .header-icons button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
-.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem;}
+.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background-image: url(../image/info/split_40.png); background-repeat: no-repeat; background-size: 20rem 4rem;}
 .header-icons button.good { padding-left: 2.2rem;}
-.header-icons button.good::after { left: 0; background: url(../image/info/ico_good.png) no-repeat center/auto 100%;}
+.header-icons button.good::after { left: 0; background-position: -6rem 0;}
 .header-icons button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
-.header-icons button.comment::after { left: 0; background: url(../image/info/ico_comment.png) no-repeat center/auto 100%;}
+.header-icons button.comment::after { left: 0; background-position: -8rem 0;}
 .header-icons button.favorite { width: 2rem; text-indent: -9999rem;}
-.header-icons button.favorite::after { right: 0; background: url(../image/info/ico_favorite.png) no-repeat 0 0 /2rem 4rem;}
+.header-icons button.favorite::after { right: 0; background-position: -10rem 0;}
 .header-icons button.favorite.active::after { background-position-y: -2rem;}
 .header-icons button.sharing { width: 2rem; text-indent: -9999rem;}
-.header-icons button.sharing::after { right: 0; background: url(../image/info/ico_sharing.png) no-repeat center/auto 100%;}
+.header-icons button.sharing::after { right: 0; background-position: -12rem 0;}
 
 .header-list { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
 .header-list .sel { width: 8rem; height: 4rem; padding-left: 0; border: none;}
@@ -186,7 +186,8 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .header-formSearch select { width: 7.6rem; height: 4rem; padding-left: 1.2rem; border-radius: 2rem;}
 .header-formSearch .send { flex: 1; position: relative; margin-left: 0.8rem;}
 .header-formSearch .send input { height: 4rem; padding: 0 3rem 0 1.2rem; background-color: #F4F5F7; border: 1px solid #EAEAEA; border-radius: 2rem;}
-.header-formSearch .send .btnSend { display: block; position: absolute; right: 0; top: 0; width: 2rem; height: 2rem; padding: 2rem; text-indent: -9999rem; background: url(../image/info/ico_form.png) no-repeat center/2rem;}
+.header-formSearch .send .btnSend { display: block; position: absolute; right: 0; top: 0; padding: 1rem;}
+.header-formSearch .send .btnSend i { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/info/split_40.png) no-repeat -4rem 0/20rem 4rem;}
 
 .header-news { padding: 1.6rem 0 0;}
 .header-news h3 { font-size: 1.8rem;}
@@ -202,7 +203,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .items-files { margin-top: 2.4rem;}
 .items-files li a { display: flex; align-items: center; height: 4rem; font-size: 1.4rem; color: #555;}
 .items-files li .dec { position: relative; padding-left: 2.8rem; color: #6684EA;}
-.items-files li .dec::before { content: ''; display: block; position: absolute; left: 0; top: -0.2rem; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/info/ico_file.png) no-repeat center/cover;}
+.items-files li .dec::before { content: ''; display: block; position: absolute; left: 0; top: -0.2rem; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background:  url(../image/info/split_48.png) no-repeat -7.2rem 0/24rem 4.8rem;;}
 .items-files li .title { margin-left: 0.8rem;}
 .items-files li .byte { position: relative; margin-left: 0.7rem; padding-left: 0.6rem;}
 .items-files li .byte::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
@@ -380,7 +381,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .tabContent .header-formSort div select { height: 4rem; padding-left: 0; border: none;}
 .info .tabContent .header-formSort div select:nth-child(1) { width: 12rem;}
 .info .tabContent .header-formSort div select:nth-child(2) { width: 10rem;}
-.info .tabContent .header-formSort .btnSort { width: 2rem; height: 2rem; padding: 2rem 0 2rem 2rem; text-indent: -9999rem; background: url(../image/info/ico_filter.png) no-repeat center/2rem;}
+.info .tabContent .header-formSort .btnSort i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -12rem 0/24rem 4.8rem;}
 .info .tabContent .button-more { margin-top: 3.5rem; border-top: 1px solid #F2F2F2;}
 .info .items-edu { margin-top: 1.6rem;}
 .info .items-edu >li ~ li { margin-top: 3.5rem;}
@@ -462,7 +463,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .viewBody .paragraph p { margin-top: 2.4rem; font-size: 1.6rem; color: #555;}
 .info .viewBody .viewCite { margin-top: 1.6rem;}
 .info .viewBody .viewCite span { color: #555;}
-.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/info/ico_article.png) no-repeat center/cover;}
+.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/info/split_40.png) no-repeat -2rem 0/20rem 4rem;}
 .info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
 .info .articleList { padding: 1.6rem 2rem 4rem; border-top: 0.6rem solid #F4F5F7;}
 
