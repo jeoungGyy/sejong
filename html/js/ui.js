@@ -9,7 +9,7 @@ const header = {
 
 		if(headerClone) {
 			let headerCloneText = headerClone.cloneNode(true);
-			subHeading.appendChild(headerCloneText);
+			subHeading && subHeading.appendChild(headerCloneText);
 			return;
 		}
 	},

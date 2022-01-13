@@ -13,51 +13,460 @@
 		.menutarget >div { margin-top: 1.5rem;}
 		.ia_h2 { margin-top: 1.5rem; font-size: 1.5rem; font-weight: 700;}
 		code { display: block; margin-top: 5px; padding: 1rem; font-family: "Malgun Gothic","맑은 고딕","Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size: 1.3rem; background-color: #f5f5f5;}
+		h4 { margin-top: 2rem;}
 	</style>
 </head>
 
 <body>
-<div id="wrap">
-	<div class="ia_h1">세종엔 스타일 가이드</div>
-	
-	<ul class="ia_tab">
-		<li><button type="button">기본</button></li>
-		<li><button type="button">info</button></li>
-		<li><button type="button">테이블</button></li>
-		<li><button type="button">레이어</button></li>
-	</ul>
+<div id="root">
+	<div class="container">
+		<div class="ia_h1">세종엔 스타일 가이드</div>
+		
+		<ul class="ia_tab">
+			<li><button type="button">기본</button></li>
+			<li><button type="button">info</button></li>
+			<li><button type="button">테이블</button></li>
+			<li><button type="button">레이어</button></li>
+		</ul>
 
-	<div class="menutarget">
-		<!-- 기본 -->
-		<div>
-			<p class="ia_h2">사용 폰트</p>
-			<code>
-				font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;<br>
-				color:#111;
-			</code>
-			<p class="ia_h2">info</p>
+		<div class="menutarget">
+			<!-- 기본 -->
 			<div>
-				
+				<h3>사용 폰트</h3>
+				<code>
+					font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;<br>
+					color:#111;
+				</code>
+				<p class="ia_h2">info</p>
+				<div>
+					
+				</div>
 			</div>
+			<!-- //기본 -->
+
+			<!-- items- 모음 -->
+			<div>
+				<h3>items- 모음</h3>
+
+				<h4>items-news</h4>
+				<div>
+					<ul class="items-news">
+						<li>
+							<a href="UI-SJN-11-002U.html">
+								<h4 class="lineBreake">2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-11-002U.html">
+								<h4 class="lineBreake">언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면 언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면</h4>
+								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-11-002U.html">
+								<h4 class="lineBreake">공지사항, 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면</h4>
+								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-files</h4>
+				<div>
+					<ul class="items-files">
+						<li>
+							<a href="#" download="download">
+								<span class="dec">첨부</span>
+								<span class="title">2021년 사회적경제 온라인….pdf</span> <!-- 디자인 상 CSS로 말줄임 불가능합니다. 글자수로 말줄임 해주세요. -->
+								<span class="byte">24kb</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" download="download">
+								<span class="dec">첨부</span>
+								<span class="title">2021년 사회적경제 온라인….pdf</span>
+								<span class="byte">24kb</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-articleList</h4>
+				<div>
+					<ul class="items-articleList">
+						<li><a href="#"><span class="tit">이전 글</span> <span class="con">2021년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
+						<li><a href="#"><span class="tit">다음 글</span> <span class="con">2022년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
+					</ul>
+				</div>
+
+				<h4>items-switch</h4>
+				<div>
+					<ul class="item-switch">
+						<li>
+							<p>미취학</p>
+							<div class="switch">
+								<input type="checkbox" id="switch0" title="구분 - 미취학 설정">
+								<label for="switch0"></label>
+							</div>
+						</li>
+						<li>
+							<p>초등학생</p>
+							<div class="switch">
+								<input type="checkbox" id="switch1" title="구분 - 초등학생 설정">
+								<label for="switch1"></label>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-trip</h4>
+				<div>
+					<ul class="items-trip">
+						<li>
+							<div class="time">20분</div>
+							<h4 class="title">세종특별자치시 스마트도시 소개</h4>
+							<ul>
+								<li>스마트도시 홍보동영상 상영</li>
+								<li>스마트도시 구축 현황 소개</li>
+							</ul>
+							<div class="facility">
+								<p>2층 관람실</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">10분</div>
+							<h4 class="title">도시통합정보센터 운영현황 견학</h4>
+							<ul>
+								<li>스마트도시 홍보동영상 상영</li>
+								<li>스마트도시 구축 현황 소개</li>
+							</ul>
+							<div class="facility">
+								<p>2층 관람실</p>
+							</div>
+						</li>
+						<li>
+							<div class="time">5분</div>
+							<h4 class="title">종료</h4>
+							<ul>
+								<li>기념촬영</li>
+								<li>질의 답변</li>
+							</ul>
+							<div class="facility">
+								<p>1층 로비</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-thumb</h4>
+				<div>
+					<ul class="items-thumb">
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp004.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp006.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp007.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp007.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp004.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp005.png" alt="">
+								</figure>
+								<div class="blind">
+									<span>3</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="UI-SJN-04-012P.html">
+								<figure>
+									<img src="../../public/image/temp/temp004.png" alt="">
+								</figure>
+							</a>
+						</li>
+						<li>
+							<figure></figure>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-edu</h4>
+				<div>
+					<ul class="items-edu">
+						<li>
+							<figure>
+								<span class="label blue">선착순</span>
+								<img src="../../public/image/temp/temp025.png" alt="">
+								<figcaption>
+									<p>직업/진로</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+							<div class="title">
+								<div class="sub">
+									<span class="ing">접수중</span> 
+								</div>
+								<h4><span class="ing">접수중</span> 고운동 직업체험학교</h4>
+							</div>
+							<div class="text">
+								<div class="center">
+									<p>(12월 3주차 체험학교)</p>
+									<p>고운청소년센터</p>
+								</div>
+								<ul class="items">
+									<li>참여대상 : 세종시 고운동 주민 13~15세 청소년</li>
+									<li>교육기관 : 2022년도 12월 마지막주</li>
+									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<figure>
+								<span class="label blue">추첨제</span>
+								<img src="../../public/image/temp/temp026.png" alt="">
+								<figcaption>
+									<p>프로그램 구분</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+							<div class="title">
+								<div class="sub">
+									<span class="schedule">접수예정</span>
+								</div>
+								<h4>고운동 직업체험학교</h4>
+							</div>
+							<div class="text">
+								<div class="center">
+									<p>(12월 3주차 체험학교)</p>
+									<p>고운청소년센터</p>
+								</div>
+								<ul class="items">
+									<li>참여대상 : 세종시 고운동 주민</li>
+									<li>교육기관 : 2022년도 12월 마지막주</li>
+									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<figure>
+								<span class="label blue">추첨제</span>
+								<figcaption>
+									<p>프로그램 구분</p>
+									<span class="blur"></span>
+								</figcaption>
+							</figure>
+							<div class="title">
+								<div class="sub">
+									<span class="closing">접수마감</span>
+								</div>
+								<h4>프로그램명칭</h4>
+							</div>
+							<div class="text">
+								<div class="center">
+									<p>프로그램 정보 (회차정보 등)</p>
+									<p>기관명</p>
+								</div>
+								<ul class="items">
+									<li>참여대상 : 세종시 고운동 주민</li>
+									<li>교육기관 : 2022년도 12월 마지막주</li>
+									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<h4>items-newStore</h4>
+				<div>
+					<ul class="items-newStore">
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">양식</span>
+									<img src="../../public/image/temp/temp004.png" alt="" />
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>도미노피자</h4>
+							</a>
+							<div class="button-visible">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">양식</span>
+									<img src="../../public/image/temp/temp005.png" alt="" />
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">0</button>
+									<button type="button" class="comment" title="댓글 수">0</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>준쉐프</h4>
+							</a>
+							<div class="button-visible">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">한식</span>
+									<img src="../../public/image/temp/temp006.png" alt="" />
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>세종대왕한정식</h4>
+							</a>
+							<div class="button-visible">
+								<button type="button">수정</button>
+								<button type="button">삭제</button>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">양식</span>
+									<img src="../../public/image/temp/temp007.png" alt="" />
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">2</button>
+									<button type="button" class="comment" title="댓글 수">14</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>다이닝더인드라</h4>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">한식</span>
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>세종대왕한정식</h4>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="picture">
+								<figure>
+									<span class="label black">양식</span>
+								</figure>
+							</a>
+							<div class="header-icons">
+								<div>
+									<button type="button" class="good" title="추천 수">12</button>
+									<button type="button" class="comment" title="댓글 수">1,234</button>
+								</div>
+								<div>
+									<button type="button" class="favorite">즐겨찾기</button>
+								</div>
+							</div>
+							<a href="#" class="text">
+								<h4>다이닝더인드라</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+			<!-- //items- 모음 -->
+
+			<!-- 테이블 -->
+			<div>
+
+			</div>
+			<!-- //테이블 -->
+
+			<!-- 레이어 -->
+			<div>
+
+			</div>
+			<!-- //레이어 -->
 		</div>
-		<!-- //기본 -->
-
-		<!-- 공통 -->
-		<div>
-		</div>
-		<!-- //공통 -->
-
-		<!-- 테이블 -->
-		<div>
-
-		</div>
-		<!-- //테이블 -->
-
-		<!-- 레이어 -->
-		<div>
-
-		</div>
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>
