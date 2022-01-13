@@ -241,13 +241,18 @@ table td { vertical-align: middle;}
 .calendarBody .calendar .cList.reservation li span.modify { background-color: #D69630;}
 
 .calendarBody .time { display: flex;}
-.calendarBody .time .slideContainer { overflow: hidden; height: 16.8rem;}
-.calendarBody .time .apmBody { flex: 1;}
-.calendarBody .time .apmBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
-.calendarBody .time .hourBody { width: 7.6rem; margin: 0 0.8rem;}
-.calendarBody .time .hourBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
-.calendarBody .time .minuteBody { width: 7.6rem;}
-.calendarBody .time .minuteBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem; border-bottom: 1px solid #ddd;}
+.calendarBody .time .slideContainer { height: 5.6rem;}
+.calendarBody .time .apmBody { flex: 1; overflow: hidden; position: relative; padding: 5.6rem 0;}
+.calendarBody .time .apmBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem;}
+.calendarBody .time .hourBody { overflow: hidden; position: relative; width: 7.6rem; margin: 0 0.8rem; padding: 5.6rem 0;}
+.calendarBody .time .hourBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem;}
+.calendarBody .time .minuteBody { overflow: hidden; position: relative; width: 7.6rem; padding: 5.6rem 0;}
+.calendarBody .time .minuteBody ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.6rem;}
+.calendarBody .time .lineBg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.calendarBody .time .lineBg span { display: block; position: absolute; left: 0; width: 100%; height: 0.1rem; background-color: #ddd;}
+.calendarBody .time .lineBg span:nth-child(1) { top: 5.6rem;}
+.calendarBody .time .lineBg span:nth-child(2) { top: 50%; margin-top: 2.8rem; background-color: #aaa;}
+.calendarBody .time .lineBg span:nth-child(3) { bottom: 0;}
 .calendarBody .buttonFlex { display: flex; margin: 3.2rem -0.4rem 0;}
 .calendarBody .buttonFlex button { margin: 0 0.4rem;}
 

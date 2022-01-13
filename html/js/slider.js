@@ -40,15 +40,36 @@ const slideOpt = {
 	/* UI-SJN-04-101L */
 	timeApmSwiper: {
     direction: "vertical",
-		slidesPerView: 2,
+		slidesPerView: 1,
+		on: {
+			init : function () {
+			},
+			slideChange: function() {
+				console.log(this.slides[this.activeIndex].innerText);
+			}
+		},
 	},
 	timeHourSwiper: {
 		direction: "vertical",
-		slidesPerView: 3,
+		slidesPerView: 1,
+		on: {
+			init : function () {
+			},
+			slideChange: function() {
+				console.log(this.slides[this.activeIndex].innerText);
+			}
+		},
 	},
 	timeMinuteSwiper: {
     direction: "vertical",
-		slidesPerView: 3,
+		slidesPerView: 1,
+		on: {
+			init : function () {
+			},
+			slideChange: function() {
+				console.log(this.slides[this.activeIndex].innerText);
+			}
+		},
 	},
 	/* UI-SJN-09-001P */
 	infoCalendarSwiper: {

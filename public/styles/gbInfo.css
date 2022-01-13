@@ -52,12 +52,13 @@
 .form-default .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #111;}
 .form-default .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
 .form-default .items-form >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
-.form-default .items-form >li .selectForm .target { margin-top: 1.6rem;}
-.form-default .items-form >li .selectForm .target ul { display: flex; flex-wrap: wrap; margin: -0.4rem 0 0 -0.4rem;}
+.form-default .items-form >li .selectForm .target { padding-top: 1.6rem;}
+.form-default .items-form >li .selectForm .target ul { display: flex; flex-wrap: wrap; overflow: auto; height: 19.5rem; margin: -0.4rem 0 0 -0.4rem;}
 .form-default .items-form >li .selectForm .target ul li { width: calc(25% - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
 .form-default .items-form >li .selectForm .target ul li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.4rem; font-size: 1.6rem; color: #555; border: 1px solid #ddd;}
 .form-default .items-form >li .selectForm .target ul li button:hover,
 .form-default .items-form >li .selectForm .target ul li button:active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.form-default .items-form >li .selectForm .active .selectBtn::after { transform: rotate(-180deg);}
 .form-default .items-form >li .selectMarginForm select ~ select { margin-top: 0.8rem;}
 .form-default .items-form >li .businessForm ul li { display: flex;}
 .form-default .items-form >li .businessForm ul li input { flex: 1;}
@@ -282,7 +283,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .facility .fList li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
 .info .facility .fList li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff;}
 .info .facility .fList li figure figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
-.info .economy { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .economy { padding: 1.6rem 2rem 6rem;}
 .info .button-write { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem;}
 .info .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .info .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
@@ -306,7 +307,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 
 /* 우리가게 UI-SJN-04-005U */
 .info .newStore { padding: 1.6rem 2rem 3rem;}
-.info .ourStore { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .ourStore { padding: 1.6rem 2rem 6rem;}
 .info .newStoreBody { overflow: hidden;}
 .info .items-newStore { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
 .info .items-newStore li { width: calc(100% / 2 - 0.8rem); min-height: 20.4rem; margin: 0.8rem 0 0 0.8rem;}
@@ -332,12 +333,12 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .pictureReview .pictureBody .items-icture .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
 .info .pictureReview .pictureBody .items-icture .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
 .info .pictureReview .pictureBody .items-icture .lastMore .blind span::before { content: '+';}
-.info .textReview { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .textReview { padding: 1.6rem 2rem 6rem;}
 .info .textReview .items-review li { padding-top: 0.8rem;}
 .info .textReview .items-review li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
 .info .textReview .items-review li.empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .info .textReview .items-review li.empty p { position: relative; font-size: 1.6rem; color: #777;}
-.info .textReview .items-review li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.3rem 2.55rem; border-radius: 50%;}
+.info .textReview .items-review li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
 
 /* 리뷰 등록 UI-SJN-04-010P */
 .info .reviewForm { padding: 0 2rem 6rem;}
@@ -461,7 +462,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .festival .items-festival .flFlex .flHeader h4 { font-size: 1.6rem;}
 .info .festival .items-festival .flFlex .flHeader p { margin-top: 0.8rem; color: #555;}
 .info .festival .items-festival .flFlex .movie { width: 9.2rem; height: 5.2rem; margin-left: 1rem; background-color: #ddd;}
-.info .culture { padding: 1.6rem 2rem 6rem; border-top: 0.6rem solid #F4F5F7;}
+.info .culture { padding: 1.6rem 2rem 6rem;}
 .info .culture .items-culture li { display: flex; justify-content: space-between;}
 .info .culture .items-culture li ~ li { margin-top: 1.6rem;}
 .info .culture .items-culture li figure { width: 12rem; height: 16rem; margin-right: 1.2rem;}
@@ -487,7 +488,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
 .info .viewBody .copyRight { margin-top: 2rem;}
 .info .viewBody .copyRight p { font-size: 1.4rem; color: #777;}
-.info .articleList { padding: 1.6rem 2rem 4rem; border-top: 0.6rem solid #F4F5F7;}
+.info .articleList { padding: 1.6rem 2rem 4rem;}
 
 
 
@@ -518,6 +519,19 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .tripCalendar .notes .swiper-slide.impossible::after { background-color: #FD2020;}
 .info .tripCalendar .notes .swiper-slide.companion::after { background-color: #32BBED;}
 .info .tripCalendar .notes .swiper-slide.modify::after { background-color: #D69630;}
+
+
+/* 포토갤러리 UI-SJN-13-006U */
+.info .pictureNewsArea { padding-top: 1.5rem;}
+
+
+
+
+
+
+
+
+
 
 
 
