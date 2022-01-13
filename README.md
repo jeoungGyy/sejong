@@ -2,8 +2,12 @@
 
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
+
+### 01-13
+- UI-SJN-13-002U 등록
+
 ### 01-12
-- 디자인용 이미지들 image - temp 폴더로 경로 수정
+- 디자인용 이미지들(삭제용) image - temp 폴더로 경로 수정
 - 클래스명 통일성이 유지되도록 수정
 - UI-SJN-04-012P 수정
 - UI-SJN-08-001P 수정
