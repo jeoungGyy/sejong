@@ -196,9 +196,13 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 /* items- 모음 */
 .items-news li { padding: 1.6rem 0;}
 .items-news li a { display: block; color: #111;}
-.items-news li h4 { font-size: 1.6rem; font-weight: 400; line-height: 2.4rem;}
+.items-news li h4 { height: 5.2rem; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem;}
 .items-news li .headerSub { margin-top: 0.5rem;}
 .items-news li ~ li { border-top: 1px solid #F4F5F7;}
+.items-news li .flex { display: flex;}
+.items-news li .flex h4 { flex: 1;}
+.items-news li .flex figure { width: 6.4rem; height: 6.4rem; margin-left: 1.6rem;}
+.items-news li .flex +.headerSub { margin-top: -0.8rem;}
 
 .items-files { margin-top: 2.4rem;}
 .items-files li a { display: flex; align-items: center; height: 4rem; font-size: 1.4rem; color: #555;}
@@ -476,6 +480,8 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .viewBody .viewCite span { color: #555;}
 .info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/info/split_40.png) no-repeat -2rem 0/20rem 4rem;}
 .info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
+.info .viewBody .copyRight { margin-top: 2rem;}
+.info .viewBody .copyRight p { font-size: 1.4rem; color: #777;}
 .info .articleList { padding: 1.6rem 2rem 4rem; border-top: 0.6rem solid #F4F5F7;}
 
 
