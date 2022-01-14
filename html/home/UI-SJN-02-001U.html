@@ -22,17 +22,24 @@
 						<div class="popularBody ">
 							<span class="cBlue">인기검색</span>
 							<div class="tem">
-								<ul class="popularList">
-									<li>1 자전거</li>
-									<li>2 버스</li>
-									<li>3 스마트</li>
-									<li>4 버스정류장</li>
-									<li>5 약국</li>
-								</ul>
+								<div id="popularSwiper" class="popularaa">
+									<div class="slideContainer">
+										<ul class="swiper-wrapper popularList" >
+											<li class="swiper-slide">1 자전거</li>
+											<li class="swiper-slide">2 버스</li>
+											<li class="swiper-slide">3 스마트</li>
+											<li class="swiper-slide">4 버스정류장</li>
+											<li class="swiper-slide">5 약국</li>
+										</ul>
+									</div>
+								</div>
 								<button type="button" class="tooggleWord selectBtn" aria-expanded="false"><i>워드클라우드 열기</i></button>
 							</div>
 							<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화 - 버튼에 active 클래스 추가 -->
 						</div>
+						<script>
+							slider.active('popularSwiper');
+						</script>
 						<div class="wordCloud target cont">
 							워드클라우드 자리<br />
 							워드클라우드 자리<br />

@@ -10,9 +10,6 @@ const slider = {
 
 const slideOpt = {
 	default: {
-		autoplay: {
-			delay: 5000,
-		},
 		speed: 500,
 		autoplay: false,
 		// observer: true,
@@ -82,6 +79,18 @@ const slideOpt = {
 	infoNotesSwiper: {
     slidesPerView: 'auto',
 		spaceBetween: 10,
+	},
+	/* UI-SJN-02-001U */
+	popularSwiper: {
+    direction: "vertical",
+		slidesPerView: 1,
+		loop: true,
+		autoplay: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false
+		},
+		
 	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}

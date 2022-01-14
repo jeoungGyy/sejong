@@ -42,7 +42,8 @@
 .home .popularHeader .popularBody { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
 .home .popularHeader .popularBody .cBlue { margin-right: 1.2rem; color: #6684EA;}
 .home .popularHeader .popularBody .tem { display: flex; align-items: center; justify-content: space-between; flex: 1;}
-.home .popularHeader .popularBody .tem .popularList { overflow: hidden; height: 4.8rem;}
+.popularaa { overflow: hidden;}
+.home .popularHeader .popularBody .tem .popularList { height: 4.8rem;}
 .home .popularHeader .popularBody .tem .popularList li { display: flex; align-items: center; height: 4.8rem;}
 .home .popularHeader .popularBody .tooggleWord { display: flex; align-items: center; justify-content: center; width: 4rem;}
 .home .popularHeader .popularBody .tooggleWord i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover;     transition: transform .3s;}
