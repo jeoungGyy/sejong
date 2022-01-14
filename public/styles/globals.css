@@ -328,10 +328,11 @@ table td { vertical-align: middle;}
 
 /* UI-SJN-02-002L */
 .voiceLayer { padding: 2rem; text-align: left;}
+.voiceLayer .voiceArea { height: 21rem;}
 .voiceLayer .title { font-size: 2rem; font-weight: 700; line-height: 2.8rem;}
 .voiceLayer .voiceList { margin-top: 2.5rem; font-size: 1.6re; color: #555;}
 .voiceLayer .voiceList li ~ li { margin-top: 1.6rem;}
-.voiceLayer .icons { margin-top: 3.8rem; text-align: center;}
+.voiceLayer .icons { text-align: center;}
 .voiceLayer .icons .iconBg { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 7.2rem; margin: 0 auto; background: linear-gradient(135deg,  #1e399e 11%,#294ca5 52%,#944d8f 100%); border-radius: 50%;}
 .voiceLayer .icons .iconBg i.mike { width: 4rem; height: 4rem; text-indent: -9999rem; background: url(../image/home/ico_mike.png) no-repeat center/cover;}
 .voiceLayer .icons .iconBg i.voice { width: 5rem; height: 2.2rem; text-indent: -9999rem; background: url(../image/home/ico_voice.png) no-repeat center/cover;}
