@@ -325,7 +325,7 @@ const findEl = {
 }
 
 const slide = {
-	open : (el, time, cls, callBack) => {
+	open : (el, time, cls) => {
 		let wrap = el;
 		let wrapH = 0;
 		wrap.style.cssText = 'position:absolute;display:block;opacity:0';
@@ -337,16 +337,9 @@ const slide = {
 		setTimeout(() => {
 			wrap.removeAttribute('style');
 			if(cls) wrap.classList.add(cls);
-			if(typeof callBack != 'undefined' && callBack){
-				if(typeof callBack == 'function'){
-					callBack();
-				} else {
-					if(callBack) { eval( callBack ); }
-				}
-			}
 		},time);
 	},
-	close : (el, time, cls, callBack) => {
+	close : (el, time, cls) => {
 		let wrap = el;
 		let wrapH = el.clientHeight;
 		wrap.style.cssText = 'overflow:hidden;height:'+wrapH+'px;transition:height '+(time * 0.001)+'s';
@@ -356,17 +349,10 @@ const slide = {
 		setTimeout(() => {
 			wrap.removeAttribute('style');
 			if(cls) wrap.classList.remove(cls);
-			if(typeof callBack != 'undefined' && callBack){
-				if(typeof callBack == 'function'){
-					callBack();
-				} else {
-					if(callBack) { eval( callBack ); }
-				}
-			}
 		},time);
 	},
-	toggle : (el, time, cls, callBack) => {
-		(el.classList.contains(cls)) ? slide.close(el, time, cls, callBack) : slide.open(el, time, cls, callBack);
+	toggle : (el, time, cls) => {
+		(el.classList.contains(cls)) ? slide.close(el, time, cls) : slide.open(el, time, cls);
 	}
 }
 
@@ -384,7 +370,6 @@ class Accordion {
 		});
 	}
 	addEvent(btns, idx) {
-		
 		btns.addEventListener('click', ()=>{
 			this.active(idx);
 		});

@@ -79,7 +79,7 @@ input[type=text]::placeholder,
 input[type=password]::placeholder,
 input[type=search]::placeholder,
 input[type=tel]::placeholder,
-textarea::placeholder { letter-spacing: -0.04em;}
+textarea::placeholder { font-weight: 400; letter-spacing: -0.04em;}
 button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
@@ -115,7 +115,7 @@ table td { vertical-align: middle;}
 }
 
 
-/* 공통 구조
+/* 구조
 **********************************************/
 
 /* container */
@@ -123,18 +123,23 @@ table td { vertical-align: middle;}
 
 /* header */
 .header { position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 10; background-color: #fff;}
-.stickyHeader .header { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -9.6rem 0/48rem 4.8rem;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 4.8rem;}
 .subHeader h2 { font-family: var(--fontPretendard); font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em;}
 .subHeader h2 .number { color: #6684EA;}
-
-/* LNB */
-
-/* 푸터 */
+.subHeader .searchHeader { width: 74%;}
+.subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
+.subHeader .btnHeader { position: absolute; right: 0; top: 0;}
+.subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 4.8rem;}
+.subHeader .btnHeader .icoMic { display: block; padding: 1.5rem; }
+.subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
+.subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
+.subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
+.stickyHeader .header { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
+.stickyHeader .boderTopGray { border: none;}
 
 
 /* 공통 STYLE
@@ -150,6 +155,8 @@ table td { vertical-align: middle;}
 .invisible { position: relative; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 
 /* 마진 */
+.mt8 { margin-top: 0.8rem;}
+
 
 /* Split 아이콘 */
 
@@ -158,6 +165,12 @@ table td { vertical-align: middle;}
 .button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);}
 .button.blue { color: #fff; background-color: #6684EA;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
+
+/* 라인 중단점 */
+.line-default { border-top: 0.6rem solid #F4F5F7;}
+
+/* 두번째 줄까지만 보이게 */
+.lineBreake { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 /* Swipe */
 .swiper-button-prev,
@@ -172,10 +185,58 @@ table td { vertical-align: middle;}
 .swiper-rtl .swiper-button-prev { right: -1.2rem; left: auto;}
 .swiper-slide-thumb-active figure {	border: 1px solid #000;}
 
+
+
+/* header- 모음 */
+.header-default { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.header-default h3 { display: flex; align-items: center; font-size: 1.8rem; color: #000;}
+.header-default h3 .cWood { color: #D69630;}
+.header-default h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
+.header-default a,
+.header-default .cBlue { color: #6684ea;}
+
+.header-icons { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
+.header-icons button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
+.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background-image: url(../image/common/split_40.png); background-repeat: no-repeat; background-size: 20rem 4rem;}
+.header-icons button.good { padding-left: 2.2rem;}
+.header-icons button.good::after { left: 0; background-position: -6rem 0;}
+.header-icons button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
+.header-icons button.comment::after { left: 0; background-position: -8rem 0;}
+.header-icons button.favorite { width: 2rem; text-indent: -9999rem;}
+.header-icons button.favorite::after { right: 0; background-position: -10rem 0;}
+.header-icons button.favorite.active::after { background-position-y: -2rem;}
+.header-icons button.sharing { width: 2rem; text-indent: -9999rem;}
+.header-icons button.sharing::after { right: 0; background-position: -12rem 0;}
+
+.header-list { display: flex; align-items: center; justify-content: space-between; height: 4rem;}
+.header-list .sel { width: 8rem; height: 4rem; padding-left: 0; border: none;}
+.header-list .sel + .num { color: #555;}
+.header-list .num { min-width: 5rem; color: #000;}
+.header-list h3 { display: flex; align-items: center; font-size: 1.8rem; color: #000;}
+.header-list h3 .cWood { color: #D69630;}
+.header-list h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
+.header-list button { color: #777;}
+.header-list button.active { color: #6684EA;}
+.header-list >div { display: flex; align-items: center;}
+.header-list >div button { margin-left: 1.2rem;}
+
+.header-formSearch { display: flex; align-items: center; height: 5.6rem;}
+.header-formSearch select { width: 7.6rem; height: 4rem; padding-left: 1.2rem; border-radius: 2rem;}
+.header-formSearch .send { flex: 1; position: relative; margin-left: 0.8rem;}
+.header-formSearch .send input { height: 4rem; padding: 0 3rem 0 1.2rem; background-color: #F4F5F7; border: 1px solid #EAEAEA; border-radius: 2rem;}
+.header-formSearch .send .btnSend { display: block; position: absolute; right: 0; top: 0; padding: 1rem;}
+.header-formSearch .send .btnSend i { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 4rem;}
+
+.header-news { padding: 1.6rem 0 0;}
+.header-news h3 { font-size: 1.8rem;}
+.header-news .headerSub { margin-top: 0.8rem;}
+
+
+
 /* 레이어
 **********************************************/
 
-/* 공통 */
+/* 레이어공통 */
 .layerPopup { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; text-align: center; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
 .layerPopup::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
 .layerPopup.ready { display: block;}
@@ -188,7 +249,7 @@ table td { vertical-align: middle;}
 .layerWrap.full .headerBtn .btnClose { position: inherit; right: inherit; top: inherit;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/info/split_48.png) no-repeat -14.4rem 0/48rem 4.8rem;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 4.8rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
@@ -264,6 +325,32 @@ table td { vertical-align: middle;}
 .tripLayer { padding: 0 2rem;}
 .tripLayer .tripHeader { display: flex; align-items: center; justify-content: center; height: 18rem; background: url(../image/info/info_trip_bg_big.png) no-repeat center/cover;}
 .tripLayer .tripHeader h3 { font-size: 1.9rem; color: #fff; text-align: center; line-height: 2.7rem;}
+
+/* UI-SJN-02-002L */
+.voiceLayer { padding: 2rem; text-align: left;}
+.voiceLayer .title { font-size: 2rem; font-weight: 700; line-height: 2.8rem;}
+.voiceLayer .voiceList { margin-top: 2.5rem; font-size: 1.6re; color: #555;}
+.voiceLayer .voiceList li ~ li { margin-top: 1.6rem;}
+.voiceLayer .icons { margin-top: 3.8rem; text-align: center;}
+.voiceLayer .icons .iconBg { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 7.2rem; margin: 0 auto; background: linear-gradient(135deg,  #1e399e 11%,#294ca5 52%,#944d8f 100%); border-radius: 50%;}
+.voiceLayer .icons .iconBg i.mike { width: 4rem; height: 4rem; text-indent: -9999rem; background: url(../image/home/ico_mike.png) no-repeat center/cover;}
+.voiceLayer .icons .iconBg i.voice { width: 5rem; height: 2.2rem; text-indent: -9999rem; background: url(../image/home/ico_voice.png) no-repeat center/cover;}
+.voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 4.8rem; border-radius: 50%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

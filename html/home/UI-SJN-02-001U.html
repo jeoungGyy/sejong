@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_search.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents home"> <!-- [통합검색 Class] home-->
+			<h2 class="visible"><div class="headerClone">통합검색</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="homeWrap boderTopGray">
+				<div class="accordion">
+					<div class="popularHeader row">
+						<div class="popularBody ">
+							<span class="cBlue">인기검색</span>
+							<div class="tem">
+								<ul class="popularList">
+									<li>1 자전거</li>
+									<li>2 버스</li>
+									<li>3 스마트</li>
+									<li>4 버스정류장</li>
+									<li>5 약국</li>
+								</ul>
+								<button type="button" class="tooggleWord selectBtn" aria-expanded="false"><i>워드클라우드 열기</i></button>
+							</div>
+							<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화 - 버튼에 active 클래스 추가 -->
+						</div>
+						<div class="wordCloud target cont">
+							워드클라우드 자리<br />
+							워드클라우드 자리<br />
+							워드클라우드 자리<br />
+							워드클라우드 자리
+						</div>
+					</div>
+				</div>
+
+				<div class="recentSearch">
+					<div class="header-default">
+						<h3>최근 검색</h3>
+						<button type="button" class="cBlue">전체삭제</button>
+					</div>
+					<!-- 검색 결과가 있는 경우 -->
+					<div>
+						<div class="rsTabs">
+							<button type="button" class="active">장소</button> <!-- 활성화시 active -->
+							<button type="button">버스</button>
+							<button type="button">경로</button>
+						</div>
+						<ul class="item-place">
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">자동크린넷</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoSearch">
+									<span class="keyword">생생버스</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">가볼만한곳</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">세종정부청사</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoSearch">
+									<span class="keyword">세종날씨</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+						</ul>
+						<div class="button-more mt8">
+							<a href="#" class="btn"><span>더보기</span></a>
+						</div>
+					</div>
+					<!-- //검색 결과가 있는 경우 -->
+					
+					<!-- 검색 결과가 없는 경우 -->
+					<div>
+						<div class="emptySearch">
+							<p>최근 검색한 기록이 없습니다.</p>
+						</div>
+					</div>
+						<!-- //검색 결과가 없는 경우 -->
+				</div>
+
+				<div class="mapSearch line-default">
+					<div class="header-default">
+						<h3>지도 검색</h3>
+					</div>
+					<ul class="item-mapSearch">
+						<li>
+							<button type="button">
+								<i class="mapSplit clinic"></i>
+								<span>선별진료소</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit bicycle"></i>
+								<span>공유자전거</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit gasStation"></i>
+								<span>주유소</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit franchisee"></i>
+								<span>여민전가맹점</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit clean"></i>
+								<span>자동크린넷</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit automatic"></i>
+								<span>무인민원발급기</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit care"></i>
+								<span>어르신돌봄</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit hospital"></i>
+								<span>병원</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit pharmacy"></i>
+								<span>약국</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit cctv"></i>
+								<span>CCTV</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit parking"></i>
+								<span>주차장</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit charging"></i>
+								<span>전기차충전소</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit visit"></i>
+								<span>가볼만한곳</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit restaurant"></i>
+								<span>음식점</span>
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="mapSplit cafe"></i>
+								<span>카페</span>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div id="layerVoice" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="voiceLayer">
+					<p class="title">이렇게 말해보세요.</p>
+					<ul class="voiceList">
+						<li>&quot;세종특별자치시청&quot; </li>
+						<li>&quot;세종호수공원&quot; </li>
+						<li>&quot;B2 버스&quot; </li>
+						<li>&quot;약국&quot; </li>
+					</ul>
+					<div class="icons">
+						<div class="iconBg">
+							<i class="mike">마이크</i>
+						</div>
+						<div class="iconBg">
+							<i class="voice">보이스</i>
+						</div>
+						<button type="button" class="btnCloseVoice" onclick="layerPopup.close();">창닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+</div>
+</body>
+</html>

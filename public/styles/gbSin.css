@@ -1,13 +1,63 @@
-/* 통합검색
+/* 홈, 통합검색
 **********************************************/
 
+/* 공통 */
+.boderTopGray { border-top: 1px solid #EAEAEA;}
+
+/* items- 모음 */
+.item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
+.item-mapSearch li { width: calc(100% / 3); border-right: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
+.item-mapSearch li button { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%; padding: 2.7rem 0 1.4rem;}
+.item-mapSearch li button .mapSplit { width: 4.3rem; height: 4rem; background: url(../image/home/split_map_earch.png) no-repeat 0 0/21.5rem 12rem;}
+.item-mapSearch li button .mapSplit.bicycle { background-position: -4.3rem 0;}
+.item-mapSearch li button .mapSplit.gasStation { background-position: -8.6rem 0;}
+.item-mapSearch li button .mapSplit.franchisee { background-position: -12.9rem 0;}
+.item-mapSearch li button .mapSplit.clean { background-position: -17.2rem 0;}
+.item-mapSearch li button .mapSplit.automatic { background-position: 0 -4rem;}
+.item-mapSearch li button .mapSplit.care { background-position: -4.3rem -4rem;}
+.item-mapSearch li button .mapSplit.hospital { background-position: -8.6rem -4rem;}
+.item-mapSearch li button .mapSplit.pharmacy { background-position: -12.9rem -4rem;}
+.item-mapSearch li button .mapSplit.cctv { background-position: -17.2rem -4rem;}
+.item-mapSearch li button .mapSplit.parking { background-position: 0 -8rem;}
+.item-mapSearch li button .mapSplit.charging { background-position: -4.3rem -8rem;}
+.item-mapSearch li button .mapSplit.visit { background-position: -8.6rem -8rem;}
+.item-mapSearch li button .mapSplit.restaurant { background-position: -12.9rem -8rem;}
+.item-mapSearch li button .mapSplit.cafe { background-position: -17.2rem -8rem;}
+.item-mapSearch li button span { display: block; width: 100%; margin-top: 1.4rem; color: #555;}
+
+.item-place { margin-top: 0.8rem;}
+.item-place li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
+.item-place li .keyword { position: relative; padding-left: 2.8rem;}
+.item-place li .keyword::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem;}
+.item-place li .icoLocation .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem 0/40rem 4rem;}
+.item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 4rem;}
+.item-place li .date { font-size: 1.4rem; color: #777;}
+.item-place li .btnClose { display: block;}
+.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 4.8rem;}
+
 /* 통합검색 */
+.home .popularHeader .popularBody { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
+.home .popularHeader .popularBody .cBlue { margin-right: 1.2rem; color: #6684EA;}
+.home .popularHeader .popularBody .tem { display: flex; align-items: center; justify-content: space-between; flex: 1;}
+.home .popularHeader .popularBody .tem .popularList { overflow: hidden; height: 4.8rem;}
+.home .popularHeader .popularBody .tem .popularList li { display: flex; align-items: center; height: 4.8rem;}
+.home .popularHeader .popularBody .tooggleWord { display: flex; align-items: center; justify-content: center; width: 4rem;}
+.home .popularHeader .popularBody .tooggleWord i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover;     transition: transform .3s;}
+.home .popularHeader .popularBody .favorite { display: block;}
+.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 4.8rem;}
+.home .popularHeader .popularBody .favorite.active i { background-position-y: -2.4rem;}
+.home .popularHeader .wordCloud { color: #fff; background-color: #A5BFD6;}
+.home .popularHeader.active .popularBody .tooggleWord i { transform: rotate(-180deg);}
 
+.home .recentSearch { padding: 1.6rem 2rem;}
+.home .recentSearch .rsTabs { display: flex; align-items: center; height: 4.8rem; margin-left: -0.8rem;}
+.home .recentSearch .rsTabs button { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-left: 0.8rem; padding: 0 1.1rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.home .recentSearch .rsTabs button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.home .recentSearch .emptySearch { display: flex; align-items: center; justify-content: center; height: 19.2rem;}
+.home .recentSearch .emptySearch p { position: relative; margin-top: 9rem; font-size: 1.6rem; color: #777;}
+.home .recentSearch .emptySearch p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty_search.png) no-repeat center/2.4rem 2.4rem; border-radius: 50%;}
 
-
-
-
-
+.home .mapSearch { padding: 1.6rem 2rem;}
 
 
 

@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-14
+- UI-SJN-02-001U 등록
+
 ### 01-13
 - 이미지 split화 및 고해상도로 변경
 - UI-SJN-13-002U 등록
