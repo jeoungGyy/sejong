@@ -35,7 +35,10 @@
 .item-place li .btnClose { display: block;}
 .item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 4.8rem;}
 
-/* 통합검색 */
+/* 통합검색
+**********************************************/
+
+/* UI-SJN-02-001U */
 .home .popularHeader .popularBody { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
 .home .popularHeader .popularBody .cBlue { margin-right: 1.2rem; color: #6684EA;}
 .home .popularHeader .popularBody .tem { display: flex; align-items: center; justify-content: space-between; flex: 1;}
@@ -59,23 +62,69 @@
 
 .home .mapSearch { padding: 1.6rem 2rem;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* UI-SJN-02-010U */
+.home .homeSearchArea .afterSearch { color: #6684EA;}
+.home .homeSearchArea .cBlue { color: #6684EA;}
+.home .homeSearchArea .hcList li { position: relative; padding: 1.7rem 0 1.5rem 4rem;}
+.home .homeSearchArea .hcList li .label { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 1.8rem; height: 2rem; font-size: 1.3rem; color: #fff;}
+.home .homeSearchArea .hcList li .label.wood { width: 3rem; background-color: #D69630;}
+.home .homeSearchArea .hcList li .label.green { width: 5.1rem; background-color: #4EC457;}
+.home .homeSearchArea .hcList li h4 { font-size: 1.6rem;}
+.home .homeSearchArea .hcList li .text { margin-top: 0.6rem;}
+.home .homeSearchArea .hcList li .text p { font-size: 1.6rem; color: #555;}
+.home .homeSearchArea .hcList li .text p ~ p { margin-top: 0.5rem;}
+.home .homeSearchArea .hcList li ~ li { border-top: 1px solid #F2F2F2;}
+.home .homeSubmenu { padding: 1.6rem 2rem;}
+.home .homeSubmenu .hsList li { margin-top: 0.8rem;}
+.home .homeSubmenu .hsList li a { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; padding: 0 1.6rem; border: 1px solid #ddd;}
+.home .homeSubmenu .hsList li a p { font-size: 1.6rem; color: #111;}
+.home .homeSubmenu .hsList li a .decoArrow { display: block;}
+.home .homeSubmenu .hsList li a .decoArrow i { display: block; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
+.home .homePlace { padding: 1.6rem 2rem;}
+.home .homePlace .hpList li { display: flex; justify-content: space-between; padding: 1.2rem 0; border-bottom: 1px solid #F2F2F2;}
+.home .homePlace .hpList li .ipBody { flex: 1;}
+.home .homePlace .hpList li .ipBody .st { font-size: 1.4rem; color: #555;}
+.home .homePlace .hpList li .ipBody h4 { margin-top: 0.6rem; font-size: 1.6rem;}
+.home .homePlace .hpList li .ipBody .guideGroup { margin-top: 0.5rem; font-size: 1.4rem;}
+.home .homePlace .hpList li .ipBody .guideGroup .distance { position: relative; padding-left: 1.6rem;}
+.home .homePlace .hpList li .ipBody .guideGroup .distance::after { content: ''; position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.35rem; background: url(../image/home/ico_location.png) no-repeat center/cover;}
+.home .homePlace .hpList li .ipBody .guideGroup .address { position: relative; margin-left: 0.2rem; padding-left: 0.6rem;}
+.home .homePlace .hpList li .ipBody .guideGroup .address::after { content: ''; position: absolute; left: 0; top: 1rem; width: 0.2rem; height: 0.2rem; background-color: #aaa;}
+.home .homePlace .hpList li figure { width: 6.4rem; height: 6.4rem; margin-left: 1.6rem;}
+.home .homeStation { padding: 1.6rem 2rem;}
+.home .homeStation .hsList { display: flex; flex-wrap: wrap; margin: -0.8rem -0.4rem 0;}
+.home .homeStation .hsList li { width: calc(50% - 0.8rem); margin: 0.8rem 0.4rem 0; padding: 2.3rem 1.6rem; border: 1px solid #EAEAEA;}
+.home .homeStation .hsList li .label { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
+.home .homeStation .hsList li .label.normal { background-color: #6684EA;}
+.home .homeStation .hsList li .label.wide { background-color: #FD2020;}
+.home .homeStation .hsList li .busNum { margin-top: 0.8rem; font-style: 1.6rem; font-weight: 700;}
+.home .homeStation .hsList li .busNum span { font-style: 1.4rem; color: #777;}
+.home .homeStation .hsList li .station { margin-top: 0.7rem;}
+.home .homeStation .hsList li .station span { position: relative; font-size: 1.4rem;}
+.home .homeStation .hsList li .station span:last-child { padding-left: 2rem;}
+.home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 4rem; border-radius: 50%;}
+.home .homeStation .hsList li .train { margin-top: 0.6rem;}
+.home .homeStation .hsList li .train p { font-size: 1.4rem; color: #777; line-height: 2.2rem;}
+.home .homeCulture { padding: 1.6rem 2rem;}
+.home .homeEducation { padding: 1.6rem 2rem;}
+.home .homeSearchArea .homeEducation .hcList li { padding-left: 5.8rem;}
+.home .homeNuri { padding: 1.6rem 2rem;}
+.home .homeNuri .menu { display: flex; flex-wrap: wrap; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
+.home .homeNuri .menu li { display: flex; align-items: center; width: 50%; min-height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.home .homeNuri .menu li span { margin-left: 0.8rem; font-size: 1.4rem;}
+.home .homeNuri h4 { display: flex; align-items: center; height: 4rem; margin-top: 1.6rem;}
+.home .homeNuri .stepMenu li { display: flex; align-items: center; height: 4.8rem; font-size: 1.6rem; color: #777; border-bottom: 1px solid #F2F2F2;}
+.home .homeNuri .stepMenu li span { margin-right: 0.8rem;}
+.home .homeEmployee { padding: 1.6rem 2rem;}
+.home .homeEmployee .heList { display: flex; flex-wrap: wrap; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
+.home .homeEmployee .heList li { display: flex; align-items: center; width: 100%; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.home .homeEmployee .heList li .eHead { width: 8.4rem; padding-left: 1.6rem; font-size: 1.6rem;}
+.home .homeEmployee .heList li .eContent { flex: 1; padding: 0.5rem 0 0.5rem 1.6rem; font-size: 1.6rem; color: #777; border-left: 1px solid #EAEAEA;}
+.home .homeSite { padding: 1.6rem 2rem;}
+.home .homeSite .hsList { display: flex; align-items: center; flex-wrap: wrap; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.home .homeSite .hsList li { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 4.8rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.home .homeSite .hsList li p { font-size: 1.6rem;}
+.home .homeSite .hsList li a { display: block; font-size: 1.6rem; color: #6684EA;}
 
 
 

@@ -197,7 +197,7 @@ table td { vertical-align: middle;}
 
 .header-icons { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
 .header-icons button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
-.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background-image: url(../image/common/split_40.png); background-repeat: no-repeat; background-size: 20rem 4rem;}
+.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background-image: url(../image/common/split_40.png); background-repeat: no-repeat; background-size: 40rem 4rem;}
 .header-icons button.good { padding-left: 2.2rem;}
 .header-icons button.good::after { left: 0; background-position: -6rem 0;}
 .header-icons button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
