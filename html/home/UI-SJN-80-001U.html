@@ -7,69 +7,262 @@
 
 <body>
 <div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
 
-		<!-- 본문 -->
-		<main class="contents mypage"> <!-- [내 정보 Class] mypage-->
-			<h2 class="visible"><div class="headerClone">내정보</div></h2> <!-- [헤더에 넣어줄 제목] -->
-			
-			<div class="mypageWrap">
-				<div>
-					<div class="myLogin">
-						<p><span></span> 1111</p>
-						<div>
-							<img src="" alt="">
-						</div>
-					</div>
-	
-					<ul class="myActivity">
-						<li>
-							<p>11111</p>
-							<strong>1</strong>
-							<i></i>
-						</li>
-						<li>
-							<p>11111</p>
-							<strong>1</strong>
-							<i></i>
-						</li>
-						<li>
-							<p>11111</p>
-							<strong>1</strong>
-							<i></i>
-						</li>
-						<li>
-							<p>11111</p>
-							<strong>1</strong>
-							<i></i>
-						</li>
-						<li>
-							<p>11111</p>
-							<strong>1</strong>
-							<i></i>
-						</li>
-					</ul>
 
-					<ul class="accordionBox">
-						<li class="accordionContainer">
-							<button type="button" class="accordionMenu">
-								111111111111111
-							</button>
-							<div class="accordionTarget">
-								22222222
-							</div>
-						</li>
-						<li>
-							<a href="#">333333333333</a>
-						</li>
-					</ul>
-				</div>
+	<!-- 레이어 -->
+	<div id="myInfo" class="layerPopup">
+		<div class="layerWrap full">
+			<div class="headerBtn">
+				<h2>내 정보</h2>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<div class="fullFlex myInfoLayer">
+				<div class="myLogin">
+					<p class="text"><span>로그인하여</span> 세종엔의 <br />다른 서비스들도 이용해 보세요</p>
+					<div class="my">
+						<img src="../../public/image/home/mypage_my.png" alt="">
+					</div>
+				</div>
+
+				<ul class="myActivity">
+					<li>
+						<p>생활안전신고</p>
+						<div class="safety">
+							<strong>3</strong>
+							<i></i>
+						</div>
+					</li>
+					<li>
+						<p>내가 작성한 리뷰</p>
+						<div class="review">
+							<strong>22</strong>
+							<i></i>
+						</div>
+					</li>
+					<li>
+						<p>재능기부</p>
+						<div class="donation">
+							<strong>1</strong>
+							<i></i>
+						</div>
+					</li>
+					<li>
+						<p>중고나눔</p>
+						<div class="used">
+							<strong>0</strong>
+							<i></i>
+						</div>
+					</li>
+					<li>
+						<p>장소공유</p>
+						<div class="share">
+							<strong>0</strong>
+							<i></i>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="accordionBox">
+					<li class="accordionContainer">
+						<button type="button" class="accordionMenu btn">
+							<span class="heading">길안내 설정</span>
+							<i></i>
+						</button>
+						<div class="accordionTarget">
+							<ul>
+								<li class="pt8">
+									<div class="flex">
+										<p><strong>네비게이션 앱 연동 여부</strong></p>
+										<div class="switch">
+											<input type="checkbox" id="switch0" checked="checked" title="네비게이션 앱 연동 여부">
+											<label for="switch0"></label>
+										</div>
+									</div>
+								</li>
+								<li class="pb8">
+									<div class="radioSet">
+										<input type="checkbox" id="list0"><label for="list0"><b>카카오 네비</b></label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>생활정보 탭표시 관리</p>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>세종뉴스 관심키워드 관리</p>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>내 가게 정보 관리</p>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>자주 묻는 질문</p>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>서비스 개선 요청</p>
+							<i></i>
+						</a>
+					</li>
+					<li class="accordionContainer">
+						<button type="button" class="accordionMenu btn">
+							<span class="heading">이용약관 및 정책</span>
+							<i></i>
+						</button>
+						<div class="accordionTarget">
+							<ul>
+								<li class="pt8"><a href="#">개인정보 처리 방침</a></li>
+								<li><a href="#">저작권 정책</a></li>
+								<li><a href="#">영상정보처리기기 운영방침</a></li>
+								<li class="pb8"><a href="#">이메일 무단수집거부</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="accordionContainer">
+						<button type="button" class="accordionMenu btn">
+							<span class="heading">앱 설정</span>
+							<i></i>
+						</button>
+						<div class="accordionTarget">
+							<h4 class="pt8">알림 설정</h4>
+							<ul>
+								<li>
+									<div class="flex">
+										<p>전체</p>
+										<div class="switch">
+											<input type="checkbox" id="switch1" title="전체">
+											<label for="switch1"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>버스 승하차 알림</p>
+										<div class="switch">
+											<input type="checkbox" id="switch2" title="버스 승하차 알림">
+											<label for="switch2"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>안심이</p>
+										<div class="switch">
+											<input type="checkbox" id="switch3" title="안심이">
+											<label for="switch3"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>안전신고 처리 결과</p>
+										<div class="switch">
+											<input type="checkbox" id="switch4" title="안전신고 처리 결과">
+											<label for="switch4"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4>다국어 설정</h4>
+							<ul class="inline pb8">
+								<li>
+									<div class="radioSet">
+										<input type="radio" id="list1" name="radio" checked="checked"><label for="list1"><b>한국어</b></label>
+									</div>
+								</li>
+								<li>
+									<div class="radioSet">
+										<input type="radio" id="list2" name="radio"><label for="list2"><b>English</b></label>
+									</div>
+								</li>
+								<li>
+									<div class="radioSet">
+										<input type="radio" id="list3" name="radio"><label for="list3"><b>中國語</b></label>
+									</div>
+								</li>
+								<li>
+									<div class="radioSet">
+										<input type="radio" id="list4" name="radio"><label for="list4"><b>日本語</b></label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="accordionContainer">
+						<button type="button" class="accordionMenu btn">
+							<span class="heading">앱 접근권한</span>
+							<i></i>
+						</button>
+						<div class="accordionTarget">
+							<ul class="inline half pt8 pb8">
+								<li>
+									<div class="flex">
+										<p>위치</p>
+										<div class="switch">
+											<input type="checkbox" id="switch5" title="위치">
+											<label for="switch5"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>전화</p>
+										<div class="switch">
+											<input type="checkbox" id="switch6" checked="checked" title="전화">
+											<label for="switch6"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>파일</p>
+										<div class="switch">
+											<input type="checkbox" id="switch7" title="파일">
+											<label for="switch7"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<p>카메라</p>
+										<div class="switch">
+											<input type="checkbox" id="switch8" title="카메라">
+											<label for="switch8"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="btn">
+							<p>서비스 해지 및 탈퇴</p>
+							<i></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		layerPopup.open('myInfo');
+	</script>
+	<!-- //레이어 -->
+
+
 	</div>
 </div>
 </body>

@@ -172,6 +172,20 @@ table td { vertical-align: middle;}
 /* 두번째 줄까지만 보이게 */
 .lineBreake { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
+/* 스위치 체크박스 */
+.switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
+.switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
+.switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
+.switch label::after { content: ""; position: absolute; display: block; left: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
+.switch input:checked + label:after { margin-left: 2.3rem;}
+.switch input:checked + label:before { background-color: #6684EA;}
+
+/* 라디오박스 */
+.radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
+.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 4.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radioSet input { position: absolute; opacity: 0;}
+.radioSet input:checked + label::after { background-color: #6684EA;}
+
 /* Swipe */
 .swiper-button-prev,
 .swiper-button-next { display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; z-index: 10; width: 4rem; height: 4rem; margin-top: -2rem; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); cursor: pointer;}
@@ -359,22 +373,47 @@ table td { vertical-align: middle;}
 .voiceLayer .icons .iconBg i.voice { width: 5rem; height: 2.2rem; text-indent: -9999rem; background: url(../image/home/ico_voice.png) no-repeat center/cover;}
 .voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 4.8rem; border-radius: 50%;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 내 정보 - UI-SJN-80-001U */
+.myInfoLayer { padding: 0 2rem 2rem;}
+.myInfoLayer .myLogin { display: flex; align-items: center; justify-content: space-between; height: 7.2rem; margin-top: 0.8rem;}
+.myInfoLayer .myLogin .text { font-size: 1.6rem; line-height: 2.3rem;}
+.myInfoLayer .myLogin .text span { color: #6684EA;}
+.myInfoLayer .myLogin .my { overflow: hidden; width: 4rem; height: 4rem;}
+.myInfoLayer .myLogin .my img { width: 100%; height: auto;}
+.myInfoLayer .myActivity { display: flex; flex-wrap: wrap; margin-top: 1.6rem; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
+.myInfoLayer .myActivity li { display: flex; flex-direction: column; justify-content: center; width: calc(100% / 3); height: 12rem; padding: 0 1.2rem 0 2rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.myInfoLayer .myActivity li:nth-child(1),
+.myInfoLayer .myActivity li:nth-child(2) { width: 50%;}
+.myInfoLayer .myActivity li p { color: #555;}
+.myInfoLayer .myActivity li >div { display: flex; align-items: center; justify-content: space-between; margin-top: 1.3rem;}
+.myInfoLayer .myActivity li >div strong { display: block; font-family: var(--fontRoboto); font-size: 2.4rem; font-weight: 700;}
+.myInfoLayer .myActivity li >div i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
+.myInfoLayer .myActivity li >div.safety i { background-position-x: 0;}
+.myInfoLayer .myActivity li >div.review i { background-position-x: -3.2rem;}
+.myInfoLayer .myActivity li >div.donation i { background-position-x: -6.4rem;}
+.myInfoLayer .myActivity li >div.used i { background-position-x: -9.6rem;}
+.myInfoLayer .myActivity li >div.share i { background-position-x: -12.8rem;}
+.myInfoLayer .accordionBox { margin-top: 3.3rem;}
+.myInfoLayer .accordionBox >li .btn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 5.2rem; color: #111;}
+.myInfoLayer .accordionBox >li .btn p { font-size: 1.6rem;}
+.myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 4.8rem;}
+.myInfoLayer .accordionBox >li a.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
+.myInfoLayer .accordionBox >li .flex { display: flex; align-items: center; justify-content: space-between; width: 100%;}
+.myInfoLayer .accordionBox >li .flex .heading { font-size: 1.6rem;}
+.myInfoLayer .accordionBox >li .flex .switch input { left: -9999rem;}
+.myInfoLayer .accordionBox >li .radioSet label { font-size: 1.6rem;}
+.myInfoLayer .accordionBox >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.myInfoLayer .accordionBox >li .accordionTarget h4 { display: flex; align-items: center; height: 4.8rem;}
+.myInfoLayer .accordionBox >li .accordionTarget .pt8 { padding-top: 0.8rem;}
+.myInfoLayer .accordionBox >li .accordionTarget .pb8 { padding-bottom: 0.8rem;}
+.myInfoLayer .accordionBox >li .accordionTarget li { display: flex; align-items: center; height: 4.8rem;}
+.myInfoLayer .accordionBox >li .accordionTarget li a { font-size: 1.6rem; font-weight: 700; color: #111;}
+.myInfoLayer .accordionBox >li .accordionTarget .inline { display: flex; justify-content: space-between;}
+.myInfoLayer .accordionBox >li .accordionTarget .inline.half { flex-wrap: wrap;}
+.myInfoLayer .accordionBox >li .accordionTarget .inline.half li { width: 45%;}
+.myInfoLayer .accordionBox >li .accordionTarget .inline.half li:nth-child(odd) { width: 55%; padding-right: 2rem;}
+.myInfoLayer .accordionBox >li.open .btn i { background-position-y: -2.4rem;}
+.myInfoLayer .accordionBox >li.open .btn p { font-weight: 700;}
 
 
 
