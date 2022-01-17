@@ -478,20 +478,42 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .pictureNewsArea { padding-top: 1.5rem;}
 
 /* 스마트도시 소개 UI-SJN-14-001U */
-.info .introduce { padding: 0 2rem;}
+.info .introduce { overflow: hidden; position: relative; padding: 0 2rem 6rem;}
 .info .introduce .introduceHeader { display: flex; align-items: center; height: 7.2rem;}
 .info .introduce .introduceHeader h3 { font-size: 2rem;}
 .info .introduce .introduceHeader h3 .cBlue { display: block; color: #6684EA;}
 .info .introduce .introduceGuide { position: relative; height: 49rem; margin-top: 4.7rem;}
 .info .introduce .introduceGuide .data { position: absolute; left: 0; top: 5rem; width: 100%; height: 31rem;}
 .info .introduce .introduceGuide .data .dataPosition { position: relative; width: 32rem; height: 100%; margin: 0 auto;}
-.info .introduce .introduceGuide .data .dataPosition >div { display: flex; align-items: center; justify-content: center; position: absolute; flex-direction: column; text-align: center; border-radius: 50%;}
-.info .introduce .introduceGuide .data .dataPosition .dataWhite { left: 50%; top: 50%; z-index: 1; width: 13.2rem; height: 13.2rem; font-size: 1.6rem; color: #6684EA; background-color: #fff; transform: translate(-50%, -50%);}
+.info .introduce .introduceGuide .data .dataPosition >div { position: absolute; text-align: center; border-radius: 50%;}
+.info .introduce .introduceGuide .data .dataPosition .dataWhite { display: flex; align-items: center; justify-content: center; left: 50%; top: 50%; z-index: 1; width: 13.2rem; height: 13.2rem; font-size: 1.6rem; color: #6684EA; background-color: #fff; transform: translate(-50%, -50%);}
+.info .introduce .introduceGuide .data .dataPosition .dataWhite .t { font-size: 1.6rem;}
+.info .introduce .introduceGuide .data .dataPosition .dataWhite sup { display: inline-block; width: 0.7rem; height: 0.7rem; margin: -1.3rem 0.2rem 0 0.2rem; vertical-align: middle; background: url(../image/info/ico_deco_keypoint.png) no-repeat center bottom/contain;}
 .info .introduce .introduceGuide .data .dataPosition .other { width: 18.2rem; height: 18.2rem; color: #fff;}
-.info .introduce .introduceGuide .data .dataPosition .dataBlue { left: 50%; top: 0; background-color: rgba(102, 132, 234, 0.9); transform: translateX(-50%);}
-.info .introduce .introduceGuide .data .dataPosition .dataGreen { left: 0; bottom: 0; background-color: rgba(78, 196, 87, 0.9);}
-.info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; background-color: rgba(50, 187, 237, 0.9);}
-.info .introduce .introduceGuide .data .dataPosition .t { font-weight: 700;}
+.info .introduce .introduceGuide .data .dataPosition .dataBlue { left: 50%; top: 0; padding-top: 3.4rem; background-color: rgba(102, 132, 234, 0.8); transform: translateX(-50%);}
+.info .introduce .introduceGuide .data .dataPosition .dataGreen { left: 0; bottom: 0; padding: 10rem 2.6rem 0 0; background-color: rgba(78, 196, 87, 0.8);}
+.info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; padding: 10rem 0 0 2.6rem; background-color: rgba(50, 187, 237, 0.8);}
+.info .introduce .introduceGuide .data .dataPosition .t { font-size: 1.8rem; font-weight: 700;}
+.info .introduce .introduceGuide .data .dataPosition .st { margin-top: 0.4rem; font-size: 1.1rem; letter-spacing: 0;}
+.info .introduce .deco { position: absolute; left: 50%; top: 50%; z-index: -1; border: 1px solid #F4F5F7; border-radius: 50%; transform: translate(-50%, -50%);}
+.info .introduce .deco.circle_a { width: 24rem; height: 24rem;}
+.info .introduce .deco.circle_b { width: 32rem; height: 32rem;}
+.info .introduce .deco.circle_b::before { content: ''; position: absolute; left: 1.2rem; top: 6.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/info/ico_introduce_arrow.png) no-repeat center/cover; transform: rotate(-52deg);}
+.info .introduce .deco.circle_b::after { content: ''; position: absolute; right: 1.2rem; top: 6.1rem; width: 2.4rem; height: 2.4rem; background: url(../image/info/ico_introduce_arrow.png) no-repeat center/cover; transform: rotate(57deg);}
+.info .introduce .deco.circle_c { width: 40rem; height: 40rem;}
+.info .introduce .deco.circle_c::before { content: ''; position: absolute; right: 10.5rem; bottom: 0.5rem; width: 2.4rem; height: 2.4rem; background: url(../image/info/ico_introduce_arrow.png) no-repeat center/cover; transform: rotate(154deg);}
+.info .introduce .deco.circle_d { width: 48rem; height: 48rem;}
+.info .introduce .deco.circle_e { width: 56rem; height: 56rem;}
+.info .introduce .deco >p { position: absolute; z-index: 1; font-size: 1.3rem; color: #777; letter-spacing: -0.1em; line-height: 2.2rem;}
+.info .introduce .deco >p::after { content: ''; display: block; position: absolute; width: 1.5rem; height: 1.5rem; background-color: #CCD2E3; border-radius: 50%;}
+.info .introduce .deco .textPoa_a { left: 7.4rem; top: -2rem;}
+.info .introduce .deco .textPoa_a::after { left: 0; bottom: -2rem;}
+.info .introduce .deco .textPoa_b { left: 5.8rem; bottom: -0.3rem; width: 47%;}
+.info .introduce .deco .textPoa_c { right: 0; bottom: -7.8rem; width: 47%;}
+.info .introduce .deco .textPoa_b::after,
+.info .introduce .deco .textPoa_c::after { left: 0; top: -2rem;}
+
+
 .info .goal { background: url(../image/info/info_goal_bg.png) no-repeat center bottom/contain;}
 .info .goal .goalArea { padding: 1.6rem 2rem 5.6rem;}
 .info .goal .goalList li { padding: 1.9rem 0 1.4rem; border-bottom: 1px solid #F4F5F7;}
