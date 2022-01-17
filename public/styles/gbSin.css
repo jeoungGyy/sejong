@@ -130,20 +130,33 @@
 /* 내정보
 **********************************************/
 
-/* 공통 */
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 잠금설정 - UI-SJN-80-003 */
+.mypage .mypageArea { padding: 0 2rem 4rem;}
+.mypage .mypageArea .section ~ .section { margin-top: 1.6rem;}
+.mypage .mypageArea .section .heading { display: flex; align-items: center; justify-content: space-between;}
+.mypage .mypageArea .section .heading.headA { height: 5.2rem;}
+.mypage .mypageArea .section .heading.headB,
+.mypage .mypageArea .section .heading.headC { height: 4.6rem;}
+.mypage .mypageArea .section .heading h3 { font-size: 1.6rem;}
+.mypage .mypageArea .section .heading .setting button { display: block;}
+.mypage .mypageArea .section .heading .setting button span { position: relative; display: block; padding-right: 3rem; font-size: 1.4rem;}
+.mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 4rem;}
+.mypage .mypageArea .section .box { display: flex; flex-direction: column; margin-top: 0.8rem; padding: 1.4rem 2.4rem; border: 1px solid #EAEAEA;}
+.mypage .mypageArea .section .box p { font-size: 1.8rem; font-weight: 700; line-height: 2.6rem;}
+.mypage .mypageArea .section .pragraph p { font-size: 1.4rem; color: #555;}
+.mypage .mypageArea .section .securityList { display: flex;}
+.mypage .mypageArea .section .securityList li { flex: 1;}
+.mypage .mypageArea .section .securityList li label { display: block; overflow: hidden; position: relative; padding: 3.2rem 0 2rem; text-align: center; border: 1px solid #EAEAEA; cursor: pointer; transition: border-color .2s ease-in-out;}
+.mypage .mypageArea .section .securityList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background: #EAEDF2 url(../image/common/split_40.png) no-repeat -24rem 0/40rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.mypage .mypageArea .section .securityList li label i.ico { display: block; width: 6.3rem; height: 6rem; margin: 0 auto;}
+.mypage .mypageArea .section .securityList li label i.ico.icoA { background: url(../image/home/ico_security1.png) no-repeat center/cover;}
+.mypage .mypageArea .section .securityList li label i.ico.icoB { background: url(../image/home/ioc_security2.png) no-repeat center/cover;}
+.mypage .mypageArea .section .securityList li label i.ico.icoC { background: url(../image/home/ico_security3.png) no-repeat center/cover;}
+.mypage .mypageArea .section .securityList li label span { display: block; margin-top: 0.8rem; color: #555;}
+.mypage .mypageArea .section .securityList li input { position: absolute; opacity: 0;}
+.mypage .mypageArea .section .securityList li input:checked + label::after { background-color: #6684EA;}
+.mypage .mypageArea .section .securityList li input:checked + label { z-index: 1; border-color: #6684EA;}
+.mypage .mypageArea .section .securityList li ~ li label { margin-left: -0.1rem;}
 
 
 

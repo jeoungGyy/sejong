@@ -8,6 +8,7 @@
 - UI-SJN-06-001L 수정 - Page -> Layer로 변경
 - UI-SJN-14-001U 등록
 - UI-SJN-80-001U 등록
+- UI-SJN-80-003L 등록
 
 ### 01-14
 - UI-SJN-02-001U 등록/수정

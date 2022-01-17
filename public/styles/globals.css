@@ -415,6 +415,32 @@ table td { vertical-align: middle;}
 .myInfoLayer .accordionBox >li.open .btn i { background-position-y: -2.4rem;}
 .myInfoLayer .accordionBox >li.open .btn p { font-weight: 700;}
 
+/* 잠금설정 - UI-SJN-80-003L */
+.securityLayer { padding: 6.4rem 2rem;}
+.securityLayer .head { display: flex; align-items: center; justify-content: center; height: 4.8rem; font-size: 1.9rem;}
+.securityLayer .password { display: flex; align-items: center; justify-content: center; height: 6.4rem; margin-top: 0.8rem;}
+.securityLayer .password input { height: 4.8rem; margin: 0 0.8rem; padding: 0; font-size: 3rem; text-align: center; border: none; border-bottom: 2px solid #CDD0D8;}
+.securityLayer .password input.active { border-color: #292D32;}
+.securityLayer .number { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-top: 2.4rem;}
+.securityLayer .number li { width: calc(100% / 3); margin-top: 1.6rem;}
+.securityLayer .number li:last-child { width: 100%;}
+.securityLayer .number li button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 7.2rem; height: 7.2rem; margin: 0 auto; background-color: #EAEDF2; border-radius: 50%;}
+.securityLayer .number li button .n { font-family: var(--fontRoboto); font-size: 3rem;}
+.securityLayer .number li button .t { font-family: var(--fontRoboto); font-size: 1.1rem;}
+.securityLayer .pattern { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 20.4rem; margin: 4.5rem auto 0;}
+.securityLayer .pattern li { width: calc(100% / 3);}
+.securityLayer .pattern li button { display: block; position: relative; width: 6.8rem; height: 6.8rem; text-indent: -9999rem;}
+.securityLayer .pattern li button::after { content: ''; position: absolute; left: 50%; top: 50%; width: 1.2rem; height: 1.2rem; margin: -0.6rem 0 0 -0.6rem; background-color: #292D32; border-radius: 50%;}
+.securityLayer .pattern li button.active::after { background-color: #6684EA;}
+.securityLayer .guide { display: flex; align-items: center; justify-content: center; height: 5.2rem; margin-top: 3rem;}
+.securityLayer .guide .complete span { display: inline-block; position: relative; padding-left: 2.4rem;}
+.securityLayer .guide .complete span::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -26rem 0/40rem }
+.securityLayer .fingerprint { margin-top: 2rem;}
+.securityLayer .fingerprint i { display: block; width: 6.025rem; height: 8.225rem; margin: 0 auto; background: url(../image/home/ico_security3_big.png) no-repeat center/cover;}
+
+
+
+
 
 
 
