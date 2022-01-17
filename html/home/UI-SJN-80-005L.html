@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+
+
+		<!-- 레이어 -->
+		<div id="layerPattern" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="securityLayer">
+					<h4 class="head">변경 패턴 입력</h4>
+					<div>
+						<div>
+							<ol class="pattern">
+								<li>
+									<button type="button" class="active">1</button>
+								</li>
+								<li>
+									<button type="button" class="active">2</button>
+								</li>
+								<li>
+									<button type="button" class="active">3</button>
+								</li>
+								<li>
+									<button type="button">4</button>
+								</li>
+								<li>
+									<button type="button">5</button>
+								</li>
+								<li>
+									<button type="button">6</button>
+								</li>
+								<li>
+									<button type="button">7</button>
+								</li>
+								<li>
+									<button type="button">8</button>
+								</li>
+								<li>
+									<button type="button">9</button>
+								</li>
+							</ol>
+						</div>
+						<div class="guide">
+							<p class="textext"><span>4개 이상의 점을 연결해 주세요</span></p>
+							<!-- <p class="textext complete"><span>패턴 등록이 완료 되었습니다</span></p> -->
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //패턴 입력 -->
+
+		<!-- 지문 입력 -->
+		<div id="layerFingerprint" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="securityLayer">
+					<div class="fingerprint">
+						<i></i>
+					</div>
+					<div class="fingerprint complete">
+						<i></i>
+					</div>
+					<div class="guide">
+						<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
+						<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerPattern');
+		</script>
+		<!-- //레이어 -->
+
+		
+</div>
+</body>
+</html>

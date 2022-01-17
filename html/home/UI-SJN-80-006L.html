@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+
+
+		<!-- 레이어 -->
+		<div id="layerFingerprint" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="securityLayer">
+					<div class="fingerprint">
+						<i></i>
+					</div>
+					<div class="fingerprint complete">
+						<i></i>
+					</div>
+					<div class="guide">
+						<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
+						<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerFingerprint');
+		</script>
+		<!-- //레이어 -->
+
+		
+</div>
+</body>
+</html>

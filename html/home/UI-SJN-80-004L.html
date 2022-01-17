@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+
+
+		<!-- 레이어 -->
+		<div id="layerNumber" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="securityLayer">
+					<h4 class="head">간편번호를 입력하세요</h4>
+					<div>
+						<div class="password">
+							<input type="password" value="1" class="active" /> <!-- 값이 있을경우 active 클래스 넣어주세요. -->
+							<input type="password" />
+							<input type="password" />
+							<input type="password" />
+						</div>
+						<ol class="number">
+							<li>
+								<button type="button">
+									<span class="n">1</span>
+									<span class="t"></span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">2</span>
+									<span class="t">ABC</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">3</span>
+									<span class="t">DEF</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">4</span>
+									<span class="t">GHI</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">5</span>
+									<span class="t">JKL</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">6</span>
+									<span class="t">MNO</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">7</span>
+									<span class="t">PQRS</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">8</span>
+									<span class="t">TUV</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">9</span>
+									<span class="t">WXYZ</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<span class="n">0</span>
+									<span class="t"></span>
+								</button>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerNumber');
+		</script>
+		<!-- //레이어 -->
+
+
+</div>
+</body>
+</html>
