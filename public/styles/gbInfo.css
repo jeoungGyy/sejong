@@ -343,29 +343,6 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 /* 민원
 **********************************************/
 
-/* 척척세종 UI-SJN-06-001L */
-.info .header-large { padding: 0 2rem 1.6rem;}
-.info .header-large h3 { display: flex; flex-direction: column; justify-content: center; height: 7.2rem; font-size: 2rem;}
-.info .header-large h3 .style { display: block; color: #6684EA;}
-.info .header-large .operation { display: flex; align-items: center; height: 4rem;}
-.info .header-large .operation .box { display: flex; align-items: center; justify-content: center; width: 3.9rem; height: 2.4rem; margin-right: 0.8rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
-.info .header-large .operation .box strong .gray { color: #555;}
-.info .compArea { padding: 2rem; background-color: #F4F5F7;}
-.info .compArea .caCon { padding: 1.6rem 1.6rem 3.2rem; background-color: #fff;}
-.info .compArea .caCon ~ .caCon { margin-top: 1.6rem;}
-.info .compArea .caCon h4 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem; color: #000;}
-.info .compArea .caItem ~ .caItem { margin-top: 1.6rem;}
-.info .compArea .caItem .service { display: flex; align-items: center; height: 4rem;}
-.info .compArea .caItem .service .box { display: inline-flex; align-items: center; justify-content: center; height: 3.2rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd; border-radius: 1.6rem;}
-.info .compArea .caItem .caList { margin-top: 0.8rem;}
-.info .compArea .caItem .caList li { position: relative; padding-left: 1.6rem; line-height: 2.4rem;}
-.info .compArea .caItem .caList li::after { content: ''; position: absolute; left: 0; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
-.info .compArea .caItem .caList li .gray { color: #777;}
-.info .compArea .caItem .caList li .orange { color: #FD2020;}
-
-
-
-
 /* 교육
 **********************************************/
 
@@ -495,7 +472,7 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; padding: 10rem 0 0 2.6rem; background-color: rgba(50, 187, 237, 0.8);}
 .info .introduce .introduceGuide .data .dataPosition .t { font-size: 1.8rem; font-weight: 700;}
 .info .introduce .introduceGuide .data .dataPosition .st { margin-top: 0.4rem; font-size: 1.1rem; letter-spacing: 0;}
-.info .introduce .deco { position: absolute; left: 50%; top: 50%; z-index: -1; border: 1px solid #F4F5F7; border-radius: 50%; transform: translate(-50%, -50%);}
+.info .introduce .deco { position: absolute; left: 50%; top: 50%; z-index: -1; margin-top: -1.1rem; border: 1px solid #F4F5F7; border-radius: 50%; transform: translate(-50%, -50%);}
 .info .introduce .deco.circle_a { width: 24rem; height: 24rem;}
 .info .introduce .deco.circle_b { width: 32rem; height: 32rem;}
 .info .introduce .deco.circle_b::before { content: ''; position: absolute; left: 1.2rem; top: 6.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/info/ico_introduce_arrow.png) no-repeat center/cover; transform: rotate(-52deg);}

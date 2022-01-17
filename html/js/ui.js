@@ -422,6 +422,29 @@ const accordion = {
 	}
 }
 
+//아코디언
+function openCurrAccordion(e) {
+	var headers = document.querySelectorAll('.accordionContainer .accordionMenu');
+	for(var i = 0; i < headers.length; i++) {
+			headers[i].addEventListener('click', openCurrAccordion);
+	}
+	
+	for(var i = 0; i < headers.length; i++) {
+		console.log(2)
+			var parent = headers[i].parentElement;
+			var article = headers[i].nextElementSibling;
+
+			if (this === headers[i] && !parent.classList.contains('open')) {
+					parent.classList.add('open');
+					article.style.minHeight = article.scrollHeight + 'px';
+			}
+			else {
+					parent.classList.remove('open');
+					article.style.minHeight = '0px';
+			}
+	}
+}
+
 if(typeof _lazy === 'undefined' || _lazy !== true) {
   window.addEventListener('DOMContentLoaded', function () {
     _lazyLoad();
@@ -433,4 +456,5 @@ function _lazyLoad() {
   container.set();
 	accordion.active();
 	tab.active();
+	openCurrAccordion();
 }
