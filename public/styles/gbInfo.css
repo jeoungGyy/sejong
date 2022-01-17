@@ -67,9 +67,9 @@
 .form-default .items-form >li .serviceList li { width: calc(20% - 0.4rem); margin: 0 0.4rem;}
 .form-default .items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; background-color: #F4F5F7; cursor: pointer;}
 .form-default .items-form >li .serviceList li label img { width: 100%; height: auto; vertical-align: top;}
-.form-default .items-form >li .serviceList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background-color: #fff; background-image: url(../image/info/ico_checkbox.png); background-repeat: no-repeat; background-size: 2rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.form-default .items-form >li .serviceList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .form-default .items-form >li .serviceList li input { position: absolute; opacity: 0;}
-.form-default .items-form >li .serviceList li input:checked + label::after { background-color: #111; background-position-y: -2rem;}
+.form-default .items-form >li .serviceList li input:checked + label::after { background-color: #111;}
 .form-default .items-form >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; text-align: center;}
 .form-default .items-form >li .period .pHead { display: flex; align-items: center; height: 3.2rem;}
 .form-default .items-form >li .period .pHead span { display: inline-block; margin-right: 1.6rem; color: #555;}
@@ -474,9 +474,60 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .tripCalendar .notes .swiper-slide.companion::after { background-color: #32BBED;}
 .info .tripCalendar .notes .swiper-slide.modify::after { background-color: #D69630;}
 
-
 /* 포토갤러리 UI-SJN-13-006U */
 .info .pictureNewsArea { padding-top: 1.5rem;}
+
+/* 스마트도시 소개 UI-SJN-14-001U */
+.info .introduce { padding: 0 2rem;}
+.info .introduce .introduceHeader { display: flex; align-items: center; height: 7.2rem;}
+.info .introduce .introduceHeader h3 { font-size: 2rem;}
+.info .introduce .introduceHeader h3 .cBlue { display: block; color: #6684EA;}
+.info .introduce .introduceGuide { position: relative; height: 49rem; margin-top: 4.7rem;}
+.info .introduce .introduceGuide .data { position: absolute; left: 0; top: 5rem; width: 100%; height: 31rem;}
+.info .introduce .introduceGuide .data .dataPosition { position: relative; width: 32rem; height: 100%; margin: 0 auto;}
+.info .introduce .introduceGuide .data .dataPosition >div { display: flex; align-items: center; justify-content: center; position: absolute; flex-direction: column; text-align: center; border-radius: 50%;}
+.info .introduce .introduceGuide .data .dataPosition .dataWhite { left: 50%; top: 50%; z-index: 1; width: 13.2rem; height: 13.2rem; font-size: 1.6rem; color: #6684EA; background-color: #fff; transform: translate(-50%, -50%);}
+.info .introduce .introduceGuide .data .dataPosition .other { width: 18.2rem; height: 18.2rem; color: #fff;}
+.info .introduce .introduceGuide .data .dataPosition .dataBlue { left: 50%; top: 0; background-color: rgba(102, 132, 234, 0.9); transform: translateX(-50%);}
+.info .introduce .introduceGuide .data .dataPosition .dataGreen { left: 0; bottom: 0; background-color: rgba(78, 196, 87, 0.9);}
+.info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; background-color: rgba(50, 187, 237, 0.9);}
+.info .introduce .introduceGuide .data .dataPosition .t { font-weight: 700;}
+.info .goal { background: url(../image/info/info_goal_bg.png) no-repeat center bottom/contain;}
+.info .goal .goalArea { padding: 1.6rem 2rem 5.6rem;}
+.info .goal .goalList li { padding: 1.9rem 0 1.4rem; border-bottom: 1px solid #F4F5F7;}
+.info .goal .goalList li h4 { font-size: 1.6rem;}
+.info .goal .goalList li h4 span { margin-left: 0.8rem; font-size: 1.3rem; font-weight: 400; color: #aaa; letter-spacing: 0;}
+.info .goal .goalList li .cBlue { color: #6684EA;}
+.info .goal .goalList li p { margin-top: 0.8rem;}
+.info .goal .goalBgBody { margin-top: 4.3rem;}
+.info .goal .goalBgList { display: flex; align-items: center;}
+.info .goal .goalBgList li { flex: 1; text-align: center;}
+.info .goal .goalBgList li .goalIcons { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0 auto; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.3rem;}
+.info .goal .goalBgList li .goalIcons i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/info/split_goal.png) no-repeat 0 0/cover;}
+.info .goal .goalBgList li .goalIcons.health i { background-position-x: -3.2rem;}
+.info .goal .goalBgList li .goalIcons.environment i { background-position-x: -6.4rem;}
+.info .goal .goalBgList li .goalIcons.calamity i { background-position-x: -9.6rem;}
+.info .goal .goalBgList li .goalIcons.energy i { background-position-x: -12.8rem;}
+.info .goal .goalBgList li .goalIcons.convenience i { background-position-x: -16rem;}
+.info .goal .goalBgList li p { margin-top: 0.8rem; font-size: 1.4rem; color: #777;}
+.info .keyPoint .keyPointArea { padding: 3.2rem 2rem 4rem;}
+.info .keyPoint .keyPointHeader { display: flex; align-items: center; height: 7.2rem;}
+.info .keyPoint .keyPointHeader h4 { font-size: 1.8rem; line-height: 2.6rem;}
+.info .keyPoint .keyPointHeader h4 sup { display: inline-block; width: 0.7rem; height: 0.7rem; margin: -1.6rem 0 0 0.2rem; vertical-align: middle; background: url(../image/info/ico_deco_keypoint.png) no-repeat center/cover;}
+.info .keyPoint .keyPointHeader h4 .cBlue { display: block; color: #6684EA;}
+.info .keyPoint .keyPointBody { overflow: hidden; margin: 1.6rem -2rem 0; padding: 0 2rem;}
+.info .keyPoint .keyPointList li { width: 14rem;}
+.info .keyPoint .keyPointList li dl dt { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 7.6rem; color: #fff;}
+.info .keyPoint .keyPointList li:nth-child(1) dl dt { background-color: #6684EA;}
+.info .keyPoint .keyPointList li:nth-child(2) dl dt { background-color: #4EC4AD;}
+.info .keyPoint .keyPointList li:nth-child(3) dl dt { background-color: #4EC457;}
+.info .keyPoint .keyPointList li dl dt span { font-size: 1.3rem;}
+.info .keyPoint .keyPointList li dl dt strong { font-size: 1.8rem;}
+.info .keyPoint .keyPointList li dl dd { min-height: 10.8rem; padding: 1.6rem 1.2rem 3.2rem; background-color: #EAEDF2;}
+.info .keyPoint .keyPointList li dl dd p { color: #555;}
+
+
+
 
 
 

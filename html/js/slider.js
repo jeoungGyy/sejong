@@ -80,6 +80,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 10,
 	},
+	/* UI-SJN-14-001U */
+	infokeyPointSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
 	/* UI-SJN-02-001U */
 	popularSwiper: {
     direction: "vertical",

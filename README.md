@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-17
+- UI-SJN-08-001P 수정
+
 ### 01-14
 - UI-SJN-02-001U 등록/수정
 - UI-SJN-02-002L 등록
