@@ -146,6 +146,15 @@
 .items-term >li .blackLink li { margin-top: 0.8rem;}
 .items-term >li .blackLink li a { display: inline-block; position: relative; padding-left: 1.6rem; color: #333; line-height: 2.3rem;}
 .items-term >li .blackLink li a::after { content: ''; position: absolute; left: 0.6rem; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.items-term >li .ovflowX { overflow-x: scroll; overflow-y: hidden; margin-top: 1.6rem;}
+.items-term >li .ovflowX table { width: 70rem; border-top: 1px solid #333;}
+.items-term >li .ovflowX table tr th { padding: 1.5rem 1rem; text-align: center; border-left: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.items-term >li .ovflowX table tr td { padding: 1.5rem 1rem; vertical-align: top; border-left: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
+.items-term >li .ovflowX table tr th:first-child,
+.items-term >li .ovflowX table tr td:first-child { border-left: none;}
+.items-term >li .ovflowX table tr td li { padding-left: 0;}
+.items-term >li .ovflowX table tr td li::after { display: none;}
+.items-term >li .ovflowX table tr td li:first-child { margin-top: 0;}
 .items-term >li li { margin-top: 2rem; line-height: 2.3rem;}
 .items-term >li li li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
 .items-term >li li li:first-child { margin-top: 2rem;}
