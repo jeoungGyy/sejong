@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-18
+- UI-SJN-83-001U 등록
+
 ### 01-17
 - UI-SJN-08-001P 수정
 - UI-SJN-06-001L 수정 - Page -> Layer로 변경

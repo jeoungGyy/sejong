@@ -166,6 +166,8 @@ table td { vertical-align: middle;}
 .button.blue { color: #fff; background-color: #6684EA;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 
+
+
 /* 라인 중단점 */
 .line-default { border-top: 0.6rem solid #F4F5F7;}
 
@@ -176,8 +178,8 @@ table td { vertical-align: middle;}
 .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
-.switch label::after { content: ""; position: absolute; display: block; left: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
-.switch input:checked + label:after { margin-left: 2.3rem;}
+.switch label::after { content: ""; position: absolute; display: block; left: 0.6rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
+.switch input:checked + label:after { margin-left: 2.1rem;}
 .switch input:checked + label:before { background-color: #6684EA;}
 
 /* 라디오박스 */
