@@ -25,7 +25,7 @@
 
 					<div id="infoReviewSwiper" class="pictureBody">
 						<div class="slideContainer">
-							<ul class="items-icture swiper-wrapper">
+							<ul class="swiper-wrapper">
 								<li class="swiper-slide">
 									<a href="#">
 										<figure>
@@ -54,8 +54,8 @@
 										</figure>
 									</a>
 								</li>
-								<li class="swiper-slide lastMore"> <!-- 20개 초과 등록 시 lastMore 클래스 추가 -->
-									<a href="#">
+								<li class="swiper-slide">
+									<a href="#" class="lastMore"> <!-- 20개 초과 등록 시 lastMore 클래스 추가 -->
 										<figure>
 											<img src="../../public/image/temp/temp014.png" alt="">
 										</figure>
@@ -64,13 +64,13 @@
 										</div>
 									</a>
 								</li>
-								<!-- 내용이 없을경우 -->
-								<li class="empty">
-									<p>등록된 사진리뷰가 없습니다.</p>
-								</li>
-								<!-- //내용이 없을경우 -->
 							</ul>
 						</div>
+						<!-- 내용이 없을경우 -->
+						<div class="empty">
+							<p>등록된 사진리뷰가 없습니다.</p>
+						</div>
+						<!-- //내용이 없을경우 -->
 					</div>
 					<script>
 						slider.active('infoReviewSwiper')
@@ -150,8 +150,10 @@
 							</div>
 						</li>
 						<!-- 내용이 없을경우 -->
-						<li class="empty">
-							<p>등록된 리뷰가 없습니다.</p>
+						<li>
+							<div class="empty">
+								<p>등록된 리뷰가 없습니다.</p>
+							</div>
 						</li>
 						<!-- //내용이 없을경우 -->
 					</ul>

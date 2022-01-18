@@ -2,8 +2,8 @@
 **********************************************/
 
 /* 공통 */
-.bottomFixed { position: relative; padding-bottom: 10rem;}
-.bottomFixed .btnGroup { position: fixed; left: 0; bottom: 0; width: 100%; height: 8.8rem; padding: 0 2rem; background-color: #fff;}
+.bottomFixed { position: relative; padding-bottom: 8rem;}
+.bottomFixed .btnGroup { position: fixed; left: 0; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
 
 .headerSub { display: flex;}
 .headerSub span { font-size: 1.4rem; color: #777;}
@@ -293,7 +293,14 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .newStore { padding: 1.6rem 2rem 3rem;}
 .info .ourStore { padding: 1.6rem 2rem 6rem;}
 .info .newStoreBody { overflow: hidden;}
-
+.info .newStoreBody ul { display: flex; flex-wrap: nowrap; margin-top: 0.8rem;}
+.info .newStoreBody ul li { width: 50%; min-height: 20.4rem; margin: 0;}
+.info .newStoreBody ul li a.picture { display: block; overflow: hidden;}
+.info .newStoreBody ul li a.picture figure { display: block; height: 10rem;}
+.info .newStoreBody ul li a.text { display: block; margin-top: 1.2rem; color: #555;}
+.info .newStoreBody ul li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
+.info .newStoreBody ul li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
+.info .newStoreBody ul li a.text p { line-height: 2.2rem;}
 
 /* 홍보/행사 UI-SJN-04-007U */
 .info .promote { padding: 1.6rem 2rem 6rem;}
@@ -301,20 +308,19 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 /* 리뷰 목록 UI-SJN-04-009U */
 .info .pictureReview { padding: 1.6rem 2rem;}
 .info .pictureReview .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
-.info .pictureReview .pictureBody .items-icture li.empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777;}
-.info .pictureReview .pictureBody .items-icture a { display: block; position: relative;}
-.info .pictureReview .pictureBody .items-icture a img { width: 100%; height: auto; vertical-align: top;}
-.info .pictureReview .pictureBody .items-icture .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
-.info .pictureReview .pictureBody .items-icture .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
-.info .pictureReview .pictureBody .items-icture .lastMore .blind span::before { content: '+';}
+.info .pictureReview .pictureBody .empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777;}
+.info .pictureReview .pictureBody a { display: block; position: relative;}
+.info .pictureReview .pictureBody a img { width: 100%; height: auto; vertical-align: top;}
+.info .pictureReview .pictureBody .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+.info .pictureReview .pictureBody .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
+.info .pictureReview .pictureBody .lastMore .blind span::before { content: '+';}
 .info .textReview { padding: 1.6rem 2rem 6rem;}
 .info .textReview .items-review li { padding-top: 0.8rem;}
 .info .textReview .items-review li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
-.info .textReview .items-review li.empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.info .textReview .items-review li.empty p { position: relative; font-size: 1.6rem; color: #777;}
-.info .textReview .items-review li.empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
-
-/* 리뷰 등록 UI-SJN-04-010P */
+.info .textReview .items-review .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.info .textReview .items-review .empty p { position: relative; font-size: 1.6rem; color: #777;}
+.info .textReview .items-review .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
+* 리뷰 등록 UI-SJN-04-010P */
 .info .reviewForm { padding: 0 2rem 6rem;}
  
 /* 사진 리뷰 UI-SJN-04-011P */
@@ -436,14 +442,15 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .tripCalendar { padding: 1.6rem 2rem 2rem;}
 .info .tripCalendar .notes {display: flex; align-items: center; height: 4.8rem;}
 .info .tripCalendar .notes .slideContainer {  overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
-.info .tripCalendar .notes .swiper-slide { display: inline-block; position: relative; width: 7.6rem; padding-left: 2rem; font-size: 1.4rem; color: #777;}
-.info .tripCalendar .notes .swiper-slide::after { content: ''; display: block; position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
-.info .tripCalendar .notes .swiper-slide.complete::after { background-color: #555;}
-.info .tripCalendar .notes .swiper-slide.wait::after { background-color: #CDD0D8;}
-.info .tripCalendar .notes .swiper-slide.possible::after { background-color: #6684EA;}
-.info .tripCalendar .notes .swiper-slide.impossible::after { background-color: #FD2020;}
-.info .tripCalendar .notes .swiper-slide.companion::after { background-color: #32BBED;}
-.info .tripCalendar .notes .swiper-slide.modify::after { background-color: #D69630;}
+.info .tripCalendar .notes .swiper-slide { width: 7.6rem;}
+.info .tripCalendar .notes .swiper-slide span { display: inline-block; position: relative; padding-left: 2rem; font-size: 1.4rem; color: #777;}
+.info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.info .tripCalendar .notes .swiper-slide span.complete::after { background-color: #555;}
+.info .tripCalendar .notes .swiper-slide span.wait::after { background-color: #CDD0D8;}
+.info .tripCalendar .notes .swiper-slide span.possible::after { background-color: #6684EA;}
+.info .tripCalendar .notes .swiper-slide span.impossible::after { background-color: #FD2020;}
+.info .tripCalendar .notes .swiper-slide span.companion::after { background-color: #32BBED;}
+.info .tripCalendar .notes .swiper-slide span.modify::after { background-color: #D69630;}
 
 /* 포토갤러리 UI-SJN-13-006U */
 .info .pictureNewsArea { padding-top: 1.5rem;}
@@ -509,15 +516,15 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.8);}
 .info .keyPoint .keyPointHeader h4 sup { display: inline-block; width: 0.7rem; height: 0.7rem; margin: -1.6rem 0 0 0.2rem; vertical-align: middle; background: url(../image/info/ico_deco_keypoint.png) no-repeat center/cover;}
 .info .keyPoint .keyPointHeader h4 .cBlue { display: block; color: #6684EA;}
 .info .keyPoint .keyPointBody { overflow: hidden; margin: 1.6rem -2rem 0; padding: 0 2rem;}
-.info .keyPoint .keyPointList li { width: 14rem;}
-.info .keyPoint .keyPointList li dl dt { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 7.6rem; color: #fff;}
-.info .keyPoint .keyPointList li:nth-child(1) dl dt { background-color: #6684EA;}
-.info .keyPoint .keyPointList li:nth-child(2) dl dt { background-color: #4EC4AD;}
-.info .keyPoint .keyPointList li:nth-child(3) dl dt { background-color: #4EC457;}
-.info .keyPoint .keyPointList li dl dt span { font-size: 1.3rem;}
-.info .keyPoint .keyPointList li dl dt strong { font-size: 1.8rem;}
-.info .keyPoint .keyPointList li dl dd { min-height: 10.8rem; padding: 1.6rem 1.2rem 3.2rem; background-color: #EAEDF2;}
-.info .keyPoint .keyPointList li dl dd p { color: #555;}
+.info .keyPoint .keyPointBody li { width: 14rem;}
+.info .keyPoint .keyPointBody li dl dt { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 7.6rem; color: #fff;}
+.info .keyPoint .keyPointBody li:nth-child(1) dl dt { background-color: #6684EA;}
+.info .keyPoint .keyPointBody li:nth-child(2) dl dt { background-color: #4EC4AD;}
+.info .keyPoint .keyPointBody li:nth-child(3) dl dt { background-color: #4EC457;}
+.info .keyPoint .keyPointBody li dl dt span { font-size: 1.3rem;}
+.info .keyPoint .keyPointBody li dl dt strong { font-size: 1.8rem;}
+.info .keyPoint .keyPointBody li dl dd { min-height: 10.8rem; padding: 1.6rem 1.2rem 3.2rem; background-color: #EAEDF2;}
+.info .keyPoint .keyPointBody li dl dd p { color: #555;}
 
 
 
