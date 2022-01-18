@@ -127,13 +127,13 @@ table td { vertical-align: middle;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 4.8rem;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 9.6rem;}
 .subHeader h2 { font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
 .subHeader .searchHeader { width: 74%;}
 .subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
 .subHeader .btnHeader { position: absolute; right: 0; top: 0;}
-.subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 4.8rem;}
+.subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
 .subHeader .btnHeader .icoMic { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
@@ -184,7 +184,7 @@ table td { vertical-align: middle;}
 
 /* 라디오박스 */
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
-.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 4.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 9.6rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .radioSet input { position: absolute; opacity: 0;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
 
@@ -266,7 +266,7 @@ table td { vertical-align: middle;}
 .layerWrap.full .headerBtn .btnClose { top: inherit;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 4.8rem;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
@@ -373,7 +373,7 @@ table td { vertical-align: middle;}
 .voiceLayer .icons .iconBg { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 7.2rem; margin: 0 auto; background: linear-gradient(135deg,  #1e399e 11%,#294ca5 52%,#944d8f 100%); border-radius: 50%;}
 .voiceLayer .icons .iconBg i.mike { width: 4rem; height: 4rem; text-indent: -9999rem; background: url(../image/home/ico_mike.png) no-repeat center/cover;}
 .voiceLayer .icons .iconBg i.voice { width: 5rem; height: 2.2rem; text-indent: -9999rem; background: url(../image/home/ico_voice.png) no-repeat center/cover;}
-.voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 4.8rem; border-radius: 50%;}
+.voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 9.6rem; border-radius: 50%;}
 
 /* 내 정보 - UI-SJN-80-001U */
 .myInfoLayer { padding: 0 2rem 2rem;}
@@ -398,7 +398,7 @@ table td { vertical-align: middle;}
 .myInfoLayer .accordionBox { margin-top: 3.3rem;}
 .myInfoLayer .accordionBox >li .btn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 5.2rem; color: #111;}
 .myInfoLayer .accordionBox >li .btn p { font-size: 1.6rem;}
-.myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 4.8rem;}
+.myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 9.6rem;}
 .myInfoLayer .accordionBox >li a.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
 .myInfoLayer .accordionBox >li .flex { display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .myInfoLayer .accordionBox >li .flex .heading { font-size: 1.6rem;}

@@ -7,6 +7,7 @@
 - swiperJS 수정 - 클래스 이동
 - bottomFixed 클래스 하위 태그로 이동
 - UI-SJN-83-001U 등록
+- UI-SJN-20-001U 등록
 
 ### 01-17
 - UI-SJN-08-001P 수정

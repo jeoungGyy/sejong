@@ -95,7 +95,15 @@ const slideOpt = {
 			delay: 3000,
 			disableOnInteraction: false
 		},
-		
+	},
+	/* UI-SJN-20-001U */
+	mapWordListSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
+	mapPlaceListSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
 	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}

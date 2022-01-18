@@ -33,7 +33,7 @@
 .item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 4rem;}
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnClose { display: block;}
-.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 4.8rem;}
+.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 9.6rem;}
 
 
 /* UI-SJN-02-001U */
@@ -46,7 +46,7 @@
 .home .popularHeader .popularBody .tooggleWord { display: flex; align-items: center; justify-content: center; width: 4rem;}
 .home .popularHeader .popularBody .tooggleWord i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover;     transition: transform .3s;}
 .home .popularHeader .popularBody .favorite { display: block;}
-.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 4.8rem;}
+.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 9.6rem;}
 .home .popularHeader .popularBody .favorite.active i { background-position-y: -2.4rem;}
 .home .popularHeader .wordCloud { color: #fff; background-color: #A5BFD6;}
 .home .popularHeader.active .popularBody .tooggleWord i { transform: rotate(-180deg);}
@@ -140,7 +140,7 @@
 .items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 4rem;}
 .items-term >li .download { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd;}
 .items-term >li .download span { display: inline-block; position: relative; padding-left: 2.8rem;}
-.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 4.8rem;}
+.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 9.6rem;}
 .items-term >li .sub { display: block; margin-top: 1rem;}
 .items-term >li img { max-width: 100%; height: auto;}
 .items-term >li .blackLink li { margin-top: 0.8rem;}
