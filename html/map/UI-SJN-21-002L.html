@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">길찾기</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="boxTab">
+					<ul class="btnTab wayArea">
+						<li class="itemBtn"><button class="active" type="button">자동차</button></li>
+						<li class="itemBtn"><button type="button">도보</button></li>
+					</ul>
+
+					<div class="tabContent">
+						<!-- 자동차 -->
+						<div class="active">
+							<div class="toDoorBody">
+								<!-- 일반 -->
+								<ul class="toDoor">
+									<li>
+										<div class="active"> <!-- active 추가시 label태그 표시 및 인풋태그 간격이 바뀝니다. -->
+											<label for="list0">내위치</label>
+											<input type="text" id="list0" value="세종특별자치시 나성로 133-9" />
+										</div>
+										<div>
+											<label for="list1">도착지</label>
+											<input type="text" id="list1" placeholder="도착지를 입력하세요" />
+										</div>
+										<button type="button" class="btnSwitch"><i>내위치, 도착지 주소 교체</i></button>
+									</li>
+								</ul>
+								<!-- //일반 -->
+
+								<!-- 경유지 -->
+								<div>
+									<ul class="toDoor">
+										<li>
+											<div class="active">
+												<label for="list2">내위치</label>
+												<input type="text" id="list2" value="세종특별자치시 나성로 133-9" />
+											</div>
+										</li>
+										<li>
+											<div class="active">
+												<label for="list3">경유지</label>
+												<input type="text" id="list3" value="서울 영등포구 강서동" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list4">경유지</label>
+												<input type="text" id="list4" placeholder="경유지2을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지2 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list5">경유지</label>
+												<input type="text" id="list5" placeholder="경유지3을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지3 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list6">경유지</label>
+												<input type="text" id="list6" placeholder="경유지4을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지4 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list7">경유지</label>
+												<input type="text" id="list7" placeholder="경유지5을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지5 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list8">도착지</label>
+												<input type="text" id="list8" placeholder="도착지를 입력하세요" />
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //경유지 -->
+
+								<div class="btnGroup">
+									<button type="button" class="btnGtransit"><i></i>경유지</button>
+									<button type="button" class="btnGdelete"><i></i>지우기</button>
+								</div>
+								<button type="button" class="btnFind button middle blue"><i></i>길찾기</button>
+							</div>
+
+							<div class="routeArea line-default">
+								<div class="header-default">
+									<h3>최근 경로</h3>
+									<a href="#">천체삭제</a>
+								</div>
+								<div class="routeBody">
+									<ul class="items-route">
+										<li>
+											<i class="car"></i>
+											<p>나성로 133-9 → 도시통합정보센터</p>
+											<span>12.27</span>
+											<button type="button"><i>삭제</i></button>
+										</li>
+										<li>
+											<i class="car"></i>
+											<p>세종특별자치시 나성로 133-9 → 도시 통합정보센터</p>
+											<span>12.26</span>
+											<button type="button"><i>삭제</i></button>
+										</li>
+									</ul>
+								</div>
+
+								<!-- 내용이 없을경우 -->
+								<div class="empty">
+									<p>최근 검색 경로가 없습니다.</p>
+								</div>
+								<!-- //내용이 없을경우 -->
+							</div>
+						</div>
+						<!-- //자동차 -->
+
+						<!-- 도보 -->
+						<div>
+							<div class="toDoorBody">
+								<!-- 일반 -->
+								<ul class="toDoor">
+									<li>
+										<div class="active"> <!-- active 추가시 label태그 표시 및 인풋태그 간격이 바뀝니다. -->
+											<label for="list0">내위치</label>
+											<input type="text" id="list0" value="세종특별자치시 나성로 133-9" />
+										</div>
+										<div>
+											<label for="list1">도착지</label>
+											<input type="text" id="list1" placeholder="도착지를 입력하세요" />
+										</div>
+										<button type="button" class="btnSwitch"><i>내위치, 도착지 주소 교체</i></button>
+									</li>
+								</ul>
+								<!-- //일반 -->
+
+								<!-- 경유지 -->
+								<div>
+									<ul class="toDoor">
+										<li>
+											<div class="active">
+												<label for="list2">내위치</label>
+												<input type="text" id="list2" value="세종특별자치시 나성로 133-9" />
+											</div>
+										</li>
+										<li>
+											<div class="active">
+												<label for="list3">경유지</label>
+												<input type="text" id="list3" value="서울 영등포구 강서동" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list4">경유지</label>
+												<input type="text" id="list4" placeholder="경유지2을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지2 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list5">경유지</label>
+												<input type="text" id="list5" placeholder="경유지3을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지3 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list6">경유지</label>
+												<input type="text" id="list6" placeholder="경유지4을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지4 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list7">경유지</label>
+												<input type="text" id="list7" placeholder="경유지5을 입력하세요" />
+											</div>
+											<button type="button" class="btnTransit"><i>경유지5 삭제</i></button>
+										</li>
+										<li>
+											<div>
+												<label for="list8">도착지</label>
+												<input type="text" id="list8" placeholder="도착지를 입력하세요" />
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //경유지 -->
+
+								<div class="btnGroup">
+									<button type="button" class="btnGtransit"><i></i>경유지</button>
+									<button type="button" class="btnGdelete"><i></i>지우기</button>
+								</div>
+								<button type="button" class="btnFind button middle blue"><i></i>길찾기</button>
+							</div>
+
+							<div class="routeArea line-default">
+								<div class="header-default">
+									<h3>최근 경로</h3>
+									<a href="#">천체삭제</a>
+								</div>
+								<div class="routeBody">
+									<ul class="items-route">
+										<li>
+											<i class="walk"></i>
+											<p>나성로 133-9 → 도시통합정보센터</p>
+											<span>12.27</span>
+											<button type="button"><i>삭제</i></button>
+										</li>
+										<li>
+											<i class="walk"></i>
+											<p>세종특별자치시 나성로 133-9 → 도시 통합정보센터</p>
+											<span>12.26</span>
+											<button type="button"><i>삭제</i></button>
+										</li>
+									</ul>
+								</div>
+
+								<!-- 내용이 없을경우 -->
+								<div class="empty">
+									<p>최근 검색 경로가 없습니다.</p>
+								</div>
+								<!-- //내용이 없을경우 -->
+							</div>
+						</div>
+						<!-- //도보 -->
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

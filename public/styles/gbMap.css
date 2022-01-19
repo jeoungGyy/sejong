@@ -47,7 +47,20 @@
 .items-parking >li .subContent .ovflowX table td { padding: 1.6rem 0.6rem; font-size: 1.6rem; font-weight: 400; text-align: center; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
 .items-parking >li:last-child { background: none;}
 
-/* 메인 */
+.items-route { margin-top: 0.8rem;}
+.items-route li { display: flex; align-items: center; padding: 1.6rem 2rem; border-bottom: 1px solid #F4F5F7;}
+.items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #CDD0D8 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 6.4rem; border-radius: 50%;}
+.items-route li >i.car { background-position-x: -3.2rem;}
+.items-route li p { flex: 1;}
+.items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
+.items-route li button { display: flex; align-items: center; justify-content: center; margin-left: 0.4rem;}
+.items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 9.6rem;}
+
+
+
+
+
+/* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
 .map .mapBg { height: 100%; background: url(../image/map/map_bg.png) no-repeat center/cover;}
 .map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 100;}
@@ -105,10 +118,6 @@
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer.open { transform: translateY(0);}
 
-
-
-
-
 .map .mapFooter { display: flex; align-items: center; justify-content: center; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 6.8rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
 .map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; text-align: center;}
 .map .mapFooter button i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
@@ -118,6 +127,53 @@
 .map .mapFooter button.declaration i { background-position: -7.2rem -4.8rem;}
 .map .mapFooter button.safe i { background-position: -9.6rem -4.8rem;}
 .map .mapFooter button span { display: block; margin-top: 0.5rem; font-size: 1.2rem; color: #777;}
+
+/* 길찾기 - UI-SJN-21-002L */
+.map .wayArea.btnTab { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 2rem;}
+.map .wayArea.btnTab li { width: calc(50% - 0.2rem);}
+.map .wayArea.btnTab li:last-child { margin-left: 0.4rem;}
+.map .wayArea.btnTab li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
+.map .wayArea.btnTab li button.active { font-weight: 700; color: #fff; border-color: #6684EA; background-color: #6684EA;}
+
+.map .tabContent >div { display: none;}
+.map .tabContent >div.active { display: block;}
+.map .toDoorBody { margin-top: 0.8rem; padding: 0 2rem 2.4rem;}
+.map .toDoorBody .toDoor li { position: relative; padding-right: 4rem;}
+.map .toDoorBody .toDoor li { position: relative;}
+.map .toDoorBody .toDoor li label { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 0.1rem; width: 0.1rem; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
+.map .toDoorBody .toDoor li label::after { content: ':'; display: block; margin: -0.4rem 0 0 0.3rem; font-size: 1.6rem; color: #111;}
+.map .toDoorBody .toDoor li input { display: block; padding: 0 1.6rem;}
+.map .toDoorBody .toDoor li button { position: absolute; right: 0; top: 50%; margin-top: -1.6rem;}
+.map .toDoorBody .toDoor li button.btnSwitch { width: 3.2rem; height: 3.2rem;}
+.map .toDoorBody .toDoor li button.btnSwitch i { display: block; text-indent: -9999rem; background: url(../image/map/ico_change.png) no-repeat center/cover;}
+.map .toDoorBody .toDoor li button.btnTransit { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem;}
+.map .toDoorBody .toDoor li button.btnTransit i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: #CDD0D8 url(../image/common/split_40.png) no-repeat -32rem 0/40rem 4rem; border-radius: 50%;}
+.map .toDoorBody .toDoor li ~ li,
+.map .toDoorBody .toDoor li >div ~ div  {margin-top: 0.8rem;}
+.map .toDoorBody .toDoor li .active label { display: flex; align-items: center; left: 1.6rem; top: 0; z-index: inherit; height: 4.8rem; width: inherit; color: #6684EA; clip: inherit; clip-path: inherit;}
+.map .toDoorBody .toDoor li .active input { padding-left: 6.7rem;}
+
+.map .toDoorBody .btnGroup { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem;}
+.map .toDoorBody .btnGroup button { display: block;}
+.map .toDoorBody .btnGroup button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
+.map .toDoorBody .btnGroup button.btnGtransit i { background-position: -14.4rem -4.8rem;}
+.map .toDoorBody .btnGroup button.btnGdelete { margin-left: 1.6rem;}
+.map .toDoorBody .btnGroup button.btnGdelete i { background-position: -16.8rem -4.8rem;}
+.map .toDoorBody .btnFind { margin-top: 0.8rem;}
+.map .toDoorBody .btnFind i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 0.1rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 9.6rem;}
+
+.map .routeArea { padding: 1.6rem 0 4rem;}
+.map .routeArea .header-default { padding: 0 2rem;}
+.map .routeArea .routeBody { border-top: 1px solid #EAEAEA;}
+.map .routeArea .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.map .routeArea .empty p { position: relative; font-size: 1.6rem; color: #777;}
+.map .routeArea .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/map/ico_empty.png) no-repeat center/1.675rem 2.875rem; border-radius: 50%;}
+
+
+
+
+
+
 
 
 
