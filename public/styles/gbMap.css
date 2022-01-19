@@ -163,7 +163,7 @@
 .map .mapFooter button.bus i { background-position: -4.8rem -4.8rem;}
 .map .mapFooter button.declaration i { background-position: -7.2rem -4.8rem;}
 .map .mapFooter button.safe i { background-position: -9.6rem -4.8rem;}
-.map .mapFooter button span { display: block; margin-top: 0.5rem; font-size: 1.2rem; color: #777;}
+.map .mapFooter button span { display: block; margin-top: 0.3rem; font-size: 1.2rem; color: #777; letter-spacing: -0.12em;}
 .map .mapFooter button.active { background: url(../image/map/map_footer_bg.png) no-repeat center/5.2rem;}
 .map .mapFooter button.active i { background-position-y: -7.2rem;}
 .map .mapFooter button.active span { color: #fff;}

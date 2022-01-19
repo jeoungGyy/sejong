@@ -319,26 +319,6 @@
 			</div>
 		</main>
 		<!-- //본문 -->
-
-		<script>
-			let curPos = 0;
-			let postion = 0;
-			let start_x, end_x;
-			const images = document.querySelector(".mapInfoLayer")
-
-			images.addEventListener('touchstart', touch_start);
-			images.addEventListener('touchend', touch_end);
-
-			function touch_start(event) {
-				start_x = event.touches[0].pageY
-				console.log("start : " + start_x)
-			}
-			
-			function touch_end(event) {
-				end_x = event.changedTouches[0].pageY;
-				console.log("end : " + end_x)
-			}
-		</script>
 	</div>
 </div>
 </body>
