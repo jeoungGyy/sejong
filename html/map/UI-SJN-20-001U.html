@@ -57,15 +57,11 @@
 						<button type="button" class="btnPin"><i>핀</i></button>
 
 						<!-- 마커 -->
-						<div class="markerMy">
+						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
 							<div><span></span></div>
 						</div>
 						<!-- //마커 -->
-					</div>
-					<!-- //기타 아이콘들 -->
 
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer open" style="height:40%;"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
 						<div class="location">
 							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
 							<div class="scaleBtn">
@@ -74,6 +70,12 @@
 							</div>
 						</div>
 
+					</div>
+					<!-- //기타 아이콘들 -->
+
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer open" style="height:40%;"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
+						
 						<div class="mapIHead">
 							<button type="button" class="btnMapInfo">정보영역</button>
 
@@ -293,7 +295,7 @@
 							<i></i>
 							<span>홈</span>
 						</button>
-						<button type="button" class="around">
+						<button type="button" class="around active"> <!-- 활성화 active 추가 -->
 							<i></i>
 							<span>주변</span>
 						</button>
@@ -305,7 +307,7 @@
 							<i></i>
 							<span>안전신고</span>
 						</button>
-						<button type="button" class="safe">
+						<button type="button" class="safe active">
 							<i></i>
 							<span>안심서비스</span>
 						</button>
@@ -317,6 +319,26 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+		<script>
+			let curPos = 0;
+			let postion = 0;
+			let start_x, end_x;
+			const images = document.querySelector(".mapInfoLayer")
+
+			images.addEventListener('touchstart', touch_start);
+			images.addEventListener('touchend', touch_end);
+
+			function touch_start(event) {
+				start_x = event.touches[0].pageY
+				console.log("start : " + start_x)
+			}
+			
+			function touch_end(event) {
+				end_x = event.changedTouches[0].pageY;
+				console.log("end : " + end_x)
+			}
+		</script>
 	</div>
 </div>
 </body>

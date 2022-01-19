@@ -3,17 +3,6 @@
 
 /* 공통 */
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; height: 40%; background-color: #fff; transform: translateY(100%); transition: all .5s;}
-.map .mapInfoLayer .location { position: absolute; width: 100%; top: -9.6rem;}
-.map .mapInfoLayer .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; top: -5.7rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
-.map .mapInfoLayer .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
-.map .mapInfoLayer .location .myLocation.active { background-color: #6684EA;}
-.map .mapInfoLayer .location .myLocation.active i { background-position-y: -1.95rem;}
-.map .mapInfoLayer .location .scaleBtn { position: absolute; right: 1.2rem; top: -9.6rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
-.map .mapInfoLayer .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
-.map .mapInfoLayer .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
-.map .mapInfoLayer .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
-.map .mapInfoLayer .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
-.map .mapInfoLayer .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
 .map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
@@ -38,12 +27,13 @@
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
 .map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
 .map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem; border-radius: 50%;}
-.map .mapInfoLayer .convenience .feature.gasStation i { background-position: -19.2rem -4.8rem;}
+.map .mapInfoLayer .convenience .feature.gasStation i { background-position: -21.6rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.store i { background-position: -24rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.cctv i { background-position: -26.4rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.streetLamp i { background-position: -28.8rem -4.8rem;}
-.map .mapInfoLayer .convenience .feature span::after { content: '켜기';}
+.map .mapInfoLayer .convenience .feature span::after { content: '켜기'; margin-left: 0.3rem;}
 .map .mapInfoLayer .convenience .feature.active i { background-color: #6684EA;}
+.map .mapInfoLayer .convenience .feature.active span::after { content: '끄기';}
 .map .mapInfoLayer .convenience .car { display: flex; justify-content: flex-end; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
@@ -51,14 +41,24 @@
 
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
-.map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 25rem; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
+.map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
 .map .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
 .map .mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
-
 .map .mapIcons .depart { position: absolute;}
 .map .mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
 .map .mapIcons .arrival { position: absolute;}
 .map .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
+.map .mapIcons .location { display: flex; justify-content: space-between; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(78%); transition: all .5s;}
+.map .mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin-top: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
+.map .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
+.map .mapIcons .location .myLocation.active { background-color: #6684EA;}
+.map .mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
+.map .mapIcons .location .scaleBtn { width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
+.map .mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
+.map .mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
+.map .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
+.map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
+.map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
 
 /* items- 모음 */
 .items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}
@@ -141,7 +141,7 @@
 /* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
 .map .mapBg { height: 100%; background: url(../image/map/map_bg.png) no-repeat center/cover;}
-.map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 100;}
+.map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 90;}
 .map .mapSearch .mapheader { display: flex; align-items: center; justify-content: space-between;}
 .map .mapSearch .mapheader .mapBody { display: flex; align-items: center; flex: 1; padding: 0 0.8rem; border: 1px solid #F8F8F8; background-color: #fff;}
 .map .mapSearch .mapheader .mapBody .btnPlace { position: relative; width: 3.2rem; height: 3.2rem;}
@@ -156,7 +156,7 @@
 .map .mapSearch .mapheader .mapBody .btnHeader .icoMic i { display: block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/map/ico_microphone.png) no-repeat center/cover;}
 .map .mapSearch .mapheader .btnMapSearch { display: flex; align-items: center; justify-content: center; width: 5.4rem; height: 4.8rem; font-size: 1.4rem; font-weight: 700; color: #fff; background-color: #6684EA;}
 .map .mapFooter { display: flex; align-items: center; justify-content: center; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 6.8rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
-.map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; text-align: center;}
+.map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; height: 5.2rem; text-align: center;}
 .map .mapFooter button i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
 .map .mapFooter button.home i { background-position: 0 -4.8rem;}
 .map .mapFooter button.around i { background-position: -2.4rem -4.8rem;}
@@ -164,6 +164,9 @@
 .map .mapFooter button.declaration i { background-position: -7.2rem -4.8rem;}
 .map .mapFooter button.safe i { background-position: -9.6rem -4.8rem;}
 .map .mapFooter button span { display: block; margin-top: 0.5rem; font-size: 1.2rem; color: #777;}
+.map .mapFooter button.active { background: url(../image/map/map_footer_bg.png) no-repeat center/5.2rem;}
+.map .mapFooter button.active i { background-position-y: -7.2rem;}
+.map .mapFooter button.active span { color: #fff;}
 
 /* 길찾기 - UI-SJN-21-002L, UI-SJN-21-003L */
 .map .wayArea.btnTab { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 2rem;}
