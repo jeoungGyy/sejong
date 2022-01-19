@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">지도</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					
+					<!-- 최단거리 버튼 -->
+					<div class="shortestPath">
+						<button type="button" class="btnPrev"><i>길찾기 이동</i></button>
+						<nav id="mapWordListSwiper" class="items-wordList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><button type="button" class="active"><b>추천</b> 00시간 10분</button></li> <!-- 활성화 active 추가 -->
+									<li class="swiper-slide"><button type="button"><span class="cblue">무료</span> 00시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">번화가</span> 00시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">계단없이</span> 10시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">최소</span> 01시간 30분</button></li>
+								</ul>
+							</div>
+						</nav>
+						<script>
+							slider.active('mapWordListSwiper')
+						</script>
+					</div>
+					<!-- //최단거리 버튼 -->
+
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<!-- 마커 -->
+						<div class="depart" style="left: 20rem; top: 20rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							<span>출발</span>
+						</div>
+						<div class="arrival" style="left: 10rem; top: 40rem;">
+							<span>도착</span>
+						</div>
+						<!-- //마커 -->
+					</div>
+					<!-- //기타 아이콘들 -->
+
+
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer open" style="height:40%;"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
+						<div class="convenience">
+							<!-- 자동차 -->
+							<div class="car">
+								<button type="button" class="feature gasStation active"><i></i><span>주유소</span></button> <!-- 활성화 active 추가 -->
+							</div>
+							<!-- //자동차 -->
+							
+							<!-- 도보 -->
+							<div class="work">
+								<button type="button" class="feature store active"><i></i><span>편의점</span></button>
+								<button type="button" class="feature cctv"><i></i><span>CCTV</span></button>
+								<button type="button" class="feature streetLamp"><i></i><span>가로등</span></button>
+							</div>
+							<!-- //도보 -->
+						</div>
+						
+						<div class="mapIHead short">
+							<button type="button" class="btnMapInfo">정보영역</button>
+						</div>
+
+						<div class="gaHead">
+							<!-- 자동차 -->
+							<div class="gaCar">
+								<div class="gaCarBody">
+									<div class="recommendedTime">
+										<span class="reco">추천</span>
+										<strong>00시간 10분</strong>
+										<span class="distance">00.13km</span>
+									</div>
+									<div class="costBody">
+										<span class="cost"><i></i>비용</span>
+										<div>
+											<span>통행료 없음</span>
+											<span>택시비 4,300원</span>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="guide"><i></i><b>길안내</b></button>
+							</div>
+							<!-- //자동차 -->
+
+							<!-- 도보 -->
+							<div class="gaWalk" style="display: none;">
+								<div class="gaCarBody">
+									<div class="recommendedTime">
+										<span class="reco">추천</span>
+										<strong>00시간 32분</strong>
+										<span class="distance">00.5km</span>
+									</div>
+								</div>
+							</div>
+							<!-- //도보 -->
+						</div>
+						
+						<div class="guideArea">
+							<div class="stepNav">
+								<!--
+									* 아이콘 종류 (현재 4개 있습니다.)
+									- straight : 직진
+									- turnLeft : 좌회전
+									- turnRight : 우회전
+									- crosswalk : 횡단보도
+								-->
+								<ul class="items-wayGuide">
+									<li>
+										<div class="time depart"><i>출발</i></div>
+										<div class="wayCon">
+											<span>1</span>
+											<p>시청남길을 따라 방면으로 60m 이동</p>
+										</div>
+									</li>
+									<li>
+										<div class="time turnLeft"><i>좌회전</i></div>
+										<div class="wayCon">
+											<span>2</span>
+											<p>신탄현 방면으로 우회전 후 한누리대로를 따라 230m 이동</p>
+										</div>
+									</li>
+									<li>
+										<div class="time turnRight"><i>우회전</i></div>
+										<div class="wayCon">
+											<span>3</span>
+											<p>시청남길을 따라 방면으로 60m 이동</p>
+										</div>
+									</li>
+									<li>
+										<div class="time crosswalk"><i>횡단보도</i></div>
+										<div class="wayCon">
+											<span>4</span>
+											<p>신탄현 방면으로 우회전 후 한누리대로를 따라 230m 이동</p>
+										</div>
+									</li>
+									<li>
+										<div class="time straight"><i>직진</i></div>
+										<div class="wayCon">
+											<span>5</span>
+											<p>시청남길을 따라 방면으로 60m 이동</p>
+										</div>
+									</li>
+									<li>
+										<div class="time arrival"><i>도착</i></div>
+										<div class="wayCon">
+											<span>6</span>
+											<p>정부세종2청사</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="offerer">
+							<p>제공 : Tmap</p>
+						</div>
+					</div>
+					<!-- //정보 영역 -->
+					
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>
