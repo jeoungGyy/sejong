@@ -74,7 +74,7 @@
 					<!-- //기타 아이콘들 -->
 
 					<!-- 정보 영역 -->
-					<div class="mapInfoLayer open" style="height:0;"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
+					<div class="mapInfoLayer default"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
 						
 						<div class="mapIHead">
 							<button type="button" class="btnMapInfo">정보영역</button>
@@ -295,7 +295,7 @@
 							<i></i>
 							<span>홈</span>
 						</button>
-						<button type="button" class="around active"> <!-- 활성화 active 추가 -->
+						<button type="button" class="around active" onclick="mapInfo.click();"> <!-- 활성화 active 추가 -->
 							<i></i>
 							<span>주변</span>
 						</button>
@@ -307,7 +307,7 @@
 							<i></i>
 							<span>안전신고</span>
 						</button>
-						<button type="button" class="safe active">
+						<button type="button" class="safe">
 							<i></i>
 							<span>안심서비스</span>
 						</button>

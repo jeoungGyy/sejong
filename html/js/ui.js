@@ -42,6 +42,51 @@ const container = {
 	},
 }
 
+const mapInfo = {
+	startY: null,
+	endY: null,
+	set : () => {
+		mapInfo.touch();
+	},
+	touch : () => {
+		const startTouch = document.querySelector(".mapIHead");
+		startTouch.addEventListener('touchstart', mapInfo.start);
+		startTouch.addEventListener('touchend', mapInfo.end);
+	},
+	click : () => {
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		mapInfoLayer.classList.add('open');
+	},
+	start : (event) => {
+		mapInfo.startY = event.touches[0].pageY;
+	},
+	end : (event) => {
+		mapInfo.endY = event.changedTouches[0].pageY;
+		console.log("end : " + mapInfo.endY)
+		mapInfo.active();
+	},
+	active : () => {
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		if(mapInfo.endY <= mapInfo.startY) {
+			if(mapInfo.startY - mapInfo.endY > 30) {
+				mapInfoLayer.classList.remove('default');
+				mapInfoLayer.classList.add('up');
+			}
+		} else {
+			console.log(3)
+			if(mapInfo.startY - mapInfo.endY < -30) {
+				mapInfoLayer.classList.remove('up');
+				setTimeout(()=>{
+					mapInfoLayer.classList.add('default');
+				},50);
+				if (mapInfoLayer.classList.contains('default')) {
+					mapInfoLayer.classList.remove('open');
+				}
+			}
+		}
+	},
+}
+
 const layerPopup = {
 	obj : {},
 	init: (id) => {
@@ -426,22 +471,21 @@ const accordion = {
 function openCurrAccordion(e) {
 	var headers = document.querySelectorAll('.accordionContainer .accordionMenu');
 	for(var i = 0; i < headers.length; i++) {
-			headers[i].addEventListener('click', openCurrAccordion);
+		headers[i].addEventListener('click', openCurrAccordion);
 	}
 	
 	for(var i = 0; i < headers.length; i++) {
-		console.log(2)
-			var parent = headers[i].parentElement;
-			var article = headers[i].nextElementSibling;
+		var parent = headers[i].parentElement;
+		var article = headers[i].nextElementSibling;
 
-			if (this === headers[i] && !parent.classList.contains('open')) {
-					parent.classList.add('open');
-					article.style.minHeight = article.scrollHeight + 'px';
-			}
-			else {
-					parent.classList.remove('open');
-					article.style.minHeight = '0px';
-			}
+		if (this === headers[i] && !parent.classList.contains('open')) {
+			parent.classList.add('open');
+			article.style.minHeight = article.scrollHeight + 'px';
+		}
+		else {
+			parent.classList.remove('open');
+			article.style.minHeight = '0px';
+		}
 	}
 }
 
@@ -454,6 +498,7 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 function _lazyLoad() {
   header.set();
   container.set();
+	mapInfo.set();
 	accordion.active();
 	tab.active();
 	openCurrAccordion();
