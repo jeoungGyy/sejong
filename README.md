@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-19
+- UI-SJN-21-002L 등록
+
 ### 01-18
 - swiperJS 수정 - 클래스 이동
 - bottomFixed 클래스 하위 태그로 이동
