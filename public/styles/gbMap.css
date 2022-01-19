@@ -2,7 +2,7 @@
 **********************************************/
 
 /* 공통 */
-.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; height: 40%; transform: translateY(100%); transition: all .5s;}
+.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; height: 40%; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem; background-color: #fff;}
 .map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
@@ -11,11 +11,11 @@
 .map .mapInfoLayer .area .region { flex: 1;}
 .map .mapInfoLayer .area .region p { position: relative; padding-left: 2.4rem;}
 .map .mapInfoLayer .area .region p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 4rem;}
-.map .mapInfoLayer .area .weather { display: flex; align-items: center; width: 14rem; margin-right: -2rem;}
+.map .mapInfoLayer .area .weather { display: flex; align-items: center; width: 15.5rem; margin-right: -2rem;}
 .map .mapInfoLayer .area .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; background: url(../image/common/split_weather.png) no-repeat 0 0/16rem 6.4rem;}
 .map .mapInfoLayer .area .weather .icon.sunny { background-position: 0 0;}
 .map .mapInfoLayer .area .weather .icon.blur { background-position: -3.2rem 0;}
-.map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; padding-right: 0.7rem; font-size: 1.8rem;}
+.map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; min-width: 2rem; padding-right: 0.7rem; font-size: 1.8rem; text-align: center;}
 .map .mapInfoLayer .area .weather .temperature::after { content: ''; position: absolute; right: 0; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .map .mapInfoLayer .area .val { margin-left: 0.8rem;}
 .map .mapInfoLayer .area .val p { font-size: 1.3rem; color: #555;}
@@ -50,7 +50,7 @@
 .map .mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
 .map .mapIcons .arrival { position: absolute;}
 .map .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
-.map .mapIcons .location { display: flex; justify-content: space-between; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(78%); transition: all .5s;}
+.map .mapIcons .location { display: flex; justify-content: space-between; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;}
 .map .mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin-top: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
 .map .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .map .mapIcons .location .myLocation.active { background-color: #6684EA;}
@@ -61,6 +61,10 @@
 .map .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
+.map .mapIcons .location.default { transform: translateY(calc(100% - 43.4rem));}
+
+
+
 
 /* items- 모음 */
 .items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}

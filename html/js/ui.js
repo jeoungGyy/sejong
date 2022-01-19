@@ -55,7 +55,9 @@ const mapInfo = {
 	},
 	click : () => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		const location = document.querySelector(".mapIcons .location");
 		mapInfoLayer.classList.add('open');
+		location.classList.add('default');
 	},
 	start : (event) => {
 		mapInfo.startY = event.touches[0].pageY;
@@ -67,6 +69,7 @@ const mapInfo = {
 	},
 	active : () => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		const location = document.querySelector(".mapIcons .location");
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.remove('default');
@@ -81,6 +84,7 @@ const mapInfo = {
 				},50);
 				if (mapInfoLayer.classList.contains('default')) {
 					mapInfoLayer.classList.remove('open');
+					location.classList.remove('default');
 				}
 			}
 		}
