@@ -47,7 +47,7 @@ body {
 .map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
 .map .mapInfoLayer.open { transform: translateY(0);}
-.map .mapInfoLayer.default { height: calc(40% + var(--vh));}
+.map .mapInfoLayer.default { height: calc(37rem + var(--vh));}
 /* .map .mapInfoLayer.up { height: calc(100% - 7.2rem);} */
 .map .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
 
@@ -71,7 +71,7 @@ body {
 .map .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
-.map .mapIcons .location.default { transform: translateY(calc(100% - 43.4rem));}
+.map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
 
 
 
