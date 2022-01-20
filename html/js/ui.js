@@ -44,13 +44,17 @@ const container = {
 
 const mapInfo = {
 	startY: null,
+	moveY: null,
 	endY: null,
+	state : false,
+	startTouch: null,
 	set : () => {
 		mapInfo.touch();
 	},
 	touch : () => {
 		const startTouch = document.querySelector(".mapIHead");
 		startTouch.addEventListener('touchstart', mapInfo.start);
+		startTouch.addEventListener('touchmove', mapInfo.move);
 		startTouch.addEventListener('touchend', mapInfo.end);
 	},
 	click : () => {
@@ -62,9 +66,15 @@ const mapInfo = {
 	start : (event) => {
 		mapInfo.startY = event.touches[0].pageY;
 	},
+	move : (event) => {
+		mapInfo.moveY = event.changedTouches[0].pageY;
+
+		var vh = mapInfo.startY - mapInfo.moveY;
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		mapInfoLayer.style.setProperty('--vh', vh+'px');
+	},
 	end : (event) => {
 		mapInfo.endY = event.changedTouches[0].pageY;
-		console.log("end : " + mapInfo.endY)
 		mapInfo.active();
 	},
 	active : () => {
@@ -72,22 +82,19 @@ const mapInfo = {
 		const location = document.querySelector(".mapIcons .location");
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
-				mapInfoLayer.classList.remove('default');
 				mapInfoLayer.classList.add('up');
 			}
 		} else {
-			console.log(3)
 			if(mapInfo.startY - mapInfo.endY < -30) {
-				mapInfoLayer.classList.remove('up');
-				setTimeout(()=>{
-					mapInfoLayer.classList.add('default');
-				},50);
-				if (mapInfoLayer.classList.contains('default')) {
+				if (mapInfoLayer.classList.contains('up')) {
+					mapInfoLayer.classList.remove('up');
+				} else {
 					mapInfoLayer.classList.remove('open');
 					location.classList.remove('default');
 				}
 			}
 		}
+		mapInfoLayer.style.setProperty('--vh', '1px');
 	},
 }
 

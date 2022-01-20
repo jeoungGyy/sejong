@@ -1,8 +1,17 @@
 /* 지도 업무
 **********************************************/
 
+
+body {
+  --vh: 1px;
+  }
+
+
+
+
 /* 공통 */
-.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; height: 40%; transform: translateY(100%); transition: all .3s ease-in-out;}
+/* .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; transform: translateY(100%); transition: all .3s ease-in-out;} */
+.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem; background-color: #fff;}
 .map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
@@ -38,8 +47,9 @@
 .map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
 .map .mapInfoLayer.open { transform: translateY(0);}
-.map .mapInfoLayer.default { height: 40%;}
-.map .mapInfoLayer.up { height: calc(100% - 7.2rem);}
+.map .mapInfoLayer.default { height: calc(40% + var(--vh));}
+/* .map .mapInfoLayer.up { height: calc(100% - 7.2rem);} */
+.map .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
 
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
