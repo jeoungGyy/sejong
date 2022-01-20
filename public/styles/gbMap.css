@@ -15,9 +15,31 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .region p { position: relative; padding-left: 2.4rem;}
 .map .mapInfoLayer .area .region p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 4rem;}
 .map .mapInfoLayer .area .weather { display: flex; align-items: center; width: 15.5rem; margin-right: -2rem;}
-.map .mapInfoLayer .area .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; background: url(../image/common/split_weather.png) no-repeat 0 0/16rem 6.4rem;}
-.map .mapInfoLayer .area .weather .icon.sunny { background-position: 0 0;}
-.map .mapInfoLayer .area .weather .icon.blur { background-position: -3.2rem 0;}
+.map .mapInfoLayer .area .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
+.map .mapInfoLayer .area .weather .icon.weather1 { background-position: 0 0;}
+.map .mapInfoLayer .area .weather .icon.weather2 { background-position: -3.2rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather3 { background-position: -6.4rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather4 { background-position: -9.6rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather5 { background-position: -12.8rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather6 { background-position: -16rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather7 { background-position: -19.2rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather8 { background-position: -22.4rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather9 { background-position: -25.6rem  0;}
+.map .mapInfoLayer .area .weather .icon.weather10 { background-position: -28.8rem 0;}
+.map .mapInfoLayer .area .weather .icon.weather11 { background-position: 0 -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather12 { background-position: -3.2rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather13 { background-position: -6.4rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather14 { background-position: -9.6rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather15 { background-position: -12.8rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather16 { background-position: -16rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather17 { background-position: -19.2rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather18 { background-position: -22.4rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather19 { background-position: -25.6rem -3.2rem;}
+.map .mapInfoLayer .area .weather .icon.weather20 { background-position: -28.8rem -3.2rem;}
+
+
+
+
 .map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; min-width: 2rem; padding-right: 0.7rem; font-size: 1.8rem; text-align: center;}
 .map .mapInfoLayer .area .weather .temperature::after { content: ''; position: absolute; right: 0; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .map .mapInfoLayer .area .val { margin-left: 0.8rem;}
@@ -64,6 +86,13 @@ body { --vh: 1px;}
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
 .map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
+.map .mapIcons .transit { position: absolute;}
+.map .mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
+.map .mapIcons .transit span.num1 { background: url(../image/map/ico_transit1.png) no-repeat center/cover;}
+.map .mapIcons .transit span.num2 { background: url(../image/map/ico_transit2.png) no-repeat center/cover;}
+.map .mapIcons .transit span.num3 { background: url(../image/map/ico_transit3.png) no-repeat center/cover;}
+.map .mapIcons .transit span.num4 { background: url(../image/map/ico_transit4.png) no-repeat center/cover;}
+.map .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
 
 
 /* items- 모음 */
@@ -148,10 +177,10 @@ body { --vh: 1px;}
 .items-category >li .accordionMenu.restaurant::before { background-position: -6.4rem -6.4rem;}
 .items-category >li .accordionMenu.convenience::before { background-position: -9.6rem -6.4rem;}
 .items-category >li .accordionMenu.health::before { background-position: -12.8rem -6.4rem;}
-.items-category >li .accordionMenu.education::before { background-position: -16.1rem -6.4rem;}
-.items-category >li .accordionMenu.culture::before { background-position: -19.3rem -6.4rem;}
-.items-category >li .accordionMenu.tourism::before { background-position: -22.5rem -6.4rem;}
-.items-category >li .accordionMenu.safety::before { background-position: -25.7rem -6.4rem;}
+.items-category >li .accordionMenu.education::before { background-position: -16rem -6.4rem;}
+.items-category >li .accordionMenu.culture::before { background-position: -19.2rem -6.4rem;}
+.items-category >li .accordionMenu.tourism::before { background-position: -22.4rem -6.4rem;}
+.items-category >li .accordionMenu.safety::before { background-position: -25.6rem -6.4rem;}
 .items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 9.6rem;}
 .items-category >li .accordionMenu span::before { content: '#';}
 .items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}

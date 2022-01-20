@@ -59,7 +59,8 @@ const mapInfo = {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const location = document.querySelector(".mapIcons .location");
 		mapInfoLayer.classList.add('open');
-		location.classList.add('default');
+		
+		location && location.classList.add('default');
 		
 		mapInfo.showEl = true;
 		mapInfo.touch();
@@ -91,7 +92,7 @@ const mapInfo = {
 					mapInfoLayer.classList.remove('up');
 				} else {
 					mapInfoLayer.classList.remove('open');
-					location.classList.remove('default');
+					location && location.classList.remove('default');
 					mapInfo.showEl = false;
 				}
 			}
