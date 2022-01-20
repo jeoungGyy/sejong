@@ -1,13 +1,7 @@
 /* 지도 업무
 **********************************************/
 
-
-body {
-  --vh: 1px;
-  }
-
-
-
+body { --vh: 1px;}
 
 /* 공통 */
 /* .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; transform: translateY(100%); transition: all .3s ease-in-out;} */
@@ -48,9 +42,7 @@ body {
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
 .map .mapInfoLayer.open { transform: translateY(0);}
 .map .mapInfoLayer.default { height: calc(37rem + var(--vh));}
-/* .map .mapInfoLayer.up { height: calc(100% - 7.2rem);} */
 .map .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
-
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
 .map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
@@ -72,8 +64,6 @@ body {
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
 .map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
-
-
 
 
 /* items- 모음 */
@@ -126,7 +116,7 @@ body {
 .items-wayGuide { margin-top: 2rem;}
 .items-wayGuide >li { position: relative; padding: 0 0 1.6rem 4.2rem; background: url(../image/info/info_trip_blet.png) repeat-y 1.6rem 0/0.1rem 0.4rem;}
 .items-wayGuide >li .time { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 3.2rem; height: 3.2rem; background-color: #A9B0C1; border-radius: 50%;}
-.items-wayGuide >li .time i { display: flex; align-items: center; justify-content: center; overflow: hidden; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0rem 0/32rem 6.4rem;}
+.items-wayGuide >li .time i { display: flex; align-items: center; justify-content: center; overflow: hidden; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem;}
 .items-wayGuide >li .time.depart i { background-position: 0 -3.2rem;}
 .items-wayGuide >li .time.turnLeft i { background-position: -3.2rem -3.2rem;}
 .items-wayGuide >li .time.turnRight i { background-position: -6.4rem -3.2rem;}
@@ -144,16 +134,32 @@ body {
 
 .items-route { margin-top: 0.8rem;}
 .items-route li { display: flex; align-items: center; padding: 1.6rem 2rem; border-bottom: 1px solid #F4F5F7;}
-.items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #CDD0D8 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 6.4rem; border-radius: 50%;}
+.items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #CDD0D8 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem; border-radius: 50%;}
 .items-route li >i.car { background-position-x: -3.2rem;}
 .items-route li p { flex: 1;}
 .items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
 .items-route li button { display: flex; align-items: center; justify-content: center; margin-left: 0.4rem;}
 .items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 9.6rem;}
 
-
-
-
+.items-category >li .accordionMenu { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; padding-left: 4rem; font-size: 1.6rem;}
+.items-category >li .accordionMenu::before { content: ''; display: block; position: absolute; left: 0; top: 1.2rem; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
+.items-category >li .accordionMenu.corona::before { background-position: 0 -6.4rem;}
+.items-category >li .accordionMenu.traffic::before { background-position: -3.2rem -6.4rem;}
+.items-category >li .accordionMenu.restaurant::before { background-position: -6.4rem -6.4rem;}
+.items-category >li .accordionMenu.convenience::before { background-position: -9.6rem -6.4rem;}
+.items-category >li .accordionMenu.health::before { background-position: -12.8rem -6.4rem;}
+.items-category >li .accordionMenu.education::before { background-position: -16.1rem -6.4rem;}
+.items-category >li .accordionMenu.culture::before { background-position: -19.3rem -6.4rem;}
+.items-category >li .accordionMenu.tourism::before { background-position: -22.5rem -6.4rem;}
+.items-category >li .accordionMenu.safety::before { background-position: -25.7rem -6.4rem;}
+.items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 9.6rem;}
+.items-category >li .accordionMenu span::before { content: '#';}
+.items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.items-category >li .subMenu li a { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding-left: 4rem; font-size: 1.6rem; font-weight: 700; color: #111;}
+.items-category >li .subMenu li a::after { content: ''; position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 9.6rem;}
+.items-category >li .subMenu li:first-child { padding-top: 0.8rem;}
+.items-category >li .subMenu li:last-child { padding-bottom: 0.8rem;}
+.items-category >li.open .accordionMenu::after { background-position-y: -2.4rem;}
 
 /* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
@@ -243,7 +249,6 @@ body {
 .map .guideArea  .stepNav { padding: 0 0 0 2rem;}
 .map .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
 .map .offerer p { font-size: 1.4rem; color: #aaa;}
-
 .map .shortestPath { display: flex; position: absolute; left: 1.2rem; right: 0; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 100;}
 .map .shortestPath .btnPrev { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .shortestPath .btnPrev i { display: block; width: 0.85rem; height: 1.4rem; text-indent: -9999rem; background: url(../image/map/ico_prev.png) no-repeat center/cover;}
@@ -251,7 +256,8 @@ body {
 .map .shortestPath .items-wordList ul li button::before { display: none;}
 
 
-
+/* 지도 카테고리 - UI-SJN-22-001U */
+.map .navCategory { padding: 0 2rem;}
 
 
 
