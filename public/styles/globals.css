@@ -190,6 +190,15 @@ table td { vertical-align: middle;}
 .radioSet input { position: absolute; opacity: 0;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
 
+/* 툴팁 */
+.boxTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
+.boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #6684EA; box-shadow: 0 1rems 1rem 0 rgb(0 0 0 / 5%);}
+.boxTooltipLayer .boxTooltipBody .paragraphGroup p { font-size: 1.4rem; line-height:2.2rem;}
+.boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
+.boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
+
+.boxTooltipLayer.show { display: block;}
+
 /* Swipe */
 .swiper-button-prev,
 .swiper-button-next { display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; z-index: 10; width: 4rem; height: 4rem; margin-top: -2rem; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); cursor: pointer;}

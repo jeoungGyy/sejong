@@ -81,7 +81,7 @@
 										<span class="distance">00.13km</span>
 									</div>
 									<div class="costBody">
-										<button type="button" class="cost"><i></i>비용</button>
+										<button type="button" class="cost" onclick="tooltip.show('tooltip1', 'bottom');"><i></i>비용</button>
 										<div>
 											<span>통행료 없음</span>
 											<span>택시비 4,300원</span>
@@ -124,7 +124,7 @@
 									</li>
 									<li>
 										<div class="time turnLeft"><i>좌회전</i></div>
-										<div class="wayCon">
+										<div class="wayCon active"> <!-- 활성화 active 추가 -->
 											<span>2</span>
 											<p>신탄현 방면으로 우회전 후 한누리대로를 따라 230m 이동</p>
 										</div>
@@ -171,6 +171,18 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+
+		<!-- 툴팁 -->
+		<div id="tooltip1" class="boxTooltipLayer">
+			<div class="boxTooltipBody">
+				<div class="paragraphGroup">
+					<p>비용은 실제와 다를 수 있으니 참고정보로만 사용하시기 바랍니다.</p>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+		<!-- //툴팁 -->
 	</div>
 </div>
 </body>

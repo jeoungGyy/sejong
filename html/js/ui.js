@@ -46,22 +46,23 @@ const mapInfo = {
 	startY: null,
 	moveY: null,
 	endY: null,
-	state : false,
-	startTouch: null,
-	set : () => {
-		mapInfo.touch();
-	},
+	showEl : false,
 	touch : () => {
-		const startTouch = document.querySelector(".mapIHead");
-		startTouch.addEventListener('touchstart', mapInfo.start);
-		startTouch.addEventListener('touchmove', mapInfo.move);
-		startTouch.addEventListener('touchend', mapInfo.end);
+		if(!tooltip.showEl) {
+			const startTouch = document.querySelector(".mapIHead");
+			startTouch.addEventListener('touchstart', mapInfo.start);
+			startTouch.addEventListener('touchmove', mapInfo.move);
+			startTouch.addEventListener('touchend', mapInfo.end);
+		}
 	},
 	click : () => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const location = document.querySelector(".mapIcons .location");
 		mapInfoLayer.classList.add('open');
 		location.classList.add('default');
+		
+		mapInfo.showEl = true;
+		mapInfo.touch();
 	},
 	start : (event) => {
 		mapInfo.startY = event.touches[0].pageY;
@@ -91,6 +92,7 @@ const mapInfo = {
 				} else {
 					mapInfoLayer.classList.remove('open');
 					location.classList.remove('default');
+					mapInfo.showEl = false;
 				}
 			}
 		}
@@ -154,6 +156,64 @@ const layerPopup = {
 			}
 		},500);
 	},
+}
+
+
+const tooltip = {
+	winClose : false,
+	showEl : null,
+	show : (id, dir) => {
+		event.stopPropagation();
+		let scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+		let _this = event.currentTarget.getBoundingClientRect();
+		let top = _this.top + scrollTop;
+		let left = _this.left + _this.width;
+
+		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+		tooltip.showEl = document.querySelector('#'+id);
+
+		if(tooltip.showEl) {
+			tooltip.showEl.classList.add('show');
+			let elWidth = tooltip.showEl.getBoundingClientRect().width;
+
+			switch (dir) {
+				case 'right' :
+					left =  _this.left - elWidth;
+					break;
+				case 'bottom' :
+					top = _this.top + scrollTop + 38;	
+					break;
+			}
+			tooltip.showEl.style.cssText = `top: ${top}px;`
+
+			tooltip.showEl.addEventListener('click',()=>{
+				event.stopPropagation();
+			});
+		
+			let btnClose = tooltip.showEl.querySelector('.btnClose');
+			btnClose.addEventListener('click',()=>{
+				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+			}, {once : true});
+		}
+
+		
+		
+
+		
+
+		if(tooltip.winClose === false) {
+			window.addEventListener('click', ()=>{
+				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+			});
+			window.addEventListener('resize', ()=>{
+				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+			});
+			window.addEventListener('scroll', ()=>{
+				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+			});
+			tooltip.winClose = true;
+		}
+	}
 }
 
 class Tab {
@@ -509,7 +569,7 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 function _lazyLoad() {
   header.set();
   container.set();
-	mapInfo.set();
+	// mapInfo.set();
 	accordion.active();
 	tab.active();
 	openCurrAccordion();

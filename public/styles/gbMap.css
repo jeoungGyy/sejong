@@ -11,8 +11,8 @@ body {
 
 /* 공통 */
 /* .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; transform: translateY(100%); transition: all .3s ease-in-out;} */
-.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; transform: translateY(100%); transition: all .3s ease-in-out;}
-.map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem; background-color: #fff;}
+.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
+.map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
 .map .mapInfoLayer .btnMapInfo::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4.8rem; height: 0.4rem; margin: -0.2rem 0 0 -2.4rem; background-color: #CDD0D8; border-radius: 0.2rem;}
@@ -30,7 +30,7 @@ body {
 .map .mapInfoLayer .area .val p { font-size: 1.3rem; color: #555;}
 .map .mapInfoLayer .area .val p .good { color: #4EC457;}
 .map .mapInfoLayer .area .val p .bed { color: #FD2020;}
-.map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 2rem 10rem; background-color: #fff;}
+.map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
@@ -138,6 +138,7 @@ body {
 .items-wayGuide >li .wayCon { display: flex; padding: 0.4rem 0 1.6rem; border-bottom: 1px solid #F4F5F7;}
 .items-wayGuide >li .wayCon span { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; margin-right: 0.6rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; border-radius: 50%;}
 .items-wayGuide >li .wayCon p { flex: 1; font-size: 1.6rem; color: #555;}
+.items-wayGuide >li .wayCon.active span { color: #fff; border-color: #32BBED; background-color: #32BBED;}
 .items-wayGuide >li:last-child { background: none;}
 .items-wayGuide >li:last-child .wayCon { border: none;}
 
