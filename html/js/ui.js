@@ -196,11 +196,6 @@ const tooltip = {
 			}, {once : true});
 		}
 
-		
-		
-
-		
-
 		if(tooltip.winClose === false) {
 			window.addEventListener('click', ()=>{
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');

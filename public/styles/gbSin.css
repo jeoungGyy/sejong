@@ -173,7 +173,8 @@
 .mypage .mypageArea .section .heading .setting button span { position: relative; display: block; padding-right: 3rem; font-size: 1.4rem;}
 .mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 4rem;}
 .mypage .mypageArea .section .box { display: flex; flex-direction: column; margin-top: 0.8rem; padding: 1.4rem 2.4rem; border: 1px solid #EAEAEA;}
-.mypage .mypageArea .section .box p { font-size: 1.8rem; font-weight: 700; line-height: 2.6rem;}
+.mypage .mypageArea .section .box p { font-size: 1.8rem; line-height: 2.6rem;}
+.mypage .mypageArea .section .box p:first-child { font-weight: 700;}
 .mypage .mypageArea .section .pragraph p { font-size: 1.4rem; color: #555;}
 .mypage .mypageArea .section .securityList { display: flex;}
 .mypage .mypageArea .section .securityList li { flex: 1;}

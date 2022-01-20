@@ -12,6 +12,6 @@ str += '<link rel="stylesheet" href="../../public/styles/gbMap.css" />';
 str += '<link rel="stylesheet" href="../../public/styles/globals.css" />';
 str += '<script src="../js//swiper-bundle.min.js"></script>';
 str += '<script src="../js/slider.js"></script>';
-str += '<script defer src="../js/ui.js"></script>';
+str += '<script src="../js/ui.js"></script>';
 
 document.write(str);
