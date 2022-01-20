@@ -445,9 +445,10 @@ table td { vertical-align: middle;}
 .securityLayer .pattern li button { display: block; position: relative; width: 6.8rem; height: 6.8rem; text-indent: -9999rem;}
 .securityLayer .pattern li button::after { content: ''; position: absolute; left: 50%; top: 50%; width: 1.2rem; height: 1.2rem; margin: -0.6rem 0 0 -0.6rem; background-color: #292D32; border-radius: 50%;}
 .securityLayer .pattern li button.active::after { background-color: #6684EA;}
-.securityLayer .guide { display: flex; align-items: center; justify-content: center; height: 5.2rem; margin-top: 3rem;}
-.securityLayer .guide .complete span { display: inline-block; position: relative; padding-left: 2.4rem;}
-.securityLayer .guide .complete span::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -26rem 0/40rem;}
+.securityLayer .guide { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 5.2rem; margin-top: 3rem;}
+.securityLayer .guide .complete { display: inline-flex; align-items: center; height: 3.9rem; padding: 0 1.6rem; background-color: #6684EA; border-radius: 2rem;}
+.securityLayer .guide .complete span { display: inline-block; position: relative; padding-left: 2.4rem; color: #fff;}
+.securityLayer .guide .complete span::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -24rem 0/40rem;}
 .securityLayer .fingerprint { overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; width: 12rem; height: 12rem; margin: 0 auto; border-radius: 50%;}
 .securityLayer .fingerprint i { display: block; width: 12rem; height: 12rem; background: url(../image/home/ico_security3_big.png) no-repeat center/6.025rem 8.225rem; border-radius: 50%;}
 .securityLayer .fingerprint.complete::after { position: absolute; content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background: rgba(102, 132, 234, 0.9) url(../image/home/ico_fingerprint_check.png) no-repeat center/4.35rem 3.175rem;}
