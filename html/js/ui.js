@@ -94,8 +94,6 @@ const mapInfo = {
 		const btnView = document.querySelector(".btnView");
 		const location = document.querySelector(".mapIcons .location");
 
-	
-
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.add('up');
