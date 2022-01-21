@@ -10,7 +10,6 @@
 .headerSub span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.6rem;}
 .headerSub span ~ span::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
 
-
 .form-default { margin-top: 3.2rem; padding: 0 2rem;}
 .form-default .items-form >li ~ li { margin-top: 1.6rem;}
 /* .form-default .items-form >li input:focus + label { outline: 2px solid #000; border-radius: 2px;} */

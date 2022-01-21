@@ -62,7 +62,7 @@ const mapInfo = {
 		const btnView = document.querySelector(".btnView");
 
 		mapInfoLayer.classList.add('open');
-		btnView.classList.add('open');
+		btnView && btnView.classList.add('open');
 		location && location.classList.add('default');
 
 		if(division === 'sub') {
@@ -88,7 +88,6 @@ const mapInfo = {
 		mapInfo.endY = event.changedTouches[0].pageY;
 		mapInfo.active();
 	},
-
 	active : (act) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const btnView = document.querySelector(".btnView");
@@ -97,16 +96,16 @@ const mapInfo = {
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.add('up');
-				btnView.classList.add('up');
+				btnView && btnView.classList.add('up');
 			}
 		} else {
 			if(mapInfo.startY - mapInfo.endY < -30) {
 				if (mapInfoLayer.classList.contains('up')) {
 					mapInfoLayer.classList.remove('up');
-					btnView.classList.remove('up');
+					btnView && btnView.classList.remove('up');
 				} else {
 					mapInfoLayer.classList.remove('open');
-					btnView.classList.remove('open');
+					btnView && btnView.classList.remove('open');
 					location && location.classList.remove('default');
 					mapInfo.showEl = false;
 				}

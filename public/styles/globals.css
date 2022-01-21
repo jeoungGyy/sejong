@@ -177,6 +177,7 @@ table td { vertical-align: middle;}
 .lineBreake { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 /* 스위치 체크박스 */
+.switch { position: relative;}
 .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
@@ -224,7 +225,7 @@ table td { vertical-align: middle;}
 
 .header-icons { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
 .header-icons button { position: relative; height: 2rem; font-size: 1.4rem; color: #555;}
-.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background-image: url(../image/common/split_40.png); background-repeat: no-repeat; background-size: 40rem 4rem;}
+.header-icons button::after { content: ''; position: absolute; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
 .header-icons button.good { padding-left: 2.2rem;}
 .header-icons button.good::after { left: 0; background-position: -6rem 0;}
 .header-icons button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
@@ -277,7 +278,7 @@ table td { vertical-align: middle;}
 .layerWrap.full .headerBtn .btnClose { top: inherit;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
-.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
+.layerWrap .btnClose { display: block; position: absolute; right: 0.8rem; top: 1.2rem; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
@@ -452,6 +453,87 @@ table td { vertical-align: middle;}
 .securityLayer .fingerprint { overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; width: 12rem; height: 12rem; margin: 0 auto; border-radius: 50%;}
 .securityLayer .fingerprint i { display: block; width: 12rem; height: 12rem; background: url(../image/home/ico_security3_big.png) no-repeat center/6.025rem 8.225rem; border-radius: 50%;}
 .securityLayer .fingerprint.complete::after { position: absolute; content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background: rgba(102, 132, 234, 0.9) url(../image/home/ico_fingerprint_check.png) no-repeat center/4.35rem 3.175rem;}
+
+/* 장소 상세 - UI-SJN-23-001L */
+.headerLocation .hdeading { display: flex; align-items: flex-start; padding: 1.6rem 2rem;}
+.headerLocation .hdeading .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; margin: 0.2rem 0.4rem 0 0; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 9.6rem;}
+.headerLocation .hdeading .favorite.active i { background-position-y: -2.4rem;}
+.headerLocation .hdeading .title { flex: 1;}
+.headerLocation .hdeading .title h2 { font-size: 1.8rem;}
+.headerLocation .hdeading .title >div { margin-top: 0.4rem;}
+.headerLocation .hdeading .title >div span { position: relative; font-size: 1.4rem; font-weight: 700; color: #6684EA;}
+.headerLocation .hdeading .title >div span ~ span { margin-left: 0.3rem; padding-left: 0.8rem;}
+.headerLocation .hdeading .title >div span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.headerLocation .hdeading .btnClose { top: 1.4rem;}
+.headerLocation .menu { display: flex; align-items: center; position: relative; height: 4.8rem; font-size: 1.6rem; color: #555; padding: 0 1rem; border-bottom: 1px solid #F2F2F2;}
+.headerLocation .menu button { flex: 1; height: 4.8rem; margin: 0 1rem; letter-spacing: -0.14em;}
+.headerLocation .menu button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+
+.locationLayer .locationHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; margin-top: 1.4rem;}
+.locationLayer .locationHeader h3 { display: flex; align-items: center;}
+.locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
+.locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
+.locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 9.6rem;}
+.locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
+.locationLayer .basic .accordionBox button { display: flex; align-items: center; position: relative; height: 4rem; color: #aaa;}
+.locationLayer .basic .accordionBox button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
+.locationLayer .basic .accordionBox button::after { content: ''; position: absolute; right: -3.2rem; top: 0.9rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 9.6rem;}
+.locationLayer .basic .accordionBox button.homepage i { background-position: -31.2rem -4.8rem;}
+.locationLayer .basic .accordionBox button.homepage::after { background-position: -36rem 0;}
+.locationLayer .basic .accordionBox button.phone i { background-position: -33.6rem -4.8rem;}
+.locationLayer .basic .accordionBox button.phone::after { background-position: -36rem -4.8rem;}
+.locationLayer .basic .accordionBox button.active { color: #000;}
+.locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
+.locationLayer .basic .bbBtns a { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
+.locationLayer .basic .bbBtns a i { display: inline-block; width: 6rem; height: 6rem;}
+.locationLayer .basic .bbBtns a.phoneLink i { background: url(../image/map/ico_link.png) no-repeat center/cover;}
+.locationLayer .basic .bbBtns a.shareLink i { background: url(../image/map/ico_link2.png) no-repeat center/cover;}
+.locationLayer .basic .bbBtns a.directionsLink i { background: url(../image/map/ico_link3.png) no-repeat center/cover;}
+.locationLayer .basic .bbBtns a p { margin-top: 0.8rem;}
+.locationLayer .basic .bbBtns a .switch { margin-top: 1.6rem;}
+.locationLayer .basic .bbGuide { display: flex; align-items: center; height: 7.6rem; margin: 3.2rem -2rem 0; padding: 0 2rem; background-color: #EAEDF2;}
+.locationLayer .basic .bbGuide >div { flex: 1;}
+.locationLayer .basic .bbGuide >div h4 { font-size: 1.4rem; color: #333;}
+.locationLayer .basic .bbGuide >div p { margin-top: 0.4rem; font-size: 1.4rem; color: #555;}
+.locationLayer .basic .bbGuide .deco { width: 4.8rem; height: 4.8rem; background: url(../image/map/ico_bbguide.png) no-repeat center/cover;}
+.locationLayer .detail { padding: 0.2rem 2rem 2.4rem;}
+.locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 1.6rem;}
+.locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400; color: #6684EA;}
+.locationLayer .detail h4.first { margin-top: 0;}
+.locationLayer .detail >div p { position: relative; margin-top: 0.8rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
+.locationLayer .detail >div p.blet { padding-left: 1.6rem;}
+.locationLayer .detail >div p.blet::after { content: ''; position: absolute; left: 0.6rem; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.locationLayer .detail .detailbtn a { display: flex; align-items: center; position: relative; height: 4.8rem; margin-top: 1.6rem; padding: 0 1.6rem; font-size: 1.6rem; color: #111; border: 1px solid #ddd;}
+.locationLayer .detail .detailbtn a::after { content: ''; display: block; position: absolute; right: 1.6rem; top: 1.6rem; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
+.locationLayer .detail .detailbtn a span.cBlue { color: #6684EA;}
+.locationLayer .app { padding: 0 2rem 2.4rem;}
+.locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
+.locationLayer .app ul li a figure { overflow: hidden; width: 6rem; height: 6rem; margin: 0 2.2rem 0 0.2rem;}
+.locationLayer .app ul li a .text { flex: 1;}
+.locationLayer .app ul li a .text >div { display: flex; align-items: center; justify-content: space-between;}
+.locationLayer .app ul li a .text >div h4 { flex: 1; font-size: 1.6rem; color: #333;}
+.locationLayer .app ul li a .text >div .cBlue { width: 7.8rem; font-size: 1.4rem; color: #6684EA;}
+.locationLayer .app ul li a .text >div .cBlue::after { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: -0.3rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 9.6rem;}
+.locationLayer .app ul li a .text p { margin-top: 0.8rem; font-size: 1.4rem; color: #555; line-height: 2.2rem;}
+.locationLayer .around { padding: 0 2rem 3.2rem;}
+.locationLayer .around h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
+.locationLayer .review { padding: 0 2rem 4rem;}
+.locationLayer .review .items-review .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.locationLayer .review .items-review .empty p { position: relative; font-size: 1.6rem; color: #777;}
+.locationLayer .review .items-review .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
