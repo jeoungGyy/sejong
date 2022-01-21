@@ -25,7 +25,7 @@
 .form-default .items-form >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa;}
 .form-default .items-form >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #ddd;}
 .form-default .items-form >li .btnOpen span { display: inline-block; position: relative; padding-left: 2.4rem;}
-.form-default .items-form >li .btnOpen span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 4rem;}
+.form-default .items-form >li .btnOpen span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
 .textareaForm textarea { height: 11rem; border: none;}
 .textareaForm .byte { padding: 0 1.2rem 1.2rem 0; font-size: 1.4rem; color: #aaa; text-align: right;}
@@ -35,7 +35,7 @@
 .form-default .items-form >li .adressForm input { margin-top: 0.8rem;}
 .form-default .items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #ddd;}
 .form-default .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
-.form-default .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 4rem;}
+.form-default .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 8rem;}
 .form-default .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .form-default .items-form >li .fileForm .ffH .all { color: #6684EA;}
 .form-default .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
@@ -46,7 +46,7 @@
 .form-default .items-form >li .fileForm .pictureList li { margin: 0.4rem 0.2rem 0;}
 .form-default .items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .form-default .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
-.form-default .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.form-default .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .form-default .items-form >li .fileForm .pictureList li input { position: absolute; opacity: 0;}
 .form-default .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #111;}
 .form-default .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
@@ -67,7 +67,7 @@
 .form-default .items-form >li .serviceList li { width: calc(20% - 0.4rem); margin: 0 0.4rem;}
 .form-default .items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; background-color: #F4F5F7; cursor: pointer;}
 .form-default .items-form >li .serviceList li label img { width: 100%; height: auto; vertical-align: top;}
-.form-default .items-form >li .serviceList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.form-default .items-form >li .serviceList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .form-default .items-form >li .serviceList li input { position: absolute; opacity: 0;}
 .form-default .items-form >li .serviceList li input:checked + label::after { background-color: #111;}
 .form-default .items-form >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; text-align: center;}
@@ -417,7 +417,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .info .viewBody .paragraph p { margin-top: 2.4rem; font-size: 1.6rem; color: #555;}
 .info .viewBody .viewCite { margin-top: 1.6rem;}
 .info .viewBody .viewCite span { color: #555;}
-.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 4rem;}
+.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 8rem;}
 .info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
 .info .viewBody .copyRight { margin-top: 2rem;}
 .info .viewBody .copyRight p { font-size: 1.4rem; color: #777;}
@@ -435,7 +435,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #A9B0C1;}
 .info .tripHead .reserve .t { font-size: 1.6rem;}
 .info .tripHead .reserve .st { position: relative; margin-top: 1.2rem; padding-left: 2.8rem;}
-.info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 4rem;}
+.info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
 .info .tripHead .reserve ul li { position: relative; margin-top: 0.8rem; padding-left: 2.8rem; letter-spacing: 0;}
 .info .tripHead .reserve ul li.tel::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
 .info .tripHead .reserve ul li.email::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -2.4rem 0/48rem 9.6rem;}

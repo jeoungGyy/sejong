@@ -29,8 +29,8 @@
 .item-place li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .item-place li .keyword { position: relative; padding-left: 2.8rem;}
 .item-place li .keyword::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem;}
-.item-place li .icoLocation .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem 0/40rem 4rem;}
-.item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 4rem;}
+.item-place li .icoLocation .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem 0/40rem 8rem;}
+.item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnClose { display: block;}
 .item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 9.6rem;}
@@ -101,7 +101,7 @@
 .home .homeStation .hsList li .station { margin-top: 0.7rem;}
 .home .homeStation .hsList li .station span { position: relative; font-size: 1.4rem;}
 .home .homeStation .hsList li .station span:last-child { padding-left: 2rem;}
-.home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 4rem; border-radius: 50%;}
+.home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 8rem; border-radius: 50%;}
 .home .homeStation .hsList li .train { margin-top: 0.6rem;}
 .home .homeStation .hsList li .train p { font-size: 1.4rem; color: #777; line-height: 2.2rem;}
 .home .homeCulture { padding: 1.6rem 2rem;}
@@ -137,7 +137,7 @@
 .items-term >li .paragraphGroup p { margin-top: 2rem; color: #333; line-height: 2.3rem;}
 .items-term >li .link { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #fff; background-color: #6684EA;}
 .items-term >li .link span { display: inline-block; position: relative; padding-right: 2rem;}
-.items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 4rem;}
+.items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
 .items-term >li .download { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd;}
 .items-term >li .download span { display: inline-block; position: relative; padding-left: 2.8rem;}
 .items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 9.6rem;}
@@ -171,7 +171,7 @@
 .mypage .mypageArea .section .heading h3 { font-size: 1.6rem;}
 .mypage .mypageArea .section .heading .setting button { display: block;}
 .mypage .mypageArea .section .heading .setting button span { position: relative; display: block; padding-right: 3rem; font-size: 1.4rem;}
-.mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 4rem;}
+.mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 8rem;}
 .mypage .mypageArea .section .box { display: flex; flex-direction: column; margin-top: 0.8rem; padding: 1.4rem 2.4rem; border: 1px solid #EAEAEA;}
 .mypage .mypageArea .section .box p { font-size: 1.8rem; line-height: 2.6rem;}
 .mypage .mypageArea .section .box p:first-child { font-weight: 700;}
@@ -179,7 +179,7 @@
 .mypage .mypageArea .section .securityList { display: flex;}
 .mypage .mypageArea .section .securityList li { flex: 1;}
 .mypage .mypageArea .section .securityList li label { display: block; overflow: hidden; position: relative; padding: 3.2rem 0 2rem; text-align: center; border: 1px solid #EAEAEA; cursor: pointer; transition: border-color .2s ease-in-out;}
-.mypage .mypageArea .section .securityList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background: #EAEDF2 url(../image/common/split_40.png) no-repeat -24rem 0/40rem 4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.mypage .mypageArea .section .securityList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background: #EAEDF2 url(../image/common/split_40.png) no-repeat -24rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .mypage .mypageArea .section .securityList li label i.ico { display: block; width: 6.3rem; height: 6rem; margin: 0 auto;}
 .mypage .mypageArea .section .securityList li label i.ico.icoA { background: url(../image/home/ico_security1.png) no-repeat center/cover;}
 .mypage .mypageArea .section .securityList li label i.ico.icoB { background: url(../image/home/ioc_security2.png) no-repeat center/cover;}

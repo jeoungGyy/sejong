@@ -18,222 +18,295 @@
 			
 			<div class="mapWrap">
 				<div class="mapArea">
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
+						<button type="button" class="btnPin"><i>핀</i></button>
+						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+
+						<!-- 마커 -->
+						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							<div><span></span></div>
+						</div>
+						<!-- //마커 -->
+
+						<div class="btnView">
+							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+						</div>
+
+						<div class="location">
+							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+							<div class="scaleBtn">
+								<button type="button" class="scaleUp"><i>확대</i></button>
+								<button type="button" class="scaleDown"><i>축소</i></button>
+							</div>
+						</div>
+					</div>
+					<!-- //기타 아이콘들 -->
 					
 					<!-- 정보 영역 -->
 					<div class="mapInfoLayer default">
-						<div class="mapIHead">
-							<button type="button" class="btnMapInfo">정보영역</button>
+						<div class="myArea">
+							<div class="mapIHead oil"> <!-- 주유소 정보 oil 추가 -->
+								<button type="button" class="btnMapInfo">정보영역</button>
 
-							<div class="area">
-								<div class="region">
-									<p>세종특별자치시 나성동</p>
+								<div class="area">
+									<div class="selectGroup">
+										<select class="active" title="가격순 정렬"> <!-- 활성화시 active -->
+											<option>가격</option>
+										</select>
+										<select title="유류 종류">
+											<option>휘발류</option>
+										</select>
+										<select title="부가 정보">
+											<option>부가정보</option>
+										</select>
+									</div>
 								</div>
-								<div class="weather">
-									<!--
-										* 날씨 아이콘 종류 (현재 2개 있습니다.)
-										- sunny
-										- blur
-									-->
-									<i class="icon blur"></i>
-									<b class="temperature">4</b>
-									<div class="val">
-										<p>미세 <span class="good">좋음</span></p>
-										<p>초미세 <span class="bed">나쁨</span></p>
+
+								<nav id="mapPlaceListSwiper" class="items-placeList">
+									<div class="slideContainer">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><button type="button" class="active">전체</button></li> <!-- 활성화시 active -->
+											<li class="swiper-slide"><button type="button"><i class="icon gs"></i>GS칼텍스</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon skE"></i>SK에너지</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon hyundai"></i>현대오일뱅크</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon soil"></i>S-Oil</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon thrifty"></i>알뜰주유소</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon skG"></i>SK가스</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon e1"></i>E1</button></li>
+											<li class="swiper-slide"><button type="button"><i class="icon other"></i>기타</button></li>
+										</ul>
+									</div>
+								</nav>
+								<script>
+									slider.active('mapPlaceListSwiper')
+								</script>
+
+								<div class="petrolInformation">
+									<strong>세종특별자치시</strong>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
 									</div>
 								</div>
 							</div>
-
-							<nav id="mapPlaceListSwiper" class="items-placeList">
-								<div class="slideContainer">
-									<ul class="swiper-wrapper">
-										<li class="swiper-slide"><button type="button" class="active">음식점</button></li> <!-- 활성화시 active -->
-										<li class="swiper-slide"><button type="button">세종명소</button></li>
-										<li class="swiper-slide"><button type="button">문화행사</button></li>
-										<li class="swiper-slide"><button type="button">블로그</button></li>
-										<li class="swiper-slide"><button type="button">주차장</button></li>
-										<li class="swiper-slide"><button type="button">버스</button></li>
-									</ul>
-								</div>
-							</nav>
-							<script>
-								slider.active('mapPlaceListSwiper')
-							</script>
-						</div>
-
-						<div class="myArea">
+							
 							<section>
-								<h3>음식점</h3>
-								<ul class="items-mapInfo">
+								<ul class="items-gasStation">
 									<li>
-										<figure>
-											<img src="../../public/image/temp/temp030.png" alt="">
-										</figure>
-										<div class="mapInfoBody">
-											<h4>세종시 미스터피자</h4>
-											<p class="st">세종시에서 가장 맛난 피자집</p>
-											<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-											<button type="button" class="favorite">즐겨찾기</button>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">GS칼텍스 연기면점</h3>
 										</div>
-									</li>
-									<li>
-										<figure>
-										</figure>
-										<div class="mapInfoBody">
-											<h4>세종시 미스터피자</h4>
-											<p class="st">세종시에서 가장 맛난 피자집</p>
-											<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-											<button type="button" class="favorite active">즐겨찾기</button>
-										</div>
-									</li>
-								</ul>
-							</section>
-
-							<section>
-								<h3>세종명소</h3>
-								<ul class="items-mapInfo">
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp031.png" alt="">
-										</figure>
-										<div class="mapInfoBody">
-											<h4>세종호수공원</h4>
-											<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
-											<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
-										</div>
-									</li>
-								</ul>
-							</section>
-
-							<section>
-								<h3>문화행사</h3>
-								<ul class="items-mapInfo">
-									<li>
-										<figure>
-											<span class="label wood">공연</span>
-											<img src="../../public/image/temp/temp032.png" alt="">
-										</figure>
-										<div class="mapInfoBody">
-											<h4>국제 핸드메이드 & 리빙페어</h4>
-											<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
-										</div>
-									</li>
-									<li>
-										<figure>
-											<span class="label green">이웃</span>
-											<img src="../../public/image/temp/temp033.png" alt="">
-										</figure>
-										<div class="mapInfoBody">
-											<h4>사랑의 김장 나눔 행사</h4>
-											<p class="st">세종시 블로그에서 소개한 시립도서관</p>
-										</div>
-									</li>
-								</ul>
-							</section>
-
-							<section>
-								<h3>블로그</h3>
-								<ul class="items-mapInfo">
-									<li>
-										<figure>
-										</figure>
-										<div class="mapInfoBody">
-											<h4>블로그 제목</h4>
-											<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
-										</div>
-									</li>
-								</ul>
-							</section>
-
-							<section>
-								<h3>주차장</h3>
-								<ul class="items-parking">
-									<li>
-										<div class="time active"><i></i></div> <!-- 실시간 주차 정보 제공 주차장 active 추가 -->
-										<div class="head">
-											<h4 class="title">주차장#01</h4>
-											<span class="date">갱신 : 2021-12-30 09:00</span>
-										</div>
-										<div class="subContent">
-											<div class="subText">
-												<b>총 165대</b>
-												<div class="spaceBetween">
-													<span>공영</span>
-													<span>부설</span>
-													<span class="free">무료</span>
-												</div>
-											</div>
-											<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
-											<div class="ovflowX">
-												<table>
-													<caption>주차장 : 일반, 경차, 대형, 긴급, 장애인, 여성, 기타 목록</caption>
-													<thead>
-														<tr>
-															<th>일반</th>
-															<th>경차</th>
-															<th>대형</th>
-															<th>긴급</th>
-															<th>장애인</th>
-															<th>여성</th>
-															<th>기타</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>165</td>
-															<td>0</td>
-															<td>0</td>
-															<td>0</td>
-															<td>0</td>
-															<td>0</td>
-															<td>0</td>
-														</tr>
-													</tbody>
-												</table>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
 											</div>
 										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 									<li>
-										<div class="time"><i></i></div>
-										<div class="head">
-											<h4 class="title">주차장#02</h4>
-											<span class="date">갱신 : 2021-12-30 09:00</span>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">S오일 세종점</h3>
 										</div>
-										<div class="subContent">
-											<div class="subText">
-												<b>총 165대</b>
-												<div class="spaceBetween">
-													<span>공영</span>
-													<span>부설</span>
-													<span class="free">무료</span>
-												</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
 											</div>
-											<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
 										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 									<li>
-										<div class="time"><i></i></div>
-										<div class="head">
-											<h4 class="title">주차장#03</h4>
-											<span class="date">갱신 : 2021-12-30 09:00</span>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
 										</div>
-										<div class="subContent">
-											<div class="subText">
-												<b>총 165대</b>
-												<div class="spaceBetween">
-													<span>공영</span>
-													<span>부설</span>
-													<span class="pay">유료</span>
-												</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
 											</div>
-											<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
 										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
+									</li>
+									<li>
+										<div class="title">
+											<button type="button" class="favorite"><i>즐겨찾기</i></button>
+											<h3 class="name">상호명</h3>
+										</div>
+										<div class="infomation">
+											<span>3.9km</span>
+											<div class="gsCost">
+												<span class="gasoline">1,800</span>
+												<span class="oil">1,500</span>
+											</div>
+										</div>
+										<div class="etc">
+											<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+											<div class="facilities">
+												<span>셀프주유</span>
+												<span>세차장</span>
+												<span>경정비</span>
+												<span>편의점</span>
+											</div>
+										</div>
+										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 								</ul>
 							</section>
 						</div>
 					</div>
 					<script>
-						mapInfo.click();
+						mapInfo.click('sub');
 					</script>
 					<!-- //정보 영역 -->
 

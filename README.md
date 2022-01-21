@@ -3,7 +3,10 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
-### 01-19
+### 01-21
+- UI-SJN-22-002L 등록
+
+### 01-20
 - UI-SJN-20-001U 수정 - 기능, 날씨 아이콘 추가
 - UI-SJN-21-003L 수정 - 경유1 ~ 경유5 아이콘 추가
 - UI-SJN-14-001U 수정 사항 적용

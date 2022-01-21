@@ -55,49 +55,71 @@ const mapInfo = {
 			startTouch.addEventListener('touchend', mapInfo.end);
 		}
 	},
-	click : () => {
+	click : (division) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const location = document.querySelector(".mapIcons .location");
+		const mapArea = document.querySelector(".mapArea");
+		const btnView = document.querySelector(".btnView");
+
 		mapInfoLayer.classList.add('open');
-		
+		btnView.classList.add('open');
 		location && location.classList.add('default');
+
+		if(division === 'sub') {
+			mapArea.classList.add('subStyle');
+		}
 		
 		mapInfo.showEl = true;
 		mapInfo.touch();
 	},
 	start : (event) => {
+		event.preventDefault()
 		mapInfo.startY = event.touches[0].pageY;
 	},
 	move : (event) => {
-		mapInfo.moveY = event.changedTouches[0].pageY;
-
-		var vh = mapInfo.startY - mapInfo.moveY;
+		event.preventDefault()
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+
+		mapInfo.moveY = event.changedTouches[0].pageY;
+		var vh = mapInfo.startY - mapInfo.moveY;
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
 	},
 	end : (event) => {
 		mapInfo.endY = event.changedTouches[0].pageY;
 		mapInfo.active();
 	},
-	active : () => {
+
+	active : (act) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		const btnView = document.querySelector(".btnView");
 		const location = document.querySelector(".mapIcons .location");
+
+	
+
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.add('up');
+				btnView.classList.add('up');
 			}
 		} else {
 			if(mapInfo.startY - mapInfo.endY < -30) {
 				if (mapInfoLayer.classList.contains('up')) {
 					mapInfoLayer.classList.remove('up');
+					btnView.classList.remove('up');
 				} else {
 					mapInfoLayer.classList.remove('open');
+					btnView.classList.remove('open');
 					location && location.classList.remove('default');
 					mapInfo.showEl = false;
 				}
 			}
 		}
-		mapInfoLayer.style.setProperty('--vh', '1px');
+		if(act === 'close') {
+			mapInfoLayer.classList.remove('up', 'open');
+			btnView.classList.remove('up', 'open');
+			mapInfo.showEl = false;
+		}
+		mapInfoLayer.style.setProperty('--vh', '0px');
 	},
 }
 
