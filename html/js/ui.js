@@ -73,11 +73,11 @@ const mapInfo = {
 		mapInfo.touch();
 	},
 	start : (event) => {
-		event.preventDefault()
+		// event.preventDefault()
 		mapInfo.startY = event.touches[0].pageY;
 	},
 	move : (event) => {
-		event.preventDefault()
+		// event.preventDefault()
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 
 		mapInfo.moveY = event.changedTouches[0].pageY;
