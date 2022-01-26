@@ -335,14 +335,50 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .info .pictureArea .headTitle { margin-top: 1.6rem;}
 .info .pictureArea .swiper-button-next,
 .info .pictureArea .swiper-button-prev { text-indent: -9999rem;}
+.info .pictureArea .pgList >li ~ li { margin-top: 0.8rem;}
+.info .pictureArea .pgList li figure { height: 18rem;}
+.info .pictureArea .pictureBodySlide { overflow: hidden; position: relative;}
 
 /* 신고하기 UI-SJN-04-102U */
 .info .reportArea { padding: 1.6rem 2rem 0;}
 
 
 
+
 /* 민원
 **********************************************/
+
+
+
+/* 환경
+**********************************************/
+
+/* UI-SJN-07-001P */
+.info .environment .envHeader header { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.info .environment .envHeader header h3 { font-size: 1.6rem;}
+.info .environment .envHeader header .myLocation i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem 0/48rem 9.6rem;}
+.info .environment .weatherTop { display: flex; align-items: center; justify-content: center; height: 7.6rem;}
+.info .environment .weatherTop .icon { width: 5.2rem; height: 5.2rem; margin-right: 1.2rem; background-size: 52rem 10.4rem;}
+.info .environment .weatherTop .big { font-family: var(--fontRoboto); font-size: 4.3rem;}
+.info .environment .weatherTop .big sup { display: inline-block; position: relative; margin-left: 0.1rem; padding-left: 1rem; font-size: 2rem; font-weight: 700; vertical-align: super;}
+.info .environment .weatherTop .big sup::before { content: ''; display: block; position: absolute; left: 0; top: 0.9rem; width: 0.4rem; height: 0.4rem; border: 2px solid #111; border-radius: 50%;}
+.info .environment .weatherTop .smallBody { display: flex; align-items: center; justify-content: center; margin-top: -0.3rem;}
+.info .environment .weatherTop .smallBody span { font-size: 1.3rem;}
+.info .environment .weatherTop .smallBody .cBlue { color: #32BBED;}
+.info .environment .weatherTop .smallBody .cWood { margin-left: 0.4rem; color: #D37398;}
+.info .environment .weatherTop .smallBody .cWood::before { content: '/'; margin-right: 0.4rem; color: #ddd;}
+.info .environment .weatherMiddle { display: flex; align-items: center; justify-content: center; height: 5.2rem;}
+.info .environment .weatherMiddle p { color: #555;}
+.info .environment .weatherBottom { display: flex; align-items: center; justify-content: center;}
+.info .environment .weatherBottom >div { display: flex; flex-direction: column;}
+.info .environment .weatherBottom .name { color: #555;}
+.info .environment .weatherBottom .round { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; color: #fff; border-radius: 50%;}
+.info .environment .weatherBottom .round.good { background-color: #32BBED;}
+.info .environment .weatherBottom .round.normal { background-color: #4EC457;}
+
+
+
+
 
 /* 교육
 **********************************************/
@@ -351,7 +387,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .info .boxTab .btnTab { display: flex; height: 4.8rem;}
 .info .boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
 .info .boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
-.info .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-color: #000;}
+.info .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
 .info .tabContent { padding: 0.8rem 2rem 4rem;}
 .info .tabContent >div { display: none;}
 .info .tabContent >div.active { display: block;}

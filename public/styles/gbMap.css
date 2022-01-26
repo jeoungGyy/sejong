@@ -14,27 +14,6 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .region p { position: relative; padding-left: 2.4rem;}
 .map .mapInfoLayer .area .region p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 8rem;}
 .map .mapInfoLayer .area .weather { display: flex; align-items: center; width: 15.5rem; margin-right: -2rem;}
-.map .mapInfoLayer .area .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
-.map .mapInfoLayer .area .weather .icon.weather1 { background-position: 0 0;}
-.map .mapInfoLayer .area .weather .icon.weather2 { background-position: -3.2rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather3 { background-position: -6.4rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather4 { background-position: -9.6rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather5 { background-position: -12.8rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather6 { background-position: -16rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather7 { background-position: -19.2rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather8 { background-position: -22.4rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather9 { background-position: -25.6rem  0;}
-.map .mapInfoLayer .area .weather .icon.weather10 { background-position: -28.8rem 0;}
-.map .mapInfoLayer .area .weather .icon.weather11 { background-position: 0 -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather12 { background-position: -3.2rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather13 { background-position: -6.4rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather14 { background-position: -9.6rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather15 { background-position: -12.8rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather16 { background-position: -16rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather17 { background-position: -19.2rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather18 { background-position: -22.4rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather19 { background-position: -25.6rem -3.2rem;}
-.map .mapInfoLayer .area .weather .icon.weather20 { background-position: -28.8rem -3.2rem;}
 .map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; min-width: 2rem; padding-right: 0.7rem; font-size: 1.8rem; text-align: center;}
 .map .mapInfoLayer .area .weather .temperature::after { content: ''; position: absolute; right: 0; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .map .mapInfoLayer .area .val { margin-left: 0.8rem;}
@@ -77,7 +56,7 @@ body { --vh: 1px;}
 
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
-.map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
+.map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
 .map .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
 .map .mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
 .map .mapIcons .depart { position: absolute;}
@@ -105,8 +84,12 @@ body { --vh: 1px;}
 .map .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
 .map .mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
 .map .mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
-
-
+.map .mapIcons .parkingLot { position: relative; position: absolute; z-index: 30;}
+.map .mapIcons .parkingLot .btnParking { display: block; }
+.map .mapIcons .parkingLot .btnParking i { display: block; width: 3.35rem; height: 4.4rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat center/cover;}
+.map .mapIcons .parkingLot .parkingName { position: absolute; left: 50%; top: 5.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.map .mapIcons .parkingLot .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
+.map .mapIcons .parkingLot .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
 
 
 /* items- 모음 */
@@ -327,11 +310,11 @@ body { --vh: 1px;}
 .map .shortestPath .items-wordList ul li button::before { display: none;}
 
 
-/* 지도 카테고리 - UI-SJN-22-001U */
+/* 장소 카테고리 - UI-SJN-22-001U */
 .map .navCategory { padding: 0 2rem;}
 
 
-/* 지도 카테고리 - UI-SJN-22-002L */
+/* 장소 카테고리 - UI-SJN-22-002L */
 .map .mapArea.subStyle .mapInfoLayer .mapIHead.oil { height: 17.6rem; margin: 0 -2rem; border-bottom: 1px solid #EAEDF2;}
 .map .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 
@@ -343,13 +326,46 @@ body { --vh: 1px;}
 .map .gsCost span::after { content: '원';}
 
 
+/* 장소상세 탬플릿 - UI-SJN-24-001L */
+.map .mapInfoLayer.default.noHeight { height: auto;}
+.map .mapInfoLayer.noHeight .myArea { padding-bottom: 3.2rem;}
+.map .mapArea .mapInfoLayer .mapIHead.noContent { height: inherit;}
+.map .mapInfoLayer .centerSec .center { display: flex; align-items: center; height: 4.8rem;}
+.map .mapInfoLayer .centerSec .center h3 { flex: 1; font-size: 1.9rem;}
+.map .mapInfoLayer .centerSec .center .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 9.6rem;}
+.map .mapInfoLayer .centerSec .center .favorite.active { background-position-y: -2.4rem;}
+.map .mapInfoLayer .centerSec .text p { margin-top: 0.9rem; color: #555;}
+.map .mapInfoLayer .centerSec .text p .cBlue { color: #6684EA;}
+.map .mapInfoLayer .centerSec .text p .cRed { color: #FD2020;}
+.map .mapInfoLayer .centerSec .text p .cBlack { color: #111;}
+.map .mapInfoLayer .centerSec .text p .lettSpace { letter-spacing: 0;}
+.map .mapInfoLayer .centerSec .text p.lineGroup span { display: inline-block;}
+.map .mapInfoLayer .centerSec .text p.lineGroup span ~ span { position: relative; margin-left: 0.6rem; padding-left: 0.8rem;}
+.map .mapInfoLayer .centerSec .text p.lineGroup span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.map .mapInfoLayer .centerSec .text p.space span  { display: inline-block;}
+.map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; margin: 1.6rem -2rem 0; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
+.map .mapInfoLayer .centerSec .btns a,
+.map .mapInfoLayer .centerSec .btns button { display: flex; align-items: center; flex-direction: column; justify-content: center; min-width: 6rem; height: 6rem; color: #777; text-align: center;}
+.map .mapInfoLayer .centerSec .btns i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
+.map .mapInfoLayer .centerSec .btns .call i { background-position: -33.6rem -4.8rem;}
+.map .mapInfoLayer .centerSec .btns .aroundIfo i { background-position: -38.4rem -4.8rem;}
+.map .mapInfoLayer .centerSec .btns .share i { background-position: -40.8rem -4.8rem;}
+.map .mapInfoLayer .centerSec .btns .directions { color: #fff; background-color: #6684EA; border-radius: 50%; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%);}
+.map .mapInfoLayer .centerSec .btns .directions i { background-position: -19.2rem -4.8rem;}
+.map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
+.map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
+.mapMenuLayer { display: none; position: absolute; z-index: 100;}
+.mapMenuLayer .mapMenuBody { position: relative; width: 3.35rem; height: 4.4rem;}
+.mapMenuLayer .mapMenuBody ul li { width: 10rem; height: 5rem; background-color: lawngreen;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10rem; top: 5rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10rem; top: 0rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -10rem; top: -5rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 0; top: -5rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 10rem; top: -5rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 10rem; top: 5rem;}
 
-
-
-
-
-
+.mapMenuLayer.show { display: block;}
 
 
 

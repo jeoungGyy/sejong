@@ -68,6 +68,14 @@ const slideOpt = {
 			}
 		},
 	},
+	/* UI-SJN-04-012 */
+	infoPictureSwiper: {
+		autoplay: false,
+    navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	},
 	/* UI-SJN-09-001P */
 	infoCalendarSwiper: {
     slidesPerView: 'auto',

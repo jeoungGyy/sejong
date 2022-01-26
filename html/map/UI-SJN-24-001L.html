@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">주차장</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
+						<button type="button" class="btnPin"><i>핀</i></button>
+						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+
+						<!-- 마커 -->
+						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							<div><span></span></div>
+						</div>
+						<!-- //마커 -->
+
+						<div class="parkingLot" style="left: 20rem; top: 40rem;">
+							<button type="button" class="btnParking"><i>주차장</i></button>
+							<div class="parkingName">
+								<b class="t">센터주차장</b>
+								<b class="cBlue">70면</b>
+							</div>
+						</div>
+
+						<div class="btnView">
+							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+						</div>
+
+						<div class="location">
+							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+							<div class="scaleBtn">
+								<button type="button" class="scaleUp"><i>확대</i></button>
+								<button type="button" class="scaleDown"><i>축소</i></button>
+							</div>
+						</div>
+					</div>
+					<!-- //기타 아이콘들 -->
+					
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer default noHeight">
+						<div class="myArea">
+							<div class="mapIHead noContent"> <!-- 주유소 정보 oil 추가 -->
+								<button type="button" class="btnMapInfo">정보영역</button>
+							</div>
+							
+							<section class="centerSec">
+								<div class="center">
+									<button type="button" class="favorite active">즐겨찾기</button>
+									<h3>센터주차장</h3>
+								</div>
+								<div class="text">
+									<p>세종특별자치시 세종로 1328</p>
+									<p class="lineGroup">
+										<span>주차면 <b class="cBlue">70면</b></span>
+										<span>요금 <b class="cRed">무료</b></span>
+										<span>운영구분 <b class="cBlack">공영</b></span>
+									</p>
+									<p class="space">운영시간 <span class="cBlue">평일</span> <span class="lettSpace">08:00 ~ 23:00</span> <span class="cRed">공휴일</span> <span class="lettSpace">08:00 ~ 08:00</span></p>
+								</div>
+								<div class="btns">
+									<a href="tel:010-1234-5678" class="call"><i></i><span>전화걸기</span></a>
+									<button type="button" class="aroundIfo"><i></i><span>주변정보</span></button>
+									<button type="button" class="share"><i></i><span>공유</span></button>
+									<button type="button" class="directions"><i></i><span>길안내</span></button>
+								</div>
+							</section>
+						</div>
+					</div>
+					<script>
+						mapInfo.click('sub');
+					</script>
+					<!-- //정보 영역 -->
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+		<!-- 메뉴 -->
+		<div id="tooltip1" class="mapMenuLayer show" style="top: 30rem; left: 18rem;">
+			<div class="mapMenuBody">
+				<nav>
+					<ul>
+						<li>
+							<button type="button">핀고정</button>
+						</li>
+						<li>
+							<a href="#">리뷰</a>
+						</li>
+						<li>
+							<a href="#">길찾기</a>
+						</li>
+						<li>
+							<a href="#"><i></i>영상</a>
+						</li>
+						<li>
+							<a href="#"><i></i>이미지</a>
+						</li>
+						<li>
+							<a href="#"><i></i>검색</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- //메뉴 -->
+	</div>
+</div>
+</body>
+</html>
