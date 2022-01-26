@@ -129,6 +129,8 @@ table td { vertical-align: middle;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 9.6rem;}
+.subHeader .icoClose { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
+.subHeader .icoClose i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
 .subHeader h2 { font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
 .subHeader .searchHeader { width: 74%;}
