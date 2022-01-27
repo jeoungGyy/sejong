@@ -601,7 +601,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-list >div button { margin-left: 1.2rem;}
 
 .header-formSearch { display: flex; align-items: center; height: 5.6rem;}
-.header-formSearch select { width: 7.6rem; height: 4rem; padding-left: 1.2rem; border-radius: 2rem;}
+.header-formSearch select { width: 7.6rem; height: 4rem; padding-left: 1.2rem; background-position-y: 1rem; border-radius: 2rem;}
 .header-formSearch .send { flex: 1; position: relative; margin-left: 0.8rem;}
 .header-formSearch .send input { height: 4rem; padding: 0 3rem 0 1.2rem; background-color: #F4F5F7; border: 1px solid #EAEAEA; border-radius: 2rem;}
 .header-formSearch .send .btnSend { display: block; position: absolute; right: 0; top: 0; padding: 1rem;}
@@ -1153,9 +1153,16 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-improvement >li .improvementBody .improvementBtn button ~ button::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
 
 
-
-
-
+.items-apiList li a { display: block; position: relative; padding: 1.6rem 0; color: #111; border-bottom: 1px solid #F4F5F7;}
+.items-apiList li a h3 { font-size: 1.6rem;}
+.items-apiList li a >div { margin-top: 0.8rem;}
+.items-apiList li a >div p { position: relative; font-size: 1.4rem; color: #777;}
+.items-apiList li a >div p ~ p { margin-top: 0.4rem;}
+.items-apiList li a >div p span { display: inline-block; position: relative;}
+.items-apiList li a >div p span ~ span { padding-left: 1.6rem;}
+.items-apiList li a >div p span ~ span::before { content: 'ㆍ'; position: absolute; left: 0.2rem; top: 0; color: #777;}
+.items-apiList li a >div p .cBlue { color: #6684EA;}
+.items-apiList li a .arrow { position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 9.6rem;}
 
 
 
