@@ -13,515 +13,2367 @@
 		.menutarget >div { margin-top: 1.5rem;}
 		.ia_h2 { margin-top: 1.5rem; font-size: 1.5rem; font-weight: 700;}
 		code { display: block; margin-top: 5px; padding: 1rem; font-family: "Malgun Gothic","맑은 고딕","Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size: 1.3rem; background-color: #f5f5f5;}
-		h4 { margin-top: 2rem;}
+		.tabContent >div { display: none;}
+		.tabContent >div.active { display: block;}
+		table th,
+		table td { padding: 0.5rem; font-size: 1.3rem; text-align: left; border: 1px solid #ddd;}
+		mark { display: block; margin: 4rem 0 1rem; color: #aaa; background-color: #fff; border-bottom: 1px solid #eee;}
+		.btnTab { display: flex; flex-wrap: wrap;}
+		.btnTab li { width: calc(100% / 3);}
+		.btnTab li button { display: block; width: 100%; font-size: 1.3rem; color: #999; border: 1px solid #ddd;}
+		.btnTab li button.active { color: #111;}
 	</style>
 </head>
 
 <body>
 <div id="root">
-	<div class="container">
+	<div class="container" style="padding-top: 2rem;">
 		<div class="ia_h1">세종엔 스타일 가이드</div>
 		
-		<ul class="ia_tab">
-			<li><button type="button">기본</button></li>
-			<li><button type="button">info</button></li>
-			<li><button type="button">테이블</button></li>
-			<li><button type="button">레이어</button></li>
-		</ul>
+		<div class="boxTab">
+			<ul class="btnTab">
+				<li class="itemBtn"><button type="button" class="active">공통 STYLE</button></li>
+				<li><button type="button">header- 모음</button></li>
+				<li><button type="button">button- 모음</button></li>
+				<li><button type="button">nav- 모음</button></li>
+				<li><button type="button">items- 모음</button></li>
+			</ul>
 
-		<div class="menutarget">
-			<!-- 기본 -->
-			<div>
-				<h3>사용 폰트</h3>
-				<code>
-					font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;<br>
-					color:#111;
-				</code>
-				<p class="ia_h2">info</p>
+			<br>
+
+			<div class="tabContent">
+				<!-- 공통 STYLE -->
 				<div>
-					
+					<h4><mark>정렬</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>textLeft</th>
+									<td>왼쪽 정렬</td>
+								</tr>
+								<tr>
+									<th>textCenter</th>
+									<td>가운데 정렬</td>
+								</tr>
+								<tr>
+									<th>textRight</th>
+									<td>오른쪽 정렬</td>
+								</tr>
+								<tr>
+									<th>ellipsis</th>
+									<td>말줄임</td>
+								</tr>
+								<tr>
+									<th>lineBreake</th>
+									<td>두줄 말줄임</td>
+								</tr>
+								<tr>
+									<th>visible</th>
+									<td>display: none</td>
+								</tr>
+								<tr>
+									<th>invisible</th>
+									<td>화면에서만 감출때 사용</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4><mark>마진</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>mt8</th>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4><mark>Split 아이콘</mark></h4>
+					<div class="weather">
+						<i class="icon weather1"></i>
+						<i class="icon weather2"></i>
+						<i class="icon weather3"></i>
+						<i class="icon weather4"></i>
+						<i class="icon weather5"></i>
+						<i class="icon weather6"></i>
+						<i class="icon weather7"></i>
+						<i class="icon weather8"></i>
+						<i class="icon weather8"></i>
+						<i class="icon weather10"></i>
+						<i class="icon weather11"></i>
+						<i class="icon weather12"></i>
+						<i class="icon weather13"></i>
+						<i class="icon weather14"></i>
+						<i class="icon weather15"></i>
+						<i class="icon weather16"></i>
+						<i class="icon weather17"></i>
+						<i class="icon weather18"></i>
+						<i class="icon weather19"></i>
+						<i class="icon weather20"></i>
+					</div>
+
+					<h4><mark>버튼</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>button</th>
+									<td><button type="button" class="button">글자</button></td>
+								</tr>
+								<tr>
+									<th>button.middle</th>
+									<td><button type="button" class="button middle">글자</button></td>
+								</tr>
+								<tr>
+									<th>button.blue</th>
+									<td><button type="button" class="button blue">글자</button></td>
+								</tr>
+								<tr>
+									<th>button.whiteLine </th>
+									<td><button type="button" class="button whiteLine">글자</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4><mark>라인 중단점</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>line-default</th>
+									<td><div class="line-default">콘텐츠간 경계에 사용</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4><mark>체크박스, 라디오박스</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>switch</th>
+									<td>
+										<div class="switch">
+											<input type="checkbox" id="switch0" checked="checked" title="네비게이션 앱 연동 여부">
+											<label for="switch0"></label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>radioSet</th>
+									<td>
+										<div class="radioSet">
+											<input type="checkbox" id="list0"><label for="list0"><b>카카오 네비</b></label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4><mark>툴팁</mark></h4>
+					<div>
+						<table>
+							<colgroup>
+								<col style="width: 10rem;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>boxTooltipLayer</th>
+									<td>
+										<div id="tooltip1" class="boxTooltipLayer" tabindex="0" style="display: block; position: inherit;">
+											<div class="boxTooltipBody">
+												<div class="paragraphGroup">
+													<p>비용은 실제와 다를 수 있으니 참고정보로만 사용하시기 바랍니다.</p>
+												</div>
+												<button type="button" class="btnClose"><i>닫기</i></button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>legendTooltipLayer</th>
+									<td>
+										<div id="tooltip1" class="legendTooltipLayer" tabindex="0" style="display: block; position: inherit;">
+											<div class="legendTooltipBody">
+												<div>
+													<h4>뇌졸증가능지수</h4>
+													<p>기온 등 기상조건에 따른 뇌졸증 발생 가능성을 지수화 한 것입니다.  건강관리가 아주 많이 필요합니다.</p>
+													<div>
+														<ul class="numerical">
+															<li>
+																<i class="lowness"></i>
+																<span>낮음</span>
+															</li>
+															<li>
+																<i class="caution"></i>
+																<span>보통</span>
+															</li>
+															<li>
+																<i class="highness"></i>
+																<span>높음</span>
+															</li>
+															<li>
+																<i class="veryHighness"></i>
+																<span>매우높음</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<button type="button" class="btnClose"><i>닫기</i></button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-			</div>
-			<!-- //기본 -->
-
-			<!-- items- 모음 -->
-			<div>
-				<h3>items- 모음</h3>
-
-				<h4>items-default</h4>
+				<!-- //공통 STYLE -->
+				
+				<!-- header- 모음 -->
 				<div>
-					<ul class="items-default">
-						<li>
-							<a href="#">
-								<figure>
-									<span class="label blue">유료</span>
-									<img src="../../public/image/temp/temp019.png" alt="" />
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">12</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
+					<h4><mark>header-default</mark></h4>
+					<div>
+						<div class="header-default">
+							<h3>최근 검색 <span class="cWood">cWood</span> <span class="num">num</span></h3>
+							<button type="button" class="cBlue">전체삭제</button>
+						</div>
+					</div>
+
+					<h4><mark>header-icons</mark></h4>
+					<div>
+						<div class="header-icons">
+							<div>
+								<button type="button" class="good" title="추천 수">12</button>
+								<button type="button" class="comment" title="댓글 수">1,234</button>
+							</div>
+							<div>
+								<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+								<button type="button" class="sharing">공유</button>
+							</div>
+						</div>
+					</div>
+
+					<h4><mark>header-list</mark></h4>
+					<div>
+						<div class="header-list">
+							<h3><span class="cWood">cWood</span>가게</h3>
+							<div>
+								<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+								<button type="button">추천순</button>
+								<button type="button">내가쓴글</button>
+							</div>
+						</div>
+
+						<div class="header-list">
+							<div>
+								<select class="sel">
+									<option>전체</option>
+									<option>이벤트</option>
+									<option>행사</option>
+									<option>공연</option>
+									<option>전시</option>
+								</select>
+								<span class="num">30건</span>
+							</div>
+							<div>
+								<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+								<button type="button">추천순</button>
+								<button type="button">내가쓴글</button>
+							</div>
+						</div>
+					</div>
+
+					<h4><mark>header-formSearch</mark></h4>
+					<div>
+						<div class="header-formSearch">
+							<select title="검색 조건선택">
+								<option>전체</option>
+							</select>
+							<div class="send">
+								<input type="text" placeholder="검색어를 입력하세요" />
+								<button type="button" class="btnSend"><i>검색</i></button>
+							</div>
+						</div>
+					</div>
+
+					<h4><mark>header-news</mark></h4>
+					<div>
+						<div class="header-news">
+							<h3>2021년 사회적경제 온라인 한마당 3부 “라이브커머스“ 상세 안내</h3>
+							<div class="headerSub">
+								<span>2021-12-22</span>
+								<span>세종시 공지</span>
+							</div>
+						</div>
+					</div>
+
+					<h4><mark>header-formSort</mark></h4>
+					<div>
+						<div class="header-formSort">
+							<div>
+								<select title="프로그램 선택">
+									<option>전체프로그램</option>
+								</select>
+								<select title="기관 선택">
+									<option>전체기관</option>
+								</select>
+							</div>
+							<button type="button" class="btnSort" onclick="layerPopup.open('layerLabel');"><i>정렬</i></button>
+						</div>
+					</div>
+
+					<h4><mark>header-CalendarLine</mark></h4>
+					<div>
+						<div id="infoCalendarSwiper" class="header-CalendarLine">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">20</span>
+											<span class="tW">월</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button" class="doday">
+											<span class="tD">21</span>
+											<span class="tW">오늘</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">22</span>
+											<span class="tW">수</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">23</span>
+											<span class="tW">목</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">24</span>
+											<span class="tW">금</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">25</span>
+											<span class="tW">토</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">26</span>
+											<span class="tW">일</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">27</span>
+											<span class="tW">월</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">28</span>
+											<span class="tW">화</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">29</span>
+											<span class="tW">수</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">30</span>
+											<span class="tW">목</span>
+										</button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button">
+											<span class="tD">31</span>
+											<span class="tW">금</span>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<script>
+								slider.active('infoCalendarSwiper')
+							</script>
+						</div>
+					</div>
+
+					<h4><mark>header-large </mark></h4>
+					<div>
+						<header class="header-large">
+							<h3>생활민원 기동 처리반, <span class="style">척척 세종</span></h3>
+							<div class="operation">
+								<span class="box">운영</span> 9시 ~ 18시 (평일만)
+							</div>
+						</header>
+					</div>
+				</div>
+				<!-- //header- 모음 -->
+
+				<!-- button- 모음 -->
+				<div>
+					<h4><mark>button-visible</mark></h4>
+					<div>
+						<div class="button-visible">
+							<button type="button">수정</button>
+							<button type="button">삭제</button>
+						</div>
+					</div>
+
+					<h4><mark>button-more</mark></h4>
+					<div>
+						<div class="button-more">
+							<a href="#" class="btn"><span><span class="blue">세종시 청소년통합플랫폼</span>에서 더보기</span></a>
+						</div>
+					</div>
+
+					<h4><mark>button-moreNews</mark></h4>
+					<div>
+						<div class="button-moreNews">
+							<button type="button" class="btn"><span>더보기</span></button>
+						</div>
+					</div>
+
+					<h4><mark>button-write</mark></h4>
+					<div>
+						<div class="button-write" style="position: inherit; margin-left: 0;">
+							<a href="#" class="btn"><i>우리가게 더보기</i></a>
+						</div>
+					</div>
+				</div>
+				<!-- //button- 모음 -->
+
+				<!-- nav- 모음 -->
+				<div>
+					<h4><mark>nav-notice</mark></h4>
+					<div>
+						<nav class="nav-notice">
+							<button type="button" class="active">전체</button> <!-- 활성화시 active -->
+							<button type="button">공지</button>
+							<button type="button">뉴스</button>
+						</nav>
+					</div>
+
+					<h4><mark>nav-faq</mark></h4>
+					<div>
+						<ul class="nav-faq">
+							<li><button type="button" class="active">전체</button></li>
+							<li><button type="button">스마트맵</button></li>
+							<li><button type="button">생활정보</button></li>
+							<li><button type="button">기타</button></li>
+						</ul>
+					</div>
+
+					<h4><mark>nav_side</mark></h4>
+					<div>
+						<ul class="nav_side">
+							<li><button type="button" class="active">위성영상</button></li>
+							<li><button type="button">레이더영상</button></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //nav- 모음 -->
+
+				<!-- items- 모음 -->
+				<div class="active">
+					<h4><mark>items-default</mark></h4>
+					<div>
+						<ul class="items-default">
+							<li>
+								<a href="#">
+									<figure>
+										<span class="label blue">유료</span>
+										<img src="../../public/image/temp/temp019.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">12</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+									</div>
+								</div>
+								<a href="#">
+									<h4>공유경제를 위한 세종시의 올바른 정책</h4>
+									<p>경제 활성화를 위한 세종시 거시 공유정책을 만나보세요</p>
+								</a>
+								<div class="button-visible">
+									<button type="button">수정</button>
+									<button type="button">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<figure>
+										<span class="label black">무료</span>
+										<img src="../../public/image/temp/temp018.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">0</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#">
+									<h4>공유경제를 위한 세종시의 올바른 정책</h4>
+									<p>경제 활성화를 위한 세종시 거시 공유정책을 세종엔에서 만나보세요</p>
+								</a>
+								<div class="button-visible">
+									<button type="button">수정</button>
+									<button type="button">삭제</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-form</mark></h4>
+					<div>
+						<ul class="items-form">
+							<li>
+								<div class="labelH">
+									<label for="tempText0">공유경제 분류</label> <span class="required">필수</span>
 								</div>
 								<div>
-									<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+									<input type="text" id="tempText0" readonly="readonly" required="required" placeholder="장소 공유" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText1">공유 항목명</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText1" required="required" required="required" placeholder="공유하고자 하는 항목명을 입력하세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText2">설명</label> <span class="required">필수</span>
+								</div>
+								<div class="textareaForm">
+									<textarea id="tempText2" cols="10" rows="10" required="required" placeholder="공유하실 항목에 대한 설명을 입력해 주세요.&#13;&#10;(최소 10자 이상)"></textarea>
+									<div class="byte">
+										<span>49</span>/300
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText3">공유자</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText3" required="required" placeholder="공유자명을 입력하세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>연락처</label> <span class="required">필수</span>
+								</div>
+								<div class="phoneForm">
+									<span><input type="tel" required="required" title="연락처 국번 입력" /></span>
+									<span><input type="tel" required="required" title="연락처 앞자리 입력" /></span>
+									<span><input type="tel" required="required" title="연락처 뒷자리 입력" /></span>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText4">이용료</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<input type="text" id="tempText4" />
+									<p class="hWord">예) 무료/ 한시간 5천원/ 하루 5만원/ 한달 50만원</p>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>주소</label> <span class="required">필수</span>
+								</div>
+								<div class="adressForm">
+									<button type="button" class="btnOpen"><span>주소 찾기</span></button>
+									<input type="text" required="required" placeholder="주소 찾기" />
+									<input type="text" required="required" placeholder="상세 주소를 입력해주세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>공유지역 (읍면동 선택)</label> <span class="required">필수</span>
+								</div>
+								<div class="selectForm accordion">
+									<div class="row">
+										<button type="button" class="selectBtn" aria-expanded="false">지역 읍면동을 선택하세요</button>
+										<div class="target cont">
+											<ul>
+												<li><button type="button">조지원읍</button></li>
+												<li><button type="button">연기면</button></li>
+												<li><button type="button">연동면</button></li>
+												<li><button type="button">부강면</button></li>
+												<li><button type="button">금남면</button></li>
+												<li><button type="button">장군면</button></li>
+												<li><button type="button">연서면</button></li>
+												<li><button type="button">전의면</button></li>
+												<li><button type="button">전동면</button></li>
+												<li><button type="button">소정면</button></li>
+												<li><button type="button">한솔동</button></li>
+												<li><button type="button">도담동</button></li>
+												<li><button type="button">아름동</button></li>
+												<li><button type="button">종촌동</button></li>
+												<li><button type="button">고운동</button></li>
+												<li><button type="button">보람동</button></li>
+												<li><button type="button">테스트</button></li>
+												<li><button type="button">테스트</button></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText6">홈페이지</label>
+								</div>
+								<div>
+									<input type="text" id="tempText6" placeholder="홈페이지 주소(URL)를 입력하세요" />
+									<p class="hWord">예) https://smartsejong.kr</p>
+								</div>
+							</li>
+							<li>
+								<div class="labelH between">
+									<div>
+										<label>사진등록</label> <span class="required">필수</span>
+									</div>
+									<span>(최대 15장)</span>
+								</div>
+								<div class="fileForm">
+									<button type="button" class="upload"><span>사진 선택하기</span></button>
+									<div class="ffH">
+										<button type="button" class="all">전체선택</button>
+										<button type="button" class="delete"><span>삭제</span></button>
+									</div>
+									<ul class="pictureList">
+										<li>
+											<input type="checkbox" id="list0" checked="checked" />
+											<label for="list0">
+												<img src="../../public/image/temp/temp024.png" alt="" />
+											</label>
+										</li>
+										<li>
+											<input type="checkbox" id="list1" />
+											<label for="list1"></label>
+										</li>
+										<li>
+											<input type="checkbox" id="list2" />
+											<label for="list2"></label>
+										</li>
+										<li>
+											<input type="checkbox" id="list3" />
+											<label for="list3">
+												<img src="../../public/image/temp/temp024.png" alt="" />
+											</label>
+										</li>
+										<li>
+											<input type="checkbox" id="list4" />
+											<label for="list4"></label>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-label</mark></h4>
+					<div>
+						<ul class="items-label">
+							<li>
+								<div class="labelForm">
+									<input type="radio" name="radio" id="list0" />
+									<label for="list0">개인정보 노출</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="radio" name="radio" id="list1" />
+									<label for="list1">욕설/인신공격</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="radio" name="radio" id="list2" />
+									<label for="list2">음란/선정성</label>
+								</div>
+							</li>
+							<li>
+								<div class="labelForm">
+									<input type="radio" name="radio" id="list6" checked="checked" />
+									<label for="list6">기타</label>
+								</div>
+								<div class="textareaForm">
+									<textarea cols="10" rows="10" required="required" title="기사 사유 작성" placeholder="기타 사유를 작성해 주세요"></textarea>
+									<div class="byte">
+										<span>49</span>/300
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-news</mark></h4>
+					<div>
+						<ul class="items-news">
+							<li>
+								<a href="UI-SJN-11-002U.html">
+									<h4 class="lineBreake">2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+									<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-11-002U.html">
+									<h4 class="lineBreake">언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면 언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면</h4>
+									<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-11-002U.html">
+									<h4 class="lineBreake">공지사항, 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면</h4>
+									<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-files</mark></h4>
+					<div>
+						<ul class="items-files">
+							<li>
+								<a href="#" download="download">
+									<span class="dec">첨부</span>
+									<span class="title">2021년 사회적경제 온라인….pdf</span> <!-- 디자인 상 CSS로 말줄임 불가능합니다. 글자수로 말줄임 해주세요. -->
+									<span class="byte">24kb</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" download="download">
+									<span class="dec">첨부</span>
+									<span class="title">2021년 사회적경제 온라인….pdf</span>
+									<span class="byte">24kb</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-articleList</mark></h4>
+					<div>
+						<ul class="items-articleList">
+							<li><a href="#"><span class="tit">이전 글</span> <span class="con">2021년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
+							<li><a href="#"><span class="tit">다음 글</span> <span class="con">2022년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
+						</ul>
+					</div>
+
+					<h4><mark>item-switch</mark></h4>
+					<div>
+						<ul class="item-switch">
+							<li>
+								<p>미취학</p>
+								<div class="switch">
+									<input type="checkbox" id="switch0" title="구분 - 미취학 설정">
+									<label for="switch0"></label>
+								</div>
+							</li>
+							<li>
+								<p>초등학생</p>
+								<div class="switch">
+									<input type="checkbox" id="switch1" title="구분 - 초등학생 설정">
+									<label for="switch1"></label>
+								</div>
+							</li>
+							<li>
+								<p>중학생</p>
+								<div class="switch">
+									<input type="checkbox" id="switch2" checked="checked" title="구분 - 중학생 설정">
+									<label for="switch2"></label>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-trip</mark></h4>
+					<div>
+						<ul class="items-trip">
+							<li>
+								<div class="time">20분</div>
+								<h4 class="title">세종특별자치시 스마트도시 소개</h4>
+								<ul>
+									<li>스마트도시 홍보동영상 상영</li>
+									<li>스마트도시 구축 현황 소개</li>
+								</ul>
+								<div class="facility">
+									<p>2층 관람실</p>
+								</div>
+							</li>
+							<li>
+								<div class="time">10분</div>
+								<h4 class="title">도시통합정보센터 운영현황 견학</h4>
+								<ul>
+									<li>스마트도시 홍보동영상 상영</li>
+									<li>스마트도시 구축 현황 소개</li>
+								</ul>
+								<div class="facility">
+									<p>2층 관람실</p>
+								</div>
+							</li>
+							<li>
+								<div class="time">10분</div>
+								<h4 class="title">방범 및 교통 상황실 견학</h4>
+								<ul>
+									<li>방범 및 교통상황실 소개</li>
+									<li>통합관제모의시연등</li>
+								</ul>
+								<div class="facility">
+									<p>2층 관제센터</p>
+								</div>
+							</li>
+							<li>
+								<div class="time">15분</div>
+								<h4 class="title">스마트시티 홍보체험관</h4>
+								<ul>
+									<li>CCTV 비상벨 작동, CCTV 조작</li>
+									<li>버스정보안내단말기 등 시연</li>
+								</ul>
+								<div class="facility">
+									<p>1층 로비</p>
+								</div>
+							</li>
+							<li>
+								<div class="time">5분</div>
+								<h4 class="title">종료</h4>
+								<ul>
+									<li>기념촬영</li>
+									<li>질의 답변</li>
+								</ul>
+								<div class="facility">
+									<p>1층 로비</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-thumb</mark></h4>
+					<div>
+						<ul class="items-thumb">
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp004.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp006.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp007.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp007.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp004.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp005.png" alt="">
+									</figure>
+									<div class="blind">
+										<span>3</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="UI-SJN-04-012P.html">
+									<figure>
+										<img src="../../public/image/temp/temp004.png" alt="">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<figure></figure>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-edu</mark></h4>
+					<div>
+						<ul class="items-edu">
+							<li>
+								<figure>
+									<span class="label blue">선착순</span>
+									<img src="../../public/image/temp/temp025.png" alt="">
+									<figcaption>
+										<p>직업/진로</p>
+										<span class="blur"></span>
+									</figcaption>
+								</figure>
+								<div class="title">
+									<div class="sub">
+										<span class="ing">접수중</span> 
+									</div>
+									<h4><span class="ing">접수중</span> 고운동 직업체험학교</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>(12월 3주차 체험학교)</p>
+										<p>고운청소년센터</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민 13~15세 청소년</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<span class="label blue">추첨제</span>
+									<img src="../../public/image/temp/temp026.png" alt="">
+									<figcaption>
+										<p>프로그램 구분</p>
+										<span class="blur"></span>
+									</figcaption>
+								</figure>
+								<div class="title">
+									<div class="sub">
+										<span class="schedule">접수예정</span>
+									</div>
+									<h4>고운동 직업체험학교</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>(12월 3주차 체험학교)</p>
+										<p>고운청소년센터</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<span class="label blue">추첨제</span>
+									<figcaption>
+										<p>프로그램 구분</p>
+										<span class="blur"></span>
+									</figcaption>
+								</figure>
+								<div class="title">
+									<div class="sub">
+										<span class="closing">접수마감</span>
+									</div>
+									<h4>프로그램명칭</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>프로그램 정보 (회차정보 등)</p>
+										<p>기관명</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<ul class="items-edu boxStyle">
+							<li>
+								<div class="title">
+									<div class="sub">
+										<span class="blue">선착순</span>
+										<span class="ing">접수중</span> 
+									</div>
+									<h4>2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>교육문의 044-800-0000</p>
+										<p class="skyblue">수강료 없음</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민 13~15세 청소년</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="title">
+									<div class="sub">
+										<span class="blue">선착순</span>
+										<span class="schedule">접수예정</span>
+									</div>
+									<h4>2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>교육문의 044-800-0000</p>
+										<p class="skyblue">수강료 없음</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="title">
+									<div class="sub">
+										<span class="wood">추첨제</span>
+										<span class="closing">접수마감</span>
+									</div>
+									<h4>2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+								</div>
+								<div class="text">
+									<div class="center">
+										<p>교육문의 044-800-0000</p>
+										<p class="skyblue">수강료 없음</p>
+									</div>
+									<ul class="items">
+										<li>참여대상 : 세종시 고운동 주민</li>
+										<li>교육기관 : 2022년도 12월 마지막주</li>
+										<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
+										<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-newStore</mark></h4>
+					<div>
+						<ul class="items-newStore">
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">양식</span>
+										<img src="../../public/image/temp/temp004.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">12</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>도미노피자</h4>
+								</a>
+								<div class="button-visible">
+									<button type="button">수정</button>
+									<button type="button">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">양식</span>
+										<img src="../../public/image/temp/temp005.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">0</button>
+										<button type="button" class="comment" title="댓글 수">0</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>준쉐프</h4>
+								</a>
+								<div class="button-visible">
+									<button type="button">수정</button>
+									<button type="button">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">한식</span>
+										<img src="../../public/image/temp/temp006.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">12</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>세종대왕한정식</h4>
+								</a>
+								<div class="button-visible">
+									<button type="button">수정</button>
+									<button type="button">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">양식</span>
+										<img src="../../public/image/temp/temp007.png" alt="" />
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">2</button>
+										<button type="button" class="comment" title="댓글 수">14</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>다이닝더인드라</h4>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">한식</span>
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">12</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>세종대왕한정식</h4>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<figure>
+										<span class="label black">양식</span>
+									</figure>
+								</a>
+								<div class="header-icons">
+									<div>
+										<button type="button" class="good" title="추천 수">12</button>
+										<button type="button" class="comment" title="댓글 수">1,234</button>
+									</div>
+									<div>
+										<button type="button" class="favorite">즐겨찾기</button>
+									</div>
+								</div>
+								<a href="#" class="text">
+									<h4>다이닝더인드라</h4>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-weeklyWeather</mark></h4>
+					<div>
+						<ul class="items-weeklyWeather">
+							<li>
+								<div class="wwDay">
+									<span class="aDay today">오늘</span> <!-- 오늘 today 추가 -->
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay tomorrow">내일</span> <!-- 내일 tomorrow 추가 -->
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay">월</span>
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay">화</span>
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay">수</span>
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay">목</span>
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+							<li>
+								<div class="wwDay">
+									<span class="aDay">금</span>
+									<span class="wwDate">12.24</span>
+								</div>
+								<div class="am">
+									<span class="t">오전</span>
+									<span class="s">10%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather1">맑음</i>
+								</div>
+								<div class="pm">
+									<span class="t">오후</span>
+									<span class="s">20%</span>
+								</div>
+								<div class="weather">
+									<i class="icon weather13">구름</i>
+								</div>
+								<div class="smallBody">
+									<span class="small cBlue">1<sup>C</sup></span>
+									<span class="small cWood">6<sup>C</sup></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-uv</mark></h4>
+					<div>
+						<ul class="items-uv">
+							<li>
+								<div class="uvIcons">
+									<i class="lowness"></i>
+									<span>낮음</span>
+								</div>
+								<div class="uvBody">
+									<div>
+										<h4>자외선지수</h4>
+										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+									</div>
+									<p>보호조치가 별도로 필요 없으나, 민감한 분들은 자외선 차단에 유의하세요.</p>
+								</div>
+							</li>
+							<li>
+								<div class="uvIcons">
+									<i class="caution"></i>
+									<span>주의</span>
+								</div>
+								<div class="uvBody">
+									<div>
+										<h4>대기확산지수</h4>
+										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+									</div>
+									<p>대기 중 오염물질이 기상요소에 의해 확산될 가능성이 낮습니다.</p>
+								</div>
+							</li>
+							<li>
+								<div class="uvIcons">
+									<i class="highness"></i>
+									<span>높음</span>
+								</div>
+								<div class="uvBody">
+									<div>
+										<h4>식중독지수</h4>
+										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+									</div>
+									<p>식중독 발생가능성이 중간 단계로 주의가 필요합니다.</p>
+								</div>
+							</li>
+							<li>
+								<div class="uvIcons">
+									<i class="lowness"></i>
+									<span>낮음</span>
+								</div>
+								<div class="uvBody">
+									<div>
+										<h4>동파가능지수</h4>
+										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+									</div>
+									<p>수도관 동파 가능성이 높지 않은 날입니다.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-weatherInfo</mark></h4>
+					<div>
+						<ul class="items-weatherInfo">
+							<li>
+								<span class="time">00시</span>
+								<i class="precipitation">강수</i>
+								<b>60%</b>
+								<span class="state">강수없음</span>
+							</li>
+							<li>
+								<span class="time">01시</span>
+								<i class="precipitation">강수</i>
+								<b>60%</b>
+								<span class="state">강수없음</span>
+							</li>
+							<li>
+								<span class="time">02시</span>
+								<i class="precipitation">강수</i>
+								<b>60%</b>
+								<span class="state">강수없음</span>
+							</li>
+							<li>
+								<span class="time">03시</span>
+								<i class="precipitation">강수</i>
+								<b>60%</b>
+								<span class="state">강수없음</span>
+							</li>
+							<li class="now">
+								<span class="time">04시</span>
+								<i class="precipitation">강수</i>
+								<b>60%</b>
+								<span class="state">강수없음</span>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-review</mark></h4>
+					<div>
+						<ul class="items-review">
+							<li>
+								<div class="headTitle">
+									<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+										<div class="profile">개인 이미지</div>
+										<strong class="my">홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<figure>
+										<img src="../../public/image/temp/temp004.png" alt="">
+										<button type="button" class="zoom">이미지 크게보기</button>
+									</figure>
+									<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+									<div class="button-visible">
+										<button type="button">수정</button>
+										<button type="button">삭제</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="headTitle">
+									<div class="tlHead">
+										<div class="profile">개인 이미지</div>
+										<strong>홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<p class="text">
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="headTitle">
+									<div class="tlHead">
+										<div class="profile">개인 이미지</div>
+										<strong>홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<figure>
+										<img src="../../public/image/temp/temp005.png" alt="">
+										<button type="button" class="zoom">이미지 크게보기</button>
+									</figure>
+									<p class="text lineBreake">
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+								</div>
+							</li>
+							<!-- 내용이 없을경우 -->
+							<li>
+								<div class="empty">
+									<p>등록된 리뷰가 없습니다.</p>
+								</div>
+							</li>
+							<!-- //내용이 없을경우 -->
+						</ul>
+					</div>
+
+					<h4><mark>items-festival</mark></h4>
+					<div>
+						<div class="items-festival">
+							<figure>
+								<img src="../../public/image/temp/temp000.png" alt="" />
+							</figure>
+							<div class="flFlex">
+								<div class="flHeader">
+									<h4>우리의 한글 누리를 잇다</h4>
+									<p>장소 : 세종대로 31 나성동 18번지</p>
+									<p>8월에 만나요!</p>
+								</div>
+								<div class="movie">
+									영상
 								</div>
 							</div>
-							<a href="#">
-								<h4>공유경제를 위한 세종시의 올바른 정책</h4>
-								<p>경제 활성화를 위한 세종시 거시 공유정책을 만나보세요</p>
-							</a>
-							<div class="button-visible">
-								<button type="button">수정</button>
-								<button type="button">삭제</button>
-							</div>
-						</li>
-						<li>
-							<a href="#">
+						</div>
+					</div>
+
+					<h4><mark>items-culture</mark></h4>
+					<div>
+						<ul class="items-culture">
+							<li>
 								<figure>
-									<span class="label black">무료</span>
-									<img src="../../public/image/temp/temp018.png" alt="" />
+									<span class="label wood">전시</span>
+									<img src="../../public/image/temp/temp001.png" alt="" />
 								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">0</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
+								<div class="text">
+									<h4>청년예술가 20인 아카이브 전시 온 아트 : ON ART</h4>
+									<p class="t">기획전시 「온 아트 : ON ART」는 세종시 청년 작가를 소개하는 온라인 전시입니다.</p>
+									<p class="st">
+										온라인<br />
+										2021. 7. 15 ~ 2021. 12. 30
+									</p>
 								</div>
-								<div>
+							</li>
+							<li>
+								<figure>
+									<span class="label blue">행사</span>
+									<img src="../../public/image/temp/temp002.png" alt="" />
+								</figure>
+								<div class="text">
+									<h4>청년예술가 20인 아카이브 전시 온 아트 : ON ART</h4>
+									<p class="t">기획전시 「온 아트 : ON ART」</p>
+									<p class="st">
+										온라인<br />
+										2021. 7. 15 ~ 2021. 12. 30
+									</p>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<span class="label skyBlue">공연</span>
+									<img src="../../public/image/temp/temp003.png" alt="" />
+								</figure>
+								<div class="text">
+									<h4>청년예술가 20인 아카이브 전시 온 아트 : ON ART</h4>
+									<p class="t">기획전시 「온 아트 : ON ART」</p>
+									<p class="st">
+										온라인<br />
+										2021. 7. 15 ~ 2021. 12. 30
+									</p>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<span class="label black">시민</span>
+								</figure>
+								<div class="text">
+									<h4>청년예술가 20인 아카이브 전시 온 아트 : ON ART</h4>
+									<p class="t">기획전시 「온 아트 : ON ART」는 세종시 청년 작가를 소개</p>
+									<p class="st">
+										온라인<br />
+										2021. 7. 15 ~ 2021. 12. 30
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-wordList</mark></h4>
+					<div style="overflow: hidden;">
+						<nav id="mapWordListSwiper" class="items-wordList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><button type="button" class="active"><b>추천</b> 00시간 10분</button></li> <!-- 활성화 active 추가 -->
+									<li class="swiper-slide"><button type="button"><span class="cblue">무료</span> 00시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">번화가</span> 00시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">계단없이</span> 10시간 30분</button></li>
+									<li class="swiper-slide"><button type="button"><span class="cblue">최소</span> 01시간 30분</button></li>
+								</ul>
+							</div>
+						</nav>
+						<script>
+							slider.active('mapWordListSwiper')
+						</script>
+					</div>
+
+					<h4><mark>items-placeList</mark></h4>
+					<div style="overflow: hidden;">
+						<nav id="mapPlaceListSwiper" class="items-placeList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><button type="button" class="active">음식점</button></li> <!-- 활성화시 active -->
+									<li class="swiper-slide"><button type="button">세종명소</button></li>
+									<li class="swiper-slide"><button type="button">문화행사</button></li>
+									<li class="swiper-slide"><button type="button">블로그</button></li>
+									<li class="swiper-slide"><button type="button">주차장</button></li>
+									<li class="swiper-slide"><button type="button">버스</button></li>
+								</ul>
+							</div>
+						</nav>
+						<script>
+							slider.active('mapPlaceListSwiper')
+						</script>
+					</div>
+
+					<h4><mark>items-mapInfo</mark></h4>
+					<div>
+						<ul class="items-mapInfo">
+							<li>
+								<figure>
+									<img src="../../public/image/temp/temp030.png" alt="">
+								</figure>
+								<div class="mapInfoBody">
+									<h4>세종시 미스터피자</h4>
+									<p class="st">세종시에서 가장 맛난 피자집</p>
+									<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
 									<button type="button" class="favorite">즐겨찾기</button>
 								</div>
-							</div>
-							<a href="#">
-								<h4>공유경제를 위한 세종시의 올바른 정책</h4>
-								<p>경제 활성화를 위한 세종시 거시 공유정책을 세종엔에서 만나보세요</p>
-							</a>
-							<div class="button-visible">
-								<button type="button">수정</button>
-								<button type="button">삭제</button>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-news</h4>
-				<div>
-					<ul class="items-news">
-						<li>
-							<a href="UI-SJN-11-002U.html">
-								<h4 class="lineBreake">2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
-								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-11-002U.html">
-								<h4 class="lineBreake">언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면 언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면</h4>
-								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-11-002U.html">
-								<h4 class="lineBreake">공지사항, 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면</h4>
-								<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-files</h4>
-				<div>
-					<ul class="items-files">
-						<li>
-							<a href="#" download="download">
-								<span class="dec">첨부</span>
-								<span class="title">2021년 사회적경제 온라인….pdf</span> <!-- 디자인 상 CSS로 말줄임 불가능합니다. 글자수로 말줄임 해주세요. -->
-								<span class="byte">24kb</span>
-							</a>
-						</li>
-						<li>
-							<a href="#" download="download">
-								<span class="dec">첨부</span>
-								<span class="title">2021년 사회적경제 온라인….pdf</span>
-								<span class="byte">24kb</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-articleList</h4>
-				<div>
-					<ul class="items-articleList">
-						<li><a href="#"><span class="tit">이전 글</span> <span class="con">2021년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
-						<li><a href="#"><span class="tit">다음 글</span> <span class="con">2022년 사회적경제 온라인 한마당 온라인접수 및</span></a></li>
-					</ul>
-				</div>
-
-				<h4>items-switch</h4>
-				<div>
-					<ul class="item-switch">
-						<li>
-							<p>미취학</p>
-							<div class="switch">
-								<input type="checkbox" id="switch0" title="구분 - 미취학 설정">
-								<label for="switch0"></label>
-							</div>
-						</li>
-						<li>
-							<p>초등학생</p>
-							<div class="switch">
-								<input type="checkbox" id="switch1" title="구분 - 초등학생 설정">
-								<label for="switch1"></label>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-trip</h4>
-				<div>
-					<ul class="items-trip">
-						<li>
-							<div class="time">20분</div>
-							<h4 class="title">세종특별자치시 스마트도시 소개</h4>
-							<ul>
-								<li>스마트도시 홍보동영상 상영</li>
-								<li>스마트도시 구축 현황 소개</li>
-							</ul>
-							<div class="facility">
-								<p>2층 관람실</p>
-							</div>
-						</li>
-						<li>
-							<div class="time">10분</div>
-							<h4 class="title">도시통합정보센터 운영현황 견학</h4>
-							<ul>
-								<li>스마트도시 홍보동영상 상영</li>
-								<li>스마트도시 구축 현황 소개</li>
-							</ul>
-							<div class="facility">
-								<p>2층 관람실</p>
-							</div>
-						</li>
-						<li>
-							<div class="time">5분</div>
-							<h4 class="title">종료</h4>
-							<ul>
-								<li>기념촬영</li>
-								<li>질의 답변</li>
-							</ul>
-							<div class="facility">
-								<p>1층 로비</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-thumb</h4>
-				<div>
-					<ul class="items-thumb">
-						<li>
-							<a href="UI-SJN-04-012P.html">
+							</li>
+							<li>
 								<figure>
-									<img src="../../public/image/temp/temp004.png" alt="">
 								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp006.png" alt="">
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp007.png" alt="">
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp007.png" alt="">
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp004.png" alt="">
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp005.png" alt="">
-								</figure>
-								<div class="blind">
+								<div class="mapInfoBody">
+									<h4>세종시 미스터피자</h4>
+									<p class="st">세종시에서 가장 맛난 피자집</p>
+									<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+									<button type="button" class="favorite active">즐겨찾기</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-parking</mark></h4>
+					<div>
+						<ul class="items-parking">
+							<li>
+								<div class="time active"><i></i></div> <!-- 실시간 주차 정보 제공 주차장 active 추가 -->
+								<div class="head">
+									<h4 class="title">주차장#01</h4>
+									<span class="date">갱신 : 2021-12-30 09:00</span>
+								</div>
+								<div class="subContent">
+									<div class="subText">
+										<b>총 165대</b>
+										<div class="spaceBetween">
+											<span>공영</span>
+											<span>부설</span>
+											<span class="free">무료</span>
+										</div>
+									</div>
+									<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+									<div class="ovflowX">
+										<table>
+											<caption>주차장 : 일반, 경차, 대형, 긴급, 장애인, 여성, 기타 목록</caption>
+											<thead>
+												<tr>
+													<th>일반</th>
+													<th>경차</th>
+													<th>대형</th>
+													<th>긴급</th>
+													<th>장애인</th>
+													<th>여성</th>
+													<th>기타</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>165</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="time"><i></i></div>
+								<div class="head">
+									<h4 class="title">주차장#02</h4>
+									<span class="date">갱신 : 2021-12-30 09:00</span>
+								</div>
+								<div class="subContent">
+									<div class="subText">
+										<b>총 165대</b>
+										<div class="spaceBetween">
+											<span>공영</span>
+											<span>부설</span>
+											<span class="free">무료</span>
+										</div>
+									</div>
+									<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+								</div>
+							</li>
+							<li>
+								<div class="time"><i></i></div>
+								<div class="head">
+									<h4 class="title">주차장#03</h4>
+									<span class="date">갱신 : 2021-12-30 09:00</span>
+								</div>
+								<div class="subContent">
+									<div class="subText">
+										<b>총 165대</b>
+										<div class="spaceBetween">
+											<span>공영</span>
+											<span>부설</span>
+											<span class="pay">유료</span>
+										</div>
+									</div>
+									<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-wayGuide</mark></h4>
+					<div>
+						<ul class="items-wayGuide">
+							<li>
+								<div class="time depart"><i>출발</i></div>
+								<div class="wayCon">
+									<span>1</span>
+									<p>시청남길을 따라 방면으로 60m 이동</p>
+								</div>
+							</li>
+							<li>
+								<div class="time turnLeft"><i>좌회전</i></div>
+								<div class="wayCon active"> <!-- 활성화 active 추가 -->
+									<span>2</span>
+									<p>신탄현 방면으로 우회전 후 한누리대로를 따라 230m 이동</p>
+								</div>
+							</li>
+							<li>
+								<div class="time turnRight"><i>우회전</i></div>
+								<div class="wayCon">
 									<span>3</span>
+									<p>시청남길을 따라 방면으로 60m 이동</p>
 								</div>
-							</a>
-						</li>
-						<li>
-							<a href="UI-SJN-04-012P.html">
-								<figure>
-									<img src="../../public/image/temp/temp004.png" alt="">
-								</figure>
-							</a>
-						</li>
-						<li>
-							<figure></figure>
-						</li>
-					</ul>
+							</li>
+							<li>
+								<div class="time crosswalk"><i>횡단보도</i></div>
+								<div class="wayCon">
+									<span>4</span>
+									<p>신탄현 방면으로 우회전 후 한누리대로를 따라 230m 이동</p>
+								</div>
+							</li>
+							<li>
+								<div class="time straight"><i>직진</i></div>
+								<div class="wayCon">
+									<span>5</span>
+									<p>시청남길을 따라 방면으로 60m 이동</p>
+								</div>
+							</li>
+							<li>
+								<div class="time arrival"><i>도착</i></div>
+								<div class="wayCon">
+									<span>6</span>
+									<p>정부세종2청사</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-route</mark></h4>
+					<div>
+						<ul class="items-route">
+							<li>
+								<i class="car"></i>
+								<p>나성로 133-9 → 도시통합정보센터</p>
+								<span>12.27</span>
+								<button type="button"><i>삭제</i></button>
+							</li>
+							<li>
+								<i class="walk"></i>
+								<p>세종특별자치시 나성로 133-9 → 도시 통합정보센터</p>
+								<span>12.26</span>
+								<button type="button"><i>삭제</i></button>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-category</mark></h4>
+					<div>
+						<ul class="accordionBox items-category">
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu corona">
+									<span>코로나19</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu traffic">
+									<span>교통</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">버스정류장</a></li>
+										<li><a href="#">주차장</a></li>
+										<li><a href="#">주유소</a></li>
+										<li><a href="#">전기차충전소</a></li>
+										<li><a href="#">자전거대여소</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu restaurant">
+									<span>맛집</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu convenience">
+									<span>편의</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu health">
+									<span>건강</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu education">
+									<span>교육</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu culture">
+									<span>문화</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu tourism">
+									<span>관광</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="accordionContainer">
+								<button type="button" class="accordionMenu safety">
+									<span>안전</span>
+								</button>
+								<div class="accordionTarget">
+									<ul class="subMenu">
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+										<li><a href="#">메뉴가 들어옵니다</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>items-gasStation</mark></h4>
+					<div>
+						<ul class="items-gasStation">
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">GS칼텍스 연기면점</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite active"><i>즐겨찾기</i></button>
+									<h3 class="name">S오일 세종점</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite active"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite active"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+							<li>
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<h3 class="name">상호명</h3>
+								</div>
+								<div class="infomation">
+									<span>3.9km</span>
+									<div class="gsCost">
+										<span class="gasoline">1,800</span>
+										<span class="oil">1,500</span>
+									</div>
+								</div>
+								<div class="etc">
+									<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+									<div class="facilities">
+										<span>셀프주유</span>
+										<span>세차장</span>
+										<span>경정비</span>
+										<span>편의점</span>
+									</div>
+								</div>
+								<button type="button" class="guidance"><i></i><b>길안내</b></button>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>item-mapSearch</mark></h4>
+					<div>
+						<ul class="item-mapSearch">
+							<li>
+								<button type="button">
+									<i class="mapSplit clinic"></i>
+									<span>선별진료소</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit bicycle"></i>
+									<span>공유자전거</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit gasStation"></i>
+									<span>주유소</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit franchisee"></i>
+									<span>여민전가맹점</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit clean"></i>
+									<span>자동크린넷</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit automatic"></i>
+									<span>무인민원발급기</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit care"></i>
+									<span>어르신돌봄</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit hospital"></i>
+									<span>병원</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit pharmacy"></i>
+									<span>약국</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit cctv"></i>
+									<span>CCTV</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit parking"></i>
+									<span>주차장</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit charging"></i>
+									<span>전기차충전소</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit visit"></i>
+									<span>가볼만한곳</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit restaurant"></i>
+									<span>음식점</span>
+								</button>
+							</li>
+							<li>
+								<button type="button">
+									<i class="mapSplit cafe"></i>
+									<span>카페</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<h4><mark>item-place</mark></h4>
+					<div>
+						<ul class="item-place">
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">자동크린넷</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoSearch">
+									<span class="keyword">생생버스</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">가볼만한곳</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoLocation">
+									<span class="keyword">세종정부청사</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+							<li>
+								<div class="icoSearch">
+									<span class="keyword">세종날씨</span>
+									<span class="date">12.27</span>
+								</div>
+								<button type="button" class="btnClose"><i>경로</i></button>
+							</li>
+						</ul>
+					</div>
 				</div>
-
-				<h4>items-edu</h4>
-				<div>
-					<ul class="items-edu">
-						<li>
-							<figure>
-								<span class="label blue">선착순</span>
-								<img src="../../public/image/temp/temp025.png" alt="">
-								<figcaption>
-									<p>직업/진로</p>
-									<span class="blur"></span>
-								</figcaption>
-							</figure>
-							<div class="title">
-								<div class="sub">
-									<span class="ing">접수중</span> 
-								</div>
-								<h4><span class="ing">접수중</span> 고운동 직업체험학교</h4>
-							</div>
-							<div class="text">
-								<div class="center">
-									<p>(12월 3주차 체험학교)</p>
-									<p>고운청소년센터</p>
-								</div>
-								<ul class="items">
-									<li>참여대상 : 세종시 고운동 주민 13~15세 청소년</li>
-									<li>교육기관 : 2022년도 12월 마지막주</li>
-									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
-									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<figure>
-								<span class="label blue">추첨제</span>
-								<img src="../../public/image/temp/temp026.png" alt="">
-								<figcaption>
-									<p>프로그램 구분</p>
-									<span class="blur"></span>
-								</figcaption>
-							</figure>
-							<div class="title">
-								<div class="sub">
-									<span class="schedule">접수예정</span>
-								</div>
-								<h4>고운동 직업체험학교</h4>
-							</div>
-							<div class="text">
-								<div class="center">
-									<p>(12월 3주차 체험학교)</p>
-									<p>고운청소년센터</p>
-								</div>
-								<ul class="items">
-									<li>참여대상 : 세종시 고운동 주민</li>
-									<li>교육기관 : 2022년도 12월 마지막주</li>
-									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
-									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<figure>
-								<span class="label blue">추첨제</span>
-								<figcaption>
-									<p>프로그램 구분</p>
-									<span class="blur"></span>
-								</figcaption>
-							</figure>
-							<div class="title">
-								<div class="sub">
-									<span class="closing">접수마감</span>
-								</div>
-								<h4>프로그램명칭</h4>
-							</div>
-							<div class="text">
-								<div class="center">
-									<p>프로그램 정보 (회차정보 등)</p>
-									<p>기관명</p>
-								</div>
-								<ul class="items">
-									<li>참여대상 : 세종시 고운동 주민</li>
-									<li>교육기관 : 2022년도 12월 마지막주</li>
-									<li>접수기간 : 21/12/15 00:00 - 21/12/15 00:00</li>
-									<li>교육일시 : 21/12/15 00:00 - 21/12/15 00:00</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<h4>items-newStore</h4>
-				<div>
-					<ul class="items-newStore">
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">양식</span>
-									<img src="../../public/image/temp/temp004.png" alt="" />
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">12</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
-								</div>
-								<div>
-									<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>도미노피자</h4>
-							</a>
-							<div class="button-visible">
-								<button type="button">수정</button>
-								<button type="button">삭제</button>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">양식</span>
-									<img src="../../public/image/temp/temp005.png" alt="" />
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">0</button>
-									<button type="button" class="comment" title="댓글 수">0</button>
-								</div>
-								<div>
-									<button type="button" class="favorite">즐겨찾기</button>
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>준쉐프</h4>
-							</a>
-							<div class="button-visible">
-								<button type="button">수정</button>
-								<button type="button">삭제</button>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">한식</span>
-									<img src="../../public/image/temp/temp006.png" alt="" />
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">12</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
-								</div>
-								<div>
-									<button type="button" class="favorite">즐겨찾기</button>
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>세종대왕한정식</h4>
-							</a>
-							<div class="button-visible">
-								<button type="button">수정</button>
-								<button type="button">삭제</button>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">양식</span>
-									<img src="../../public/image/temp/temp007.png" alt="" />
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">2</button>
-									<button type="button" class="comment" title="댓글 수">14</button>
-								</div>
-								<div>
-									<button type="button" class="favorite">즐겨찾기</button>
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>다이닝더인드라</h4>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">한식</span>
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">12</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
-								</div>
-								<div>
-									<button type="button" class="favorite">즐겨찾기</button>
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>세종대왕한정식</h4>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="picture">
-								<figure>
-									<span class="label black">양식</span>
-								</figure>
-							</a>
-							<div class="header-icons">
-								<div>
-									<button type="button" class="good" title="추천 수">12</button>
-									<button type="button" class="comment" title="댓글 수">1,234</button>
-								</div>
-								<div>
-									<button type="button" class="favorite">즐겨찾기</button>
-								</div>
-							</div>
-							<a href="#" class="text">
-								<h4>다이닝더인드라</h4>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-
-
-
-
-
-
-
+				<!-- //items- 모음 -->
 			</div>
-			<!-- //items- 모음 -->
-
-			<!-- 테이블 -->
-			<div>
-
-			</div>
-			<!-- //테이블 -->
-
-			<!-- 레이어 -->
-			<div>
-
-			</div>
-			<!-- //레이어 -->
 		</div>
 	</div>
 </div>
