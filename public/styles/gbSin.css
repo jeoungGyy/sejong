@@ -173,6 +173,38 @@
 .items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
 .items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 9.6rem;}
 
+.items-improvement .accordionMenu { cursor: pointer;}
+.items-improvement .accordionTarget { overflow: hidden; max-height: 0; margin: 2.3rem -1.6rem -2.3rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.items-improvement .accordionTargetArea { padding: 2.4rem 1.6rem;}
+.items-improvement .accordionTargetArea .tHead { display: flex; align-items: center; justify-content: space-between;}
+.items-improvement .accordionTargetArea .tHead h4 { font-size: 1.5rem;}
+.items-improvement .accordionTargetArea .tHead div span { display: inline-block; position: relative; font-size: 1.4rem; color: #777; vertical-align: middle;}
+.items-improvement .accordionTargetArea .tHead div span:last-child { padding-left: 0.8rem; font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
+.items-improvement .accordionTargetArea .tHead div span:last-child::before { content: '/'; position: absolute; left: 0; top: 0;}
+.items-improvement .accordionTargetArea .tInfo { margin-top: 1.6rem;}
+.items-improvement .accordionTargetArea .tInfo p { font-size: 1.6rem; color: #555;}
+.items-improvement { margin-top: 1.6rem;}
+.items-improvement >li { padding: 2.1rem 1.6rem 2.3rem; border: 1px solid #EAEAEA;}
+.items-improvement >li ~ li { margin-top: 0.8rem;}
+.items-improvement >li h3 { font-size: 1.6rem;}
+.items-improvement >li .authList { display: flex; align-items: center; flex-wrap: wrap;}
+.items-improvement >li .authList li { width: 50%; margin-top: 1.2rem; font-size: 1.4rem; color: #777;}
+.items-improvement >li .authList li:nth-child(2) { text-align: right;}
+.items-improvement >li .authList li:last-child { width: 100%;}
+.items-improvement >li .authList li span { font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
+.items-improvement >li .authList li a { color: #6684EA;}
+.items-improvement >li .improvementBody { margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid #F4F5F7;}
+.items-improvement >li .improvementBody .paragraphGroup p { font-size: 1.6rem;}
+.items-improvement >li .improvementBody .improvementBtn { margin-top: 0.7rem;}
+.items-improvement >li .improvementBody .improvementBtn button { font-size: 1.3rem; color: #6684EA;}
+.items-improvement >li .improvementBody .improvementBtn button ~ button { position: relative; margin-left: 0.3rem; padding-left: 0.7rem;}
+.items-improvement >li .improvementBody .improvementBtn button ~ button::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
+
+
+
+
+
+
 
 
 
@@ -217,9 +249,8 @@
 .mypage .faqTab li ~ li { margin-left: 0.4rem;}
 .mypage .faqTab li button { display: block; width: 100%; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
 .mypage .faqTab li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.mypage .myMore { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 0.8rem; color: #777;}
-.mypage .myMore i { display: inline-block; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem -4rem/40rem 8rem;}
-
+.mypage .button-moreNews { margin-top: 0.8rem;}
+.mypage .serviceArea { padding: 0 2rem;}
 
 
 

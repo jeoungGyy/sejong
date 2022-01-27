@@ -35,6 +35,8 @@
 .form-default .items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #ddd;}
 .form-default .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .form-default .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 8rem;}
+.form-default .items-form >li .fileForm .upload.add span::after { background-position: -6rem -4rem;}
+.form-default .items-form >li .fileForm .condition { margin: 0.9rem 0; color: #aaa;}
 .form-default .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .form-default .items-form >li .fileForm .ffH .all { color: #6684EA;}
 .form-default .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
