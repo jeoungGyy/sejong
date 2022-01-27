@@ -188,6 +188,8 @@ const tooltip = {
 		let _this = event.currentTarget.getBoundingClientRect();
 		let top = _this.top + scrollTop;
 		let left = _this.left + _this.width;
+		
+		// event.currentTarget.setAttribute("title", "도움말 열림");
 
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);

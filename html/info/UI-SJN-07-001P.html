@@ -37,7 +37,7 @@
 											* 날씨 아이콘 종류 이름을 지을수 없어 숫자로 넘버링 했습니다.
 											- /public/image/common/weather_sample.png 에 도움이미지 넣었습니다.
 										-->
-										<i class="icon weather1"></i>
+										<i class="icon weather1">맑음</i>
 										<div>
 											<span class="big">-2<sup>C</sup></span>
 											<div class="smallBody">
@@ -50,6 +50,7 @@
 										<p>맑음, 어제보다 <span>1</span>C씨 낮아요</p>
 									</div>
 									<div class="weatherBottom">
+										<!-- 색상 종류가 좋음, 보통 2개 입니다. 필요한것은 요청해주세요. -->
 										<div>
 											<span class="name">미세먼지</span>
 											<span class="round good">좋음</span>
@@ -60,7 +61,7 @@
 										</div>
 										<div>
 											<span class="name">일출</span>
-											<div>
+											<div class="swIco">
 												<i class="icon weather14"></i> <b>07:29</b>
 											</div>
 										</div>
@@ -68,8 +69,8 @@
 								</div>
 							</div>
 
-							<div>
-								<div class="boxTab">
+							<div class="weatherSubTab line-default">
+								<div class="boxTab roundStyle">
 									<ul class="btnTab">
 										<li class="itemBtn"><button class="active" type="button">날씨</button></li>
 										<li class="itemBtn"><button type="button">습도</button></li>
@@ -80,149 +81,538 @@
 									<div class="tabContent">
 										<!-- 서브 - 날씨 -->
 										<div class="active">
-											111111
+											<div class="overflowX">
+												날씨 그래프
+											</div>
 										</div>
 										<!-- //서브 - 날씨 -->
 										
 										<!-- 서브 - 습도 -->
 										<div>
-											2222222
+											<div class="overflowX">
+												<ul class="items-weatherInfo">
+													<li>
+														<span class="time">00시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">01시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">02시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">03시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li class="now">
+														<span class="time">04시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">05시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">06시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">07시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">08시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">09시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+													<li>
+														<span class="time">10시</span>
+														<i class="humidity">습도</i>
+														<b>60%</b>
+													</li>
+												</ul>
+											</div>
 										</div>
 										<!-- //서브 - 습도 -->
 
 										<!-- 서브 - 강수 -->
 										<div>
-											2222222
+											<div class="overflowX">
+												<ul class="items-weatherInfo">
+													<li>
+														<span class="time">00시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">01시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">02시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">03시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li class="now">
+														<span class="time">04시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">05시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">06시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">07시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">08시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">09시</span>
+														<i class="precipitation">강수</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+													<li>
+														<span class="time">10시</span>
+														<i class="precipitation">습도</i>
+														<b>60%</b>
+														<span class="state">강수없음</span>
+													</li>
+												</ul>
+											</div>
 										</div>
 										<!-- //서브 - 강수 -->
 
 										<!-- 서브 - 바람 -->
 										<div>
-											2222222
+											<div class="overflowX">
+												<ul class="items-weatherInfo">
+													<li>
+														<span class="time">00시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">01시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">02시</span>
+														<i class="wind">바람</i>
+														<b class="force">10m/s</b>
+													</li>
+													<li>
+														<span class="time">03시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li class="now">
+														<span class="time">04시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">05시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">06시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">07시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">08시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">09시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+													<li>
+														<span class="time">10시</span>
+														<i class="wind">바람</i>
+														<b class="force">1m/s</b>
+													</li>
+												</ul>
+											</div>
 										</div>
 										<!-- //서브 - 바람 -->
 									</div>
 								</div>
 							</div>
 
-							<div>
-								<h3>111</h3>
+							<div class="weeklyWeather line-default">
+								<h3>주간날씨</h3>
 								<div>
-									<ul>
+									<ul class="items-weeklyWeather">
 										<li>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
+											<div class="wwDay">
+												<span class="aDay today">오늘</span> <!-- 오늘 today 추가 -->
+												<span class="wwDate">12.24</span>
 											</div>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
 											</div>
-											<div>
-												<i></i>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
 											</div>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
 											</div>
-											<div>
-												<i></i>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
 											</div>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay tomorrow">내일</span> <!-- 내일 tomorrow 추가 -->
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">월</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">화</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">수</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">목</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">금</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="am">
+												<span class="t">오전</span>
+												<span class="s">10%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather1">맑음</i>
+											</div>
+											<div class="pm">
+												<span class="t">오후</span>
+												<span class="s">20%</span>
+											</div>
+											<div class="weather">
+												<i class="icon weather13">구름</i>
+											</div>
+											<div class="smallBody">
+												<span class="small cBlue">1<sup>C</sup></span>
+												<span class="small cWood">6<sup>C</sup></span>
 											</div>
 										</li>
 									</ul>
-									<p>제공 : 기상청 ㅣ 발표 : 2021.12.14 10:00</p>
+									<div class="offerer">
+										<span>제공 : 기상청</span>
+										<span>발표 : 2021.12.14 10:00</span>
+									</div>
 								</div>
 							</div>
 							
-							<div>
-								<h3>111</h3>
+							<div class="weeklySunrise line-default">
+								<h3>일출일몰</h3>
 								<div>
-									<ul>
+									<ul class="items-weeklyWeather">
 										<li>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
+											<div class="wwDay">
+												<span class="aDay today">오늘</span> <!-- 오늘 today 추가 -->
+												<span class="wwDate">12.24</span>
 											</div>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
-												<i></i>
+											<div class="sunrise weather">
+												<span class="wState">일출</span>
+												<span class="wTime">07:34</span>
+												<i class="icon weather14">일출</i>
 											</div>
-											<div>
-												<span>1111</span>
-												<span>2222</span>
-												<i></i>
+											<div class="sunset weather">
+												<span class="wState">일몰</span>
+												<span class="wTime">18:34</span>
+												<i class="icon weather15">일몰</i>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay tomorrow">내일</span> <!-- 내일 tomorrow 추가 -->
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="sunrise weather">
+												<span class="wState">일출</span>
+												<span class="wTime">07:34</span>
+												<i class="icon weather14">일출</i>
+											</div>
+											<div class="sunset weather">
+												<span class="wState">일몰</span>
+												<span class="wTime">18:34</span>
+												<i class="icon weather15">일몰</i>
+											</div>
+										</li>
+										<li>
+											<div class="wwDay">
+												<span class="aDay">월</span>
+												<span class="wwDate">12.24</span>
+											</div>
+											<div class="sunrise weather">
+												<span class="wState">일출</span>
+												<span class="wTime">07:34</span>
+												<i class="icon weather14">일출</i>
+											</div>
+											<div class="sunset weather">
+												<span class="wState">일몰</span>
+												<span class="wTime">18:34</span>
+												<i class="icon weather15">일몰</i>
 											</div>
 										</li>
 									</ul>
-									<p>제공 : 기상청 ㅣ 발표 : 2021.12.14 10:00</p>
+									<div class="offerer">
+										<span>제공 : 기상청</span>
+										<span>발표 : 2021.12.14 10:00</span>
+									</div>
 								</div>
 							</div>
 
-							<div>
-								<ul>
-									<li><button type="button">생활지수</button></li>
+							<div class="weeklyIndex line-default">
+								<ul class="tab_side">
+									<li><button type="button" class="active">생활지수</button></li>
 									<li><button type="button">보건지수</button></li>
 								</ul>
 								<div>
-									<ul>
+									<ul class="items-uv">
 										<li>
-											<div>
-												<i></i>
+											<div class="uvIcons">
+												<i class="lowness"></i>
 												<span>낮음</span>
 											</div>
-											<div>
-												<h4>111111</h4>
-												<button type="button"><i>자외선지수 범례</i></button>
+											<div class="uvBody">
+												<div>
+													<h4>자외선지수</h4>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+												</div>
+												<p>보호조치가 별도로 필요 없으나, 민감한 분들은 자외선 차단에 유의하세요.</p>
 											</div>
 										</li>
 										<li>
-											<div>
-												<i></i>
-												<span>낮음</span>
+											<div class="uvIcons">
+												<i class="caution"></i>
+												<span>주의</span>
 											</div>
-											<div>
-												<h4>111111</h4>
-												<button type="button"><i>자외선지수 범례</i></button>
-											</div>
-										</li>
-										<li>
-											<div>
-												<i></i>
-												<span>낮음</span>
-											</div>
-											<div>
-												<h4>111111</h4>
-												<button type="button"><i>자외선지수 범례</i></button>
+											<div class="uvBody">
+												<div>
+													<h4>대기확산지수</h4>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+												</div>
+												<p>대기 중 오염물질이 기상요소에 의해 확산될 가능성이 낮습니다.</p>
 											</div>
 										</li>
 										<li>
-											<div>
-												<i></i>
+											<div class="uvIcons">
+												<i class="highness"></i>
+												<span>높음</span>
+											</div>
+											<div class="uvBody">
+												<div>
+													<h4>식중독지수</h4>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+												</div>
+												<p>식중독 발생가능성이 중간 단계로 주의가 필요합니다.</p>
+											</div>
+										</li>
+										<li>
+											<div class="uvIcons">
+												<i class="lowness"></i>
 												<span>낮음</span>
 											</div>
-											<div>
-												<h4>111111</h4>
-												<button type="button"><i>자외선지수 범례</i></button>
+											<div class="uvBody">
+												<div>
+													<h4>동파가능지수</h4>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+												</div>
+												<p>수도관 동파 가능성이 높지 않은 날입니다.</p>
 											</div>
 										</li>
 									</ul>
-									<p>제공 : 기상청 ㅣ 발표 : 2021.12.14 10:00</p>
+									<div class="offerer">
+										<span>제공 : 기상청</span>
+										<span>발표 : 2021.12.14 10:00</span>
+									</div>
 								</div>
 							</div>
 
-							<div>
-								<ul>
-									<li><button type="button">위성영상</button></li>
+							<div class="weeklySatellite line-default">
+								<ul class="tab_side">
+									<li><button type="button" class="active">위성영상</button></li>
 									<li><button type="button">레이더영상</button></li>
 								</ul>
 								<div>
-									<div>영상 공간</div>
-									<p>제공 : 기상청 ㅣ 발표 : 2021.12.14 10:00</p>
+									<div class="imagery">
+										영상 공간
+									</div>
+									<div class="offerer">
+										<span>제공 : 기상청</span>
+										<span>발표 : 2021.12.14 10:00</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -238,6 +628,38 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+		<!-- 툴팁 -->
+		<div id="tooltip1" class="legendTooltipLayer" tabindex="0">
+			<div class="legendTooltipBody">
+				<div>
+					<h4>뇌졸증가능지수</h4>
+					<p>기온 등 기상조건에 따른 뇌졸증 발생 가능성을 지수화 한 것입니다.  건강관리가 아주 많이 필요합니다.</p>
+					<div>
+						<ul class="numerical">
+							<li>
+								<i class="lowness"></i>
+								<span>낮음</span>
+							</li>
+							<li>
+								<i class="caution"></i>
+								<span>보통</span>
+							</li>
+							<li>
+								<i class="highness"></i>
+								<span>높음</span>
+							</li>
+							<li>
+								<i class="veryHighness"></i>
+								<span>매우높음</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+		<!-- //툴팁 -->
 	</div>
 </div>
 </body>

@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-27
+- UI-SJN-07-001P 등록
+
 ### 01-26
 - UI-SJN-04-012P 수정
 - 공통 헤더에 닫기 버튼 추가

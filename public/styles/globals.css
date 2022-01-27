@@ -160,9 +160,8 @@ table td { vertical-align: middle;}
 /* 마진 */
 .mt8 { margin-top: 0.8rem;}
 
-
 /* Split 아이콘 */
-.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
+.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
 .weather .icon.weather1 { background-position: 0 0;}
 .weather .icon.weather2 { background-position: -3.2rem 0;}
 .weather .icon.weather3 { background-position: -6.4rem 0;}
@@ -191,7 +190,6 @@ table td { vertical-align: middle;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 
 
-
 /* 라인 중단점 */
 .line-default { border-top: 0.6rem solid #F4F5F7;}
 
@@ -215,12 +213,30 @@ table td { vertical-align: middle;}
 
 /* 툴팁 */
 .boxTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
-.boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #6684EA; box-shadow: 0 1rems 1rem 0 rgb(0 0 0 / 5%);}
+.boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #6684EA; box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 5%);}
 .boxTooltipLayer .boxTooltipBody .paragraphGroup p { font-size: 1.4rem; line-height:2.2rem;}
 .boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
 .boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
-
 .boxTooltipLayer.show { display: block;}
+
+.legendTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
+.legendTooltipLayer .legendTooltipBody { position: relative; padding: 1.2rem 2rem 3.2rem; background-color: #fff; border: 1px solid #6684EA;}
+.legendTooltipLayer .legendTooltipBody::after { content: ''; position: absolute; left: 50%; top: -1.65rem; width: 1.5rem; height: 1.65rem; margin-left: -0.75rem; background: url(../image/common/ico_tooltip.png) no-repeat center/cover;}
+.legendTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 2.2rem; width: 2.4rem; height: 2.4rem;}
+.legendTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 9.6rem;}
+.legendTooltipLayer .legendTooltipBody h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.legendTooltipLayer .legendTooltipBody p { margin-top: 0.8rem; color: #555; line-height: 2rem;}
+.legendTooltipLayer .legendTooltipBody .numerical { display: flex; margin-top: 2.4rem;}
+.legendTooltipLayer .legendTooltipBody .numerical li { flex: 1;}
+.legendTooltipLayer .legendTooltipBody .numerical li ~ li { margin-left: 0.4rem;}
+.legendTooltipLayer .legendTooltipBody .numerical li i { display: block; height: 0.4rem;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.lowness { background-color: #6684EA;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.caution { background-color: #4EC457;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.highness { background-color: #FEA60E;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.veryHighness { background-color: #FD7802;}
+.legendTooltipLayer .legendTooltipBody .numerical li span { display: block; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 700; color: #aaa;}
+.legendTooltipLayer.show { display: block;}
+
 
 /* Swipe */
 .swiper-button-prev,
