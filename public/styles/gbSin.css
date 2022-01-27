@@ -160,6 +160,21 @@
 .items-term >li li li:first-child { margin-top: 2rem;}
 .items-term >li li li::after { content: ''; position: absolute; left: 0.6rem; top: 0.8rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 
+.items-faq { margin-top: 1.6rem;}
+.items-faq li .accordionTarget { overflow: hidden; max-height: 0; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.items-faq li .accordionTarget .tHead p { padding: 2.6rem 2rem 0; font-size: 1.6rem; line-height: 2.4rem;}
+.items-faq li .accordionTarget .tInfo { margin-top: 3.7rem; padding: 0 2rem 2.3rem; font-size: 1.4rem; color: #777; text-align: right;}
+.items-faq li .btn { display: flex; width: 100%; padding: 1.5rem 2rem; text-align: left; border-bottom: 1px solid #F4F5F7;}
+.items-faq li .btn .head { width: 2.8rem; padding-top: 0.2rem; font-size: 1.6rem; font-weight: 700;}
+.items-faq li .btn .div { width: 6.4rem; padding-top: 0.1rem; letter-spacing: -0.1em;}
+.items-faq li .btn .div.cBlue { color: #6684EA;}
+.items-faq li .btn .div.cGreen { color: #4EC457;}
+.items-faq li .btn .div.cGray { color: #aaa;}
+.items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
+.items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 9.6rem;}
+
+
+
 
 /* 잠금설정 - UI-SJN-80-003 */
 .mypage .mypageArea { padding: 0 2rem 4rem;}
@@ -194,6 +209,40 @@
 .mypage .explain-default { padding: 2.4rem 2rem; background-color: #F4F5F7;}
 .mypage .explain-default .text { line-height: 2.3rem;}
 .mypage .approval { padding: 2.4rem 1.6rem; background-color: #fff;}
+
+/* 자주하는 질문 - UI-SJN-82-001U */
+.mypage .faqTabBody { padding: 0 2rem;}
+.mypage .faqTab { display: flex; align-items: center; height: 5.6rem;}
+.mypage .faqTab li { flex: 1;}
+.mypage .faqTab li ~ li { margin-left: 0.4rem;}
+.mypage .faqTab li button { display: block; width: 100%; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
+.mypage .faqTab li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.mypage .myMore { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 0.8rem; color: #777;}
+.mypage .myMore i { display: inline-block; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem -4rem/40rem 8rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
