@@ -98,84 +98,6 @@
 /* 내정보
 **********************************************/
 
-/* items- 모음 */
-.items-term { padding: 4rem 2rem;}
-.items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
-.items-term >li ~ li { margin-top: 4rem;}
-.items-term >li .paragraphGroup p { margin-top: 2rem; color: #333; line-height: 2.3rem;}
-.items-term >li .link { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #fff; background-color: #6684EA;}
-.items-term >li .link span { display: inline-block; position: relative; padding-right: 2rem;}
-.items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
-.items-term >li .download { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd;}
-.items-term >li .download span { display: inline-block; position: relative; padding-left: 2.8rem;}
-.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 9.6rem;}
-.items-term >li .sub { display: block; margin-top: 1rem;}
-.items-term >li img { max-width: 100%; height: auto;}
-.items-term >li .blackLink li { margin-top: 0.8rem;}
-.items-term >li .blackLink li a { display: inline-block; position: relative; padding-left: 1.6rem; color: #333; line-height: 2.3rem;}
-.items-term >li .blackLink li a::after { content: ''; position: absolute; left: 0.6rem; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
-.items-term >li .ovflowX { overflow-x: scroll; overflow-y: hidden; margin-top: 1.6rem;}
-.items-term >li .ovflowX table { width: 70rem; border-top: 1px solid #333;}
-.items-term >li .ovflowX table tr th { padding: 1.5rem 1rem; text-align: center; border-left: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
-.items-term >li .ovflowX table tr td { padding: 1.5rem 1rem; vertical-align: top; border-left: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
-.items-term >li .ovflowX table tr th:first-child,
-.items-term >li .ovflowX table tr td:first-child { border-left: none;}
-.items-term >li .ovflowX table tr td li { padding-left: 0;}
-.items-term >li .ovflowX table tr td li::after { display: none;}
-.items-term >li .ovflowX table tr td li:first-child { margin-top: 0;}
-.items-term >li li { margin-top: 2rem; line-height: 2.3rem;}
-.items-term >li li li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
-.items-term >li li li:first-child { margin-top: 2rem;}
-.items-term >li li li::after { content: ''; position: absolute; left: 0.6rem; top: 0.8rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
-
-.items-faq { margin-top: 1.6rem;}
-.items-faq li .accordionTarget { overflow: hidden; max-height: 0; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
-.items-faq li .accordionTarget .tHead p { padding: 2.6rem 2rem 0; font-size: 1.6rem; line-height: 2.4rem;}
-.items-faq li .accordionTarget .tInfo { margin-top: 3.7rem; padding: 0 2rem 2.3rem; font-size: 1.4rem; color: #777; text-align: right;}
-.items-faq li .btn { display: flex; width: 100%; padding: 1.5rem 2rem; text-align: left; border-bottom: 1px solid #F4F5F7;}
-.items-faq li .btn .head { width: 2.8rem; padding-top: 0.2rem; font-size: 1.6rem; font-weight: 700;}
-.items-faq li .btn .div { width: 6.4rem; padding-top: 0.1rem; letter-spacing: -0.1em;}
-.items-faq li .btn .div.cBlue { color: #6684EA;}
-.items-faq li .btn .div.cGreen { color: #4EC457;}
-.items-faq li .btn .div.cGray { color: #aaa;}
-.items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
-.items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 9.6rem;}
-
-.items-improvement .accordionMenu { cursor: pointer;}
-.items-improvement .accordionTarget { overflow: hidden; max-height: 0; margin: 2.3rem -1.6rem -2.3rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
-.items-improvement .accordionTargetArea { padding: 2.4rem 1.6rem;}
-.items-improvement .accordionTargetArea .tHead { display: flex; align-items: center; justify-content: space-between;}
-.items-improvement .accordionTargetArea .tHead h4 { font-size: 1.5rem;}
-.items-improvement .accordionTargetArea .tHead div span { display: inline-block; position: relative; font-size: 1.4rem; color: #777; vertical-align: middle;}
-.items-improvement .accordionTargetArea .tHead div span:last-child { padding-left: 0.8rem; font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
-.items-improvement .accordionTargetArea .tHead div span:last-child::before { content: '/'; position: absolute; left: 0; top: 0;}
-.items-improvement .accordionTargetArea .tInfo { margin-top: 1.6rem;}
-.items-improvement .accordionTargetArea .tInfo p { font-size: 1.6rem; color: #555;}
-.items-improvement { margin-top: 1.6rem;}
-.items-improvement >li { padding: 2.1rem 1.6rem 2.3rem; border: 1px solid #EAEAEA;}
-.items-improvement >li ~ li { margin-top: 0.8rem;}
-.items-improvement >li h3 { font-size: 1.6rem;}
-.items-improvement >li .authList { display: flex; align-items: center; flex-wrap: wrap;}
-.items-improvement >li .authList li { width: 50%; margin-top: 1.2rem; font-size: 1.4rem; color: #777;}
-.items-improvement >li .authList li:nth-child(2) { text-align: right;}
-.items-improvement >li .authList li:last-child { width: 100%;}
-.items-improvement >li .authList li span { font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
-.items-improvement >li .authList li a { color: #6684EA;}
-.items-improvement >li .improvementBody { margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid #F4F5F7;}
-.items-improvement >li .improvementBody .paragraphGroup p { font-size: 1.6rem;}
-.items-improvement >li .improvementBody .improvementBtn { margin-top: 0.7rem;}
-.items-improvement >li .improvementBody .improvementBtn button { font-size: 1.3rem; color: #6684EA;}
-.items-improvement >li .improvementBody .improvementBtn button ~ button { position: relative; margin-left: 0.3rem; padding-left: 0.7rem;}
-.items-improvement >li .improvementBody .improvementBtn button ~ button::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
-
-
-
-
-
-
-
-
-
 /* 잠금설정 - UI-SJN-80-003 */
 .mypage .mypageArea { padding: 0 2rem 4rem;}
 .mypage .mypageArea .section ~ .section { margin-top: 1.6rem;}
@@ -218,18 +140,20 @@
 
 
 
+/* 오픈API
+**********************************************/
 
-
-
-
-
-
-
-
-
-
-
-
+/* 오픈API소개 - UI-SJN-91-001U */
+.openApi .apiHeader { padding: 0 2rem 3.2rem;}
+.openApi .apiHeader h3 { display: flex; align-items: center; height: 4.6rem; font-size: 1.6rem;}
+.openApi .explainApi { padding: 1.6rem 2rem; background-color: #F4F5F7;}
+.openApi .explainApi h3 { display: flex; align-items: center; height: 4.6rem; font-size: 1.6rem;}
+.openApi .explainApi .numStep li { display: flex; align-items: center; position: relative; height: 4.8rem; padding: 0 1.2rem; color: #333; background-color: #fff;}
+.openApi .explainApi .numStep li ~ li { margin-top: 1.6rem;}
+.openApi .explainApi .numStep li ~ li::after { content: ''; display: block; position: absolute; left: 2.3rem; top: -1.6rem; width: 0.1rem; height: 1.6rem; background-color: #ddd;}
+.openApi .explainApi .numStep li .square { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; color: #fff; background-color: #6684EA;}
+.openApi .explainApi .numStep li .cBlue { margin-left: 0.4rem; color: #6684EA;}
+.openApi .explainApi .items-blet { margin-top: 2.4rem;}
 
 
 
