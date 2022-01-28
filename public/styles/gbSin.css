@@ -167,6 +167,36 @@
 .openApi .whiteBox ul li .detail { flex: 1; word-break : break-word;}
 .openApi .whiteBox ul li .detail a { color: #6684EA;}
 .openApi .whiteBox ul li .detail a .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -43.2rem -4.8rem/48rem 9.6rem;}
+.openApi .whiteBox ul li .detail .cBlue { color: #6684EA;}
+.openApi .whiteBox ul li .short { width: 3.8rem;}
+.openApi .whiteBox ul li .large { width: 9.6rem;}
+.openApi .whiteBox h4 { display: flex; align-items: center; height: 5.2rem; font-size: 1.6rem;}
+.openApi .whiteBox h4 .required { margin-left: 0.8rem; font-size: 1.1rem; color: #FD2020;}
+.openApi .whiteBox .radiogroupBody { padding-bottom: 1.6rem;}
+.openApi .whiteBox .radiogroup { padding: 0 0 1.6rem;}
+.openApi .whiteBox .radiogroup input { position: absolute; opacity: 0;}
+.openApi .whiteBox .radiogroup label { display: inline-flex; align-items: center; height: 3.6rem; margin: 0.8rem 0.8rem 0 0; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem; transition: all .2s ease-in-out; cursor: pointer;}
+.openApi .whiteBox .radiogroup input:checked + label { color: #fff; border: 1px solid #6684EA; background-color: #6684EA;}
+.openApi .whiteBox .normal { font-weight: 400;}
+.openApi .whiteBox .agree { display: flex; align-items: center; justify-content: flex-end; height: 5.2rem;}
+.openApi .whiteBox .agree span { margin-right: 1.2rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
