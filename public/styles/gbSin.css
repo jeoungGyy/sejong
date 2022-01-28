@@ -144,7 +144,7 @@
 **********************************************/
 
 /* 오픈API소개 - UI-SJN-91-001U */
-.openApi .apiHeader { padding: 0 2rem 3.2rem;}
+.openApi .apiHeader { padding: 0 2rem 3.2rem; background-color: #fff;}
 .openApi .apiHeader h3 { display: flex; align-items: center; height: 4.6rem; font-size: 1.6rem;}
 .openApi .explainApi { padding: 1.6rem 2rem; background-color: #F4F5F7;}
 .openApi .explainApi h3 { display: flex; align-items: center; height: 4.6rem; font-size: 1.6rem;}
@@ -157,13 +157,16 @@
 
 .openApi .openApiArea { padding: 1rem 2rem 4rem;}
 .openApi .openApiArea .header-list { margin-top: 0.8rem;}
-
-
-
-
-
-
-
+.openApi .explain-default { padding: 1.6rem 2rem 2.4rem;}
+.openApi .explain-default h3 { display: flex; align-items: center; height: 4.6rem; font-size: 1.6rem;}
+.openApi .whiteBox { margin-top: 0.8rem; padding: 0.8rem 1.6rem; background-color: #fff;}
+.openApi .whiteBox ~ .whiteBox { margin-top: 1.6rem;}
+.openApi .whiteBox ul li { display: flex; align-items: baseline; padding: 1.6rem 0;}
+.openApi .whiteBox ul li ~ li { border-top: 1px solid #F4F5F7;}
+.openApi .whiteBox ul li strong { width: 8rem;}
+.openApi .whiteBox ul li .detail { flex: 1; word-break : break-word;}
+.openApi .whiteBox ul li .detail a { color: #6684EA;}
+.openApi .whiteBox ul li .detail a .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -43.2rem -4.8rem/48rem 9.6rem;}
 
 
 
