@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 01-28
+- UI-SJN-11-001U, UI-SJN-82-003L, UI-SJN-91-002U 수정
+
 ### 01-27
 - 스타일 가이드 정의
 - UI-SJN-07-001P 등록
