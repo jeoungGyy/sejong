@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">지도</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<!-- 맵 검색 -->
+					<div class="mapSearch">
+						<div class="mapheader">
+							<div class="mapBody">
+								<button type="button" class="btnPlace" title="장소 검색" onclick="maplnb.open();">
+									<span class="t"></span>
+									<span class="c"></span>
+									<span class="b"></span>
+								</button>
+								<div class="searchHeader">
+									<input type="text" title="장소, 버스 검색" placeholder="장소, 버스 검색">    
+								</div>
+								<div class="btnHeader">
+									<button type="button" class="icoMic"><i>마이크</i></button>
+								</div>
+							</div>
+							<button type="button" class="btnMapSearch">길찾기</button>
+						</div>
+						<nav id="mapWordListSwiper" class="items-wordList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><button type="button">코로나19</button></li>
+									<li class="swiper-slide"><button type="button">교통</button></li>
+									<li class="swiper-slide"><button type="button">건강</button></li>
+									<li class="swiper-slide"><button type="button">소통</button></li>
+									<li class="swiper-slide"><button type="button">편의시설</button></li>
+									<li class="swiper-slide"><button type="button">교통</button></li>
+									<li class="swiper-slide"><button type="button">건강</button></li>
+								</ul>
+							</div>
+						</nav>
+						<script>
+							slider.active('mapWordListSwiper')
+						</script>
+					</div>
+					<!-- //맵 검색 -->
+
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<!--  -->
+						<div class="streetLamp">
+							<div class="lampBody" style="left: 10rem; top: 15rem;">
+								<i></i><span>나성동 800-37</span>
+							</div>
+							<div class="lampBody" style="left: 10rem; top: 25rem;">
+								<i></i><span>보람동 700-27</span>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<!-- //기타 아이콘들 -->
+
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer open" style="height: 50%;">
+						<div class="mapIHead short2">
+							<button type="button" class="btnMapInfo">정보영역</button>
+
+							<div class="header-default">
+								<h3>목록</h3>
+							</div>
+						</div>
+
+						<div class="listArea">
+							<ul class="streetLampList">
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite active"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite active"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //정보 영역 -->
+					
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>
