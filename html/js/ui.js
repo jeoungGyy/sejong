@@ -46,7 +46,7 @@ const mapInfo = {
 	startY: null,
 	moveY: null,
 	endY: null,
-	showEl : false,
+	showEl: false,
 	touch : () => {
 		if(!tooltip.showEl) {
 			const startTouch = document.querySelector(".mapIHead");
@@ -117,6 +117,43 @@ const mapInfo = {
 			mapInfo.showEl = false;
 		}
 		mapInfoLayer.style.setProperty('--vh', '0px');
+	},
+}
+
+const maplnb = {
+	open : () => {
+		const lnb = document.querySelector(".lnb");
+		const mapSearch = document.querySelector(".mapSearch");
+		const btnPlace = document.querySelector(".btnPlace");
+		if(event !== undefined) current = event.currentTarget;
+		lnb.classList.add('ready');
+		document.querySelector('html').classList.add('scrollLock');
+
+		// let _this = event.currentTarget;
+		// _this.classList.add('ready');
+
+		setTimeout(()=>{
+			lnb.classList.add('show');
+			mapSearch.classList.add('lnbShow');
+			lnb.focus();
+		},1);
+		btnPlace.addEventListener('click', ()=>{
+			if(mapSearch.classList.contains('lnbShow')) maplnb.close();
+		});
+	},
+	close : () => {
+		const lnb = document.querySelector(".lnb");
+		const mapSearch = document.querySelector(".mapSearch");
+		
+		setTimeout(()=>{
+			lnb.classList.remove('show');
+			mapSearch.classList.remove('lnbShow');
+		},1);
+		setTimeout(()=>{
+			current.focus();
+			lnb.classList.remove('ready');
+			document.querySelector('html').classList.remove('scrollLock');
+		},500);
 	},
 }
 
@@ -200,13 +237,17 @@ const tooltip = {
 
 			switch (dir) {
 				case 'right' :
-					left =  _this.left - elWidth;
+					left =  _this.left - 170;
+					// left =  _this.left - (elWidth/2);
+					top = _this.top + scrollTop - 100;
+					tooltip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
 					break;
 				case 'bottom' :
-					top = _this.top + scrollTop + 38;	
+					top = _this.top + scrollTop + 38;
+					tooltip.showEl.style.cssText = `top: ${top}px;`
 					break;
 			}
-			tooltip.showEl.style.cssText = `top: ${top}px;`
+			
 
 			tooltip.showEl.addEventListener('click',()=>{
 				event.stopPropagation();

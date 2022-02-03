@@ -105,7 +105,7 @@
 .info .environment .envHeader { padding-bottom: 2.6rem;}
 .info .environment .envHeader header { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .info .environment .envHeader header h3 { font-size: 1.6rem;}
-.info .environment .envHeader header .myLocation i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem 0/48rem 9.6rem;}
+.info .environment .envHeader header .myLocation i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem 0/48rem 14.4rem;}
 .info .environment .weatherTop { display: flex; align-items: center; justify-content: center; height: 7.6rem;}
 .info .environment .weatherTop .icon { width: 5.2rem; height: 5.2rem; margin-right: 1.2rem; background-size: 52rem 10.4rem;}
 .info .environment .weatherTop .big { font-family: var(--fontRoboto); font-size: 4.3rem;}
@@ -212,14 +212,14 @@
 
 /* 견학신청 UI-SJN-13-002U */
 .info .tripHead .intro { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem; color: #fff; background-color: #6684EA;}
-.info .tripHead .intro::after { content: ''; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 9.6rem;}
+.info .tripHead .intro::after { content: ''; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 14.4rem;}
 .info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #A9B0C1;}
 .info .tripHead .reserve .t { font-size: 1.6rem;}
 .info .tripHead .reserve .st { position: relative; margin-top: 1.2rem; padding-left: 2.8rem;}
 .info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
 .info .tripHead .reserve ul li { position: relative; margin-top: 0.8rem; padding-left: 2.8rem; letter-spacing: 0;}
-.info .tripHead .reserve ul li.tel::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 9.6rem;}
-.info .tripHead .reserve ul li.email::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -2.4rem 0/48rem 9.6rem;}
+.info .tripHead .reserve ul li.tel::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
+.info .tripHead .reserve ul li.email::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -2.4rem 0/48rem 14.4rem;}
 .info .tripHead .reserve .link { display: flex; align-items: center; justify-content: center; position: absolute; right: 2rem; bottom: 2rem; width: 7.2rem; height: 7.2rem; color: #fff; background: url(../image/info/info_trip_bg.png) no-repeat center/7.2rem 7.2rem;}
 .info .tripHead .reserve .link i.deco { display: block; width: 1.8rem; height: 1.35rem; margin-left: 0.5rem; background: url(../image/info/info_wArrow_right.png) no-repeat center/cover;}
 .info .tripCalendar { padding: 1.6rem 2rem 2rem;}

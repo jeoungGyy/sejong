@@ -56,10 +56,75 @@
 						<button type="button" class="btnPin"><i>핀</i></button>
 
 						<!-- 마커 -->
-						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+						<div class="markerMy" style="left: 20rem; top: 32rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
 							<div><span></span></div>
 						</div>
 						<!-- //마커 -->
+
+						<!-- 교통정보 기호 -->
+						<div>
+							<span class="type injury_4" style="left: 10rem; top: 20rem;">사망사고 기호</span>
+							<span class="type injury_3" style="left: 15rem; top: 20rem;">중상사고 기호</span>
+							<span class="type injury_2" style="left: 20rem; top: 20rem;">경상사고 기호</span>
+							<span class="type injury_1" style="left: 25rem; top: 20rem;">부상신고사고 기호</span>
+							<span class="type accident_4" style="left: 10rem; top: 30rem;">차대사람 기호</span>
+							<span class="type accident_3" style="left: 15rem; top: 30rem;">차대차 기호</span>
+							<span class="type accident_2" style="left: 20rem; top: 30rem;">차량단독 기호</span>
+							<span class="type accident_1" style="left: 25rem; top: 30rem;">건널목 기호</span>
+
+							<span class="schoolZone" style="left: 10rem; top: 40rem;">어린이 보호구역</span>
+							<span class="accidentsArea" style="left: 20rem; top: 40rem;">교통사고 다발지역</span>
+							<span class="accidentsPlace" style="left: 25rem; top: 40rem;">교통사고 발생지</span>
+						</div>
+						<!-- //교통정보 기호 -->
+
+						<!-- 교통정보 -->
+						<div class="trafficInfo" style="left: 1.2rem; bottom: 17.5rem;">
+							<table class="tiTable">
+								<caption>교통정보: 상해정도, 기호, 사고유형, 기호를 나타내는 표</caption>
+								<colgroup>
+									<col style="width: 8.6rem;" />
+									<col style="width: 4rem;" />
+									<col />
+									<col style="width: 4rem;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">상해정도</th>
+										<th scope="col">기호</th>
+										<th scope="col">사고유형</th>
+										<th scope="col">기호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">사망사고</th>
+										<td><span class="type injury_4">사망사고 기호</span></td>
+										<th scope="row">차대사람</th>
+										<td><span class="type accident_4">차대사람 기호</span></td>
+									</tr>
+									<tr>
+										<th scope="row">중상사고</th>
+										<td><span class="type injury_3">중상사고 기호</span></td>
+										<th scope="row">차대차</th>
+										<td><span class="type accident_3">차대차 기호</span></td>
+									</tr>
+									<tr>
+										<th scope="row">경상사고</th>
+										<td><span class="type injury_2">경상사고 기호</span></td>
+										<th scope="row">차량단독</th>
+										<td><span class="type accident_2">차량단독 기호</span></td>
+									</tr>
+									<tr>
+										<th scope="row">부상신고사고</th>
+										<td><span class="type injury_1">부상신고사고 기호</span></td>
+										<th scope="row">건널목</th>
+										<td><span class="type accident_1">건널목 기호</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //교통정보 -->
 
 						<div class="location">
 							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
@@ -68,7 +133,6 @@
 								<button type="button" class="scaleDown"><i>축소</i></button>
 							</div>
 						</div>
-
 					</div>
 					<!-- //기타 아이콘들 -->
 

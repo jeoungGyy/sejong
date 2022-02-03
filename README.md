@@ -3,6 +3,11 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-03
+- UI-SJN-20-001U 수정 - 햄버거 메뉴 추가
+- UI-SJN-60-001L 등록
+- UI-SJN-60-003L 등록
+
 ### 01-28
 - UI-SJN-11-001U 수정
 - UI-SJN-82-003L 수정 

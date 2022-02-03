@@ -14,7 +14,7 @@
 .home .popularHeader .popularBody .tooggleWord { display: flex; align-items: center; justify-content: center; width: 4rem;}
 .home .popularHeader .popularBody .tooggleWord i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover;     transition: transform .3s;}
 .home .popularHeader .popularBody .favorite { display: block;}
-.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 9.6rem;}
+.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
 .home .popularHeader .popularBody .favorite.active i { background-position-y: -2.4rem;}
 .home .popularHeader .wordCloud { color: #fff; background-color: #A5BFD6;}
 .home .popularHeader.active .popularBody .tooggleWord i { transform: rotate(-180deg);}
@@ -167,7 +167,7 @@
 .openApi .whiteBox ul li strong { width: 8rem;}
 .openApi .whiteBox ul li .detail { flex: 1; word-break : break-word;}
 .openApi .whiteBox ul li .detail a { color: #6684EA;}
-.openApi .whiteBox ul li .detail a .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -43.2rem -4.8rem/48rem 9.6rem;}
+.openApi .whiteBox ul li .detail a .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -43.2rem -4.8rem/48rem 14.4rem;}
 .openApi .whiteBox ul li .detail .cBlue { color: #6684EA;}
 .openApi .whiteBox ul li .short { width: 3.8rem;}
 .openApi .whiteBox ul li .large { width: 9.6rem;}
