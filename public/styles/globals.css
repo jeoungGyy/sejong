@@ -185,6 +185,9 @@ table td { vertical-align: middle;}
 .weather .icon.weather18 { background-position: -22.4rem -3.2rem;}
 .weather .icon.weather19 { background-position: -25.6rem -3.2rem;}
 .weather .icon.weather20 { background-position: -28.8rem -3.2rem;}
+.split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
+.split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
+
 
 /* 버튼 */
 .button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);}
@@ -568,9 +571,13 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail .flex >div p { margin-top: 0; font-size: 1.5rem; color: #535353;}
 .locationLayer .detail .flex >div p.paid { color: #FD2020;}
 .locationLayer .detail .flex >div p.free { color: #6684EA;}
+.locationLayer .detail .flex >div p.note { color: #FD2020; letter-spacing: -0.1em;}
+.locationLayer .detail .flex >div p.note i { margin: -0.3rem 0.4rem 0 0; vertical-align: middle; background-position: -38rem 0;}
 .locationLayer .detail .flex >div p .span { display: inline-flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.8rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.1em; border-radius: 1.4rem;}
 .locationLayer .detail .flex >div p .span.overhaul { background-color: #aaa;}
 .locationLayer .detail .flex >div p .span.driving { background-color: #4EC457;}
+.locationLayer .detail .flex >div .alertOpen { color: #535353; vertical-align: initial;}
+.locationLayer .detail .flex >div .alertOpen i { display: inline-block; width: 2rem; height: 2rem; margin: -0.3rem 0 0 0.4rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 8rem;}
 .locationLayer .detail .flex.baseline { align-items: baseline;}
 .locationLayer .detail .parkingList { display: flex; align-items: center; flex-wrap: wrap; margin: 0 0 0 -0.8rem;}
 .locationLayer .detail .parkingList li { margin: 0.8rem 0 0 0.8rem; padding: 0.6rem 1.2rem; border: 1px solid #EAEAEA;}
@@ -578,10 +585,21 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail .parkingList li b { position: relative; margin-left: 0.1rem; padding-left: 0.8rem; font-size: 1.4rem;}
 .locationLayer .detail .parkingList li b::before { content: ''; position: absolute; left: 0; top: 0.3rem; width: 0.1rem; height: 1.4rem; background-color: #ddd;}
 .locationLayer .detail .offerer { display: flex; align-items: center;	justify-content: flex-end; height: 3.6rem; margin-top: 0.6rem; font-size: 1.4rem; color: #aaa;}
-.locationLayer .detail .etc { display: flex; align-items: center; min-height: 3.6rem;}
-.locationLayer .detail .etc >span { font-size: 1.4rem; color: #555;}
-.locationLayer .detail .etc >span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
-.locationLayer .detail .etc >span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.locationLayer .detail .infomation { display: flex; align-items: center; min-height: 3.6rem;}
+.locationLayer .detail .infomation >span { font-size: 1.4rem; color: #555;}
+.locationLayer .detail .infomation >span ~ span { position: relative; margin-left: 0.8rem; padding-left: 0.8rem;}
+.locationLayer .detail .infomation >span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.locationLayer .detail .dayWeek { margin-bottom: 0.8rem;}
+.locationLayer .detail .dayWeek .holiday { color: #FD2020;}
+.locationLayer .detail .department { display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 0.8rem;}
+.locationLayer .detail .department p { width: 50%;}
+.locationLayer .detail .infoBox { display: flex; align-items: center; height: 3.6rem;}
+.locationLayer .detail .infoBox b.cGreen { color: #4EC457;}
+.locationLayer .detail .infoBox b.cRed { color: #FD2020;}
+.locationLayer .detail .infoBox .facilities { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem;}
+.locationLayer .detail .infoBox .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #777; background-color: #F4F5F7;}
+.locationLayer .detail .infoBox .facilities span.holiday { color: #FD2020;}
+.locationLayer .detail .careList li { color: #535353; line-height: 2.4rem;}
 
 .locationLayer .app { padding: 0 2rem 2.4rem;}
 .locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
@@ -984,19 +1002,32 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-wordList ul li button::before { content: '#';}
 .items-wordList ul li button.active { color: #fff; background-color: #6684EA;}
 
-.items-placeList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}
+.items-placeList { display: flex; align-items: center; overflow: hidden; height: 4.8rem; margin: 0 -1.2rem 0; padding: 0 1.2rem;}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.items-placeList ul li select { height: 3.6rem; padding-left: 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
+.items-placeList ul li select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
+.map .gasStation .commIco24 i,
 .items-placeList ul li .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/map/split_gas_station.png) no-repeat 0 0/cover;}
+.map .gasStation .commIco24.gs i,
 .items-placeList ul li .icon.gs { background-position-x: 0;}
+.map .gasStation .commIco24.skE i,
 .items-placeList ul li .icon.skE { background-position-x: -2.4rem;}
+.map .gasStation .commIco24.hyundai i,
 .items-placeList ul li .icon.hyundai { background-position-x: -4.8rem;}
+.map .gasStation .commIco24.soil i,
 .items-placeList ul li .icon.soil { background-position-x: -7.2rem;}
+.map .gasStation .commIco24.thrifty i,
 .items-placeList ul li .icon.thrifty { background-position-x: -9.6rem;}
+.map .gasStation .commIco24.skG i,
 .items-placeList ul li .icon.skG { background-position-x: -12rem;}
+.map .gasStation .commIco24.e1 i,
 .items-placeList ul li .icon.e1 { background-position-x: -14.4rem;}
+.map .gasStation .commIco24.other i,
 .items-placeList ul li .icon.other { background-position-x: -16.8rem;}
+.items-placeList ul.inline { display: flex; align-items: center;}
+.items-placeList ul.inline li { margin-right: 0.8rem;}
 
 .items-mapInfo { margin-top: 0.8rem;}
 .items-mapInfo li { position: relative; min-height: 7.2rem; padding-left: 8.8rem;}
@@ -1094,20 +1125,25 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li .infomation >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .infomation >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-gasStation li .infomation >span.charge { color: #555;}
+.items-gasStation li .infomation >span.cGray { color: #777;}
 .items-gasStation li .infomation >span.charge .paid { color: #FD2020;}
 .items-gasStation li .infomation >span.charge .free { color: #6684EA;}
 .items-gasStation li .infomation >span .cGreen { color: #4EC457;}
-.items-gasStation li .etc { display: flex; align-items: center; height: 2.4rem; margin-top: 0.4rem;}
+.items-gasStation li .etc { display: flex; align-items: center; height: 2.4rem; margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .etc >a { display: block; width: 8.5rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 8rem; border-radius: 50%;}
 .items-gasStation li .etc .facilities { display: flex; flex: 1;}
 .items-gasStation li .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #777; background-color: #F4F5F7;}
+.items-gasStation li .etc .facilities span.holiday { color: #FD2020;}
+.items-gasStation li .etc .grade { font-size: 1.4rem;}
+.items-gasStation li .etc .grade .cBlue { color: #6684EA;}
 .items-gasStation li .etc >span { font-size: 1.4rem; color: #555;}
 .items-gasStation li .etc >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .etc >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 2.2rem; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 14.4rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.items-gasStation li .guidance.top { top: 1.2rem;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 
 .item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
