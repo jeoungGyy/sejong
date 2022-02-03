@@ -24,6 +24,10 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .selectGroup { display: flex; align-items: center; height: 4.8rem;}
 .map .mapInfoLayer .area .selectGroup select { height: 3.6rem; margin-right: 0.8rem; padding-left: 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
 .map .mapInfoLayer .area .selectGroup select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
+.map .mapInfoLayer .area .radioGroup { display: flex; align-items: center; height: 4.8rem;}
+.map .mapInfoLayer .area .radioGroup input { position: absolute; }
+.map .mapInfoLayer .area .radioGroup label { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; height: 3.6rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem; transition: all .3s ease-in-out;}
+.map .mapInfoLayer .area .radioGroup input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 
 .map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
@@ -57,6 +61,8 @@ body { --vh: 1px;}
 .map .mapIcons .btnView.open button.listView { bottom: -4rem;}
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
+.map .mapIcons .btnBikePin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.map .mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_bike.png) no-repeat center/cover;}
 .map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
 .map .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
 .map .mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
@@ -120,6 +126,8 @@ body { --vh: 1px;}
 .map .mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
 .map .mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
 .map .mapIcons .evCharge .evChargeIco.stop i { background-color: #aaa; background-position: -14.4rem -12rem;}
+.map .mapIcons .bikeCharge .bikeIco { display: flex; align-items: center; justify-content: center; position: absolute; width: 2.4rem; height: 2.4rem; background-color: #32BBED; border-radius: 50%;}
+.map .mapIcons .bikeCharge .bikeIco i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -9.6rem/48rem 14.4rem; border-radius: 50%;}
 
 .map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
 .map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
@@ -314,6 +322,18 @@ body { --vh: 1px;}
 .map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
 .map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
 .map .mapMenuLayer.show { display: block;}
+
+/* UI-SJN-30-007L */
+.map .mapInfoLayer .pTransportation li { margin: 0 -2rem; padding: 1.2rem 2rem; border-bottom: 1px solid #F4F5F7;}
+.map .mapInfoLayer .pTransportation li h3 { font-size: 1.6rem;}
+.map .mapInfoLayer .pTransportation li .etc span { font-size: 1.4rem; color: #555;}
+.map .mapInfoLayer .pTransportation li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.map .mapInfoLayer .pTransportation li .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.map .mapInfoLayer .pTransportation li .etc .cBlue { color: #32BBED;}
+.map .mapInfoLayer .pTransportation li .etc .cGray { color: #777;}
+.map .mapInfoLayer .pTransportation li .etc .cOrange { color: #FD2020;}
+.map .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
+
 
 /* UI-SJN-60-004L */
 .map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}

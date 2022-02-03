@@ -14,13 +14,14 @@
 
 		<!-- 본문 -->
 		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">주차장</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			<h2 class="visible"><div class="headerClone">개인이동수단</div></h2> <!-- [헤더에 넣어줄 제목] -->
 			
 			<div class="mapWrap">
 				<div class="mapArea">
 					<!-- 기타 아이콘들 -->
 					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
 						<button type="button" class="btnPin"><i>핀</i></button>
+						<button type="button" class="btnBikePin"><i>개인이동수단 주차장</i></button>
 						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
 
 						<!-- 마커 -->
@@ -29,109 +30,59 @@
 						</div>
 						<!-- //마커 -->
 
-						<div class="parkingLot">
-							<div class="mapIcoBody" style="left: 15rem; top: 20rem;">
-								<span class="mapIco pin active"><i>주차장</i></span> <!-- active 추가 시 녹색으로 변경됩니다. -->
-								<button type="button" class="poaBox" onclick="layerPopup.open('layerParkingLot');">
-									청사주차장
-								</button>
-							</div>
-							<div class="mapIcoBody" style="left: 10rem; top: 30rem;">
-								<span class="mapIco pin"><i>주차장</i></span>
-								<button type="button" class="poaBox" onclick="layerPopup.open('layerParkingLot');">
-									세종대병원 공영주차장
-								</button>
-							</div>
+						<!-- 개인이동수단 -->
+						<div class="bikeCharge">
+							<button type="button" class="bikeIco" style="left: 10rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i>개인이동수단</i></button>
+							<button type="button" class="bikeIco" style="left: 15rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i>개인이동수단</i></button>
+							<button type="button" class="bikeIco" style="left: 20rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i>개인이동수단</i></button>
+							<button type="button" class="bikeIco" style="left: 25rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i>개인이동수단</i></button>
 						</div>
+						<!-- //개인이동수단 -->
 
 						<div class="btnView">
 							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
 							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
-						</div>
-
-						<div class="location">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
-							</div>
 						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
 					
 					<!-- 정보 영역 -->
 					<div class="mapInfoLayer default">
-						<div class="mapIHead short">
+						<div class="mapIHead short2">
 							<button type="button" class="btnMapInfo">정보영역</button>
+							<div class="area">
+								<div class="radioGroup">
+									<input type="radio" name="radio" id="temp01" checked="checked"><label for="temp01">전체</label>
+									<input type="radio" name="radio" id="temp02"><label for="temp02">구어울링</label>
+									<input type="radio" name="radio" id="temp03"><label for="temp03">뉴어울링</label>
+									<input type="radio" name="radio" id="temp04"><label for="temp04">일레클</label>
+								</div>
+							</div>
 						</div>
 						<div class="myArea paddingDefault">
 							<section>
-								<ul class="items-gasStation">
+								<ul class="pTransportation">
 									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b>실시간</b></span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="free">무료</em></span>
-										</div>
+										<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
 										<div class="etc">
-											<span>총추차가능대수 : 270</span>
-											<span>일반 99</span>
+											<span><b class="cBlue">뉴어울링</b></span>
+											<span>대여가능 <b>2</b>대</span>
 										</div>
-										<div class="update">
-											<span>업데이트 : 2022-01-14 19:41</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="paid">유료</em></span>
-										</div>
+										<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
 										<div class="etc">
-											<span>총추차가능대수 : 270</span>
+											<span><b class="cGray">구어울링</b></span>
+											<span>대여가능 <b>2/15</b>대</span>
 										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span class="charge">요금 <em class="paid">유료</em></span>
-										</div>
+										<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
 										<div class="etc">
-											<span>총추차가능대수 : 23</span>
+											<span><b class="cOrange">일레클</b></span>
+											<span>배터리 <b>70%</b></span>
+											<span>주행가능 거리 <b>24km</b></span>
 										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
-									</li>
-									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b>실시간</b></span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="free">무료</em></span>
-										</div>
-										<div class="etc">
-											<span>총추차가능대수 : 270</span>
-											<span>일반 99</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
 									</li>
 								</ul>
 							</section>
@@ -149,16 +100,15 @@
 		<!-- //본문 -->
 
 		<!-- 레이어 -->
-		<div id="layerParkingLot" class="layerPopup">
+		<div id="layerBikeCharge" class="layerPopup">
 			<div class="layerWrap full">
 				<div class="headerLocation">
 					<div class="hdeading">
 						<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화시 active -->
 						<div class="title">
-							<h2>세종대병원 공영주차장</h2>
+							<h2>해밀마을세종마스터힐스 개인이동수단</h2>
 							<div>
-								<span>주차장</span>
-								<span>3km</span>
+								<span>개인이동수단</span>
 							</div>
 						</div>
 						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
@@ -222,69 +172,28 @@
 							<h3>상세정보</h3>
 						</header>
 						<div class="flex">
-							<h4>관리기관</h4>
+							<h4>대여가능</h4>
 							<div>
-								<p>관리기관명</p>
+								<p>2대</p>
 							</div>
 						</div>
 						<div class="flex">
-							<h4>운영구분</h4>
+							<h4>배터리상태</h4>
 							<div>
-								<p>공영</p>
+								<p>40%</p>
 							</div>
 						</div>
 						<div class="flex">
-							<h4>주차장유형</h4>
+							<h4>주행가능거리</h4>
 							<div>
-								<p>부설</p>
+								<p>11.6km</p>
 							</div>
 						</div>
 						<div class="flex">
-							<h4>요금부과</h4>
+							<h4>이용요금</h4>
 							<div>
-								<p class="paid">유료</p>
-								<p class="free">무료</p>
+								<p>기본 15분 1,600원/ 추가 1분당 100원</p>
 							</div>
-						</div>
-						<div class="flex baseline">
-							<h4>운영시간</h4>
-							<div>
-								<p>평일 08:00 ~ 20:00</p>
-								<p>공휴일 08:00 ~ 16:00</p>
-							</div>
-						</div>
-						<h4>잔여주차</h4>
-						<div>
-							<ul class="parkingList">
-								<li>
-									<span>일반</span>
-									<b>255</b>
-								</li>
-								<li>
-									<span>경차</span>
-									<b>59</b>
-								</li>
-								<li>
-									<span>대형</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>긴급</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>장애인</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>여성</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>기타</span>
-									<b>0</b>
-								</li>
-							</ul>
 						</div>
 					</section>
 

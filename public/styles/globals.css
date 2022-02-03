@@ -561,8 +561,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail .detailbtn a { display: flex; align-items: center; position: relative; height: 4.8rem; margin-top: 1.6rem; padding: 0 1.6rem; font-size: 1.6rem; color: #111; border: 1px solid #ddd;}
 .locationLayer .detail .detailbtn a::after { content: ''; display: block; position: absolute; right: 1.6rem; top: 1.6rem; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
 .locationLayer .detail .detailbtn a span.cBlue { color: #6684EA;}
-.locationLayer .detail .flex { display: flex; align-items: baseline;}
-.locationLayer .detail .flex ~ .flex { margin-top: 1rem;}
+.locationLayer .detail .flex { display: flex; align-items: center; min-height: 3.6rem;}
 .locationLayer .detail .flex h4 { height: inherit; margin: 0 0.8rem 0 0;}
 .locationLayer .detail .flex >div p { margin-top: 0; font-size: 1.5rem; color: #535353;}
 .locationLayer .detail .flex >div p.paid { color: #FD2020;}
@@ -570,6 +569,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail .flex >div p .span { display: inline-flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.8rem; font-size: 1.4rem; color: #fff; letter-spacing: -0.1em; border-radius: 1.4rem;}
 .locationLayer .detail .flex >div p .span.overhaul { background-color: #aaa;}
 .locationLayer .detail .flex >div p .span.driving { background-color: #4EC457;}
+.locationLayer .detail .flex.baseline { align-items: baseline;}
 .locationLayer .detail .parkingList { display: flex; align-items: center; flex-wrap: wrap; margin: 0 0 0 -0.8rem;}
 .locationLayer .detail .parkingList li { margin: 0.8rem 0 0 0.8rem; padding: 0.6rem 1.2rem; border: 1px solid #EAEAEA;}
 .locationLayer .detail .parkingList li span { font-size: 1.4rem; color: #777;}
