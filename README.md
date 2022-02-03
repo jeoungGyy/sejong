@@ -9,6 +9,7 @@
 - UI-SJN-30-002L 등록
 - UI-SJN-30-006L 등록
 - UI-SJN-30-007L 등록
+- UI-SJN-32-010L 등록
 - UI-SJN-60-001L 등록
 - UI-SJN-60-002L 등록
 - UI-SJN-60-003L 등록

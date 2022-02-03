@@ -164,7 +164,7 @@ const layerPopup = {
 
 		let layer = layerPopup.obj[id];
 		layer['wrap'] = document.querySelector('#'+id);
-		layer['box'] = layer.wrap.querySelector('.popupWrap');
+		layer['box'] = layer.wrap.querySelector('.layerWrap');
 		layer['body'] = layer.wrap.querySelector('.popupBody');
 		if(event !== undefined) layer['btn'] = event.currentTarget;
 		if(layer['wrap'].querySelector('.btnClose')) {

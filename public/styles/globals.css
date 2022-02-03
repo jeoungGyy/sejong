@@ -552,8 +552,10 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .basic .bbGuide >div p { margin-top: 0.4rem; font-size: 1.4rem; color: #555;}
 .locationLayer .basic .bbGuide .deco { width: 4.8rem; height: 4.8rem; background: #fff url(../image/map/ico_bbguide.png) no-repeat center/2.55rem 2.4rem; border-radius: 50%;}
 .locationLayer .detail { padding: 0.2rem 2rem 2.4rem;}
-.locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 1.6rem;}
+.locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem;}
 .locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400; color: #6684EA;}
+.locationLayer .detail h4 .normal { margin-left: 0.8rem; color: #4EC457;}
+.locationLayer .detail h4 .breakdown { margin-left: 0.8rem; color: #FD2020;}
 .locationLayer .detail h4.first { margin-top: 0;}
 .locationLayer .detail >div p { position: relative; margin-top: 0.8rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .locationLayer .detail >div p.blet { padding-left: 1.6rem;}
@@ -576,6 +578,11 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail .parkingList li b { position: relative; margin-left: 0.1rem; padding-left: 0.8rem; font-size: 1.4rem;}
 .locationLayer .detail .parkingList li b::before { content: ''; position: absolute; left: 0; top: 0.3rem; width: 0.1rem; height: 1.4rem; background-color: #ddd;}
 .locationLayer .detail .offerer { display: flex; align-items: center;	justify-content: flex-end; height: 3.6rem; margin-top: 0.6rem; font-size: 1.4rem; color: #aaa;}
+.locationLayer .detail .etc { display: flex; align-items: center; min-height: 3.6rem;}
+.locationLayer .detail .etc >span { font-size: 1.4rem; color: #555;}
+.locationLayer .detail .etc >span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.locationLayer .detail .etc >span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+
 .locationLayer .app { padding: 0 2rem 2.4rem;}
 .locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
 .locationLayer .app ul li a figure { overflow: hidden; width: 6rem; height: 6rem; margin: 0 2.2rem 0 0.2rem;}
