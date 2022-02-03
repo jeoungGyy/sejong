@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">지도</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<!-- 맵 검색 -->
+					<div class="mapSearch">
+						<div class="mapheader">
+							<div class="mapBody">
+								<button type="button" class="btnPlace" title="장소 검색" onclick="maplnb.open();">
+									<span class="t"></span>
+									<span class="c"></span>
+									<span class="b"></span>
+								</button>
+								<div class="searchHeader">
+									<input type="text" title="장소, 버스 검색" placeholder="장소, 버스 검색">    
+								</div>
+								<div class="btnHeader">
+									<button type="button" class="icoMic"><i>마이크</i></button>
+								</div>
+							</div>
+							<button type="button" class="btnMapSearch">길찾기</button>
+						</div>
+						<nav id="mapWordListSwiper" class="items-wordList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><button type="button">코로나19</button></li>
+									<li class="swiper-slide"><button type="button">교통</button></li>
+									<li class="swiper-slide"><button type="button">건강</button></li>
+									<li class="swiper-slide"><button type="button">소통</button></li>
+									<li class="swiper-slide"><button type="button">편의시설</button></li>
+									<li class="swiper-slide"><button type="button">교통</button></li>
+									<li class="swiper-slide"><button type="button">건강</button></li>
+								</ul>
+							</div>
+						</nav>
+						<script>
+							slider.active('mapWordListSwiper')
+						</script>
+					</div>
+					<!-- //맵 검색 -->
+
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<!--  -->
+						<div class="streetLamp">
+							<div class="lampBody" style="left: 10rem; top: 15rem;">
+								<i></i><span>나성동 800-37</span>
+							</div>
+							<div class="lampBody" style="left: 10rem; top: 25rem;">
+								<i></i><span>보람동 700-27</span>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<!-- //기타 아이콘들 -->
+
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer open" style="height: 50%;">
+						<div class="mapIHead short2">
+							<button type="button" class="btnMapInfo">정보영역</button>
+
+							<div class="header-default">
+								<h3>목록</h3>
+							</div>
+						</div>
+
+						<div class="listArea">
+							<ul class="streetLampList">
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more" onclick="layerPopup.open('layerStreetLamp');"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite active"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more" onclick="layerPopup.open('layerStreetLamp');"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite active"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more" onclick="layerPopup.open('layerStreetLamp');"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more" onclick="layerPopup.open('layerStreetLamp');"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="titleBody">
+										<div class="title">
+											<i class="favorite"></i>
+											<h4>보람동 700-27</h4>
+										</div>
+										<p>세종특별자치시 세종로 1328</p>
+										<p>044-000-0000</p>
+										<p>관리기관 : 세종특별자치시청</p>
+									</div>
+									<div class="btnBody">
+										<div>
+											<button type="button" class="guide"><i></i><b>길안내</b></button>
+											<button type="button" class="tip">Tip!</button>
+										</div>
+										<div>
+											<button type="button" class="more" onclick="layerPopup.open('layerStreetLamp');"><i></i><b>더보기</b></button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //정보 영역 -->
+					
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div id="layerStreetLamp" class="layerPopup">
+			<div class="layerWrap full">
+				<div class="headerLocation">
+					<div class="hdeading">
+						<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화시 active -->
+						<div class="title">
+							<h2>세종특별자치시 보람동 700-17</h2>
+							<div>
+								<span>3km</span>
+								<span class="colorGray">가로등</span>
+							</div>
+						</div>
+						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+					</div>
+				</div>
+				<div class="fullFlex locationLayer">
+					<section class="basic">
+						<div class="basicBody">
+							<div class="bbBtns">
+								<a href="tel:010-1234-5678" class="phoneLink">
+									<i></i>
+									<p>전화</p>
+								</a>
+								<a href="#" class="shareLink">
+									<i></i>
+									<p>공유</p>
+								</a>
+								<div class="div">
+									<a href="#" class="directionsLink">
+										<i></i>
+										<p>길안내</p>
+									</a>
+									<button type="button" class="tip">Tip!</button>
+								</div>
+							</div>
+							<div class="bbInfo bdt">
+								<div class="div">
+									<span class="location"><i></i>세종특별자치시 보듬3로 105(주1-15)</span>
+								</div>
+								<div class="div">
+									<span class="time"><i></i>24H</span>
+								</div>
+								<div class="div">
+									<span class="phone"><i></i>044-000-0000</span>
+								</div>
+								<div class="div">
+									<span class="homepage"><i></i>http://smartsejong.kr</span>
+								</div>
+								<div class="offerer">
+									<button type="button" class="write"><i></i><span>정보수정</span></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="streetLampInfo line-default">
+						<div class="slInfoBody">
+							<table>
+								<caption>가로등 정보: 가로등위치명, 설치대수, 설치형태, 관리기관연락번호, 관리자기관명, 데이터기관일자를 제공하는 표</caption>
+								<colgroup>
+									<col style="width: 14rem;" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">가로등위치명</th>
+										<td>세종특별자치시 보람동 700-17</td>
+									</tr>
+									<tr>
+										<th scope="row">설치대수</th>
+										<td>1</td>
+									</tr>
+									<tr>
+										<th scope="row">설치형태</th>
+										<td>CDM</td>
+									</tr>
+									<tr>
+										<th scope="row">관리기관연락번호</th>
+										<td>044-000-0000</td>
+									</tr>
+									<tr>
+										<th scope="row">관리자기관명</th>
+										<td>세종특별자치시청</td>
+									</tr>
+									<tr>
+										<th scope="row">데이터기관일자</th>
+										<td>2019-09-23</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="offerer">
+								<span>제공 : 공공데이터</span>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+</div>
+</body>
+</html>

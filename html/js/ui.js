@@ -215,7 +215,6 @@ const layerPopup = {
 	},
 }
 
-
 const tooltip = {
 	winClose : false,
 	showEl : null,

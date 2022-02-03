@@ -7,6 +7,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { height:12rem; padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
+.map .mapInfoLayer .mapIHead.short2 { height: 7.2rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
 .map .mapInfoLayer .btnMapInfo::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4.8rem; height: 0.4rem; margin: -0.2rem 0 0 -2.4rem; background-color: #CDD0D8; border-radius: 0.2rem;}
 .map .mapInfoLayer .area { display: flex; align-items: center;}
@@ -105,7 +106,9 @@ body { --vh: 1px;}
 .map .mapIcons .schoolZone { position: absolute; width: 6rem; height: 5rem; text-indent: -9999rem; background: url(../image/map/ico_schoolZone.png) no-repeat center/cover;}
 .map .mapIcons .accidentsArea { position: absolute; width: 2.2rem; height: 1.8rem; text-indent: -9999rem; background: url(../image/map/ico_accidentsArea.png) no-repeat center/cover;}
 .map .mapIcons .accidentsPlace { position: absolute; width: 1.8rem; height: 1.8rem; text-indent: -9999rem; border: 1px solid #292D32; background-color: #2CAC36;}
-
+.map .mapIcons .streetLamp .lampBody { display: flex; align-items: center; justify-content: center; position: absolute; height: 4rem; padding: 0 1.2rem 0 0.8rem; border: 1px solid #6684EA; background-color: #fff; border-radius: 2rem;}
+.map .mapIcons .streetLamp .lampBody i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: #838FAC url(../image/common/split_48.png) no-repeat -28.8rem -4.8rem/48rem 14.4rem; border-radius: 50%;}
+.map .mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -1.2rem; width: 1.4rem; height: 1.2rem; margin-left: -0.7rem; background: url(../image/map/ico_edge_down.png) no-repeat center/cover;}
 
 .map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
 .map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
@@ -232,10 +235,8 @@ body { --vh: 1px;}
 .map .shortestPath .items-wordList { flex: 1; margin: 0; padding: 0 1.2rem 0 0;}
 .map .shortestPath .items-wordList ul li button::before { display: none;}
 
-
 /* 장소 카테고리 - UI-SJN-22-001U */
 .map .navCategory { padding: 0 2rem;}
-
 
 /* 장소 카테고리 - UI-SJN-22-002L */
 .map .mapArea.subStyle .mapInfoLayer .mapIHead.oil { height: 17.6rem; margin: 0 -2rem; border-bottom: 1px solid #EAEDF2;}
@@ -247,7 +248,6 @@ body { --vh: 1px;}
 .map .gsCost span.gasoline::before { content: '휘'; background-color: #FFEB52;}
 .map .gsCost span.oil::before { content: '경'; color: #fff; background-color: #A9B0C1;}
 .map .gsCost span::after { content: '원';}
-
 
 /* 장소상세 탬플릿 - UI-SJN-24-001L */
 .map .mapInfoLayer.default.noHeight { height: auto;}
@@ -278,31 +278,63 @@ body { --vh: 1px;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.mapMenuLayer { display: none; position: absolute; z-index: 100; width: 24rem; height: 24rem;}
-.mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
-.mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
-.mapMenuLayer .mapMenuBody ul li span { display: block;}
-.mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -7rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu3.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { margin: 0 2.5rem 0 0;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2.7rem 0 0 0;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 4.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu6.png) no-repeat center/cover;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
-.mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2.7rem 0 0 0;}
-.mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
-.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
-.mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
-.mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
-.mapMenuLayer.show { display: block;}
+.map .mapMenuLayer { display: none; position: absolute; z-index: 100; width: 24rem; height: 24rem;}
+.map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
+.map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
+.map .mapMenuLayer .mapMenuBody ul li span { display: block;}
+.map .mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -7rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu3.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { margin: 0 2.5rem 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2.7rem 0 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 4.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu6.png) no-repeat center/cover;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2.7rem 0 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
+.map .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
+.map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
+.map .mapMenuLayer.show { display: block;}
+
+/* UI-SJN-60-004L */
+.map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
+.map .listArea .streetLampList { border-top: 1px solid #EAEAEA;}
+.map .listArea .streetLampList li { display: flex; align-items: flex-start; padding: 1rem 2rem 1.7rem; border-bottom: 1px solid #F4F5F7;}
+.map .listArea .streetLampList li .titleBody { flex: 1;}
+.map .listArea .streetLampList li .btnBody { width: 11.2rem;}
+.map .listArea .streetLampList li .titleBody .title { display: flex; align-items: center; height: 4rem;}
+.map .listArea .streetLampList li .titleBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.map .listArea .streetLampList li .titleBody .title .favorite.active { background-position-y: -2.4rem;}
+.map .listArea .streetLampList li .titleBody .title h4 { font-size: 1.6rem;}
+.map .listArea .streetLampList li .titleBody p { margin-top: 0.4rem; color: #555;}
+.map .listArea .streetLampList li .btnBody { display: flex; align-items: flex-start; justify-content: space-between;}
+.map .listArea .streetLampList li .btnBody .guide { display: inline-block; width: 5.2rem; height: 5.2rem; text-align: center; background-color: #6684EA; border-radius: 50%;}
+.map .listArea .streetLampList li .btnBody .guide i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 14.4rem;}
+.map .listArea .streetLampList li .btnBody .guide b { font-size: 1.2rem; color: #fff;}
+.map .listArea .streetLampList li .btnBody .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem; margin: 0.8rem auto 0; font-size: 1.3rem; color: #777; background-color: #F4F5F7; border-radius: 1.3rem;}
+.map .listArea .streetLampList li .btnBody .more { display: inline-block; width: 5.2rem; height: 5.2rem; text-align: center; background-color: #A9B0C1; border-radius: 50%;}
+.map .listArea .streetLampList li .btnBody .more i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -2.4rem -2.4rem/48rem 14.4rem;}
+.map .listArea .streetLampList li .btnBody .more b { font-size: 1.2rem; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
