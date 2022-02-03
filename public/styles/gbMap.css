@@ -278,7 +278,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.mapMenuLayer { position: absolute; z-index: 100; width: 24rem; height: 24rem;}
+.mapMenuLayer { display: none; position: absolute; z-index: 100; width: 24rem; height: 24rem;}
 .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
 .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
 .mapMenuLayer .mapMenuBody ul li span { display: block;}
@@ -302,7 +302,6 @@ body { --vh: 1px;}
 .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
 .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
 .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
-
 .mapMenuLayer.show { display: block;}
 
 
