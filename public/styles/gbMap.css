@@ -28,6 +28,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
+.map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
 .map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
 .map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem; border-radius: 50%;}
@@ -86,8 +87,12 @@ body { --vh: 1px;}
 .map .mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
 .map .mapIcons .pinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
 .map .mapIcons .pinSet .btnParking i { display: block; width: 3.35rem; height: 4.4rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat center/cover;}
+.map .mapIcons .mapIcoBody { position: absolute;}
+.map .mapIcons .mapIcoBody .poaBox { position: relative; width: 10rem; margin-top: 3.1rem; padding: 0.4rem 0.8rem; font-size: 1.4rem; color: #555; text-align: center; border: 1px solid #A9B0C1; background-color: #fff; transform: translateX(calc(-50% + 1.2rem));}
+.map .mapIcons .mapIcoBody .poaBox::after { content: ''; position: absolute; left: 50%; top: -0.8rem; width: 0.1rem; height: 0.8rem; background-color: #A9B0C1;}
 .map .mapIcons .mapIco.pin { display: flex; align-items: center; justify-content: center; position: absolute; width: 2.4rem; height: 2.4rem; background-color: #838FAC; border-radius: 50%;}
 .map .mapIcons .mapIco.pin i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem -4.8rem/48rem 14.4rem;}
+.map .mapIcons .mapIco.pin.active { background-color: #4EC457;}
 .map .mapIcons .trafficInfo { position: absolute;}
 .map .mapIcons .trafficInfo .tiTable th,
 .map .mapIcons .trafficInfo .tiTable td { padding: 0.6rem 0; font-size: 1.3rem; color: #555; text-align: center; border: 1px solid #EAEAEA; background-color: #fff;}
