@@ -6,7 +6,6 @@ body { --vh: 1px;}
 /* 공통 */
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
-.map .mapInfoLayer .mapIHead.short { height: 2.4rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .location { display: flex; align-items: center; height: 4.8rem;}
 .map .mapInfoLayer .mapIHead .location i { margin: -0.2rem 0.4rem 0 0; background-position-x: -30rem;}
