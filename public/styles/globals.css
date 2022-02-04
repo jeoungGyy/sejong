@@ -199,7 +199,7 @@ table td { vertical-align: middle;}
 .line-default { border-top: 0.6rem solid #F4F5F7;}
 
 /* 체크박스, 라디오박스 */
-.switch { position: relative;}
+.switch { position: relative; height: 3.2rem;}
 .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
@@ -557,10 +557,12 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
 .locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
 .locationLayer .basic .bbBtns .div,
-.locationLayer .basic .bbBtns a { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
-.locationLayer .basic .bbBtns a i { display: inline-block; width: 6rem; height: 6rem;}
+.locationLayer .basic .bbBtns .flex { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
+.locationLayer .basic .bbBtns .flex i { display: inline-block; width: 6rem; height: 6rem;}
+.locationLayer .basic .bbBtns .flex .switch { margin-top: 1.6rem;}
 .locationLayer .basic .bbBtns .phoneLink i { background: url(../image/map/ico_link.png) no-repeat center/cover;}
 .locationLayer .basic .bbBtns .shareLink i { background: url(../image/map/ico_link2.png) no-repeat center/cover;}
+.locationLayer .basic .bbBtns .directionsLink { color: #111;}
 .locationLayer .basic .bbBtns .directionsLink i { background: url(../image/map/ico_link3.png) no-repeat center/cover;}
 .locationLayer .basic .bbBtns .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem; margin-top: 1.2rem; font-size: 1.3rem; color: #777; background-color: #F4F5F7; border-radius: 1.3rem;}
 .locationLayer .basic .bbBtns >a p { margin-top: 0.8rem;}
