@@ -1152,6 +1152,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-gasStation li .guidance.top { top: 1.2rem;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+.items-gasStation.full li { padding: 1.2rem 2rem;}
 
 .item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
 .item-mapSearch li { width: calc(100% / 3); border-right: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
