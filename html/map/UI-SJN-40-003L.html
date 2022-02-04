@@ -63,111 +63,61 @@
 					<div class="mapInfoLayer default">
 						<div class="mapIHead">
 							<button type="button" class="btnMapInfo">정보영역</button>
-						</div>
-						<div class="gaHead">
-							<!-- 자동차 -->
-							<div class="gaCar">
-								<div class="gaCarBody">
-									<div class="recommendedTime">
-										<span class="reco">추천</span>
-										<strong>00시간 10분</strong>
-										<span class="distance">00.13km</span>
-									</div>
-									<div class="costBody">
-										<button type="button" class="cost" onclick="tooltip.show('tooltip1', 'bottom');"><i></i>비용</button>
-										<div>
-											<span>통행료 없음</span>
-											<span>택시비 4,300원</span>
-										</div>
-									</div>
-								</div>
-								<button type="button" class="guide"><i></i><b>길안내</b></button>
-							</div>
-							<!-- //자동차 -->
 
-							<!-- 도보 -->
-							<div class="gaWalk" style="display: none;">
-								<div class="gaCarBody">
-									<div class="recommendedTime">
-										<span class="reco">추천</span>
-										<strong>00시간 32분</strong>
-										<span class="distance">00.5km</span>
+							<div class="busHead">
+								<div class="title">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button>
+									<span class="B">간선</span>
+									<span class="G">지선</span>
+									<span class="Y">일반</span>
+									<span class="R">급행</span>
+									<h3 class="name">B2</h3>
+								</div>
+								<div class="infomation">
+									<span>세종</span>
+									<span>오송역 ↔ 반석역</span>
+								</div>
+								<div class="etc">
+									<div class="operationBody">
+										<span>첫차 05:00</span>
+										<span>막차 00:30</span>
+										<span>배차간격 20분</span>
 									</div>
+									<button type="button" class="operationBtn"><i></i>운행정보</button>
 								</div>
 							</div>
-							<!-- //도보 -->
+							<div class="route">
+								<div class="allRoute">
+									<button type="button">전체노선</button>
+									<span class="cBlue">6대 운행 중</span>
+								</div>
+								<div class="dispatchTil">
+									<span class="dTime">오후 12:23</span>
+									<button type="button" class="refresh"><i></i>15</button>
+								</div>
+							</div>
 						</div>
-						<div class="myArea paddingDefault">
-							<section>
-								<ul class="items-gasStation">
-									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
+						
+						<div class="routeArea">
+							<ul class="busRouteList">
+								<li>
+									<div class="routeBody">
+										<div class="head">
+											<div class="station">
+												<button type="button" class="favorite"><i>즐겨찾기</i></button>
+												<h4>오송역</h4>
+											</div>
+											<span class="sDate">13-012</span>
 										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b>실시간</b></span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="free">무료</em></span>
+										<div class="licensePlate">
+											<span>세종70자0343</span>
 										</div>
-										<div class="etc">
-											<span>총추차가능대수 : 270</span>
-											<span>일반 99</span>
-										</div>
-										<div class="update">
-											<span>업데이트 : 2022-01-14 19:41</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
-									</li>
-									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="paid">유료</em></span>
-										</div>
-										<div class="etc">
-											<span>총추차가능대수 : 270</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
-									</li>
-									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span class="charge">요금 <em class="paid">유료</em></span>
-										</div>
-										<div class="etc">
-											<span>총추차가능대수 : 23</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
-									</li>
-									<li>
-										<div class="title">
-											<button type="button" class="favorite"><i>즐겨찾기</i></button>
-											<h3 class="name">세종대병원 공영주차장</h3>
-										</div>
-										<div class="infomation">
-											<span>3.9km</span>
-											<span><b>실시간</b></span>
-											<span><b class="cGreen">운영중</b></span>
-											<span class="charge">요금 <em class="free">무료</em></span>
-										</div>
-										<div class="etc">
-											<span>총추차가능대수 : 270</span>
-											<span>일반 99</span>
-										</div>
-										<button type="button" class="guidance"><i></i><b>길안내</b></button>
-									</li>
-								</ul>
-							</section>
+									</div>
+									<div class="icon">
+										<i>일반 노선</i>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<script>
