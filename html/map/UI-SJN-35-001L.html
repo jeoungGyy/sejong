@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">미세먼지</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
+						<button type="button" class="btnPin"><i>핀</i></button>
+						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+
+						<!-- 마커 -->
+						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							<div><span></span></div>
+						</div>
+						<!-- //마커 -->
+
+						<!-- 미세먼지 -->
+						<div class="fineDust">
+							<button type="button" class="fineDustIco good" style="left: 5rem; top: 15rem;" title="미세먼지 좋음"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco usually" style="left: 15rem; top: 15rem;" title="미세먼지 보통"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco bad" style="left: 15rem; top: 20rem;" title="미세먼지 나쁨"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco veryBad" style="left: 25rem; top: 20rem;" title="미세먼지 매우나쁨"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco good" style="left: 5rem; top: 25rem;" title="미세먼지 좋음"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco usually" style="left: 15rem; top: 25rem;" title="미세먼지 보통"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco bad" style="left: 15rem; top: 30rem;" title="미세먼지 나쁨"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+							<button type="button" class="fineDustIco veryBad" style="left: 25rem; top: 30rem;" title="미세먼지 매우나쁨"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+						</div>
+						<!-- //미세먼지 -->
+
+						<div class="btnView">
+							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+						</div>
+
+						<div class="location">
+							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+							<div class="scaleBtn">
+								<button type="button" class="scaleUp"><i>확대</i></button>
+								<button type="button" class="scaleDown"><i>축소</i></button>
+							</div>
+						</div>
+					</div>
+					<!-- //기타 아이콘들 -->
+					
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer default">
+						<div class="mapIHead short2">
+							<button type="button" class="btnMapInfo">정보영역</button>
+
+							<div class="location">
+								<i class="split20"></i>세종특별자치시 나성동
+							</div>
+						</div>
+						<div class="dustArea">
+							<section>
+								<ul class="fineDustList">
+									<li class="national">
+										<div class="title">
+											<i class="split24 logo"></i>
+											<h3>아름동 측정소 기준</h3>
+											<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i class="split20">국가망 관측소에 대한 간략 안내
+											</i></button>
+										</div>
+										<div class="infomation">
+											<span>미세먼지<b class="good">52 좋음</b></span>
+											<span>초미세먼지<b class="usually">52 보통</b></span>
+										</div>
+										<div class="offeror">
+											<span>제공 : 에어코리아 2022-01-20 12:00</span>
+										</div>
+									</li>
+									<li class="national">
+										<div class="title">
+											<i class="split24 logo"></i>
+											<h3>아름동 측정소 기준</h3>
+											<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i class="split20">국가망 관측소에 대한 간략 안내
+											</i></button>
+										</div>
+										<div class="infomation">
+											<span>미세먼지<b class="good">52 좋음</b></span>
+											<span>초미세먼지<b class="usually">52 보통</b></span>
+										</div>
+										<div class="offeror">
+											<span>제공 : 에어코리아 2022-01-20 12:00</span>
+										</div>
+									</li>
+									<li class="simple">
+										<div class="title">
+											<h3>간이형 측정기 15</h3>
+											<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip2', 'bottom');"><i class="split20">국가망 관측소에 대한 간략 안내
+											</i></button>
+										</div>
+										<div class="address">
+											<span>보듬6로 18</span>
+										</div>
+										<div class="infomation">
+											<span>미세먼지<b class="bad">52 나쁨</b></span>
+											<span>초미세먼지<b class="veryBad">52 매우나쁨</b></span>
+										</div>
+									</li>
+									<li class="simple">
+										<div class="title">
+											<h3>간이형 측정기 15</h3>
+											<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip2', 'top');"><i class="split20">국가망 관측소에 대한 간략 안내
+											</i></button>
+										</div>
+										<div class="address">
+											<span>보듬6로 18</span>
+										</div>
+										<div class="infomation">
+											<span>미세먼지<b class="bad">52 나쁨</b></span>
+											<span>초미세먼지<b class="veryBad">52 매우나쁨</b></span>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<script>
+						mapInfo.click('sub');
+					</script>
+					<!-- //정보 영역 -->
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+		<!-- 툴팁 -->
+		<div id="tooltip1" class="boxTooltipLayer" tabindex="0">
+			<div class="boxTooltipBody">
+				<div class="paragraphGroup">
+					<p>
+						아름동, 한솔동, 보람동, 신흥동, 부강면 각 측정소의 「대기환경보전법」에 따른 측정망의 자료를 기반합니다.<br />
+						데이터는 측정소 현지 사정이나 데이터의 수신상태에 따라 미수신 될 수 있습니다.
+					</p>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+
+		<div id="tooltip2" class="boxTooltipLayer" tabindex="0">
+			<div class="boxTooltipBody">
+				<div class="paragraphGroup">
+					<p>
+						간이형 측정기(성능인증 1등급)를 통해 측정된 자료이며, 「대기환경보전법」에 따른 측정망의 자료와 다를 수 있습니다.
+					</p>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+		<!-- //툴팁 -->
+
+		<!-- 레이어 -->
+		<div id="layerFineDust" class="layerPopup" tabindex="0">
+			<div class="layerWrap full">
+				<div class="headerLocation">
+					<div class="hdeading">
+						<div class="title">
+							<h2>아름동 측정소</h2>
+							<div>
+								<span>미세먼지</span>
+							</div>
+						</div>
+						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+					</div>
+				</div>
+				<div class="fullFlex locationLayer">
+					<section class="basic">
+						<header class="locationHeader">
+							<h3>세종특별자치시 보듬3로 105(주1-15)</h3>
+						</header>
+						<div class="dustBody">
+							<!--
+								good: 좋음
+								usually: 보통
+								bad: 나쁨
+								veryBad: 매우나쁨
+							-->
+							<div class="good">
+								<button type="button" class="tooltipBtn legend">미세먼지<i class="split20"></i></button>
+								<div class="level">
+									<strong>60</strong>
+									<span>좋음</span>
+								</div>
+							</div>
+							<div class="usually">
+								<button type="button" class="tooltipBtn legend">초미세먼지<i class="split20"></i></button>
+								<div class="level">
+									<strong>60</strong>
+									<span>보통</span>
+								</div>
+							</div>
+						</div>
+						<div class="offerer">
+							<span>제공 : 에어코리아 2022-01-20 12:00</span>
+						</div>
+					</section>
+
+					<section class="dustTransition line-default">
+						<ul class="nav-faq">
+							<li><button type="button" class="active">시간대별 추이</button></li>
+							<li><button type="button">일별 추이</button></li>
+						</ul>
+						<div class="graph">
+							<img src="../../public/image/temp/temp036.png" alt="그래프 디자인" style="width: 100%;">
+						</div>
+					</section>
+
+					<section class="pollutant line-default">
+						<header class="locationHeader">
+							<h3>오염물질</h3>
+						</header>
+						
+					</section>
+
+					<section class="nationalData line-default">
+						<header class="locationHeader">
+							<h3>국가망 관측 자료</h3>
+						</header>
+						
+					</section>
+
+					<section class="forecast line-default">
+						<header class="locationHeader">
+							<h3>예보</h3>
+						</header>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerFineDust');
+		</script>
+		<!-- //레이어 -->
+	</div>
+</div>
+</body>
+</html>

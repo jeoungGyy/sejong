@@ -245,6 +245,10 @@ const tooltip = {
 					top = _this.top + scrollTop + 38;
 					tooltip.showEl.style.cssText = `top: ${top}px;`
 					break;
+				case 'top' :
+					top = _this.top + scrollTop - _this.height;
+					tooltip.showEl.style.cssText = `top: ${top}px;`
+					break;
 			}
 			
 
