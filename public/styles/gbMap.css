@@ -87,6 +87,7 @@ body { --vh: 1px;}
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
 .map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
+.map .mapIcons .location.default.noHeight { transform: translateY(calc(100% - 39rem));}
 .map .mapIcons .transit { position: absolute;}
 .map .mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
 .map .mapIcons .transit span.num1 { background: url(../image/map/ico_transit1.png) no-repeat center/cover;}
@@ -291,7 +292,7 @@ body { --vh: 1px;}
 .map .gsCost span::after { content: '원';}
 
 /* 장소상세 탬플릿 - UI-SJN-24-001L */
-.map .mapInfoLayer.default.noHeight { height: auto;}
+.map .mapInfoLayer.default.noHeight { height: calc(29rem + var(--vh));}
 .map .mapInfoLayer.noHeight .myArea { padding-bottom: 3.2rem;}
 .map .mapArea .mapInfoLayer .mapIHead.noContent { height: inherit;}
 .map .mapInfoLayer .centerSec .center { display: flex; align-items: center; height: 4.8rem;}
@@ -319,7 +320,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.map .mapMenuLayer { display: none; position: absolute; z-index: 100; width: 24rem; height: 24rem;}
+.map .mapMenuLayer { display: none; position: absolute; z-index: 90; width: 24rem; height: 24rem;}
 .map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
 .map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
 .map .mapMenuLayer .mapMenuBody ul li span { display: block;}

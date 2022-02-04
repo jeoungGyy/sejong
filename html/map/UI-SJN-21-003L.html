@@ -48,12 +48,17 @@
 							<span class="num1">경유지</span> <!-- 경우지 num1 ~ num5 까지 있습니다. -->
 						</div>
 						<!-- //마커 -->
+
+						<div class="btnView">
+							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
 
 
 					<!-- 정보 영역 -->
-					<div class="mapInfoLayer open" style="height:50%;"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
+					<div class="mapInfoLayer default open"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
 						<div class="convenience">
 							<!-- 자동차 -->
 							<div class="car">
@@ -167,6 +172,9 @@
 							<p>제공 : Tmap</p>
 						</div>
 					</div>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //정보 영역 -->
 					
 					<div class="mapBg"></div> <!-- map 이미지 -->
