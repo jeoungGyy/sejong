@@ -64,6 +64,39 @@
 						<div class="mapIHead short">
 							<button type="button" class="btnMapInfo">정보영역</button>
 						</div>
+						<div class="gaHead">
+							<!-- 자동차 -->
+							<div class="gaCar">
+								<div class="gaCarBody">
+									<div class="recommendedTime">
+										<span class="reco">추천</span>
+										<strong>00시간 10분</strong>
+										<span class="distance">00.13km</span>
+									</div>
+									<div class="costBody">
+										<button type="button" class="cost" onclick="tooltip.show('tooltip1', 'bottom');"><i></i>비용</button>
+										<div>
+											<span>통행료 없음</span>
+											<span>택시비 4,300원</span>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="guide"><i></i><b>길안내</b></button>
+							</div>
+							<!-- //자동차 -->
+
+							<!-- 도보 -->
+							<div class="gaWalk" style="display: none;">
+								<div class="gaCarBody">
+									<div class="recommendedTime">
+										<span class="reco">추천</span>
+										<strong>00시간 32분</strong>
+										<span class="distance">00.5km</span>
+									</div>
+								</div>
+							</div>
+							<!-- //도보 -->
+						</div>
 						<div class="myArea paddingDefault">
 							<section>
 								<ul class="items-gasStation">
