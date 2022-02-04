@@ -108,6 +108,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	/* UI-SJN-34-002 */
+	mapParkingSpace: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;
