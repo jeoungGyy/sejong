@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-04
+- UI-SJN-33-005L 등록
+
 ### 02-03
 - UI-SJN-20-001U 수정 - 햄버거 메뉴 추가
 - UI-SJN-22-002L 수정 - 맵에 주유소 아이콘 추가

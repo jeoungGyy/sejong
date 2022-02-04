@@ -90,7 +90,7 @@
 									</ul>
 								</div>
 								<div>
-									<button type="button" class="note"><i class="split20"></i>평가</button>
+									<button type="button" class="note" onclick="layerPopup.open('layerEval');"><i class="split20"></i>평가</button>
 								</div>
 							</div>
 						</div>
@@ -161,6 +161,55 @@
 		<!-- //본문 -->
 
 		<!-- 레이어 -->
+		<!-- 평가 -->
+		<div id="layerEval" class="layerPopup" tabindex="0">
+			<div class="layerWrap typeBot">
+				<h4><i class="split20 eval"></i> 평가</h4>
+				<div class="layerCare">
+					<dl>
+						<dt>평가등급</dt>
+						<dd>A(최우수), B(우수), C(양호), D(보통), E(미흡)</dd>
+						<dt>평가거부</dt>
+						<dd>자료제출이나 평가를 거부한 기관</dd>
+						<dt>신설기관</dt>
+						<dd>평가대상기관 선정 시점 이후 지정 및 설치된 기관</dd>
+						<dt>신설기관</dt>
+						<dd>휴‧폐업, 적용종료, 업무정지, 지정취소, 폐쇄명령, 평균수급자 3인 미만 기관 등의 사유로 평가연도에 평가 받지 못한 기관</dd>
+					</dl>
+					<div class="offerer">
+						<span>제공 : 국민건강보험공단, 건강심사평가원</span>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //평가 -->
+
+		<!-- 평가비대상 -->
+		<div id="layerUnEval" class="layerPopup" tabindex="0" style="z-index: 301;">
+			<div class="layerWrap typeBot">
+				<h4><i class="split20 eval"></i> 평가비대상</h4>
+				<div class="layerCare">
+					<dl>
+						<dt>평가등급</dt>
+						<dd>A(최우수), B(우수), C(양호), D(보통), E(미흡)</dd>
+						<dt>평가거부</dt>
+						<dd>자료제출이나 평가를 거부한 기관</dd>
+						<dt>신설기관</dt>
+						<dd>평가대상기관 선정 시점 이후 지정 및 설치된 기관</dd>
+						<dt>신설기관</dt>
+						<dd>휴‧폐업, 적용종료, 업무정지, 지정취소, 폐쇄명령, 평균수급자 3인 미만 기관 등의 사유로 평가연도에 평가 받지 못한 기관</dd>
+					</dl>
+					<div class="offerer">
+						<span>제공 : 국민건강보험공단, 건강심사평가원</span>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //평가비대상 -->
+
+
 		<div id="layerHospital" class="layerPopup" tabindex="0">
 			<div class="layerWrap full">
 				<div class="headerLocation">
@@ -237,7 +286,7 @@
 						<div class="flex">
 							<h4>건강심사평가원 평가결과</h4>
 							<div>
-								<button type="button" class="alertOpen">평가비대상<i></i></button>
+								<button type="button" class="alertOpen" onclick="layerPopup.open('layerUnEval');">평가비대상<i></i></button>
 							</div>
 						</div>
 						<div class="flex">

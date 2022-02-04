@@ -324,6 +324,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerWrap.full .headerBtn .btnClose { top: inherit;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
+.layerWrap >h4 i.eval { margin-right: 0.4rem; background-position: -10rem -4rem;}
 .layerWrap .btnClose { display: block; position: absolute; right: 0.8rem; top: 1.2rem; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .layerBody .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
@@ -622,7 +623,13 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .streetLampInfo .slInfoBody table td { padding: 1rem; border: 1px solid #EAEAEA;}
 .locationLayer .streetLampInfo .slInfoBody .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; color: #aaa;}
 
-
+/* 건강 - UI-SJN-33-005L */
+.layerCare { text-align: left;}
+.layerCare dl { margin-top: 0.8rem;}
+.layerCare dl dt { font-size: 1.6rem; font-weight: 700;}
+.layerCare dl dd { margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
+.layerCare dl dd + dt { margin-top: 1.6rem;}
+.layerCare .offerer { margin-top: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 
 
 /* *-모음
