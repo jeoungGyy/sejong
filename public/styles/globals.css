@@ -712,6 +712,19 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .forecast .forecastList li .head b.bed { color: #FF940E;}
 .locationLayer .forecast .forecastList li .head b.veryBad { color: #FD2020;}
 
+/* UI-SJN-40-003L */
+.layerBusInfo { text-align: left;}
+.layerBusInfo dl dt { font-size: 1.6rem; font-weight: 700;}
+.layerBusInfo dl dd { display: flex; align-items: center; margin-top: 0.8rem;}
+.layerBusInfo dl dd .t { width: 4rem;}
+.layerBusInfo dl dd .t2 { width: 5.2rem;}
+.layerBusInfo dl dd span { font-size: 1.4rem; color: #555;}
+.layerBusInfo dl dd + dt { margin-top: 1.6rem;}
+.layerBusInfo dl dd + dd { margin-top: 0.4rem;}
+.layerBusInfo .guide { display: flex; margin-top: 1.8rem;}
+.layerBusInfo .guide i { vertical-align: middle; background-position-x: -38rem;}
+.layerBusInfo .guide span { flex: 1; margin-left: 0.4rem; font-size: 1.4rem; color: #aaa;}
+
 
 /* *-모음
 **********************************************/

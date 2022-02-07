@@ -19,42 +19,14 @@
 			<div class="mapWrap">
 				<div class="mapArea">
 					<!-- 기타 아이콘들 -->
-					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
-						<button type="button" class="btnPin"><i>핀</i></button>
-						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
-
-						<!-- 마커 -->
-						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-							<div><span></span></div>
-						</div>
-						<!-- //마커 -->
-
-						<div class="parkingLot">
-							<div class="mapIcoBody" style="left: 15rem; top: 20rem;">
-								<span class="commIco24 mapIco pin active"><i class="split24">주차장</i></span> <!-- active 추가 시 녹색으로 변경됩니다. -->
-								<button type="button" class="poaBox" onclick="layerPopup.open('layerParkingLot');">
-									청사주차장
-								</button>
-							</div>
-							<div class="mapIcoBody" style="left: 10rem; top: 30rem;">
-								<span class="commIco24 mapIco pin"><i class="split24">주차장</i></span>
-								<button type="button" class="poaBox" onclick="layerPopup.open('layerParkingLot');">
-									세종대병원 공영주차장
-								</button>
-							</div>
-						</div>
-
-						<div class="btnView">
-							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
-							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
-						</div>
-
-						<div class="location">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
-							</div>
+					<div class="mapIcons">
+						<div class="busStop">
+							<button type="button" class="commIco24 busStopIco" style="left: 10rem; top: 15rem;" title="버스 정류소"><i class="split24">오송역</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
+							<button type="button" class="commIco24 busStopIco" style="left: 15rem; top: 15rem;" title="버스 정류소"><i class="split24">누리리</i></button>
+							<button type="button" class="busIco B" style="left: 10rem; top: 20rem;" title="간선 버스"><i>B0</i></button>
+							<button type="button" class="busIco G" style="left: 15rem; top: 20rem;" title="지선 버스"><i>B1</i></button>
+							<button type="button" class="busIco Y" style="left: 20rem; top: 20rem;" title="일반 버스"><i>B2</i></button>
+							<button type="button" class="busIco R" style="left: 25rem; top: 20rem;" title="급행 버스"><i>B3</i></button>
 						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
@@ -83,13 +55,13 @@
 										<span>막차 00:30</span>
 										<span>배차간격 20분</span>
 									</div>
-									<button type="button" class="operationBtn"><i></i>운행정보</button>
+									<button type="button" class="operationBtn" onclick="layerPopup.open('serviceInfo');"><i class="split20"></i>운행정보</button>
 								</div>
 							</div>
 							<div class="route">
 								<div class="allRoute">
-									<button type="button">전체노선</button>
-									<span class="cBlue">6대 운행 중</span>
+									<button type="button" class="allRouteBtn">전체노선</button>
+									<b class="cBlue">6대 운행 중</b>
 								</div>
 								<div class="dispatchTil">
 									<span class="dTime">오후 12:23</span>
@@ -98,7 +70,7 @@
 							</div>
 						</div>
 						
-						<div class="routeArea">
+						<div class="busRouteArea">
 							<ul class="busRouteList">
 								<li>
 									<div class="routeBody">
@@ -114,7 +86,52 @@
 										</div>
 									</div>
 									<div class="icon">
-										<i>일반 노선</i>
+										<i class="general">일반 노선</i>
+									</div>
+								</li>
+								<li>
+									<div class="routeBody">
+										<div class="head">
+											<div class="station">
+												<button type="button" class="favorite active"><i>즐겨찾기</i></button>
+												<h4>누리리</h4>
+											</div>
+											<span class="sDate">13-012</span>
+										</div>
+										<div class="licensePlate">
+											<span>세종70자0343</span>
+										</div>
+									</div>
+									<div class="icon">
+										<i class="general">일반 노선</i>
+									</div>
+								</li>
+								<li>
+									<div class="routeBody">
+										<div class="head">
+											<div class="station">
+												<button type="button" class="favorite"><i>즐겨찾기</i></button>
+												<h4>세종충남대학교병원</h4>
+											</div>
+											<span class="sDate">13-012</span>
+										</div>
+									</div>
+									<div class="icon">
+										<i class="bathchair">휠체어 좌석 보유</i>
+									</div>
+								</li>
+								<li>
+									<div class="routeBody">
+										<div class="head">
+											<div class="station">
+												<button type="button" class="favorite"><i>즐겨찾기</i></button>
+												<h4>세종충남대학교병원</h4>
+											</div>
+											<span class="sDate">13-012</span>
+										</div>
+									</div>
+									<div class="icon">
+										<i class="bathchair">휠체어 좌석 보유</i>
 									</div>
 								</li>
 							</ul>
@@ -132,366 +149,64 @@
 		<!-- //본문 -->
 
 		<!-- 레이어 -->
-		<div id="layerParkingLot" class="layerPopup" tabindex="0">
-			<div class="layerWrap full">
-				<div class="headerLocation">
-					<div class="hdeading">
-						<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화시 active -->
-						<div class="title">
-							<h2>세종대병원 공영주차장</h2>
-							<div>
-								<span>주차장</span>
-								<span>3km</span>
-							</div>
-						</div>
-						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+		<div id="serviceInfo" class="layerPopup" tabindex="0">
+			<div class="layerWrap typeBot">
+				<div class="layerBusInfo">
+					<dl>
+						<dt>운행정보</dt>
+						<dd>
+							<span class="t">기점</span>
+							<span class="s">반석역</span>
+						</dd>
+						<dd>
+							<span class="t">종점</span>
+							<span class="s">오송역</span>
+						</dd>
+						<dt>운행시간</dt>
+						<dd>
+							<span class="t">기점</span>
+							<span class="s">첫차 05:00ㅣ막차 00:30</span>
+						</dd>
+						<dd>
+							<span class="t">종점</span>
+							<span class="s">-</span>
+						</dd>
+						<dt>배차간격</dt>
+						<dd>
+							<span class="t2">평일</span>
+							<span class="s">20분</span>
+						</dd>
+						<dd>
+							<span class="t2">토요일</span>
+							<span class="s">20분</span>
+						</dd>
+						<dd>
+							<span class="t2">일요일</span>
+							<span class="s">10분</span>
+						</dd>
+						<dt>운행횟수</dt>
+						<dd>
+							<span class="t2">평일</span>
+							<span class="s">92회</span>
+						</dd>
+						<dd>
+							<span class="t2">토요일</span>
+							<span class="s">92회</span>
+						</dd>
+						<dd>
+							<span class="t2">일요일</span>
+							<span class="s">92회</span>
+						</dd>
+						<dt>운수회사</dt>
+						<dd>
+							<span>세종도시교통공사</span>
+						</dd>
+					</dl>
+					<div class="guide">
+						<i class="split20"></i> <span>버스정보는 운행상황 및 운수사의 정책에 따라실제와 다를 수 있습니다.</span>
 					</div>
-					<nav class="menu">
-						<button type="button" class="active">기본정보</button>
-						<button type="button">상세정보</button>
-						<button type="button">관련 앱</button>
-						<button type="button">주변정보</button>
-						<button type="button">리뷰</button>
-					</nav>
 				</div>
-				<div class="fullFlex locationLayer">
-					<section class="basic">
-						<header class="locationHeader">
-							<h3>세종특별자치시 보듬3로 105(주1-15)</h3>
-						</header>
-						<div class="basicBody">
-							<div class="bbInfo accordionBox">
-								<div class="accordionContainer">
-									<button type="button" class="homepage active accordionMenu" title="홈페이지 정보 더 보기"><i></i>http://smartsejong.kr</button>
-									<div class="accordionTarget">
-										<p>http://smartsejong.kr2</p>
-										<p>http://smartsejong.kr3</p>
-									</div>
-								</div>
-								<div>
-									<button type="button" class="phone accordionMenu" title="정보 수정하기"><i></i>전화번호를 올려주세요</button> <!-- 전화번호가 있다면 버튼에 active 넣어주세요. 글자가 진해집니다. -->
-								</div>
-							</div>
-							<div class="bbBtns">
-								<a href="tel:010-1234-5678" class="flex phoneLink">
-									<i></i>
-									<p>전화</p>
-								</a>
-								<a href="#" class="flex shareLink">
-									<i></i>
-									<p>공유</p>
-								</a>
-								<div class="flex">
-									<a href="#" class="directionsLink">
-										<i></i>
-										<p>길안내</p>
-									</a>
-									<div class="switch">
-										<input type="checkbox" id="switch0" title="길안내 설정">
-										<label for="switch0"></label>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="bbGuide">
-								<div>
-									<h4>정보 수정이 필요한가요?</h4>
-									<p>이곳의 부족하거나 잘못된 정보를 알려주세요</p>
-								</div>
-								<span class="deco"></span>
-							</a>
-						</div>
-					</section>
-
-					<section class="detail">
-						<header class="locationHeader">
-							<h3>상세정보</h3>
-						</header>
-						<div class="flex">
-							<h4>관리기관</h4>
-							<div>
-								<p>관리기관명</p>
-							</div>
-						</div>
-						<div class="flex">
-							<h4>운영구분</h4>
-							<div>
-								<p>공영</p>
-							</div>
-						</div>
-						<div class="flex">
-							<h4>주차장유형</h4>
-							<div>
-								<p>부설</p>
-							</div>
-						</div>
-						<div class="flex">
-							<h4>요금부과</h4>
-							<div>
-								<p class="paid">유료</p>
-								<p class="free">무료</p>
-							</div>
-						</div>
-						<div class="flex baseline">
-							<h4>운영시간</h4>
-							<div>
-								<p>평일 08:00 ~ 20:00</p>
-								<p>공휴일 08:00 ~ 16:00</p>
-							</div>
-						</div>
-						<h4>잔여주차</h4>
-						<div>
-							<ul class="parkingList">
-								<li>
-									<span>일반</span>
-									<b>255</b>
-								</li>
-								<li>
-									<span>경차</span>
-									<b>59</b>
-								</li>
-								<li>
-									<span>대형</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>긴급</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>장애인</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>여성</span>
-									<b>0</b>
-								</li>
-								<li>
-									<span>기타</span>
-									<b>0</b>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="app line-default">
-						<header class="locationHeader">
-							<h3>관련 앱<span class="cGray">이 장소에서 유용한 앱이 있어요!</span></h3>
-						</header>
-						<div class="appBody">
-							<ul>
-								<li>
-									<a href="#">
-										<figure>
-											<img src="" alt="">
-										</figure>
-										<div class="text">
-											<div>
-												<h4>앱 명칭</h4>
-												<span class="cBlue">사용하기</span>
-											</div>
-											<p class="lineBreake">
-												앱에 대한 간단한 설명<br />
-												두 줄 정도가 되도록 문자 수 제한
-											</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<figure>
-										</figure>
-										<div class="text">
-											<div>
-												<h4>세종 똑똑건강</h4>
-												<span class="cBlue">사용하기</span>
-											</div>
-											<p class="lineBreake">
-												앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한
-											</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="around line-default">
-						<header class="locationHeader">
-							<h3>주변정보</h3>
-						</header>
-						<div class="aroundBody">
-							<nav id="mapPlaceListSwiper" class="items-placeList">
-								<div class="slideContainer">
-									<ul class="swiper-wrapper">
-										<li class="swiper-slide"><button type="button" class="active">음식점</button></li> <!-- 활성화시 active -->
-										<li class="swiper-slide"><button type="button">세종명소</button></li>
-										<li class="swiper-slide"><button type="button">문화행사</button></li>
-										<li class="swiper-slide"><button type="button">블로그</button></li>
-										<li class="swiper-slide"><button type="button">주차장</button></li>
-										<li class="swiper-slide"><button type="button">버스</button></li>
-									</ul>
-								</div>
-							</nav>
-							<script>
-								slider.active('mapPlaceListSwiper')
-							</script>
-
-							<h3>음식점</h3>	
-							<div class="myArea">
-								<section>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<img src="../../public/image/temp/temp030.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종시 미스터피자</h4>
-												<p class="st">세종시에서 가장 맛난 피자집</p>
-												<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-												<button type="button" class="favorite">즐겨찾기</button>
-											</div>
-										</li>
-										<li>
-											<figure>
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종시 미스터피자</h4>
-												<p class="st">세종시에서 가장 맛난 피자집</p>
-												<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-												<button type="button" class="favorite active">즐겨찾기</button>
-											</div>
-										</li>
-									</ul>
-								</section>
-
-								<section>
-									<h3>세종명소</h3>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<img src="../../public/image/temp/temp031.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종호수공원</h4>
-												<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
-												<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
-											</div>
-										</li>
-									</ul>
-								</section>
-
-								<section>
-									<h3>문화행사</h3>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<span class="label wood">공연</span>
-												<img src="../../public/image/temp/temp032.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>국제 핸드메이드 & 리빙페어</h4>
-												<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
-											</div>
-										</li>
-										<li>
-											<figure>
-												<span class="label green">이웃</span>
-												<img src="../../public/image/temp/temp033.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>사랑의 김장 나눔 행사</h4>
-												<p class="st">세종시 블로그에서 소개한 시립도서관</p>
-											</div>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-					<section class="review line-default">
-						<header class="locationHeader">
-							<h3>리뷰<span class="cGray">3건</span></h3>
-							<a href="#" class="write"><i></i>작성하기</a>
-						</header>
-						<div class="reviewBody">
-							<div class="textReview">
-								<ul class="items-review">
-									<li>
-										<div class="headTitle">
-											<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
-												<div class="profile">개인 이미지</div>
-												<strong class="my">홍길동</strong>
-												<span>2021.12.28</span>
-												<button type="button" class="report">신고하기</button>
-											</div>
-											<figure>
-												<img src="../../public/image/temp/temp004.png" alt="">
-												<button type="button" class="zoom">이미지 크게보기</button>
-											</figure>
-											<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
-												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-											</p>
-											<div class="tlControls">
-												<button type="button" class="more">더보기</button>
-												<button type="button" class="recommend">도움돼요 3</button>
-											</div>
-											<div class="button-visible">
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="headTitle">
-											<div class="tlHead">
-												<div class="profile">개인 이미지</div>
-												<strong>홍길동</strong>
-												<span>2021.12.28</span>
-												<button type="button" class="report">신고하기</button>
-											</div>
-											<p class="text">
-												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-											</p>
-											<div class="tlControls">
-												<button type="button" class="more">더보기</button>
-												<button type="button" class="recommend">도움돼요 3</button>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="headTitle">
-											<div class="tlHead">
-												<div class="profile">개인 이미지</div>
-												<strong>홍길동</strong>
-												<span>2021.12.28</span>
-												<button type="button" class="report">신고하기</button>
-											</div>
-											<figure>
-												<img src="../../public/image/temp/temp005.png" alt="">
-												<button type="button" class="zoom">이미지 크게보기</button>
-											</figure>
-											<p class="text lineBreake">
-												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-											</p>
-											<div class="tlControls">
-												<button type="button" class="more">더보기</button>
-												<button type="button" class="recommend">도움돼요 3</button>
-											</div>
-										</div>
-									</li>
-									<!-- 내용이 없을경우 -->
-									<li>
-										<div class="empty">
-											<p>등록된 리뷰가 없습니다.</p>
-										</div>
-									</li>
-									<!-- //내용이 없을경우 -->
-								</ul>
-							</div>
-						</div>
-					</section>
-				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 			</div>
 		</div>
 		<!-- //레이어 -->
