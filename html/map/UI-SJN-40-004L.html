@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">B2</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<div class="busStop">
+							<button type="button" class="commIco24 busStopIco" style="left: 10rem; top: 15rem;" title="버스 정류소"><i class="split24">오송역</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
+							<button type="button" class="commIco24 busStopIco" style="left: 15rem; top: 15rem;" title="버스 정류소"><i class="split24">누리리</i></button>
+							<button type="button" class="busIco B" style="left: 10rem; top: 20rem;" title="간선 버스"><i>B0</i></button>
+							<button type="button" class="busIco G" style="left: 15rem; top: 20rem;" title="지선 버스"><i>B1</i></button>
+							<button type="button" class="busIco Y" style="left: 20rem; top: 20rem;" title="일반 버스"><i>B2</i></button>
+							<button type="button" class="busIco R" style="left: 25rem; top: 20rem;" title="급행 버스"><i>B3</i></button>
+							<button type="button" class="busIco M" style="left: 30rem; top: 20rem;" title="광역 버스"><i>B4</i></button>
+
+							<div class="targer" style="left: 15rem; top: 30rem;"> <!-- 선택 된 버스인 경우 -->
+								<button type="button" class="busIco target R" title="급행 버스"><i>B3</i></button>
+							</div>
+						</div>
+					</div>
+					<!-- //기타 아이콘들 -->
+					
+					<!-- 하단 고정 영역 -->
+					<div class="busInfoFooter">
+						<div class="bifBody">
+							<div class="title">
+								<button type="button" class="favorite"><i>즐겨찾기</i></button>
+								<span class="B busInt">간선</span>
+								<span class="G busInt">지선</span>
+								<span class="Y busInt">일반</span>
+								<span class="R busInt">급행</span>
+								<span class="M busInt">광역</span>
+								<h3 class="name">B2</h3>
+								<div class="text">오송역 방면</div>
+							</div>
+							<div class="infomation">
+								<span>차량 세종정부청사 1204</span>
+							</div>
+							<div class="location">
+								<strong>다정동 정류장으로 이동중</strong>
+							</div>
+							<div class="etc">
+								<span class="cBlue">속도 43km</span>
+								<span>5초전 업데이트</span>
+							</div>
+						</div>
+						<button type="button" class="guidance"><i></i><b>주행</b></button>
+					</div>
+					<!-- //하단 고정 영역 -->
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

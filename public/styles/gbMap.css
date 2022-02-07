@@ -151,11 +151,15 @@ body { --vh: 1px;}
 .map .mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
 .map .mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
 .map .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
-.map .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
+.map .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; z-index: 3; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
+.map .mapIcons .targer { position: absolute; z-index: 1; width: 2.175rem; height: 2.4rem;}
+.map .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%;}
+.map .mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
 .map .mapIcons .busStop .busIco.B { background-position-y: 0;}
 .map .mapIcons .busStop .busIco.G { background-position-y: -2.5rem;}
 .map .mapIcons .busStop .busIco.Y { background-position-y: -5rem;}
 .map .mapIcons .busStop .busIco.R { background-position-y: -7.5rem;}
+.map .mapIcons .busStop .busIco.M { background-position-y: -7.5rem;}
 
 
 .map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
@@ -401,11 +405,12 @@ body { --vh: 1px;}
 .map .mapInfoLayer .busHead .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
 .map .mapInfoLayer .busHead .title .favorite.active { background-position-y: -2.4rem;}
 .map .mapInfoLayer .busHead .title .name { margin-left: 0.8rem; font-size: 1.8rem;}
-.map .mapInfoLayer .busHead .title span { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
-.map .mapInfoLayer .busHead .title span.B { background-color: #6684EA;}
-.map .mapInfoLayer .busHead .title span.G { background-color: #32BBED;}
-.map .mapInfoLayer .busHead .title span.Y { background-color: #4EC457;}
-.map .mapInfoLayer .busHead .title span.R { background-color: #FD2020;}
+.map span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
+.map span.B { background-color: #6684EA;}
+.map span.G { background-color: #32BBED;}
+.map span.Y { background-color: #4EC457;}
+.map span.R { background-color: #FD2020;}
+.map span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busHead .infomation { margin-top: 0.8rem;}
 .map .mapInfoLayer .busHead .infomation span { font-size: 1.4rem; color: #555;}
 .map .mapInfoLayer .busHead .infomation span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.6rem;}
@@ -437,6 +442,26 @@ body { --vh: 1px;}
 .map .mapInfoLayer .busRouteList li .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
 .map .mapInfoLayer .busRouteList li .favorite.active { background-position-y: -2.4rem;}
 
+/* UI-SJN-40-004L */
+.map .busInfoFooter { display: flex; align-items: center; justify-content: space-between; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 12rem; padding: 0 1.6rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
+.map .busInfoFooter .bifBody .title { display: flex; align-items: center; height: 2.4rem;}
+.map .busInfoFooter .bifBody .title span { color: #fff;}
+.map .busInfoFooter .bifBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.map .busInfoFooter .bifBody .title .favorite.active { background-position-y: -2.4rem;}
+.map .busInfoFooter .bifBody .title .name { margin-left: 0.8rem; font-size: 1.8rem;}
+.map .busInfoFooter .bifBody .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #555;}
+.map .busInfoFooter .bifBody .infomation { margin-top: 0.5rem;}
+.map .busInfoFooter .bifBody .infomation span { font-size: 1.4rem; color: #555;}
+.map .busInfoFooter .bifBody .location { margin-top: 0.4rem;}
+.map .busInfoFooter .bifBody .location strong { font-size: 1.6rem;}
+.map .busInfoFooter .bifBody .etc { margin-top: 0.4rem;}
+.map .busInfoFooter .bifBody .etc span { font-size: 1.4rem; color: #555;}
+.map .busInfoFooter .bifBody .etc span ~ span { position: relative; margin-left: 0.1rem; padding-left: 0.6rem;}
+.map .busInfoFooter .bifBody .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.map .busInfoFooter .bifBody .etc span.cBlue { color: #6684EA;}
+.map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
+.map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 14.4rem;}
+.map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 
 /* UI-SJN-60-004L */
 .map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
