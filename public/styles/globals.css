@@ -128,7 +128,7 @@ table td { vertical-align: middle;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 14.4rem;}
+.subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 19.2rem;}
 .subHeader .icoClose { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoClose i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
 .subHeader h2 { font-size: 1.9rem; font-weight: 700;}
@@ -136,7 +136,7 @@ table td { vertical-align: middle;}
 .subHeader .searchHeader { width: 74%;}
 .subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
 .subHeader .btnHeader { position: absolute; right: 0; top: 0;}
-.subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
+.subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
 .subHeader .btnHeader .icoMic { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
@@ -186,7 +186,7 @@ table td { vertical-align: middle;}
 .weather .icon.weather19 { background-position: -25.6rem -3.2rem;}
 .weather .icon.weather20 { background-position: -28.8rem -3.2rem;}
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
-.split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
+.split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
 
 
 /* 버튼 */
@@ -209,7 +209,7 @@ table td { vertical-align: middle;}
 
 /* 라디오박스 */
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
-.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 14.4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 19.2rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .radioSet input { position: absolute; opacity: 0;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
 
@@ -218,14 +218,14 @@ table td { vertical-align: middle;}
 .boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #6684EA; box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 5%);}
 .boxTooltipLayer .boxTooltipBody .paragraphGroup p { font-size: 1.4rem; line-height:2.2rem;}
 .boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
-.boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 14.4rem;}
+.boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 19.2rem;}
 .boxTooltipLayer.show { display: block;}
 
 .legendTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
 .legendTooltipLayer .legendTooltipBody { position: relative; padding: 1.2rem 2rem 3.2rem; background-color: #fff; border: 1px solid #6684EA;}
 .legendTooltipLayer .legendTooltipBody::after { content: ''; position: absolute; left: 50%; top: -1.65rem; width: 1.5rem; height: 1.65rem; margin-left: -0.75rem; background: url(../image/common/ico_tooltip.png) no-repeat center/cover;}
 .legendTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 2.2rem; width: 2.4rem; height: 2.4rem;}
-.legendTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 14.4rem;}
+.legendTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 19.2rem;}
 .legendTooltipLayer .legendTooltipBody h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .legendTooltipLayer .legendTooltipBody p { margin-top: 0.8rem; color: #555; line-height: 2rem;}
 .legendTooltipLayer .legendTooltipBody .numerical { display: flex; margin-top: 2.4rem;}
@@ -242,7 +242,7 @@ table td { vertical-align: middle;}
 .dustTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 301; width: 100%; padding: 0 1.2rem;}
 .dustTooltipLayer .legendTooltipBody { position: relative; padding: 1.2rem; background-color: #fff; border: 1px solid #6684EA;}
 .dustTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 2.2rem; width: 2.4rem; height: 2.4rem;}
-.dustTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 14.4rem;}
+.dustTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 19.2rem;}
 .dustTooltipLayer .legendTooltipBody h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .dustTooltipLayer .legendTooltipBody p { margin-top: 0.8rem; color: #555; line-height: 2rem;}
 .dustTooltipLayer .legendTooltipBody .numerical { display: flex; margin-top: 2.4rem;}
@@ -259,7 +259,7 @@ table td { vertical-align: middle;}
 /* 하단고정 */
 .bottomFixed { position: relative; padding-bottom: 8rem;}
 .bottomFixed .btnGroup { position: fixed; left: 0; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
-.bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 14.4rem;}
+.bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 19.2rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
 .bottomFixed .btnGroup .twins button:last-child { margin-left: 0.8rem;}
 .bottomFixed.bgGray { background-color: #F4F5F7;}
@@ -273,7 +273,7 @@ table td { vertical-align: middle;}
 
 /* 게시판 일반 */
 .headTitle .tlHead { display: flex; align-items: center; height: 4rem;}
-.headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -19.2rem 0/48rem 14.4rem; border-radius: 50%;}
+.headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -19.2rem 0/48rem 19.2rem; border-radius: 50%;}
 .headTitle .tlHead strong { margin-left: 0.4rem;}
 .headTitle .tlHead span { margin-left: 0.8rem; color: #aaa;}
 .headTitle .tlHead span::after { content: 'ㆍ';}
@@ -283,7 +283,7 @@ table td { vertical-align: middle;}
 .headTitle .tlHead.my .report { display: none;}
 .headTitle figure { overflow: hidden; position: relative; height: 18rem; margin-top: 0.8rem;}
 .headTitle figure img { width: 100%; height: auto; vertical-align: top;}
-.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -16.8rem 0/48rem 14.4rem;}
+.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -16.8rem 0/48rem 19.2rem;}
 .headTitle .text { overflow: hidden; margin-top: 1.2rem; font-size: 1.6rem; line-height: 2.4rem;}
 .headTitle .text.show { -webkit-line-clamp: inherit;}
 .headTitle .text.short { margin-top: 0.4rem;}
@@ -443,7 +443,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .voiceLayer .icons .iconBg { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 7.2rem; margin: 0 auto; background: linear-gradient(135deg,  #1e399e 11%,#294ca5 52%,#944d8f 100%); border-radius: 50%;}
 .voiceLayer .icons .iconBg i.mike { width: 4rem; height: 4rem; text-indent: -9999rem; background: url(../image/home/ico_mike.png) no-repeat center/cover;}
 .voiceLayer .icons .iconBg i.voice { width: 5rem; height: 2.2rem; text-indent: -9999rem; background: url(../image/home/ico_voice.png) no-repeat center/cover;}
-.voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 14.4rem; border-radius: 50%;}
+.voiceLayer .icons .btnCloseVoice { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 3.2rem; text-indent: -9999rem; background: #111 url(../image/common/split_48.png) no-repeat -26.4rem -2.4rem/48rem 19.2rem; border-radius: 50%;}
 
 /* 내 정보 - UI-SJN-80-001U */
 .myInfoLayer { padding: 0 2rem 2rem;}
@@ -468,7 +468,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .myInfoLayer .accordionBox { margin-top: 3.3rem;}
 .myInfoLayer .accordionBox >li .btn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 5.2rem; color: #111;}
 .myInfoLayer .accordionBox >li .btn p { font-size: 1.6rem;}
-.myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 14.4rem;}
+.myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 19.2rem;}
 .myInfoLayer .accordionBox >li a.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
 .myInfoLayer .accordionBox >li .flex { display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .myInfoLayer .accordionBox >li .flex .heading { font-size: 1.6rem;}
@@ -517,7 +517,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 
 /* 장소 상세 - UI-SJN-23-001L */
 .headerLocation .hdeading { display: flex; align-items: flex-start; padding: 1.6rem 2rem;}
-.headerLocation .hdeading .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; margin: 0.2rem 0.4rem 0 0; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.headerLocation .hdeading .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; margin: 0.2rem 0.4rem 0 0; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
 .headerLocation .hdeading .favorite.active i { background-position-y: -2.4rem;}
 .headerLocation .hdeading .title { flex: 1;}
 .headerLocation .hdeading .title h2 { font-size: 1.8rem;}
@@ -534,13 +534,13 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .locationHeader h3 { display: flex; align-items: center; font-size: 1.6rem;}
 .locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
 .locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
-.locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 14.4rem;}
+.locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 19.2rem;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
 .locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; height: 4rem; color: #aaa;}
 .locationLayer .basic .bbInfo .div i,
-.locationLayer .basic .bbInfo button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 14.4rem;}
-.locationLayer .basic .bbInfo button::after { content: ''; position: absolute; right: -3.2rem; top: 0.9rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 14.4rem;}
+.locationLayer .basic .bbInfo button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.locationLayer .basic .bbInfo button::after { content: ''; position: absolute; right: -3.2rem; top: 0.9rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 19.2rem;}
 .locationLayer .basic .bbInfo .homepage i { background-position: -31.2rem -4.8rem;}
 .locationLayer .basic .bbInfo .homepage::after { background-position: -36rem 0;}
 .locationLayer .basic .bbInfo .phone i { background-position: -33.6rem -4.8rem;}
@@ -649,7 +649,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .app ul li a .text >div { display: flex; align-items: center; justify-content: space-between;}
 .locationLayer .app ul li a .text >div h4 { flex: 1; font-size: 1.6rem; color: #333;}
 .locationLayer .app ul li a .text >div .cBlue { width: 7.8rem; font-size: 1.4rem; color: #6684EA;}
-.locationLayer .app ul li a .text >div .cBlue::after { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: -0.3rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 14.4rem;}
+.locationLayer .app ul li a .text >div .cBlue::after { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: -0.3rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
 .locationLayer .app ul li a .text p { margin-top: 0.8rem; font-size: 1.4rem; color: #555; line-height: 2.2rem;}
 .locationLayer .around { padding: 0 2rem 3.2rem;}
 .locationLayer .around h3 { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem; font-size: 1.6rem;}
@@ -725,6 +725,39 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerBusInfo .guide i { vertical-align: middle; background-position-x: -38rem;}
 .layerBusInfo .guide span { flex: 1; margin-left: 0.4rem; font-size: 1.4rem; color: #aaa;}
 
+/* UI-SJN-40-005L */
+.layerMapInfo .head { padding: 2.7rem 2rem 2.3rem;}
+.layerMapInfo .head h2 { font-size: 1.8rem;}
+.layerMapInfo .figure { display: flex; justify-content: center;overflow: hidden; height: 21.2rem; background-color: #EAEDF2;}
+.layerMapInfo .figure img { width: 12rem; height: auto;}
+.layerMapInfo .setting { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; padding: 0 2rem; border-bottom: 1px solid #EAEAEA;}
+.layerMapInfo .setting h3 { font-size: 1.8rem;}
+.layerMapInfo .setting .dispatchTil { display: flex; align-items: center;}
+.layerMapInfo .setting .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
+.layerMapInfo .setting .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
+.layerMapInfo .settingList >li { padding: 2.4rem 2rem;}
+.layerMapInfo .settingList >li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
+.layerMapInfo .settingList >li .slBody h3 { font-size: 1.6rem;}
+.layerMapInfo .settingList >li .slBody >div { display: flex; align-items: baseline;}
+.layerMapInfo .settingList >li .slBody >div span { margin-left: 0.8rem;}
+.layerMapInfo .settingList >li .slBody span { font-size: 1.4rem; color: #555;}
+.layerMapInfo .settingList >li:last-child { padding-bottom: 0;}
+.layerMapInfo .settingListSub { margin-top: 1.6rem;}
+.layerMapInfo .settingListSub li { display: flex; align-items: center; padding: 0.8rem 1.6rem; border: 1px solid #F4F5F7;}
+.layerMapInfo .settingListSub li .subHead { flex: 1;}
+.layerMapInfo .settingListSub li .subHead >div { display: flex; align-items: center;}
+.layerMapInfo .settingListSub li .subHead >div h3 { margin-left: 0.6rem; font-size: 1.6rem;}
+.layerMapInfo .settingListSub li .subHead .getOffLayerBtn { display: flex; align-items: center; justify-content: space-between; height: 2.8rem; margin-top: 0.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.4rem;}
+.layerMapInfo .settingListSub li .subHead .getOffLayerBtn i { margin-right: 0.4rem; background-position: -18rem -4rem;}
+.layerMapInfo .settingListSub li .subHead .getOffLayerBtn.active i { background-position-y: -6rem;}
+.layerMapInfo .settingListSub li .subInfo { width: 12rem; font-size: 1.4rem;}
+.layerMapInfo .settingListSub li .subInfo b { color: #FD2020;}
+.layerMapInfo .settingListSub li .subInfo span { color: #555;}
+.layerMapInfo .settingListSub li .subInfo >div ~ div { margin-top: 0.6rem;}
+.layerMapInfo .settingListSub li .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #CDD0D8; border-radius: 50%;}
+.layerMapInfo .settingListSub li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
+.layerMapInfo .settingListSub li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.layerMapInfo .settingListSub li .guidance.active { background-color: #6684EA;}
 
 /* *-모음
 **********************************************/
@@ -778,7 +811,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-formSort div select { height: 4rem; padding-left: 0; border: none;}
 .header-formSort div select:nth-child(1) { width: 12rem;}
 .header-formSort div select:nth-child(2) { width: 10rem;}
-.header-formSort .btnSort i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -12rem 0/48rem 14.4rem;}
+.header-formSort .btnSort i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -12rem 0/48rem 19.2rem;}
 
 .header-CalendarLine { overflow: hidden;}
 .header-CalendarLine ul { display: flex; align-items: center; height: 7.6rem;}
@@ -878,7 +911,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .items-form >li .fileForm .ffH .all { color: #6684EA;}
 .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
-.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat -21.6rem 0/48rem 14.4rem; border-radius: 50%;}
+.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat -21.6rem 0/48rem 19.2rem; border-radius: 50%;}
 .items-form >li .fileForm .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0 -0.2rem;}
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li { grid-column-end: span 3;}
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li label { height: 18rem;}
@@ -916,7 +949,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-form >li .period .pList li { display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
 .items-form >li .agree { display: flex; justify-content: flex-end; align-items: center; height: 4.8rem;}
 .items-form >li .agree label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
-.items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 14.4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 19.2rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .agree input { position: absolute; opacity: 0;}
 .items-form >li .agree input:checked + label::after { background-color: #6684EA;}
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
@@ -926,7 +959,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 
 .items-label .labelForm { display: flex; align-items: center;}
 .items-label .labelForm label { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; font-size: 1.6rem; cursor: pointer;}
-.items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 14.4rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 19.2rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-label .labelForm input { position: absolute; opacity: 0;}
 .items-label .labelForm input:checked + label::after { background-color: #6684EA;}
 
@@ -947,7 +980,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-files { margin-top: 2.4rem;}
 .items-files li a { display: flex; align-items: center; height: 4rem; font-size: 1.4rem; color: #555;}
 .items-files li .dec { position: relative; padding-left: 2.8rem; color: #6684EA;}
-.items-files li .dec::before { content: ''; display: block; position: absolute; left: 0; top: -0.2rem; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -7.2rem 0/48rem 14.4rem;}
+.items-files li .dec::before { content: ''; display: block; position: absolute; left: 0; top: -0.2rem; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -7.2rem 0/48rem 19.2rem;}
 .items-files li .title { margin-left: 0.8rem;}
 .items-files li .byte { position: relative; margin-left: 0.7rem; padding-left: 0.6rem;}
 .items-files li .byte::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
@@ -1142,12 +1175,12 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-mapInfo li .mapInfoBody .other .cBlue { color: #6684EA;}
 .items-mapInfo li .mapInfoBody .other span ~ span { position: relative; margin-left: 0.8rem; padding-left: 0.8rem;}
 .items-mapInfo li .mapInfoBody .other span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
-.items-mapInfo li .mapInfoBody .favorite { content: ''; position: absolute; right: 0; top: 0; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.items-mapInfo li .mapInfoBody .favorite { content: ''; position: absolute; right: 0; top: 0; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
 .items-mapInfo li .mapInfoBody .favorite.active { background-position-y: -2.4rem;}
 
 .items-parking >li { position: relative; padding: 0 0 3.4rem 3.2rem; background: url(../image/info/info_trip_blet.png) repeat-y 1.1rem 0/0.1rem 0.4rem;}
 .items-parking >li .time { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.2rem; width: 2.4rem; height: 2.4rem; background-color: #A9B0C1; border-radius: 50%;}
-.items-parking >li .time i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -12rem -4.8rem/48rem 14.4rem;}
+.items-parking >li .time i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -12rem -4.8rem/48rem 19.2rem;}
 .items-parking >li .time.active { background-color: #6684EA;}
 .items-parking >li .head { display: flex; align-items: center; justify-content: space-between;}
 .items-parking >li .head .title { font-size: 1.6rem;}
@@ -1192,7 +1225,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-route li p { flex: 1;}
 .items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
 .items-route li button { display: flex; align-items: center; justify-content: center; margin-left: 0.4rem;}
-.items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 14.4rem;}
+.items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 19.2rem;}
 
 .items-category >li .accordionMenu { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; padding-left: 4rem; font-size: 1.6rem;}
 .items-category >li .accordionMenu::before { content: ''; display: block; position: absolute; left: 0; top: 1.2rem; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
@@ -1205,11 +1238,11 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-category >li .accordionMenu.culture::before { background-position: -19.2rem -6.4rem;}
 .items-category >li .accordionMenu.tourism::before { background-position: -22.4rem -6.4rem;}
 .items-category >li .accordionMenu.safety::before { background-position: -25.6rem -6.4rem;}
-.items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 14.4rem;}
+.items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 19.2rem;}
 .items-category >li .accordionMenu span::before { content: '#';}
 .items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
 .items-category >li .subMenu li a { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding-left: 4rem; font-size: 1.6rem; font-weight: 700; color: #111;}
-.items-category >li .subMenu li a::after { content: ''; position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 14.4rem;}
+.items-category >li .subMenu li a::after { content: ''; position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
 .items-category >li .subMenu li:first-child { padding-top: 0.8rem;}
 .items-category >li .subMenu li:last-child { padding-bottom: 0.8rem;}
 .items-category >li.open .accordionMenu::after { background-position-y: -2.4rem;}
@@ -1217,7 +1250,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 1.2rem 2rem; border-bottom: 1px solid #F4F5F7;}
 .items-gasStation li .title { display: flex; align-items: center;}
 .items-gasStation li .title .favorite { margin-right: 0.4rem;}
-.items-gasStation li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.items-gasStation li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
 .items-gasStation li .title .favorite.active i { background-position-y: -2.4rem;}
 .items-gasStation li .title h3.name { height: inherit; font-size: 1.6rem;}
 .items-gasStation li .infomation { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
@@ -1244,7 +1277,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li .etc >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .etc >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 2.2rem; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
-.items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 14.4rem;}
+.items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-gasStation li .guidance.top { top: 1.2rem;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
@@ -1254,7 +1287,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-LocalCurrency li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 1.2rem 10.8rem; border-bottom: 1px solid #F4F5F7;}
 .items-LocalCurrency li .title { display: flex; align-items: center;}
 .items-LocalCurrency li .title .favorite { margin-right: 0.4rem;}
-.items-LocalCurrency li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 14.4rem;}
+.items-LocalCurrency li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
 .items-LocalCurrency li .title .favorite.active i { background-position-y: -2.4rem;}
 .items-LocalCurrency li .title h3.name { height: inherit; font-size: 1.6rem; color: #111;}
 .items-LocalCurrency li .figure { position: absolute; left: 2rem; top: 1.2rem; width: 7.2rem; height: 7.2rem;}
@@ -1262,7 +1295,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-LocalCurrency li .infomation >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-LocalCurrency li .infomation >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-LocalCurrency li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 2.2rem; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
-.items-LocalCurrency li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 14.4rem;}
+.items-LocalCurrency li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
 .items-LocalCurrency li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-LocalCurrency li .etc { display: flex; align-items: center; height: 2.4rem; margin: 0.8rem -5.3rem 0 0;}
 .items-LocalCurrency li .etc >a { display: block; width: 8.5rem; font-size: 1.4rem; color: #777;}
@@ -1299,7 +1332,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnClose { display: block;}
-.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 14.4rem;}
+.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 19.2rem;}
 
 .items-term { padding: 4rem 2rem;}
 .items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
@@ -1310,7 +1343,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
 .items-term >li .download { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd;}
 .items-term >li .download span { display: inline-block; position: relative; padding-left: 2.8rem;}
-.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 14.4rem;}
+.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 19.2rem;}
 .items-term >li .sub { display: block; margin-top: 1rem;}
 .items-term >li img { max-width: 100%; height: auto;}
 .items-term >li .blackLink li { margin-top: 0.8rem;}
@@ -1341,7 +1374,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-faq li .btn .div.cGreen { color: #4EC457;}
 .items-faq li .btn .div.cGray { color: #aaa;}
 .items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
-.items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 14.4rem;}
+.items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 19.2rem;}
 
 .items-improvement .accordionMenu { cursor: pointer;}
 .items-improvement .accordionTarget { overflow: hidden; max-height: 0; margin: 2.3rem -1.6rem -2.3rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
@@ -1379,7 +1412,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-apiList li a >div p span ~ span { padding-left: 1.6rem;}
 .items-apiList li a >div p span ~ span::before { content: 'ㆍ'; position: absolute; left: 0.2rem; top: 0; color: #777;}
 .items-apiList li a >div p .cBlue { color: #6684EA;}
-.items-apiList li a .arrow { position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 14.4rem;}
+.items-apiList li a .arrow { position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
 .items-apiList .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .items-apiList .empty p { position: relative; font-size: 1.6rem; color: #777;}
 .items-apiList .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
