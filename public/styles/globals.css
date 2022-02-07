@@ -772,9 +772,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-default .labelType { display: flex; align-items: center;}
 .header-default .labelType i { margin-right: 0.4rem; background-position-x: -38rem;}
 .header-default .labelType .label { display: flex; justify-content: center; align-items: center; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff;}
-.header-default .labelType .label.wood { background-color: #D69630;}
-.header-default .labelType .label.blue { background-color: rgba(102, 132, 234, 0.9);}
-.header-default .labelType .label.skyBlue { background-color: rgba(50, 187, 237, 0.9);}
 .header-default .labelType .label.black { background-color: rgba(51, 51, 51, 0.9);}
 
 .header-icons { display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem;}
