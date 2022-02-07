@@ -192,7 +192,9 @@ table td { vertical-align: middle;}
 /* 버튼 */
 .button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);}
 .button.middle { height: 4.8rem; font-size: 1.6rem;}
+.button.noShadow { box-shadow: none;}
 .button.blue { color: #fff; background-color: #6684EA;}
+.button.gray { color: #aaa; background-color: #EAEDF2;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 
 /* 라인 중단점 */
@@ -333,6 +335,14 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerPopup.ready { display: block;}
 .layerPopup.show { opacity: 1;}
 .layerPopup.show .layerWrap { transform: translateY(0);}
+
+.layerAlert { display: none; position: fixed; z-index: 300; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; text-align: center; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
+.layerAlert::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
+.layerAlert.ready { display: block;}
+.layerAlert.show { opacity: 1;}
+.layerAlert.show .layerWrap { transform: translateY(0);}
+
+
 .layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem);  vertical-align: middle; text-align: left; background: #fff; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; left: 0; bottom: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
 .layerWrap.full { display: flex; flex-direction: column; position: absolute; right: 0; left: 0; bottom: 0; top: 0; width: 100%;}
@@ -342,8 +352,10 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
 .layerWrap >h4 i.eval { margin-right: 0.4rem; background-position: -10rem -4rem;}
-.layerWrap .btnClose { display: block; position: absolute; right: 0.8rem; top: 1.2rem; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
+.layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 19.2rem;}
 .layerWrap .layerBody { text-align: left;}
+.layerWrap .layerBody .twins { display: flex; margin: 2.4rem -0.4rem 0;}
+.layerWrap .layerBody .twins .button { margin: 0 0.4rem;}
 .layerWrap .layerBody .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
 .scrollLock body { overflow: hidden;}
@@ -393,7 +405,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .calendarBody .calendar .cList.reservation li span.impossible { background-color: #FD2020;}
 .calendarBody .calendar .cList.reservation li span.companion { background-color: #32BBED;}
 .calendarBody .calendar .cList.reservation li span.modify { background-color: #D69630;}
-
 .calendarBody .time { display: flex;}
 .calendarBody .time .slideContainer { height: 5.6rem;}
 .calendarBody .time .apmBody { flex: 1; overflow: hidden; position: relative; padding: 5.6rem 0;}
@@ -407,6 +418,9 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .calendarBody .time .lineBg span:nth-child(1) { top: 5.6rem;}
 .calendarBody .time .lineBg span:nth-child(2) { top: 50%; margin-top: 2.8rem; background-color: #aaa;}
 .calendarBody .time .lineBg span:nth-child(3) { bottom: 0;}
+.calendarBody .week { display: flex; align-items: center; justify-content: space-between; height: 5.2rem; margin-top: 2.4rem;}
+.calendarBody .week button { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; font-size: 1.6rem; color: #777; background-color: #EAEDF2; border-radius: 50%;}
+.calendarBody .week button.active { font-weight: 700; color: #fff; background-color: #6684EA;}
 .calendarBody .buttonFlex { display: flex; margin: 3.2rem -0.4rem 0;}
 .calendarBody .buttonFlex button { margin: 0 0.4rem;}
 
@@ -758,6 +772,17 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerMapInfo .settingListSub li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
 .layerMapInfo .settingListSub li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .layerMapInfo .settingListSub li .guidance.active { background-color: #6684EA;}
+
+/* UI-SJN-40-006L */
+.layerGoNotice .busHead { display: flex; align-items: center; height: 4.8rem; margin: 0 -2rem; padding: 0 2rem; border-bottom: 1px solid #EAEAEA;}
+.layerGoNotice .busHead h3 { margin-left: 0.8rem; font-size: 1.8rem;}
+.layerGoNotice .busHead >div { margin-left: 0.4rem;}
+.layerGoNotice .busHead >div span { font-size: 1.6rem; font-weight: 700;}
+.layerGoNotice .busHead >div span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.layerGoNotice .busHead >div span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.layerGoNotice .calendarBody .buttonFlex { margin-top: 2.4rem;}
+.layerGoNotice .calendarBody .buttonFlex .button.active { color: #fff; background-color: #6684EA;}
+
 
 /* *-모음
 **********************************************/
