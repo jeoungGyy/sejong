@@ -504,6 +504,14 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideList >li ul li .getOffBtn b { font-size: 1.2rem; color: #fff; letter-spacing: -0.1em;}
 .map .mapInfoLayer .busGuideList >li ul li .getOffBtn.active { background-color: #6684EA;}
 
+/* UI-SJN-40-006L */
+.map .goNotice {}
+
+
+
+
+
+
 /* UI-SJN-60-004L */
 .map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
 .map .listArea .streetLampList { border-top: 1px solid #EAEAEA;}
