@@ -1390,7 +1390,9 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
 .items-term >li .download { display: inline-flex; align-items: center; justify-content: center; height: 4rem; margin-top: 2rem; padding: 0 1.6rem; font-size: 1.4rem; color: #555; border: 1px solid #ddd;}
 .items-term >li .download span { display: inline-block; position: relative; padding-left: 2.8rem; letter-spacing: -0.1em;}
-.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 -2.4rem/48rem 19.2rem;}
+.items-term >li .download span::after { content: ''; position: absolute; left: 0; top: -0.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.items-term >li .download.pdf span::after { background-position-y: -2.4rem;}
+.items-term >li .download.hwp span::after { background-position: -21.6rem -14.4rem;}
 .items-term >li .sub { display: block; margin-top: 1rem;}
 .items-term >li img { max-width: 100%; height: auto;}
 .items-term >li .blackLink li { margin-top: 0.8rem;}
@@ -1408,9 +1410,9 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-term >li table tr td img { vertical-align: middle;}
 .items-term >li table.markTable { width: 100%; margin-top: 1.6rem;}
 .items-term >li li { margin-top: 1.6rem; line-height: 2.3rem;}
-.items-term >li li li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
-.items-term >li li li:first-child { margin-top: 2rem;}
-.items-term >li li li::after { content: ''; position: absolute; left: 0.6rem; top: 0.8rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.items-term .bletList >li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
+.items-term .bletList >li:first-child { margin-top: 2rem;}
+.items-term .bletList >li::after { content: ''; position: absolute; left: 0.6rem; top: 0.8rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 
 .items-faq { margin-top: 1.6rem;}
 .items-faq li .accordionTarget { overflow: hidden; max-height: 0; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
