@@ -4,6 +4,10 @@
 body { --vh: 1px;}
 
 /* 공통 */
+.map .mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
+.map .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
+.map .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
+
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
@@ -64,7 +68,9 @@ body { --vh: 1px;}
 .map .mapIcons .btnView.up button.mapView { bottom: 4rem;}
 .map .mapIcons .btnView.open button.listView { bottom: -4rem;}
 .map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_pin.png) no-repeat center/cover;}
+.map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 8rem;}
+.map .mapIcons .btnPin.active { background-color: #6684EA;}
+.map .mapIcons .btnPin.active i { background-position-y: -6rem;}
 .map .mapIcons .btnBikePin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/map/ico_bike.png) no-repeat center/cover;}
 .map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
@@ -199,6 +205,8 @@ span.M { background-color: #FD2020;}
 /* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
 .map .mapBg { height: 100%; background: url(../image/map/map_bg.png) no-repeat center/cover;}
+.map .mapBg2 { height: 100%; background: url(../image/map/map_bg2.png) no-repeat center/cover;}
+.map .mapBg3 { height: 100%; background: url(../image/map/map_bg3.png) no-repeat center/cover;}
 .map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 90;}
 .map .mapSearch .mapheader { display: flex; align-items: center; justify-content: space-between;}
 .map .mapSearch .mapheader .mapBody { display: flex; align-items: center; flex: 1; padding: 0 0.8rem; border: 1px solid #F8F8F8; background-color: #fff;}
@@ -587,6 +595,19 @@ span.M { background-color: #FD2020;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed span { display: table-cell; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed b { color: #111;}
 .map .gotOff .getOutNotice .getOutList >li ul li:last-child { padding-bottom: 0;}
+
+/* UI-SJN-41-001L */
+.map .satelliteBody { padding-top: 0.8rem;}
+.map .satelliteBody .satelliteList { overflow: hidden; padding: 0 2rem;}
+.map .satelliteBody .satelliteList ul li.swiper-slide { width: 15.6rem;}
+.map .satelliteBody .satelliteList ul li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
+.map .satelliteBody .satelliteList ul li label img { width: 100%; height: auto; vertical-align: top;}
+.map .satelliteBody .satelliteList ul li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.map .satelliteBody .satelliteList ul li input { position: absolute; opacity: 0;}
+.map .satelliteBody .satelliteList ul li input:checked + label::after { background-color: #6684EA;}
+.map .satelliteBody .satelliteList ul li .sTime { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
+.map .satelliteBody .satelliteList .empty { display: flex; align-items: center; justify-content: center; height: 10rem; padding: 0 2rem; font-size: 1.4rem; color: #aaa; text-align: center; background-color: #F4F5F7;}
+.map .satelliteBody .offerer { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; border-top: none;}
 
 /* UI-SJN-60-004L */
 .map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
