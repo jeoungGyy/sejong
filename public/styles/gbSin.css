@@ -131,6 +131,12 @@
 .mypage .explain-default .text { line-height: 2.3rem;}
 .mypage .approval { padding: 2.4rem 1.6rem; background-color: #fff;}
 
+/* 저작권 정책 - UI-SJN-83-002U */
+.mypage .twinBtn { display: flex; align-items: center; padding: 0 1.6rem;}
+.mypage .twinBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; margin: 0 0.4rem; background-color: #6684EA;}
+.mypage .twinBtn a span { display: inline-block; font-size: 1.4rem; color: #fff; letter-spacing: -0.1em;}
+.mypage .twinBtn a span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
+
 /* 자주하는 질문 - UI-SJN-82-001U */
 .mypage .faqTabBody { padding: 0 2rem;}
 .mypage .button-moreNews { margin-top: 0.8rem;}
