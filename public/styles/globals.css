@@ -819,7 +819,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-default h3 .cWood { color: #D69630;}
 .header-default h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
 .header-default a,
-.header-default .labelType { display: flex; align-items: center;}
+.header-default .labelType { display: flex; align-items: center; color: #6684EA;}
 .header-default .labelType i { margin-right: 0.4rem; background-position-x: -38rem;}
 .header-default .labelType .label { display: flex; justify-content: center; align-items: center; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff;}
 .header-default .labelType .label.black { background-color: rgba(51, 51, 51, 0.9);}
