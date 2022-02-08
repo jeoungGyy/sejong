@@ -318,9 +318,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .center .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
 .map .mapInfoLayer .centerSec .center .favorite.active { background-position-y: -2.4rem;}
 .map .mapInfoLayer .centerSec .text p { margin-top: 0.9rem; color: #555;}
-.map .mapInfoLayer .centerSec .text p .cBlue { color: #6684EA;}
-.map .mapInfoLayer .centerSec .text p .cRed { color: #FD2020;}
-.map .mapInfoLayer .centerSec .text p .cBlack { color: #111;}
 .map .mapInfoLayer .centerSec .text p .lettSpace { letter-spacing: 0;}
 .map .mapInfoLayer .centerSec .text p.lineGroup span { display: inline-block;}
 .map .mapInfoLayer .centerSec .text p.lineGroup span ~ span { position: relative; margin-left: 0.6rem; padding-left: 0.8rem;}
@@ -361,7 +358,7 @@ span.M { background-color: #FD2020;}
 .map .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
 .map .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
 .map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
-.map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem; color: #6684EA;}
+.map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
 .map .mapMenuLayer.show { display: block;}
 
 /* UI-SJN-30-007L */
@@ -427,7 +424,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .route { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; margin: 0 -2rem; padding: 0 2rem; border-top: 1px solid #EAEAEA; background-color: #F4F5F7;}
 .map .mapInfoLayer .route .allRoute { display: flex; align-items: center;}
 .map .mapInfoLayer .route .allRoute .allRouteBtn { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 3.2rem; font-size: 1.4rem; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.6rem;}
-.map .mapInfoLayer .route .allRoute .cBlue { margin-left: 0.8rem; font-size: 1.4rem; color: #6684EA;}
+.map .mapInfoLayer .route .allRoute .cBlue { margin-left: 0.8rem; font-size: 1.4rem;}
 .map .mapInfoLayer .dispatchTil { display: flex; align-items: center;}
 .map .mapInfoLayer .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
 .map .mapInfoLayer .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
@@ -461,7 +458,6 @@ span.M { background-color: #FD2020;}
 .map .busInfoFooter .bifBody .etc span { font-size: 1.4rem; color: #555;}
 .map .busInfoFooter .bifBody .etc span ~ span { position: relative; margin-left: 0.1rem; padding-left: 0.6rem;}
 .map .busInfoFooter .bifBody .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .busInfoFooter .bifBody .etc span.cBlue { color: #6684EA;}
 .map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
 .map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
 .map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #fff;}
@@ -496,7 +492,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideList >li ul li .infomation { margin-top: 0.4rem;}
 .map .mapInfoLayer .busGuideList >li ul li .infomation span { font-size: 1.4rem; color: #777;}
 .map .mapInfoLayer .busGuideList >li ul li .etc { margin-top: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li ul li .etc .cBlue { color: #6684EA;}
 .map .mapInfoLayer .busGuideList >li ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .mapInfoLayer .busGuideList >li ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .map .getOffBtn { display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #CDD0D8; border-radius: 50%;}
@@ -525,7 +520,6 @@ span.M { background-color: #FD2020;}
 .map .goNotice .geiInNotice .infomation .inList .infoText span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem; font-size: 1.6rem;}
 .map .goNotice .geiInNotice .infomation .inList .infoText span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .map .goNotice .geiInNotice .infomation .inList .etc { margin-top: 0.4rem;}
-.map .goNotice .geiInNotice .infomation .inList .etc .cBlue { color: #6684EA;}
 .map .goNotice .geiInNotice .infomation .inList .etc span { font-size: 1.4rem; color: #555;}
 .map .goNotice .geiInNotice .infomation .inList .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .goNotice .geiInNotice .infomation .inList .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}

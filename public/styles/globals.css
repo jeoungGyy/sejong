@@ -163,7 +163,10 @@ table td { vertical-align: middle;}
 .mt8 { margin-top: 0.8rem;}
 
 /* 색상 */
-.cBlue { color: #6684EA;}
+.cBlue { color: #6684EA !important;}
+.cRed { color: #FD2020 !important;}
+.cBlack { color: #111 !important;}
+.cGreen { color: #4EC457 !important;}
 
 /* Split 아이콘 */
 .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
@@ -604,7 +607,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .basic .offerer { margin-bottom: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .locationLayer .detail { padding: 0.2rem 2rem 2.4rem;}
 .locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem;}
-.locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400; color: #6684EA;}
+.locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400;}
 .locationLayer .detail h4 .normal { margin-left: 0.8rem; color: #4EC457;}
 .locationLayer .detail h4 .breakdown { margin-left: 0.8rem; color: #FD2020;}
 .locationLayer .detail h4.first { margin-top: 0;}
@@ -615,7 +618,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .detail >div p .textMore i { margin-top: -0.3rem; vertical-align: middle; background-position: -38.4rem -9.6rem;}
 .locationLayer .detail .detailbtn a { display: flex; align-items: center; position: relative; height: 4.8rem; margin-top: 1.6rem; padding: 0 1.6rem; font-size: 1.6rem; color: #111; border: 1px solid #ddd;}
 .locationLayer .detail .detailbtn a::after { content: ''; display: block; position: absolute; right: 1.6rem; top: 1.6rem; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
-.locationLayer .detail .detailbtn a span.cBlue { color: #6684EA;}
 .locationLayer .detail .flex { display: flex; align-items: center; min-height: 3.6rem;}
 .locationLayer .detail .flex h4 { height: inherit; margin: 0 0.8rem 0 0;}
 .locationLayer .detail .flex >div p { margin-top: 0; font-size: 1.5rem; color: #535353;}
@@ -663,7 +665,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .app ul li a .text { flex: 1;}
 .locationLayer .app ul li a .text >div { display: flex; align-items: center; justify-content: space-between;}
 .locationLayer .app ul li a .text >div h4 { flex: 1; font-size: 1.6rem; color: #333;}
-.locationLayer .app ul li a .text >div .cBlue { width: 7.8rem; font-size: 1.4rem; color: #6684EA;}
+.locationLayer .app ul li a .text >div .cBlue { width: 7.8rem; font-size: 1.4rem;}
 .locationLayer .app ul li a .text >div .cBlue::after { content: ''; display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: -0.3rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
 .locationLayer .app ul li a .text p { margin-top: 0.8rem; font-size: 1.4rem; color: #555; line-height: 2.2rem;}
 .locationLayer .around { padding: 0 2rem 3.2rem;}
@@ -808,7 +810,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-default h3 .cWood { color: #D69630;}
 .header-default h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
 .header-default a,
-.header-default .cBlue { color: #6684ea;}
 .header-default .labelType { display: flex; align-items: center;}
 .header-default .labelType i { margin-right: 0.4rem; background-position-x: -38rem;}
 .header-default .labelType .label { display: flex; justify-content: center; align-items: center; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff;}
@@ -1215,7 +1216,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-mapInfo li .mapInfoBody h4 { font-size: 1.6rem;}
 .items-mapInfo li .mapInfoBody .st { overflow:hidden; margin-top: 0.8rem; font-size: 1.4rem; text-overflow:ellipsis; white-space:nowrap;}
 .items-mapInfo li .mapInfoBody .other {  margin-top: 0.2rem; font-size: 1.4rem;}
-.items-mapInfo li .mapInfoBody .other .cBlue { color: #6684EA;}
 .items-mapInfo li .mapInfoBody .other span ~ span { position: relative; margin-left: 0.8rem; padding-left: 0.8rem;}
 .items-mapInfo li .mapInfoBody .other span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
 .items-mapInfo li .mapInfoBody .favorite { content: ''; position: absolute; right: 0; top: 0; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
@@ -1314,8 +1314,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #777; background-color: #F4F5F7;}
 .items-gasStation li .etc .facilities span.holiday { color: #FD2020;}
 .items-gasStation li .etc .grade { font-size: 1.4rem;}
-.items-gasStation li .etc .grade .cBlue { color: #6684EA;}
-.items-gasStation li .etc .grade .cGreen { color: #4EC457;}
 .items-gasStation li .etc >span { font-size: 1.4rem; color: #555;}
 .items-gasStation li .etc >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .etc >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
@@ -1413,8 +1411,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-faq li .btn { display: flex; width: 100%; padding: 1.5rem 2rem; text-align: left; border-bottom: 1px solid #F4F5F7;}
 .items-faq li .btn .head { width: 2.8rem; padding-top: 0.2rem; font-size: 1.6rem; font-weight: 700;}
 .items-faq li .btn .div { width: 6.4rem; padding-top: 0.1rem; letter-spacing: -0.1em;}
-.items-faq li .btn .div.cBlue { color: #6684EA;}
-.items-faq li .btn .div.cGreen { color: #4EC457;}
 .items-faq li .btn .div.cGray { color: #aaa;}
 .items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
 .items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 19.2rem;}
@@ -1454,7 +1450,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-apiList li a >div p span { display: inline-block; position: relative;}
 .items-apiList li a >div p span ~ span { padding-left: 1.6rem;}
 .items-apiList li a >div p span ~ span::before { content: 'ㆍ'; position: absolute; left: 0.2rem; top: 0; color: #777;}
-.items-apiList li a >div p .cBlue { color: #6684EA;}
 .items-apiList li a .arrow { position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
 .items-apiList .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .items-apiList .empty p { position: relative; font-size: 1.6rem; color: #777;}
