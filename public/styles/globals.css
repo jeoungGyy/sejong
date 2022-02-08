@@ -803,7 +803,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerReplace .control p { display: flex; align-items: center; margin-top: 0.8rem; font-size: 1.6rem;}
 .layerReplace .control span { display: flex; align-items: center; margin-top: 0.8rem; font-size: 1.4rem; color: #FD2020;}
 .layerReplace .control span i { display: flex; align-items: center; justify-content: center; width: 1.6rem; height: 1.6rem; margin: -0.1rem 0.4rem 0 0; background: #FD2020 url(../image/common/split_40.png) no-repeat -12.2rem -4.2rem/40rem 8rem; border-radius: 50%;}
-.layerReplace .layerBody .items-label { overflow-x: hidden; overflow-y: auto; max-height: 30rem; margin-top: 1.6rem;}
+.layerReplace .layerBody .items-label { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; max-height: 30rem; margin-top: 1.6rem;}
 .layerReplace .layerBody .twins { margin-top: 0;}
 
 

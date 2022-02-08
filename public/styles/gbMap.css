@@ -38,7 +38,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .radioGroup label { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; height: 3.6rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem; transition: all .3s ease-in-out;}
 .map .mapInfoLayer .area .radioGroup input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 
-.map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 2rem 10rem;}
+.map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
@@ -175,7 +175,7 @@ body { --vh: 1px;}
 .map .mapIcons .gesture.hide { opacity: 0; z-index: -1;}
 
 .map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
-.map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
+.map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
 .map .lnb .lnbBody h3 { display: flex; align-items: center; height: 5.4rem; font-size: 1.8rem;}
 .map .lnb .lnbBody h3 i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
 .map .lnb .lnbBody .lnbFavorite { padding: 1.1rem 2rem 1.6rem;}
@@ -298,7 +298,7 @@ span.M { background-color: #FD2020;}
 .map .gaHead .costBody >div span { position: relative; font-size: 1.4rem; color: #777;}
 .map .gaHead .costBody >div span ~ span { margin-left: 0.3rem; padding-left: 0.6rem;}
 .map .gaHead .costBody >div span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .guideArea { flex: 1; overflow-x: hidden; overflow-y: auto;}
+.map .guideArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .guideArea  .stepNav { padding: 0 0 0 2rem;}
 .map .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
 .map .offerer p { font-size: 1.4rem; color: #aaa;}
@@ -400,7 +400,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .headFlex .note i { margin:  -0.3rem 0.4rem 0 0; vertical-align: middle; background-position: -38rem 0;}
 
 /* UI-SJN-35-001L */
-.map .mapInfoLayer .dustArea { flex: 1; overflow-x: hidden; overflow-y: auto;}
+.map .mapInfoLayer .dustArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .fineDustList { border-top: 1px solid #EAEAEA;}
 .map .mapInfoLayer .fineDustList li { padding: 1.5rem 2rem; border-bottom: 1px solid #EAEAEA;}
 .map .mapInfoLayer .fineDustList li .title { display: flex; align-items: center;}
@@ -439,7 +439,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .dispatchTil { display: flex; align-items: center;}
 .map .mapInfoLayer .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
 .map .mapInfoLayer .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
-.map .mapInfoLayer .busRouteArea { flex: 1; overflow-x: hidden; overflow-y: auto;}
+.map .mapInfoLayer .busRouteArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .busRouteList li { display: flex; align-items: center; position: relative; width: 100%;}
 .map .mapInfoLayer .busRouteList li::after { content: ''; position: absolute; right: 2.9rem; top: 0; width: 0.2rem; height: 100%; background-color: #EAEDF2;}
 .map .mapInfoLayer .busRouteList li .routeBody { display: flex; align-items: center; justify-content: space-between; flex: 1; padding: 0.8rem 0 0.8rem 2rem; border-bottom: 1px solid #F4F5F7;}
@@ -634,7 +634,7 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li button .text b.minus { color: #FD2020;}
 
 /* UI-SJN-60-004L */
-.map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
+.map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; padding: 0 0 4rem;}
 .map .listArea .streetLampList { border-top: 1px solid #EAEAEA;}
 .map .listArea .streetLampList li { display: flex; align-items: flex-start; padding: 1rem 2rem 1.7rem; border-bottom: 1px solid #F4F5F7;}
 .map .listArea .streetLampList li .titleBody { flex: 1;}
