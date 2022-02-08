@@ -573,6 +573,9 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .basic .bbInfo .offerer .write i { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo.bdt { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid #F4F5F7;}
 .locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.locationLayer .basic .accordionTarget p { display: flex; align-items: center; min-height: 3rem;}
+.locationLayer .basic .accordionTarget p:first-child { padding-top: 0.8rem;}
+.locationLayer .basic .accordionTarget p:last-child { padding-bottom: 0.8rem;}
 .locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
 .locationLayer .basic .bbBtns .div,
 .locationLayer .basic .bbBtns .flex { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
