@@ -118,6 +118,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	/* UI-SJN-41-002L */
+	transformNavSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;
