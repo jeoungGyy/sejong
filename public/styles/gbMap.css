@@ -7,6 +7,7 @@ body { --vh: 1px;}
 .map .mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
 .map .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
 .map .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
+.map .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
@@ -311,8 +312,7 @@ span.M { background-color: #FD2020;}
 .map .navCategory { padding: 0 2rem;}
 
 /* 장소 카테고리 - UI-SJN-22-002L */
-.map .mapArea.subStyle .mapInfoLayer .mapIHead.oil { height: 17.6rem; margin: 0 -2rem; border-bottom: 1px solid #EAEDF2;}
-.map .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
+
 
 .map .petrolInformation { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem; font-size: 1.4rem;}
 .map .gsCost span { position: relative; margin-left: 0.8rem; padding-left: 2.3rem; font-weight: 700;}
@@ -478,7 +478,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuidePopup .text { font-size: 1.4rem; font-weight: 700; color: #333; text-align: left; line-height: 2.2rem;}
 .map .mapInfoLayer .busGuidePopup .icon { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #fff; border-radius: 50%;}
 .map .mapInfoLayer .busGuidePopup .icon i { display: block; width: 3.075rem; height: 2.4rem; background: url(../image/map/ico_bus_guide.png) no-repeat center/cover;}
-.map .mapInfoLayer .busGuideArea { flex: 1; overflow-x: hidden; overflow-y: auto;}
+.map .mapInfoLayer .busGuideArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .busGuideList >li { position: relative; border-bottom: 1px solid #F4F5F7;}
 .map .mapInfoLayer .busGuideList >li >.favorite { position: absolute; left: 2rem; top: 0.8rem;}
 .map .mapInfoLayer .busGuideList li .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
