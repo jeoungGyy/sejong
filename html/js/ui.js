@@ -215,6 +215,34 @@ const layerPopup = {
 	},
 }
 
+const layerAlert = {
+	obj : {},
+	init: (id) => {
+		layerAlert.obj[id] = {}
+		let layer = layerAlert.obj[id];
+		layer['wrap'] = document.querySelector('#'+id);
+	},
+	open : (id) => {
+		if(!layerAlert.obj[id]) {
+			layerAlert.init(id);
+			let layer = layerAlert.obj[id];
+		}
+
+		let layer = layerAlert.obj[id];
+		layer.wrap.classList.add('ready');
+
+		setTimeout(()=>{
+			layer.wrap.classList.add('show');
+		},1)
+		setTimeout(()=>{
+			layer.wrap.classList.remove('show');
+			setTimeout(()=>{
+				layer.wrap.classList.remove('ready');
+			},300)
+		},1500)
+	},
+}
+
 const tooltip = {
 	winClose : false,
 	showEl : null,

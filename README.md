@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-08
+- UI-SJN-40-006L 등록
+
 ### 02-07
 - UI-SJN-40-003L 등록
 - UI-SJN-40-004L 등록

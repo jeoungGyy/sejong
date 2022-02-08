@@ -62,7 +62,7 @@
 										</div>
 									</li>
 								</ul>
-								<button type="button" class="getOffBtn active"><i class="split24"></i><b>승차</b></button>
+								<button type="button" class="getOffBtn active" onclick="layerAlert.open('layerAlert');"><i class="split24"></i><b>승차</b></button>
 							</div>
 						</div>
 
@@ -265,14 +265,11 @@
 
 		<!-- 레이어 -->
 		<!-- 기본 알림 -->
-		<div id="layerAlert" class="layerPopup layerAlert">
-			<div class="layerWrap typeBot">
+		<div id="layerAlert" class="layerAlert">
+			<div class="alertWrap">
 				<p>승차 알림이 설정되었습니다.</p>
 			</div>
 		</div>
-		<script>
-			layerPopup.open('layerAlert');
-		</script>
 		<!-- //기본 알림 -->
 
 		<!-- 승차 반복알림 설정 -->
