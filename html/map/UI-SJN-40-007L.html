@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">하차 알림</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="gotOff">
+					<div class="getOffHead">
+						<div>
+							<div class="infomation">
+								<span><b>약 25분</b></span>
+								<span>속도 <b class="cBlue">43km/h</b></span>
+							</div>
+							<p>도담동(도램마을) → 오송역</p>
+						</div>
+						<button type="button" class="button middle blue noShadow" onclick="layerPopup.open('layerRepeatAlert');">알림 종료</button>
+					</div>
+
+					<div class="line-default getOutNotice">
+						<div class="sms">
+							<button type="button" class="sendBtn"><i class="split24"></i>안심문자 보내기</button>
+						</div>
+						<ul class="getOutList">
+							<li>
+								<div class="getOutTime">
+									<span>오후 10:49</span>
+								</div>
+								<div class="icon">
+									<i class="getInArrow">승차</i>
+								</div>
+								<div class="getOutBody">
+									<div class="title">
+										<p class="name">한솔동(중)</p>
+										<div class="etc">
+											<span>52016</span>
+										</div>
+									</div>
+									<div class="getOutInfo">
+										<div class="busHead">
+											<span class="R busInt">급행</span>
+											<h3 class="name">B2</h3>
+											<div>
+												<span>BRT, 오송…</span>
+												<span>한솔동(중)</span>
+											</div>
+										</div>
+										<ul>
+											<li>
+												<div class="etc">
+													<span><b class="cBlue">6분</b></span>
+													<span>3정류장 전</span>
+												</div>
+												<p>새롬동.나성동 정류장으로 이동 중</p>
+												<p>속도 43km/h | 5초 전 업데이트</p>
+											</li>
+											<li>
+												<div class="etc">
+													<span><b class="cBlue">22분</b></span>
+													<span>16정류장 전</span>
+												</div>
+												<button type="button" class="replaceBtn" translate="대체 버스 안내" onclick="layerPopup.open('layerReplace');">
+													<span class="replaceFixed">
+														<span><b>대체</b> <b>B1</b>(오송역방면), <b>B3</b>(오송역방면오송역방면오송역방면)</span>
+													</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="getOutTime">
+								</div>
+								<div class="icon">
+									<i class="general">일반 노선</i>
+								</div>
+								<div class="getOutBody">
+									<div class="title">
+										<p class="name">한솔동(중)</p>
+										<div class="etc">
+											<span>52016</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="getOutTime">
+								</div>
+								<div class="icon">
+									<i class="general">일반 노선</i>
+								</div>
+								<div class="getOutBody">
+									<div class="title">
+										<p class="name">한솔동(중)</p>
+										<div class="etc">
+											<span>52016</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="getOutTime">
+								</div>
+								<div class="icon">
+									<i class="general">일반 노선</i>
+								</div>
+								<div class="getOutBody">
+									<div class="title">
+										<p class="name">한솔동(중)</p>
+										<div class="etc">
+											<span>52016</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="getOutTime">
+									<span>오후 10:49</span>
+								</div>
+								<div class="icon">
+									<i class="getInArrow">하차</i>
+								</div>
+								<div class="getOutBody">
+									<div class="title">
+										<p class="name">한솔동(중)</p>
+										<div class="etc">
+											<span>52016</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+		<!-- 레이어 -->
+		<!-- 기본 알림 -->
+		<div id="layerAlert" class="layerAlert">
+			<div class="alertWrap">
+				<p>하차 알림이 종료되었습니다.</p>
+			</div>
+		</div>
+		<!-- //기본 알림 -->
+
+		<!-- 대체 버스 안내 -->
+		<div id="layerReplace" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<h4>B2(오송역방면) 외 4대</h4>
+				<div class="layerReplace">
+					<div class="dispatchTil">
+						<span class="dTime">오후 12:23</span>
+						<button type="button" class="refresh"><i></i>15</button>
+					</div>
+					<ul class="replaceList">
+						<li>
+							<div class="title">
+								<span class="R busInt">급행</span>
+								<h3 class="name">B2(오송역)</h3>
+							</div>
+							<div class="etc">
+								<div>
+									<span><b class="cWood">4분 34초</b></span>
+									<span>6정류장 전</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="title">
+								<span class="R busInt">급행</span>
+								<h3 class="name">B2(오송역)</h3>
+							</div>
+							<div class="etc">
+								<div>
+									<span><b class="cWood">4분 34초</b></span>
+									<span>6정류장 전</span>
+								</div>
+								<div>
+									<span><b class="cWood">4분 34초</b></span>
+									<span>6정류장 전</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="title">
+								<span class="R busInt">급행</span>
+								<h3 class="name">B2(오송역)</h3>
+							</div>
+							<div class="etc">
+								<div>
+									<span class="cGray">도착정보 없음(일 90회 운행)</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="title">
+								<span class="R busInt">급행</span>
+								<h3 class="name">991(대곡리방향)</h3>
+							</div>
+							<div class="etc">
+								<div>
+									<span class="cGray">도착정보 없음(일 90회 운행)</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //대체 버스 안내 -->
+
+		<!-- 승차 반복알림 설정 알럿 -->
+		<div id="layerRepeatAlert" class="layerPopup">
+			<div class="layerWrap typeBot layerGoNotice">
+				<h4>하차알림 종료</h4>
+				<div class="layerBody">
+					<div class="pGroup">
+						<p>
+							하차알림을 포함한 <br />
+							실시간 안내를 종료합니다.
+						</p>
+					</div>
+					<div class="twins">
+						<button type="button" class="button whiteLine">취소</button>
+						<button type="button" class="button blue" onclick="layerAlert.open('layerAlert');">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //승차 반복알림 설정 알럿 -->
+		<!-- //레이어 -->
+	</div>
+</div>
+</body>
+</html>

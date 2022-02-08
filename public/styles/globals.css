@@ -159,9 +159,11 @@ table td { vertical-align: middle;}
 .invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 .ls0 { letter-spacing: 0;}
 
-
 /* 마진 */
 .mt8 { margin-top: 0.8rem;}
+
+/* 색상 */
+.cBlue { color: #6684EA;}
 
 /* Split 아이콘 */
 .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
@@ -336,7 +338,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerPopup.show { opacity: 1;}
 .layerPopup.show .layerWrap { transform: translateY(0);}
 
-.layerAlert { display: none; position: fixed; z-index: 300; right: 0; bottom: 0; left: 0; opacity: 0; padding: 0 2rem 3.7rem; text-align: center; transition: opacity .3s;}
+.layerAlert { display: none; position: fixed; z-index: 310; right: 0; bottom: 0; left: 0; opacity: 0; padding: 0 2rem 3.7rem; text-align: center; transition: opacity .3s;}
 .layerAlert .alertWrap { display: flex; align-items: center; justify-content: center; min-height: 4.8rem; color: #fff; background-color: #111;}
 .layerAlert.alertWrap p { font-size: 1.6rem; font-weight: 700;}
 .layerAlert.ready { display: block;}
@@ -782,6 +784,20 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerGoNotice .calendarBody .buttonFlex { margin-top: 2.4rem;}
 .layerGoNotice .calendarBody .buttonFlex .button.active { color: #fff; background-color: #6684EA;}
 
+/* UI-SJN-40-007L */
+.layerReplace .dispatchTil { display: flex; align-items: center; justify-content: flex-end; height: 4.4rem;}
+.layerReplace .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
+.layerReplace .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
+.layerReplace .replaceList li { display: flex; align-items: center; padding: 1.2rem 0; border-top: 1px solid #F4F5F7;}
+.layerReplace .replaceList li .title { display: flex; align-items: center; flex: 1;}
+.layerReplace .replaceList li .title span { width: 3rem;}
+.layerReplace .replaceList li .title .name { flex: 1; margin-left: 0.8rem; font-size: 1.8rem; text-align: left;}
+.layerReplace .replaceList li .etc { display: flex; align-items: flex-end; flex-direction: column; width: 17rem;}
+.layerReplace .replaceList li .etc .cGray { color: #777;}
+.layerReplace .replaceList li .etc .cWood { color: #D69630;}
+.layerReplace .replaceList li .etc span { font-size: 1.4rem;}
+.layerReplace .replaceList li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.layerReplace .replaceList li .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
 /* *-모음
 **********************************************/
@@ -1003,7 +1019,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-news .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .items-news .empty p { position: relative; font-size: 1.6rem; color: #777;}
 .items-news .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
-
 
 .items-files { margin-top: 2.4rem;}
 .items-files li a { display: flex; align-items: center; height: 4rem; font-size: 1.4rem; color: #555;}

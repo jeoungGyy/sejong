@@ -513,7 +513,7 @@ span.M { background-color: #FD2020;}
 .map .goNotice .busHead >div span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .goNotice .busHead >div span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .map .goNotice .geiInOutArea { margin-bottom: -2rem;}
-.map .goNotice .geiInNotice { padding: 0.8rem 2rem;}
+.map .goNotice .geiInNotice { padding: 0.8rem 2rem 1.6rem;}
 .map .goNotice .geiInNotice .head { display: flex; align-items: center; justify-content: space-between; height: 3.6rem;}
 .map .goNotice .geiInNotice .head h4 { font-size: 1.6rem; color: #6684EA;}
 .map .goNotice .geiInNotice .head .repeatBody i { margin-top: -0.3rem; vertical-align: middle; background-position: -18rem -4rem;}
@@ -536,6 +536,7 @@ span.M { background-color: #FD2020;}
 .map .goNotice .getOutNotice .getOutList li { display: flex; align-items: center; position: relative;}
 .map .goNotice .getOutNotice .getOutList li::after { content: ''; position: absolute; left: 4rem; top: 0; width: 0.4rem; height: 100%; background-color: #EAEDF2;}
 .map .goNotice .getOutNotice .getOutList li:first-child .getOutBody { padding-top: 0;}
+.map .goNotice .getOutNotice .getOutList li:first-child .icon .getInArrow { top: 0;}
 .map .goNotice .getOutNotice .getOutList li .icon { width: 4rem;}
 .map .goNotice .getOutNotice .getOutList li .getOutBody { display: flex; align-items: center; flex: 1; padding: 1rem 2rem 1rem 3rem;}
 .map .goNotice .getOutNotice .getOutList li .getOutBody .name { font-size: 1.6rem; font-weight: 700;}
@@ -544,10 +545,54 @@ span.M { background-color: #FD2020;}
 .map .goNotice .getOutNotice .getOutList li .getOutBody .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem; font-size: 1.6rem;}
 .map .goNotice .getOutNotice .getOutList li .getOutBody .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.6rem; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
 .map .goNotice .getOutNotice .getOutList li .getOutBody .title { flex: 1;}
-.map .goNotice .getOutNotice .getOutList li .icon .getInArrow { display: flex; align-items: center; justify-content: center; position: absolute; left: 2.4rem; top: 0; z-index: 1; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
+.map .goNotice .getOutNotice .getOutList li .icon .getInArrow { display: flex; align-items: center; justify-content: center; position: absolute; left: 2.4rem; top: 1.2rem; z-index: 1; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
 .map .goNotice .getOutNotice .getOutList li .icon .general { display: block; position: absolute; left: 3.4rem; top: 1.6rem; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover;}
 .map .goNotice .getOutNotice .getOutList li ~ li .getOutBody { border-top: 1px solid #F4F5F7;}
 
+/* UI-SJN-40-007L */
+.map .gotOff .getOffHead { padding: 0.8rem 2rem 2.4rem;}
+.map .gotOff .getOffHead .infomation span:first-child { font-size: 1.8rem;}
+.map .gotOff .getOffHead .infomation span:last-child { font-size: 1.6rem;}
+.map .gotOff .getOffHead .infomation span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem; font-size: 1.6rem;}
+.map .gotOff .getOffHead .infomation span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.2rem; width: 0.1rem; height: 1.6rem; background-color: #e1e1e1;}
+.map .gotOff .getOffHead p { margin-top: 0.4rem; font-size: 1.4rem; color: #555;}
+.map .gotOff .getOffHead .button { margin-top: 1.6rem;}
+.map .gotOff .getOutNotice { padding-top: 0.8rem;}
+.map .gotOff .getOutNotice .sms { display: flex; align-items: center; justify-content: flex-end; height: 4.4rem; padding-right: 2rem;}
+.map .gotOff .getOutNotice .sms .sendBtn { font-size: 1.4rem; color: #6684EA;}
+.map .gotOff .getOutNotice .sms .sendBtn i { margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background-position: -2.4rem -14.4rem;}
+.map .gotOff .getOutNotice .getOutList { margin-top: 1.2rem;}
+.map .gotOff .getOutNotice .getOutList >li { display: flex; position: relative;}
+.map .gotOff .getOutNotice .getOutList >li::after { content: ''; position: absolute; left: 7rem; top: 0; width: 0.4rem; height: 100%; background-color: #EAEDF2;}
+.map .gotOff .getOutNotice .getOutList >li:first-child .getOutBody { padding-top: 0;}
+.map .gotOff .getOutNotice .getOutList >li:first-child .icon .getInArrow { top: 0;}
+.map .gotOff .getOutNotice .getOutList >li:first-child .getOutTime { padding-top: 0;}
+.map .gotOff .getOutNotice .getOutList >li .getOutTime { width: 5rem; padding: 1rem 0 0 1.6rem; font-size: 1.4rem; color: #555;}
+.map .gotOff .getOutNotice .getOutList >li .icon { width: 2.2rem;}
+.map .gotOff .getOutNotice .getOutList >li .icon .getInArrow { display: flex; align-items: center; justify-content: center; position: absolute; left: 5.2rem; top: 1.2rem; z-index: 1; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
+.map .gotOff .getOutNotice .getOutList >li .icon .general { display: block; position: absolute; left: 6.5rem; top: 1.6rem; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody { flex: 1; padding: 1.2rem 2rem 1.2rem 3rem; border-bottom: 1px solid #F4F5F7;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody .title .name { font-size: 1.6rem; font-weight: 700;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody .title .etc { margin-top: 0.4rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody .etc span { font-size: 1.4rem; color: #555; letter-spacing: 0;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem; font-size: 1.6rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutBody .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.6rem; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo { margin-top: 0.4rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead { display: flex; align-items: center;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead .name { margin-left: 0.8rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead >div { margin-left: 0.8rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead >div span { font-size: 1.6rem; font-weight: 700;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead >div span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem; font-size: 1.6rem;}
+.map .gotOff .getOutNotice .getOutList >li .getOutInfo .busHead >div span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.6rem; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.map .gotOff .getOutNotice .getOutList >li ul li { padding: 0.8rem 0;}
+.map .gotOff .getOutNotice .getOutList >li ul li ~ li { border-top: 1px solid #F4F5F7;}
+.map .gotOff .getOutNotice .getOutList >li ul li >p { margin-top: 0.4rem; font-size: 1.4rem; color: #555;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn { display: flex; align-items: center; position: relative; height: 3.2rem; margin-top: 0.8rem; padding: 0 3.2rem 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #F4F5F7;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn::after { content: ''; position: absolute; right: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed { display: table; table-layout: fixed; width: 100%;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed span { display: table-cell; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed b { color: #111;}
+.map .gotOff .getOutNotice .getOutList >li ul li:last-child { padding-bottom: 0;}
 
 /* UI-SJN-60-004L */
 .map .listArea { flex: 1; overflow-x: hidden; overflow-y: auto; padding: 0 0 4rem;}
