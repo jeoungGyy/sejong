@@ -514,13 +514,7 @@ const parkingTip = {
 				if(e.target.classList == '' || e.target.classList.contains('mapMenuBody') || e.target.classList.contains('mapMenuLayer') || e.target.classList.contains('btn')) {
 					return;
 				} else {
-					mapMenuLayer.classList.remove('show');
-					mapInfoLayer.classList.remove('open');
-					location.classList.remove('parkingDefault');
-
-					setTimeout(()=>{
-						mapMenuLayer.classList.remove('ready');
-					},300);
+					parkingTip.close();
 				}
 			});
 			parkingTip.winClose = true;
@@ -550,6 +544,19 @@ const parkingTip = {
 				},500);
 			},500);
 		});
+	},
+	close : () => {
+		const mapMenuLayer = document.querySelector(".mapMenuLayer");
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		const location = document.querySelector(".location");
+
+		mapMenuLayer.classList.remove('show');
+		mapInfoLayer.classList.remove('open');
+		location.classList.remove('parkingDefault');
+
+		setTimeout(()=>{
+			mapMenuLayer.classList.remove('ready');
+		},300);
 	}
 }
 

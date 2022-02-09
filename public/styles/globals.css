@@ -1415,7 +1415,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-term >li li { margin-top: 1.6rem; line-height: 2.3rem;}
 .items-term .bletList >li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
 .items-term .bletList >li:first-child { margin-top: 2rem;}
-.items-term .bletList >li::after { content: ''; position: absolute; left: 0.6rem; top: 0.8rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.items-term .bletList >li::after { content: ''; position: absolute; left: 0.6rem; top: 0.9rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 
 .items-faq { margin-top: 1.6rem;}
 .items-faq li .accordionTarget { overflow: hidden; max-height: 0; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
