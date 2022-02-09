@@ -173,6 +173,8 @@ body { --vh: 1px;}
 .map .mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 14.8rem; height: 14.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/0.975rem 10.15rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
 .map .mapIcons .gesture p { font-size: 1.4rem; color: #fff; text-align: center; line-height: 2rem;}
 .map .mapIcons .gesture.hide { opacity: 0; z-index: -1;}
+.map .mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
+.map .mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
 
 .map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
 .map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
