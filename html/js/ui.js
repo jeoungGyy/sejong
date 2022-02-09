@@ -528,26 +528,24 @@ const parkingTip = {
 			parkingTip.winClose = true;
 		}
 
-		_this.addEventListener('click', ()=>{
+		_this.addEventListener('click', (event)=>{
 			let _target = event.currentTarget.getBoundingClientRect();
 
 			let mapMenuLayerWidth = mapMenuLayer.clientWidth;
 			let mapMenuLayerHeight = mapMenuLayer.clientHeight;
 			
-			let top = _target.top - (mapMenuLayerWidth/2 - 15);
-			let left = _target.left - (mapMenuLayerHeight/2 - 16);
-
 			mapMenuLayer.classList.remove('show');
 			mapMenuLayer.classList.remove('ready');
 			mapInfoLayer.classList.remove('open');
 
 			setTimeout(()=>{
+				let top = _target.top - (mapMenuLayerWidth/2 - 15);
+				let left = _target.left - (mapMenuLayerHeight/2 - 16);
+				mapMenuLayer.style.cssText = `left: ${left}px; top: ${top}px;`
+				
 				mapMenuLayer.classList.add('ready');
 				location.classList.add('parkingDefault');
-				mapMenuLayer.style.cssText = `left: ${left}px; top: ${top}px;`
-
 				mapInfoLayer.classList.add('open');
-
 				setTimeout(()=>{
 					mapMenuLayer.classList.add('show');
 					mapMenuLayer.focus();

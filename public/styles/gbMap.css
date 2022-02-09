@@ -352,7 +352,7 @@ span.M { background-color: #FD2020;}
 
 .map .mapMenuLayer { position: absolute; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .3s ease-in-out;}
 .map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
-.map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
+.map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
 .map .mapMenuLayer .mapMenuBody ul li span { display: block;}
 .map .mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
