@@ -551,7 +551,7 @@ const parkingTip = {
 				setTimeout(()=>{
 					mapMenuLayer.classList.add('show');
 					mapMenuLayer.focus();
-				},200);
+				},500);
 			},500);
 		});
 	}
