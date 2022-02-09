@@ -509,8 +509,6 @@ const parkingTip = {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const location = document.querySelector(".location");
 
-	
-
 		if(parkingTip.winClose === false) {
 			window.addEventListener('click', (e)=>{
 				if(e.target.classList == '' || e.target.classList.contains('mapMenuBody') || e.target.classList.contains('mapMenuLayer') || e.target.classList.contains('btn')) {

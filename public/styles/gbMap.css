@@ -350,7 +350,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.map .mapMenuLayer { position: absolute; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .3s ease-in-out;}
+.map .mapMenuLayer { position: absolute; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .2s ease-in-out;}
 .map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
 .map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
 .map .mapMenuLayer .mapMenuBody ul li span { display: block;}
@@ -358,12 +358,12 @@ span.M { background-color: #FD2020;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { position: relative; z-index: 1; width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -7rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu3.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { margin: 0 3.2rem 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { position: relative; z-index: 1; margin: 0 3.2rem 0 0;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2rem 0 0 0;}
