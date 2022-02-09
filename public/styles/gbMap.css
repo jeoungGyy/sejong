@@ -8,6 +8,7 @@ body { --vh: 1px;}
 .map .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
 .map .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
 .map .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
+.map .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));}
 
 .map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
@@ -92,8 +93,9 @@ body { --vh: 1px;}
 .map .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
 .map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
-.map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
-.map .mapIcons .location.default.noHeight { transform: translateY(calc(100% - 39rem));}
+#root .map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
+#root .map .mapIcons .location.parkingDefault { transform: translateY(calc(100% - 38rem));}
+/* .map .mapIcons .location.default.noHeight { transform: translateY(calc(100% - 39rem));} */
 .map .mapIcons .transit { position: absolute;}
 .map .mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
 .map .mapIcons .transit span.num1 { background: url(../image/map/ico_transit1.png) no-repeat center/cover;}
@@ -348,7 +350,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.map .mapMenuLayer { display: none; position: absolute; z-index: 90; width: 24rem; height: 24rem;}
+.map .mapMenuLayer { position: absolute; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .3s ease-in-out;}
 .map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
 .map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center; background-color: lawngreen;}
 .map .mapMenuLayer .mapMenuBody ul li span { display: block;}
@@ -361,18 +363,20 @@ span.M { background-color: #FD2020;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { margin: 0 2.5rem 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { margin: 0 3.2rem 0 0;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2.7rem 0 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2rem 0 0 0;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 4.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu6.png) no-repeat center/cover;}
 .map .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2.7rem 0 0 0;}
+.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
 .map .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
 .map .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
-.map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; height: 1.8rem; font-size: 1.3rem;}
+.map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; min-height: 1.8rem; font-size: 1.3rem;}
 .map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
-.map .mapMenuLayer.show { display: block;}
+.map .mapMenuLayer.ready { z-index: 90; transform: scale(0);}
+.map .mapMenuLayer.show { opacity: 1; transform: scale(1);}
+/* .map .mapMenuLayer.show { opacity: 1; transform: scale(1) translate(calc(-50% + 1.6rem), calc(-50% + 1.6rem));} */
 
 /* UI-SJN-30-007L */
 .map .mapInfoLayer .pTransportation li { margin: 0 -2rem; padding: 1.2rem 2rem; border-bottom: 1px solid #F4F5F7;}
@@ -618,7 +622,7 @@ span.M { background-color: #FD2020;}
 .map .transformBody .head { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
 .map .transformBody .head h3 { font-size: 1.8rem;}
 .map .transformBody .head span { margin-left: 0.8rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #777; letter-spacing: 0;}
-.map .transformBody .transformNavList { overflow: hidden; padding: 0 2rem;}
+.map .transformBody .transformNavList { overflow: hidden; margin-top: 0.8rem; padding: 0 2rem;}
 .map .transformBody .transformNavList li { width: 5.6rem;}
 .map .transformBody .transformNavList li button { display: block; align-items: center; justify-content: center; width: 100%;}
 .map .transformBody .transformNavList li button .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; border: 1px solid #F4F5F7;}

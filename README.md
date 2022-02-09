@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-09
+- UI-SJN-21-003L 수정 - 경유지 마커 수정
+
 ### 02-08
 - UI-SJN-07-001P 수정 - 날씨 그래프 다자인 이미지 샘플 추가
 - UI-SJN-40-006L 등록

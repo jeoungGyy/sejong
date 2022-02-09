@@ -114,6 +114,7 @@ const mapInfo = {
 		if(act === 'close') {
 			mapInfoLayer.classList.remove('up', 'open');
 			btnView.classList.remove('up', 'open');
+			location && location.classList.remove('default');
 			mapInfo.showEl = false;
 		}
 		mapInfoLayer.style.setProperty('--vh', '0px');
@@ -121,6 +122,17 @@ const mapInfo = {
 }
 
 const maplnb = {
+	startX: null,
+	endX: null,
+	showEl: false,
+	touch : () => {
+		if(!tooltip.showEl) {
+			const startTouch = document.querySelector(".lnbBody");
+			startTouch.addEventListener('touchstart', maplnb.start);
+			startTouch.addEventListener('touchmove', maplnb.move);
+			startTouch.addEventListener('touchend', maplnb.end);
+		}
+	},
 	open : () => {
 		const lnb = document.querySelector(".lnb");
 		const mapSearch = document.querySelector(".mapSearch");
@@ -140,6 +152,20 @@ const maplnb = {
 		btnPlace.addEventListener('click', ()=>{
 			if(mapSearch.classList.contains('lnbShow')) maplnb.close();
 		});
+		maplnb.showEl = true;
+		maplnb.touch();
+	},
+	start : (event) => {
+		// event.preventDefault()
+		maplnb.startX = event.touches[0].pageX;
+	},
+	end : (event) => {
+		maplnb.endX = event.changedTouches[0].pageX;
+		if(maplnb.startX <= maplnb.endX) {
+			if(maplnb.endX - maplnb.startX > 30) {
+				maplnb.close();
+			}
+		}
 	},
 	close : () => {
 		const lnb = document.querySelector(".lnb");
@@ -178,7 +204,7 @@ const layerPopup = {
 		if(!layerPopup.obj[id]) {
 			layerPopup.init(id);
 			let layer = layerPopup.obj[id];
-			layer.wrap.addEventListener('click', ()=>{
+			layer.wrap.addEventListener('click', (e)=>{
 				if(event.target.classList.contains('layerPopup')) layerPopup.close(id);
 			});
 		}
@@ -279,7 +305,6 @@ const tooltip = {
 					break;
 			}
 			
-
 			tooltip.showEl.addEventListener('click',()=>{
 				event.stopPropagation();
 			});
@@ -291,7 +316,7 @@ const tooltip = {
 		}
 
 		if(tooltip.winClose === false) {
-			window.addEventListener('click', ()=>{
+			window.addEventListener('click', (e)=>{
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			});
 			window.addEventListener('resize', ()=>{
@@ -464,6 +489,71 @@ const tab = {
 	reset : () => {
 		tab.obj = {};
 		tab.active();
+	}
+}
+
+const parkingTip = {
+	winClose : false,
+	showEl : null,
+	idx : null,
+	open : () => {
+		const btnParking = document.querySelectorAll(".btnParking");
+		if(accordion.idx == null) {
+			[].forEach.call(btnParking, (_this, idx)=>{
+				parkingTip.set(_this, idx);
+			});
+		}
+	},
+	set : (_this, idx) => {
+		const mapMenuLayer = document.querySelector(".mapMenuLayer");
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		const location = document.querySelector(".location");
+
+	
+
+		if(parkingTip.winClose === false) {
+			window.addEventListener('click', (e)=>{
+				if(e.target.classList == '' || e.target.classList.contains('mapMenuBody') || e.target.classList.contains('mapMenuLayer') || e.target.classList.contains('btn')) {
+					return;
+				} else {
+					mapMenuLayer.classList.remove('show');
+					mapInfoLayer.classList.remove('open');
+					location.classList.remove('parkingDefault');
+
+					setTimeout(()=>{
+						mapMenuLayer.classList.remove('ready');
+					},300);
+				}
+			});
+			parkingTip.winClose = true;
+		}
+
+		_this.addEventListener('click', ()=>{
+			let _target = event.currentTarget.getBoundingClientRect();
+
+			let mapMenuLayerWidth = mapMenuLayer.clientWidth;
+			let mapMenuLayerHeight = mapMenuLayer.clientHeight;
+			
+			let top = _target.top - (mapMenuLayerWidth/2 - 15);
+			let left = _target.left - (mapMenuLayerHeight/2 - 16);
+
+			mapMenuLayer.classList.remove('show');
+			mapMenuLayer.classList.remove('ready');
+			mapInfoLayer.classList.remove('open');
+
+			setTimeout(()=>{
+				mapMenuLayer.classList.add('ready');
+				location.classList.add('parkingDefault');
+				mapMenuLayer.style.cssText = `left: ${left}px; top: ${top}px;`
+
+				mapInfoLayer.classList.add('open');
+
+				setTimeout(()=>{
+					mapMenuLayer.classList.add('show');
+					mapMenuLayer.focus();
+				},200);
+			},500);
+		});
 	}
 }
 
@@ -661,5 +751,6 @@ function _lazyLoad() {
 	// mapInfo.set();
 	accordion.active();
 	tab.active();
+	parkingTip.open();
 	openCurrAccordion();
 }
