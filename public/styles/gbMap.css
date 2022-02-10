@@ -133,9 +133,8 @@ body { --vh: 1px;}
 .map .mapIcons .commIco24 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: absolute; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
 .map .mapIcons .streetLamp .lampBody { display: flex; align-items: center; justify-content: center; position: absolute; height: 4rem; padding: 0 1.2rem 0 0.8rem; border: 1px solid #6684EA; background-color: #fff; border-radius: 2rem;}
 .map .mapIcons .streetLamp .lampBody i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: #838FAC url(../image/common/split_48.png) no-repeat -28.8rem -4.8rem/48rem 19.2rem; border-radius: 50%;}
-/* .map .mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -1.2rem; width: 1.4rem; height: 1.2rem; margin-left: -0.7rem; background: url(../image/map/ico_edge_down.png) no-repeat center/cover;} */
 .map .mapIcons .streetLamp .lampBody::before { content: ''; position: absolute; left: 50%; bottom: -3.1rem; width: 0; height: 0; margin-left: -0.8rem; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 15px solid #6684EA; border-bottom: 15px solid transparent;}
-.map .mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -2.7rem; width: 0; height: 0; margin-left: -0.7rem; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 14px solid #fff; border-bottom: 14px solid transparent;}
+.map .mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -2.8rem; width: 0; height: 0; margin-left: -0.7rem; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 14px solid #fff; border-bottom: 14px solid transparent;}
 .map .mapIcons .evCharge .evChargeIco.reCharge i { background-color: #6684EA; background-position: -14.4rem -9.6rem;}
 .map .mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
 .map .mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
