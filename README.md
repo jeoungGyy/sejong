@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-10
+- UI-SJN-40-004L 수정 - 선택된 버스 배경 움직임 추가
+
 ### 02-09
 - UI-SJN-21-003L 수정 - 경유지 마커 수정
 

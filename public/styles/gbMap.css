@@ -162,8 +162,16 @@ body { --vh: 1px;}
 .map .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
 .map .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; z-index: 3; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
 .map .mapIcons .targer { position: absolute; z-index: 1; width: 2.175rem; height: 2.4rem;}
-.map .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%;}
+.map .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 2s linear infinite;}
 .map .mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
+@keyframes lds-scale {
+  0% { transform: scale(0); opacity: 1;}
+  30% { transform: scale(0.8); opacity: 1;}
+  35% { transform: scale(1); opacity: 1;}
+  40% { transform: scale(1); opacity: 1;}
+  60% { transform: scale(1); opacity: 0;}
+  100% { transform: scale(1); opacity: 0;}
+}
 .map .mapIcons .busStop .busIco.B { background-position-y: 0;}
 .map .mapIcons .busStop .busIco.G { background-position-y: -2.5rem;}
 .map .mapIcons .busStop .busIco.Y { background-position-y: -5rem;}
