@@ -21,7 +21,7 @@
 					<!-- 기타 아이콘들 -->
 					<div class="mapIcons">
 						<button type="button" class="btnPin"><i>핀</i></button>
-						<button type="button" class="btnBikePin"><i>공기주입기</i></button>
+						<button type="button" class="btnBikePin"><i>공기주입기</i></button> <!-- 활성화 시 active 클래스 추가 -->
 						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
 
 						<!-- 마커 -->
@@ -36,8 +36,14 @@
 							<button type="button" class="commIco24 bikeIco" style="left: 15rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i class="split24">해밀마을세종마스터힐스 개인이동수단</i></button>
 							<button type="button" class="commIco24 bikeIco" style="left: 20rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i class="split24">해밀마을세종마스터힐스 개인이동수단</i></button>
 							<button type="button" class="commIco24 bikeIco" style="left: 25rem; top: 15rem;" onclick="layerPopup.open('layerBikeCharge');"><i class="split24">해밀마을세종마스터힐스 개인이동수단</i></button>
+							
+							<div class="bikeAir" style="left: 10rem; top: 25rem;">
+								<i></i><span>호수공원(어진동638)</span>
+							</div>
 						</div>
 						<!-- //개인이동수단 -->
+
+						
 
 						<div class="btnView">
 							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
