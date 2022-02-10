@@ -54,6 +54,8 @@
 
 					<!-- 기타 아이콘들 -->
 					<div class="mapIcons">
+						<button type="button" class="btnPin"><i>핀</i></button>
+
 						<div class="busStop">
 							<button type="button" class="commIco24 busStopIco" style="left: 10rem; top: 15rem;" title="버스 정류소"><i class="split24">오송역</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
 							<button type="button" class="commIco24 busStopIco" style="left: 15rem; top: 15rem;" title="버스 정류소"><i class="split24">누리리</i></button>
@@ -63,6 +65,34 @@
 							<button type="button" class="busIco R" style="left: 25rem; top: 20rem;" title="급행 버스"><i>B3</i></button>
 							<button type="button" class="busIco M" style="left: 30rem; top: 20rem;" title="광역 버스"><i>B4</i></button>
 						</div>
+
+						<div class="reportSet">
+							<button type="button" class="reportIcon safetyReport" style="left: 10rem; top: 15rem;">
+								<i class="split24"></i><span>안전신고</span>
+							</button>
+							<button type="button" class="reportIcon safetyReport" style="left: 20rem; top: 15rem;">
+								<i class="split24"></i><span>안전신고</span>
+							</button>
+							<button type="button" class="reportIcon complaint" style="left: 10rem; top: 25rem;">
+								<i class="split24"></i><span>불편신고</span>
+							</button>
+							<button type="button" class="reportIcon complaint" style="left: 20rem; top: 25rem;">
+								<i class="split24"></i><span>불편신고</span>
+							</button>
+						</div>
+
+						<div class="btnView">
+							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+						</div>
+
+						<div class="location">
+							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+							<div class="scaleBtn">
+								<button type="button" class="scaleUp"><i>확대</i></button>
+								<button type="button" class="scaleDown"><i>축소</i></button>
+							</div>
+						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
 					
@@ -71,104 +101,68 @@
 						<div class="mapIHead">
 							<button type="button" class="btnMapInfo">정보영역</button>
 
-							<div class="busHead">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
+							<div class="reportHead">
+								<div class="guide">
+									<i class="split20"></i> <span>공개된 신고내용만 표시됩니다.</span>
 								</div>
-								<div class="infomation">
-									<span>세종</span>
-									<span>오송역 ↔ 반석역</span>
-								</div>
-								<div class="etc">
-									<div class="operationBody">
-										<span>첫차 05:00</span>
-										<span>막차 00:30</span>
-										<span>배차간격 20분</span>
-									</div>
-									<button type="button" class="operationBtn" onclick="layerPopup.open('serviceInfo');"><i class="split20"></i>운행정보</button>
-								</div>
-							</div>
-							<div class="route">
-								<div class="allRoute">
-									<button type="button" class="allRouteBtn">전체노선</button>
-									<b class="cBlue">6대 운행 중</b>
-								</div>
-								<div class="dispatchTil">
-									<span class="dTime">오후 12:23</span>
-									<button type="button" class="refresh"><i></i>15</button>
-								</div>
+								<button type="button" class="reportBtn">
+									<i class="split24"></i> <span>신고하기</span>
+								</button>
 							</div>
 						</div>
 						
-						<div class="busRouteArea">
-							<ul class="busRouteList">
+						<div class="reportArea">
+							<ul class="reportList">
 								<li>
-									<div class="routeBody">
-										<div class="head">
-											<div class="station">
-												<button type="button" class="favorite"><i>즐겨찾기</i></button>
-												<h4>오송역</h4>
+									<div class="reportBody">
+										<a href="#">
+											<h3>너무 맛있어서 신고합니다</h3>
+											<p class="address">세종특별자치시 세종로 1328</p>
+											<div class="etc">
+												<span class="reDate">2020.2.23</span>
+												<span class="box safetyReport">안전신고</span>
+												<span class="box declaration">신고</span>
 											</div>
-											<span class="sDate">13-012</span>
-										</div>
-										<div class="licensePlate">
-											<span>세종70자0343</span>
+										</a>
+										<div class="control">
+											<button type="button" class="controlBtn">삭제</button>
 										</div>
 									</div>
-									<div class="icon">
-										<i class="general">일반 노선</i>
-									</div>
+									<figure>
+										<img src="../../public/image/temp/temp030.png" alt="">
+									</figure>
 								</li>
 								<li>
-									<div class="routeBody">
-										<div class="head">
-											<div class="station">
-												<button type="button" class="favorite active"><i>즐겨찾기</i></button>
-												<h4>누리리</h4>
+									<div class="reportBody">
+										<a href="#">
+											<h3>너무 맛있어서 신고합니다</h3>
+											<p class="address">세종특별자치시 세종로 1328</p>
+											<div class="etc">
+												<span class="reDate">2020.2.23</span>
+												<span class="box complaint">불편신고</span>
+												<span class="box receipt">접수</span>
 											</div>
-											<span class="sDate">13-012</span>
-										</div>
-										<div class="licensePlate">
-											<span>세종70자0343</span>
-										</div>
+										</a>
 									</div>
-									<div class="icon">
-										<i class="general">일반 노선</i>
-									</div>
+									<figure>
+										<img src="../../public/image/temp/temp030.png" alt="">
+									</figure>
 								</li>
 								<li>
-									<div class="routeBody">
-										<div class="head">
-											<div class="station">
-												<button type="button" class="favorite"><i>즐겨찾기</i></button>
-												<h4>세종충남대학교병원</h4>
+									<div class="reportBody">
+										<a href="#">
+											<h3>너무 맛있어서 신고합니다</h3>
+											<p class="address">세종특별자치시 세종로 1328</p>
+											<div class="etc">
+												<span class="reDate">2020.2.23</span>
+												<span class="box complaint">불편신고</span>
+												<span class="box complete">완료</span>
 											</div>
-											<span class="sDate">13-012</span>
-										</div>
+										</a>
 									</div>
-									<div class="icon">
-										<i class="bathchair">휠체어 좌석 보유</i>
-									</div>
-								</li>
-								<li>
-									<div class="routeBody">
-										<div class="head">
-											<div class="station">
-												<button type="button" class="favorite"><i>즐겨찾기</i></button>
-												<h4>세종충남대학교병원</h4>
-											</div>
-											<span class="sDate">13-012</span>
-										</div>
-									</div>
-									<div class="icon">
-										<i class="bathchair">휠체어 좌석 보유</i>
-									</div>
+									<figure>
+										<img src="../../public/image/temp/temp030.png" alt="">
+									</figure>
 								</li>
 							</ul>
 						</div>
