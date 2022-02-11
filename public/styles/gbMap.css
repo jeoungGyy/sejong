@@ -777,13 +777,11 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
 .map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
 
-.map .mapInfoLayer .safeServiceWrap { }
 .map .mapInfoLayer .safeServiceWrap .buttonArea {position:relative; display: flex; align-items: flex-start; height:10rem; padding:0.8rem 2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon {margin-right:1.6rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i {display: flex; align-items: center; justify-content: center; width:5.6rem; height:5.6rem; border:1px solid #EAEDF2; border-radius:50%; }
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i img {width:3.2rem; height:3.2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon span {display:block; margin-top:0.4rem; font-size:1.6rem; color:#555; line-height:2rem;}
-.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active {}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active i {border:2px solid #FF940E;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus {width:5.6rem; height:5.6rem; border-radius:50%; background-color:#FF940E;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus i {display:block; text-indent:-9999rem; background:url(../image/map/icon_wh_plus.png) no-repeat center/3.2rem;}
@@ -871,7 +869,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .moveData .lineSelector .pointer {position:absolute; top:50%; width:2.4rem; height:2.4rem; margin-top:-1.2rem; text-indent:-9999rem; border:2px solid #292D32; border-radius:50%; background-color:#fff;}
 .map .mapInfoLayer .moveData .addressArea {margin-top:1.6rem; height:5.2rem; padding:1.6rem 2rem; font-size:1.6rem; line-height:1.8rem;}
 
-
 /* UI-SJN-50-006L */
 .map .emergencyCall {height:calc(100vh - 8rem); text-align: center; margin: -5.6rem 0 -2rem; display: flex; align-items: center; justify-content: center; }
 .map .emergencyCall .title {font-size:2.1rem; line-height:2.8rem;}
@@ -920,7 +917,6 @@ span.M { background-color: #FD2020;}
 .map .uploadLocation .buttonArea .button {width:100%; height:4.8rem; box-shadow:none; border-radius:2.4rem;}
 .map .uploadLocation .buttonArea .button:last-child { margin-left: 0.8rem;}
 
-.map .chkImg {}
 .map .chkImg label { min-height:2.4rem; display: block; overflow: hidden; position: relative; cursor: pointer;  padding-left:4rem; font-weight:700;}
 .map .chkImg label span {display:block; font-weight:normal; margin-top:0.4rem;}
 .map .chkImg label::after { content: ''; position: absolute; left: 0; top:50%; width: 2.4rem; height: 2.4rem; margin-top:-1.2rem;background:#EAEDF2 url(../image/map/ico_24_check.png) no-repeat center/1.2rem auto; border-radius:0.4rem;  transition: background-color .2s ease-in-out;}

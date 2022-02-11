@@ -449,8 +449,6 @@ const parkingTip = {
 			let mapMenuLayerWidth = parkingTip.showEl.clientWidth;
 			let mapMenuLayerHeight = parkingTip.showEl.clientHeight;
 
-			console.log(mapMenuLayerWidth)
-			
 			parkingTip.showEl.classList.remove('show', 'ready');
 
 			setTimeout(()=>{
