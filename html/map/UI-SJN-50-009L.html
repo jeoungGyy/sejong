@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 세종 안심서비스 헤더 -->
+		<script src="../include/header_map_prev.js"></script>
+		<!-- //공통: 세종 안심서비스 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">안심장소</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer open">
+						<button type="button" class="btnMapInfo">정보영역</button>
+
+						<div class="uploadLocation">
+							<div class="topArea">
+								<p class="title">내 안심장소</p>
+								<button type="button" class="buttonModify">편집</button>
+							</div>
+
+							<div class="myList">
+								<ul>
+									<li>
+										<span class="home">우리집</span>
+										<button type="button" class="buttonUpload">등록하기</button>
+									</li>
+									<li>
+										<span class="school">학교</span>
+										<button type="button" class="buttonUpload">등록하기</button>
+									</li>
+									<li>
+										<span class="company">세종특별자치시 나성로 133-9 </span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="myBlock">
+								<ul>
+									<li>
+										<span>세종특별자치시 한누리대로 328</span>
+									</li>
+									<li>
+										<button type="button" class="btnUpload">등록하기</button>
+									</li>
+									<li class="noAddress"></li>
+									<li class="noAddress"></li>
+									<li class="noAddress"></li>
+									<li class="noAddress"></li>
+								</ul>
+							</div>
+
+							<p class="psText">장소 출도착 알림은 반경 100m를 기준으로 합니다.</p>
+						</div>
+					</div>
+					<!-- //정보 영역 -->
+
+					<script>
+						mapInfo.click('sub');
+					</script>
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

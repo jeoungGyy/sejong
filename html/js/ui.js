@@ -121,68 +121,6 @@ const mapInfo = {
 	},
 }
 
-const maplnb = {
-	startX: null,
-	endX: null,
-	showEl: false,
-	touch : () => {
-		if(!tooltip.showEl) {
-			const startTouch = document.querySelector(".lnbBody");
-			startTouch.addEventListener('touchstart', maplnb.start);
-			startTouch.addEventListener('touchmove', maplnb.move);
-			startTouch.addEventListener('touchend', maplnb.end);
-		}
-	},
-	open : () => {
-		const lnb = document.querySelector(".lnb");
-		const mapSearch = document.querySelector(".mapSearch");
-		const btnPlace = document.querySelector(".btnPlace");
-		if(event !== undefined) current = event.currentTarget;
-		lnb.classList.add('ready');
-		document.querySelector('html').classList.add('scrollLock');
-
-		// let _this = event.currentTarget;
-		// _this.classList.add('ready');
-
-		setTimeout(()=>{
-			lnb.classList.add('show');
-			mapSearch.classList.add('lnbShow');
-			lnb.focus();
-		},1);
-		btnPlace.addEventListener('click', ()=>{
-			if(mapSearch.classList.contains('lnbShow')) maplnb.close();
-		});
-		maplnb.showEl = true;
-		maplnb.touch();
-	},
-	start : (event) => {
-		// event.preventDefault()
-		maplnb.startX = event.touches[0].pageX;
-	},
-	end : (event) => {
-		maplnb.endX = event.changedTouches[0].pageX;
-		if(maplnb.startX <= maplnb.endX) {
-			if(maplnb.endX - maplnb.startX > 30) {
-				maplnb.close();
-			}
-		}
-	},
-	close : () => {
-		const lnb = document.querySelector(".lnb");
-		const mapSearch = document.querySelector(".mapSearch");
-		
-		setTimeout(()=>{
-			lnb.classList.remove('show');
-			mapSearch.classList.remove('lnbShow');
-		},1);
-		setTimeout(()=>{
-			current.focus();
-			lnb.classList.remove('ready');
-			document.querySelector('html').classList.remove('scrollLock');
-		},500);
-	},
-}
-
 const layerPopup = {
 	obj : {},
 	init: (id) => {
@@ -749,7 +687,6 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 function _lazyLoad() {
   header.set();
   container.set();
-	// mapInfo.set();
 	accordion.active();
 	tab.active();
 	openCurrAccordion();

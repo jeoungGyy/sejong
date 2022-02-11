@@ -836,6 +836,9 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .reportLayer .reportReview .reportReviewList li button img { width: 100%; height: auto;}
 .reportLayer .textReview { padding: 1.6rem 2rem;}
 
+/* UI-SJN-60-001L */
+.layerLnbBody .mapChange { display: flex; align-items: center; justify-content: center;}
+.layerLnbBody .lnbLinks { display: flex; align-items: center; justify-content: center;}
 
 
 /* *-모음

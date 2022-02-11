@@ -209,31 +209,6 @@ body { --vh: 1px;}
 .map .mapIcons .deleteIco i { background-color: #fff; background-position: -36rem -14.4rem;}
 .map .mapIcons .printIco i { background-color: #fff; background-position: -33.6rem -14.4rem;}
 
-.map .lnb { display: none; position: fixed; z-index: 100; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
-.map .lnb .lnbBody { overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; position: absolute; right: 0; top: 0; bottom: 0; width: calc(100% - 6rem); background: #fff; transform: translateX(100%); transition: transform .5s;}
-.map .lnb .lnbBody h3 { display: flex; align-items: center; height: 5.4rem; font-size: 1.8rem;}
-.map .lnb .lnbBody h3 i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
-.map .lnb .lnbBody .lnbFavorite { padding: 1.1rem 2rem 1.6rem;}
-.map .lnb .lnbBody .lnbFavorite h3 i { background-position: -33.6rem -2.4rem;}
-.map .lnb .lnbBody .lnbPinned { padding: 0.8rem 2rem 1.6rem;}
-.map .lnb .lnbBody .lnbPinned h3 i { background-position: -7.2rem -9.6rem;}
-.map .lnb .lnbBody .lnbPinned .lnbAll { display: flex; align-items: center; height: 3.6rem; font-weight: 700;}
-.map .lnb .lnbBody .lnbLinks { padding: 2.2rem 2rem;}
-.map .lnb .lnbBody .lnbLinks a { display: flex; align-items: center; height: 5.6rem; font-size: 1.6rem; font-weight: 700; color: #111;}
-.map .lnb .lnbBody .lnbLinks a i { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #A9B0C1 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem; border-radius: 1rem;}
-.map .lnb .lnbBody .lnbLinks a.cctv i { background-position: -22.4rem -9.6rem;}
-.map .lnb .lnbBody .lnbLinks a.traffic i { background-position: -25.6rem -9.6rem;}
-.map .lnb .lnbBody .lnbLinks a.street i { background-position: -28.8rem -9.6rem;}
-.map .lnb .lnbBody .lnbMenu li { display: flex; align-items: center; padding: 0.8rem 0;}
-.map .lnb .lnbBody .lnbMenu li span { display: block; flex: 1; font-size: 1.6rem; color: #555;}
-.map .lnb .lnbBody .lnbMenu li >div { width: 7.4rem; margin-left: 0.5rem; text-align: right;} 
-.map .lnb .lnbBody .lnbMenu li >div button { position: relative; font-size: 1.4rem; color: #6684EA;}
-.map .lnb .lnbBody .lnbMenu li >div button ~ button { margin-left: 0.3rem; padding-left: 0.9rem;}
-.map .lnb .lnbBody .lnbMenu li >div button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .lnb.ready { display: block;}
-.map .lnb.show { opacity: 1;}
-.map .lnb.show .lnbBody { transform: translateX(0);}
-
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}
 span.G { background-color: #32BBED;}
@@ -731,6 +706,303 @@ span.M { background-color: #FD2020;}
 .map .explain-default .report .reportBtn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 4.8rem; padding: 0 2rem; background-color: #D69630;}
 .map .explain-default .report .reportBtn span { color: #fff;}
 .map .explain-default .report .reportBtn i { background-position: -24rem -4rem;}
+
+/* 윤사랑 추가 */
+/* 공통 */
+.header.map {background-color: #FF940E;}
+.header.map .mapLogo {width:10.56rem;}
+.header.map .mapLogo img {width:100%;}
+.header.map .subHeader .icoClose i {width:3.2rem; height:3.2rem; background:url(../image/map/icon_map_header_close.png) no-repeat center/cover;}
+.header.map .subHeader h2 {color:#fff;}
+.header.map .subHeader .icoPrev i {background: url(../image/common/header_prev_map_wh.png) no-repeat center/cover;}
+.header.mapSearch .subHeader .btnHeader .icoSearch { display: block; width:5.6rem; height:5.6rem;}
+.header.mapSearch .subHeader .btnHeader .icoSearch i { display: block; width:3.2rem; height:3.2rem; margin:0 auto;  background:url(../image/map/icon_map_header_search.png) no-repeat center/cover;}
+.header.mapSearch .subHeader .searchHeader {position:relative; padding-right:3rem;}
+.header.mapSearch .subHeader .searchHeader .icoDelete {position:absolute; top:50%; margin-top:-1.2rem; right:0; width:2.4rem; height:2.4rem;}
+.header.mapSearch .subHeader .searchHeader .icoDelete i {display: block; width:2rem; height:2rem; text-indent:-9999rem; background:url(../image/map/icon_map_header_delete.png) no-repeat center/cover;}
+.header.mapSearch.notSearchBtn .subHeader {padding:0 1.4rem 0 5.6rem;}
+.header.mapSearch.notSearchBtn .subHeader .searchHeader {width:100%;}
+
+.button.orange { color: #fff; background-color:#FF940E;}
+.button.red { color: #fff; background-color:#EF1746;}
+.button.white { color: #FF940E; background-color:#fff;}
+.button.darkBlue { color: #fff; background-color:#00519F;}
+.button.grayLine { color: #777; border: 1px solid #CDD0D8;}
+
+
+/* UI-SJN-50-002L */
+.map .popMessage {position:absolute; top:8.8rem; left:50%; margin-left:-12rem; width:24rem; padding-top:1.2rem; z-index:100;}
+.map .popMessage .popNum {position:absolute; top:0; left:50%; margin-left:-2rem; display:inline-block; width:4rem; height:2.4rem; text-align: center; color:#fff; border-radius:1.2rem; background-color:#FF940E; }
+.map .popMessage .popNum em {color:#fff; font-size:1.2rem; line-height:2.4rem;}
+.map .popMessage .popNum em.now {font-weight:700;}
+.map .popMessage .popCont {width:100%; padding:2rem 1.6rem; border:1px solid #FF940E; background-color:#fff; }
+.map .popMessage .popCont .title {font-weight:700;}
+.map .popMessage .popCont .text {color:#555; font-size:1.4rem; line-height:2.2rem; margin-top:0.8rem;}
+.map .popMessage .popCont .btnArea {margin-top:1.2rem; text-align: center;}
+.map .popMessage .popCont .btnArea button {display:block; width:100%; height:2.4rem;}
+.map .popMessage .popCont .btnArea button span {display:inline-block; color:#FF940E; font-weight:700; }
+.map .popMessage .popCont .btnArea button.add span {padding-left:2.4rem; background:url(../image/map/icon_plus_orange.png) no-repeat left center/2.4rem;}
+.map .popMessage .popCont .btnArea button.goLink span {padding-right:2.4rem; background:url(../image/map/icon_arrow_orange.png) no-repeat right center/2.4rem;}
+.map .popMessage .popClose {position:absolute; top:2.4rem; right:1.2rem; width:2.4rem; height:2.4rem; text-indent:-9999rem; background:url(../image/map/icon_close_bk_24.png) no-repeat center/cover; }
+
+.map .mapIcons .etcButton {position:absolute; top:11.6rem; right:1.2rem; width:4rem;}
+.map .mapIcons .etcButton button {margin-top:0.8rem; }
+.map .mapIcons .etcButton button i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
+.map .mapIcons .etcButton button i:before {content:''; }
+.map .mapIcons .etcButton button.helpCall {margin-top:0; }
+.map .mapIcons .etcButton button.helpCall i {background:#111; z-index:2;}
+.map .mapIcons .etcButton button.helpCall i:before {width:1.8rem; height:2.05rem; background: url(../image/map/ico_map_helpCall.png) no-repeat center/cover;}
+.map .mapIcons .etcButton button.helpCall span {display:inline-block; position:absolute; top:0.4rem; right:1rem; width:0; height:3.2rem; font-size:1.2rem; color:#fff; line-height:3.2rem; text-align:left; background-color:#111; border-radius:1.6rem; transition: all .3s ease-in-out;}
+.map .mapIcons .etcButton button.helpCall.active i {background-color:#FD2020;}
+.map .mapIcons .etcButton button.helpCall.active span {width:10rem; padding:0 1.2rem; z-index:1;}
+.map .mapIcons .etcButton button.roadView i:before {width:2rem; height:2.25rem; background: url(../image/map/ico_map_roadView.png) no-repeat center/cover;}
+.map .mapIcons .etcButton button.setting i:before {width:2rem; height:2rem; background: url(../image/map/ico_map_setting.png) no-repeat center/cover;}
+.map .mapIcons .etcButton button.help i:before {width:2.4rem; height:2.4rem; background: url(../image/map/ico_map_help.png) no-repeat center/cover;}
+.map .mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
+.map .mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
+.map .mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
+
+.map .mapIcons .location.easy {justify-content: left;}
+.map .mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
+.map .mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-top:4.2rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
+.map .mapIcons .location.easy .easyButton i {padding-left:2.4rem; font-size:1.4rem; color:#555;}
+.map .mapIcons .location.easy .police {margin-left:1.6rem;}
+.map .mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
+.map .mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
+.map .mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
+
+.map .mapIcons .location.easy { transform: translateY(calc(100% - 44.5rem));}
+.map .mapInfoLayer.midHeight { height: calc(35rem + var(--vh));}
+
+.map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
+.map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
+
+.map .mapInfoLayer .safeServiceWrap { }
+.map .mapInfoLayer .safeServiceWrap .buttonArea {position:relative; display: flex; align-items: flex-start; height:10rem; padding:0.8rem 2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon {margin-right:1.6rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i {display: flex; align-items: center; justify-content: center; width:5.6rem; height:5.6rem; border:1px solid #EAEDF2; border-radius:50%; }
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i img {width:3.2rem; height:3.2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon span {display:block; margin-top:0.4rem; font-size:1.6rem; color:#555; line-height:2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active {}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active i {border:2px solid #FF940E;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus {width:5.6rem; height:5.6rem; border-radius:50%; background-color:#FF940E;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus i {display:block; text-indent:-9999rem; background:url(../image/map/icon_wh_plus.png) no-repeat center/3.2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .popAlert {position:absolute; display:inline-block; padding:0.8rem 1.2rem; border:1px solid #FF940E; font-size:1.2rem; line-height:1.4rem; border-radius:2rem; background-color:#fff;}
+
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea {padding:1.7rem 0 2.1rem 0;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .topArea {display: flex; align-items: center; justify-content: space-between; height:2.4rem; padding:0 2rem;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .topArea .name {font-size:1.8rem;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .topArea .sort {display:inline-block; height:2rem; font-size:1.2rem; color:#fff; line-height:2rem; padding:0 0.4rem; margin-left:0.5rem; border-radius:1rem;background-color:#FF940E;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .topArea .text {font-size:1.4rem; color:#aaa; }
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .topArea .time {display:inline-block; width:5.4rem; height:2rem; font-size:1.2rem; color:#fff; line-height:2rem; text-align:center; margin-left:0.4rem; border-radius:1rem; background-color:#A9B0C1;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .address {font-size:1.6rem; color:#555; margin-top:0.9rem; padding:0 2rem 1.7rem;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea {display:flex; align-items:baseline; justify-content: center; margin-top:0.8rem; border-top:1px solid #F4F5F7; padding:0 1rem;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button {width:20%; height:7.8rem; }
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button i {display:block; width:2.4rem; margin:0 auto;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button i img {width:100%;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button span {display:block; font-size:1.2rem; color:#777;}
+.map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button strong {display:block; font-size:1.2rem; color:#FF940E;}
+
+
+/* UI-SJN-50-003L */
+.map .friendModify {background-color:#F4F5F7; padding:3.2rem 0;}
+.map .friendModify .addFriendList {margin-top:0.8rem; background-color:#fff; padding:2.4rem 0;}
+.map .friendModify .addFriendList ul li {position:relative; display: flex; align-items: center; justify-content: space-between; height:7.2rem; border-top:1px solid #F4F5F7; padding:0.8rem 2rem;}
+.map .friendModify .addFriendList ul li:first-child {border-top:none;}
+.map .friendModify .addFriendList ul li .list {display: flex; align-items: center;}
+.map .friendModify .addFriendList ul li .list .iconImg {width:4rem; height:4rem;}
+.map .friendModify .addFriendList ul li .list .iconImg img {width:100%;}
+.map .friendModify .addFriendList ul li .list .info {margin-left:1.2rem;}
+.map .friendModify .addFriendList ul li .list .info .name {font-size:1.6rem;}
+.map .friendModify .addFriendList ul li .list .info .sort {display:inline-block; height:2rem; font-size:1.2rem; line-height:2rem; color:#fff; padding:0 0.8rem; margin-left:0.8rem; border-radius:1rem; background-color:#A9B0C1;}
+.map .friendModify .addFriendList ul li .list .info .sort.confirm {background-color:#FF940E;}
+.map .friendModify .addFriendList ul li .list .info .phoneNum {display:block; font-size:1.4rem; color:#555; margin-top:0.6rem;}
+.map .friendModify .addFriendList ul li .btnDelete {position:absolute; top:1.7rem; right:2rem; font-size:1.4rem; color:#FF940E;}
+
+.map .friendModify .protectorList {margin-top:1.6rem; padding:1.6rem 2rem; background-color:#fff;}
+.map .friendModify .protectorList .title {display: flex; align-items: center; justify-content: space-between; height:4rem; padding:1rem 0;}
+.map .friendModify .protectorList .title .btnDelete {font-size:1.4rem; color:#FF940E;}
+.map .friendModify .protectorList .list ul {height:10rem; display: flex; align-items: center; justify-content: flex-start; padding:0.8rem 0 1.2rem 0;}
+.map .friendModify .protectorList .list ul li {position:relative; text-align: center; margin-left:1.6rem;}
+.map .friendModify .protectorList .list ul li:first-child {margin-left:0;}
+.map .friendModify .protectorList .list ul li .iconImg {display: flex; align-items: center; justify-content: center;width:5.6rem; height:5.6rem; border:1px solid #EAEDF2; border-radius:2.8rem;}
+.map .friendModify .protectorList .list ul li .iconImg img {width:3.2rem; height:3.2rem;}
+.map .friendModify .protectorList .list ul li .name {display:block; font-size:1.6rem; color:#555; margin-top:0.4rem;}
+.map .friendModify .protectorList .list ul li .deleteGray {position:absolute; top:0; right:0; text-indent:-9999rem; width:1.6rem; height:1.6rem; background: url(../image/map/icon_deleteGray.png) no-repeat center/cover;}
+
+.map .friendModify .tipSlide {overflow:hidden; position:relative; padding-bottom:3.2rem;}
+.map .friendModify .tipSlide .tipCont {padding:2.6rem 2rem 2.6rem 7.2rem; background-color:#fff;}
+.map .friendModify .tipSlide .tipCont .title {font-size:1.6rem;}
+.map .friendModify .tipSlide .tipCont .text {font-size:1.4rem; color:#555; line-height:2.2rem;}
+.map .friendModify .tipSlide .swiper-pagination {display: flex; align-items: center; justify-content: center; height:3.2rem; bottom:0; }
+.map .friendModify .tipSlide .swiper-pagination .swiper-pagination-bullet {width:0.6rem; height:0.6rem; margin:0 0.5rem; background:#CDD0D8; opacity:1;}
+.map .friendModify .tipSlide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#FF940E;}
+
+
+/* UI-SJN-50-004L */
+.map .messageLocation {padding:3.2rem 2rem 0;}
+.map .messageLocation .textBox {font-size:1.6rem; line-height:2.4rem; text-align: center; padding:2.4rem 1.6rem; background-color:#fff;}
+.map .messageLocation .textBox .point {color:#FF940E;}
+.map .messageLocation .messageExample {width:100%; padding:0 1rem; margin-top:4rem;}
+.map .messageLocation .messageExample img {width:100%;}
+.map .messageLocation .items-blet {margin-top:6rem;}
+
+
+/* UI-SJN-50-005L */
+.map .popMessageBlack {position:absolute; top:7.2rem; left:0; width:100%; display: flex; align-items: center; justify-content: center; }
+.map .popMessageBlack span {display:inline-block; height:4.4rem; padding:1.2rem 1.6rem; font-size:1.6rem; color:#fff; background-color: rgba(17, 17, 17, 0.75); border-radius:2.2rem;}
+
+.map .moveRecord .movePoint {position:absolute; width:3.2rem; height:3.2rem; line-height:3.2rem; text-align:center; font-size:1.6rem; font-family: var(--fontRoboto); color:#777; border:1px solid #A9B0C1; border-radius:50%; background-color:#fff; }
+
+.map .mapInfoLayer .moveData .infoTop {display: flex; align-items: center; justify-content: space-between; height:4.8rem; padding:1rem 2rem; border-bottom:1px solid #F4F5F7;}
+.map .mapInfoLayer .moveData .infoTop .name {font-size:1.8rem;}
+.map .mapInfoLayer .moveData .infoTop .contactArea .call i {display: inline-block; width: 2.8rem; height: 2.8rem; vertical-align: middle; text-indent:-9999rem; background: #4EC457 url(../image/map/icon_contact_call.png) no-repeat center/1.4rem; border-radius: 50%;}
+.map .mapInfoLayer .moveData .infoTop .contactArea .message i {display: inline-block; width: 2.8rem; height: 2.8rem; vertical-align: middle; text-indent:-9999rem; margin-left:0.8rem; background: #A9B0C1 url(../image/map/icon_contact_message.png) no-repeat center/1.6rem 1.49rem; border-radius: 50%;}
+.map .mapInfoLayer .moveData .calendarSet {margin-top:0.9rem; padding:0 2rem;}
+.map .mapInfoLayer .moveData .calendarSet .datepickerSelect {display: flex; align-items: center; justify-content: center; height:4.8rem; padding:1.2rem 0; text-align: center;}
+.map .mapInfoLayer .moveData .calendarSet .datepickerSelect .iconCalendar {width:2.4rem; height:2.4rem; text-indent:-9999rem; background: url(../image/map/icon_calendar.png) no-repeat center/cover;}
+.map .mapInfoLayer .moveData .calendarSet .datepickerSelect .date {font-size:1.8rem; margin-left:0.8rem; }
+.map .mapInfoLayer .moveData .calendarSet .daySelect {overflow-x:scroll; overflow-y:hidden; height:5.2rem; padding:1rem;}
+.map .mapInfoLayer .moveData .calendarSet .daySelect .dayWrap {display:inline-flex;}
+.map .mapInfoLayer .moveData .calendarSet .daySelect .dayWrap button {width:3.2rem; height:3.2rem; line-height:3.2rem; font-family: var(--fontRoboto); font-size:1.6rem; color:#777; text-align: center; margin-left:1.5rem; border-radius:50%;}
+.map .mapInfoLayer .moveData .calendarSet .daySelect .dayWrap button.active {color:#fff; font-weight:700; background-color:#FF940E;}
+.map .mapInfoLayer .moveData .lineSelector {position:relative; height:4rem; display: flex; align-items: center; padding:0 2rem;}
+.map .mapInfoLayer .moveData .lineSelector .line {width:100%; height:1px; text-indent:-9999rem; background-color:#EAEDF2;}
+.map .mapInfoLayer .moveData .lineSelector .pointer {position:absolute; top:50%; width:2.4rem; height:2.4rem; margin-top:-1.2rem; text-indent:-9999rem; border:2px solid #292D32; border-radius:50%; background-color:#fff;}
+.map .mapInfoLayer .moveData .addressArea {margin-top:1.6rem; height:5.2rem; padding:1.6rem 2rem; font-size:1.6rem; line-height:1.8rem;}
+
+
+/* UI-SJN-50-006L */
+.map .emergencyCall {height:calc(100vh - 8rem); text-align: center; margin: -5.6rem 0 -2rem; display: flex; align-items: center; justify-content: center; }
+.map .emergencyCall .title {font-size:2.1rem; line-height:2.8rem;}
+.map .emergencyCall .text {font-size:1.6rem; color:#777; line-height:1.8rem; margin-top:0.8rem;}
+.map .emergencyCall .iconEmergency {display: flex; align-items: center; justify-content: center; width:24rem; height:24rem; margin:5.6rem auto 0; background:#292D32; border-radius:50%;}
+.map .emergencyCall .iconEmergency i {width:16rem; height:16rem; margin:0 auto; text-indent:-9999rem; background:#FD2020 url(../image/map/icon_emergency.png) no-repeat center/3.6rem auto; border-radius:50%;}
+
+
+/* UI-SJN-50-007L */
+.map .mapIcons .markerEmergency {position:absolute; width: 3.2rem; height: 4.4rem; background: url(../image/map/icon_emergency_marker.png) no-repeat center/3.2rem auto; }
+.map .emergencyBtn {width: 100%; height: 7.8rem; padding:0 2rem 2.4rem;}
+.map .emergencyBtn .twins { display: flex; align-items: center; justify-content: space-between;}
+.map .emergencyBtn .twins .button { width:100%; }
+.map .emergencyBtn .twins .button:last-child { margin-left: 0.8rem;}
+
+
+/* UI-SJN-50-009L */
+.map .uploadLocation {padding:0 2rem 3.2rem;}
+.map .uploadLocation .topArea {display: flex; align-items: center; justify-content: space-between; height:4.8rem;}
+.map .uploadLocation .topArea .title {font-size:1.8rem; font-weight:700;}
+.map .uploadLocation .topArea .buttonModify {width:2.4rem; height:2.4rem; text-indent:-9999rem; background: url(../image/map/ico_24_modify_dot.png) no-repeat center/2.4rem; }
+
+.map .uploadLocation .myList ul li {display: flex; align-items: center; justify-content: space-between; min-height:4.8rem; padding:0.8rem 0.8rem 0.8rem 0; margin-top:0.8rem; border-bottom:1px solid #EAEAEA;}
+.map .uploadLocation .myList ul li > span {font-size:1.6rem; padding-left:3.2rem;}
+.map .uploadLocation .myList ul li > span.home {max-width:calc(100% - 9rem); background: url(../image/map/ico_24_home.png) no-repeat left center/2.4rem; }
+.map .uploadLocation .myList ul li > span.school {background: url(../image/map/ico_24_school.png) no-repeat left center/2.4rem; }
+.map .uploadLocation .myList ul li > span.company {background: url(../image/map/ico_24_company.png) no-repeat left center/2.4rem; }
+.map .uploadLocation .myList ul li .buttonUpload {height:3.2rem; color:#fff; font-size:1.4rem; padding:0 1.2rem; background-color:#FF940E; border-radius:1.6rem;}
+.map .uploadLocation .myList ul li .buttonModify {height:3.2rem; color:#FF940E; font-size:1.4rem; padding:0 1.2rem; background-color:#fff; border:1px solid #EAEAEA; border-radius:1.6rem;}
+.map .uploadLocation .myList.modifyType ul li .chkImg {max-width:calc(100% - 9rem); }
+.map .uploadLocation .myList.modifyType ul li:last-child {border-bottom:none;}
+
+.map .uploadLocation .myBlock {border:1px solid #EAEAEA; border-width:1px 0 0 1px; margin-top:2rem;}
+.map .uploadLocation .myBlock ul {display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.map .uploadLocation .myBlock ul li {display: flex; align-items: center; justify-content: center; width:33.333%; height:9.6rem; padding:0.8rem; border:1px solid #EAEAEA; border-width:0 1px 1px 0; }
+.map .uploadLocation .myBlock ul li.noAddress {background: url(../image/map/ico_myLocation_bg_pin.png) no-repeat center/2.4rem auto; }
+.map .uploadLocation .myBlock ul li .btnUpload {width:100%; height:100%; text-indent:-9999rem; background: #fff url(../image/map/ico_32_orange_plus.png) no-repeat center/3.2rem; }
+
+.map .uploadLocation .myBlock.modifyType {border:1px solid #FFA700; border-width:1px 0 0 0; margin-top:1.2rem;}
+.map .uploadLocation .myBlock.modifyType ul {display:block;}
+.map .uploadLocation .myBlock.modifyType ul li {display: flex; align-items: center; justify-content: space-between; width:100%; min-height:4.8rem; height:auto; padding:1.2rem 0.8rem 1.2rem 0; margin-top:0.8rem; border-width:0 0 1px 0;}
+.map .uploadLocation .myBlock.modifyType ul li .chkImg {max-width:calc(100% - 7rem); }
+.map .uploadLocation .myBlock.modifyType ul li .btnRewrite {color:#555; font-size:1.4rem; padding:0 0 0 2.4rem; border-radius:1.6rem; background: url(../image/map/ico_24_reWrite.png) no-repeat left center/2.4rem; }
+
+.map .uploadLocation .buttonArea {display: flex; align-items: center; justify-content: space-between; margin-top:3.2rem;}
+.map .uploadLocation .buttonArea .button {width:100%; height:4.8rem; box-shadow:none; border-radius:2.4rem;}
+.map .uploadLocation .buttonArea .button:last-child { margin-left: 0.8rem;}
+
+.map .chkImg {}
+.map .chkImg label { min-height:2.4rem; display: block; overflow: hidden; position: relative; cursor: pointer;  padding-left:4rem; font-weight:700;}
+.map .chkImg label span {display:block; font-weight:normal; margin-top:0.4rem;}
+.map .chkImg label::after { content: ''; position: absolute; left: 0; top:50%; width: 2.4rem; height: 2.4rem; margin-top:-1.2rem;background:#EAEDF2 url(../image/map/ico_24_check.png) no-repeat center/1.2rem auto; border-radius:0.4rem;  transition: background-color .2s ease-in-out;}
+.map .chkImg input { position: absolute; opacity: 0;}
+.map .chkImg input:checked + label::after { background-color: #FF940E;}
+
+.map .uploadLocation .psText {color:#AAA; margin-top:1.2rem;}
+
+.layerWrap.typeLocation {all:unset; position:absolute; right:0; left:0; top:50%; width:100%; padding-top:1.6rem; transform:translateY(-50%) !important; background-color:#fff;}
+.layerWrap.typeLocation > h4 {padding:0 2rem; }
+.layerWrap.typeLocation > h4.sejongnTitle {font-size:1.6rem;}
+.layerWrap.typeLocation > h4.sejongnTitle img {height:2rem; margin-right:0.45rem;}
+.layerWrap.typeLocation .modifyAddress {display: flex; align-items: center; justify-content: space-between; margin:1.6rem 2rem 0; border-bottom:1px solid #EAEAEA;}
+.layerWrap.typeLocation .modifyAddress input[type=text] {color:#111; font-weight:700; border-width:0; padding-left:0;}
+.layerWrap.typeLocation .modifyAddress .icoDelete {width:2.4rem; height:2.4rem;}
+.layerWrap.typeLocation .modifyAddress .icoDelete i {display: block; width:2rem; height:2rem; text-indent:-9999rem; background:url(../image/map/icon_map_header_delete.png) no-repeat center/cover;}
+
+.layerWrap.typeLocation .buttonArea {display: flex; align-items: center; justify-content: space-between; margin-top:4.8rem;}
+.layerWrap.typeLocation .buttonArea .button {width:100%; box-shadow:none; margin-top:0;}
+.layerWrap.typeLocation .buttonArea .button.gray {color:#777;}
+
+.layerWrap.typeLocation .contSejongN {padding:1.5rem 9rem 1.5rem 2rem; background:url(../image/map/sejongN_img.png) no-repeat right center/8rem auto;}
+.layerWrap.typeLocation .contSejongN .title {font-size:2.1rem; font-weight:700; line-height:2.7rem;}
+.layerWrap.typeLocation .contSejongN .text {font-size:1.6rem; line-height:2.4rem; margin-top:0.7rem;}
+.layerWrap.typeLocation .contSejongN + .buttonArea {margin-top:1.6rem;}
+.layerWrap.typeLocation .contSejongN + .buttonArea .button {height:5.6rem;}
+.layerWrap.typeLocation .contSejongN + .buttonArea .button span {padding-right:2.8rem; background:url(../image/map/ico_24_arrow_wh.png) no-repeat right center/2.4rem;}
+
+
+
+/* UI-SJN-50-011L */
+.map .mapTabContent {min-height:calc(100vh - 13.2rem); padding-top:5.2rem;}
+
+.map .recentSearchList {padding:0 2rem; }
+.map .recentSearchList ul li {display: flex; align-items: center; justify-content: space-between; min-height:5.6rem; padding:1.7rem 0; border-top:1px solid #EAEAEA;}
+.map .recentSearchList ul li:first-child {border-top:none;}
+.map .recentSearchList ul li .record {display: flex; align-items: center; justify-content: baseline; max-width:calc(100% - 3rem); }
+.map .recentSearchList ul li .record .icon {width:2rem; height:2rem; text-indent:-9999rem; }
+.map .recentSearchList ul li .record .icon.search {background: url(../image/map/ico_20_search.png) no-repeat center/2rem; }
+.map .recentSearchList ul li .record .icon.pin {background: url(../image/map/ico_20_pin.png) no-repeat center/2rem; }
+.map .recentSearchList ul li .record .text {width:calc(100% - 6rem); font-size:1.6rem; margin-left:0.8rem;}
+.map .recentSearchList ul li .record .date {width:3rem; font-size:1.4rem; color:#777; margin-left:0.8rem;}
+.map .recentSearchList ul li .iconTrash {width:2.4rem; height:2.4rem; text-indent:-9999rem; background: url(../image/map/icon_trash.png) no-repeat center/2.4rem; }
+
+.map .locationSearchList {flex:1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; border-bottom:1px solid #F4F5F7; }
+.map .locationSearchList ul li {padding:1.6rem 2rem; border-top:1px solid #F4F5F7;}
+.map .locationSearchList ul li:first-child {border-top:none;}
+.map .locationSearchList ul li .title {display:block; font-size:1.8rem; line-height:2.4rem;}
+.map .locationSearchList ul li .title .point {color:#FF940E;}
+.map .locationSearchList ul li .address {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.8rem; color:#555; }
+.map .locationSearchList ul li .callNum {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.4rem; color:#555; }
+.map .notResult {display: flex; align-items: center; justify-content: space-between; margin:2.4rem 2rem 3.2rem; padding:1.4rem 1.6rem; background-color:#EAEDF2;}
+.map .notResult .text {font-size:1.6rem; color:#555;}
+.map .notResult button {font-weight:700; font-size:1.6rem; color:#FF940E; padding-right:1.6rem; background: url(../image/map/arrow_right_orange.png) no-repeat right center/0.6rem auto;  }
+
+
+/* UI-SJN-50-012L */
+.map .mapTab {display: flex; align-items: center; justify-content: center; position:absolute; top:5.6rem; left:0; z-index: 30; width:100%; height:5.2rem; border:1px solid #F2F2F2; border-width:1px 0; background-color:#fff;}
+.map .mapTab button {position:relative; text-align: center; width:50%;height:5rem; font-size:1.6rem; color:#555;}
+.map .mapTab button.active {font-weight:700; color:#111;}
+.map .mapTab button.active:before {content:''; width:100%; height:2px; position:absolute; bottom:-1px; left:0; background-color: #FF940E; }
+
+.map .mapArea .markerMyLocation { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.25); border-radius: 50%; transform: translateX(-50%);}
+.map .mapArea .markerMyLocation div { display: flex; align-items: center; justify-content: center; width: 1.2rem; height: 1.2rem; background-color: #fff; border-radius: 50%;}
+.map .mapArea .markerMyLocation div span { display: block; width: 1rem; height: 1rem; background-color: #FF940E; border-radius: 50%;}
+
+.map .mapArea .markerMoveIcon {display: flex; align-items: center; justify-content: center; position: absolute; z-index: 30; }
+.map .mapArea .markerMoveIcon .text {position: absolute; top:-4rem; left:50%; width:18rem; height:3.2rem; line-height:3.2rem; margin-left:-9rem; text-align: center; font-size:1.2rem; color:#fff; background-color:#FF940E; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
+.map .mapArea .markerMoveIcon i {width: 3.2rem; height: 4rem; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
+
+.map .mapArea .markerResultIcon {display: flex; flex-direction: column; position: absolute; z-index: 30; }
+.map .mapArea .markerResultIcon i {width: 3.2rem; height: 4rem; margin:0 auto; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
+.map .mapArea .markerResultIcon .result {height:3.2rem; text-align: center; font-size:1.2rem; padding:0.8rem 1.2rem; margin-top:0.7rem; color:#555; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border:1px solid #FF940E; border-radius:1.6rem;}
+
+.map .mapMoveData {position: fixed; left: 0; bottom: 0; width:100%;}
+.map .mapMoveData .myLocation {position: absolute; left: 2rem; top: -5.6rem; display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
+.map .mapMoveData .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
+.map .mapMoveData .myLocation.active { background-color: #FF940E;}
+.map .mapMoveData .myLocation.active i { background-position-y: -1.95rem;}
+.map .mapMoveData .locationText {width: 100%; padding: 2.4rem 2rem 3.2rem; background-color: #fff;}
+.map .mapMoveData .locationText .address {font-size:1.6rem; color:#555; }
+.map .mapMoveData .locationText .button {margin-top:2.4rem;}
 
 
 /* UI-SJN-60-004L */

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 세종 안심서비스 헤더 -->
+		<script src="../include/header_map_prev.js"></script>
+		<!-- //공통: 세종 안심서비스 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">이동 기록</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapArea">
+					<div class="popMessageBlack">
+						<span>위치 기록은 14일간 저장됩니다.</span>
+					</div>
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<div class="etcButton">
+							<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
+								<i>구조요청</i>
+								<span>구조요청</span>
+							</button>
+
+							<button type="button" class="roadView"><i>거리뷰</i></button>
+							<button type="button" class="setting"><i>설정</i></button>
+							<button type="button" class="help"><i>도움말</i></button>
+						</div>
+					</div>
+					<!-- //기타 아이콘들 -->
+
+					<div class="moveRecord">
+						<span class="movePoint" style="top:13rem; left:8rem;">1</span>
+						<span class="movePoint" style="top:17rem; left:12rem;">2</span>
+						<span class="movePoint" style="top:30rem; left:25rem;">3</span>
+						<span class="movePoint" style="top:33rem; left:29rem;">4</span>
+						<span class="movePoint" style="top:35rem; left:27rem;">5</span>
+						<span class="movePoint" style="top:39rem; left:16rem;">6</span>
+					</div>
+					
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer midHeight default">
+						<button type="button" class="btnMapInfo">정보영역</button>
+
+						<div class="moveData">
+							<div class="infoTop">
+								<strong class="name">이세종</strong>
+
+								<div class="contactArea">
+									<a href="tel:010-1234-5678" class="call"><i>전화걸기</i></a>
+									<a href="tel:010-1234-5678" class="message"><i>문자보내기</i></a>
+								</div>
+							</div>
+
+							<div class="calendarSet">
+								<div class="datepickerSelect">
+									<button type="button" class="iconCalendar">달력선택</button>
+									<strong class="date">2022년 1월 4일</strong>
+								</div>
+
+								<div class="daySelect">
+									<div class="dayWrap">
+										<button type="button">1</button>
+										<button type="button">2</button>
+										<button type="button">3</button>
+										<button type="button">4</button>
+										<button type="button">5</button>
+										<button type="button">6</button>
+										<button type="button">7</button>
+										<button type="button">8</button>
+										<button type="button">9</button>
+										<button type="button">10</button>
+										<button type="button">11</button>
+										<button type="button">12</button>
+										<button type="button">13</button>
+										<button type="button" class="active">14</button> <!-- 활성화 : active 클래스 추가 -->
+									</div>
+								</div>
+							</div>
+
+							<div class="lineSelector">
+								<span class="line">라인</span>
+								<span class="pointer" style="left:9rem;">이동확인 슬라이드 버튼</span>
+							</div>
+
+							<div class="addressArea">
+								<p>세종특별자치시 한누리대로 328 (도시통합정보센터)</p>
+							</div>
+						</div>
+						
+					</div>
+					<!-- //정보 영역 -->
+
+					<script>
+						mapInfo.click('sub');
+					</script>
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

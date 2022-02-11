@@ -128,6 +128,13 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	/* UI-SJN-50-003L - 윤사랑 추가*/
+	tipSlideSwiper: {
+		autoplay: false,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;

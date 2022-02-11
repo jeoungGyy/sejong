@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 세종 안심서비스 헤더 -->
+		<script src="../include/header_map_search.js"></script>
+		<!-- //공통: 세종 안심서비스 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="mapTab">
+					<button type="button" class="active">최근 기록</button><!-- 활성화시 버튼에 active 추가 -->
+					<button type="button">지도 지정</button>
+				</div>
+
+				<div class="mapTabContent bottomFixed bgGray"><!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+					<div class="recentSearchList">
+						<ul>
+							<li>
+								<div class="record">
+									<i class="icon search"></i>
+									<span class="text">아름중학교</span>
+									<span class="date">12.5</span>
+								</div>
+
+								<button type="button" class="iconTrash">기록 삭제</button>
+							</li>
+
+							<li>
+								<div class="record">
+									<i class="icon pin"></i>
+									<span class="text">아름중학교 아름중학교 아름중학교 </span>
+									<span class="date">12.5</span>
+								</div>
+
+								<button type="button" class="iconTrash">기록 삭제</button>
+							</li>
+
+							<li>
+								<div class="record">
+									<i class="icon search"></i>
+									<span class="text">아름중학교</span>
+									<span class="date">12.5</span>
+								</div>
+
+								<button type="button" class="iconTrash">기록 삭제</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="btnGroup">
+						<button type="button" class="button white">전체 삭제</button>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

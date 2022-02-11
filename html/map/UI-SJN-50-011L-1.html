@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 세종 안심서비스 헤더 -->
+		<script src="../include/header_map_noSearch.js"></script>
+		<!-- //공통: 세종 안심서비스 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				
+				<div class="mapArea">
+					<!-- 위치 설정 마커 -->
+					<div class="markerResultIcon" style="left: 15rem; top: 15rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+						<i></i>
+						<div class="result">아름중학교</div>
+					</div>
+					<!-- //위치 설정 마커 -->
+					
+					<!-- 기타 아이콘들 -->
+					<div class="mapIcons">
+						<button type="button" class="btnPin"><i>핀</i></button>
+
+
+						<div class="location default">
+							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+							<div class="scaleBtn">
+								<button type="button" class="scaleUp"><i>확대</i></button>
+								<button type="button" class="scaleDown"><i>축소</i></button>
+							</div>
+						</div>
+
+					</div>
+					<!-- //기타 아이콘들 -->
+
+					<!-- 정보 영역 -->
+					<div class="mapInfoLayer default">
+						<button type="button" class="btnMapInfo">정보영역</button>
+
+						<div class="locationSearchList">
+							<ul>
+								<li>
+									<strong class="title"><span class="point">아름중</span>학교</strong>
+									<p class="address">세종특별자치시 달빛1호 167</p>
+									<p class="callNum">044-902-1000</p>
+								</li>
+
+								<li>
+									<strong class="title"><span class="point">아름중</span>학교</strong>
+									<p class="address">세종특별자치시 달빛1호 167</p>
+									<p class="callNum">044-902-1000</p>
+								</li>
+
+								<li>
+									<strong class="title"><span class="point">아름중</span>학교</strong>
+									<p class="address">세종특별자치시 달빛1호 167</p>
+									<p class="callNum">044-902-1000</p>
+								</li>
+
+								<li>
+									<strong class="title">지진옥외대피장소 <span class="point">아름중</span>학교</strong>
+									<p class="address">세종특별자치시 달빛1호 167</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="notResult">
+							<p class="text">찾으시는 장소가 없나요?</p>
+							<button type="button">새 장소 등록</button>
+						</div>
+
+					</div>
+					<!-- //정보 영역 -->
+
+					<script>
+						mapInfo.click('sub');
+					</script>
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+
+				</div>
+
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>
