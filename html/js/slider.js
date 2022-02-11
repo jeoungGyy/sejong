@@ -123,6 +123,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	/* UI-SJN-42-002L */
+	reportReviewSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;

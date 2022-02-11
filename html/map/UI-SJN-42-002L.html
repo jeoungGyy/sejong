@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+
+		<!-- 레이어 -->
+		<div id="layerSafetyReport" class="layerPopup" tabindex="0">
+			<div class="layerWrap full">
+				<div class="headerBtn textLeft">
+					<h2>
+						<span class="box safetyReport">안전신고</span>
+						<span class="box complaint">불편신고</span>
+						너무 맛있어서 신고합니다
+					</h2>
+					<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+				</div>
+				<div class="fullFlex reportLayer">
+					<div class="reportReview">
+						<header class="reportHeader">
+							<h3>신고 내용</h3>
+							<button type="button" class="deleteBtn"><i class="split24"></i>삭제</button>
+						</header>
+						<div class="flex">
+							<h4>진행현황</h4>
+							<div>
+								<span class="box declaration">신고</span>
+								<span class="box receipt">접수</span>
+								<span class="box complete">완료</span>
+							</div>
+						</div>
+						<div class="flex">
+							<h4>진행장소</h4>
+							<div>
+								<p>세종특별자치시 세종로 1328</p>
+							</div>
+						</div>
+						<div class="flex">
+							<h4>진행일시</h4>
+							<div>
+								<p>2022.2.23</p>
+							</div>
+						</div>
+						<div class="flex block">
+							<h4>신고내용</h4>
+							<div>
+								<p>그들과 함께 할 아주 말끝마다 시니컬함이 끝인 이 신입 닥터 신고합니다. 그래도 까칠하지만, 수술 실력만큼은 ‘천재’라고 불릴 만큼 대단합니다</p>
+							</div>
+						</div>
+						<div class="flex block">
+							<h4>현장사진</h4>
+							<div id="reportReviewSwiper" class="reportReviewList">
+								<div class="slideContainer">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<button type="button">
+												<img src="../../public/image/temp/temp028.png" alt="">
+											</button>
+										</li>
+										<li class="swiper-slide">
+											<button type="button">
+												<img src="../../public/image/temp/temp028.png" alt="">
+											</button>
+										</li>
+										<li class="swiper-slide">
+											<button type="button">
+												<img src="../../public/image/temp/temp028.png" alt="">
+											</button>
+										</li>
+										<li class="swiper-slide">
+											<button type="button">
+												<img src="../../public/image/temp/temp028.png" alt="">
+											</button>
+										</li>
+										<li class="swiper-slide">
+											<button type="button">
+												<img src="../../public/image/temp/temp028.png" alt="">
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<script>
+								slider.active('reportReviewSwiper')
+							</script>
+						</div>
+					</div>
+					<div class="textReview line-default">
+						<div class="header-list">
+							<h3>리뷰 <span class="num">3건</span></h3>
+							<div>
+								<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+								<button type="button">도움많은순</button>
+								<button type="button">내가쓴글</button>
+							</div>
+						</div>
+						<ul class="items-review">
+							<li>
+								<div class="headTitle">
+									<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+										<div class="profile">개인 이미지</div>
+										<strong class="my">홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<figure>
+										<img src="../../public/image/temp/temp004.png" alt="">
+										<button type="button" class="zoom">이미지 크게보기</button>
+									</figure>
+									<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+									<div class="button-visible">
+										<button type="button">수정</button>
+										<button type="button">삭제</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="headTitle">
+									<div class="tlHead">
+										<div class="profile">개인 이미지</div>
+										<strong>홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<p class="text">
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="headTitle">
+									<div class="tlHead">
+										<div class="profile">개인 이미지</div>
+										<strong>홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<figure>
+										<img src="../../public/image/temp/temp005.png" alt="">
+										<button type="button" class="zoom">이미지 크게보기</button>
+									</figure>
+									<p class="text lineBreake">
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<button type="button" class="more">더보기</button>
+										<button type="button" class="recommend">도움돼요 3</button>
+									</div>
+								</div>
+							</li>
+							<!-- 내용이 없을경우 -->
+							<li>
+								<div class="empty">
+									<p>등록된 리뷰가 없습니다.</p>
+								</div>
+							</li>
+							<!-- //내용이 없을경우 -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerSafetyReport');
+		</script>
+		<!-- //레이어 -->
+
+	</div>
+</div>
+</body>
+</html>

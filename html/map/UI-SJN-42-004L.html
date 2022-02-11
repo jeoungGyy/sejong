@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents map"> <!-- [생활정보 Class] map-->
+			<h2 class="visible"><div class="headerClone">안전ㆍ생활불편 신고하기</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mapWrap">
+				<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+					<div class="explain-default">
+						<p class="text">
+							세종특별자치시내 누구나 안전위험요인 및 생활불편 내용을 등록할 수 있습니다.<br />
+							신고 내용은 검토 후 절차를 통해 안내 드리고 있습니다.<br />
+							공공목적에 위배되거나 세종특별자치시 기준에 부합되지 않는 정보는 안내 없이 삭제될 수 있음 알려드립니다.
+						</p>
+						<div class="report">
+							<p class="title">신속한 처리를 요하는 신고는 <br />안전신문고를 이용해 주세요.</p>
+							<button type="button" class="reportBtn">
+								<span><b>안전신문고</b>신고하기</span>
+								<i class="split20"></i>
+							</button>
+						</div>
+					</div>
+
+					<fieldset class="form-default">
+						<legend>안전ㆍ생활불편 신고 폼</legend>
+						<ul class="items-form">
+							<li>
+								<div class="labelH">
+									<label for="tempText0">유형 선택</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<select id="tempText0" required="required">
+										<option>안전위험요인 및 불편사항의 유형을 선택</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>신고지역</label> <span class="required">필수</span>
+								</div>
+								<div>
+									<div class="businessForm">
+										<ul>
+											<li>
+												<input type="text" title="신고지역 장소 입력" required="required" placeholder="세종특별자치시 나성로 133-9">
+												<button type="button" class="blue">장소변경</button>
+											</li>
+											<li>
+												<input type="text" title="신고지역 상세 장소 입력" required="required">
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="labelH between">
+									<div>
+										<label>사진등록</label> <span class="required">필수</span>
+									</div>
+									<span>(최대 5장)</span>
+								</div>
+								<div class="fileForm">
+									<button type="button" class="upload"><span>사진 선택하기</span></button>
+									<div class="ffH">
+										<button type="button" class="all">전체선택</button>
+										<button type="button" class="delete"><span>삭제</span></button>
+									</div>
+									<ul class="pictureList">
+										<li>
+											<input type="checkbox" id="list0" checked="checked" />
+											<label for="list0">
+												<img src="../../public/image/temp/temp024.png" alt="" />
+											</label>
+										</li>
+										<li>
+											<input type="checkbox" id="list1" />
+											<label for="list1"></label>
+										</li>
+										<li>
+											<input type="checkbox" id="list2" />
+											<label for="list2"></label>
+										</li>
+										<li>
+											<input type="checkbox" id="list3" />
+											<label for="list3">
+												<img src="../../public/image/temp/temp024.png" alt="" />
+											</label>
+										</li>
+										<li>
+											<input type="checkbox" id="list4" />
+											<label for="list4"></label>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>휴대전화</label> <span class="required">필수</span>
+								</div>
+								<div class="businessForm">
+									<ul>
+										<li>
+											<input type="tel" required="required" title="휴대전화 번호 입력" placeholder="- 없이 숫자만 입력해주세요">
+											<button type="button" class="blue">인증받기</button>
+										</li>
+										<li>
+											<input type="tel" required="required" title="인증 번호 입력">
+											<button type="button">인증확인</button>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<div class="radioSet">
+										<input type="checkbox" id="list10"><label for="list10"><b>신고 내용 공개 동의</b></label>
+									</div>
+								</div>
+								<div class="agreeForm">
+									<p>‘공개’에 동의하시면 신고내용이 『세종엔』을 통해 일반 시민들에게 제공됩니다.</p>
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+
+					<div class="btnGroup">
+						<button type="button" class="button blue">제출</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

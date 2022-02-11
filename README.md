@@ -3,6 +3,10 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-11
+- UI-SJN-42-002L 등록
+- UI-SJN-42-004L 등록
+
 ### 02-10
 - UI-SJN-30-007L 수정 - 공기주입기 마크 추가
 - UI-SJN-40-004L 수정 - 선택된 버스 배경 움직임 추가
