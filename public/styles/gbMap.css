@@ -942,7 +942,7 @@ span.M { background-color: #FD2020;}
 .layerWrap.typeLocation .buttonArea .button {width:100%; box-shadow:none; margin-top:0;}
 .layerWrap.typeLocation .buttonArea .button.gray {color:#777;}
 
-.layerWrap.typeLocation .contSejongN {padding:1.5rem 9rem 1.5rem 2rem; background:url(../image/map/sejongN_img.png) no-repeat right center/8rem auto;}
+.layerWrap.typeLocation .contSejongN {padding:1.5rem 9rem 1.5rem 2rem; background:url(../image/map/sejongN_img.png) no-repeat right 3.6rem center/8rem auto;}
 .layerWrap.typeLocation .contSejongN .title {font-size:2.1rem; font-weight:700; line-height:2.7rem;}
 .layerWrap.typeLocation .contSejongN .text {font-size:1.6rem; line-height:2.4rem; margin-top:0.7rem;}
 .layerWrap.typeLocation .contSejongN + .buttonArea {margin-top:1.6rem;}
