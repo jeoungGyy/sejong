@@ -35,9 +35,9 @@
 							<span class="commIco24 mapIco pin" style="left: 30rem; top: 40rem;"><i class="split24">주차장</i></span>
 						</div>
 
-						<div class="pinSet">
-							<button type="button" class="btnParking" style="left: 20rem; top: 40rem;"><i>핀</i></button>
-							<button type="button" class="btnParking" style="left: 10rem; top: 15rem;"><i>핀</i></button>
+						<div class="parkingPinSet">
+							<button type="button" class="btnParking" style="left: 10rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');"><i>센터주차장</i></button>
+							<button type="button" class="btnParking" style="left: 30rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');" ><i>세종주차장</i></button>
 						</div>
 
 						<div class="location">
@@ -50,8 +50,9 @@
 					</div>
 					<!-- //기타 아이콘들 -->
 
+
 					<!-- 메뉴 -->
-					<div class="mapMenuLayer" tabindex="0"> <!-- show 클래스 추가시 display: block; -->
+					<div id="parkingPinSet" class="mapMenuLayer" tabindex="0">
 						<div class="mapMenuBody">
 							<nav>
 								<ul>
@@ -82,6 +83,7 @@
 						</div>
 					</div>
 					<!-- //메뉴 -->
+
 					
 					<!-- 정보 영역 -->
 					<div class="mapInfoLayer">
@@ -120,6 +122,10 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+		<!-- 레이어-->
+		
+		<!-- //레이어-->
 	</div>
 </div>
 </body>

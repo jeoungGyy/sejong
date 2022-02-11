@@ -112,8 +112,8 @@ body { --vh: 1px;}
 .map .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
 .map .mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
 .map .mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
-.map .mapIcons .pinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
-.map .mapIcons .pinSet .btnParking i { display: block; width: 3.35rem; height: 4.4rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat center/cover;}
+.map .mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
+.map .mapIcons .parkingPinSet .btnParking i { display: block; width: 3.35rem; height: 4.4rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat center/cover;}
 .map .mapIcons .mapIcoBody { position: absolute;}
 .map .mapIcons .mapIcoBody .poaBox { position: relative; width: 10rem; margin-top: 3.1rem; padding: 0.4rem 0.8rem; font-size: 1.4rem; color: #555; text-align: center; border: 1px solid #A9B0C1; background-color: #fff; transform: translateX(calc(-50% + 1.2rem));}
 .map .mapIcons .mapIcoBody .poaBox::after { content: ''; position: absolute; left: 50%; top: -0.8rem; width: 0.1rem; height: 0.8rem; background-color: #A9B0C1;}
@@ -382,33 +382,34 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.map .mapMenuLayer { position: absolute; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .2s ease-in-out;}
-.map .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
-.map .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
-.map .mapMenuLayer .mapMenuBody ul li span { display: block;}
-.map .mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { position: relative; z-index: 1; width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -7rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu3.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { position: relative; z-index: 1; margin: 0 3.2rem 0 0;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2rem 0 0 0;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 4.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu6.png) no-repeat center/cover;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
-.map .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
-.map .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
-.map .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
-.map .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; min-height: 1.8rem; font-size: 1.3rem;}
-.map .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
-.map .mapMenuLayer.ready { z-index: 90; transform: scale(0);}
-.map .mapMenuLayer.show { opacity: 1; transform: scale(1);}
-/* .map .mapMenuLayer.show { opacity: 1; transform: scale(1) translate(calc(-50% + 1.6rem), calc(-50% + 1.6rem));} */
+.mapMenuLayer { position: absolute; left: 0; top: 0; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); transition: all .2s ease-in-out;}
+.mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.35rem; height: 4.4rem; transform: translate(-50%, -50%);}
+.mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
+.mapMenuLayer .mapMenuBody ul li span { display: block;}
+.mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(2) .btn { position: relative; z-index: 1; width: 6rem; height: 4rem; margin: 2rem 0 0 -1rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(3) { position: absolute; left: -7rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu3.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(3) .btn { width: 6rem; height: 4rem; margin: 0 0 0 2.5rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(4) { position: absolute; left: 1.675rem; top: -9.8rem; width: 8.575rem; height: 9.2rem; background: url(../image/map/mapMenu4.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(4) i { background-position: 0 -9.6rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(4) .btn { position: relative; z-index: 1; margin: 0 3.2rem 0 0;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(5) { position: absolute; left: 4.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu5.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(5) i { background-position: -2.4rem -9.6rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(5) .btn { margin: 2rem 0 0 0;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(6) { position: absolute; left: 4.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu6.png) no-repeat center/cover;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
+.mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
+.mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
+.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; background-color: #fff; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; min-height: 1.8rem; font-size: 1.3rem;}
+.mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
+.mapMenuLayer.ready { z-index: 90; transform: scale(0);}
+.mapMenuLayer.show { opacity: 1; transform: scale(1);}
+/* .mapMenuLayer.show { opacity: 1; transform: scale(1) translate(calc(-50% + 1.6rem), calc(-50% + 1.6rem));} */
+
 
 /* UI-SJN-24-002L */
 .map .mapInfoLayer .fixedHead { display: flex; align-items: flex-end; margin: 0 -2.4rem 0 -2rem; padding: 1.2rem 2rem; border-bottom: 1px solid #EAEAEA;}

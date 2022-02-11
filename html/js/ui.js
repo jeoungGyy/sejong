@@ -281,6 +281,9 @@ const tooltip = {
 		
 		// event.currentTarget.setAttribute("title", "도움말 열림");
 
+		console.log(tooltip.showEl)
+		console.log(111111)
+
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);
 
@@ -317,7 +320,8 @@ const tooltip = {
 
 		if(tooltip.winClose === false) {
 			window.addEventListener('click', (e)=>{
-				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				if(tooltip.showEl) console.log(222222222)
+				// if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			});
 			window.addEventListener('resize', ()=>{
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
@@ -496,68 +500,62 @@ const parkingTip = {
 	winClose : false,
 	showEl : null,
 	idx : null,
-	open : () => {
-		const btnParking = document.querySelectorAll(".btnParking");
-		if(accordion.idx == null) {
-			[].forEach.call(btnParking, (_this, idx)=>{
-				parkingTip.set(_this, idx);
-			});
-		}
-	},
-	set : (_this, idx) => {
-		const mapMenuLayer = document.querySelector(".mapMenuLayer");
-		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+	open : (id) => {
 		const location = document.querySelector(".location");
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		
+		parkingTip.showEl = document.querySelector('#'+id);
 
-		if(parkingTip.winClose === false) {
-			window.addEventListener('click', (e)=>{
-				if(e.target.classList == '' || e.target.classList.contains('mapMenuBody') || e.target.classList.contains('mapMenuLayer') || e.target.classList.contains('btn')) {
-					return;
-				} else {
-					parkingTip.close();
-				}
-			});
-			parkingTip.winClose = true;
-		}
-
-		_this.addEventListener('click', (event)=>{
+		if(parkingTip.showEl) {
 			let _target = event.currentTarget.getBoundingClientRect();
+			let mapMenuLayerWidth = parkingTip.showEl.clientWidth;
+			let mapMenuLayerHeight = parkingTip.showEl.clientHeight;
 
-			let mapMenuLayerWidth = mapMenuLayer.clientWidth;
-			let mapMenuLayerHeight = mapMenuLayer.clientHeight;
+			console.log(mapMenuLayerWidth)
 			
-			mapMenuLayer.classList.remove('show');
-			mapMenuLayer.classList.remove('ready');
-			mapInfoLayer.classList.remove('open');
+			parkingTip.showEl.classList.remove('show', 'ready');
 
 			setTimeout(()=>{
 				let top = _target.top - (mapMenuLayerWidth/2 - 15);
 				let left = _target.left - (mapMenuLayerHeight/2 - 16);
-				mapMenuLayer.style.cssText = `left: ${left}px; top: ${top}px;`
+				parkingTip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
 				
-				mapMenuLayer.classList.add('ready');
+				parkingTip.showEl.classList.add('ready');
 				location.classList.add('parkingDefault');
 				mapInfoLayer.classList.add('open');
+
 				setTimeout(()=>{
-					mapMenuLayer.classList.add('show');
-					mapMenuLayer.focus();
+					parkingTip.showEl.classList.add('show');
+					parkingTip.showEl.focus();
 				},500);
 			},500);
-		});
+
+			parkingTip.showEl.addEventListener('click',()=>{
+				event.stopPropagation();
+			});
+			mapInfoLayer.addEventListener('click',()=>{
+				event.stopPropagation();
+			});
+			location.addEventListener('click',()=>{
+				event.stopPropagation();
+			});
+		}
+
+		if(parkingTip.winClose === false) {
+			window.addEventListener('click', (e)=>{
+				if(parkingTip.showEl) {
+					mapInfoLayer.classList.remove('open');
+
+					parkingTip.showEl.classList.remove('show');
+
+					setTimeout(()=>{
+						parkingTip.showEl.classList.remove('ready');
+					},400);
+				}
+			});
+			parkingTip.winClose = true;
+		}
 	},
-	close : () => {
-		const mapMenuLayer = document.querySelector(".mapMenuLayer");
-		const mapInfoLayer = document.querySelector(".mapInfoLayer");
-		const location = document.querySelector(".location");
-
-		mapMenuLayer.classList.remove('show');
-		mapInfoLayer.classList.remove('open');
-		location.classList.remove('parkingDefault');
-
-		setTimeout(()=>{
-			mapMenuLayer.classList.remove('ready');
-		},300);
-	}
 }
 
 const findEl = {
@@ -754,6 +752,5 @@ function _lazyLoad() {
 	// mapInfo.set();
 	accordion.active();
 	tab.active();
-	parkingTip.open();
 	openCurrAccordion();
 }
