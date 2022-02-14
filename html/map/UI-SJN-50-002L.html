@@ -18,71 +18,71 @@
 			
 			<div class="mapWrap">
 				<div class="mapArea">
-					<!-- 기능안내 팝업 (친구 추가) -->
-					<div class="popMessage">
-						<span class="popNum">
-							<em class="now">1</em>/<em>3</em>
-						</span>
+					<div id="popMSlideSwiper" class="popMessageSlide">
+						<div class="slideContainer">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<!-- 기능안내 팝업 (친구 추가) -->
+									<div class="popMessage">
+										<div class="popCont">
+											<p class="title">보호자(피보호자) 등록</p>
 
-						<div class="popCont">
-							<p class="title">보호자(피보호자) 등록</p>
+											<div class="text">
+												부모나 친구를 등록하면 내 위치를 실시간으로 공유할 수 있어요
+											</div>
 
-							<div class="text">
-								부모나 친구를 등록하면 내 위치를 실시간으로 공유할 수 있어요
-							</div>
+											<div class="btnArea">
+												<button type="button" class="add"><span>친구 추가</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- // 기능안내 팝업 (친구 추가) -->
+								</li>
+								<li class="swiper-slide">
+									<!-- 기능안내 팝업 (안심장소 등록) -->
+									<div class="popMessage">
+										<div class="popCont">
+											<p class="title">안심장소 등록</p>
 
-							<div class="btnArea">
-								<button type="button" class="add"><span>친구 추가</span></button>
-							</div>
+											<div class="text">
+												안심장소를 등록하면 보호자에게 장소 출&middot;도착 정보를 알려드려요
+											</div>
+
+											<div class="btnArea">
+												<button type="button" class="add"><span>안심장소 추가</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- // 기능안내 팝업 (안심장소 등록) -->
+								</li>
+								<li class="swiper-slide">
+									<!-- 기능안내 팝업 (환경 설정) -->
+									<div class="popMessage">
+										<div class="popCont">
+											<p class="title">환경 설정</p>
+
+											<div class="text">
+												위치 수집 주기, 구조 요청 등 안심서비스에 대한 환경설정을 해주세요
+											</div>
+
+											<div class="btnArea">
+												<button type="button" class="goLink"><span>환경설정</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- // 기능안내 팝업 (환경 설정) -->
+								</li>
+							</ul>
+
+							<button type="button" class="popClose">닫기</button>
+							
+
 						</div>
-
-						<button type="button" class="popClose">닫기</button>
+							<div class="swiper-pagination popNum"></div>
 					</div>
-					<!-- // 기능안내 팝업 (친구 추가) -->
-
-					<!-- 기능안내 팝업 (안심장소 등록) -->
-					<div class="popMessage">
-						<span class="popNum">
-							<em class="now">1</em>/<em>3</em>
-						</span>
-
-						<div class="popCont">
-							<p class="title">안심장소 등록</p>
-
-							<div class="text">
-								안심장소를 등록하면 보호자에게 장소 출&middot;도착 정보를 알려드려요
-							</div>
-
-							<div class="btnArea">
-								<button type="button" class="add"><span>안심장소 추가</span></button>
-							</div>
-						</div>
-
-						<button type="button" class="popClose">닫기</button>
-					</div>
-					<!-- // 기능안내 팝업 (안심장소 등록) -->
-
-					<!-- 기능안내 팝업 (환경 설정) -->
-					<div class="popMessage">
-						<span class="popNum">
-							<em class="now">1</em>/<em>3</em>
-						</span>
-
-						<div class="popCont">
-							<p class="title">안심장소 등록</p>
-
-							<div class="text">
-								위치 수집 주기, 구조 요청 등 안심서비스에 대한 환경설정을 해주세요
-							</div>
-
-							<div class="btnArea">
-								<button type="button" class="goLink"><span>환경설정</span></button>
-							</div>
-						</div>
-
-						<button type="button" class="popClose">닫기</button>
-					</div>
-					<!-- // 기능안내 팝업 (환경 설정) -->
+					<script>
+						slider.active('popMSlideSwiper');
+					</script>
 
 					<!-- 기타 아이콘들 -->
 					<div class="mapIcons">

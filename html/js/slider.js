@@ -135,6 +135,14 @@ const slideOpt = {
 			el: ".swiper-pagination",
 		},
 	},
+	/* UI-SJN-50-002L - 윤사랑 추가*/
+	popMSlideSwiper: {
+		autoplay: false,
+		pagination: {
+			el: ".swiper-pagination",
+			type: "fraction",
+		},
+	},
   merge : function(key){
     let merged = {...this.default, ...this[key]}
 		return merged;

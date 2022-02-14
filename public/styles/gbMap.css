@@ -737,19 +737,21 @@ span.M { background-color: #FD2020;}
 
 
 /* UI-SJN-50-002L */
-.map .popMessage {position:absolute; top:8.8rem; left:50%; margin-left:-12rem; width:24rem; padding-top:1.2rem; z-index:100;}
-.map .popMessage .popNum {position:absolute; top:0; left:50%; margin-left:-2rem; display:inline-block; width:4rem; height:2.4rem; text-align: center; color:#fff; border-radius:1.2rem; background-color:#FF940E; }
-.map .popMessage .popNum em {color:#fff; font-size:1.2rem; line-height:2.4rem;}
-.map .popMessage .popNum em.now {font-weight:700;}
-.map .popMessage .popCont {width:100%; padding:2rem 1.6rem; border:1px solid #FF940E; background-color:#fff; }
+.map .popMessageSlide {position:relative; position:absolute; top:8.8rem; left:50%; margin-left:-12rem; width:24rem; z-index:100; border:1px solid #FF940E; background-color:#fff; }
+.map .slideContainer {overflow:hidden; }
+.map .popMessage {height:16rem;}
+.map .popMessage .popCont {position:relative; width:100%; height:100%;padding:2rem 1.6rem 4.8rem; }
 .map .popMessage .popCont .title {font-weight:700;}
 .map .popMessage .popCont .text {color:#555; font-size:1.4rem; line-height:2.2rem; margin-top:0.8rem;}
-.map .popMessage .popCont .btnArea {margin-top:1.2rem; text-align: center;}
+.map .popMessage .popCont .btnArea {position:absolute; bottom:0; left:0; width:100%; padding:1.2rem 0; text-align: center;}
 .map .popMessage .popCont .btnArea button {display:block; width:100%; height:2.4rem;}
 .map .popMessage .popCont .btnArea button span {display:inline-block; color:#FF940E; font-weight:700; }
 .map .popMessage .popCont .btnArea button.add span {padding-left:2.4rem; background:url(../image/map/icon_plus_orange.png) no-repeat left center/2.4rem;}
 .map .popMessage .popCont .btnArea button.goLink span {padding-right:2.4rem; background:url(../image/map/icon_arrow_orange.png) no-repeat right center/2.4rem;}
-.map .popMessage .popClose {position:absolute; top:2.4rem; right:1.2rem; width:2.4rem; height:2.4rem; text-indent:-9999rem; background:url(../image/map/icon_close_bk_24.png) no-repeat center/cover; }
+.map .popMessageSlide .popClose {position:absolute; top:0; right:1.2rem; width:2.4rem; height:2.4rem; text-indent:-9999rem; background:url(../image/map/icon_close_bk_24.png) no-repeat center/cover; }
+.map .popMessageSlide .popNum {position:absolute; top:-1.2rem; left:50%; margin-left:-2rem; display:inline-block; width:4rem; height:2.4rem; text-align: center; color:#fff; border-radius:1.2rem; background-color:#FF940E; }
+.map .popMessageSlide .popNum span {color:#fff; font-size:1.2rem; line-height:2.4rem;}
+.map .popMessageSlide .popNum span.swiper-pagination-current {font-weight:700;}
 
 .map .mapIcons .etcButton {position:absolute; top:11.6rem; right:1.2rem; width:4rem;}
 .map .mapIcons .etcButton button {margin-top:0.8rem; }
@@ -847,8 +849,21 @@ span.M { background-color: #FD2020;}
 .map .messageLocation {padding:3.2rem 2rem 0;}
 .map .messageLocation .textBox {font-size:1.6rem; line-height:2.4rem; text-align: center; padding:2.4rem 1.6rem; background-color:#fff;}
 .map .messageLocation .textBox .point {color:#FF940E;}
-.map .messageLocation .messageExample {width:100%; padding:0 1rem; margin-top:4rem;}
-.map .messageLocation .messageExample img {width:100%;}
+.map .messageLocation .messageExample {position:relative; display: flex; align-items: center; justify-content: space-between; width:100%; padding:0 1rem; margin-top:4rem;}
+.map .messageLocation .messageExample .phoneBlock {}
+.map .messageLocation .messageExample .phoneBlock .phone {width:12rem; height:24rem; padding:4.2rem 1.2rem 0; background: url(../image/map/bg_phone.png) no-repeat 0/cover;}
+.map .messageLocation .messageExample .phoneBlock .phone .introImg {width:100%; padding:0 0.6rem;}
+.map .messageLocation .messageExample .phoneBlock .phone .introImg img {width:100%;}
+.map .messageLocation .messageExample .phoneBlock .phone .messageContent {padding:1.1rem 0.4rem 1.3rem; margin-top:1.3rem; font-size:0.9rem; color:#777; line-height:1.4rem; word-break:break-all; border-radius:0.8rem;}
+.map .messageLocation .messageExample .phoneBlock .phone .messageContent.my {background-color:#FFEFCA;}
+.map .messageLocation .messageExample .phoneBlock .phone .messageContent.other {background-color:#F7F7F7;}
+.map .messageLocation .messageExample .phoneBlock .phone + .text {display:block; width:12rem; font-size:1.6rem; color:#555; text-align: center; margin-top:1.6rem; line-height:2.8rem; }
+.map .messageLocation .messageExample .arrowArea {position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); padding-bottom:4.4rem; }
+.map .messageLocation .messageExample .arrowArea .arrow span {position:relative; display:block; font-size:1.2rem; color:#555; padding:0.8rem 1.3rem; border-radius:2rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); }
+.map .messageLocation .messageExample .arrowArea .arrow.red span {border:1px solid #FD2020; }
+.map .messageLocation .messageExample .arrowArea .arrow.blue span {border:1px solid #6684EA; }
+.map .messageLocation .messageExample .arrowArea .arrow.red {padding-bottom:2.3rem; background: url(../image/map/arrow_right_red.png) no-repeat center bottom/3.4rem 1.1rem; }
+.map .messageLocation .messageExample .arrowArea .arrow.blue {padding-top:2.3rem; margin-top:2.5rem; background: url(../image/map/arrow_left_blue.png) no-repeat center top/3.4rem 1.1rem;}
 .map .messageLocation .items-blet {margin-top:6rem;}
 
 
@@ -1027,7 +1042,22 @@ span.M { background-color: #FD2020;}
 .map .listArea .streetLampList li .btnBody .more i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -2.4rem -2.4rem/48rem 19.2rem;}
 .map .listArea .streetLampList li .btnBody .more b { font-size: 1.2rem; color: #fff;}
 
-
+/* UI-SJN-81-001L */
+.map .settingServiceWrap {padding:2.4rem 0 7.2rem; background-color:#F4F5F7;}
+.map .settingServiceWrap .section {padding:2.4rem 2rem; border-bottom:1px solid #EAEDF2; background-color:#fff;}
+.map .settingServiceWrap .section .grayTitle {font-size:1.4rem; color:#777;}
+.map .settingServiceWrap .section .titleBlack {font-size:1.6rem; line-height:2.2rem;}
+.map .settingServiceWrap .section .grayTitle + .titleBlack {margin-top:0.8rem;}
+.map .settingServiceWrap .section .flexBox {display: flex; align-items: center; justify-content: space-between; margin-bottom:0.4rem;}
+.map .settingServiceWrap .section .flexBox .btnOff {height:3.2rem; padding:0 1.4rem; border-radius:1.6rem; color:#fff; font-size:1.4rem; background-color:#A9B0C1;}
+.map .settingServiceWrap .section .buttonSelectArea {display: flex; align-items: center; justify-content: space-between; margin-top:0.8rem;}
+.map .settingServiceWrap .section .buttonSelectArea button {width:100%; height:4rem; display:block; border:1px solid #EAEAEA; border-left:none;background-color:#fff; color:#777; }
+.map .settingServiceWrap .section .buttonSelectArea button:first-child {border-left:1px solid #EAEAEA;}
+.map .settingServiceWrap .section .buttonSelectArea button.active {border:1px solid #FF940E; background-color:#FF940E; color:#fff;}
+.map .settingServiceWrap .section .buttonSelectArea button.active {border:1px solid #FF940E; background-color:#FF940E; color:#fff;}
+.map .settingServiceWrap .section .buttonLocation {width:100%; border:1px solid #EAEAEA; padding:0 5rem 0 1.6rem; height:4rem; text-align: left; margin-top:0.8rem; background:#fff url(../image/map/ico_24_arrow_gray.png) no-repeat right 1.6rem center/2.4rem;;}
+.map .settingServiceWrap .section .buttonLocation span {color:#777;}
+.map .settingServiceWrap .section .buttonLocation span > em {color:#FF940E;}
 
 
 
