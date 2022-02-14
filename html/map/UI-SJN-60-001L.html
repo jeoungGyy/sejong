@@ -13,38 +13,41 @@
 		<!-- 레이어 -->
 		<div id="layerLnb" class="layerPopup" tabindex="0">
 			<div class="layerWrap typeBot">
+				<div class="mapIHead">
+					<button type="button" class="btnMapInfo">정보영역</button>
+				</div>
 				<div class="layerLnbBody">
 					<div class="mapChange">
 						<button type="button">
-							<img src="" alt="">
-							<span>일반지도</span>
+							<span class="img"><img src="../../public/image/map/lnb_img.png" alt=""></span>
+							<span class="text">일반지도</span>
 						</button>
 						<button type="button">
-							<img src="" alt="">
-							<span>위성지도</span>
+							<span class="img"><img src="../../public/image/map/lnb_img2.png" alt=""></span>
+							<span class="text">위성지도</span>
 						</button>
 						<button type="button">
-							<img src="" alt="">
-							<span>도시변화</span>
+							<span class="img"><img src="../../public/image/map/lnb_img3.png" alt=""></span>
+							<span class="text">도시변화</span>
 						</button>
 					</div>
 
 					<div class="lnbLinks">
-						<button type="button">
-							<span><i></i></span>
-							<span>교통정보</span>
+						<button type="button" class="traffic active"> <!-- 활성화 시 active 추가 -->
+							<span class="icon"><i class="split32"></i></span>
+							<span class="text">교통정보</span>
 						</button>
-						<button type="button">
-							<span><i></i></span>
-							<span>CCTV</span>
+						<button type="button" class="cctv">
+							<span class="icon"><i class="split32"></i></span>
+							<span class="text">CCTV</span>
 						</button>
-						<button type="button">
-							<span><i></i></span>
-							<span>가로등</span>
+						<button type="button" class="streetLamp">
+							<span class="icon"><i class="split32"></i></span>
+							<span class="text">가로등</span>
 						</button>
-						<button type="button">
-							<span><i></i></span>
-							<span>즐겨찾기</span>
+						<button type="button" class="favorite">
+							<span class="icon"><i class="split32"></i></span>
+							<span class="text">즐겨찾기</span>
 						</button>
 					</div>
 				</div>

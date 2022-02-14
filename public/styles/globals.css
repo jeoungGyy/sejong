@@ -367,6 +367,11 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerWrap .layerBody .twins .button { margin: 0 0.4rem;}
 .layerWrap .layerBody .button { height: 4.8rem; margin-top: 2.4rem; font-size: 1.6rem; box-shadow: none;}
 
+.layerPopup .mapIHead { margin-top: -1.6rem;}
+.layerPopup .mapIHead .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
+.layerPopup .mapIHead .btnMapInfo::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4.8rem; height: 0.4rem; margin: -0.2rem 0 0 -2.4rem; background-color: #CDD0D8; border-radius: 0.2rem;}
+
+
 .scrollLock body { overflow: hidden;}
 
 /* UI-SJN-04-006U–1 */
@@ -837,8 +842,20 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .reportLayer .textReview { padding: 1.6rem 2rem;}
 
 /* UI-SJN-60-001L */
-.layerLnbBody .mapChange { display: flex; align-items: center; justify-content: center;}
-.layerLnbBody .lnbLinks { display: flex; align-items: center; justify-content: center;}
+.layerLnbBody .mapChange { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem;}
+.layerLnbBody .mapChange button { display: block; width: 10rem;}
+.layerLnbBody .mapChange button .img { display: block; overflow: hidden; height: 6.4rem;}
+.layerLnbBody .mapChange button .img img { vertical-align: top;}
+.layerLnbBody .mapChange button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem;}
+.layerLnbBody .lnbLinks { display: flex; align-items: center; justify-content: space-between; margin: 1.4rem -2rem 0; padding: 2.4rem 2rem 0.5rem; border-top: 1px solid #F4F5F7;}
+.layerLnbBody .lnbLinks button { display: block; width: 8rem; text-align: center;}
+.layerLnbBody .lnbLinks button .icon { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0 auto; background-color: #CCD2E3; border-radius: 1.6rem;}
+.layerLnbBody .lnbLinks button.traffic .icon i { background-position: -19.2rem -9.6rem;}
+.layerLnbBody .lnbLinks button.cctv .icon i { background-position: -22.4rem -9.6rem;}
+.layerLnbBody .lnbLinks button.streetLamp .icon i { background-position: -25.6rem -9.6rem;}
+.layerLnbBody .lnbLinks button.favorite .icon i { background-position: -28.8rem -9.6rem;}
+.layerLnbBody .lnbLinks button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem;}
+.layerLnbBody .lnbLinks button.active .icon { background-color: #6684EA;}
 
 
 /* *-모음
