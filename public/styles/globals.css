@@ -478,8 +478,11 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .myInfoLayer .myLogin { display: flex; align-items: center; justify-content: space-between; height: 7.2rem; margin-top: 0.8rem;}
 .myInfoLayer .myLogin .text { font-size: 1.6rem; line-height: 2.3rem;}
 .myInfoLayer .myLogin .text span { color: #6684EA;}
-.myInfoLayer .myLogin .my { overflow: hidden; width: 4rem; height: 4rem;}
-.myInfoLayer .myLogin .my img { width: 100%; height: auto;}
+.myInfoLayer .myLogin .my { position: relative; width: 4.8rem; height: 4.4rem;}
+.myInfoLayer .myLogin .my .img { display: inline-block; overflow: hidden; width: 4rem; height: 4rem; border-radius: 50%;}
+.myInfoLayer .myLogin .my .img img { width: 100%; height: auto;}
+.myInfoLayer .myLogin .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 2.4rem; height: 2.4rem; background-color: #292D32; border-radius: 50%;}
+.myInfoLayer .myLogin .my .profileBtn i { background-position: -43.2rem -14.4rem;}
 .myInfoLayer .myActivity { display: flex; flex-wrap: wrap; margin-top: 1.6rem; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
 .myInfoLayer .myActivity li { display: flex; flex-direction: column; justify-content: center; width: calc(100% / 3); height: 12rem; padding: 0 1.2rem 0 2rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
 .myInfoLayer .myActivity li:nth-child(1),
