@@ -2,7 +2,19 @@
 
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
-test
+
+### 02-14
+- UI-SJN-50-001L 등록
+- UI-SJN-50-002L 등록
+- UI-SJN-50-003L 등록
+- UI-SJN-50-004L 등록
+- UI-SJN-50-005L 등록
+- UI-SJN-50-006L 등록
+- UI-SJN-50-007L 등록
+- UI-SJN-50-009L 등록
+- UI-SJN-50-010L 등록
+- UI-SJN-50-011L 등록
+- UI-SJN-50-012L 등록
 
 ### 02-11
 - UI-SJN-24-002L 등록
