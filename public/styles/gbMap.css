@@ -208,6 +208,12 @@ body { --vh: 1px;}
 .map .mapIcons .btnFixedPin i { background-color: #D69630; background-position: -28rem -4rem; border-radius: 50%;}
 .map .mapIcons .deleteIco i { background-color: #fff; background-position: -36rem -14.4rem;}
 .map .mapIcons .printIco i { background-color: #fff; background-position: -33.6rem -14.4rem;}
+.map .mapIcons .cctvPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 18.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.map .mapIcons .cctvPin i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -14.4rem/48rem 19.2rem;}
+.map .mapIcons .cctvIco { display: flex; align-items: center; justify-content: center; position: absolute; background-color: #555; border-radius: 50%;}
+.map .mapIcons .cctvIco i { text-indent: -9999rem; background-position: -26.4rem -4.8rem;}
+.map .mapIcons .zoomOut { display: flex; align-items: center; justify-content: center; position: absolute; border-radius: 50%;}
+.map .mapIcons .zoomOut b { font-family: var(--fontRoboto); font-size: 1.6rem; color: #fff;}
 
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}

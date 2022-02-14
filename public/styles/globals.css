@@ -857,6 +857,17 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .layerLnbBody .lnbLinks button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem;}
 .layerLnbBody .lnbLinks button.active .icon { background-color: #6684EA;}
 
+/* UI-SJN-60-002L */
+.layerCCTVBody { padding: 2.4rem 1.6rem;}
+.layerCCTVBody .cctvList { display: flex; align-items: center; flex-wrap: wrap;}
+.layerCCTVBody .cctvList li { position: relative; width: calc(100% / 3); margin: -0.1rem 0 0 -0.1rem;}
+.layerCCTVBody .cctvList li input { position: absolute; opacity: 0;}
+.layerCCTVBody .cctvList li label { display: flex; align-items: center; justify-content: center; height: 4.8rem; font-size: 1.6rem; border: 1px solid #EAEAEA; cursor: pointer;}
+.layerCCTVBody .cctvList li input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.layerCCTVBody .guide { display: flex; align-items: flex-start; margin-top: 2rem;}
+.layerCCTVBody .guide i { width: 2.6rem; vertical-align: middle; background-position-x: -38rem;}
+.layerCCTVBody .guide >span { font-size: 1.4rem; color: #777;}
+
 
 /* *-모음
 **********************************************/
@@ -1164,10 +1175,10 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-weeklyWeather li .wwDay { min-width: 4rem; width: 12%; margin-right: 1.6rem;}
 .items-weeklyWeather li .wwDay .aDay { display: flex; align-items: center; justify-content: center; height: 2.4rem; font-weight: 700;}
 .items-weeklyWeather li .wwDay .aDay.today { border: 1px solid #32BBED; border-radius: 1.2rem;}
-.items-weeklyWeather li .wwDay .wwDate { display: block; margin-top: 0.3rem; font-family: 'Roboto', 'Sans-serif'; font-size: 1.2rem; font-weight: 700; color: #aaa; letter-spacing: 0;}
+.items-weeklyWeather li .wwDay .wwDate { display: block; margin-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #aaa; letter-spacing: 0;}
 .items-weeklyWeather li .am { min-width: 4.4rem; width: 14%;}
 .items-weeklyWeather li .t { display: block; font-size: 1.2rem; color: #777;}
-.items-weeklyWeather li .s { display: block; font-family: 'Roboto', 'Sans-serif'; font-weight: 700; font-size: 1.3rem;  color: #32BBED;}
+.items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #32BBED;}
 .items-weeklyWeather li .pm { min-width: 4.4rem; margin-left: 0.8rem; width: 14%;}
 .items-weeklyWeather li .weather { min-width: 4.4rem; width: 14%;}
 .items-weeklyWeather li .weather .icon { margin-right: 0;}
@@ -1184,7 +1195,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-weeklyWeather li .wState { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.2rem; font-size: 1.2rem; color: #777; border-radius: 1.1rem;}
 .items-weeklyWeather li .sunrise .wState { color: #777; border: 1px solid #CDD0D8;}
 .items-weeklyWeather li .sunset .wState { color: #fff; background-color: #A9B0C1;}
-.items-weeklyWeather li .wTime { display: block; min-width: 3.2rem; width: 26%; margin: 0 0.4rem; font-family: 'Roboto', 'Sans-serif'; font-size: 1.3rem; color: #555; letter-spacing: 0;}
+.items-weeklyWeather li .wTime { display: block; min-width: 3.2rem; width: 26%; margin: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #555; letter-spacing: 0;}
 
 .items-uv li { display: flex; padding: 1.2rem 0; border-bottom: 1px solid #F4F5F7;}
 .items-uv li .uvIcons { display: flex; flex-direction: column; align-items: center; width: 4.4rem; margin-right: 0.8rem; padding-top: 0.6rem;}
@@ -1483,7 +1494,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-improvement .accordionTargetArea .tHead { display: flex; align-items: center; justify-content: space-between;}
 .items-improvement .accordionTargetArea .tHead h4 { font-size: 1.5rem;}
 .items-improvement .accordionTargetArea .tHead div span { display: inline-block; position: relative; font-size: 1.4rem; color: #777; vertical-align: middle;}
-.items-improvement .accordionTargetArea .tHead div span:last-child { padding-left: 0.8rem; font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
+.items-improvement .accordionTargetArea .tHead div span:last-child { padding-left: 0.8rem; font-family: var(--fontRoboto); letter-spacing: 0;}
 .items-improvement .accordionTargetArea .tHead div span:last-child::before { content: '/'; position: absolute; left: 0; top: 0;}
 .items-improvement .accordionTargetArea .tInfo { margin-top: 1.6rem;}
 .items-improvement .accordionTargetArea .tInfo p { font-size: 1.6rem; color: #555;}
@@ -1495,7 +1506,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-improvement >li .authList li { width: 50%; margin-top: 1.2rem; font-size: 1.4rem; color: #777;}
 .items-improvement >li .authList li:nth-child(2) { text-align: right;}
 .items-improvement >li .authList li:last-child { width: 100%;}
-.items-improvement >li .authList li span { font-family: 'Roboto', 'Sans-serif'; letter-spacing: 0;}
+.items-improvement >li .authList li span { font-family: var(--fontRoboto); letter-spacing: 0;}
 .items-improvement >li .authList li a { color: #6684EA;}
 .items-improvement >li .improvementBody { margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid #F4F5F7;}
 .items-improvement >li .improvementBody .paragraphGroup p { font-size: 1.6rem;}
