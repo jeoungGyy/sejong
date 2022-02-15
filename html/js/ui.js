@@ -442,7 +442,9 @@ const parkingTip = {
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(test, (_this, idx)=>{
-				_this.classList.remove('active');
+				if(_this.classList.contains('active')) {
+					_this.classList.remove('active');
+				}
 			});
 		}
 		event.currentTarget.classList.add('active');
