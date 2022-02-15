@@ -165,8 +165,9 @@ table td { vertical-align: middle;}
 /* 색상 */
 .cBlue { color: #6684EA !important;}
 .cRed { color: #FD2020 !important;}
-.cBlack { color: #111 !important;}
 .cGreen { color: #4EC457 !important;}
+.cBlack { color: #111 !important;}
+.cGray { color: #777 !important;}
 
 /* Split 아이콘 */
 .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
@@ -686,6 +687,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .locationLayer .app ul li a .text p { margin-top: 0.8rem; font-size: 1.4rem; color: #555; line-height: 2.2rem;}
 .locationLayer .around { padding: 0 2rem 3.2rem;}
 .locationLayer .around h3 { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem; font-size: 1.6rem;}
+.locationLayer .around .mapIHead { margin-top: 0;}
 .locationLayer .review { padding: 0 2rem 4rem;}
 .locationLayer .review .items-review .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .locationLayer .review .items-review .empty p { position: relative; font-size: 1.6rem; color: #777;}
@@ -939,6 +941,8 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .header-list button.active { color: #6684EA;}
 .header-list >div { display: flex; align-items: center;}
 .header-list >div button { margin-left: 1.2rem;}
+.header-list >div .write { display: block; font-size: 1.6rem; color: #6684EA;}
+.header-list >div .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 19.2rem;}
 
 .header-formSearch { display: flex; align-items: center; height: 5.6rem;}
 .header-formSearch select { width: 7.6rem; height: 4rem; padding-left: 1.2rem; background-position-y: 1rem; border-radius: 2rem;}
@@ -1398,7 +1402,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .items-gasStation li .title .favorite.active i { background-position-y: -2.4rem;}
 .items-gasStation li .title h3.name { height: inherit; font-size: 1.6rem;}
 .items-gasStation li .infomation { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
-.items-gasStation li .infomation >span { font-size: 1.4rem; color: #6684EA; letter-spacing: 0;}
+.items-gasStation li .infomation >span { font-size: 1.4rem; letter-spacing: 0;}
 .items-gasStation li .infomation .gsCost { position: relative; margin-left: 1rem;}
 .items-gasStation li .infomation .gsCost::after { content: ''; position: absolute; top: 0.3rem; left: -0.2rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-gasStation li .infomation >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}

@@ -68,6 +68,14 @@
 .info .pictureReview .pictureBody .lastMore .blind span { height: 2.4rem; padding: 0 0.8rem; font-size: 1.4rem; color: #fff; border: 1px solid #fff; border-radius: 1.2rem;}
 .info .pictureReview .pictureBody .lastMore .blind span::before { content: '+';}
 .info .textReview { padding: 1.6rem 2rem 6rem;}
+.info .textReview .locationHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.info .textReview .locationHeader h3 { display: flex; align-items: center; font-size: 1.8rem;}
+.info .textReview .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
+.info .textReview .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
+.info .textReview .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 19.2rem;}
+.info .textReview .locationHeader button { margin-left: 0.6rem;}
+.info .textReview .locationHeader button.active { color: #6684EA;}
+
 
 /* 리뷰 등록 UI-SJN-04-010P */
 .info .reviewForm { padding: 0 2rem 6rem;}

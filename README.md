@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-15
+- 퍼블리싱문의사항_220214, 화면 ID 수정
+
 ### 02-14
 - UI-SJN-50-001L 등록
 - UI-SJN-50-002L 등록

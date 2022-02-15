@@ -219,9 +219,6 @@ const tooltip = {
 		
 		// event.currentTarget.setAttribute("title", "도움말 열림");
 
-		console.log(tooltip.showEl)
-		console.log(111111)
-
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);
 
@@ -258,8 +255,7 @@ const tooltip = {
 
 		if(tooltip.winClose === false) {
 			window.addEventListener('click', (e)=>{
-				if(tooltip.showEl) console.log(222222222)
-				// if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			});
 			window.addEventListener('resize', ()=>{
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
@@ -396,6 +392,7 @@ const tab = {
 
 		if(tab.idx == null) {
 			[].forEach.call(tabs, (_this, idx)=>{
+				console.log(this)
 				this.set(_this, idx);
 			});
 		} else {
@@ -441,7 +438,14 @@ const parkingTip = {
 	open : (id) => {
 		const location = document.querySelector(".location");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
-		
+		const test = document.querySelectorAll(".btnParking");
+
+		if(parkingTip.idx == null) {
+			[].forEach.call(test, (_this, idx)=>{
+				_this.classList.remove('active');
+			});
+		}
+		event.currentTarget.classList.add('active');
 		parkingTip.showEl = document.querySelector('#'+id);
 
 		if(parkingTip.showEl) {
@@ -452,8 +456,8 @@ const parkingTip = {
 			parkingTip.showEl.classList.remove('show', 'ready');
 
 			setTimeout(()=>{
-				let top = _target.top - (mapMenuLayerWidth/2 - 15);
-				let left = _target.left - (mapMenuLayerHeight/2 - 16);
+				let top = _target.top - (mapMenuLayerWidth/2 - 24);
+				let left = _target.left - (mapMenuLayerHeight/2 - 10);
 				parkingTip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
 				
 				parkingTip.showEl.classList.add('ready');
@@ -491,6 +495,9 @@ const parkingTip = {
 			});
 			parkingTip.winClose = true;
 		}
+	},
+	set : function(_this, idx) {
+		console.log(_this)
 	},
 }
 

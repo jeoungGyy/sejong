@@ -36,8 +36,14 @@
 						</div>
 
 						<div class="parkingPinSet">
-							<button type="button" class="btnParking" style="left: 10rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');"><i>센터주차장</i></button>
-							<button type="button" class="btnParking" style="left: 30rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');" ><i>세종주차장</i></button>
+							<button type="button" class="btnParking" style="left: 10rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');">
+								<i>센터주차장</i>
+								<span class="textBox bgGreen"><i class="split24"></i><span class="ellipsis">공영주차장</span></span>
+							</button>
+							<button type="button" class="btnParking" style="left: 30rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');" >
+								<i>세종주차장</i>
+								<span class="textBox bgGray"><i class="split24"></i><span class="ellipsis">공영주차장 공영주차장</span></span>
+							</button>
 						</div>
 
 						<div class="location">
@@ -97,15 +103,19 @@
 									<button type="button" class="favorite active">즐겨찾기</button>
 									<h3>센터주차장</h3>
 								</div>
-								<div class="text">
-									<p>세종특별자치시 세종로 1328</p>
-									<p class="lineGroup">
-										<span>주차면 <b class="cBlue">70면</b></span>
-										<span>요금 <b class="cRed">무료</b></span>
-										<span>운영구분 <b class="cBlack">공영</b></span>
-									</p>
-									<p class="space">운영시간 <span class="cBlue">평일</span> <span class="lettSpace">08:00 ~ 23:00</span> <span class="cRed">공휴일</span> <span class="lettSpace">08:00 ~ 08:00</span></p>
+								<div class="address">
+									<span>세종특별자치시 세종로 1328</span>
 								</div>
+								<div class="infomation">
+									<span>주차면 <b class="cBlue">70면</b></span>
+									<span>요금 <b class="free">무료</b><b class="paid">유료</b></span>
+									<span>운영구분 <b class="cBlack">공영</b></span>
+								</div>
+								<div class="etc">
+									<span>운영시간 평일 08:00 ~ 23:00</span> 
+									<span>공휴일 08:00 ~ 08:00</span>
+								</div>
+								<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
 								<div class="btns">
 									<a href="tel:010-1234-5678" class="call"><i></i><span>전화걸기</span></a>
 									<button type="button" class="aroundIfo"><i></i><span>주변정보</span></button>

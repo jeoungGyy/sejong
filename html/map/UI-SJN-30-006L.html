@@ -34,7 +34,6 @@
 							<button type="button" class="commIco24 evChargeIco reCharge" style="left: 10rem; top: 15rem;" onclick="layerPopup.open('layerEvCharge');"><i class="split24">정부청사전기차충전소 충전가능</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
 							<button type="button" class="commIco24 evChargeIco charging" style="left: 15rem; top: 15rem;" onclick="layerPopup.open('layerEvCharge');"><i class="split24">정부청사전기차충전소 충전중</i></button>
 							<button type="button" class="commIco24 evChargeIco overhaul" style="left: 20rem; top: 15rem;" onclick="layerPopup.open('layerEvCharge');"><i class="split24">정부청사전기차충전소 점검/장애</i></button>
-							<button type="button" class="commIco24 evChargeIco stop" style="left: 25rem; top: 15rem;" onclick="layerPopup.open('layerEvCharge');"><i class="split24">정부청사전기차충전소 운전중지</i></button>
 						</div>
 						<!-- //전기차주차장 -->
 
@@ -108,7 +107,7 @@
 										</div>
 										<div class="infomation">
 											<span>3.9km</span>
-											<span><b class="cGreen">충전중</b></span>
+											<span><b class="cGray">점검/장애</b></span>
 										</div>
 										<div class="etc">
 											<span>급속 2</span>
@@ -296,7 +295,7 @@
 						<header class="locationHeader">
 							<h3>주변정보</h3>
 						</header>
-						<div class="aroundBody">
+						<div class="mapIHead">
 							<nav id="mapPlaceListSwiper" class="items-placeList">
 								<div class="slideContainer">
 									<ul class="swiper-wrapper">
@@ -312,77 +311,77 @@
 							<script>
 								slider.active('mapPlaceListSwiper')
 							</script>
+						</div>
 
-							<h3>음식점</h3>	
-							<div class="myArea">
-								<section>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<img src="../../public/image/temp/temp030.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종시 미스터피자</h4>
-												<p class="st">세종시에서 가장 맛난 피자집</p>
-												<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-												<button type="button" class="favorite">즐겨찾기</button>
-											</div>
-										</li>
-										<li>
-											<figure>
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종시 미스터피자</h4>
-												<p class="st">세종시에서 가장 맛난 피자집</p>
-												<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-												<button type="button" class="favorite active">즐겨찾기</button>
-											</div>
-										</li>
-									</ul>
-								</section>
+						<div class="myArea">
+							<section>
+								<h3>음식점</h3>
+								<ul class="items-mapInfo">
+									<li>
+										<figure>
+											<img src="../../public/image/temp/temp030.png" alt="">
+										</figure>
+										<div class="mapInfoBody">
+											<h4>세종시 미스터피자</h4>
+											<p class="st">세종시에서 가장 맛난 피자집</p>
+											<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+											<button type="button" class="favorite">즐겨찾기</button>
+										</div>
+									</li>
+									<li>
+										<figure>
+										</figure>
+										<div class="mapInfoBody">
+											<h4>세종시 미스터피자</h4>
+											<p class="st">세종시에서 가장 맛난 피자집</p>
+											<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+											<button type="button" class="favorite active">즐겨찾기</button>
+										</div>
+									</li>
+								</ul>
+							</section>
 
-								<section>
-									<h3>세종명소</h3>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<img src="../../public/image/temp/temp031.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>세종호수공원</h4>
-												<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
-												<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
-											</div>
-										</li>
-									</ul>
-								</section>
+							<section>
+								<h3>세종명소</h3>
+								<ul class="items-mapInfo">
+									<li>
+										<figure>
+											<img src="../../public/image/temp/temp031.png" alt="">
+										</figure>
+										<div class="mapInfoBody">
+											<h4>세종호수공원</h4>
+											<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
+											<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
+										</div>
+									</li>
+								</ul>
+							</section>
 
-								<section>
-									<h3>문화행사</h3>
-									<ul class="items-mapInfo">
-										<li>
-											<figure>
-												<span class="label wood">공연</span>
-												<img src="../../public/image/temp/temp032.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>국제 핸드메이드 & 리빙페어</h4>
-												<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
-											</div>
-										</li>
-										<li>
-											<figure>
-												<span class="label green">이웃</span>
-												<img src="../../public/image/temp/temp033.png" alt="">
-											</figure>
-											<div class="mapInfoBody">
-												<h4>사랑의 김장 나눔 행사</h4>
-												<p class="st">세종시 블로그에서 소개한 시립도서관</p>
-											</div>
-										</li>
-									</ul>
-								</section>
-							</div>
+							<section>
+								<h3>문화행사</h3>
+								<ul class="items-mapInfo">
+									<li>
+										<figure>
+											<span class="label wood">공연</span>
+											<img src="../../public/image/temp/temp032.png" alt="">
+										</figure>
+										<div class="mapInfoBody">
+											<h4>국제 핸드메이드 & 리빙페어</h4>
+											<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
+										</div>
+									</li>
+									<li>
+										<figure>
+											<span class="label green">이웃</span>
+											<img src="../../public/image/temp/temp033.png" alt="">
+										</figure>
+										<div class="mapInfoBody">
+											<h4>사랑의 김장 나눔 행사</h4>
+											<p class="st">세종시 블로그에서 소개한 시립도서관</p>
+										</div>
+									</li>
+								</ul>
+							</section>
 						</div>
 					</section>
 
