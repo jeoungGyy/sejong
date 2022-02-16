@@ -1,7 +1,6 @@
 ## sejong
 
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
-11
 
 
 ### 02-16

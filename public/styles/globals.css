@@ -856,7 +856,6 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .reportLayer .textReview { padding: 1.6rem 2rem;}
 
 /* UI-SJN-42-003L */
-.userLayer {}
 .userLayer h3 { padding: 1rem 0; font-size: 2rem; line-height: 2.6rem;}
 .userLayer .infomation { position: relative; padding: 0 2rem 4rem; background: url(../image/map/map_report.png) no-repeat right top 1rem/13rem 16.425rem;}
 .userLayer .infomation::after { content: ''; position: absolute; right: 0; top: 0;}
