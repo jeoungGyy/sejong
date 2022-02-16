@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+
+		<!-- 레이어 -->
+		<div id="layerSafetyUser" class="layerPopup" tabindex="0">
+			<div class="layerWrap full">
+				<div class="headerBtn textLeft">
+					<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+				</div>
+				<div class="fullFlex userLayer">
+					<div class="infomation">
+						<h3>생활 속 안전 위험요인<br /><span class="cRed">안전신문고로 신고</span></h3>
+						<div class="contain">
+							<h4 class="cRed">위험해요</h4>
+							<ul class="danger">
+								<li>도로, 시설물 파손 및 고장</li>
+								<li>교통위반</li>
+								<li>건설, (해체)공사장 위험</li>
+								<li>쓰레기ㆍ폐기물ㆍ유독물 투기, 유출, 방치</li>
+								<li>지하수 미등록 시설ㆍ방치공</li>
+								<li>대기오염(미세먼지 불법배출포함)</li>
+								<li>수질오염</li>
+							</ul>
+							<h4 class="cWood">불편해요</h4>
+							<ul class="incon">
+								<li>불법광고물</li>
+								<li>자전거ㆍ이륜차 방치 및 불편</li>
+								<li>청소년 유해업소</li>
+								<li>에너지 과소비</li>
+							</ul>
+						</div>
+
+						<div class="promote">
+							<div>광고 영역</div>
+						</div>
+						<button type="button" class="buttonArrow wood">
+							<span><b>안전신문고</b>신고하기</span>
+							<i class="split20"></i>
+						</button>
+					</div>
+					
+					<div class="report line-default">
+						<h3>함께 만드는 안전한 세종생활!<br /><span class="cBlue">세종엔</span>으로 신고</h3>
+						<div>
+							<p class="guide1">
+								안전신문고 신고유형에<br />
+								해당되지 않는<br />
+								<b>기타 위험요인ㆍ생활불편<br />
+								사항을 신고</b>
+							</p>
+							<p class="guide2">
+								세종엔을 통한 안전신고 처리는 시일이 오래 걸릴 수 있습니다.<br />
+								<b class="cGreen">신속한 처리를 요하는 신고는 안전신문고를 이용</b>해 주세요.
+							</p>
+							<button type="button" class="buttonArrow blue">
+								<span><b>세종엔</b>신고하기</span>
+								<i class="split20"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			layerPopup.open('layerSafetyUser');
+		</script>
+		<!-- //레이어 -->
+
+	</div>
+</div>
+</body>
+</html>

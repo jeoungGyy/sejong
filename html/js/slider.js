@@ -15,6 +15,11 @@ const slideOpt = {
 		// observer: true,
 		// observeParents: true,
 	},
+	/* UI-SJN-01-001U */
+	homeNavSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
     slidesPerView: 'auto',
