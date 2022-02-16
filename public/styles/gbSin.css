@@ -1,6 +1,8 @@
 /* 통합검색
 **********************************************/
 
+.test {}
+
 /* 공통 */
 .boderTopGray { border-top: 1px solid #EAEAEA;}
 
@@ -25,7 +27,6 @@
 .home .covid19 .title >div { flex: 1;}
 .home .covid19 .title >div b { display: block; font-size: 1.6rem;}
 .home .covid19 .title >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #333;}
-.home .covid19 .menu {}
 
 
 
