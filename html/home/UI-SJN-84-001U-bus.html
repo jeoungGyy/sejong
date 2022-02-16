@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+			<h2 class="visible"><div class="headerClone">즐겨찾기</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mypageWrap">
+				<div class="bookmarkWrap">
+					<div class="halfTab">
+						<button type="button">장소</button>
+						<button type="button" class="active">버스</button><!-- 활성화시 버튼에 active 추가 -->
+					</div>
+
+					<div class="bookmarkUpload">
+						<div class="formBlock bus">
+							<div class="address">
+								<strong>NS타워1차</strong>
+								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+							</div>
+
+							<button type="button" class="btnDelete">삭제</button>
+						</div>
+
+						<div class="formBlock busstop">
+							<div class="address">
+								<strong>NS타워1차</strong>
+								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+							</div>
+
+							<button type="button" class="btnDelete">삭제</button>
+						</div>
+					</div>
+
+					<div class="searchType">
+						<button type="button" class="active">최신순</button><!-- 활성화시 버튼에 active 추가 -->
+						<button type="button">가나다순</button>
+					</div>
+
+					<div class="bookmarkList">
+						<ul>
+							<li>
+								<div class="list bus">
+									<p class="title">
+										<span class="R busInt">급행</span> 
+										<span>B2(BRT, 오송역방면)</span>
+									</p>
+									<p class="infomation">반석역 ↔ 오송역</p>
+								</div>
+
+								<button type="button" class="btnDelete">삭제</button>
+							</li>
+
+							<li>
+								<div class="list busstop">
+									<p class="title">
+										<strong>새롬동.나성동(중)</strong>
+									</p>
+									<p class="infomation">
+										<span>51007</span>
+										<span>다정동(중) 방면</span>
+									</p>
+									<p class="infomation red">
+										<span>B2(BRT.오송역방면)</span>
+										<span>B0(세종고속시외버스터미널</span>
+									</p>
+								</div>
+
+								<button type="button" class="btnDelete">삭제</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>

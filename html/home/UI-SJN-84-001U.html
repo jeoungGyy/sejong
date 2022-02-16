@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+			<h2 class="visible"><div class="headerClone">즐겨찾기</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mypageWrap">
+				<div class="bookmarkWrap">
+					<div class="halfTab">
+						<button type="button" class="active">장소</button><!-- 활성화시 버튼에 active 추가 -->
+						<button type="button">버스</button>
+					</div>
+
+					<div class="bookmarkUpload">
+						<div class="formBlock home">
+							<strong>집</strong>
+							<button type="button" class="btnUpload">등록하기</button>
+						</div>
+						<div class="formBlock home">
+							<div class="address">
+								<strong>세종특별자치시 나성로 133-9</strong>
+								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+							</div>
+							
+							<button type="button" class="btnDelete">삭제</button>
+						</div>
+
+						<div class="formBlock company">
+							<strong>회사</strong>
+							<button type="button" class="btnUpload">등록하기</button>
+						</div>
+						<div class="formBlock company">
+							<div class="address">
+								<strong>NS타워1차</strong>
+								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+							</div>
+
+							<button type="button" class="btnDelete">삭제</button>
+						</div>
+					</div>
+
+					<div class="searchType">
+						<button type="button" class="active">최신순</button><!-- 활성화시 버튼에 active 추가 -->
+						<button type="button">가나다순</button>
+					</div>
+
+					<div class="bookmarkList">
+						<ul>
+							<li>
+								<div class="list">
+									<p class="title">
+										<strong>대통령기록관</strong>
+										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+									</p>
+									<p class="address">세종특별자치시 다솜로 250</p>
+								</div>
+
+								<button type="button" class="btnDelete">삭제</button>
+							</li>
+
+							<li>
+								<div class="list">
+									<p class="title">
+										<strong>세종특별자치시 종촌동 652</strong>
+										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+									</p>
+									<p class="address">세종특별자치시 다솜로 250</p>
+								</div>
+
+								<button type="button" class="btnDelete">삭제</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		<!-- //본문 -->
+	</div>
+</div>
+</body>
+</html>
