@@ -3,6 +3,10 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-17
+- UI-SJN-40-005L 수정 - 잘못 코딩한 부분 수정
+- UI-SJN-40-007L 수정 - '현위치 찾는 중' 추가
+
 ### 02-16
 - UI-SJN-42-003L 등록
 
