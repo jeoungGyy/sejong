@@ -20,6 +20,16 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	mainNewsSwiper: {
+		spaceBetween: 16,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	},
+	mainNewsPieceSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
     slidesPerView: 'auto',

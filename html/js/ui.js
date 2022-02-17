@@ -392,7 +392,6 @@ const tab = {
 
 		if(tab.idx == null) {
 			[].forEach.call(tabs, (_this, idx)=>{
-				console.log(this)
 				this.set(_this, idx);
 			});
 		} else {
@@ -497,9 +496,6 @@ const parkingTip = {
 			});
 			parkingTip.winClose = true;
 		}
-	},
-	set : function(_this, idx) {
-		console.log(_this)
 	},
 }
 
