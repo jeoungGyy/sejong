@@ -33,6 +33,7 @@ const slideOpt = {
 	mainMenuSwiper: {
     slidesPerView: 1,
 		initialSlide: 1,
+		slideToClickedSlide : true,
 		centeredSlides: true,
 		// longSwipesRatio: 5,
 		navigation: {
