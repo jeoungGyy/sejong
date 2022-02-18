@@ -319,6 +319,7 @@ figure .label.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
 figure .label.wood { background-color: #D69630;}
 figure .label.black { background-color: rgba(51, 51, 51, 0.9);}
 figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
+figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 /* Swipe */
@@ -933,7 +934,7 @@ figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .profileLayer .pictureList li input:checked + label::after { background-color: #111;}
 .profileLayer .pictureList li .pictureBtn { display: block; width: 100%; height: 100%; background-color: #F4F5F7;}
 .profileLayer .pictureList li .pictureBtn i { display: inline-block; width: 3.6rem; height: 2.9rem; text-indent: -9999rem; background: url(../image/home/ico_camera.png) no-repeat center/cover;}
-.profileLayer .formBtn { position: absolute; left: 0; right: 0; bottom: calc(3rem + env(safe-area-inset-bottom));; font-size: 1.8rem; font-weight: 700; color: #fff; background-color: #6684EA;}
+.profileLayer .formBtn { position: absolute; left: 0; right: 0; bottom: calc(3rem + env(safe-area-inset-bottom)); font-size: 1.8rem; font-weight: 700; color: #fff; background-color: #6684EA;}
 
 
 

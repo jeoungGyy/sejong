@@ -14,12 +14,10 @@
 
 		<!-- 본문 -->
 		<main class="contents home"> <!-- [통합검색 Class] home-->
-			<h2 class="visible"><div class="headerClone">통합검색</div></h2> <!-- [헤더에 넣어줄 제목] -->
-			
 			<div class="homeWrap">
 				<div class="mainMenuFixed">
 					<div class="mainArea">
-						<p class="mainTitle">사랑하는 사람의 안심귀가!<br /><b>세종엔</b>과 함께해요~</p>
+						<p class="mainTitle">사랑하는 사람의 안심귀가!<br /><span class="cBlue"><b>세종엔</b>과 함께해요~</span></p>
 						<div class="repMenu">
 							<a href="#" class="service1"><i></i><b>안심서비스</b></a>
 							<a href="#" class="service2"><i></i><b>생생버스</b></a>
@@ -132,18 +130,31 @@
 										</div>
 									</div>
 									<div>
-										<i class="split24"></i>
+										<span class="toggleBtn"><i class="split24"></i></span>
 									</div>
 								</a>
 								<div class="accordionTarget">
-									날씨 준비 중
-								</div>
-								
-								<div class="anniversary">
-									<b>기념일</b> <span>3월 9일은 제 20회 대통령선거</span>
+									<div>
+										<ul class="nav_side">
+											<li><button type="button" class="active">시간별 날씨</button></li>
+											<li><button type="button">주간 날씨</button></li>
+											<li><button type="button">미세먼지</button></li>
+										</ul>
+
+										<div>
+											<img src="../../public/image/temp/temp040.png" alt="날씨 샘플 이미지">
+										</div>
+									</div>
+
+									<div class="anniversary">
+										<b>기념일</b> <span>3월 9일은 제 20회 대통령선거</span>
+									</div>
 								</div>
 							</div>
 						</div>
+						<script>
+							mainWeather.floating();
+						</script>
 
 						<div class="boxWrap mainNews">
 							<div class="boxArea">
@@ -320,6 +331,8 @@
 							slider.active('mainMenuSwiper');
 						</script>
 					</div>
+
+					<button type="button" class="chatbot">민원 챗봇</button>
 				</div>
 			</div>
 		</main>
