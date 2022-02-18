@@ -288,6 +288,8 @@ const mainWeather = {
 		const weatherBox = document.querySelector(".weatherBox");
 		const weatherLink = document.querySelector(".weatherBox .weatherLink");
 		const accordionTarget = document.querySelector(".weatherBox .accordionTarget");
+		const chatbot = document.querySelector(".chatbot");
+
 
 		mainWeather.weatherBoxY = weatherBox.getBoundingClientRect().top;
 
@@ -299,10 +301,12 @@ const mainWeather = {
 			if(mainWeather.weatherBoxY <= window.scrollY + weatherBox.getBoundingClientRect().top) {
 				weatherBox.classList.remove('active');
 				accordionTarget.style.height = mainWeather.targetHeight+'px';
+				chatbot.classList.add('bottom');
 			} 
 			if(weatherBox.getBoundingClientRect().top > mainWeather.weatherBoxY-200 ) {
 				weatherBox.classList.add('active');
 				accordionTarget.style.height = "0";
+				chatbot.classList.remove('bottom');
 			}
 		});
 	},
