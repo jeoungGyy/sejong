@@ -710,7 +710,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerCare { text-align: left;}
 .layerCare dl { margin-top: 0.8rem;}
 .layerCare dl dt { font-size: 1.6rem; font-weight: 700;}
-.layerCare dl dd { margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
+.layerCare dl dd { margin-top: 0.8rem; color: #555; line-height: 2.4rem;}
 .layerCare dl dd + dt { margin-top: 1.6rem;}
 .layerCare .offerer { margin-top: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 
@@ -1056,6 +1056,39 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 /* items-모음 */
+.items-mapInfo li .empty,
+.items-edu li .empty,
+.line-default li .empty,
+.items-apiListBox li .empty,
+.items-default li .empty,
+.items-news .empty,
+.items-review .empty,
+.items-apiList .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.items-mapInfo .empty p,
+.items-edu .empty p,
+.line-default .empty p,
+.items-apiList .empty p,
+.items-apiListBox li .empty p,
+.items-default li .empty p,
+.items-news .empty p,
+.items-review .empty p { position: relative; font-size: 1.6rem; color: #777;}
+.items-mapInfo li .empty p::after,
+.items-edu li .empty p::after,
+.line-default li .empty p::after,
+.items-apiListBox li .empty p::after,
+.items-default li .empty p::after,
+.items-news .empty p::after,
+.items-review .empty p::after,
+.items-apiList .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/3.2rem 3.2rem; border-radius: 50%;}
+
+
+
+
+
+
+
+
+
 .items-default li { margin-top: 1.6rem;}
 .items-default li ~ li { margin-top: 2.4rem;}
 .items-default li figure { height: 18rem;}
@@ -1066,6 +1099,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-default li .hashTag { margin-top: 0.6rem;}
 .items-default li .hashTag span { display: inline-block; margin-right: 0.3rem; padding: 0.4rem; font-size: 1.4rem; color: #777; background-color: #F8F8F8;}
 .items-default li .hashTag span::before { content: '#';}
+
+
 
 .items-blet li { position: relative; padding-left: 1.6rem; color: #555;}
 .items-blet li::after { content: ''; position: absolute; left: 0.6rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
@@ -1158,9 +1193,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-news li .flex h4 { flex: 1;}
 .items-news li .flex figure { width: 6.4rem; height: 6.4rem; margin-left: 1.6rem;}
 .items-news li .flex +.headerSub { margin-top: -0.8rem;}
-.items-news .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.items-news .empty p { position: relative; font-size: 1.6rem; color: #777;}
-.items-news .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
 
 .items-files { margin-top: 2.4rem;}
 .items-files li a { display: flex; align-items: center; height: 4rem; font-size: 1.4rem; color: #555;}
@@ -1239,6 +1271,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-newStore li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
 .items-newStore li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
 .items-newStore li a.text p { line-height: 2.2rem;}
+.items-newStore li.full { width: 100%;}
 .items-newStore.inline { flex-wrap: nowrap;}
 .items-newStore.inline,
 .items-newStore.inline li { width: 50%; margin: 0;}
@@ -1297,9 +1330,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .items-review li { padding-top: 0.8rem;}
 .items-review li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
-.items-review .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.items-review .empty p { position: relative; font-size: 1.6rem; color: #777;}
-.items-review .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
 
 .items-festival { margin-top: 0.8rem;}
 .items-festival figure img { width: 100%; height: auto; vertical-align: top;}
@@ -1315,6 +1345,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-culture li .text h4 { font-size: 1.6rem;}
 .items-culture li .text .t { margin-top: 0.4rem; color: #555;}
 .items-culture li .text .st { margin-top: 0.8rem; color: #555; line-height: 2.2rem;}
+.items-culture li.full { display: block;}
 
 .items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}
 .items-wordList ul li { width: auto;}
@@ -1361,6 +1392,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-mapInfo li .mapInfoBody .other span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
 .items-mapInfo li .mapInfoBody .favorite { content: ''; position: absolute; right: 0; top: 0; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .items-mapInfo li .mapInfoBody .favorite.active { background-position-y: -2.4rem;}
+.items-mapInfo li.full { padding: 0;}
 
 .items-parking >li { position: relative; padding: 0 0 3.4rem 3.2rem; background: url(../image/info/info_trip_blet.png) repeat-y 1.1rem 0/0.1rem 0.4rem;}
 .items-parking >li .time { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.2rem; width: 2.4rem; height: 2.4rem; background-color: #A9B0C1; border-radius: 50%;}
@@ -1596,9 +1628,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-apiList li a >div p span ~ span { padding-left: 1.6rem;}
 .items-apiList li a >div p span ~ span::before { content: 'ㆍ'; position: absolute; left: 0.2rem; top: 0; color: #777;}
 .items-apiList li a .arrow { position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 28.8rem;}
-.items-apiList .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.items-apiList .empty p { position: relative; font-size: 1.6rem; color: #777;}
-.items-apiList .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
 
 .items-apiListBox li { padding: 1.6rem 0; border-bottom: 1px solid #F4F5F7;}
 .items-apiListBox li .head { display: flex; align-items: baseline;}
@@ -1612,9 +1641,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-apiListBox li .text >div { margin-top: 0.4rem;}
 .items-apiListBox li .text >div span ~ span { position: relative; padding-left: 1.6rem; color: #111;}
 .items-apiListBox li .text >div span ~ span::before { content: 'ㆍ'; position: absolute; left: 0; top: 0;}
-.items-apiListBox li .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
-.items-apiListBox li .empty p { position: relative; font-size: 1.6rem; color: #777;}
-.items-apiListBox li .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/2.1rem 2.4rem; border-radius: 50%;}
 
 
 

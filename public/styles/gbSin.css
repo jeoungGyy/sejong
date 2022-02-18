@@ -44,9 +44,9 @@
 .home .mainArea .covid19 .menu .tabContent .clinic p { font-size: 1.4rem; color: #777;}
 .home .mainArea .covid19 .lineBox { margin-top: 1.6rem; padding: 2.4rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .home .mainArea .covid19 .lineBox .operation { display: flex; align-items: center;}
-.home .mainArea .covid19 .lineBox .operation span { display: flex; align-items: center; justify-content: center; height: 2.4rem; margin-right: 0.8rem; padding: 0 0.8rem 0 0.4rem; font-size: 1.4rem; border-radius: 1.2rem;}
-.home .mainArea .covid19 .lineBox .operation span.operation { color: #4EC457; border: 1px solid #4EC457;}
-.home .mainArea .covid19 .lineBox .operation span.closed { color: #777; border: 1px solid #777;}
+.home .mainArea .covid19 .lineBox .operation .round { display: flex; align-items: center; justify-content: center; height: 2.4rem; margin-right: 0.8rem; padding: 0 0.8rem 0 0.4rem; font-size: 1.4rem; border-radius: 1.2rem;}
+.home .mainArea .covid19 .lineBox .operation .round.operation { color: #4EC457; border: 1px solid #4EC457;}
+.home .mainArea .covid19 .lineBox .operation .round.closed { color: #777; border: 1px solid #777;}
 .home .mainArea .covid19 .lineBox .operation b { flex: 1; font-size: 1.6rem;}
 .home .mainArea .covid19 .lineBox .operation i { background-position-x: -38rem;}
 .home .mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-left: 2.4rem;}

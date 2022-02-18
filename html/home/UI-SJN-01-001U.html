@@ -79,7 +79,7 @@
 									</div>
 									<div class="lineBox">
 										<div class="operation">
-											<span class="operation"><i class="split20"></i> 운영중</span> <b>세종시청 임시선별진료소</b>
+											<span class="round operation"><i class="split20"></i> 운영중</span> <b>세종시청 임시선별진료소</b>
 										</div>
 										<div class="infomation veryCrowd">
 											<div>
@@ -91,7 +91,7 @@
 									</div>
 									<div class="lineBox">
 										<div class="operation">
-											<span class="closed"><i class="split20"></i>휴무</span> <b>세종시청 임시선별진료소</b>
+											<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <b>세종시청 임시선별진료소</b>
 										</div>
 									</div>
 									<div class="button-more">
@@ -341,6 +341,31 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div id="layerAlram" class="layerPopup" tabindex="0">
+			<div class="layerWrap typeBot">
+				<h4>운영정보 표시</h4>
+				<div class="layerCare">
+					<dl>
+						<dt>보건소</dt>
+						<dd>
+							운영시간 09:00 ~ 12:00 / 13:30 ~ 16:30 (평일만 운영)<br />
+							한파 시에는 단축 운영<br />
+							한파기준 : 일일 최저기온 -15℃ 또는 최고기온 -5℃ 이하
+						</dd>
+						<dt>시청</dt>
+						<dd>
+							운영시간 09:00 ~ 12:00 / 13:30 ~ 16:30 / 17:30 ~ 21:00 (평일, 주말 및 공휴일 운영)<br />
+							워킹스루만 운영 (상황 변경 시까지 드라이브스루 운영 중단, 한파 시에는 단축 운영
+						</dd>
+					</dl>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 </div>
 </body>
