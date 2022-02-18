@@ -268,6 +268,27 @@ const tooltip = {
 	}
 }
 
+const moreBtn = {
+	idx : null,
+	show : (_this) => {
+		let more = document.querySelectorAll('.more');
+		let text = document.querySelectorAll('.text');
+		let reviewLi = document.querySelectorAll('.items-review li');
+		let els = Array.prototype.slice.call( document.getElementsByClassName('more'), 0 );
+		let target = reviewLi[els.indexOf(event.currentTarget)];
+
+		moreBtn.idx = els.indexOf(event.currentTarget);
+
+		if(target.getElementsByClassName('text')[0].classList.contains('lineBreake')) {
+			more[moreBtn.idx].classList.add('active');
+			text[moreBtn.idx].classList.remove('lineBreake');
+		} else {
+			more[moreBtn.idx].classList.remove('active');
+			text[moreBtn.idx].classList.add('lineBreake');
+		}
+	},
+}
+
 const mainWeather = {
 	weatherBoxY : null,
 	floatingBoxY : null,

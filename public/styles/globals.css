@@ -305,9 +305,10 @@ table td { vertical-align: middle;}
 .headTitle .text.short { margin-top: 0.4rem;}
 .headTitle .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
 .headTitle .tlControls .more { color: #777;}
-.headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
+.headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover; transition: transform .2s ease;}
 .headTitle .tlControls .guide { font-size: 1.4rem; color: #aaa;}
 .headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
+.headTitle .tlControls .more.active::after { transform: rotate(180deg);}
 
 /* 피규어 마커 */
 figure { overflow: hidden; position: relative; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}

@@ -4,6 +4,7 @@
 
 
 ### 02-18
+- UI-SJN-04-009U 수정  - 더보기 버튼 기능 추가
 - 피규어 마커 색상 추가 (blue, skyBlue, darkBlue, wood, black, green, red)
 - 레이어 선택창 등록 - /home/layer-confirm.html
 - 게시물 데이터 없을경우 디자인 추가
