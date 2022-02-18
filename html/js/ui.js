@@ -273,14 +273,11 @@ const mainWeather = {
 	floatingBoxY : null,
 	targetHeight : null,
 	floating : () => {
-
 		const weatherBox = document.querySelector(".weatherBox");
 		const accordionTarget = document.querySelector(".weatherBox .accordionTarget");
 
 		mainWeather.weatherBoxY = weatherBox.getBoundingClientRect().y;
 		mainWeather.targetHeight = accordionTarget.clientHeight;
-
-		
 
 		setTimeout(()=>{
 			weatherBox.classList.add('active');
@@ -289,35 +286,25 @@ const mainWeather = {
 	},
 	scroll : () => {
 		const weatherBox = document.querySelector(".weatherBox");
-		const boxArea = document.querySelector(".weatherBox .boxArea");
+		const weatherLink = document.querySelector(".weatherBox .weatherLink");
 		const accordionTarget = document.querySelector(".weatherBox .accordionTarget");
 
 		mainWeather.weatherBoxY = weatherBox.getBoundingClientRect().top;
 
-		window.addEventListener('scroll', function(){
-			// console.log(window.scrollY)
+		weatherLink.addEventListener('click', (e)=>{
+			window.scrollTo(0, mainWeather.weatherBoxY + weatherBox.getBoundingClientRect().top)
+		});
 
-			
-			// console.log(mainWeather.weatherBoxY)
+		window.addEventListener('scroll', function(){
 			if(mainWeather.weatherBoxY <= window.scrollY + weatherBox.getBoundingClientRect().top) {
-				// console.log(2)
 				weatherBox.classList.remove('active');
 				accordionTarget.style.height = mainWeather.targetHeight+'px';
 			} 
 			if(weatherBox.getBoundingClientRect().top > mainWeather.weatherBoxY-200 ) {
-				// console.log(1)
 				weatherBox.classList.add('active');
 				accordionTarget.style.height = "0";
 			}
 		});
-
-		// boxArea.click();
-		// if(weatherBoxY)
-	},
-	open : () => {
-		const weatherBox = document.querySelector(".weatherBox");
-
-		weatherBox.classList.remove('active');
 	},
 }
 
