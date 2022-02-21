@@ -7,23 +7,63 @@
 
 
 /* 메인 UI-SJN-03-001U */
-.mainArea .popular {}
+.info .infoNav { background-color: #4EC457;}
+.info .infoNav .slideContainer { overflow: hidden; padding: 0 2rem;}
+.info .infoNav li { width: auto;}
+.info .infoNav li a { display: flex; align-items: center; position: relative; height: 5.2rem; font-size: 1.6rem; color:rgba(255 255 255 / 75%);}
+.info .infoNav li a.active { font-weight: 700; color: #fff;}
+.info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
 
-
-
-
-
-
-
-
-.mainArea .together {}
-
-
-
-
-
-
-.mainArea .complaint {}
+.info .mainArea { background: #F3F5F7;}
+.mainArea .popular .boxArea { padding-bottom: 4rem;}
+.mainArea .popular .body .slideContainer { overflow: hidden; padding: 0 1.6rem;}
+.mainArea .popular .body ul li { width: auto;}
+.mainArea .popular .body ul li a { display: block; color: #111; text-align: center;}
+.mainArea .popular .body ul li a .icon { display: block; width: 5.6rem; height: 5.6rem; border-radius: 1.6rem;}
+.mainArea .popular .body ul li a.setup1 .icon { background-color: #32BBED;}
+.mainArea .popular .body ul li a.setup2 .icon { background-color: #D69630;}
+.mainArea .popular .body ul li a.setup3 .icon { background-color: #4EC457;}
+.mainArea .popular .body ul li a.setup4 .icon { background-color: #5FA9FF;}
+.mainArea .popular .body ul li a.setup5 .icon { background-color: #777;}
+.mainArea .popular .body ul li a h4 { margin-top: 0.8rem; font-size: 1.6rem;}
+.mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #777;}
+.mainArea .together { margin-top: 3.2rem;}
+.mainArea .together .boxArea { padding-bottom: 4rem;}
+.mainArea .together .textLinks { margin-top: 1.7rem; border-top: 1px solid #F4F5F7;}
+.mainArea .together .textLinks li { border-bottom: 1px solid #F4F5F7;}
+.mainArea .together .textLinks li a { display: flex; align-items: center; min-height: 4.8rem; padding: 1rem 0;}
+.mainArea .together .textLinks li a span { flex: 1; color: #555;}
+.mainArea .together .textLinks li a b { width: 7rem; font-size: 1.6rem; color: #4EC457; text-align: right;}
+.mainArea .together .iconLinks { display: flex; align-items: center; justify-content: space-between; margin-top: 3.2rem;}
+.mainArea .together .iconLinks li a { display: block;}
+.mainArea .together .iconLinks li a img { width: 8rem; height: 8rem;}
+.mainArea .together .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center;}
+.mainArea .complaint { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .complaint .boxArea { padding-bottom: 4rem;}
+.mainArea .complaint .body { margin-top: 2.4rem;}
+.mainArea .complaint .body .citizen { display: flex; justify-content: space-between;}
+.mainArea .complaint .body .citizen b { color: #32BBED; letter-spacing: -0.1em;}
+.mainArea .complaint .body .citizen .write { position: relative; width: calc(50% - 0.8rem);}
+.mainArea .complaint .body .citizen .write .line { display: block; position: relative; height: 10.6rem; border: 0.2rem solid #32BBED;}
+.mainArea .complaint .body .citizen .write .line >div { position: absolute; left: -0.2rem; top: -0.2rem; width: calc(100% - 1.6rem); padding: 0.2rem 0 1rem 0.2rem; background-color: #fff;}
+.mainArea .complaint .body .citizen .write .line >div img { display: block; width: 7.4rem; height: 3rem;}
+.mainArea .complaint .body .citizen .write .line >div b { display: block; margin-top: 0.8rem; font-size: 1.4rem;}
+.mainArea .complaint .body .citizen .write .complaintImg { position: absolute; right: 0; bottom: 0; width: 7.175rem; height: 8.7rem;} 
+.mainArea .complaint .body .citizen .issue { width: calc(50% - 0.8rem);}
+.mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
+.mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
+.mainArea .complaint .body .citizen .issue >div b { display: block; font-size: 1.6rem;}
+.mainArea .complaint .body .citizen .issue >div >b { margin-top: 0.4rem;}
+.mainArea .complaint .body .citizen .issue >div a { display: block;}
+.mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 1.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .complaint .body .citizen .issue >div .phone i { background-position: -24rem -19.2rem;}
+.mainArea .complaint .body2 ul { display: grid; grid-template-columns: repeat(3, 1fr);}
+.mainArea .complaint .body2 ul li { display: flex; align-items: center; justify-content: center; margin: -0.1rem 0 0 -0.1rem; border: 1px solid #EAEDF2;}
+.mainArea .complaint .body2 ul li a { display: block; padding: 1.6rem 0.9rem; font-size: 1.4rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .complaint .body2 ul li a .img24 { width: 7.2rem; height: 2.6rem;}
+.mainArea .complaint .roundDeco { display: block; position: absolute; left: -11.6rem; top: -8.6rem; z-index: 1; width: 22rem; height: 22rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .complaint .roundDeco2 { display: block; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
 
 /* 장소공유 UI-SJN-04-001U */
 .info .subMenuGroup { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}

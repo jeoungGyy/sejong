@@ -41,6 +41,15 @@ const slideOpt = {
 			prevEl: ".swiper-button-prev",
 		},
 	},
+	/* UI-SJN-03-001U */
+	infoNavSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 20,
+	},
+	infoPopularSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 16,
+	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
     slidesPerView: 'auto',
