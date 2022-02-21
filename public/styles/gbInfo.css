@@ -15,8 +15,34 @@
 .info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
 
 .info .mainArea { background: #F3F5F7;}
+.mainArea .flex { display: flex; align-items: center; justify-content: space-between;}
+.mainArea .flex .mapLink { color: #6684EA;}
+.mainArea .flex .mapLink i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -26.4rem -19.2rem;}
+
+.mainArea .iconLinks li a { display: block; text-align: center;}
+.mainArea .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto; background-color: #F4F5F7;}
+.mainArea .iconLinks.space3 { display: flex; align-items: center; justify-content: space-between;}
+.mainArea .iconLinks.space3 li a img { width: 8rem; height: 8rem;}
+.mainArea .iconLinks.space3 li a p { font-size: 1.6rem;}
+.mainArea .iconLinks.space3 li a .round { width: 8rem; height: 8rem; border-radius: 2.4rem;}
+.mainArea .iconLinks.space4 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(4, 1fr);}
+.mainArea .iconLinks.space4 li a img { width: 4rem; height: 4rem;}
+.mainArea .iconLinks.space4 li a p { font-size: 1.4rem;}
+.mainArea .iconLinks.space4 li a .round { width: 6rem; height: 6rem; border-radius: 1.6rem;}
+.mainArea .iconLinks.mt24 { margin-top: 2.4rem;}
+.mainArea .iconLinks.mt32 { margin-top: 3.2rem;}
+
+.mainArea .boxLinks { display: grid;}
+.mainArea .boxLinks li { display: flex; align-items: center; justify-content: center; margin: -0.1rem 0 0 -0.1rem; border: 1px solid #EAEDF2;}
+.mainArea .boxLinks li a { display: block; padding: 1.6rem 0.4rem; font-size: 1.4rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .boxLinks li a .img24 { width: 7.2rem; height: 2.6rem;}
+.mainArea .boxLinks.space2 { grid-template-columns: repeat(2, 1fr);}
+.mainArea .boxLinks.space3 { grid-template-columns: repeat(3, 1fr);}
+.mainArea .boxLinks.mt40 { margin-top: 4rem;}
+
 .mainArea .popular .boxArea { padding-bottom: 4rem;}
-.mainArea .popular .body .slideContainer { overflow: hidden; padding: 0 1.6rem;}
+.mainArea .popular .body .slideContainer { overflow: hidden; margin: 0 -1.6rem; padding: 0 1.6rem;}
 .mainArea .popular .body ul li { width: auto;}
 .mainArea .popular .body ul li a { display: block; color: #111; text-align: center;}
 .mainArea .popular .body ul li a .icon { display: block; width: 5.6rem; height: 5.6rem; border-radius: 1.6rem;}
@@ -34,10 +60,6 @@
 .mainArea .together .textLinks li a { display: flex; align-items: center; min-height: 4.8rem; padding: 1rem 0;}
 .mainArea .together .textLinks li a span { flex: 1; color: #555;}
 .mainArea .together .textLinks li a b { width: 7rem; font-size: 1.6rem; color: #4EC457; text-align: right;}
-.mainArea .together .iconLinks { display: flex; align-items: center; justify-content: space-between; margin-top: 3.2rem;}
-.mainArea .together .iconLinks li a { display: block;}
-.mainArea .together .iconLinks li a img { width: 8rem; height: 8rem;}
-.mainArea .together .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center;}
 .mainArea .complaint { margin-top: 3.2rem; padding-bottom: 8rem;}
 .mainArea .complaint .boxArea { padding-bottom: 4rem;}
 .mainArea .complaint .body { margin-top: 2.4rem;}
@@ -58,12 +80,29 @@
 .mainArea .complaint .body .citizen .issue >div a { display: block;}
 .mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 1.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .body .citizen .issue >div .phone i { background-position: -24rem -19.2rem;}
-.mainArea .complaint .body2 ul { display: grid; grid-template-columns: repeat(3, 1fr);}
-.mainArea .complaint .body2 ul li { display: flex; align-items: center; justify-content: center; margin: -0.1rem 0 0 -0.1rem; border: 1px solid #EAEDF2;}
-.mainArea .complaint .body2 ul li a { display: block; padding: 1.6rem 0.9rem; font-size: 1.4rem; color: #333; text-align: center; letter-spacing: -0.1em;}
-.mainArea .complaint .body2 ul li a .img24 { width: 7.2rem; height: 2.6rem;}
 .mainArea .complaint .roundDeco { display: block; position: absolute; left: -11.6rem; top: -8.6rem; z-index: 1; width: 22rem; height: 22rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .roundDeco2 { display: block; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .reservation { margin-top: 3.2rem;}
+.mainArea .reservation .roundDeco { display: block; position: absolute; right: -7.5rem; top: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .healthFacility { margin-top: 3.2rem;}
+.mainArea .healthFacility .boxArea { padding: 3.2rem 1.6rem;}
+.mainArea .dataConnect { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .dataConnect .boxArea { padding: 3.2rem 1.6rem;}
+.mainArea .dataConnect .cleanNetBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.2rem; margin-top: 3.2rem; font-size: 1.6rem; font-weight: 700; color: #6684EA; background-color: #F3F5F7; border-radius: 0.8rem;}
+.mainArea .dataConnect .cleanNetBtn i { margin-left: 0.4rem; background-position-x: -38rem;}
+.mainArea .dataConnect .textLinks { margin-top: 2.4rem;}
+.mainArea .dataConnect .textLinks li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.mainArea .dataConnect .textLinks li a { display: flex; align-items: center; color: #6684EA;}
+.mainArea .dataConnect .textLinks li a span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #4EC457; border-radius: 50%;}
+.mainArea .dataConnect .textLinks li a span i { background-position: -24rem -19.2rem;}
+.mainArea .dataConnect .textLinks li ~ li { border-top: 1px solid #F2F2F2;}
+.mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
+
+
+
+
+
+
 
 /* 장소공유 UI-SJN-04-001U */
 .info .subMenuGroup { position: relative; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}

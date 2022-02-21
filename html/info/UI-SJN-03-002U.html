@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents info"> <!-- [생활정보 Class] info-->
+			<h2 class="visible"><div class="headerClone">생활정보</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="infoWrap">
+				<div class="mainMenuFixed">
+					<nav id="infoNavSwiper" class="infoNav">
+						<div class="slideContainer">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><a href="#">세종여행</a></li>
+								<li class="swiper-slide"><a href="#">교육ㆍ문화</a></li>
+								<li class="swiper-slide"><a href="#">교통ㆍ안전</a></li>
+								<li class="swiper-slide"><a href="#" class="active">건강ㆍ환경</a></li>
+								<li class="swiper-slide"><a href="#">함께 소통</a></li>
+							</ul>
+						</div>
+					</nav>
+					<script>
+						slider.active('infoNavSwiper')
+					</script>
+
+					<div class="mainArea">
+						<div class="boxWrap popular">
+							<div class="boxArea">
+								<h3>이용이 많은 정보</h3>
+								<div id="infoPopularSwiper" class="body">
+									<div class="slideContainer">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<a href="#" class="setup1">
+													<span class="icon"><i></i></span>
+													<h4>생생버스</h4>
+													<span>교통</span>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" class="setup2">
+													<span class="icon"><i></i></span>
+													<h4>안전신고</h4>
+													<span>안전</span>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" class="setup3">
+													<span class="icon"><i></i></span>
+													<h4>우리가게</h4>
+													<span>소통</span>     
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" class="setup4">
+													<span class="icon"><i></i></span>
+													<h4>어울링</h4>
+													<span>교통</span>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" class="setup5">
+													<span class="icon"><i></i></span>
+													<h4>CCTV</h4>
+													<span>안전</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									slider.active('infoPopularSwiper')
+								</script>
+							</div>
+						</div>
+
+						<div class="boxWrap reservation">
+							<div class="boxArea">
+								<div class="flex">
+									<h3>예약가능한 체육시설</h3>
+									<a href="#" class="mapLink"><i class="split24"></i>지도보기</a>
+								</div>
+								<div class="body">
+									<ul class="iconLinks space4 mt24">
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility1.png" alt="" /></span>
+												<p>탁구장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility2.png" alt="" /></span>
+												<p>야구장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility3.png" alt="" /></span>
+												<p>축구장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility4.png" alt="" /></span>
+												<p>풋살경기장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility5.png" alt="" /></span>
+												<p>족구장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility6.png" alt="" /></span>
+												<p>농구장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility7.png" alt="" /></span>
+												<p>테니스장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility8.png" alt="" /></span>
+												<p>배트민턴장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility9.png" alt="" /></span>
+												<p>파크골프장</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_facility10.png" alt="" /></span>
+												<p>기타 체육</p>
+											</a>
+										</li>
+									</ul>
+									<ul class="boxLinks space2 mt40">
+										<li>
+											<a href="#">통합예약시스템</a>
+										</li>
+										<li>
+											<a href="#">LH시설 예약 서비스</a>
+										</li>
+										<li>
+											<a href="#">학교시설 예약 서비스</a>
+										</li>
+										<li>
+											<a href="#">아름스포츠 예약 서비스</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<span class="roundDeco"></span>
+						</div>
+
+						<div class="boxWrap healthFacility">
+							<div class="boxArea">
+								<div class="body">
+									<ul class="boxLinks space3">
+										<li><a href="#">병원</a></li>
+										<li><a href="#">약국</a></li>
+										<li><a href="#">어르신돌봄</a></li>
+										<li><a href="#">자동심장 충격기</a></li>
+										<li><a href="#">헬스케어존</a></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="boxWrap dataConnect">
+							<div class="boxArea">
+								<div class="body">
+									<ul class="iconLinks space3">
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_dataConnect_img.png" alt="" /></span>
+												<p>날씨</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_dataConnect_img2.png" alt="" /></span>
+												<p>미세먼지</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="round"><img src="../../public/image/info/info_dataConnect_img3.png" alt="" /></span>
+												<p>초미세먼지</p>
+											</a>
+										</li>
+									</ul>
+									<button type="button" class="cleanNetBtn" onclick="tooltip.show('tooltip1', 'bottom');">자동크린넷 시범서비스<i class="split20"></i></button>
+									<ul class="textLinks">
+										<li>
+											<span>대형 폐기물 배출</span>
+											<a href="tel:044-850-1115">배출신청 <span><i class="split24"></i></span></a>
+										</li>
+										<li>
+											<span>폐가전 무상수거</span>
+											<a href="tel:044-850-1115">예약하기 <span><i class="split24"></i></span></a>
+										</li>
+										<li>
+											<span>종량제물품 지정판매소</span>
+											<a href="#">위치보기 <span><i class="split24"></i></span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<span class="roundDeco"></span>
+						</div>
+					</div>
+
+					<div class="mainMenu">
+						<nav id="mainMenuSwiper" class="mainMenuList">
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<button type="button" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></button>
+									</li>
+									<li class="swiper-slide">
+										<button type="button" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></button>
+									</li>
+								</ul>
+								<div class="swiper-button-prev">이전 콘텐츠</div>
+								<div class="swiper-button-next">다음 콘텐츠</div>
+							</div>
+						</nav>
+						<script>
+							slider.active('mainMenuSwiper', 0);
+						</script>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+		<!-- 툴팁 -->
+		<div id="tooltip1" class="boxTooltipLayer">
+			<div class="boxTooltipBody">
+				<div class="paragraphGroup">
+					<p>소담.반곡동 자동크린넷의 위치와 상태정보를 확인할 수 있습니다.</p>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+		<!-- //툴팁 -->
+	</div>
+</div>
+</body>
+</html>
