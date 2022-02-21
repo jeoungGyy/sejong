@@ -5,187 +5,187 @@
 .boderTopGray { border-top: 1px solid #EAEAEA;}
 
 /* UI-SJN-01-001U */
-.home .mainArea { overflow: hidden; padding: 3.2rem 2rem 0; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
-.home .mainArea .mainTitle { font-size: 1.6rem; line-height: 2.4rem;}
-.home .mainArea .repMenu { overflow: hidden; display: grid; gap: 0.4rem; grid-template-columns: repeat(2, 1fr); margin-top: 2.4rem; border-radius: 0.8rem;}
-.home .mainArea .repMenu a { display: block; position: relative; height: 15.8rem; }
-.home .mainArea .repMenu a b { display: block; position: absolute; left: 0; bottom: 1.6rem; width: 100%; font-size: 1.6rem; color: #fff; text-align: center;}
-.home .mainArea .repMenu a .prepare { display: inline-flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 5rem; height: 2.8rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; background-color: #fff; border-radius: 1.4rem; transform: translateX(-50%);}
-.home .mainArea .repMenu a.service1 { padding-top: 1.6rem; background-color: #FF9D22;}
-.home .mainArea .repMenu a.service1 i { display: block; width: 11.6rem; height: 10rem; margin: 0 auto; background: url(../image/home/main_repMenu.png) no-repeat center/cover;}
-.home .mainArea .repMenu a.service2 { background-color: #6684EA;}
-.home .mainArea .repMenu a.service2 i { display: block; width: 15.8rem; height: 11.2rem; margin: 0 auto; background: url(../image/home/main_repMenu2.png) no-repeat center/cover;}
-.home .mainArea .repMenu a.service3 { background-color: #A9B0C1;}
-.home .mainArea .repMenu a.service3 i { display: block; width: 15.8rem; height: 11.2rem; margin: 0 auto; background: url(../image/home/main_repMenu3.png) no-repeat center/cover;}
-.home .mainArea .repMenu a.service4 { padding-top: 2.4rem; background-color: #777;}
-.home .mainArea .repMenu a.service4 i { display: block; width: 8rem; height: 8rem; margin: 0 auto; background: url(../image/home/main_repMenu4.png) no-repeat center/cover;}
-.home .mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
-.home .mainArea .recentService { margin-top: 4rem;}
-.home .mainArea .recentService .mainNav { display: flex; align-items: center; overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
-.home .mainArea .recentService .mainNav ul li { width: auto;}
-.home .mainArea .recentService .mainNav ul li a { display: flex; align-items: center; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 1.8rem;}
-.home .mainArea .boxWrap { position: relative;}
-.home .mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 2.4rem 1.6rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 20%);}
-.home .mainArea .covid19 .roundDeco { display: block; position: absolute; left: -7rem; top: -6rem; z-index: 1; width: 23rem; height: 23rem; background-color: #6684EA; border-radius: 50%;}
-.home .mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; margin-top: 0.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
-.home .mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
-.home .mainArea .covid19 .title >div { flex: 1;}
-.home .mainArea .covid19 .title >div b { display: block; font-size: 1.6rem;}
-.home .mainArea .covid19 .title >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #333;}
-.home .mainArea .covid19 .menu { margin-top: 1.6rem;}
-.home .mainArea .covid19 .menu .btnTab { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
-.home .mainArea .covid19 .menu .btnTab li button,
-.home .mainArea .covid19 .menu .btnTab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
-.home .mainArea .covid19 .menu .btnTab li button.active { color: #fff; border-color: #D57298; background-color: #D57298;}
-.home .mainArea .covid19 .menu .tabContent { margin-top: 0.8rem;}
-.home .mainArea .covid19 .menu .tabContent >div { display: none;}
-.home .mainArea .covid19 .menu .tabContent >div.active { display: block;}
-.home .mainArea .covid19 .menu .tabContent .clinic { padding: 0.8rem 0;}
-.home .mainArea .covid19 .menu .tabContent .clinic p { font-size: 1.4rem; color: #777;}
-.home .mainArea .covid19 .situation .sDate { display: flex; align-items: center; justify-content: flex-end; height: 3.4rem; font-size: 1.4rem; letter-spacing: 0;}
-.home .mainArea .covid19 .situation img { width: 100%; height: auto;}
+.mainArea { overflow: hidden; padding: 3.2rem 2rem 0; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
+.mainArea .mainTitle { font-size: 1.6rem; line-height: 2.4rem;}
+.mainArea .repMenu { overflow: hidden; display: grid; gap: 0.4rem; grid-template-columns: repeat(2, 1fr); margin-top: 2.4rem; border-radius: 0.8rem;}
+.mainArea .repMenu a { display: block; position: relative; height: 15.8rem; }
+.mainArea .repMenu a b { display: block; position: absolute; left: 0; bottom: 1.6rem; width: 100%; font-size: 1.6rem; color: #fff; text-align: center;}
+.mainArea .repMenu a .prepare { display: inline-flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 5rem; height: 2.8rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; background-color: #fff; border-radius: 1.4rem; transform: translateX(-50%);}
+.mainArea .repMenu a.service1 { padding-top: 1.6rem; background-color: #FF9D22;}
+.mainArea .repMenu a.service1 i { display: block; width: 11.6rem; height: 10rem; margin: 0 auto; background: url(../image/home/main_repMenu.png) no-repeat center/cover;}
+.mainArea .repMenu a.service2 { background-color: #6684EA;}
+.mainArea .repMenu a.service2 i { display: block; width: 15.8rem; height: 11.2rem; margin: 0 auto; background: url(../image/home/main_repMenu2.png) no-repeat center/cover;}
+.mainArea .repMenu a.service3 { background-color: #A9B0C1;}
+.mainArea .repMenu a.service3 i { display: block; width: 15.8rem; height: 11.2rem; margin: 0 auto; background: url(../image/home/main_repMenu3.png) no-repeat center/cover;}
+.mainArea .repMenu a.service4 { padding-top: 2.4rem; background-color: #777;}
+.mainArea .repMenu a.service4 i { display: block; width: 8rem; height: 8rem; margin: 0 auto; background: url(../image/home/main_repMenu4.png) no-repeat center/cover;}
+.mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.mainArea .recentService { margin-top: 4rem;}
+.mainArea .recentService .mainNav { display: flex; align-items: center; overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
+.mainArea .recentService .mainNav ul li { width: auto;}
+.mainArea .recentService .mainNav ul li a { display: flex; align-items: center; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 1.8rem;}
+.mainArea .boxWrap { position: relative;}
+.mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 2.4rem 1.6rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 20%);}
+.mainArea .covid19 .roundDeco { display: block; position: absolute; left: -7rem; top: -6rem; z-index: 1; width: 23rem; height: 23rem; background-color: #6684EA; border-radius: 50%;}
+.mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; margin-top: 0.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
+.mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
+.mainArea .covid19 .title >div { flex: 1;}
+.mainArea .covid19 .title >div b { display: block; font-size: 1.6rem;}
+.mainArea .covid19 .title >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #333;}
+.mainArea .covid19 .menu { margin-top: 1.6rem;}
+.mainArea .covid19 .menu .btnTab { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.mainArea .covid19 .menu .btnTab li button,
+.mainArea .covid19 .menu .btnTab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.mainArea .covid19 .menu .btnTab li button.active { color: #fff; border-color: #D57298; background-color: #D57298;}
+.mainArea .covid19 .menu .tabContent { margin-top: 0.8rem;}
+.mainArea .covid19 .menu .tabContent >div { display: none;}
+.mainArea .covid19 .menu .tabContent >div.active { display: block;}
+.mainArea .covid19 .menu .tabContent .clinic { padding: 0.8rem 0;}
+.mainArea .covid19 .menu .tabContent .clinic p { font-size: 1.4rem; color: #777;}
+.mainArea .covid19 .situation .sDate { display: flex; align-items: center; justify-content: flex-end; height: 3.4rem; font-size: 1.4rem; letter-spacing: 0;}
+.mainArea .covid19 .situation img { width: 100%; height: auto;}
+.mainArea .covid19 .lineBox { margin-top: 1.6rem; padding: 2.4rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .covid19 .lineBox .operation { display: flex; align-items: center;}
+.mainArea .covid19 .lineBox .operation .round { display: flex; align-items: center; justify-content: center; height: 2.4rem; margin-right: 0.8rem; padding: 0 0.8rem 0 0.4rem; font-size: 1.4rem; border-radius: 1.2rem;}
+.mainArea .covid19 .lineBox .operation .round.operation { color: #4EC457; border: 1px solid #4EC457;}
+.mainArea .covid19 .lineBox .operation .round.closed { color: #777; border: 1px solid #777;}
+.mainArea .covid19 .lineBox .operation b { flex: 1; font-size: 1.6rem;}
+.mainArea .covid19 .lineBox .operation i { background-position-x: -38rem;}
+.mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-left: 2.4rem;}
+.mainArea .covid19 .lineBox .infomation >div b { display: block; position: relative; font-size: 1.6rem;}
+.mainArea .covid19 .lineBox .infomation >div b::after { content: ''; display: inline-block; position: absolute; left: -1.6rem; top: 0.6rem; width: 1rem; height: 1rem; border-radius: 50%;}
+.mainArea .covid19 .lineBox .infomation >div span { display: block; margin-top: 0.4rem; font-size: 1.4rem;}
+.mainArea .covid19 .lineBox .infomation .guide { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 6rem; height: 6rem; background-color: #6684EA; border-radius: 50%;}
+.mainArea .covid19 .lineBox .infomation .guide i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 28.8rem;}
+.mainArea .covid19 .lineBox .infomation .guide b { font-size: 1.2rem; color: #fff;}
+.mainArea .covid19 .lineBox .infomation.veryCrowd { color: #FD2020;}
+.mainArea .covid19 .lineBox .infomation.veryCrowd >div b::after { background-color: #FD2020;}
+.mainArea .covid19 .button-more { margin-top: 1.6rem;}
+.mainArea .covid19 .button-more .btn { color: #333;}
+.mainArea .covid19 .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; margin-top: 1.6rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
+.mainArea .covid19 .offerer button { font-size: 1.4rem; color: #777;}
+.mainArea .covid19 .offerer button i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
+.mainArea .infection { margin-top: 1.6rem;}
+.mainArea .infection .infectionBtn { display: flex; align-items: center; justify-content: space-between; width: 100%;}
+.mainArea .infection .infectionBtn span { font-size: 1.4rem; color: #333;}
+.mainArea .infection .infectionBtn span i { margin-right: 0.4rem; vertical-align: middle; background-position: 0 -19.2rem;}
+.mainArea .infection .infectionBtn b { margin-top: -0.6rem; font-size: 1.6rem;}
+.mainArea .weatherBox { margin-top: 3.2rem;}
+.mainArea .weatherBox.active { position: fixed; left: 0; right: 0; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 52; padding: 0 2rem;}
+.mainArea .weatherBox.active .accordionTarget { height: 0;}
+.mainArea .weatherBox.active .weatherLink .weather { display: flex; align-items: center;}
+.mainArea .weatherBox.active .weatherLink .location { display: none;}
+.mainArea .weatherBox.active .weatherLink .toggleBtn { display: flex;}
+.mainArea .weatherBox.active .weatherLink .weather .temperature { text-align: center;}
+.mainArea .weatherBox.active .weatherLink .val { margin: 0.3rem 0 0 0.6rem;}
+.mainArea .weatherBox .weatherLink .weather .icon { margin-top: -0.2rem;}
+.mainArea .weatherBox .boxArea { border: 1px solid #000;} 
+.mainArea .weatherBox .weatherLink { display: flex; align-items: center; position: relative; color: #111;}
+.mainArea .weatherBox .weatherLink .weather { position: relative; width: 15.5rem; margin-right: -2rem; padding-left: 4.6rem; white-space: nowrap;}
+.mainArea .weatherBox .weatherLink .weather .icon { position: absolute; left: 0; top: 0; margin-right: 0;}
+.mainArea .weatherBox .weatherLink .weather .temperature { display: block; position: relative; font-size: 1.8rem;}
+.mainArea .weatherBox .weatherLink .weather .temperature::after { content: ''; position: absolute; left: 1.2rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
+.mainArea .weatherBox .weatherLink .weather .temperature span { margin-left: 0.5rem; font-size: 1.6rem;}
+.mainArea .weatherBox .weatherLink .val { display: flex; align-items: center; margin: 0.4rem 0 0 0;}
+.mainArea .weatherBox .weatherLink .val p { position: relative; font-size: 1.3rem; color: #555;}
+.mainArea .weatherBox .good { color: #4EC457;}
+.mainArea .weatherBox .bed { color: #FD2020;}
+.mainArea .weatherBox .weatherLink .val p ~ p { margin-left: 0.5rem; padding-left: 0.5rem;}
+.mainArea .weatherBox .weatherLink .val p ~ p::after { content: ''; position: absolute; left: 0; top: 0.7rem; width: 0.2rem; height: 0.2rem; background-color: #aaa; border-radius: 50%;}
+.mainArea .weatherBox .weatherLink .poa { position: absolute; right: 0; top: 0.2rem;}
+.mainArea .weatherBox .weatherLink .toggleBtn { display: none; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #F3F5F7; border-radius: 50%;}
+.mainArea .weatherBox .weatherLink .toggleBtn i { background-position: -16.8rem -19.2rem;}
+.mainArea .weatherBox .weatherLink .location { display: block;}
+.mainArea .weatherBox .weatherLink .location span { font-size: 1.3rem; color: #777;}
+.mainArea .weatherBox .weatherLink .location i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
+.mainArea .weatherBox .nav_side { margin: 0.8rem 0 1.6rem;}
+.mainArea .weatherBox .accordionTarget { overflow: hidden; transition: height 0.3s ease-in-out;}
+.mainArea .weatherBox .accordionTarget img { width: 100%; height: auto;}
+.mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
+.mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
+.mainArea .weatherBox .anniversary { display: flex; align-items: center; height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
+.mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
+.mainArea .weatherBox .anniversary span { font-size: 1.6rem;}
+.mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
+.mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
+.mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
+.mainArea .weatherBox .particulates .body >div ~ div::after { content: ''; position: absolute; left: 0; top: 50%; width: 0.1rem; height: 8rem; margin-top: -4rem; background-color: #EAEDF2;}
+.mainArea .weatherBox .particulates .body >div >span { font-size: 1.4rem;}
+.mainArea .weatherBox .particulates .body >div h4 { font-size: 1.6rem;}
+.mainArea .weatherBox .particulates .body >div .number { margin: 0.7rem 0 0.5rem;}
+.mainArea .weatherBox .particulates .body >div .number .pm10 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -19.2rem;}
+.mainArea .weatherBox .particulates .body >div .number .pm25 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -21.6rem;}
+.mainArea .weatherBox .particulates .body >div .number b { font-size: 1.8rem;}
+.mainArea .weatherBox .offerer { display: flex; align-items: center; justify-content: flex-end; margin-top: 0.8rem;}
+.mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #777;}
+.mainArea .mainNews { margin-top: 3.2rem;}
+.mainArea .mainNews .roundDeco { display: block; position: absolute; right: -9.4rem; top: -14.7rem; z-index: 1; width: 23rem; height: 23rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .mainNews .mainNewsList { position: relative; padding-bottom: 2.8rem;}
+.mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
+.mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
+.mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
+.mainArea .mainNews .slideContainer { overflow: hidden;}
+.mainArea .mainNews .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
+.mainArea .mainNews .slideContainer li a { display: block;}
+.mainArea .mainNews .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
+.mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
+.mainArea .mainNews .mainNewsPiece .slideContainer { padding: 0 1.6rem;}
+.mainArea .mainNews .mainNewsPiece li { width: 14rem;}
+.mainArea .mainNews .mainNewsPiece li a { display: block; color: #111;}
+.mainArea .mainNews .mainNewsPiece li a figure { width: 14rem; height: 9.2rem;}
+.mainArea .mainNews .mainNewsPiece li a p { height: 4.8rem; margin-top: 1.2rem; line-height: 2.4rem;}
+.mainArea .mainNews .mainNewsPiece li a span { display: block; margin-top: 0.9rem; font-size: 1.4rem; color: #777;}
+.mainArea .mainNews .button-more { margin-top: 2.5rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
+.mainArea .mainNews .button-more .btn { color: #333;}
+.mainArea .oilPrice { margin-top: 3.2rem;}
+.mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -12.8rem; z-index: 1; width: 18rem; height: 18rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
+.mainArea .oilPrice .average .title b { font-size: 1.6rem;}
+.mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .average .oilDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777; letter-spacing: 0;}
+.mainArea .oilPrice .price { margin-top: 2.4rem;}
+.mainArea .oilPrice .price select { padding: 0; font-size: 1.6rem; border: none; border-bottom: 1px solid #ddd;}
+.mainArea .oilPrice .price .t { display: flex; align-items: center; margin-top: 3.2rem;}
+.mainArea .oilPrice .price .t b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
+.mainArea .oilPrice .price .t span { font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
+.mainArea .oilPrice .price .up { color: #FD2020;}
+.mainArea .oilPrice .price .down { color: #6684EA;}
+.mainArea .oilPrice .price .u { margin-top: 1rem;}
+.mainArea .oilPrice .price .u span { font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
+.mainArea .oilPrice .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; margin-top: 0.4rem;}
+.mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .button-more { margin-top: 0.4rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
+.mainArea .oilPrice .button-more .btn { color: #333;}
+.mainArea .hospital { margin-top: 3.2rem;}
+.mainArea .hospital .roundDeco { display: block; position: absolute; right: -14.4rem; top: -8.6rem; z-index: 1; width: 23rem; height: 23rem; background-color: #A9B0C1; border-radius: 50%;}
+.mainArea .hospital .boxArea { padding-bottom: 4rem;}
+.mainArea .hospital h3 { height: 6.8rem;}
+.mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #777;}
+.mainArea .hospital ul { margin-top: 3.3rem; border-top: 1px solid #F4F5F7;}
+.mainArea .hospital ul li { border-bottom: 1px solid #F4F5F7;}
+.mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; font-size: 1.6rem; color: #6684EA;}
+.mainArea .hospital ul li a.hospitalLink i { margin-right: 0.8rem; background-position: -2.4rem -19.2rem;}
+.mainArea .hospital ul li a.pharmacyLink i { margin-right: 0.8rem; background-position: -4.8rem -19.2rem;}
+.mainArea .hospital ul li a::after { content: ''; }
+.mainArea .weekClosed { margin-top: 3.2rem;}
+.mainArea .weekClosed .boxArea { padding-bottom: 4rem;}
+.mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
+.mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
+.mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-between; margin-top: 2.4rem;}
+.mainArea .weekClosed .body a { display: block; width: 8rem; color: #111; text-align: center;}
+.mainArea .weekClosed .body a span { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
+.mainArea .weekClosed .body a img { width: 100%; height: 8rem;}
+.mainArea .sejong { margin-top: 3.2rem;}
+.mainArea .sejong .roundDeco { display: block; position: absolute; left: -5rem; top: -9.1rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
+.mainArea .sejong .boxArea { padding-bottom: 4rem;}
+.mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 9.2rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .sejong .body >div img { width: 8.55rem; height: 1.825rem; margin-right: 0.9rem; vertical-align: middle;}
+.mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; margin-top: -0.6rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
+.mainArea .sejong .body span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
+.mainArea .anchorTop { margin-top: 4rem;}
+.mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
+.mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 
-.home .mainArea .covid19 .lineBox { margin-top: 1.6rem; padding: 2.4rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
-.home .mainArea .covid19 .lineBox .operation { display: flex; align-items: center;}
-.home .mainArea .covid19 .lineBox .operation .round { display: flex; align-items: center; justify-content: center; height: 2.4rem; margin-right: 0.8rem; padding: 0 0.8rem 0 0.4rem; font-size: 1.4rem; border-radius: 1.2rem;}
-.home .mainArea .covid19 .lineBox .operation .round.operation { color: #4EC457; border: 1px solid #4EC457;}
-.home .mainArea .covid19 .lineBox .operation .round.closed { color: #777; border: 1px solid #777;}
-.home .mainArea .covid19 .lineBox .operation b { flex: 1; font-size: 1.6rem;}
-.home .mainArea .covid19 .lineBox .operation i { background-position-x: -38rem;}
-.home .mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-left: 2.4rem;}
-.home .mainArea .covid19 .lineBox .infomation >div b { display: block; position: relative; font-size: 1.6rem;}
-.home .mainArea .covid19 .lineBox .infomation >div b::after { content: ''; display: inline-block; position: absolute; left: -1.6rem; top: 0.6rem; width: 1rem; height: 1rem; border-radius: 50%;}
-.home .mainArea .covid19 .lineBox .infomation >div span { display: block; margin-top: 0.4rem; font-size: 1.4rem;}
-.home .mainArea .covid19 .lineBox .infomation .guide { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 6rem; height: 6rem; background-color: #6684EA; border-radius: 50%;}
-.home .mainArea .covid19 .lineBox .infomation .guide i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 28.8rem;}
-.home .mainArea .covid19 .lineBox .infomation .guide b { font-size: 1.2rem; color: #fff;}
-.home .mainArea .covid19 .lineBox .infomation.veryCrowd { color: #FD2020;}
-.home .mainArea .covid19 .lineBox .infomation.veryCrowd >div b::after { background-color: #FD2020;}
-.home .mainArea .covid19 .button-more { margin-top: 1.6rem;}
-.home .mainArea .covid19 .button-more .btn { color: #333;}
-.home .mainArea .covid19 .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; margin-top: 1.6rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.home .mainArea .covid19 .offerer button { font-size: 1.4rem; color: #777;}
-.home .mainArea .covid19 .offerer button i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
-.home .mainArea .infection { margin-top: 1.6rem;}
-.home .mainArea .infection .infectionBtn { display: flex; align-items: center; justify-content: space-between; width: 100%;}
-.home .mainArea .infection .infectionBtn span { font-size: 1.4rem; color: #333;}
-.home .mainArea .infection .infectionBtn span i { margin-right: 0.4rem; vertical-align: middle; background-position: 0 -19.2rem;}
-.home .mainArea .infection .infectionBtn b { margin-top: -0.6rem; font-size: 1.6rem;}
-.home .mainArea .weatherBox { margin-top: 3.2rem;}
-.home .mainArea .weatherBox.active { position: fixed; left: 0; right: 0; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 52; padding: 0 2rem;}
-.home .mainArea .weatherBox.active .accordionTarget { height: 0;}
-.home .mainArea .weatherBox.active .weatherLink .weather { display: flex; align-items: center;}
-.home .mainArea .weatherBox.active .weatherLink .location { display: none;}
-.home .mainArea .weatherBox.active .weatherLink .toggleBtn { display: flex;}
-.home .mainArea .weatherBox.active .weatherLink .weather .temperature { text-align: center;}
-.home .mainArea .weatherBox.active .weatherLink .val { margin: 0.3rem 0 0 0.6rem;}
-.home .mainArea .weatherBox .weatherLink .weather .icon { margin-top: -0.2rem;}
-.home .mainArea .weatherBox .boxArea { border: 1px solid #000;} 
-.home .mainArea .weatherBox .weatherLink { display: flex; align-items: center; position: relative; color: #111;}
-.home .mainArea .weatherBox .weatherLink .weather { position: relative; width: 15.5rem; margin-right: -2rem; padding-left: 4.6rem; white-space: nowrap;}
-.home .mainArea .weatherBox .weatherLink .weather .icon { position: absolute; left: 0; top: 0; margin-right: 0;}
-.home .mainArea .weatherBox .weatherLink .weather .temperature { display: block; position: relative; font-size: 1.8rem;}
-.home .mainArea .weatherBox .weatherLink .weather .temperature::after { content: ''; position: absolute; left: 1.2rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
-.home .mainArea .weatherBox .weatherLink .weather .temperature span { margin-left: 0.5rem; font-size: 1.6rem;}
-.home .mainArea .weatherBox .weatherLink .val { display: flex; align-items: center; margin: 0.4rem 0 0 0;}
-.home .mainArea .weatherBox .weatherLink .val p { position: relative; font-size: 1.3rem; color: #555;}
-.home .mainArea .weatherBox .good { color: #4EC457;}
-.home .mainArea .weatherBox .bed { color: #FD2020;}
-.home .mainArea .weatherBox .weatherLink .val p ~ p { margin-left: 0.5rem; padding-left: 0.5rem;}
-.home .mainArea .weatherBox .weatherLink .val p ~ p::after { content: ''; position: absolute; left: 0; top: 0.7rem; width: 0.2rem; height: 0.2rem; background-color: #aaa; border-radius: 50%;}
-.home .mainArea .weatherBox .weatherLink .poa { position: absolute; right: 0; top: 0.2rem;}
-.home .mainArea .weatherBox .weatherLink .toggleBtn { display: none; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #F3F5F7; border-radius: 50%;}
-.home .mainArea .weatherBox .weatherLink .toggleBtn i { background-position: -16.8rem -19.2rem;}
-.home .mainArea .weatherBox .weatherLink .location { display: block;}
-.home .mainArea .weatherBox .weatherLink .location span { font-size: 1.3rem; color: #777;}
-.home .mainArea .weatherBox .weatherLink .location i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
-.home .mainArea .weatherBox .nav_side { margin: 0.8rem 0 1.6rem;}
-.home .mainArea .weatherBox .accordionTarget { overflow: hidden; transition: height 0.3s ease-in-out;}
-.home .mainArea .weatherBox .accordionTarget img { width: 100%; height: auto;}
-.home .mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
-.home .mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
-.home .mainArea .weatherBox .anniversary { display: flex; align-items: center; height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.home .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
-.home .mainArea .weatherBox .anniversary span { font-size: 1.6rem;}
-.home .mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
-.home .mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
-.home .mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
-.home .mainArea .weatherBox .particulates .body >div ~ div::after { content: ''; position: absolute; left: 0; top: 50%; width: 0.1rem; height: 8rem; margin-top: -4rem; background-color: #EAEDF2;}
-.home .mainArea .weatherBox .particulates .body >div >span { font-size: 1.4rem;}
-.home .mainArea .weatherBox .particulates .body >div h4 { font-size: 1.6rem;}
-.home .mainArea .weatherBox .particulates .body >div .number { margin: 0.7rem 0 0.5rem;}
-.home .mainArea .weatherBox .particulates .body >div .number .pm10 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -19.2rem;}
-.home .mainArea .weatherBox .particulates .body >div .number .pm25 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -21.6rem;}
-.home .mainArea .weatherBox .particulates .body >div .number b { font-size: 1.8rem;}
-.home .mainArea .weatherBox .offerer { display: flex; align-items: center; justify-content: flex-end; margin-top: 0.8rem;}
-.home .mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #777;}
-.home .mainArea .mainNews { margin-top: 3.2rem;}
-.home .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -9.4rem; top: -14.7rem; z-index: 1; width: 23rem; height: 23rem; background-color: #32BBED; border-radius: 50%;}
-.home .mainArea .mainNews .mainNewsList { position: relative; padding-bottom: 2.8rem;}
-.home .mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
-.home .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
-.home .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
-.home .mainArea .mainNews .slideContainer { overflow: hidden;}
-.home .mainArea .mainNews .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
-.home .mainArea .mainNews .slideContainer li a { display: block;}
-.home .mainArea .mainNews .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
-.home .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
-.home .mainArea .mainNews .mainNewsPiece .slideContainer { padding: 0 1.6rem;}
-.home .mainArea .mainNews .mainNewsPiece li { width: 14rem;}
-.home .mainArea .mainNews .mainNewsPiece li a { display: block; color: #111;}
-.home .mainArea .mainNews .mainNewsPiece li a figure { width: 14rem; height: 9.2rem;}
-.home .mainArea .mainNews .mainNewsPiece li a p { height: 4.8rem; margin-top: 1.2rem; line-height: 2.4rem;}
-.home .mainArea .mainNews .mainNewsPiece li a span { display: block; margin-top: 0.9rem; font-size: 1.4rem; color: #777;}
-.home .mainArea .mainNews .button-more { margin-top: 2.5rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.home .mainArea .mainNews .button-more .btn { color: #333;}
-.home .mainArea .oilPrice { margin-top: 3.2rem;}
-.home .mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -12.8rem; z-index: 1; width: 18rem; height: 18rem; background-color: #4EC457; border-radius: 50%;}
-.home .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
-.home .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
-.home .mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
-.home .mainArea .oilPrice .average .oilDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777; letter-spacing: 0;}
-.home .mainArea .oilPrice .price { margin-top: 2.4rem;}
-.home .mainArea .oilPrice .price select { padding: 0; font-size: 1.6rem; border: none; border-bottom: 1px solid #ddd;}
-.home .mainArea .oilPrice .price .t { display: flex; align-items: center; margin-top: 3.2rem;}
-.home .mainArea .oilPrice .price .t b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
-.home .mainArea .oilPrice .price .t span { font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
-.home .mainArea .oilPrice .price .up { color: #FD2020;}
-.home .mainArea .oilPrice .price .down { color: #6684EA;}
-.home .mainArea .oilPrice .price .u { margin-top: 1rem;}
-.home .mainArea .oilPrice .price .u span { font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
-.home .mainArea .oilPrice .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; margin-top: 0.4rem;}
-.home .mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
-.home .mainArea .oilPrice .button-more { margin-top: 0.4rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.home .mainArea .oilPrice .button-more .btn { color: #333;}
-.home .mainArea .hospital { margin-top: 3.2rem;}
-.home .mainArea .hospital .roundDeco { display: block; position: absolute; right: -14.4rem; top: -8.6rem; z-index: 1; width: 23rem; height: 23rem; background-color: #A9B0C1; border-radius: 50%;}
-.home .mainArea .hospital .boxArea { padding-bottom: 4rem;}
-.home .mainArea .hospital h3 { height: 6.8rem;}
-.home .mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #777;}
-.home .mainArea .hospital ul { margin-top: 3.3rem; border-top: 1px solid #F4F5F7;}
-.home .mainArea .hospital ul li { border-bottom: 1px solid #F4F5F7;}
-.home .mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; font-size: 1.6rem; color: #6684EA;}
-.home .mainArea .hospital ul li a.hospitalLink i { margin-right: 0.8rem; background-position: -2.4rem -19.2rem;}
-.home .mainArea .hospital ul li a.pharmacyLink i { margin-right: 0.8rem; background-position: -4.8rem -19.2rem;}
-.home .mainArea .hospital ul li a::after { content: ''; }
-.home .mainArea .weekClosed { margin-top: 3.2rem;}
-.home .mainArea .weekClosed .boxArea { padding-bottom: 4rem;}
-.home .mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
-.home .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
-.home .mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-between; margin-top: 2.4rem;}
-.home .mainArea .weekClosed .body a { display: block; width: 8rem; color: #111; text-align: center;}
-.home .mainArea .weekClosed .body a span { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
-.home .mainArea .weekClosed .body a img { width: 100%; height: 8rem;}
-.home .mainArea .sejong { margin-top: 3.2rem;}
-.home .mainArea .sejong .roundDeco { display: block; position: absolute; left: -5rem; top: -9.1rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
-.home .mainArea .sejong .boxArea { padding-bottom: 4rem;}
-.home .mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 9.2rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
-.home .mainArea .sejong .body >div img { width: 8.55rem; height: 1.825rem; margin-right: 0.9rem; vertical-align: middle;}
-.home .mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; margin-top: -0.6rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
-.home .mainArea .sejong .body span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
-.home .mainArea .anchorTop { margin-top: 4rem;}
-.home .mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
-.home .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 .home .footer { padding: 2.2rem 0 4rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
 .home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
 .home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #777; text-align: center;}
@@ -193,8 +193,9 @@
 
 .mainMenuFixed { position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
 .mainMenuFixed .mainMenu { position: fixed; left: 0; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; height: 7rem; padding: 0 4rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
+/* .mainMenuFixed .mainMenu .mainMenuList .swiper-wrapper { transform: translate3d(0px, 0, 0) !important;} */
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer { width: 33.33%; margin: 0 auto;}
-.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li { width: calc(100% / 3); padding-top: 1.18rem;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li { padding-top: 1.18rem;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button { display: block; width: 100%; text-align: center;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button >span { display: inline-block; font-size: 1.2rem; color: #777;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button >span .name { display: block; margin-top: 0.5rem;}
@@ -205,14 +206,17 @@
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button.homeMenu .icon { background-position: -12rem -19.2rem;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button.mapMenu .icon { background-position: -14.4rem -19.2rem;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button br { display: block;}
-.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button >span { display: flex; position: absolute; z-index: 2; align-items: center; justify-content: center; left: 50%; top: -0.6rem; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; border: 1px solid #5575E2; background-color: #6684EA; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button >span { display: flex; position: absolute; z-index: 2; align-items: center; justify-content: center; left: 50%; top: -0.6rem; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li:nth-child(1).swiper-slide-active button >span { border: 1px solid #40B549; background-color: #4EC457;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li:nth-child(2).swiper-slide-active button >span { border: 1px solid #5575E2; background-color: #6684EA;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li:nth-child(3).swiper-slide-active button >span { border: 1px solid #5575E2; background-color: #6684EA;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button >span .name { margin-top: 0;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button .icon { display: none;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next { all: unset; position: absolute; left: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next::after { content: ''; display: block; position: absolute; right: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -6rem/40rem 8rem;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev { all: unset; position: absolute; right: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev::after { content: ''; display: block; position: absolute; left: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -4rem/40rem 8rem;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev { all: unset; position: absolute; left: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev::after { content: ''; display: block; position: absolute; right: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -6rem/40rem 8rem;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next { all: unset; position: absolute; right: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next::after { content: ''; display: block; position: absolute; left: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -4rem/40rem 8rem;}
 .mainMenuFixed .chatbot { display: block; position: fixed; right: 2rem; bottom: calc(19rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
 .mainMenuFixed .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
 

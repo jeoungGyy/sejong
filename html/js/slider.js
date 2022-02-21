@@ -3,7 +3,7 @@ const slider = {
 	active : (id, opt) => {
 		let sliderObj = '#'+id;
 		let option = slideOpt.merge(id);
-		if(opt) option = {...option, ...opt}
+		if(opt) option = {...option, initialSlide: opt}
 		if(document.querySelector(sliderObj)) slider.obj[id] = new Swiper(sliderObj + ' .slideContainer', option);
 	}
 }
@@ -32,9 +32,9 @@ const slideOpt = {
 	},
 	mainMenuSwiper: {
     slidesPerView: 1,
-		initialSlide: 1,
-		slideToClickedSlide : true,
-		centeredSlides: true,
+		// slideToClickedSlide : true,
+		// centeredSlides: true,
+		// longSwipes: true,
 		// longSwipesRatio: 5,
 		navigation: {
 			nextEl: ".swiper-button-next",
