@@ -218,7 +218,6 @@ const tooltip = {
 		let left = _this.left + _this.width;
 		
 		// event.currentTarget.setAttribute("title", "도움말 열림");
-
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);
 
@@ -266,6 +265,71 @@ const tooltip = {
 			tooltip.winClose = true;
 		}
 	}
+}
+
+const moreBtn = {
+	idx : null,
+	show : () => {
+		let more = document.querySelectorAll('.more');
+		let text = document.querySelectorAll('.text');
+		let reviewLi = document.querySelectorAll('.items-review li');
+		let els = Array.prototype.slice.call( document.getElementsByClassName('more'), 0 );
+		let target = reviewLi[els.indexOf(event.currentTarget)];
+
+		moreBtn.idx = els.indexOf(event.currentTarget);
+
+		if(target.getElementsByClassName('text')[0].classList.contains('lineBreake')) {
+			more[moreBtn.idx].classList.add('active');
+			text[moreBtn.idx].classList.remove('lineBreake');
+		} else {
+			more[moreBtn.idx].classList.remove('active');
+			text[moreBtn.idx].classList.add('lineBreake');
+		}
+	},
+}
+
+const mainWeather = {
+	weatherBoxY : null,
+	floatingBoxY : null,
+	targetHeight : null,
+	floating : () => {
+		const weatherBox = document.querySelector(".weatherBox");
+		const accordionTarget = document.querySelector(".weatherBox .accordionTarget");
+
+		mainWeather.weatherBoxY = weatherBox.getBoundingClientRect().y;
+		mainWeather.targetHeight = accordionTarget.clientHeight;
+
+		setTimeout(()=>{
+			weatherBox.classList.add('active');
+			mainWeather.scroll();
+		},1)
+	},
+	scroll : () => {
+		const weatherBox = document.querySelector(".weatherBox");
+		const weatherLink = document.querySelector(".weatherBox .weatherLink");
+		const accordionTarget = document.querySelector(".weatherBox .accordionTarget");
+		const chatbot = document.querySelector(".chatbot");
+
+
+		mainWeather.weatherBoxY = weatherBox.getBoundingClientRect().top;
+
+		weatherLink.addEventListener('click', (e)=>{
+			window.scrollTo(0, mainWeather.weatherBoxY + weatherBox.getBoundingClientRect().top)
+		});
+
+		window.addEventListener('scroll', function(){
+			if(mainWeather.weatherBoxY <= window.scrollY + weatherBox.getBoundingClientRect().top) {
+				weatherBox.classList.remove('active');
+				accordionTarget.style.height = mainWeather.targetHeight+'px';
+				chatbot.classList.add('bottom');
+			} 
+			if(weatherBox.getBoundingClientRect().top > mainWeather.weatherBoxY-200 ) {
+				weatherBox.classList.add('active');
+				accordionTarget.style.height = "0";
+				chatbot.classList.remove('bottom');
+			}
+		});
+	},
 }
 
 class Tab {
@@ -392,7 +456,6 @@ const tab = {
 
 		if(tab.idx == null) {
 			[].forEach.call(tabs, (_this, idx)=>{
-				console.log(this)
 				this.set(_this, idx);
 			});
 		} else {
@@ -497,9 +560,6 @@ const parkingTip = {
 			});
 			parkingTip.winClose = true;
 		}
-	},
-	set : function(_this, idx) {
-		console.log(_this)
 	},
 }
 

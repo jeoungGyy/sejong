@@ -20,6 +20,27 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	mainNewsSwiper: {
+		spaceBetween: 16,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	},
+	mainNewsPieceSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
+	mainMenuSwiper: {
+    slidesPerView: 1,
+		initialSlide: 1,
+		slideToClickedSlide : true,
+		centeredSlides: true,
+		// longSwipesRatio: 5,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
     slidesPerView: 'auto',

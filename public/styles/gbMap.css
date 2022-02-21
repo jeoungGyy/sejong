@@ -4,14 +4,14 @@
 body { --vh: 1px;}
 
 /* 공통 */
-.map .mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
-.map .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
-.map .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
-.map .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
-.map .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));}
-.map .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
+.mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
+.mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
+.mapArea.fixed .mapIcons .btnPin { top: 7rem;}
+.mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
+.mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));}
+.mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
 
-.map .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
+.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .location { display: flex; align-items: center; height: 4.8rem;}
@@ -46,7 +46,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
 .map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
-.map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem; border-radius: 50%;}
+.map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem; border-radius: 50%;}
 .map .mapInfoLayer .convenience .feature.gasStation i { background-position: -21.6rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.store i { background-position: -24rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.cctv i { background-position: -26.4rem -4.8rem;}
@@ -57,132 +57,131 @@ body { --vh: 1px;}
 .map .mapInfoLayer .convenience .car { display: flex; justify-content: flex-end; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
-.map .mapInfoLayer.open { transform: translateY(0);}
-.map .mapInfoLayer.default { height: calc(37rem + var(--vh));}
-.map .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
+.mapInfoLayer.open { transform: translateY(0);}
+.mapInfoLayer.default { height: calc(37rem + var(--vh));}
+.mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
 .map .mapArea.subStyle .mapInfoLayer.up { height: calc(100% - 5.6rem);}
 
-.map .mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
-.map .mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 100; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
-.map .mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
-.map .mapIcons .btnView button.mapView i { background-position: 0 -4rem;}
-.map .mapIcons .btnView button.listView { bottom: 4rem;}
-.map .mapIcons .btnView button.listView i { background-position: -2rem -4rem;}
-.map .mapIcons .btnView.up button.mapView { bottom: 4rem;}
-.map .mapIcons .btnView.open button.listView { bottom: -4rem;}
-.map .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.map .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 8rem;}
-.map .mapIcons .btnPin.active { background-color: #6684EA;}
-.map .mapIcons .btnPin.active i { background-position-y: -6rem;}
-.map .mapIcons .btnBikePin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.map .mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 8rem;}
-.map .mapIcons .btnBikePin.active { background-color: #6684EA;}
-.map .mapIcons .btnBikePin.active i { background-position-y: -6rem;}
-.map .mapIcons .bikeAir { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
-.map .mapIcons .bikeAir i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #32BBED url(../image/common/split_48.png) no-repeat -45.6rem -14.4rem/48rem 19.2rem; border-radius: 50%;}
-.map .mapIcons .bikeAir span { font-size: 1.3rem; color: #333;}
-.map .mapIcons .bikeAir::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .bikeAir::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
-.map .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
-.map .mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
-.map .mapIcons .depart { position: absolute;}
-.map .mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
-.map .mapIcons .arrival { position: absolute;}
-.map .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
-.map .mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;}
-.map .mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin-top: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
-.map .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
-.map .mapIcons .location .myLocation.active { background-color: #6684EA;}
-.map .mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
-.map .mapIcons .location .scaleBtn { width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
-.map .mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
-.map .mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
-.map .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
-.map .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
-.map .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
-#root .map .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
-#root .map .mapIcons .location.parkingDefault { transform: translateY(calc(100% - 38rem));}
-.map .mapIcons .transit { position: absolute;}
-.map .mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
-.map .mapIcons .transit span.num1 { background: url(../image/map/ico_transit1.png) no-repeat center/cover;}
-.map .mapIcons .transit span.num2 { background: url(../image/map/ico_transit2.png) no-repeat center/cover;}
-.map .mapIcons .transit span.num3 { background: url(../image/map/ico_transit3.png) no-repeat center/cover;}
-.map .mapIcons .transit span.num4 { background: url(../image/map/ico_transit4.png) no-repeat center/cover;}
-.map .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
-.map .mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
-.map .mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
-.map .mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
-.map .mapIcons .parkingPinSet .btnParking >i { display: block; width: 2.55rem; height: 3.35rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat 0 0/2.55rem 6.7rem;}
-.map .mapIcons .parkingPinSet .btnParking .textBox { display: flex; align-items: center; position: relative; left: 0; top: 0; width: 12rem; height: 4rem; margin: -8.8rem 0 0 -4.7rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; letter-spacing: -0.1em; background-color: #fff; border: 1px solid #A9B0C1; border-radius: 2rem; opacity: 1; transition: bottom .5s ease-in-out;}
-.map .mapIcons .parkingPinSet .btnParking .textBox::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .parkingPinSet .btnParking .textBox::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .parkingPinSet .btnParking .textBox span { flex: 1;}
-.map .mapIcons .parkingPinSet .btnParking .textBox i { display: flex; align-items: center; margin-right: 0.4rem; background-position: -45.6rem -4.8rem; border-radius: 50%;}
-.map .mapIcons .parkingPinSet .btnParking .textBox.bgGray i { background-color: #838FAC;}
-.map .mapIcons .parkingPinSet .btnParking .textBox.bgGreen i { background-color: #4EC457;}
-.map .mapIcons .parkingPinSet .btnParking.active >i { background-position-y: -3.35rem;}
-.map .mapIcons .parkingPinSet .btnParking.active .textBox { opacity: 0;}
+.mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
+.mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 100; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
+.mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
+.mapIcons .btnView button.mapView i { background-position: 0 -4rem;}
+.mapIcons .btnView button.listView { bottom: 4rem;}
+.mapIcons .btnView button.listView i { background-position: -2rem -4rem;}
+.mapIcons .btnView.up button.mapView { bottom: 4rem;}
+.mapIcons .btnView.open button.listView { bottom: -4rem;}
+.mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 8rem;}
+.mapIcons .btnPin.active { background-color: #6684EA;}
+.mapIcons .btnPin.active i { background-position-y: -6rem;}
+.mapIcons .btnBikePin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 8rem;}
+.mapIcons .btnBikePin.active { background-color: #6684EA;}
+.mapIcons .btnBikePin.active i { background-position-y: -6rem;}
+.mapIcons .bikeAir { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
+.mapIcons .bikeAir i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #32BBED url(../image/common/split_48.png) no-repeat -45.6rem -14.4rem/48rem 28.8rem; border-radius: 50%;}
+.mapIcons .bikeAir span { font-size: 1.3rem; color: #333;}
+.mapIcons .bikeAir::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
+.mapIcons .bikeAir::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+.mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
+.mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
+.mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
+.mapIcons .depart { position: absolute;}
+.mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
+.mapIcons .arrival { position: absolute;}
+.mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
+.mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;}
+.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin-top: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
+.mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
+.mapIcons .location .myLocation.active { background-color: #6684EA;}
+.mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
+.mapIcons .location .scaleBtn { width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
+.mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
+.mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
+.mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
+.mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
+.mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
+#root .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
+#root .mapIcons .location.parkingDefault { transform: translateY(calc(100% - 38rem));}
 
-
-.map .mapIcons .mapIcoBody { position: absolute;}
-.map .mapIcons .mapIcoBody .poaBox { position: relative; width: 10rem; margin-top: 3.1rem; padding: 0.4rem 0.8rem; font-size: 1.4rem; color: #555; text-align: center; border: 1px solid #A9B0C1; background-color: #fff; transform: translateX(calc(-50% + 1.2rem));}
-.map .mapIcons .mapIcoBody .poaBox::after { content: ''; position: absolute; left: 50%; top: -0.8rem; width: 0.1rem; height: 0.8rem; background-color: #A9B0C1;}
-.map .mapIcons .mapIco.pin i { background-color: #838FAC; background-position: -45.6rem -4.8rem;}
-.map .mapIcons .mapIco.pin.active i { background-color: #6684EA;}
-.map .mapIcons .trafficInfo { position: absolute;}
-.map .mapIcons .trafficInfo .tiTable th,
-.map .mapIcons .trafficInfo .tiTable td { padding: 0.6rem 0; font-size: 1.3rem; color: #555; text-align: center; border: 1px solid #EAEAEA; background-color: #fff;}
-.map .mapIcons .trafficInfo .tiTable thead th { background-color: #F4F5F7;}
-.map .mapIcons .trafficInfo .tiTable tbody th { font-weight: 400;}
-.map .mapIcons .trafficInfo .type { position: inherit;}
-.map .mapIcons .type { display: block; position: absolute; margin: 0 auto; text-indent: -9999rem; border: 1px solid #292D32; border-radius: 50%;}
-.map .mapIcons .injury_4 { width: 1.6rem; height: 1.6rem; background-color: #155ED1; border-radius: 0;}
-.map .mapIcons .injury_3 { width: 1.8rem; height: 1.8rem; background-color: #155ED1;}
-.map .mapIcons .injury_2 { width: 1.4rem; height: 1.4rem; background-color: #155ED1;}
-.map .mapIcons .injury_1 { width: 1rem; height: 1rem; background-color: #155ED1;}
-.map .mapIcons .accident_4 { width: 1.8rem; height: 1.8rem; background-color: #FD2020;}
-.map .mapIcons .accident_3 { width: 1.8rem; height: 1.8rem; background-color: #155ED1;}
-.map .mapIcons .accident_2 { width: 1.8rem; height: 1.8rem; background-color: #FFEB00;}
-.map .mapIcons .accident_1 { width: 1.8rem; height: 1.8rem; background-color: #2CAC36;}
-.map .mapIcons .schoolZone { position: absolute; width: 6rem; height: 5rem; text-indent: -9999rem; background: url(../image/map/ico_schoolZone.png) no-repeat center/cover;}
-.map .mapIcons .accidentsArea { position: absolute; width: 2.2rem; height: 1.8rem; text-indent: -9999rem; background: url(../image/map/ico_accidentsArea.png) no-repeat center/cover;}
-.map .mapIcons .accidentsPlace { position: absolute; width: 1.8rem; height: 1.8rem; text-indent: -9999rem; border: 1px solid #292D32; background-color: #2CAC36;}
-.map .mapIcons .commIco24 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: absolute; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
-.map .mapIcons .streetLamp .lampBody { display: flex; align-items: center; justify-content: center; position: absolute; height: 4rem; padding: 0 1.2rem 0 0.8rem; border: 0.1rem solid #6684EA; background-color: #fff; border-radius: 2rem;}
-.map .mapIcons .streetLamp .lampBody i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: #838FAC url(../image/common/split_48.png) no-repeat -28.8rem -4.8rem/48rem 19.2rem; border-radius: 50%;}
-.map .mapIcons .streetLamp .lampBody::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #6684EA; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .evCharge .evChargeIco.reCharge i { background-color: #6684EA; background-position: -14.4rem -9.6rem;}
-.map .mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
-.map .mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
-.map .mapIcons .evCharge .evChargeIco.stop i { background-color: #aaa; background-position: -14.4rem -12rem;}
-.map .mapIcons .bikeCharge .bikeIco i { background-color: #32BBED; background-position: -16.8rem -9.6rem;}
-.map .mapIcons .cleanNetLot .cleanNetIco.normal i { background-color: #6684EA; background-position: -19.2rem -9.6rem;}
-.map .mapIcons .cleanNetLot .cleanNetIco.totalBreakdown i { background-color: #555; background-position: -19.2rem -12rem;}
-.map .mapIcons .cleanNetLot .cleanNetIco.partialBreakdown i { background-color: #A9B0C1; background-position: -19.2rem -9.6rem;}
-.map .mapIcons .hospital .hospitalIco i { background-color: #4EC457; background-position: -21.6rem -9.6rem;}
-.map .mapIcons .pharmacy .pharmacyIco i { background-color: #32BBED; background-position: -24rem -9.6rem;}
-.map .mapIcons .gasStation .commIco24 i { margin-right: 0; text-indent: -9999rem; background-color: #fff;}
-.map .mapIcons .elderlyCare .elderlyCareIco i { background-color: #D69630; background-position: -26.4rem -9.6rem;}
-.map .mapIcons .healthCare .healthCareIco i { background-color: #20D3B1; background-position: -28.8rem -9.6rem;}
-.map .mapIcons .AED .AEDIco i { background-color: #DD6493; background-position: -31.2rem -9.6rem;}
-.map .mapIcons .localCurrency .localCurrencyIco i { background-color: #D69630; background-position: -33.6rem -9.6rem;}
-.map .mapIcons .localCurrency .localCurrencyAddIco i { background-color: #D69630; background-position: -33.6rem -12rem;}
-.map .mapIcons .fineDust button { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.2rem; padding: 0 1rem 0 0.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.6rem;}
-.map .mapIcons .fineDust button b ~ b { position: relative; margin-left: 0.4rem; padding-left: 0.4rem;}
-.map .mapIcons .fineDust button b ~ b::after { content: ''; display: block; position: absolute; left: 0; top: 0.2rem; width: 0.1rem; height: 1.2rem; background-color: #fff;}
-.map .mapIcons .fineDust button.good { background-color: #6684EA;}
-.map .mapIcons .fineDust button.usually { background-color: #4EC457;}
-.map .mapIcons .fineDust button.bad { background-color: #FF940E;}
-.map .mapIcons .fineDust button.veryBad { background-color: #FD2020;}
-.map .mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
-.map .mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
-.map .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
-.map .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; z-index: 3; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
-.map .mapIcons .targer { position: absolute; z-index: 1; width: 2.175rem; height: 2.4rem;}
-.map .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 3s linear infinite;}
-.map .mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
+.mapIcons .transit { position: absolute;}
+.mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
+.mapIcons .transit span.num1 { background: url(../image/map/ico_transit1.png) no-repeat center/cover;}
+.mapIcons .transit span.num2 { background: url(../image/map/ico_transit2.png) no-repeat center/cover;}
+.mapIcons .transit span.num3 { background: url(../image/map/ico_transit3.png) no-repeat center/cover;}
+.mapIcons .transit span.num4 { background: url(../image/map/ico_transit4.png) no-repeat center/cover;}
+.mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
+.mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
+.mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
+.mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
+.mapIcons .parkingPinSet .btnParking >i { display: block; width: 2.55rem; height: 3.35rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat 0 0/2.55rem 6.7rem;}
+.mapIcons .parkingPinSet .btnParking .textBox { display: flex; align-items: center; position: relative; left: 0; top: 0; width: 12rem; height: 4rem; margin: -8.8rem 0 0 -4.7rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; letter-spacing: -0.1em; background-color: #fff; border: 1px solid #A9B0C1; border-radius: 2rem; opacity: 1; transition: bottom .5s ease-in-out;}
+.mapIcons .parkingPinSet .btnParking .textBox::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
+.mapIcons .parkingPinSet .btnParking .textBox::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+.mapIcons .parkingPinSet .btnParking .textBox span { flex: 1;}
+.mapIcons .parkingPinSet .btnParking .textBox i { display: flex; align-items: center; margin-right: 0.4rem; background-position: -45.6rem -4.8rem; border-radius: 50%;}
+.mapIcons .parkingPinSet .btnParking .textBox.bgGray i { background-color: #838FAC;}
+.mapIcons .parkingPinSet .btnParking .textBox.bgGreen i { background-color: #4EC457;}
+.mapIcons .parkingPinSet .btnParking.active >i { background-position-y: -3.35rem;}
+.mapIcons .parkingPinSet .btnParking.active .textBox { opacity: 0;}
+.mapIcons .mapIcoBody { position: absolute;}
+.mapIcons .mapIcoBody .poaBox { position: relative; width: 10rem; margin-top: 3.1rem; padding: 0.4rem 0.8rem; font-size: 1.4rem; color: #555; text-align: center; border: 1px solid #A9B0C1; background-color: #fff; transform: translateX(calc(-50% + 1.2rem));}
+.mapIcons .mapIcoBody .poaBox::after { content: ''; position: absolute; left: 50%; top: -0.8rem; width: 0.1rem; height: 0.8rem; background-color: #A9B0C1;}
+.mapIcons .mapIco.pin i { background-color: #838FAC; background-position: -45.6rem -4.8rem;}
+.mapIcons .mapIco.pin.active i { background-color: #6684EA;}
+.mapIcons .trafficInfo { position: absolute;}
+.mapIcons .trafficInfo .tiTable th,
+.mapIcons .trafficInfo .tiTable td { padding: 0.6rem 0; font-size: 1.3rem; color: #555; text-align: center; border: 1px solid #EAEAEA; background-color: #fff;}
+.mapIcons .trafficInfo .tiTable thead th { background-color: #F4F5F7;}
+.mapIcons .trafficInfo .tiTable tbody th { font-weight: 400;}
+.mapIcons .trafficInfo .type { position: inherit;}
+.mapIcons .type { display: block; position: absolute; margin: 0 auto; text-indent: -9999rem; border: 1px solid #292D32; border-radius: 50%;}
+.mapIcons .injury_4 { width: 1.6rem; height: 1.6rem; background-color: #155ED1; border-radius: 0;}
+.mapIcons .injury_3 { width: 1.8rem; height: 1.8rem; background-color: #155ED1;}
+.mapIcons .injury_2 { width: 1.4rem; height: 1.4rem; background-color: #155ED1;}
+.mapIcons .injury_1 { width: 1rem; height: 1rem; background-color: #155ED1;}
+.mapIcons .accident_4 { width: 1.8rem; height: 1.8rem; background-color: #FD2020;}
+.mapIcons .accident_3 { width: 1.8rem; height: 1.8rem; background-color: #155ED1;}
+.mapIcons .accident_2 { width: 1.8rem; height: 1.8rem; background-color: #FFEB00;}
+.mapIcons .accident_1 { width: 1.8rem; height: 1.8rem; background-color: #2CAC36;}
+.mapIcons .schoolZone { position: absolute; width: 6rem; height: 5rem; text-indent: -9999rem; background: url(../image/map/ico_schoolZone.png) no-repeat center/cover;}
+.mapIcons .accidentsArea { position: absolute; width: 2.2rem; height: 1.8rem; text-indent: -9999rem; background: url(../image/map/ico_accidentsArea.png) no-repeat center/cover;}
+.mapIcons .accidentsPlace { position: absolute; width: 1.8rem; height: 1.8rem; text-indent: -9999rem; border: 1px solid #292D32; background-color: #2CAC36;}
+.mapIcons .commIco24 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: absolute; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
+.mapIcons .streetLamp .lampBody { display: flex; align-items: center; justify-content: center; position: absolute; height: 4rem; padding: 0 1.2rem 0 0.8rem; border: 0.1rem solid #6684EA; background-color: #fff; border-radius: 2rem;}
+.mapIcons .streetLamp .lampBody i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: #838FAC url(../image/common/split_48.png) no-repeat -28.8rem -4.8rem/48rem 28.8rem; border-radius: 50%;}
+.mapIcons .streetLamp .lampBody::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #6684EA; border-bottom: 1.1rem solid transparent;}
+.mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+.mapIcons .evCharge .evChargeIco.reCharge i { background-color: #6684EA; background-position: -14.4rem -9.6rem;}
+.mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
+.mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
+.mapIcons .evCharge .evChargeIco.stop i { background-color: #aaa; background-position: -14.4rem -12rem;}
+.mapIcons .bikeCharge .bikeIco i { background-color: #32BBED; background-position: -16.8rem -9.6rem;}
+.mapIcons .cleanNetLot .cleanNetIco.normal i { background-color: #6684EA; background-position: -19.2rem -9.6rem;}
+.mapIcons .cleanNetLot .cleanNetIco.totalBreakdown i { background-color: #555; background-position: -19.2rem -12rem;}
+.mapIcons .cleanNetLot .cleanNetIco.partialBreakdown i { background-color: #A9B0C1; background-position: -19.2rem -9.6rem;}
+.mapIcons .hospital .hospitalIco i { background-color: #4EC457; background-position: -21.6rem -9.6rem;}
+.mapIcons .pharmacy .pharmacyIco i { background-color: #32BBED; background-position: -24rem -9.6rem;}
+.mapIcons .gasStation .commIco24 i { margin-right: 0; text-indent: -9999rem; background-color: #fff;}
+.mapIcons .elderlyCare .elderlyCareIco i { background-color: #D69630; background-position: -26.4rem -9.6rem;}
+.mapIcons .healthCare .healthCareIco i { background-color: #20D3B1; background-position: -28.8rem -9.6rem;}
+.mapIcons .AED .AEDIco i { background-color: #DD6493; background-position: -31.2rem -9.6rem;}
+.mapIcons .localCurrency .localCurrencyIco i { background-color: #D69630; background-position: -33.6rem -9.6rem;}
+.mapIcons .localCurrency .localCurrencyAddIco i { background-color: #D69630; background-position: -33.6rem -12rem;}
+.mapIcons .fineDust button { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.2rem; padding: 0 1rem 0 0.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.6rem;}
+.mapIcons .fineDust button b ~ b { position: relative; margin-left: 0.4rem; padding-left: 0.4rem;}
+.mapIcons .fineDust button b ~ b::after { content: ''; display: block; position: absolute; left: 0; top: 0.2rem; width: 0.1rem; height: 1.2rem; background-color: #fff;}
+.mapIcons .fineDust button.good { background-color: #6684EA;}
+.mapIcons .fineDust button.usually { background-color: #4EC457;}
+.mapIcons .fineDust button.bad { background-color: #FF940E;}
+.mapIcons .fineDust button.veryBad { background-color: #FD2020;}
+.mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
+.mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
+.mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
+.mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; z-index: 3; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
+.mapIcons .targer { position: absolute; z-index: 1; width: 2.175rem; height: 2.4rem;}
+.mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 3s linear infinite;}
+.mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
 @keyframes lds-scale {
   0% { transform: scale(0); opacity: 1;}
   30% { transform: scale(0.8); opacity: 1;}
@@ -190,41 +189,41 @@ body { --vh: 1px;}
   80% { transform: scale(1); opacity: 0;}
   100% { transform: scale(1); opacity: 0;}
 }
-.map .mapIcons .busStop .busIco.B { background-position-y: 0;}
-.map .mapIcons .busStop .busIco.G { background-position-y: -2.5rem;}
-.map .mapIcons .busStop .busIco.Y { background-position-y: -5rem;}
-.map .mapIcons .busStop .busIco.R { background-position-y: -7.5rem;}
-.map .mapIcons .busStop .busIco.M { background-position-y: -7.5rem;}
-.map .mapIcons .busStop .busLocation { position: absolute;}
-.map .mapIcons .busStop .busLocation i { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_busLocation.png) no-repeat center/cover;}
-.map .mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
-.map .mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 14.8rem; height: 14.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/0.975rem 10.15rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
-.map .mapIcons .gesture p { font-size: 1.4rem; color: #fff; text-align: center; line-height: 2rem;}
-.map .mapIcons .gesture.hide { opacity: 0; z-index: -1;}
-.map .mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
-.map .mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
-.map .mapIcons .reportSet .reportIcon { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
-.map .mapIcons .reportSet .reportIcon i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -9.6rem/48rem 19.2rem; border-radius: 50%;}
-.map .mapIcons .reportSet .reportIcon span { font-size: 1.3rem; color: #333;}
-.map .mapIcons .reportSet .reportIcon::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .reportSet .reportIcon::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.map .mapIcons .reportSet .reportIcon.safetyReport i { background-color: #FD2020; background-position: -24rem -14.4rem;}
-.map .mapIcons .reportSet .reportIcon.complaint i { background-color: #D69630; background-position: -26.4rem -14.4rem;}
-.map .mapIcons .fixedPin .fixedPinBody { display: flex; align-items: center; justify-content: center; position: absolute; top: 12.4rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.map .mapIcons .fixedPin .fixedPinBody i { text-indent: -9999rem; background-position: -31.2rem -14.4rem;}
-.map .mapIcons .fixedPin .fixedPinBody .number { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 0; width: 2rem; height: 1.6rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #fff; background-color: #D69630; border-radius: 0.8rem;}
-.map .mapIcons .fixedPin .fixedPinBody.active { background-color: #6684EA;}
-.map .mapIcons .fixedPin .fixedPinBody.active i { background-position-y: -16.8rem;}
-.map .mapIcons .btnFixedPin { position: absolute;}
-.map .mapIcons .btnFixedPin i { background-color: #D69630; background-position: -28rem -4rem; border-radius: 50%;}
-.map .mapIcons .deleteIco i { background-color: #fff; background-position: -36rem -14.4rem;}
-.map .mapIcons .printIco i { background-color: #fff; background-position: -33.6rem -14.4rem;}
-.map .mapIcons .cctvPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 18.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.map .mapIcons .cctvPin i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -14.4rem/48rem 19.2rem;}
-.map .mapIcons .cctvIco { display: flex; align-items: center; justify-content: center; position: absolute; background-color: #555; border-radius: 50%;}
-.map .mapIcons .cctvIco i { text-indent: -9999rem; background-position: -26.4rem -4.8rem;}
-.map .mapIcons .zoomOut { display: flex; align-items: center; justify-content: center; position: absolute; border-radius: 50%;}
-.map .mapIcons .zoomOut b { font-family: var(--fontRoboto); font-size: 1.6rem; color: #fff;}
+.mapIcons .busStop .busIco.B { background-position-y: 0;}
+.mapIcons .busStop .busIco.G { background-position-y: -2.5rem;}
+.mapIcons .busStop .busIco.Y { background-position-y: -5rem;}
+.mapIcons .busStop .busIco.R { background-position-y: -7.5rem;}
+.mapIcons .busStop .busIco.M { background-position-y: -7.5rem;}
+.mapIcons .busStop .busLocation { position: absolute;}
+.mapIcons .busStop .busLocation i { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_busLocation.png) no-repeat center/cover;}
+.mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
+.mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 14.8rem; height: 14.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/0.975rem 10.15rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
+.mapIcons .gesture p { font-size: 1.4rem; color: #fff; text-align: center; line-height: 2rem;}
+.mapIcons .gesture.hide { opacity: 0; z-index: -1;}
+.mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
+.mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
+.mapIcons .reportSet .reportIcon { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
+.mapIcons .reportSet .reportIcon i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -9.6rem/48rem 28.8rem; border-radius: 50%;}
+.mapIcons .reportSet .reportIcon span { font-size: 1.3rem; color: #333;}
+.mapIcons .reportSet .reportIcon::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
+.mapIcons .reportSet .reportIcon::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+.mapIcons .reportSet .reportIcon.safetyReport i { background-color: #FD2020; background-position: -24rem -14.4rem;}
+.mapIcons .reportSet .reportIcon.complaint i { background-color: #D69630; background-position: -26.4rem -14.4rem;}
+.mapIcons .fixedPin .fixedPinBody { display: flex; align-items: center; justify-content: center; position: absolute; top: 12.4rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .fixedPin .fixedPinBody i { text-indent: -9999rem; background-position: -31.2rem -14.4rem;}
+.mapIcons .fixedPin .fixedPinBody .number { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 0; width: 2rem; height: 1.6rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #fff; background-color: #D69630; border-radius: 0.8rem;}
+.mapIcons .fixedPin .fixedPinBody.active { background-color: #6684EA;}
+.mapIcons .fixedPin .fixedPinBody.active i { background-position-y: -16.8rem;}
+.mapIcons .btnFixedPin { position: absolute;}
+.mapIcons .btnFixedPin i { background-color: #D69630; background-position: -28rem -4rem; border-radius: 50%;}
+.mapIcons .deleteIco i { background-color: #fff; background-position: -36rem -14.4rem;}
+.mapIcons .printIco i { background-color: #fff; background-position: -33.6rem -14.4rem;}
+.mapIcons .cctvPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 18.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .cctvPin i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -14.4rem/48rem 28.8rem;}
+.mapIcons .cctvIco { display: flex; align-items: center; justify-content: center; position: absolute; background-color: #555; border-radius: 50%;}
+.mapIcons .cctvIco i { text-indent: -9999rem; background-position: -26.4rem -4.8rem;}
+.mapIcons .zoomOut { display: flex; align-items: center; justify-content: center; position: absolute; border-radius: 50%;}
+.mapIcons .zoomOut b { font-family: var(--fontRoboto); font-size: 1.6rem; color: #fff;}
 
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}
@@ -235,9 +234,9 @@ span.M { background-color: #FD2020;}
 
 /* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
-.map .mapBg { height: 100%; background: url(../image/map/map_bg.png) no-repeat center/cover;}
-.map .mapBg2 { height: 100%; background: url(../image/map/map_bg2.png) no-repeat center/cover;}
-.map .mapBg3 { height: 100%; background: url(../image/map/map_bg3.png) no-repeat center/cover;}
+.mapArea .mapBg { height: 100%; background: url(../image/map/map_bg.png) no-repeat center/cover;}
+.mapArea .mapBg2 { height: 100%; background: url(../image/map/map_bg2.png) no-repeat center/cover;}
+.mapArea .mapBg3 { height: 100%; background: url(../image/map/map_bg3.png) no-repeat center/cover;}
 .map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 90;}
 .map .mapSearch .mapheader { display: flex; align-items: center; justify-content: space-between;}
 .map .mapSearch .mapheader .mapBody { display: flex; align-items: center; flex: 1; padding: 0 0.8rem; border: 1px solid #F8F8F8; background-color: #fff;}
@@ -261,7 +260,7 @@ span.M { background-color: #FD2020;}
 .map .mapSearch.lnbShow .mapheader .mapBody .btnPlace .b { top: 1.5rem; transform: rotate(-225deg);}
 .map .mapFooter { display: flex; align-items: center; justify-content: center; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 6.8rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
 .map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; height: 5.2rem; text-align: center;}
-.map .mapFooter button i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.map .mapFooter button i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .map .mapFooter button.home i { background-position: 0 -4.8rem;}
 .map .mapFooter button.around i { background-position: -2.4rem -4.8rem;}
 .map .mapFooter button.bus i { background-position: -4.8rem -4.8rem;}
@@ -297,12 +296,12 @@ span.M { background-color: #FD2020;}
 .map .toDoorBody .toDoor li .active input { padding-left: 6.7rem;}
 .map .toDoorBody .btnGroup { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem;}
 .map .toDoorBody .btnGroup button { display: block;}
-.map .toDoorBody .btnGroup button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.map .toDoorBody .btnGroup button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .map .toDoorBody .btnGroup button.btnGtransit i { background-position: -14.4rem -4.8rem;}
 .map .toDoorBody .btnGroup button.btnGdelete { margin-left: 1.6rem;}
 .map .toDoorBody .btnGroup button.btnGdelete i { background-position: -16.8rem -4.8rem;}
 .map .toDoorBody .btnFind { margin-top: 0.8rem;}
-.map .toDoorBody .btnFind i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 0.1rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 19.2rem;}
+.map .toDoorBody .btnFind i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-top: 0.1rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 28.8rem;}
 .map .routeArea { padding: 1.6rem 0 4rem;}
 .map .routeArea .header-default { padding: 0 2rem;}
 .map .routeArea .routeBody { border-top: 1px solid #EAEAEA;}
@@ -313,7 +312,7 @@ span.M { background-color: #FD2020;}
 .map .gaHead .gaCar { display: flex; align-items: center; width: 100%; height: 8rem;}
 .map .gaHead .gaCar .gaCarBody { flex: 1;}
 .map .gaHead .gaCar .guide { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 6rem; height: 6rem; background-color: #6684EA; box-shadow: 0 1rem 2rem rgba(102, 132, 234, 0.5); border-radius: 50%;}
-.map .gaHead .gaCar .guide i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 19.2rem;}
+.map .gaHead .gaCar .guide i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 28.8rem;}
 .map .gaHead .gaCar .guide b { font-size: 1.2rem; color: #fff;}
 .map .gaHead .recommendedTime { display: flex; align-items: flex-end;}
 .map .gaHead .recommendedTime .reco { padding-bottom: 0.2rem; font-size: 1.4rem; font-weight: 700; color: #6684EA;}
@@ -354,7 +353,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer.noHeight .myArea { padding-bottom: 3.2rem;}
 .map .mapInfoLayer .centerSec .center { display: flex; align-items: center; height: 4.8rem;}
 .map .mapInfoLayer .centerSec .center h3 { flex: 1; font-size: 1.9rem;}
-.map .mapInfoLayer .centerSec .center .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .mapInfoLayer .centerSec .center .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .centerSec .center .favorite.active { background-position-y: -2.4rem;}
 .map .mapInfoLayer .centerSec .address { margin-top: 0.9rem;}
 .map .mapInfoLayer .centerSec .address span { color: #555;}
@@ -369,7 +368,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; margin: 1.6rem -2rem 0; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
 .map .mapInfoLayer .centerSec .btns a,
 .map .mapInfoLayer .centerSec .btns button { display: flex; align-items: center; flex-direction: column; justify-content: center; min-width: 6rem; height: 6rem; color: #777; text-align: center;}
-.map .mapInfoLayer .centerSec .btns i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.map .mapInfoLayer .centerSec .btns i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .map .mapInfoLayer .centerSec .btns .call i { background-position: -33.6rem -4.8rem;}
 .map .mapInfoLayer .centerSec .btns .aroundIfo i { background-position: -38.4rem -4.8rem;}
 .map .mapInfoLayer .centerSec .btns .share i { background-position: -40.8rem -4.8rem;}
@@ -382,7 +381,7 @@ span.M { background-color: #FD2020;}
 .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 2.55rem; height: 3.35rem; transform: translate(-50%, -50%);}
 .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
 .mapMenuLayer .mapMenuBody ul li span { display: block;}
-.mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 19.2rem;}
+.mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(1) { position: absolute; left: -10.6rem; top: 2.5rem; width: 9.2rem; height: 8.575rem; background: url(../image/map/mapMenu1.png) no-repeat center/cover;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(1) .btn { width: 6rem; height: 4rem; margin: -3rem 0 0 -1rem;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(2) { position: absolute; left: -10.6rem; top: -6.2rem; width: 9.225rem; height: 8.575rem; background: url(../image/map/mapMenu2.png) no-repeat center/cover;}
@@ -422,7 +421,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .fixedPinList li .flex .title { display: flex; align-items: center;}
 .map .mapInfoLayer .fixedPinList li .flex .title h3 { font-size: 1.6rem;}
 .map .mapInfoLayer .fixedPinList li .flex .title .favorite { margin-right: 0.4rem;}
-.map .mapInfoLayer .fixedPinList li .flex .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .mapInfoLayer .fixedPinList li .flex .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .fixedPinList li .flex .title .favorite.active i { background-position-y: -2.4rem;}
 .map .mapInfoLayer .fixedPinList li .flex .infomation { margin-top: 1rem;}
 .map .mapInfoLayer .fixedPinList li .flex .infomation span { font-size: 1.4rem; color: #555;}
@@ -479,7 +478,7 @@ span.M { background-color: #FD2020;}
 /* 생생버스 - UI-SJN-40-003LL */
 .map .mapInfoLayer .busHead { padding: 1.2rem 0;}
 .map .mapInfoLayer .busHead .title { display: flex; align-items: center; height: 2.4rem;}
-.map .mapInfoLayer .busHead .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .mapInfoLayer .busHead .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busHead .title .favorite.active { background-position-y: -2.4rem;}
 .map .mapInfoLayer .busHead .title .name { margin-left: 0.8rem; font-size: 1.8rem;}
 .map .mapInfoLayer .busHead .infomation { margin-top: 0.8rem;}
@@ -496,9 +495,9 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .route .allRoute { display: flex; align-items: center;}
 .map .mapInfoLayer .route .allRoute .allRouteBtn { display: flex; align-items: center; justify-content: center; width: 7.2rem; height: 3.2rem; font-size: 1.4rem; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.6rem;}
 .map .mapInfoLayer .route .allRoute .cBlue { margin-left: 0.8rem; font-size: 1.4rem;}
-.map .mapInfoLayer .dispatchTil { display: flex; align-items: center;}
-.map .mapInfoLayer .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
-.map .mapInfoLayer .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
+.dispatchTil { display: flex; align-items: center;}
+.dispatchTil .dTime { font-size: 1.4rem; color: #777;}
+.dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
 .map .mapInfoLayer .busRouteArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .busRouteList li { display: flex; align-items: center; position: relative; width: 100%;}
 .map .mapInfoLayer .busRouteList li::after { content: ''; position: absolute; right: 2.9rem; top: 0; width: 0.2rem; height: 100%; background-color: #EAEDF2;}
@@ -509,15 +508,15 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate { padding: 0.7rem 0.8rem; font-size: 1.4rem; border: 1px solid #EAEDF2;}
 .map .mapInfoLayer .busRouteList li .icon { position: relative; width: 6rem;}
 .map .mapInfoLayer .busRouteList li .icon .general { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover; transform: translate(-50%, -50%);}
-.map .mapInfoLayer .busRouteList li .icon .bathchair { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:#CDD0D8 url(../image/common/split_48.png) no-repeat -43.2rem -9.6rem/48rem 19.2rem; transform: translate(-50%, -50%); border-radius: 50%;}
-.map .mapInfoLayer .busRouteList li .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .mapInfoLayer .busRouteList li .icon .bathchair { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:#CDD0D8 url(../image/common/split_48.png) no-repeat -43.2rem -9.6rem/48rem 28.8rem; transform: translate(-50%, -50%); border-radius: 50%;}
+.map .mapInfoLayer .busRouteList li .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busRouteList li .favorite.active { background-position-y: -2.4rem;}
 
 /* UI-SJN-40-004L */
 .map .busInfoFooter { display: flex; align-items: center; justify-content: space-between; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 12rem; padding: 0 1.6rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
 .map .busInfoFooter .bifBody .title { display: flex; align-items: center; height: 2.4rem;}
 .map .busInfoFooter .bifBody .title span { color: #fff;}
-.map .busInfoFooter .bifBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .busInfoFooter .bifBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .busInfoFooter .bifBody .title .favorite.active { background-position-y: -2.4rem;}
 .map .busInfoFooter .bifBody .title .name { margin-left: 0.8rem; font-size: 1.8rem;}
 .map .busInfoFooter .bifBody .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #555;}
@@ -530,7 +529,7 @@ span.M { background-color: #FD2020;}
 .map .busInfoFooter .bifBody .etc span ~ span { position: relative; margin-left: 0.1rem; padding-left: 0.6rem;}
 .map .busInfoFooter .bifBody .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
-.map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 19.2rem;}
+.map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 
 /* UI-SJN-40-005L */
@@ -539,36 +538,47 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuidePopup .icon { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #fff; border-radius: 50%;}
 .map .mapInfoLayer .busGuidePopup .icon i { display: block; width: 3.075rem; height: 2.4rem; background: url(../image/map/ico_bus_guide.png) no-repeat center/cover;}
 .map .mapInfoLayer .busGuideArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
-.map .mapInfoLayer .busGuideList >li { position: relative; border-bottom: 1px solid #F4F5F7;}
-.map .mapInfoLayer .busGuideList >li >.favorite { position: absolute; left: 2rem; top: 0.8rem;}
-.map .mapInfoLayer .busGuideList li .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .mapInfoLayer .busGuideList { margin-top: 1rem;}
+.map .mapInfoLayer .busGuideList li { position: relative; border-top: 1px solid #F4F5F7;}
+.map .mapInfoLayer .busGuideList li >.favorite { position: absolute; left: 2rem; top: 0.8rem;}
+.map .mapInfoLayer .busGuideList li .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busGuideList li .favorite.active { background-position-y: -2.4rem;}
-.map .mapInfoLayer .busGuideList >li .accordionMenu { padding: 0.8rem 0 0.8rem 5.2rem;}
-.map .mapInfoLayer .busGuideList >li h4 { font-size: 1.6rem;}
-.map .mapInfoLayer .busGuideList >li .etc { margin-top: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li .etc span { font-size: 1.4rem; color: #555;}
-.map .mapInfoLayer .busGuideList >li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
-.map .mapInfoLayer .busGuideList >li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .mapInfoLayer .busGuideList >li .int { display: flex; align-items: center; margin-top: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li .int span { margin-right: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li .accordionTarget { overflow: hidden; max-height: 0; transition: min-height 0.3s ease-in-out;}
-.map .mapInfoLayer .busGuideList >li .accordionRoute { display: flex; align-items: baseline; justify-content: space-between; padding: 1.2rem 2rem; border-top: 1px solid #EAEAEA; background-color: #F4F5F7;}
-.map .mapInfoLayer .busGuideList >li .accordionRoute .routeHead span { display: block; font-size: 1.4rem; font-weight: 700; color: #FD2020;}
-.map .mapInfoLayer .busGuideList >li .accordionRoute .routeHead b { display: block; margin-top: 0.4rem; font-family: var(--fontRoboto); font-size: 1.8rem; font-weight: 700;}
-.map .mapInfoLayer .busGuideList >li ul li { display: flex; align-items: center; padding: 0.8rem 2rem;}
-.map .mapInfoLayer .busGuideList >li ul li .arSub { flex: 1;}
-.map .mapInfoLayer .busGuideList >li ul li .arSub .title { display: flex; align-items: center;}
-.map .mapInfoLayer .busGuideList >li ul li .arSub .title .name { margin-left: 0.8rem; font-size: 1.6rem;}
-.map .mapInfoLayer .busGuideList >li ul li .arSub .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #777;}
-.map .mapInfoLayer .busGuideList >li ul li .infomation { margin-top: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li ul li .infomation span { font-size: 1.4rem; color: #777;}
-.map .mapInfoLayer .busGuideList >li ul li .etc { margin-top: 0.4rem;}
-.map .mapInfoLayer .busGuideList >li ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
-.map .mapInfoLayer .busGuideList >li ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .getOffBtn { display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #CDD0D8; border-radius: 50%;}
-.map .getOffBtn i { background-position-y: -14.4rem;}
-.map .getOffBtn b { font-size: 1.2rem; color: #fff; letter-spacing: -0.1em;}
-.map .getOffBtn.active { background-color: #6684EA;}
+.map .mapInfoLayer .busGuideList li .acco { display: block; padding: 0.8rem 0 0.8rem 5.2rem; color: #111;}
+.map .mapInfoLayer .busGuideList li h4 { font-size: 1.6rem;}
+.map .mapInfoLayer .busGuideList li .etc { margin-top: 0.4rem;}
+.map .mapInfoLayer .busGuideList li .etc span { font-size: 1.4rem; color: #555;}
+.map .mapInfoLayer .busGuideList li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.map .mapInfoLayer .busGuideList li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.map .mapInfoLayer .busGuideList li .int { display: flex; align-items: center; margin-top: 0.4rem;}
+.map .mapInfoLayer .busGuideList li .int span { margin-right: 0.4rem;}
+.map .mapInfoLayer .settingList li { padding: 1rem 2rem;}
+.map .mapInfoLayer .settingList li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
+.map .mapInfoLayer .settingList li .slBody h3 { font-size: 1.6rem;}
+.map .mapInfoLayer .settingList li .slBody >div { display: flex; align-items: baseline;}
+.map .mapInfoLayer .settingList li .slBody >div span { margin-left: 0.8rem;}
+.map .mapInfoLayer .settingList li .slBody span { font-size: 1.4rem; color: #555;}
+.map .mapInfoLayer .settingList li:last-child { padding-bottom: 0;}
+.map .mapInfoLayer .settingListSub { margin-top: 1.6rem;}
+.map .mapInfoLayer .settingListSub li { display: flex; align-items: center; padding: 0.8rem 1.6rem; border: 1px solid #F4F5F7;}
+.map .mapInfoLayer .settingListSub li .subHead { flex: 1;}
+.map .mapInfoLayer .settingListSub li .subHead >div { display: flex; align-items: center;}
+.map .mapInfoLayer .settingListSub li .subHead >div h3 { margin-left: 0.6rem; font-size: 1.6rem;}
+.map .mapInfoLayer .settingListSub li .subHead .getOffLayerBtn { display: flex; align-items: center; justify-content: space-between; height: 2.8rem; margin-top: 0.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.4rem;}
+.map .mapInfoLayer .settingListSub li .subHead .getOffLayerBtn i { margin-right: 0.4rem; background-position: -18rem -4rem;}
+.map .mapInfoLayer .settingListSub li .subHead .getOffLayerBtn.active i { background-position-y: -6rem;}
+.map .mapInfoLayer .settingListSub li .subInfo { width: 12rem; font-size: 1.4rem;}
+.map .mapInfoLayer .settingListSub li .subInfo b { color: #FD2020;}
+.map .mapInfoLayer .settingListSub li .subInfo span { color: #555;}
+.map .mapInfoLayer .settingListSub li .subInfo >div ~ div { margin-top: 0.6rem;}
+.map .mapInfoLayer .settingListSub li .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #CDD0D8; border-radius: 50%;}
+.map .mapInfoLayer .settingListSub li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
+.map .mapInfoLayer .settingListSub li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.map .mapInfoLayer .settingListSub li .guidance.active { background-color: #6684EA;}
+
+.getOffBtn { display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #CDD0D8; border-radius: 50%;}
+.getOffBtn i { background-position-y: -14.4rem;}
+.getOffBtn b { font-size: 1.2rem; color: #fff; letter-spacing: -0.1em;}
+.getOffBtn.active { background-color: #6684EA;}
 
 /* UI-SJN-40-006L */
 .map .goNotice { padding-top: 6.2rem;}
@@ -632,9 +642,11 @@ span.M { background-color: #FD2020;}
 .map .gotOff .getOutNotice .getOutList >li:first-child .getOutBody { padding-top: 0;}
 .map .gotOff .getOutNotice .getOutList >li:first-child .icon .getInArrow { top: 0;}
 .map .gotOff .getOutNotice .getOutList >li:first-child .getOutTime { padding-top: 0;}
-.map .gotOff .getOutNotice .getOutList >li .getOutTime { width: 5rem; padding: 1rem 0 0 1.6rem; font-size: 1.4rem; color: #555;}
+.map .gotOff .getOutNotice .getOutList >li .getOutTime { width: 5rem; padding: 1rem 0 0 1rem; font-size: 1.3rem; color: #555;}
 .map .gotOff .getOutNotice .getOutList >li .icon { width: 2.2rem;}
-.map .gotOff .getOutNotice .getOutList >li .icon .getInArrow { display: flex; align-items: center; justify-content: center; position: absolute; left: 5.2rem; top: 1.2rem; z-index: 1; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
+.map .gotOff .getOutNotice .getOutList >li .icon .getInArrow { display: flex; align-items: center; justify-content: center; position: absolute; left: 5.2rem; top: 1.2rem; z-index: 1; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.2rem;}
+.map .gotOff .getOutNotice .getOutList >li .icon .getInArrow.getOn { background-color: #6684EA;}
+.map .gotOff .getOutNotice .getOutList >li .icon .getInArrow.getOff { background-color: #555;}
 .map .gotOff .getOutNotice .getOutList >li .icon .general { display: block; position: absolute; left: 6.5rem; top: 1.6rem; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover;}
 .map .gotOff .getOutNotice .getOutList >li .getOutBody { flex: 1; padding: 1.2rem 2rem 1.2rem 3rem; border-bottom: 1px solid #F4F5F7;}
 .map .gotOff .getOutNotice .getOutList >li .getOutBody .title .name { font-size: 1.6rem; font-weight: 700;}
@@ -653,7 +665,7 @@ span.M { background-color: #FD2020;}
 .map .gotOff .getOutNotice .getOutList >li ul li ~ li { border-top: 1px solid #F4F5F7;}
 .map .gotOff .getOutNotice .getOutList >li ul li >p { margin-top: 0.4rem; font-size: 1.4rem; color: #555;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn { display: flex; align-items: center; position: relative; height: 3.2rem; margin-top: 0.8rem; padding: 0 3.2rem 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #F4F5F7;}
-.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn::after { content: ''; position: absolute; right: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 19.2rem;}
+.map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn::after { content: ''; position: absolute; right: 0.4rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 28.8rem;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed { display: table; table-layout: fixed; width: 100%;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed span { display: table-cell; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed b { color: #111;}
@@ -680,7 +692,7 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li { width: 5.6rem;}
 .map .transformBody .transformNavList li button { display: block; align-items: center; justify-content: center; width: 100%;}
 .map .transformBody .transformNavList li button .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; border: 1px solid #F4F5F7;}
-.map .transformBody .transformNavList li button .box i { width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 19.2rem;}
+.map .transformBody .transformNavList li button .box i { width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 28.8rem;}
 .map .transformBody .transformNavList li button.apartment .box i { background-position: -4.8rem -14.4rem;}
 .map .transformBody .transformNavList li button.building .box i { background-position: -7.2rem -14.4rem;}
 .map .transformBody .transformNavList li button.baseballS .box i { background-position: -9.6rem -14.4rem;}
@@ -784,7 +796,6 @@ span.M { background-color: #FD2020;}
 .map .mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
 .map .mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
 .map .mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
-
 .map .mapIcons .location.easy {justify-content: left;}
 .map .mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
 .map .mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-top:4.2rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
@@ -793,10 +804,9 @@ span.M { background-color: #FD2020;}
 .map .mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
-
 .map .mapIcons .location.easy { transform: translateY(calc(100% - 44.5rem));}
-.map .mapInfoLayer.midHeight { height: calc(35rem + var(--vh));}
 
+.map .mapInfoLayer.midHeight { height: calc(35rem + var(--vh));}
 .map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
 .map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
 
@@ -1043,17 +1053,17 @@ span.M { background-color: #FD2020;}
 .map .listArea .streetLampList li .titleBody { flex: 1;}
 .map .listArea .streetLampList li .btnBody { width: 11.2rem;}
 .map .listArea .streetLampList li .titleBody .title { display: flex; align-items: center; height: 4rem;}
-.map .listArea .streetLampList li .titleBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 19.2rem;}
+.map .listArea .streetLampList li .titleBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .listArea .streetLampList li .titleBody .title .favorite.active { background-position-y: -2.4rem;}
 .map .listArea .streetLampList li .titleBody .title h4 { font-size: 1.6rem;}
 .map .listArea .streetLampList li .titleBody p { margin-top: 0.4rem; color: #555;}
 .map .listArea .streetLampList li .btnBody { display: flex; align-items: flex-start; justify-content: space-between;}
 .map .listArea .streetLampList li .btnBody .guide { display: inline-block; width: 5.2rem; height: 5.2rem; text-align: center; background-color: #6684EA; border-radius: 50%;}
-.map .listArea .streetLampList li .btnBody .guide i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 19.2rem;}
+.map .listArea .streetLampList li .btnBody .guide i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -19.2rem -4.8rem/48rem 28.8rem;}
 .map .listArea .streetLampList li .btnBody .guide b { font-size: 1.2rem; color: #fff;}
 .map .listArea .streetLampList li .btnBody .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem; margin: 0.8rem auto 0; font-size: 1.3rem; color: #777; background-color: #F4F5F7; border-radius: 1.3rem;}
 .map .listArea .streetLampList li .btnBody .more { display: inline-block; width: 5.2rem; height: 5.2rem; text-align: center; background-color: #A9B0C1; border-radius: 50%;}
-.map .listArea .streetLampList li .btnBody .more i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -2.4rem -2.4rem/48rem 19.2rem;}
+.map .listArea .streetLampList li .btnBody .more i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; letter-spacing: -0.1em; background: url(../image/common/split_48.png) no-repeat -2.4rem -2.4rem/48rem 28.8rem;}
 .map .listArea .streetLampList li .btnBody .more b { font-size: 1.2rem; color: #fff;}
 
 /* UI-SJN-81-001L */

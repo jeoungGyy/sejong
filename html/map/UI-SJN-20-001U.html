@@ -18,7 +18,7 @@
 					<div class="mapSearch">
 						<div class="mapheader">
 							<div class="mapBody">
-								<button type="button" class="btnPlace" title="장소 검색" onclick="maplnb.open();">
+								<button type="button" class="btnPlace" title="장소 검색">
 									<span class="t"></span>
 									<span class="c"></span>
 									<span class="b"></span>
@@ -137,6 +137,13 @@
 											<button type="button" class="favorite active">즐겨찾기</button>
 										</div>
 									</li>
+									<!-- 내용이 없을경우 -->
+									<li class="full">
+										<div class="empty">
+											<p>현재 등록된 게시물이 없습니다.</p>
+										</div>
+									</li>
+									<!-- //내용이 없을경우 -->
 								</ul>
 							</section>
 
@@ -153,6 +160,13 @@
 											<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
 										</div>
 									</li>
+									<!-- 내용이 없을경우 -->
+									<li class="full">
+										<div class="empty">
+											<p>현재 등록된 게시물이 없습니다.</p>
+										</div>
+									</li>
+									<!-- //내용이 없을경우 -->
 								</ul>
 							</section>
 
@@ -312,93 +326,6 @@
 					<!-- //하단 고정 영역 -->
 					
 					<div class="mapBg"></div> <!-- map 이미지 -->
-
-
-
-					<!-- LNB-->
-					<div class="lnb" tabindex="0">
-						<div class="lnbBody">
-							<div class="lnbFavorite">
-								<h3><i></i>즐겨찾기</h3>
-								<div>
-									<ul class="lnbMenu">
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12 세종시 다정동 309-12 세종시 다정동 309-12</span>
-											<div>
- 												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="lnbPinned line-default">
-								<h3><i></i>핀고정</h3>
-								<div>
-									<p class="lnbAll">전체 (4/5)</p>
-									<ul class="lnbMenu">
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-										<li>
-											<span>세종시 다정동 309-12</span>
-											<div>
-												<button type="button">수정</button>
-												<button type="button">삭제</button>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="lnbLinks line-default">
-								<a href="#" class="cctv"><i></i>CCTV</a>
-								<a href="#" class="traffic"><i></i>교통정보</a>
-								<a href="#" class="street"><i></i>가로등</a>
-							</div>
-						</div>
-					</div>
-					<!-- //LNB -->
 				</div>
 			</div>
 		</main>

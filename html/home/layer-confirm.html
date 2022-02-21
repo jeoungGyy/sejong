@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+
+
+		<!-- 레이어 -->
+		<div id="layerRepeatAlert" class="layerPopup">
+			<div class="layerWrap typeBot layerGoNotice">
+				<h4>제목이 들어옵니다.</h4>
+				<div class="layerBody">
+					<div class="pGroup">
+						<p>내용이 들어옵니다.</p>
+					</div>
+					<div class="twins">
+						<button type="button" class="button whiteLine">취소</button>
+						<button type="button" class="button blue">확인</button>
+					</div>
+					<div class="twins">
+						<button type="button" class="button whiteLine">취소</button>
+					</div>
+					<div class="twins">
+						<button type="button" class="button blue">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+
+		<script>
+			layerPopup.open('layerRepeatAlert');
+		</script>
+		<!-- //레이어 -->
+
+
+	</div>
+</div>
+</body>
+</html>

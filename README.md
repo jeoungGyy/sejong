@@ -6,6 +6,22 @@
 - UI-SJN-84-001U 등록
 - UI-SJN-98-001U 등록
 
+### 02-21
+- layer-select 등록
+- UI-SJN-04-002U 수정 - 좋아요 활성화 아이콘 추가
+- UI-SJN-04-004U 수정 - 이용료 유료/무료 라디오 추가
+- UI-SJN-04-008U 수정 - 기간 내용에 버튼태그 추가
+
+### 02-18
+- UI-SJN-04-009U 수정  - 더보기 버튼 기능 추가
+- 피규어 마커 색상 추가 (blue, skyBlue, darkBlue, wood, black, green, red)
+- 레이어 선택창 등록 - /home/layer-confirm.html
+- 게시물 데이터 없을경우 디자인 추가
+
+### 02-17
+- UI-SJN-40-005L 수정 - 잘못 코딩한 부분 수정
+- UI-SJN-40-007L 수정 - '현위치 찾는 중' 추가
+
 ### 02-16
 - UI-SJN-42-003L 등록
 
