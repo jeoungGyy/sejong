@@ -385,6 +385,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .scrollLock body { overflow: hidden;}
 
+
+/* 레이어 셀렉트 폼 */
+.layerSelect { overflow-y: auto; max-height: 37rem;}
+.layerSelect .items-label li { padding: 0 2rem;}
+.layerSelect .items-label li ~ li { border-top: 1px solid #EAEAEA;}
+
 /* UI-SJN-04-006U–1 */
 .layerBody .pGroup p { font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 
@@ -1168,7 +1174,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .period .pHead { display: flex; align-items: center; height: 3.2rem;}
 .items-form >li .period .pHead span { display: inline-block; margin-right: 1.6rem; color: #555;}
 .items-form >li .period .pList { margin-top: 0.7rem; border-top: 1px solid #F4F5F7;}
-.items-form >li .period .pList li { display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
+.items-form >li .period .pList li button { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 1.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
 .items-form >li .agree { display: flex; justify-content: flex-end; align-items: center; height: 4.8rem;}
 .items-form >li .agree label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
@@ -1183,7 +1189,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .textareaForm .byte span { color: #111;}
 
 .items-label .labelForm { display: flex; align-items: center;}
-.items-label .labelForm label { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; font-size: 1.6rem; cursor: pointer;}
+.items-label .labelForm label { display: flex; align-items: center; position: relative; width: 100%; min-height: 5.2rem; padding: 1.2rem 4rem 1.2rem 0; font-size: 1.6rem; cursor: pointer;}
 .items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-label .labelForm input { position: absolute; opacity: 0;}
 .items-label .labelForm input:checked + label::after { background-color: #6684EA;}
