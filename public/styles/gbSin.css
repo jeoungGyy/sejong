@@ -250,10 +250,14 @@
 
 
 /* 즐겨찾기 - UI-SJN-84-001U */
-.mypage .bookmarkWrap .halfTab {display: flex; align-items: center; justify-content: center; width:100%; height:4.8rem; border:1px solid #F2F2F2; border-width:0 0 1px 0; background-color:#fff;}
-.mypage .bookmarkWrap .halfTab button {position:relative; text-align: center; width:50%;height:4.7rem; font-size:1.6rem; color:#555;}
-.mypage .bookmarkWrap .halfTab button.active {font-weight:700; color:#111;}
-.mypage .bookmarkWrap .halfTab button.active:before {content:''; width:100%; height:2px; position:absolute; bottom:-1px; left:0; background-color: #6684EA; }
+.mypage .bookmarkWrap.boxTab .btnTab { display: flex; height: 4.8rem;}
+.mypage .bookmarkWrap.boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
+.mypage .bookmarkWrap.boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
+.mypage .bookmarkWrap.boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+.mypage .bookmarkWrap .tabContent { padding: 0 0 4rem;}
+.mypage .bookmarkWrap .tabContent >div { display: none;}
+.mypage .bookmarkWrap .tabContent >div.active { display: block;}
+.mypage .bookmarkWrap .tabContent .button-more { margin-top: 3.5rem; border-top: 1px solid #F2F2F2;}
 
 .mypage .bookmarkWrap .bookmarkUpload {padding:2.4rem 2rem; background-color:#F4F5F7; }
 .mypage .bookmarkWrap .bookmarkUpload .formBlock {display: flex; align-items: center; justify-content: space-between; height:4.8rem; border:1px solid #DDD; margin-top:0.8rem; padding:0 1.6rem; background-color:#fff; }
