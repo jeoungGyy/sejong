@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-21
+- UI-SJN-04-004U 수정 - 이용료 유료/무료 라디오 추가
+
 ### 02-18
 - UI-SJN-04-009U 수정  - 더보기 버튼 기능 추가
 - 피규어 마커 색상 추가 (blue, skyBlue, darkBlue, wood, black, green, red)

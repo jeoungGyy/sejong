@@ -228,6 +228,7 @@ table td { vertical-align: middle;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .radioSet input { position: absolute; opacity: 0;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
+.radioSet label + input + label { margin-left: 0.6rem;}
 
 /* 툴팁 */
 .boxTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
@@ -1174,6 +1175,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .agree input { position: absolute; opacity: 0;}
 .items-form >li .agree input:checked + label::after { background-color: #6684EA;}
 .items-form >li .agreeForm { padding: 1.6rem; font-size: 1.6rem; color: #aaa; border: 1px solid #ddd;}
+.items-form >li .radioSpace { margin: 0.8em 0;}
+
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
 .textareaForm textarea { height: 11rem; border: none;}
 .textareaForm .byte { padding: 0 1.2rem 1.2rem 0; font-size: 1.4rem; color: #aaa; text-align: right;}

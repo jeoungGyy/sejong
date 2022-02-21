@@ -88,6 +88,10 @@
 									<label for="tempText4">이용료</label> <span class="required">필수</span>
 								</div>
 								<div>
+									<div class="radioSet radioSpace">
+										<input type="radio" name="radio3" id="radio1" /><label for="radio1">유료</label>
+										<input type="radio" name="radio3" id="radio2" /><label for="radio2">무료</label>
+									</div>
 									<input type="text" id="tempText4" />
 									<p class="hWord">예) 무료/ 한시간 5천원/ 하루 5만원/ 한달 50만원</p>
 								</div>
@@ -104,34 +108,28 @@
 							</li>
 							<li>
 								<div class="labelH">
-									<label>공유지역 (읍면동 선택)</label> <span class="required">필수</span>
+									<label for="tempText5">공유지역 (읍면동 선택)</label> <span class="required">필수</span>
 								</div>
-								<div class="selectForm accordion">
-									<div class="row">
-										<button type="button" class="selectBtn" aria-expanded="false">지역 읍면동을 선택하세요</button>
-										<div class="target cont">
-											<ul>
-												<li><button type="button">조지원읍</button></li>
-												<li><button type="button">연기면</button></li>
-												<li><button type="button">연동면</button></li>
-												<li><button type="button">부강면</button></li>
-												<li><button type="button">금남면</button></li>
-												<li><button type="button">장군면</button></li>
-												<li><button type="button">연서면</button></li>
-												<li><button type="button">전의면</button></li>
-												<li><button type="button">전동면</button></li>
-												<li><button type="button">소정면</button></li>
-												<li><button type="button">한솔동</button></li>
-												<li><button type="button">도담동</button></li>
-												<li><button type="button">아름동</button></li>
-												<li><button type="button">종촌동</button></li>
-												<li><button type="button">고운동</button></li>
-												<li><button type="button">보람동</button></li>
-												<li><button type="button">테스트</button></li>
-												<li><button type="button">테스트</button></li>
-											</ul>
-										</div>
-									</div>
+								<div>
+									<select id="tempText5">
+										<option>지역 읍면동을 선택하세요</option>
+										<option>조지원읍</option>
+										<option>연기면</option>
+										<option>연동면</option>
+										<option>부강면</option>
+										<option>금남면</option>
+										<option>장군면</option>
+										<option>연서면</option>
+										<option>전의면</option>
+										<option>전동면</option>
+										<option>소정면</option>
+										<option>한솔동</option>
+										<option>도담동</option>
+										<option>아름동</option>
+										<option>종촌동</option>
+										<option>고운동</option>
+										<option>보람동</option>
+									</select>
 								</div>
 							</li>
 							<li>

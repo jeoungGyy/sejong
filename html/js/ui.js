@@ -218,7 +218,6 @@ const tooltip = {
 		let left = _this.left + _this.width;
 		
 		// event.currentTarget.setAttribute("title", "도움말 열림");
-
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);
 
@@ -270,7 +269,7 @@ const tooltip = {
 
 const moreBtn = {
 	idx : null,
-	show : (_this) => {
+	show : () => {
 		let more = document.querySelectorAll('.more');
 		let text = document.querySelectorAll('.text');
 		let reviewLi = document.querySelectorAll('.items-review li');
