@@ -17,71 +17,141 @@
 			<h2 class="visible"><div class="headerClone">즐겨찾기</div></h2> <!-- [헤더에 넣어줄 제목] -->
 			
 			<div class="mypageWrap">
-				<div class="bookmarkWrap">
-					<div class="halfTab">
-						<button type="button" class="active">장소</button><!-- 활성화시 버튼에 active 추가 -->
-						<button type="button">버스</button>
-					</div>
+				<div class="boxTab bookmarkWrap">
+					<ul class="btnTab">
+						<li class="itemBtn"><button class="active" type="button">장소</button></li>
+						<li class="itemBtn"><button type="button">버스</button></li>
+					</ul>
+					
 
-					<div class="bookmarkUpload">
-						<div class="formBlock home">
-							<strong>집</strong>
-							<button type="button" class="btnUpload">등록하기</button>
-						</div>
-						<div class="formBlock home">
-							<div class="address">
-								<strong>세종특별자치시 나성로 133-9</strong>
-								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
-							</div>
-							
-							<button type="button" class="btnDelete">삭제</button>
-						</div>
-
-						<div class="formBlock company">
-							<strong>회사</strong>
-							<button type="button" class="btnUpload">등록하기</button>
-						</div>
-						<div class="formBlock company">
-							<div class="address">
-								<strong>NS타워1차</strong>
-								<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
-							</div>
-
-							<button type="button" class="btnDelete">삭제</button>
-						</div>
-					</div>
-
-					<div class="searchType">
-						<button type="button" class="active">최신순</button><!-- 활성화시 버튼에 active 추가 -->
-						<button type="button">가나다순</button>
-					</div>
-
-					<div class="bookmarkList">
-						<ul>
-							<li>
-								<div class="list">
-									<p class="title">
-										<strong>대통령기록관</strong>
-										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
-									</p>
-									<p class="address">세종특별자치시 다솜로 250</p>
+					<div class="tabContent">
+						<!-- 장소 -->
+						<div class="active">
+							<div class="bookmarkUpload">
+								<div class="formBlock home">
+									<strong>집</strong>
+									<button type="button" class="btnUpload">등록하기</button>
 								</div>
-
-								<button type="button" class="btnDelete">삭제</button>
-							</li>
-
-							<li>
-								<div class="list">
-									<p class="title">
-										<strong>세종특별자치시 종촌동 652</strong>
+								<div class="formBlock home">
+									<div class="address">
+										<strong>세종특별자치시 나성로 133-9</strong>
 										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
-									</p>
-									<p class="address">세종특별자치시 다솜로 250</p>
+									</div>
+									
+									<button type="button" class="btnDelete">삭제</button>
 								</div>
+		
+								<div class="formBlock company">
+									<strong>회사</strong>
+									<button type="button" class="btnUpload">등록하기</button>
+								</div>
+								<div class="formBlock company">
+									<div class="address">
+										<strong>NS타워1차</strong>
+										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+									</div>
+		
+									<button type="button" class="btnDelete">삭제</button>
+								</div>
+							</div>
+		
+							<div class="searchType">
+								<button type="button" class="active">최신순</button><!-- 활성화시 버튼에 active 추가 -->
+								<button type="button">가나다순</button>
+							</div>
+		
+							<div class="bookmarkList">
+								<ul>
+									<li>
+										<div class="list">
+											<p class="title">
+												<strong>대통령기록관</strong>
+												<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+											</p>
+											<p class="address">세종특별자치시 다솜로 250</p>
+										</div>
+		
+										<button type="button" class="btnDelete">삭제</button>
+									</li>
+		
+									<li>
+										<div class="list">
+											<p class="title">
+												<strong>세종특별자치시 종촌동 652</strong>
+												<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+											</p>
+											<p class="address">세종특별자치시 다솜로 250</p>
+										</div>
+		
+										<button type="button" class="btnDelete">삭제</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //장소 -->
 
-								<button type="button" class="btnDelete">삭제</button>
-							</li>
-						</ul>
+						<!-- 버스 -->
+						<div>
+							<div class="bookmarkUpload">
+								<div class="formBlock bus">
+									<div class="address">
+										<strong>NS타워1차</strong>
+										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+									</div>
+		
+									<button type="button" class="btnDelete">삭제</button>
+								</div>
+		
+								<div class="formBlock busstop">
+									<div class="address">
+										<strong>NS타워1차</strong>
+										<button type="button" class="modifyText">즐겨찾기 명칭 수정</button>
+									</div>
+		
+									<button type="button" class="btnDelete">삭제</button>
+								</div>
+							</div>
+		
+							<div class="searchType">
+								<button type="button" class="active">최신순</button><!-- 활성화시 버튼에 active 추가 -->
+								<button type="button">가나다순</button>
+							</div>
+		
+							<div class="bookmarkList">
+								<ul>
+									<li>
+										<div class="list bus">
+											<p class="title">
+												<span class="R busInt">급행</span> 
+												<span>B2(BRT, 오송역방면)</span>
+											</p>
+											<p class="infomation">반석역 ↔ 오송역</p>
+										</div>
+		
+										<button type="button" class="btnDelete">삭제</button>
+									</li>
+		
+									<li>
+										<div class="list busstop">
+											<p class="title">
+												<strong>새롬동.나성동(중)</strong>
+											</p>
+											<p class="infomation">
+												<span>51007</span>
+												<span>다정동(중) 방면</span>
+											</p>
+											<p class="infomation red">
+												<span>B2(BRT.오송역방면)</span>
+												<span>B0(세종고속시외버스터미널</span>
+											</p>
+										</div>
+		
+										<button type="button" class="btnDelete">삭제</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //버스 -->
 					</div>
 				</div>
 				
