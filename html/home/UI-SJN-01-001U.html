@@ -65,7 +65,7 @@
 										</ul>
 										<div class="tabContent">
 											<!-- 선별진료소 -->
-											<div class="clinic">
+											<div class="clinic active">
 												<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
 											</div>
 											<!-- //선별진료소 -->
@@ -140,16 +140,110 @@
 									</div>
 								</a>
 								<div class="accordionTarget">
-									<div>
-										<ul class="nav_side">
-											<li><button type="button" class="active">시간별 날씨</button></li>
-											<li><button type="button">주간 날씨</button></li>
-											<li><button type="button">미세먼지</button></li>
+									<div class="boxTab">
+										<ul class="nav_side btnTab">
+											<li class="itemBtn"><button type="button" class="active">시간별 날씨</button></li>
+											<li class="itemBtn"><button type="button">주간 날씨</button></li>
+											<li class="itemBtn"><button type="button">미세먼지</button></li>
 										</ul>
 
-										<div>
-											<img src="../../public/image/temp/temp040.png" alt="날씨 샘플 이미지">
+										<div class="tabContent">
+											<!-- 시간별 날씨 -->
+											<div class="active">
+												<img src="../../public/image/temp/temp040.png" alt="날씨 샘플 이미지">
+											</div>
+											<!-- //시간별 날씨 -->
+
+											<!-- 주간 날씨 -->
+											<div>
+												<ul class="items-weatherInfo weather wh24">
+													<li>
+														<span class="time">월</span>
+														<i class="icon weather1">맑음</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li>
+														<span class="time">화</span>
+														<i class="icon weather2">흐림</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li>
+														<span class="time">수</span>
+														<i class="icon weather3">비</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li>
+														<span class="time">목</span>
+														<i class="icon weather1">맑음</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li class="now">
+														<span class="time">오늘</span>
+														<i class="icon weather1">맑음</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li>
+														<span class="time">토</span>
+														<i class="icon weather1">맑음</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+													<li>
+														<span class="time">일</span>
+														<i class="icon weather1">맑음</i>
+														<div class="temperature">
+															<div><span>7</span></div>
+															<div><span>10</span></div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //주간 날씨 -->
+
+											<!-- 미세먼지 -->
+											<div>
+												<div class="particulates">
+													<div class="body">
+														<div>
+															<h4>미세먼지</h4>
+															<div class="number">
+																<i class="split24 pm10"></i><b>60</b>
+															</div>
+															<span class="good">보통</span>
+														</div>
+														<div>
+															<h4>초미세먼지</h4>
+															<div class="number">
+																<i class="split24 pm25"></i><b>139</b>
+															</div>
+															<span class="bed">나쁨</span>
+														</div>
+													</div>
+													<div class="offerer">
+														<span>제공 : 에어코리아 2021-12-22 23:00</span>
+													</div>
+												</div>
+											</div>
+											<!-- //미세먼지 -->
 										</div>
+										
 									</div>
 
 									<div class="anniversary">
