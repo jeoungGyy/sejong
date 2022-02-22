@@ -20,6 +20,7 @@
 .mainArea .repMenu a.service4 { padding-top: 2.4rem; background-color: #777;}
 .mainArea .repMenu a.service4 i { display: block; width: 8rem; height: 8rem; margin: 0 auto; background: url(../image/home/main_repMenu4.png) no-repeat center/cover;}
 .mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.mainArea h3 .small { margin-right: 0.8rem; font-size: 1.5rem; font-weight: 400; color: #555;}
 .mainArea .recentService { margin-top: 4rem;}
 .mainArea .recentService .mainNav { display: flex; align-items: center; overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
 .mainArea .recentService .mainNav ul li { width: auto;}

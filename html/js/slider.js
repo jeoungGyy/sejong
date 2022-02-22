@@ -50,6 +50,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 16,
 	},
+	/* UI-SJN-03-005U */
+	infoToVisitSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
 	/* UI-SJN-04-* */
 	infoMenuSwiper: {
     slidesPerView: 'auto',
