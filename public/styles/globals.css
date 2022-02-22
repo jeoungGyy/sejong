@@ -804,8 +804,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerMapInfo .head { display: flex; align-items: center; justify-content: center; position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 200; height: 5.6rem; background-color: #fff;}
 .layerMapInfo .head h2 { font-size: 1.8rem;}
 .layerMapInfo .head .btnClose { top: 1.6rem;}
-.layerMapInfo .figure { display: flex; justify-content: center;overflow: hidden; height: 21.2rem; background-color: #EAEDF2;}
-.layerMapInfo .figure img { width: 12rem; height: auto;}
+.layerMapInfo .figure { display: flex; justify-content: center; align-items: center; flex: 1; overflow-x: hidden; overflow-y: auto; height: 21.2rem; padding: 2rem 0; background-color: #EAEDF2;}
+.layerMapInfo .figure img { width: 34rem; height: 53.775rem;}
 .layerMapInfo .figure + .busHead { padding-top: 1rem;}
 .layerMapInfo .figure + .busHead .favorite { top: 0.8rem;}
 .layerMapInfo .setting { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; padding: 0 2rem; border-bottom: 1px solid #EAEAEA;}
@@ -830,18 +830,18 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerMapInfo .accordionRoute { display: flex; align-items: baseline; justify-content: space-between; padding: 1.2rem 2rem; border-top: 1px solid #EAEAEA; background-color: #F4F5F7;}
 .layerMapInfo .accordionRoute .routeHead span { display: block; font-size: 1.4rem; font-weight: 700; color: #FD2020;}
 .layerMapInfo .accordionRoute .routeHead b { display: block; margin-top: 0.4rem; font-family: var(--fontRoboto); font-size: 1.8rem; font-weight: 700;}
-.layerMapInfo .busGuideArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
-.layerMapInfo .busGuideArea ul li { display: flex; align-items: center; padding: 0.8rem 2rem;}
-.layerMapInfo .busGuideArea ul li ~ li { border-top: 1px solid #F4F5F7;}
-.layerMapInfo .busGuideArea ul li .arSub { flex: 1;}
-.layerMapInfo .busGuideArea ul li .arSub .title { display: flex; align-items: center;}
-.layerMapInfo .busGuideArea ul li .arSub .title .name { margin-left: 0.8rem; font-size: 1.6rem;}
-.layerMapInfo .busGuideArea ul li .arSub .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #777;}
-.layerMapInfo .busGuideArea ul li .infomation { margin-top: 0.4rem;}
-.layerMapInfo .busGuideArea ul li .infomation span { font-size: 1.4rem; color: #777;}
-.layerMapInfo .busGuideArea ul li .etc { margin-top: 0.4rem;}
-.layerMapInfo .busGuideArea ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
-.layerMapInfo .busGuideArea ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.layerMapInfo .busGuideArea2 { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
+.layerMapInfo .busGuideArea2 ul li { display: flex; align-items: center; padding: 0.8rem 2rem;}
+.layerMapInfo .busGuideArea2 ul li ~ li { border-top: 1px solid #F4F5F7;}
+.layerMapInfo .busGuideArea2 ul li .arSub { flex: 1;}
+.layerMapInfo .busGuideArea2 ul li .arSub .title { display: flex; align-items: center;}
+.layerMapInfo .busGuideArea2 ul li .arSub .title .name { margin-left: 0.8rem; font-size: 1.6rem;}
+.layerMapInfo .busGuideArea2 ul li .arSub .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #777;}
+.layerMapInfo .busGuideArea2 ul li .infomation { margin-top: 0.4rem;}
+.layerMapInfo .busGuideArea2 ul li .infomation span { font-size: 1.4rem; color: #777;}
+.layerMapInfo .busGuideArea2 ul li .etc { margin-top: 0.4rem;}
+.layerMapInfo .busGuideArea2 ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.layerMapInfo .busGuideArea2 ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
 
 /* UI-SJN-40-006L */

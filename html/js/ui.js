@@ -47,13 +47,23 @@ const mapInfo = {
 	moveY: null,
 	endY: null,
 	showEl: false,
+	locationPosition: null,
 	touch : () => {
 		if(!tooltip.showEl) {
-			const startTouch = document.querySelector(".mapIHead");
+			const startTouch = document.querySelector(".mapInfoLayer");
 			startTouch.addEventListener('touchstart', mapInfo.start);
 			startTouch.addEventListener('touchmove', mapInfo.move);
 			startTouch.addEventListener('touchend', mapInfo.end);
+
+			mapInfo.locationPosition = Math.floor(startTouch.getBoundingClientRect().height);
+
+			const myLocation = document.querySelector(".myLocation");
+			const scaleBtn = document.querySelector(".scaleBtn");
+
+			myLocation.style.bottom = (mapInfo.locationPosition)/10+'rem';
+			scaleBtn.style.bottom = (mapInfo.locationPosition)/10+'rem';
 		}
+		
 	},
 	click : (division) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
@@ -74,6 +84,8 @@ const mapInfo = {
 	},
 	start : (event) => {
 		// event.preventDefault()
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		mapInfoLayer.classList.add('easeNone');
 		mapInfo.startY = event.touches[0].pageY;
 	},
 	move : (event) => {
@@ -85,6 +97,9 @@ const mapInfo = {
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
 	},
 	end : (event) => {
+		const mapInfoLayer = document.querySelector(".mapInfoLayer");
+		mapInfoLayer.classList.remove('easeNone');
+
 		mapInfo.endY = event.changedTouches[0].pageY;
 		mapInfo.active();
 	},
@@ -92,6 +107,9 @@ const mapInfo = {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const btnView = document.querySelector(".btnView");
 		const location = document.querySelector(".mapIcons .location");
+
+		const myLocation = document.querySelector(".myLocation");
+		const scaleBtn = document.querySelector(".scaleBtn");
 
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
@@ -107,6 +125,8 @@ const mapInfo = {
 					mapInfoLayer.classList.remove('open');
 					btnView && btnView.classList.remove('open');
 					location && location.classList.remove('default');
+					myLocation.removeAttribute('style');
+					scaleBtn.removeAttribute('style');
 					mapInfo.showEl = false;
 				}
 			}
@@ -501,10 +521,10 @@ const parkingTip = {
 	open : (id) => {
 		const location = document.querySelector(".location");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
-		const test = document.querySelectorAll(".btnParking");
+		const btnParking = document.querySelectorAll(".btnParking");
 
 		if(parkingTip.idx == null) {
-			[].forEach.call(test, (_this, idx)=>{
+			[].forEach.call(btnParking, (_this, idx)=>{
 				if(_this.classList.contains('active')) {
 					_this.classList.remove('active');
 				}

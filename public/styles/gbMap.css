@@ -8,10 +8,11 @@ body { --vh: 1px;}
 .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
 .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
 .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
-.mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));}
+/* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
 
 .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
+.mapInfoLayer.easeNone { transition:none}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .location { display: flex; align-items: center; height: 4.8rem;}
@@ -60,7 +61,7 @@ body { --vh: 1px;}
 .mapInfoLayer.open { transform: translateY(0);}
 .mapInfoLayer.default { height: calc(37rem + var(--vh));}
 .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
-.map .mapArea.subStyle .mapInfoLayer.up { height: calc(100% - 5.6rem);}
+.map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));}
 
 .mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
 .mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 100; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
@@ -90,19 +91,20 @@ body { --vh: 1px;}
 .mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
 .mapIcons .arrival { position: absolute;}
 .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
-.mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;}
-.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin-top: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
+/* .mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;} */
+.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; bottom: 2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%; transition: all .3s ease-in-out;}
 .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .mapIcons .location .myLocation.active { background-color: #6684EA;}
 .mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
-.mapIcons .location .scaleBtn { width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
+
+.mapIcons .location .scaleBtn { position: absolute; right: 1.2rem; bottom: 2rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); transition: bottom .3s ease-in-out;}
 .mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
 .mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
 .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
 .mapIcons .location .scaleBtn button.scaleDown { border-top: 1px solid #EAEAEA;}
 .mapIcons .location .scaleBtn button.scaleDown i { background: url(../image/map/ico_scale_down.png) no-repeat center/cover;}
-#root .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
-#root .mapIcons .location.parkingDefault { transform: translateY(calc(100% - 38rem));}
+/* #root .mapIcons .location.default { transform: translateY(calc(100% - 47rem));}
+#root .mapIcons .location.parkingDefault { transform: translateY(calc(100% - 38rem));} */
 
 .mapIcons .transit { position: absolute;}
 .mapIcons .transit span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem;}
@@ -553,6 +555,44 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideList li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .map .mapInfoLayer .busGuideList li .int { display: flex; align-items: center; margin-top: 0.4rem;}
 .map .mapInfoLayer .busGuideList li .int span { margin-right: 0.4rem;}
+
+.map .mapInfoLayer .accordionRoute { display: flex; align-items: baseline; justify-content: space-between; padding: 1.2rem 2rem; border-top: 1px solid #EAEAEA; background-color: #F4F5F7;}
+.map .mapInfoLayer .accordionRoute .routeHead span { display: block; font-size: 1.4rem; font-weight: 700; color: #FD2020;}
+.map .mapInfoLayer .accordionRoute .routeHead b { display: block; margin-top: 0.4rem; font-family: var(--fontRoboto); font-size: 1.8rem; font-weight: 700;}
+.map .mapInfoLayer .busGuideArea2 { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
+.map .mapInfoLayer .busGuideArea2 .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
+.map .mapInfoLayer .busGuideArea2 .favorite.active { background-position-y: -2.4rem;}
+.map .mapInfoLayer .busGuideArea2 ul li { display: flex; align-items: center; padding: 0.8rem 2rem;}
+.map .mapInfoLayer .busGuideArea2 ul li ~ li { border-top: 1px solid #F4F5F7;}
+.map .mapInfoLayer .busGuideArea2 ul li .arSub { flex: 1;}
+.map .mapInfoLayer .busGuideArea2 ul li .arSub .title { display: flex; align-items: center;}
+.map .mapInfoLayer .busGuideArea2 ul li .arSub .title .name { margin-left: 0.8rem; font-size: 1.6rem;}
+.map .mapInfoLayer .busGuideArea2 ul li .arSub .title .text { margin-left: 0.8rem; font-size: 1.4rem; color: #777;}
+.map .mapInfoLayer .busGuideArea2 ul li .infomation { margin-top: 0.4rem;}
+.map .mapInfoLayer .busGuideArea2 ul li .infomation span { font-size: 1.4rem; color: #777;}
+.map .mapInfoLayer .busGuideArea2 ul li .etc { margin-top: 0.4rem;}
+.map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
+.map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .map .mapInfoLayer .settingList li { padding: 1rem 2rem;}
 .map .mapInfoLayer .settingList li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
 .map .mapInfoLayer .settingList li .slBody h3 { font-size: 1.6rem;}
@@ -575,7 +615,9 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .settingListSub li .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #CDD0D8; border-radius: 50%;}
 .map .mapInfoLayer .settingListSub li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .settingListSub li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
-.map .mapInfoLayer .settingListSub li .guidance.active { background-color: #6684EA;}
+.map .mapInfoLayer .settingListSub li .guidance.active { background-color: #FFD800;}
+.map .mapInfoLayer .settingListSub li .guidance.active i { background-position-y: -2.4rem;}
+.map .mapInfoLayer .settingListSub li .guidance.active b { color: #111;}
 
 .getOffBtn { display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #CDD0D8; border-radius: 50%;}
 .getOffBtn i { background-position-y: -14.4rem;}

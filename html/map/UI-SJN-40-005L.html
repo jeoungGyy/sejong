@@ -49,14 +49,16 @@
 					<!-- //기타 아이콘들 -->
 					
 					<!-- 정보 영역 -->
-					<div class="mapInfoLayer default">
+					<div id="test" class="mapInfoLayer default">
 						<div class="mapIHead">
 							<button type="button" class="btnMapInfo">정보영역</button>
 						</div>
-						<button type="button" class="busGuidePopup">
+
+						<button type="button" class="busGuidePopup" onclick="layerPopup.open('layerBusStop');">
 							<span class="text">자주 이용하는 버스의 위치정보를 <br />빠르게 확인해보세요</span>
 							<span class="icon"><i></i></span>
 						</button>
+					
 						
 						<div class="busGuideArea">
 							<!-- 즐겨찾기 한 버스정류장 -->
@@ -212,6 +214,86 @@
 									</a>
 								</li>
 							</ul>
+
+							<div class="accordionRoute">
+								<div class="routeHead">
+									<span>곧 도착</span>
+									<b>192, 200, 2109, 500</b>
+								</div>
+								<div class="dispatchTil">
+									<span class="dTime">오후 12:23</span>
+									<button type="button" class="refresh"><i></i>15</button>
+								</div>
+							</div>
+							
+							<div class="busGuideArea2">
+								<ul>
+									<li>
+										<div class="arSub">
+											<div class="title">
+												<button type="button" class="favorite active"><i>즐겨찾기</i></button>
+												<span class="B busInt">간선</span>
+												<span class="G busInt">지선</span>
+												<span class="Y busInt">일반</span>
+												<span class="R busInt">급행</span>
+												<span class="M busInt">광역</span>
+												<h3 class="name">B2</h3>
+												<div class="text">오송역 방면</div>
+											</div>
+											<div class="infomation">
+												<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
+											</div>
+											<div class="etc">
+												<span class="cBlue">9분(5정거장)</span>
+												<span class="cBlue">26분(12정거장)</span>
+											</div>
+										</div>
+										<button type="button" class="getOffBtn active"><i class="split24"></i><b>승하차</b></button>
+									</li>
+									<li>
+										<div class="arSub">
+											<div class="title">
+												<button type="button" class="favorite"><i>즐겨찾기</i></button>
+												<span class="B busInt">간선</span>
+												<span class="G busInt">지선</span>
+												<span class="Y busInt">일반</span>
+												<span class="R busInt">급행</span>
+												<span class="M busInt">광역</span>
+												<h3 class="name">B2</h3>
+												<div class="text">오송역 방면</div>
+											</div>
+											<div class="infomation">
+												<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
+											</div>
+											<div class="etc">
+												<span>도착 예정 정보 없음</span>
+											</div>
+										</div>
+										<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
+									</li>
+									<li>
+										<div class="arSub">
+											<div class="title">
+												<button type="button" class="favorite"><i>즐겨찾기</i></button>
+												<span class="B busInt">간선</span>
+												<span class="G busInt">지선</span>
+												<span class="Y busInt">일반</span>
+												<span class="R busInt">급행</span>
+												<span class="M busInt">광역</span>
+												<h3 class="name">B2</h3>
+												<div class="text">오송역 방면</div>
+											</div>
+											<div class="infomation">
+												<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
+											</div>
+											<div class="etc">
+												<span>도착 예정 정보 없음</span>
+											</div>
+										</div>
+										<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<script>
@@ -236,171 +318,8 @@
 				<div class="figure">
 					<img src="../../public/image/map/map_figure.png" alt="">
 				</div>
-				<div class="busHead">
-					<button type="button" class="favorite"><i>즐겨찾기</i></button>
-					<div class="acco">
-						<h4>새롬동 나성동</h4>
-						<div class="etc">
-							<span>100km</span>
-							<span>52016</span>
-						</div>
-						<div class="int">
-							<span class="B busInt">간선</span>
-							<span class="G busInt">지선</span>
-							<span class="Y busInt">일반</span>
-							<span class="R busInt">급행</span>
-							<span class="M busInt">광역</span>
-						</div>
-					</div>
-				</div>
-				<div class="accordionRoute">
-					<div class="routeHead">
-						<span>곧 도착</span>
-						<b>192, 200, 2109, 500</b>
-					</div>
-					<div class="dispatchTil">
-						<span class="dTime">오후 12:23</span>
-						<!-- <span class="dTime">운행종료</span> -->
-						<button type="button" class="refresh"><i></i>15</button> <!-- 운행종료 시 버튼 삭제 -->
-					</div>
-				</div>
-
-				<div class="fullFlex busGuideArea">
-					<ul>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite active"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span class="cBlue">9분(5정거장)</span>
-									<span class="cBlue">26분(12정거장)</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn active"><i class="split24"></i><b>승하차</b></button>
-						</li>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span>도착 예정 정보 없음</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
-						</li>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span>도착 예정 정보 없음</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
-						</li>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span>도착 예정 정보 없음</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
-						</li>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span>도착 예정 정보 없음</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
-						</li>
-						<li>
-							<div class="arSub">
-								<div class="title">
-									<button type="button" class="favorite"><i>즐겨찾기</i></button>
-									<span class="B busInt">간선</span>
-									<span class="G busInt">지선</span>
-									<span class="Y busInt">일반</span>
-									<span class="R busInt">급행</span>
-									<span class="M busInt">광역</span>
-									<h3 class="name">B2</h3>
-									<div class="text">오송역 방면</div>
-								</div>
-								<div class="infomation">
-									<span>세종고속시외버스터… ↔ 세종고속시외버스터…</span>
-								</div>
-								<div class="etc">
-									<span>도착 예정 정보 없음</span>
-								</div>
-							</div>
-							<button type="button" class="getOffBtn"><i class="split24"></i><b>승하차</b></button>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
-		<script>
-			layerPopup.open('layerBusStop');
-		</script>
 		<!-- //즐겨찾는 버스 정류장 없을 경우 -->
 
 		<!-- 버스정류장 클릭 시 나오는 팝업 -->
@@ -471,7 +390,7 @@
 							</div>
 						</div>
 						
-						<div class="busGuideArea">
+						<div class="busGuideArea2">
 							<ul>
 								<li>
 									<div class="arSub">
