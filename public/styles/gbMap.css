@@ -30,8 +30,8 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .val p .good { color: #4EC457;}
 .map .mapInfoLayer .area .val p .bed { color: #FD2020;}
 .map .mapInfoLayer .area .selectGroup { display: flex; align-items: center; height: 4.8rem;}
-.map .mapInfoLayer .area .selectGroup select { width: inherit; min-width: 9rem; max-width: 12rem; height: 3.6rem; margin-right: 0.8rem; padding-left: 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
-.map .mapInfoLayer .area .selectGroup select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
+.map .mapInfoLayer .area .selectGroup select { width: inherit; min-width: 9rem; max-width: 12rem; height: 3.6rem; margin-right: 0.8rem; padding-left: 1.2rem; color:#777; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
+.map .mapInfoLayer .area .selectGroup select.active { border-color: #6684EA; background-color: #fff; }
 .map .mapInfoLayer .area .selectGroup .state { display: flex; align-items: center; justify-content: center; min-width: 4.6rem; height: 3.6rem; font-size: 1.4rem; color: #fff; border-radius: 1.8rem;}
 .map .mapInfoLayer .area .selectGroup .state.normal { background-color: #6684EA;}
 .map .mapInfoLayer .area .selectGroup .state.breakdown { background-color: #FD2020;}
@@ -345,7 +345,7 @@ span.M { background-color: #FD2020;}
 .map .gsCost span { position: relative; margin-left: 0.8rem; padding-left: 2.3rem; font-weight: 700;}
 .map .gsCost span::before { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.8rem; height: 1.8rem; font-size: 1.1rem; border-radius: 50%;}
 .map .gsCost span.gasoline::before { content: '휘'; background-color: #FFEB52;}
-.map .gsCost span.oil::before { content: '경'; color: #fff; background-color: #A9B0C1;}
+.map .gsCost span.oil::before { content: '경'; color: #fff; background-color: #32BBED;}
 .map .gsCost span::after { content: '원';}
 
 /* 장소상세 탬플릿 - UI-SJN-24-001L */

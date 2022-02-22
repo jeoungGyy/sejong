@@ -489,7 +489,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .infoLayer .compArea .caItem .caList li { position: relative; padding-left: 1.6rem; line-height: 2.4rem;}
 .infoLayer .compArea .caItem .caList li::after { content: ''; position: absolute; left: 0; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .infoLayer .compArea .caItem .caList li .gray { color: #777;}
-.infoLayer .compArea .caItem .caList li .orange { color: #FD2020;}
+.infoLayer .compArea .caItem .caList li .orange {display:inline-block; width:3.2rem; text-align: center; color: #fff; background-color:#FD2020;}
 
 /* UI-SJN-08-001P */
 .labelLayer .items-label li ~ li { border-top: 1px solid #f1f1f1;}
@@ -501,7 +501,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .tripLayer .tripHeader h3 { font-size: 1.9rem; color: #fff; text-align: center; line-height: 2.7rem;}
 
 /* UI-SJN-02-002L */
-.voiceLayer { padding: 2rem; text-align: left;}
+.voiceLayer { padding:6.5rem 2rem 2rem; text-align: left;}
 .voiceLayer .voiceArea { height: 21rem;}
 .voiceLayer .title { font-size: 2rem; font-weight: 700; line-height: 2.8rem;}
 .voiceLayer .voiceList { margin-top: 2.5rem; font-size: 1.6re; color: #555;}
@@ -1019,7 +1019,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .header-formSearch .send .btnSend { display: block; position: absolute; right: 0; top: 0; padding: 1rem;}
 .header-formSearch .send .btnSend i { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 
-.header-news { padding: 1.6rem 0 0;}
+.header-news { padding: 1.6rem 0;}
 .header-news h3 { font-size: 1.8rem;}
 .header-news .headerSub { margin-top: 0.8rem;}
 
@@ -1127,6 +1127,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-default li a { display: block;}
 .items-default li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem;}
 .items-default li a h4 .allTime { display: inline-block; height: 1.8rem; margin-left: 0.3rem; padding: 0 0.3rem; font-size: 1.3rem; font-weight: 400; color: #fff; line-height: 1.8rem; background-color: #D69630;}
+.items-default li a h4 .me { display: inline-block; width:2rem; height: 2rem; margin-left: 0.2rem; font-size: 1.1rem; font-weight: 400; color: #fff; text-align: center; line-height: 2rem; border-radius:1rem; background-color: #6684EA;}
 .items-default li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .items-default li .hashTag { margin-top: 0.6rem;}
 .items-default li .hashTag span { display: inline-block; margin-right: 0.3rem; padding: 0.4rem; font-size: 1.4rem; color: #777; background-color: #F8F8F8;}
@@ -1149,30 +1150,39 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .labelH.between >span { font-size: 1.4rem; color: #aaa;}
 .items-form >li .labelH.highlight { height: 7.2rem; font-size: 1.8rem;}
 .items-form >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa;}
-.items-form >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #ddd;}
+.items-form >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #6684EA;}
 .items-form >li .btnOpen span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .btnOpen span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 .items-form >li .phoneForm { display: flex;}
 .items-form >li .phoneForm span { margin: 0 0.2rem;}
 .items-form >li .adressForm input { margin-top: 0.8rem;}
-.items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #ddd;}
+.items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #6684EA;}
 .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 8rem;}
 .items-form >li .fileForm .upload.add span::after { background-position: -6rem -4rem;}
 .items-form >li .fileForm .condition { margin: 0.9rem 0; color: #aaa;}
 .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .items-form >li .fileForm .ffH .all { color: #6684EA;}
+/*
 .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
 .items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat -21.6rem 0/48rem 28.8rem; border-radius: 50%;}
-.items-form >li .fileForm .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0 -0.2rem;}
+*/
+.items-form >li .fileForm .ffH .delete {display:inline-block; line-height:2.4rem;}
+.items-form >li .fileForm .ffH .delete label {position:relative; padding-left:3rem; line-height:2.4rem;}
+.items-form >li .fileForm .ffH .delete label::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background:#EAEDF2 url(../image/common/ico_chk_wh.png) no-repeat center/1.2rem auto; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.items-form >li .fileForm .ffH .delete input { position: absolute; opacity: 0;}
+.items-form >li .fileForm .ffH .delete input:checked + label::after { background-color: #6684EA;}
+/*
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li { grid-column-end: span 3;}
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li label { height: 18rem;}
+*/
+.items-form >li .fileForm .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0 -0.2rem;}
 .items-form >li .fileForm .pictureList li { margin: 0.4rem 0.2rem 0;}
 .items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .fileForm .pictureList li input { position: absolute; opacity: 0;}
-.items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #111;}
+.items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #6684EA;}
 .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
 .items-form >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
 .items-form >li .selectForm .target ul { display: flex; flex-wrap: wrap; overflow: auto; height: 19.5rem; margin: -0.4rem 0 0 -0.4rem;}
@@ -1189,12 +1199,16 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .businessForm ul li ~ li { margin-top: 0.8rem;}
 .items-form >li .serviceList { display: flex; margin: 0 -0.4rem;}
 .items-form >li .serviceList li { width: calc(20% - 0.4rem); margin: 0 0.4rem;}
-.items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; background-color: #F4F5F7; cursor: pointer;}
+.items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; cursor: pointer;}
 .items-form >li .serviceList li label img { width: 100%; height: auto; vertical-align: top;}
-.items-form >li .serviceList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .serviceList li input { position: absolute; opacity: 0;}
-.items-form >li .serviceList li input:checked + label::after { background-color: #111;}
+.items-form >li .serviceList li input:checked + label { border:1px solid #6684EA; background-color:#fff;}
 .items-form >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; text-align: center;}
+.items-form >li .serviceList li.coin label {background:#F4F5F7 url(../image/home/ico_service_coin.png) no-repeat center/2.4rem; }
+.items-form >li .serviceList li.parking label {background:#F4F5F7 url(../image/home/ico_service_parking.png) no-repeat center/2.4rem; }
+.items-form >li .serviceList li.pet label {background:#F4F5F7 url(../image/home/ico_service_pet.png) no-repeat center/2.4rem; }
+.items-form >li .serviceList li.wifi label {background:#F4F5F7 url(../image/home/ico_service_wifi.png) no-repeat center/2.4rem; }
+.items-form >li .serviceList li.playground label {background:#F4F5F7 url(../image/home/ico_service_playground.png) no-repeat center/2.4rem; }
 .items-form >li .period .pHead { display: flex; align-items: center; height: 3.2rem;}
 .items-form >li .period .pHead span { display: inline-block; margin-right: 1.6rem; color: #555;}
 .items-form >li .period .pList { margin-top: 0.7rem; border-top: 1px solid #F4F5F7;}
@@ -1274,9 +1288,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li figure { height: 18rem;}
 .items-edu >li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .items-edu >li figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
-.items-edu >li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 2.4rem; background-color: rgba(0, 0, 0, 0.3); }
-.items-edu >li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.1rem; font-size: 1.4rem; color: #fff; text-align: center;}
-.items-edu >li figure figcaption .blur { display: block; width: 100%; height: 100%; backdrop-filter: blur(5px);}
+.items-edu >li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
+.items-edu >li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.items-edu >li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .items-edu >li .text .center { display: flex; align-items: center; justify-content: space-between;}
 .items-edu >li .text .center p { font-size: 1.4rem; color: #777;}
 .items-edu >li .text .center p.skyblue { color: #32BBED;}
@@ -1584,7 +1598,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .item-place li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .item-place li .keyword { position: relative; padding-left: 2.8rem;}
 .item-place li .keyword::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem;}
+.item-place li .icoLocation {width:100%; display: flex; align-items: center; justify-content: space-between; padding-right:0.5rem; }
 .item-place li .icoLocation .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem 0/40rem 8rem;}
+.item-place li .icoSearch {width:100%; display: flex; align-items: center; justify-content: space-between; padding-right:0.5rem; }
 .item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 8rem;}
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnClose { display: block;}
