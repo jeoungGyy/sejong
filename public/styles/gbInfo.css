@@ -121,6 +121,44 @@
 .mainArea .improvement a i { margin: -0.5rem 0.8rem 0 0; vertical-align: middle; background-position: -28.8rem -19.2rem;}
 .mainArea .improvement .roundDeco { display: block; position: absolute; right: -8.5rem; top: -10.5rem; z-index: 1; width: 14.7rem; height: 14.7rem; background-color: #D57298; border-radius: 50%;}
 
+/* UI-SJN-03-004U */
+.mainArea .eduProgram { margin-top: 3.2rem;}
+.mainArea .eduProgram .boxArea { padding-bottom: 4rem;}
+.mainArea .eduProgram .textLinks { margin-top: 1.7rem; border-top: 1px solid #F4F5F7;}
+.mainArea .eduProgram .textLinks li { border-bottom: 1px solid #F4F5F7;}
+.mainArea .eduProgram .textLinks li a { display: flex; align-items: center; justify-content: space-between; min-height: 4.8rem; padding: 1rem 0;}
+.mainArea .eduProgram .textLinks li a span { color: #555;}
+.mainArea .eduProgram .textLinks li a b { font-size: 1.6rem; color: #4EC457; text-align: right;}
+.mainArea .eduProgram .roundDeco { display: block; position: absolute; left: -5.2rem; bottom: -18rem; z-index: 1; width: 22.2rem; height: 22.2rem; background-color: #CCD2E3; border-radius: 50%;}
+.mainArea .donation { position: relative; margin-top: 3.2rem;}
+.mainArea .donation a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 0 2.4rem; color: #fff; background: #D69630 url(../image/info/info_donation_img.png) no-repeat right 4.8rem center/4.425rem 6rem; border-radius: 1.6rem;}
+.mainArea .donation a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
+.mainArea .donation a b i { margin: -0.5rem 0 0 0.8rem; vertical-align: middle; background-position: -24rem -4rem;}
+.mainArea .culturalLife { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .culturalLife .boxArea { padding-bottom: 4rem;}
+.mainArea .culturalLife .culturalBtns { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
+.mainArea .culturalLife .culturalBtns a { display: flex; align-items: center; justify-content: center; width: calc(50% - 0.4rem); height: 5.2rem; font-size: 1.6rem; color: #111; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .culturalLife .culturalBtns a.infoCalendar i { margin-right: 0.4rem; background-position: -31.2rem -19.2rem;}
+.mainArea .culturalLife .culturalBtns a.infoEvent i { margin-right: 0.4rem; background-position: -2.4rem -4.8rem;}
+.mainArea .culturalLife h4 { margin-top: 2.4rem; font-size: 1.6rem;}
+.mainArea .culturalLife .links { display: grid; gap: 1.8rem 0.8rem; grid-template-columns: repeat(3, 1fr); margin-top: 1.8rem;}
+.mainArea .culturalLife .links li { width: calc();}
+.mainArea .culturalLife .links li a { display: block; color: #333;}
+.mainArea .culturalLife .links li a figure { overflow: hidden; border-radius: 0.4rem;}
+.mainArea .culturalLife .links li a p { margin-top: 1.2rem; letter-spacing: -0.1em; text-align: center;}
+.mainArea .culturalLife .publicityEvents { display: flex; flex-direction: column; justify-content: center; height: 7.8rem; margin-top: 4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_culturalLife_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .culturalLife .publicityEvents div { font-size: 1.3rem;}
+.mainArea .culturalLife .publicityEvents b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
+.mainArea .culturalLife .publicityEvents b i { margin: -0.5rem 0 0 0.8rem; vertical-align: middle; background-position: -24rem -4rem;}
+.mainArea .culturalLife .roundDeco { display: block; position: absolute; right: -8.2rem; bottom: 3.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #D69630; border-radius: 50%;}
+
+
+
+
+
+
+
+
 
 
 
