@@ -1022,6 +1022,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .header-news { padding: 1.6rem 0 0;}
 .header-news h3 { font-size: 1.8rem;}
 .header-news .headerSub { margin-top: 0.8rem;}
+.header-news .mapView { margin-top: 1.5rem;}
+.header-news .mapView a { display: flex; align-items: center; justify-content: flex-end; color: #6684EA;}
+.header-news .mapView a i { margin-right: 0.4rem; background-position: -2.4rem -4.8rem;}
 
 .header-formSort { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .header-formSort div { display: flex;}
@@ -1399,7 +1402,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-culture li { display: flex; justify-content: space-between;}
 .items-culture li ~ li { margin-top: 1.6rem;}
 .items-culture li figure { width: 12rem; height: 16rem; margin-right: 1.2rem;}
-.items-culture li .text { flex: 1;}
+.items-culture li .text { display: block; flex: 1; color: #111;}
 .items-culture li .text h4 { font-size: 1.6rem;}
 .items-culture li .text .t { margin-top: 0.4rem; color: #555;}
 .items-culture li .text .st { margin-top: 0.8rem; color: #555; line-height: 2.2rem;}
