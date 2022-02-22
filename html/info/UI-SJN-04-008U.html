@@ -107,7 +107,7 @@
 											</button>
 										</li>
 										<li>
-											<button type="button">
+											<button type="button" class="readonly">
 												<span>2021.12.25 토요일</span>
 												<span>오후 6:00</span>
 											</button>
@@ -130,8 +130,15 @@
 								<div class="labelH">
 									<label for="tempText3">태그 달기</label>
 								</div>
-								<div>
-									<input type="text" id="tempText3" placeholder="태그와 태그는 쉼표로 구분, 5개까지 입력할 수 있어요" />
+								<div class="tagForm">
+									<div class="boxLine">
+										<span class="placeholder">태그와 태그는 쉼표로 구분, 5개까지 입력할 수 있어요</span> <!-- 아래 태그가 없거나, 포거스 상태가 아닌경우 -->
+										<ul>
+											<li><div class="tagBtn">세종시<button type="button"><i>태그 삭제</i></button></div></li>
+											<li><div class="tagBtn">행복<button type="button"><i>태그 삭제</i></button></div></li>
+											<li><textarea type="text" autocomplete="off" class="tagInput"></textarea></li>
+										</ul>
+									</div>
 									<p class="hWord">예) 세종시, 행복도시, 스마트도시, 세종엔, 안심이</p>
 								</div>
 							</li>
