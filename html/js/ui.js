@@ -135,6 +135,8 @@ const mapInfo = {
 			mapInfoLayer.classList.remove('up', 'open');
 			btnView.classList.remove('up', 'open');
 			location && location.classList.remove('default');
+			myLocation.removeAttribute('style');
+			scaleBtn.removeAttribute('style');
 			mapInfo.showEl = false;
 		}
 		mapInfoLayer.style.setProperty('--vh', '0px');

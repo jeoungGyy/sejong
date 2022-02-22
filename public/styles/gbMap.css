@@ -5,8 +5,10 @@ body { --vh: 1px;}
 
 /* 공통 */
 .mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
-.mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));}
+/* .mapArea.fixed .mapIcons .location { transform: translateY(calc(100% - 33rem));} */
 .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
+.mapArea.fixed .mapIcons .location .myLocation,
+.mapArea.fixed .mapIcons .location .scaleBtn { bottom: 25rem;}
 .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 /* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
