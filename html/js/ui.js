@@ -60,10 +60,9 @@ const mapInfo = {
 			const myLocation = document.querySelector(".myLocation");
 			const scaleBtn = document.querySelector(".scaleBtn");
 
-			myLocation.style.bottom = (mapInfo.locationPosition)/10+'rem';
-			scaleBtn.style.bottom = (mapInfo.locationPosition)/10+'rem';
+			myLocation.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
+			scaleBtn.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
 		}
-		
 	},
 	click : (division) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
@@ -520,10 +519,17 @@ const parkingTip = {
 	winClose : false,
 	showEl : null,
 	idx : null,
+	locationPosition: null,
 	open : (id) => {
 		const location = document.querySelector(".location");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const btnParking = document.querySelectorAll(".btnParking");
+		const myLocation = document.querySelector(".myLocation");
+		const scaleBtn = document.querySelector(".scaleBtn");
+
+		parkingTip.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
+
+		
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(btnParking, (_this, idx)=>{
@@ -550,9 +556,12 @@ const parkingTip = {
 				parkingTip.showEl.classList.add('ready');
 				location.classList.add('parkingDefault');
 				mapInfoLayer.classList.add('open');
+				myLocation.style.bottom = (parkingTip.locationPosition/10)+2+'rem';
+				scaleBtn.style.bottom = (parkingTip.locationPosition/10)+2+'rem';
 
 				setTimeout(()=>{
 					parkingTip.showEl.classList.add('show');
+					
 					parkingTip.showEl.focus();
 				},500);
 			},500);
@@ -574,6 +583,8 @@ const parkingTip = {
 					mapInfoLayer.classList.remove('open');
 
 					parkingTip.showEl.classList.remove('show');
+					myLocation.removeAttribute('style');
+					scaleBtn.removeAttribute('style');
 
 					setTimeout(()=>{
 						parkingTip.showEl.classList.remove('ready');

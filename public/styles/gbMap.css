@@ -12,9 +12,12 @@ body { --vh: 1px;}
 .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 /* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
+.mapArea.subStyle .mapIcons .location .myLocation,
+.mapArea.subStyle .mapIcons .location .scaleBtn { bottom: 2rem;}
 
 .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
+.mapInfoLayer.easeNone >div { overflow: hidden !important;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .location { display: flex; align-items: center; height: 4.8rem;}
@@ -94,12 +97,12 @@ body { --vh: 1px;}
 .mapIcons .arrival { position: absolute;}
 .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
 /* .mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;} */
-.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; bottom: 2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%; transition: all .3s ease-in-out;}
+.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; bottom: 12rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%; transition: all .3s ease-in-out;}
 .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .mapIcons .location .myLocation.active { background-color: #6684EA;}
 .mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
 
-.mapIcons .location .scaleBtn { position: absolute; right: 1.2rem; bottom: 2rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); transition: bottom .3s ease-in-out;}
+.mapIcons .location .scaleBtn { position: absolute; right: 1.2rem; bottom: 12rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); transition: bottom .3s ease-in-out;}
 .mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
 .mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
 .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
