@@ -9,6 +9,7 @@
 - UI-SJN-04-008U 수정 - 태그 나오는 textarea 크기 조정
 - UI-SJN-40-008L 등록
 - UI-SJN-50-008L 등록
+- UI-SJN-70-001L 등록
 - UI-SJN-80-003L 등록
 - UI-SJN-99-001U 등록
 

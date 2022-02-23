@@ -19,7 +19,7 @@
 			<div class="infoWrap">
 				<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
 					<fieldset class="form-default">
-						<legend>공유 경제 등록 폼</legend>
+						<legend>정보수정 폼</legend>
 						<ul class="items-form">
 							<li>
 								<div class="labelH">
@@ -34,107 +34,20 @@
 									<label for="tempText1">위치</label> <span class="required">필수</span>
 								</div>
 								<div>
-									<div>
-										맵위치
+									<div class="myLocation">
+										맵 들어오는 위치 세로 18rem
 									</div>
 								</div>
 								<div class="adressForm">
 									<button type="button" class="btnOpen"><span>장소 검색</span></button>
-									<input type="text" required="required" placeholder="주소 찾기">
+									<input type="text" required="required" placeholder="주소 찾기" value="세종특별시 나성1로 23">
 									<input type="text" required="required" placeholder="상세 주소를 입력해주세요">
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label for="tempText2">설명</label> <span class="required">필수</span>
-								</div>
-								<div class="textareaForm">
-									<textarea id="tempText2" cols="10" rows="10" required="required" placeholder="공유하실 항목에 대한 설명을 입력해 주세요.&#13;&#10;(최소 10자 이상)"></textarea>
-									<div class="byte">
-										<span>49</span>/300
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label for="tempText3">공유자</label> <span class="required">필수</span>
-								</div>
-								<div>
-									<input type="text" id="tempText3" required="required" placeholder="공유자명을 입력하세요" />
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label>연락처</label> <span class="required">필수</span>
-								</div>
-								<div class="phoneForm">
-									<span><input type="tel" required="required" title="연락처 국번 입력" /></span>
-									<span><input type="tel" required="required" title="연락처 앞자리 입력" /></span>
-									<span><input type="tel" required="required" title="연락처 뒷자리 입력" /></span>
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label for="tempText4">이용료</label> <span class="required">필수</span>
-								</div>
-								<div>
-									<div class="radioSet radioSpace">
-										<input type="radio" name="radio3" id="radio1" /><label for="radio1">유료</label>
-										<input type="radio" name="radio3" id="radio2" /><label for="radio2">무료</label>
-									</div>
-									<input type="text" id="tempText4" />
-									<p class="hWord">예) 한시간 5천원/ 하루 5만원/ 한달 50만원</p>
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label>주소</label> <span class="required">필수</span>
-								</div>
-								<div class="adressForm">
-									<button type="button" class="btnOpen"><span>주소 찾기</span></button>
-									<input type="text" required="required" placeholder="주소 찾기" />
-									<input type="text" required="required" placeholder="상세 주소를 입력해주세요" />
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label for="tempText5">공유지역 (읍면동 선택)</label> <span class="required">필수</span>
-								</div>
-								<div>
-									<select id="tempText5">
-										<option>지역 읍면동을 선택하세요</option>
-										<option>조지원읍</option>
-										<option>연기면</option>
-										<option>연동면</option>
-										<option>부강면</option>
-										<option>금남면</option>
-										<option>장군면</option>
-										<option>연서면</option>
-										<option>전의면</option>
-										<option>전동면</option>
-										<option>소정면</option>
-										<option>한솔동</option>
-										<option>도담동</option>
-										<option>아름동</option>
-										<option>종촌동</option>
-										<option>고운동</option>
-										<option>보람동</option>
-									</select>
-								</div>
-							</li>
-							<li>
-								<div class="labelH">
-									<label for="tempText6">홈페이지</label>
-								</div>
-								<div>
-									<input type="text" id="tempText6" placeholder="홈페이지 주소(URL)를 입력하세요" />
-									<p class="hWord">예) https://smartsejong.kr</p>
 								</div>
 							</li>
 							<li>
 								<div class="labelH between">
 									<div>
-										<label>사진등록</label> <span class="required">필수</span>
+										<label>사진등록</label>
 									</div>
 									<span>(최대 15장)</span>
 								</div>
@@ -179,6 +92,87 @@
 										</li>
 									</ul>
 								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText3">업종</label> <span class="sub">예) 음식점, 카페, 약국 등</span>
+								</div>
+								<div>
+									<input type="text" id="tempText3" placeholder="업종을 입력하세요" />
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>전화번호</label>
+								</div>
+								<div class="inputForm">
+									<input type="tel" title="대표 전화번호 입력" placeholder="대표 전화번호를 입력해주세요" />
+									<div class="por">
+										<input type="tel" title="첫번째 전화번호 입력" placeholder="전화번호를 입력해주세요" />
+										<button type="button" class="pnRemove"><i class="split24">첫번째 전화번호 삭제</i></button>
+									</div>
+									<div class="por">
+										<input type="tel" title="두번째 전화번호 입력" placeholder="전화번호를 입력해주세요" />
+										<button type="button" class="pnRemove"><i class="split24">두번째 전화번호 삭제</i></button>
+									</div>
+									<button type="button" class="pnAdd"><i class="split20"></i>전화번호 추가</button>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>홈페이지</label>
+								</div>
+								<div class="inputForm">
+									<input type="url" title="대표 홈페이지 입력" placeholder="대표 홈페이지를 입력해주세요" />
+									<div class="por">
+										<input type="tel" title="첫번째 홈페이지 입력" placeholder="홈페이지를 입력해주세요" />
+										<button type="button" class="pnRemove"><i class="split24">첫번째 홈페이지 삭제</i></button>
+									</div>
+									<div class="por">
+										<input type="tel" title="두번째 홈페이지 입력" placeholder="홈페이지를 입력해주세요" />
+										<button type="button" class="pnRemove"><i class="split24">두번째 홈페이지 삭제</i></button>
+									</div>
+									<button type="button" class="pnAdd"><i class="split20"></i>홈페이지 추가</button>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>영업시간</label>
+								</div>
+								<div>
+									<button type="button" class="btnLink"><span>영업시간, 휴무일을 입력해주세요</span><i class="split24"></i></button>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>메뉴</label>
+								</div>
+								<div>
+									<button type="button" class="btnLink"><span>메뉴와 가격을 입력해주세요</span><i class="split24"></i></button>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label>제공 서비스</label>
+								</div>
+								<div>
+									<button type="button" class="btnLink"><span>제공 서비스를 입력해주세요</span><i class="split24"></i></button>
+								</div>
+							</li>
+							<li>
+								<div class="labelH">
+									<label for="tempText2">기타</label>
+								</div>
+								<div class="textareaForm">
+									<textarea id="tempText2" cols="10" rows="10" required="required" placeholder="기타 정보를 입력해주세요.&#13;&#10;(자세한 설명 등)"></textarea>
+									<div class="byte">
+										<span>49</span>/300
+									</div>
+								</div>
+								<p class="hWord">
+									입력하신 정보는 장소정보로 등록되어 활용됩니다.<br />
+									개인정보보호를 위해 휴대전화번호 등의 개인정보는 정책상 반려될 수 있습니다.
+								</p>
 							</li>
 						</ul>
 					</fieldset>
