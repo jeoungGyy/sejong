@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+	<meta name="theme-color" content="#6684EA" />
+	<meta name="author" content="세종엔" />
+	<title>세종엔</title>
+	<style>
+		* { 
+			margin: 0; padding: 0;
+			font-family: "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+			color:#111;
+			letter-spacing: -0.04em;
+			box-sizing:border-box;
+		}
+		button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+		.searchGroup { display: flex; align-items: center; height: 48px; padding: 0 20px;}
+		.searchGroup b {  display: flex; font-size: 16px;}
+		.searchGroup b img { margin-right: 4px;}
+		.searchGroup input { flex: 1; height: 36px; margin-left: 8px; border: none; background-color: #EAEDF2; border-radius: 18px;}
+		.controlBtn { display: flex; justify-content: flex-end; height: 48px; margin-top: 8px; padding: 0 20px;}
+		.controlBtn button { display: flex; align-items: center; margin-left: 8px; font-size: 14px;}
+		.controlBtn button img { margin-right: 4px;}
+	</style>
+</head>
+
+<body>
+<div id="root">
+	<div class="searchGroup">
+		<b><img src="../../public/image/widget/widget_location@2x.png" alt="" style="width: 16px; height: 20px;">세종엔</b>
+		<input type="text">
+	</div>
+	<div class="controlBtn">
+		<button type="button"><img src="../../public/image/widget/widget_location_black@2x.png" alt="" style="width: 24px; height: 24px;">생생버스</button>
+		<button type="button"><img src="../../public/image/widget/widget_bus_bus@2x.png" alt="" style="width: 24px; height: 24px;">생생버스</button>
+		<button type="button"><img src="../../public/image/widget/widget_siren@2x.png" alt="" style="width: 24px; height: 24px;">긴급SOS</button>
+	</div>
+</div>
+</body>
+</html>
