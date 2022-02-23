@@ -182,8 +182,9 @@ body { --vh: 1px;}
 .mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
 .mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
 .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
-.mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; z-index: 3; width: 2.175rem; height: 2.4rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; background: url(../image/map/ico_bus.png) no-repeat 0 0/2.175rem 10rem;}
-.mapIcons .targer { position: absolute; z-index: 1; width: 2.175rem; height: 2.4rem;}
+.mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; }
+.mapIcons .busStop .busIco i { width: 2.4rem; height: 2.8rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; z-index: 3; }
+.mapIcons .targer { position: absolute; z-index: 1; width: 2.4rem; height: 2.8rem;}
 .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 3s linear infinite;}
 .mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
 @keyframes lds-scale {
@@ -193,11 +194,13 @@ body { --vh: 1px;}
   80% { transform: scale(1); opacity: 0;}
   100% { transform: scale(1); opacity: 0;}
 }
-.mapIcons .busStop .busIco.B { background-position-y: 0;}
-.mapIcons .busStop .busIco.G { background-position-y: -2.5rem;}
-.mapIcons .busStop .busIco.Y { background-position-y: -5rem;}
-.mapIcons .busStop .busIco.R { background-position-y: -7.5rem;}
-.mapIcons .busStop .busIco.M { background-position-y: -7.5rem;}
+.mapIcons .busStop .busIco.B i { background: url(../image/map/ico_bus_B.png) no-repeat 0 0/2.4rem 2.8rem;}
+.mapIcons .busStop .busIco.G i { background: url(../image/map/ico_bus_G.png) no-repeat 0 0/2.4rem 2.8rem;}
+.mapIcons .busStop .busIco.Y i { background: url(../image/map/ico_bus_Y.png) no-repeat 0 0/2.4rem 2.8rem;}
+.mapIcons .busStop .busIco.R i { background: url(../image/map/ico_bus_R.png) no-repeat 0 0/2.4rem 2.8rem;}
+.mapIcons .busStop .busIco.M i { background: url(../image/map/ico_bus_M.png) no-repeat 0 0/2.4rem 2.8rem;}
+.mapIcons .busStop .busIco.active::before {content:''; position:absolute; top:-0.6rem; left:-0.8rem; width:8rem; height:8rem; background-color: rgba(17 17 17 / 15%); border-radius:50%; }
+.mapIcons .busStop .busIco.active::after {content:''; position:absolute; top:-0.6rem; left:-0.8rem; width:4rem; height:4rem; background-color:#fff; border-radius:50%; }
 .mapIcons .busStop .busLocation { position: absolute;}
 .mapIcons .busStop .busLocation i { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_busLocation.png) no-repeat center/cover;}
 .mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
@@ -534,9 +537,9 @@ span.M { background-color: #FD2020;}
 .map .busInfoFooter .bifBody .etc span { font-size: 1.4rem; color: #555;}
 .map .busInfoFooter .bifBody .etc span ~ span { position: relative; margin-left: 0.1rem; padding-left: 0.6rem;}
 .map .busInfoFooter .bifBody .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
-.map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
-.map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #FFD800; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
+.map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/ico_arrow_24_bk.png) no-repeat 0/2.4rem;}
+.map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #111;}
 
 /* UI-SJN-40-005L */
 .map .mapInfoLayer .busGuidePopup { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 7.6rem; padding: 0 2rem; background-color: #EAEDF2;}
