@@ -84,7 +84,7 @@ const mapInfo = {
 	start : (event) => {
 		// event.preventDefault()
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
-		mapInfoLayer.classList.add('easeNone');
+		// mapInfoLayer.classList.add('easeNone');
 		mapInfo.startY = event.touches[0].pageY;
 	},
 	move : (event) => {
@@ -94,6 +94,7 @@ const mapInfo = {
 		mapInfo.moveY = event.changedTouches[0].pageY;
 		var vh = mapInfo.startY - mapInfo.moveY;
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
+		mapInfoLayer.classList.add('easeNone');
 	},
 	end : (event) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
