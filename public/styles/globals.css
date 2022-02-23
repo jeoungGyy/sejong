@@ -1584,7 +1584,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .items-gasStation li .etc { display: flex; flex-direction: column; margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .etc >a { display: block; height: 2.4rem; font-size: 1.4rem; color: #777;}
-.items-gasStation li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 8rem; border-radius: 50%;}
+.items-gasStation li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation li .etc .facilities { display: flex; flex: 1; margin-top:0.8rem;}
 .items-gasStation li .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 1rem; padding: 0 0 0 2.6rem; font-size: 1.3rem; color: #777; }
 .items-gasStation li .etc .facilities span.holiday { color: #FD2020; background: url(../image/map/ico_20_holiday.png) no-repeat left center/2rem;}
