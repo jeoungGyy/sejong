@@ -50,12 +50,13 @@ const mapInfo = {
 	locationPosition: null,
 	touch : () => {
 		if(!tooltip.showEl) {
-			const startTouch = document.querySelector(".mapInfoLayer");
+			const startTouch = document.querySelector(".mapIHead");
+			const mapInfoLayer = document.querySelector(".mapInfoLayer");
 			startTouch.addEventListener('touchstart', mapInfo.start);
 			startTouch.addEventListener('touchmove', mapInfo.move);
 			startTouch.addEventListener('touchend', mapInfo.end);
 
-			mapInfo.locationPosition = Math.floor(startTouch.getBoundingClientRect().height);
+			mapInfo.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
 			const myLocation = document.querySelector(".myLocation");
 			const scaleBtn = document.querySelector(".scaleBtn");
