@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+
+
+		<!-- 레이어 -->
+		<div id="layerSharing" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<div class="layerSetting">
+					<ul class="items-label">
+						<li>
+							<div class="labelForm">
+								<input type="radio" name="radio" id="list0">
+								<label for="list0">세종엔에서 제공하는 기본 보기</label>
+							</div>
+						</li>
+						<li>
+							<div class="labelForm">
+								<input type="radio" name="radio" id="list1">
+								<label for="list1">직접 순서와 항목 변경하여 보기</label>
+								<button type="button" class="tootipBtn" onclick="tooltip.show('layerTooltip', 'bottom');" title="도움말 열림"><i class="split20">항목 변경 안내</i></button>
+							</div>
+						</li>
+					</ul>
+					<ul class="settingMenu line">
+						<li><button type="button">함께 소통</button></li>
+						<li><button type="button">건강ㆍ환경</button></li>
+						<li><button type="button">교통ㆍ안전</button></li>
+						<li><button type="button">교육ㆍ문화</button></li>
+					</ul>
+					<ul class="settingMenu">
+						<li><button type="button" class="disabled">함께 소통</button></li>
+						<li><button type="button" class="disabled">건강ㆍ환경</button></li>
+						<li><button type="button" class="disabled">교통ㆍ안전</button></li>
+						<li><button type="button">교육ㆍ문화</button></li>
+						<li><button type="button">세종여행</button></li>
+						<li><button type="button">스마트세종</button></li>
+					</ul>
+					<button type="button" class="button blue">저장</button>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+
+		<script>
+			layerPopup.open('layerSharing');
+		</script>
+
+
+		<!-- 툴팁 -->
+		<div id="layerTooltip" class="boxTooltipLayer">
+			<div class="boxTooltipBody">
+				<div class="paragraphGroup">
+					<p>항목을 꾹 눌러 이동하거나, X를 눌러 제외할 수 있어요.</p>
+				</div>
+				<button type="button" class="btnClose"><i>닫기</i></button>
+			</div>
+		</div>
+		<!-- //툴팁 -->
+		<!-- //레이어 -->
+
+
+	</div>
+</div>
+</body>
+</html>
