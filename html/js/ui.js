@@ -50,20 +50,22 @@ const mapInfo = {
 	locationPosition: null,
 	touch : () => {
 		if(!tooltip.showEl) {
-			const startTouch = document.querySelector(".mapInfoLayer");
+			const startTouch = document.querySelector(".mapIHead");
+			const mapInfoLayer = document.querySelector(".mapInfoLayer");
 			startTouch.addEventListener('touchstart', mapInfo.start);
 			startTouch.addEventListener('touchmove', mapInfo.move);
 			startTouch.addEventListener('touchend', mapInfo.end);
 
-			mapInfo.locationPosition = Math.floor(startTouch.getBoundingClientRect().height);
+			mapInfo.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
 			const myLocation = document.querySelector(".myLocation");
 			const scaleBtn = document.querySelector(".scaleBtn");
 
-			myLocation.style.bottom = (mapInfo.locationPosition)/10+'rem';
-			scaleBtn.style.bottom = (mapInfo.locationPosition)/10+'rem';
+			if(myLocation) {
+				myLocation.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
+				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
+			}
 		}
-		
 	},
 	click : (division) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
@@ -95,6 +97,7 @@ const mapInfo = {
 		mapInfo.moveY = event.changedTouches[0].pageY;
 		var vh = mapInfo.startY - mapInfo.moveY;
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
+		mapInfoLayer.classList.add('easeNone');
 	},
 	end : (event) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
@@ -125,8 +128,8 @@ const mapInfo = {
 					mapInfoLayer.classList.remove('open');
 					btnView && btnView.classList.remove('open');
 					location && location.classList.remove('default');
-					myLocation.removeAttribute('style');
-					scaleBtn.removeAttribute('style');
+					myLocation && myLocation.removeAttribute('style');
+					scaleBtn && scaleBtn.removeAttribute('style');
 					mapInfo.showEl = false;
 				}
 			}
@@ -135,8 +138,8 @@ const mapInfo = {
 			mapInfoLayer.classList.remove('up', 'open');
 			btnView.classList.remove('up', 'open');
 			location && location.classList.remove('default');
-			myLocation.removeAttribute('style');
-			scaleBtn.removeAttribute('style');
+			myLocation && myLocation.removeAttribute('style');
+			scaleBtn && scaleBtn.removeAttribute('style');
 			mapInfo.showEl = false;
 		}
 		mapInfoLayer.style.setProperty('--vh', '0px');
@@ -236,8 +239,11 @@ const tooltip = {
 		event.stopPropagation();
 		let scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
 		let _this = event.currentTarget.getBoundingClientRect();
+		let _thisTarget = event.currentTarget;
 		let top = _this.top + scrollTop;
 		let left = _this.left + _this.width;
+
+		_thisTarget.classList.add('active');
 		
 		// event.currentTarget.setAttribute("title", "도움말 열림");
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
@@ -273,11 +279,7 @@ const tooltip = {
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			}, {once : true});
 		}
-
-		if(tooltip.winClose === false) {
-			window.addEventListener('click', (e)=>{
-				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
-			});
+		if(id == 'layerTooltip') {
 			window.addEventListener('resize', ()=>{
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			});
@@ -285,6 +287,19 @@ const tooltip = {
 				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 			});
 			tooltip.winClose = true;
+		} else {
+			if(tooltip.winClose === false) {
+				window.addEventListener('click', (e)=>{
+					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				});
+				window.addEventListener('resize', ()=>{
+					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				});
+				window.addEventListener('scroll', ()=>{
+					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				});
+				tooltip.winClose = true;
+			}
 		}
 	}
 }
@@ -520,10 +535,17 @@ const parkingTip = {
 	winClose : false,
 	showEl : null,
 	idx : null,
+	locationPosition: null,
 	open : (id) => {
 		const location = document.querySelector(".location");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const btnParking = document.querySelectorAll(".btnParking");
+		const myLocation = document.querySelector(".myLocation");
+		const scaleBtn = document.querySelector(".scaleBtn");
+
+		parkingTip.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
+
+		
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(btnParking, (_this, idx)=>{
@@ -550,9 +572,12 @@ const parkingTip = {
 				parkingTip.showEl.classList.add('ready');
 				location.classList.add('parkingDefault');
 				mapInfoLayer.classList.add('open');
+				myLocation.style.bottom = (parkingTip.locationPosition/10)+2+'rem';
+				scaleBtn.style.bottom = (parkingTip.locationPosition/10)+2+'rem';
 
 				setTimeout(()=>{
 					parkingTip.showEl.classList.add('show');
+					
 					parkingTip.showEl.focus();
 				},500);
 			},500);
@@ -574,6 +599,8 @@ const parkingTip = {
 					mapInfoLayer.classList.remove('open');
 
 					parkingTip.showEl.classList.remove('show');
+					myLocation.removeAttribute('style');
+					scaleBtn.removeAttribute('style');
 
 					setTimeout(()=>{
 						parkingTip.showEl.classList.remove('ready');

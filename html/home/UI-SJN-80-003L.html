@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="root">
+	<div class="container">
+		<!-- 공통: 서브 헤더 -->
+		<script src="../include/header_sub.js"></script>
+		<!-- //공통: 서브 헤더 -->
+
+		<!-- 본문 -->
+		<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+			<h2 class="visible"><div class="headerClone">잠금설정</div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+			<div class="mypageWrap">
+				<div class="mypageArea">
+					<div class="section">
+						<div class="heading headA">
+							<h3>내 계정 정보</h3>
+							<div class="setting">
+								<button type="button"><span>알림설정</span></button>
+							</div>
+						</div>
+						<div class="box">
+							<p>이세종</p>
+							<p>연결(ID) Smartsejoing</p>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="heading headB">
+							<h3>자동 로그인</h3>
+							<div class="switch">
+								<input type="checkbox" id="switch0" title="자동 로그인">
+								<label for="switch0"></label>
+							</div>
+						</div>
+						<div class="pragraph">
+							<p>신속하게 다양한 서비스를 이용할 수 있습니다.</p>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="heading headC">
+							<h3>간편 로그인 설정</h3>
+						</div>
+						<ul class="securityList">
+							<li>
+								<input type="checkbox" id="list0" name="redio" checked="checked" />
+								<label for="list0">
+									<i class="ico icoA"></i>
+									<span>간편비밀번호</span>
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" id="list1" name="redio" checked="checked" />
+								<label for="list1">
+									<i class="ico icoB"></i>
+									<span>패턴</span>
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" id="list2" name="redio" />
+								<label for="list2">
+									<i class="ico icoC"></i>
+									<span>지문</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- //본문 -->
+
+	</div>
+</div>
+</body>
+</html>

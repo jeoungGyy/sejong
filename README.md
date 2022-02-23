@@ -2,6 +2,15 @@
 
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
+
+### 02-22
+- [공통] layer-message 등록 - 기본알림
+- UI-SJN-03-100U 등록
+- UI-SJN-04-008U 수정 - 태그 나오는 textarea 크기 조정
+- UI-SJN-40-008L 등록
+- UI-SJN-80-003L 등록
+- UI-SJN-99-001U 등록
+
 ### 02-22
 - UI-SJN-03-003U 등록
 - UI-SJN-03-004U 등록

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+	<meta name="theme-color" content="#6684EA" />
+	<meta name="author" content="세종엔" />
+	<title>세종엔</title>
+	<style>
+		* { 
+			margin: 0; padding: 0;
+			font-family: "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+			color:#111;
+			letter-spacing: -0.04em;
+			box-sizing:border-box;
+		}
+		button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+		.cBlue { color: #6684EA;}
+		.cGray { color: #aaa;}
+		.oticeList { border-top: 1px solid #F4F5F7; background-color: #fff;}
+		.oticeList li { padding: 8px 20px 16px; border-bottom: 1px solid #F4F5F7;}
+		.oticeList li .body { display: flex; align-items: center; justify-content: space-between;}
+		.oticeList li .body >div { display: flex; align-items: center; height: 48px;}
+		.oticeList li .body >div b { margin: 0 8px; font-size: 16px;}
+		.oticeList li .body >div span { font-size: 14px; color: #777;}
+		.oticeList li h4 { margin-top: 8px; font-size: 18px;}
+		.oticeList li .text { display: block; margin-top: 8px; font-size: 16px; color: #555;}
+		.oticeList li .btnGroup { display: flex; justify-content: flex-end; margin-top: 16px;}
+		.oticeList li .btnGroup button { display: inline-block; font-size: 16px; font-weight: bold; }
+		.fixedBtn { display: flex; justify-content: flex-end; height: 60px; margin-top: 32px; padding: 0 20px;}
+		.fixedBtn button { display: inline-block; margin-left: 16px; font-weight: bold;}
+	</style>
+</head>
+
+<body>
+<div id="root">
+	<ul class="oticeList">
+		<li>
+			<div class="body">
+				<div>
+					<img src="../../public/image/widget/widget_location@2x.png" alt="" style="width: 16px; height: 20px;">
+					<b>세종엔</b>
+					<span>오후 8:30</span>
+				</div>
+			</div>
+			<h4>B2버스 승차 알림</h4>
+			<span class="text">17번째 전 도착(약 21분 14초 후 도착</span>
+		</li>
+		<li>
+			<div class="body">
+				<div>
+					<img src="../../public/image/widget/widget_location@2x.png" alt="" style="width: 16px; height: 20px;">
+					<b>세종엔</b>
+					<span>오후 8:30</span>
+				</div>
+				<div>
+					<button type="button" title="알림 펼치기"><img src="../../public/image/widget/widget_arrowDown@2x.png" alt="" style="width: 24px; height: 24px;"></button>
+					<button type="button" title="알림 닫기"><img src="../../public/image/widget/widget_arrowUp@2x.png" alt="" style="width: 24px; height: 24px;"></button>
+				</div>
+			</div>
+			<h4>B2버스 승차 알림</h4>
+			<span class="text">17번째 전 도착(약 21분 14초 후 도착</span>
+			<div class="btnGroup">
+				<button type="button" class="cBlue">알림종료</button>
+			</div>
+		</li>
+	</ul>
+	<div class="fixedBtn">
+		<button type="button" class="cBlue">알림종료</button>
+		<button type="button" class="cGray">알림종료</button>
+	</div>
+</div>
+</body>
+</html>

@@ -13,6 +13,8 @@
 .info .infoNav li a { display: flex; align-items: center; position: relative; height: 5.2rem; font-size: 1.6rem; color:rgba(255 255 255 / 75%);}
 .info .infoNav li a.active { font-weight: 700; color: #fff;}
 .info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
+.info .infoNav li .menuSetting { display: flex; align-items: center; height: 5.2rem;}
+.info .infoNav li .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
 .info .mainArea { background: #F3F5F7;}
 .mainArea .flex { display: flex; align-items: center; justify-content: space-between;}
@@ -397,7 +399,7 @@
 .info .viewBody .paragraph p { margin-top: 2.4rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .info .viewBody .viewCite { margin-top: 1.6rem;}
 .info .viewBody .viewCite span { color: #555;}
-.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 8rem;}
+.info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 16rem;}
 .info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
 .info .viewBody .copyRight { margin-top: 2rem;}
 .info .viewBody .copyRight p { font-size: 1.4rem; color: #777;}
@@ -415,7 +417,7 @@
 .info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #A9B0C1;}
 .info .tripHead .reserve .t { font-size: 1.6rem;}
 .info .tripHead .reserve .st { position: relative; margin-top: 1.2rem; padding-left: 2.8rem;}
-.info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
+.info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .info .tripHead .reserve ul li { position: relative; margin-top: 0.8rem; padding-left: 2.8rem; letter-spacing: 0;}
 .info .tripHead .reserve ul li.tel::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .info .tripHead .reserve ul li.email::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -2.4rem 0/48rem 28.8rem;}

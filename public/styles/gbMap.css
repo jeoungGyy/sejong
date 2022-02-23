@@ -12,6 +12,8 @@ body { --vh: 1px;}
 .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 /* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
+.mapArea.subStyle .mapIcons .location .myLocation,
+.mapArea.subStyle .mapIcons .location .scaleBtn { bottom: 2rem;}
 
 .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
@@ -24,7 +26,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area { display: flex; align-items: center;}
 .map .mapInfoLayer .area .region { flex: 1;}
 .map .mapInfoLayer .area .region p { position: relative; padding-left: 2.4rem;}
-.map .mapInfoLayer .area .region p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 8rem;}
+.map .mapInfoLayer .area .region p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 16rem;}
 .map .mapInfoLayer .area .weather { display: flex; align-items: center; width: 15.5rem; margin-right: -2rem;}
 .map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; min-width: 2rem; padding-right: 0.7rem; font-size: 1.8rem; text-align: center;}
 .map .mapInfoLayer .area .weather .temperature::after { content: ''; position: absolute; right: 0; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
@@ -67,18 +69,18 @@ body { --vh: 1px;}
 
 .mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
 .mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 100; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
-.mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem;}
+.mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .mapIcons .btnView button.mapView i { background-position: 0 -4rem;}
 .mapIcons .btnView button.listView { bottom: 4rem;}
 .mapIcons .btnView button.listView i { background-position: -2rem -4rem;}
 .mapIcons .btnView.up button.mapView { bottom: 4rem;}
 .mapIcons .btnView.open button.listView { bottom: -4rem;}
 .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 8rem;}
+.mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 16rem;}
 .mapIcons .btnPin.active { background-color: #6684EA;}
 .mapIcons .btnPin.active i { background-position-y: -6rem;}
 .mapIcons .btnBikePin { display: flex; align-items: center; justify-content: center; position: absolute; top: 13.2rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 8rem;}
+.mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 16rem;}
 .mapIcons .btnBikePin.active { background-color: #6684EA;}
 .mapIcons .btnBikePin.active i { background-position-y: -6rem;}
 .mapIcons .bikeAir { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
@@ -94,12 +96,12 @@ body { --vh: 1px;}
 .mapIcons .arrival { position: absolute;}
 .mapIcons .arrival span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_arrival.png) no-repeat center/cover;}
 /* .mapIcons .location { display: flex; justify-content: space-between; align-items: flex-start; position: absolute; top: 0; bottom: 0; width: 100%; padding: 0 1.2rem; transform: translateY(calc(100% - 19.6rem)); transition: all .3s ease-in-out;} */
-.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; bottom: 2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%; transition: all .3s ease-in-out;}
+.mapIcons .location .myLocation { display: flex; align-items: center; justify-content: center; position: absolute; left: 1.2rem; bottom: 12rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%; transition: all .3s ease-in-out;}
 .mapIcons .location .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .mapIcons .location .myLocation.active { background-color: #6684EA;}
 .mapIcons .location .myLocation.active i { background-position-y: -1.95rem;}
 
-.mapIcons .location .scaleBtn { position: absolute; right: 1.2rem; bottom: 2rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); transition: bottom .3s ease-in-out;}
+.mapIcons .location .scaleBtn { position: absolute; right: 1.2rem; bottom: 12rem; width: 4rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); transition: bottom .3s ease-in-out;}
 .mapIcons .location .scaleBtn button { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff;}
 .mapIcons .location .scaleBtn button i { display: block; width: 1.4rem; height: 1.4rem; text-indent: -9999rem;}
 .mapIcons .location .scaleBtn button.scaleUp i { background: url(../image/map/ico_scale_up.png) no-repeat center/cover;}
@@ -116,7 +118,7 @@ body { --vh: 1px;}
 .mapIcons .transit span.num4 { background: url(../image/map/ico_transit4.png) no-repeat center/cover;}
 .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
 .mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
-.mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 8rem;}
+.mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 16rem;}
 .mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 3.35rem; height: 4.4rem;}
 .mapIcons .parkingPinSet .btnParking >i { display: block; width: 2.55rem; height: 3.35rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat 0 0/2.55rem 6.7rem;}
 .mapIcons .parkingPinSet .btnParking .textBox { display: flex; align-items: center; position: relative; left: 0; top: 0; width: 12rem; height: 4rem; margin: -8.8rem 0 0 -4.7rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; letter-spacing: -0.1em; background-color: #fff; border: 1px solid #A9B0C1; border-radius: 2rem; opacity: 1; transition: bottom .5s ease-in-out;}
@@ -290,7 +292,7 @@ span.M { background-color: #FD2020;}
 .map .toDoorBody .toDoor li { position: relative; padding-right: 4rem;}
 .map .toDoorBody .toDoor li >div { position: relative;}
 .map .toDoorBody .toDoor li >div .btnTransitAdd { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; top: 2.4rem; width: 3.2rem; height: 3.2rem;}
-.map .toDoorBody .toDoor li >div .btnTransitAdd i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: #CDD0D8 url(../image/common/split_40.png) no-repeat -32rem -2rem/40rem 8rem; border-radius: 50%;}
+.map .toDoorBody .toDoor li >div .btnTransitAdd i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: #CDD0D8 url(../image/common/split_40.png) no-repeat -32rem -2rem/40rem 16rem; border-radius: 50%;}
 .map .toDoorBody .toDoor li label { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 0.1rem; width: 0.1rem; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 .map .toDoorBody .toDoor li label::after { content: ':'; display: block; margin: -0.4rem 0 0 0.3rem; font-size: 1.6rem; color: #111;}
 .map .toDoorBody .toDoor li input { display: block; padding: 0 3.6rem 0 1.6rem;}
@@ -298,7 +300,7 @@ span.M { background-color: #FD2020;}
 .map .toDoorBody .toDoor li button.btnSwitch { width: 3.2rem; height: 3.2rem;}
 .map .toDoorBody .toDoor li button.btnSwitch i { display: block; text-indent: -9999rem; background: url(../image/map/ico_change.png) no-repeat center/cover;}
 .map .toDoorBody .toDoor li button.btnTransit { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem;}
-.map .toDoorBody .toDoor li button.btnTransit i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: #CDD0D8 url(../image/common/split_40.png) no-repeat -32rem 0/40rem 8rem; border-radius: 50%;}
+.map .toDoorBody .toDoor li button.btnTransit i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: #CDD0D8 url(../image/common/split_40.png) no-repeat -32rem 0/40rem 16rem; border-radius: 50%;}
 .map .toDoorBody .toDoor li ~ li,
 .map .toDoorBody .toDoor li >div ~ div  {margin-top: 0.8rem;}
 .map .toDoorBody .toDoor li .active label { display: flex; align-items: center; left: 1.6rem; top: 0; z-index: inherit; height: 4.8rem; width: inherit; color: #6684EA; clip: inherit; clip-path: inherit;}
@@ -455,12 +457,12 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .pTransportation li .etc.mt { margin-top: 0.6rem;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNetBody { display: inline-flex;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNetBody span { margin-right: 0.8rem;}
-.map .mapInfoLayer .pTransportation li .etc.mt .cleanNet { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 8rem; border-radius: 50%;}
+.map .mapInfoLayer .pTransportation li .etc.mt .cleanNet { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem; border-radius: 50%;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNet.normal { background-color: #6684EA; background-position: -8rem -4rem;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNet.totalBreakdown { background-color: #555; background-position: -8rem -6rem;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNet.partialBreakdown { background-color: #A9B0C1; background-position: -8rem -4rem;}
 .map .mapInfoLayer .pTransportation li .call a { display: flex; align-items: center; margin-top: 1rem; font-size: 1.4rem; color: #777;}
-.map .mapInfoLayer .pTransportation li .call a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.6rem; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 8rem; border-radius: 50%;}
+.map .mapInfoLayer .pTransportation li .call a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.6rem; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 
 /* UI-SJN-33-005L */
 .map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between;}
@@ -726,7 +728,7 @@ span.M { background-color: #FD2020;}
 .map .satelliteBody .satelliteList ul li.swiper-slide { width: 15.6rem;}
 .map .satelliteBody .satelliteList ul li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .map .satelliteBody .satelliteList ul li label img { width: 100%; height: auto; vertical-align: top;}
-.map .satelliteBody .satelliteList ul li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.map .satelliteBody .satelliteList ul li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .map .satelliteBody .satelliteList ul li input { position: absolute; opacity: 0;}
 .map .satelliteBody .satelliteList ul li input:checked + label::after { background-color: #6684EA;}
 .map .satelliteBody .satelliteList ul li .sTime { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}

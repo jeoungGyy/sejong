@@ -215,9 +215,9 @@
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li.swiper-slide-active button .icon { display: none;}
 .mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev { all: unset; position: absolute; left: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev::after { content: ''; display: block; position: absolute; right: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -6rem/40rem 8rem;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-prev::after { content: ''; display: block; position: absolute; right: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -6rem/40rem 16rem;}
 .mainMenuFixed .mainMenu .mainMenuList .swiper-button-next { all: unset; position: absolute; right: 0; bottom: 0; z-index: 52; width: 4rem; height: 7rem; text-indent: -9999rem; background-color: #fff;}
-.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next::after { content: ''; display: block; position: absolute; left: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -4rem/40rem 8rem;}
+.mainMenuFixed .mainMenu .mainMenuList .swiper-button-next::after { content: ''; display: block; position: absolute; left: 0; top: 1.6rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -34rem -4rem/40rem 16rem;}
 .mainMenuFixed .chatbot { display: block; position: fixed; right: 2rem; bottom: calc(19rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
 .mainMenuFixed .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
 
@@ -285,7 +285,7 @@
 .home .homeStation .hsList li .station { margin-top: 0.7rem;}
 .home .homeStation .hsList li .station span { position: relative; font-size: 1.4rem;}
 .home .homeStation .hsList li .station span:last-child { padding-left: 2rem;}
-.home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 8rem; border-radius: 50%;}
+.home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 16rem; border-radius: 50%;}
 .home .homeStation .hsList li .train { margin-top: 0.6rem;}
 .home .homeStation .hsList li .train p { font-size: 1.4rem; color: #777; line-height: 2.2rem;}
 .home .homeCulture { padding: 1.6rem 2rem;}
@@ -324,7 +324,7 @@
 .mypage .mypageArea .section .heading h3 { font-size: 1.6rem;}
 .mypage .mypageArea .section .heading .setting button { display: block;}
 .mypage .mypageArea .section .heading .setting button span { position: relative; display: block; padding-right: 3rem; font-size: 1.4rem;}
-.mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 8rem;}
+.mypage .mypageArea .section .heading .setting button span::after { content: ''; position: absolute; right: 0.2rem; top: -0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -22rem 0/40rem 16rem;}
 .mypage .mypageArea .section .box { display: flex; flex-direction: column; margin-top: 0.8rem; padding: 1.4rem 2.4rem; border: 1px solid #EAEAEA;}
 .mypage .mypageArea .section .box p { font-size: 1.8rem; line-height: 2.6rem;}
 .mypage .mypageArea .section .box p:first-child { font-weight: 700;}
@@ -332,7 +332,7 @@
 .mypage .mypageArea .section .securityList { display: flex;}
 .mypage .mypageArea .section .securityList li { flex: 1;}
 .mypage .mypageArea .section .securityList li label { display: block; overflow: hidden; position: relative; padding: 3.2rem 0 2rem; text-align: center; border: 1px solid #EAEAEA; cursor: pointer; transition: border-color .2s ease-in-out;}
-.mypage .mypageArea .section .securityList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background: #EAEDF2 url(../image/common/split_40.png) no-repeat -24rem 0/40rem 8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.mypage .mypageArea .section .securityList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background: #EAEDF2 url(../image/common/split_40.png) no-repeat -24rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .mypage .mypageArea .section .securityList li label i.ico { display: block; width: 6.3rem; height: 6rem; margin: 0 auto;}
 .mypage .mypageArea .section .securityList li label i.ico.icoA { background: url(../image/home/ico_security1.png) no-repeat center/cover;}
 .mypage .mypageArea .section .securityList li label i.ico.icoB { background: url(../image/home/ioc_security2.png) no-repeat center/cover;}
@@ -352,7 +352,7 @@
 .mypage .twinBtn { display: flex; align-items: center; padding: 0 1.6rem;}
 .mypage .twinBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; margin: 0 0.4rem; background-color: #6684EA;}
 .mypage .twinBtn a span { display: inline-block; font-size: 1.4rem; color: #fff; letter-spacing: -0.1em;}
-.mypage .twinBtn a span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 8rem;}
+.mypage .twinBtn a span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 16rem;}
 
 /* 자주하는 질문 - UI-SJN-82-001U */
 .mypage .faqTabBody { padding: 0 2rem;}
