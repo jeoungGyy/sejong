@@ -32,7 +32,7 @@
 							</li>
 							<li>
 								<div class="labelH">
-									<label for="tempText1">제목</label>
+									<label for="tempText1">제목 <span class="required">필수</span></label>
 								</div>
 								<div>
 									<input type="text" id="tempText1" required="required" placeholder="제목을 입력해주세요">
@@ -40,7 +40,7 @@
 							</li>
 							<li>
 								<div class="labelH">
-									<label for="tempText2">요청사항 입력</label>
+									<label for="tempText2">요청사항 입력 <span class="required">필수</span></label>
 								</div>
 								<div class="textareaForm">
 									<textarea id="tempText2" cols="10" rows="10" required="required" placeholder="요청사항을 입력해주세요"></textarea>
@@ -79,7 +79,10 @@
 					</fieldset>
 
 					<div class="btnGroup">
-						<button type="button" class="button blue">완료</button>
+						<div class="twins">
+							<button type="button" class="button whiteLine noShadow">취소</button>
+							<button type="button" class="button blue noShadow">완료</button>
+						</div>
 					</div>
 				</div>
 			</div>
