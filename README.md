@@ -7,6 +7,7 @@
 - [공통] layer-message 등록 - 기본알림
 - UI-SJN-03-100U 등록
 - UI-SJN-04-008U 수정 - 태그 나오는 textarea 크기 조정
+- UI-SJN-80-003L 등록
 
 ### 02-22
 - UI-SJN-03-003U 등록
