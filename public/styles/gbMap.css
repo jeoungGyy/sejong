@@ -9,6 +9,12 @@ body { --vh: 1px;}
 .mapArea.fixed .mapIcons .btnPin { top: 7rem;}
 .mapArea.fixed .mapIcons .location .myLocation,
 .mapArea.fixed .mapIcons .location .scaleBtn { bottom: 25rem;}
+.mapArea.fixed .mapIcons .diffcheck { display: flex; align-items: center; justify-content: center; position: absolute; top: 11.8rem; right: 1.2rem; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapArea.fixed .mapIcons .diffcheck span { display: none; color: #fff;}
+.mapArea.fixed .mapIcons .diffcheck i { background-position: -38.4rem -19.2rem;}
+.mapArea.fixed .mapIcons .diffcheck.active { display: flex; align-items: center; width: 10.6rem; background-color: #6684EA; border-radius: 2rem;}
+.mapArea.fixed .mapIcons .diffcheck.active span { display: block;}
+.mapArea.fixed .mapIcons .diffcheck.active i { margin-left: 0.4rem; background-position-y: -21.6rem;}
 .mapArea.subStyle .mapIcons .btnPin { top: 7.4rem;}
 /* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .btnBikePin { top: 12.2rem;}
@@ -88,9 +94,12 @@ body { --vh: 1px;}
 .mapIcons .bikeAir span { font-size: 1.3rem; color: #333;}
 .mapIcons .bikeAir::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
 .mapIcons .bikeAir::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.mapIcons .markerMy { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
-.mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
-.mapIcons .markerMy div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
+.mapIcons .markerMy { position: absolute;}
+.mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
+.mapIcons .markerMy div::before { content: ''; display: block; position: absolute; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 2s linear infinite;}
+.mapIcons .markerMy div::after { content: ''; display: block; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
+.mapIcons .markerMy div span { display: block; position: relative; z-index: 10; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
+
 .mapIcons .depart { position: absolute;}
 .mapIcons .depart span { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_depart.png) no-repeat center/cover;}
 .mapIcons .arrival { position: absolute;}
@@ -150,14 +159,13 @@ body { --vh: 1px;}
 .mapIcons .accident_3 { width: 1.8rem; height: 1.8rem; background-color: #155ED1;}
 .mapIcons .accident_2 { width: 1.8rem; height: 1.8rem; background-color: #FFEB00;}
 .mapIcons .accident_1 { width: 1.8rem; height: 1.8rem; background-color: #2CAC36;}
-.mapIcons .schoolZone { position: absolute; width: 6rem; height: 5rem; text-indent: -9999rem; background: url(../image/map/ico_schoolZone.png) no-repeat center/cover;}
+.mapIcons .schoolZone { position: absolute; width: 3.6rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/map/ico_schoolZone.png) no-repeat center/cover;}
 .mapIcons .accidentsArea { position: absolute; width: 2.2rem; height: 1.8rem; text-indent: -9999rem; background: url(../image/map/ico_accidentsArea.png) no-repeat center/cover;}
 .mapIcons .accidentsPlace { position: absolute; width: 1.8rem; height: 1.8rem; text-indent: -9999rem; border: 1px solid #292D32; background-color: #2CAC36;}
 .mapIcons .commIco24 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: absolute; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
-.mapIcons .streetLamp .lampBody { display: flex; align-items: center; justify-content: center; position: absolute; height: 4rem; padding: 0 1.2rem 0 0.8rem; border: 0.1rem solid #6684EA; background-color: #fff; border-radius: 2rem;}
-.mapIcons .streetLamp .lampBody i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; background: #838FAC url(../image/common/split_48.png) no-repeat -28.8rem -4.8rem/48rem 28.8rem; border-radius: 50%;}
-.mapIcons .streetLamp .lampBody::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #6684EA; border-bottom: 1.1rem solid transparent;}
-.mapIcons .streetLamp .lampBody::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+.mapIcons .streetLamp .streetLampIco { display: flex; align-items: center; justify-content: center; position: absolute; background-color: #555; border-radius: 50%;}
+.mapIcons .streetLamp .streetLampIco i { text-indent: -9999rem; background-position: -28.8rem -4.8rem;}
+.mapIcons .streetLamp .streetLampIco.active { background-color: #6684EA;}
 .mapIcons .evCharge .evChargeIco.reCharge i { background-color: #6684EA; background-position: -14.4rem -9.6rem;}
 .mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
 .mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
@@ -187,14 +195,15 @@ body { --vh: 1px;}
 .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; }
 .mapIcons .busStop .busIco i { width: 2.4rem; height: 2.8rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; z-index: 3; }
 .mapIcons .targer { position: absolute; z-index: 1; width: 2.4rem; height: 2.8rem;}
-.mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 3s linear infinite;}
+.mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 2s linear infinite;}
 .mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
 @keyframes lds-scale {
   0% { transform: scale(0); opacity: 1;}
   30% { transform: scale(0.8); opacity: 1;}
   40% { transform: scale(1); opacity: 1;}
-  80% { transform: scale(1); opacity: 0;}
-  100% { transform: scale(1); opacity: 0;}
+  70% { transform: scale(1); opacity: 1;}
+  80% { transform: scale(0.8); opacity: 1;}
+  100% { transform: scale(0); opacity: 1;}
 }
 .mapIcons .busStop .busIco.B i { background: url(../image/map/ico_bus_B.png) no-repeat 0 0/2.4rem 2.8rem;}
 .mapIcons .busStop .busIco.G i { background: url(../image/map/ico_bus_G.png) no-repeat 0 0/2.4rem 2.8rem;}
@@ -206,8 +215,8 @@ body { --vh: 1px;}
 .mapIcons .busStop .busLocation { position: absolute;}
 .mapIcons .busStop .busLocation i { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_busLocation.png) no-repeat center/cover;}
 .mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
-.mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 14.8rem; height: 14.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/0.975rem 10.15rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
-.mapIcons .gesture p { font-size: 1.4rem; color: #fff; text-align: center; line-height: 2rem;}
+.mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
+.mapIcons .gesture span { font-size: 1.4rem; color: #fff; text-align: center; text-indent: -9999rem; line-height: 2rem;}
 .mapIcons .gesture.hide { opacity: 0; z-index: -1;}
 .mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
 .mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
@@ -731,7 +740,7 @@ span.M { background-color: #FD2020;}
 .map .satelliteBody .satelliteList ul li input { position: absolute; opacity: 0;}
 .map .satelliteBody .satelliteList ul li input:checked + label::after { background-color: #6684EA;}
 .map .satelliteBody .satelliteList ul li .sTime { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
-.map .satelliteBody .satelliteList .empty { display: flex; align-items: center; justify-content: center; height: 10rem; padding: 0 2rem; font-size: 1.4rem; color: #aaa; text-align: center; background-color: #F4F5F7;}
+.map .satelliteBody .satelliteList ul li .empty { display: flex; align-items: center; justify-content: center; height: 10rem; padding: 0 1.2rem 0 4.4rem; font-size: 1.3rem; color: #aaa; background: #F4F5F7 url(../image/map/ico_satellite.png) no-repeat left 1.5rem top 1.5rem/1.825rem 2.275rem;}
 .map .satelliteBody .offerer { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; border-top: none;}
 
 /* UI-SJN-41-002L */
@@ -742,14 +751,14 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li { width: 5.6rem;}
 .map .transformBody .transformNavList li button { display: block; align-items: center; justify-content: center; width: 100%;}
 .map .transformBody .transformNavList li button .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; border: 1px solid #F4F5F7;}
-.map .transformBody .transformNavList li button .box i { width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 28.8rem;}
-.map .transformBody .transformNavList li button.apartment .box i { background-position: -4.8rem -14.4rem;}
-.map .transformBody .transformNavList li button.building .box i { background-position: -7.2rem -14.4rem;}
-.map .transformBody .transformNavList li button.baseballS .box i { background-position: -9.6rem -14.4rem;}
-.map .transformBody .transformNavList li button.soccerF .box i { background-position: -12rem -14.4rem;}
-.map .transformBody .transformNavList li button.tennisC .box i { background-position: -14.4rem -14.4rem;}
-.map .transformBody .transformNavList li button.forestA .box i { background-position: -16.8rem -14.4rem;}
-.map .transformBody .transformNavList li button.farmland .box i { background-position: -19.2rem -14.4rem;}
+.map .transformBody .transformNavList li button .box i { width: 4rem; height: 4rem; background: url(../image/map/split_satellite.png) no-repeat 0 0/24rem 4rem;}
+.map .transformBody .transformNavList li button.apartment .box i { background-position-x: 0;}
+.map .transformBody .transformNavList li button.building .box i { background-position-x: -4rem;}
+.map .transformBody .transformNavList li button.baseballS .box i { background-position-x: -8rem;}
+.map .transformBody .transformNavList li button.soccerF .box i { background-position-x: -12rem;}
+.map .transformBody .transformNavList li button.tennisC .box i { background-position-x: -16rem;}
+.map .transformBody .transformNavList li button.forestA .box i { background-position-x: -20rem;}
+.map .transformBody .transformNavList li button.farmland .box i { background-position-x: -24rem;}
 .map .transformBody .transformNavList li button .text { display: block; margin-top: 0.8rem; color: #555; letter-spacing: -0.1em;}
 .map .transformBody .transformNavList li button .text b { display: block; margin-top: 0.2rem; font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
 .map .transformBody .transformNavList li button .text b.plus { color: #6684EA;}
@@ -784,10 +793,12 @@ span.M { background-color: #FD2020;}
 /* UI-SJN-42-003L */
 
 /* UI-SJN-42-004L */
-.map .explain-default { padding: 3.2rem 2rem; background-color: #F4F5F7;}
-.map .explain-default .text { line-height: 2.3rem;}
-.map .explain-default .report { margin-top: 2.4rem; background-color: #fff;}
-.map .explain-default .report .title { padding: 2.4rem 2rem; color: #D69630; line-height: 2.4rem;}
+.map .explain-default { padding-top: 3.2rem; background-color: #F4F5F7;}
+.map .explain-default .text { padding: 0 2rem 8.8rem; color: #555; line-height: 2.3rem;}
+.map .explain-default .reportBtn { width: 100%; padding: 2rem 3.2rem; text-align: left; background: #D69630 url(../image/map/map_safetyUser_bg2.png) no-repeat right 3.4rem bottom/8.575rem 10.175rem;}
+.map .explain-default .reportBtn .title { display: block; font-size: 1.4rem; color: #fff; line-height: 2rem;}
+.map .explain-default .reportBtn .btnArrow { display: flex; align-items: center; margin-top: 1.5rem; color: #FFD800;}
+.map .explain-default .reportBtn .btnArrow i { margin-left: 0.8rem; background-position: -24rem -6rem;}
 
 
 /* 윤사랑 추가 */

@@ -21,6 +21,7 @@
 					<!-- 기타 아이콘들 -->
 					<div class="mapIcons">
 						<button type="button" class="btnPin active"><i>핀</i></button>
+						<button type="button" class="diffcheck active"><span>변화비교</span><i class="split24"></i></button> <!-- 활성화시 버튼에 active 추가 -->
 
 						<div class="location">
 							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
@@ -56,33 +57,12 @@
 											<span class="sTime">2018-01-25</span>
 										</li>
 										<li class="swiper-slide">
-											<input type="checkbox" id="list2">
-											<label for="list2">
-												<img src="../../public/image/temp/temp034.png" alt="">
-											</label>
-											<span class="sTime">2018-01-25</span>
-										</li>
-										<li class="swiper-slide">
-											<input type="checkbox" id="list3">
-											<label for="list3">
-												<img src="../../public/image/temp/temp035.png" alt="">
-											</label>
-											<span class="sTime">2018-01-25</span>
-										</li>
-										<li class="swiper-slide">
-											<input type="checkbox" id="list4">
-											<label for="list4">
-												<img src="../../public/image/temp/temp034.png" alt="">
-											</label>
+											<div class="empty">
+												<p>현재 관심영역(지도 상 빨간색 사각형)에 위성영상이 없습니다.</p>
+											</div>
 											<span class="sTime">2018-01-25</span>
 										</li>
 									</ul>
-
-									<!-- 내용이 없을 경우 -->
-									<div class="empty" style="display: none;">
-										<p>현재 관심영역(지도 상 빨간색 사각형)에 위성영상이 없습니다.</p>
-									</div>
-									<!-- //내용이 없을 경우 -->
 								</div>
 							</div>
 							<script>

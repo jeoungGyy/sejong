@@ -57,10 +57,10 @@
 						<button type="button" class="cctvPin" onclick="layerPopup.open('layerCCTVSelect');"><i>CCTV 범례 및 필터</i></button>
 
 						<div class="cctvLocation">
-							<button type="button" class="commIco24 cctvIco" style="left: 10rem; top: 15rem;"><i class="split24">가재마을7단지</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
-							<button type="button" class="commIco24 cctvIco" style="left: 15rem; top: 15rem;"><i class="split24">가재마을7단지</i></button>
-							<button type="button" class="commIco24 cctvIco" style="left: 20rem; top: 15rem;"><i class="split24">가재마을7단지</i></button>
-							<button type="button" class="commIco24 cctvIco" style="left: 25rem; top: 15rem;"><i class="split24">가재마을7단지</i></button>
+							<button type="button" class="commIco24 cctvIco" style="left: 10rem; top: 15rem;" onclick="layerPopup.open('layerCCTV');"><i class="split24">가재마을7단지</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
+							<button type="button" class="commIco24 cctvIco" style="left: 15rem; top: 15rem;" onclick="layerPopup.open('layerCCTV');"><i class="split24">도담동 늘봄유치원앞생태터널</i></button>
+							<button type="button" class="commIco24 cctvIco" style="left: 20rem; top: 15rem;" onclick="layerPopup.open('layerCCTV');"><i class="split24">가재마을8단지</i></button>
+							<button type="button" class="commIco24 cctvIco" style="left: 25rem; top: 15rem;" onclick="layerPopup.open('layerCCTV');"><i class="split24">가재마을9단지</i></button>
 						</div>
 
 						<div class="zoomOut" style="left: 5rem; top: 22rem; width: 10rem; height: 10rem; background-color: rgba(51 51 51 / 80%);">
@@ -339,6 +339,7 @@
 		<!-- //본문 -->
 
 		<!-- 레이어 -->
+		<!-- CCTV 범례 및 필터 -->
 		<div id="layerCCTVSelect" class="layerPopup">
 			<div class="layerWrap">
 				<div class="layerCCTVBody">
@@ -375,6 +376,29 @@
 				</div>
 			</div>
 		</div>
+		<!-- //CCTV 범례 및 필터 -->
+
+		<!-- 돌발상황관제 CCTV -->
+		<div id="layerCCTV" class="layerPopup">
+			<div class="layerWrap full">
+				<div class="headerLocation">
+					<div class="hdeading">
+						<div class="title">
+							<h2>가재마을7단지</h2>
+							<div>
+								<span>CCTV</span>
+								<span>아름동 산 41</span>
+							</div>
+						</div>
+						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+					</div>
+				</div>
+				<div class="fullFlex layerCCTV">
+					동영상이 들어옵니다.
+				</div>
+			</div>
+		</div>
+		<!-- //돌발상황관제 CCTV -->
 		<!-- //레이어 -->
 	</div>
 </div>
