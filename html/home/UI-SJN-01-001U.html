@@ -8,21 +8,33 @@
 <body>
 <div id="root">
 	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_search.js"></script>
-		<!-- //공통: 서브 헤더 -->
+		<header class="header global bgBlue">
+		  <div class="subHeader">
+		    <div class="globalLogo"><i>세종엔 로고</i></div>
+		    <div class="btnGlobal">
+		      <button type="button" class="icoSearch"><i class="split24">검색</i></button>
+		      <button type="button" class="icoAlert"><i class="split24">알림</i></button>
+		      <button type="button" class="icoMy"><i class="split24">내정보</i></button>
+		    </div>
+		  </div>
+		</header>
 
 		<!-- 본문 -->
 		<main class="contents home"> <!-- [통합검색 Class] home-->
 			<div class="homeWrap">
 				<div class="mainMenuFixed">
 					<div class="mainArea">
-						<p class="mainTitle">사랑하는 사람의 안심귀가!<br /><span class="cBlue"><b>세종엔</b>과 함께해요~</span></p>
-						<div class="repMenu">
-							<a href="#" class="service1"><i></i><b>안심서비스</b></a>
-							<a href="#" class="service2"><i></i><b>생생버스</b></a>
-							<a href="#" class="service3"><i></i><b>동선안심체크</b></a>
-							<a href="#" class="service4"><i></i><b>투표소 현황</b><span class="prepare">준비중</span></a>
+						<div class="boxWrap repMenu">
+							<div class="boxArea">
+								<h2>안심서비스</h2>
+								<p class="mainTitle">사랑하는 사람의 안심귀가!<br />세종엔과 함께해요~</p>
+								<div class="body">
+									<a href="#" class="service1"><i></i><span>안심<br />서비스</span></a>
+									<a href="#" class="service2"><i></i><span>생생버스</span></a>
+									<a href="#" class="service3"><i></i><span>동선안심<br />체크</span></a>
+									<a href="#" class="service4"><i></i><span>투표소 현황<br /><span class="cBlue">(준비중)</span></span></a>
+								</div>
+							</div>
 						</div>
 
 						<div class="recentService">
