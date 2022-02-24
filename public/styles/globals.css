@@ -966,6 +966,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerCCTVBody .guide { display: flex; align-items: flex-start; margin-top: 2rem;}
 .layerCCTVBody .guide i { width: 2.6rem; vertical-align: middle; background-position-x: -38rem;}
 .layerCCTVBody .guide >span { font-size: 1.4rem; color: #777;}
+.layerCCTV { display: flex; align-items: center; justify-content: center; color: #fff; background-color: #181818;}
 
 /* UI-SJN-70-002L */
 .layerTime { text-align: left;}
