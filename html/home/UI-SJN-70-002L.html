@@ -26,7 +26,7 @@
 									<input type="checkbox" id="chechbox1" name="chechbox"><label for="chechbox1">월</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -34,7 +34,7 @@
 									<input type="checkbox" id="chechbox2" name="chechbox" checked="checked"><label for="chechbox2">화</label>
 								</div>
 								<div class="timeInput">
-									<button type="button" class="active">09:00 ~ 21:00</button> <!-- 시간 입력 시 active  -->
+									<button type="button" class="active" onclick="layerPopup.open('layerTimeChoice');">09:00 ~ 21:00</button> <!-- 시간 입력 시 active  -->
 								</div>
 							</li>
 							<li>
@@ -42,7 +42,7 @@
 									<input type="checkbox" id="chechbox3" name="chechbox"><label for="chechbox3">수</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -50,7 +50,7 @@
 									<input type="checkbox" id="chechbox4" name="chechbox"><label for="chechbox4">목</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -58,7 +58,7 @@
 									<input type="checkbox" id="chechbox5" name="chechbox"><label for="chechbox5">금</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -66,7 +66,7 @@
 									<input type="checkbox" id="chechbox6" name="chechbox"><label for="chechbox6">토</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -74,7 +74,7 @@
 									<input type="checkbox" id="chechbox7" name="chechbox"><label for="chechbox7">일</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 							<li>
@@ -82,7 +82,7 @@
 									<input type="checkbox" id="chechbox8" name="chechbox"><label for="chechbox8">공휴</label>
 								</div>
 								<div class="timeInput">
-									<button type="button">시간을 입력하세요</button>
+									<button type="button" onclick="layerPopup.open('layerTimeChoice');">시간을 입력하세요</button>
 								</div>
 							</li>
 						</ul>
@@ -95,6 +95,80 @@
 			</div>
 		</main>
 		<!-- //본문 -->
+
+
+		<!-- 레이어 -->
+		<div id="layerTimeChoice" class="layerPopup">
+			<div class="layerWrap typeBot">
+				<h4>시간 선택</h4>
+				<div class="layerTime">
+					<div class="radioSet">
+						<input type="radio" id="list0" checked="checked"><label for="list0">영업일</label>
+						<input type="radio" id="list1"><label for="list1">휴무일</label>
+					</div>
+					<div class="timeHead">
+						<div class="title">
+							<h5>영업시간</h5>
+							<div class="radioSet">
+								<input type="radio" id="list2"><label for="list2">24시간</label>
+							</div>
+						</div>
+						<ul class="titleBody">
+							<li>
+								<span>
+									<select title="영업 시작 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+								<span>
+									<select title="영업 종료 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div class="timeHead">
+						<div class="title">
+							<h5>휴식시간</h5>
+						</div>
+						<ul class="titleBody">
+							<li>
+								<span>
+									<select title="첫번째 휴식 시작 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+								<span>
+									<select title="첫번째 휴식 종료 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+								<button type="button" class="pnRemove"><i class="split24">첫번째 휴식시간 삭제</i></button>
+							</li>
+							<li>
+								<span>
+									<select title="두번째 휴식 시작 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+								<span>
+									<select title="두번째 휴식 종료 시간">
+										<option>시간선택</option>
+									</select>
+								</span>
+								<button type="button" class="pnRemove"><i class="split24">두번째 휴식시간 삭제</i></button>
+							</li>
+						</ul>
+						<button type="button" class="pnAdd"><i class="split20"></i>휴식시간 추가</button>
+					</div>
+
+					<button type="button" class="button blue">수정</button>
+				</div>
+				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 </div>
 </body>
