@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-23
+- UI-SJN-40-008U 수정 - 휴대전화 부분 미비점 보완
+
 ### 02-22
 - [공통] layer-message 등록 - 기본알림
 - UI-SJN-03-100U 등록

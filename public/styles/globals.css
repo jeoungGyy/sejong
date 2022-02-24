@@ -1228,6 +1228,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .businessForm ul li input { flex: 1;}
 .items-form >li .businessForm ul li button { min-width: 5rem; margin-left: 0.8rem; padding: 0 1rem; border: 1px solid #ddd;}
 .items-form >li .businessForm ul li button.blue { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.items-form >li .businessForm ul li button.pink { color: #fff; border-color: #D57298; background-color: #D57298;}
 .items-form >li .businessForm ul li ~ li { margin-top: 0.8rem;}
 .items-form >li .inputForm > * { margin-top: 0.8rem;}
 .items-form >li .inputForm .por { position: relative;}
