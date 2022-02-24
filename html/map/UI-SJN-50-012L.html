@@ -9,7 +9,7 @@
 <div id="root">
 	<div class="container">
 		<!-- 공통: 세종 안심서비스 헤더 -->
-		<script src="../include/header_map_noSearch.js"></script>
+		<script src="../include/header_map_search.js"></script>
 		<!-- //공통: 세종 안심서비스 헤더 -->
 
 		<!-- 본문 -->
@@ -17,80 +17,44 @@
 			<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
 			
 			<div class="mapWrap">
-				
-				<div class="mapArea">
-					<!-- 위치 설정 마커 -->
-					<div class="markerResultIcon" style="left: 15rem; top: 15rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-						<i></i>
-						<div class="result">아름중학교</div>
-					</div>
-					<!-- //위치 설정 마커 -->
-					
-					<!-- 기타 아이콘들 -->
-					<div class="mapIcons">
-						<button type="button" class="btnPin"><i>핀</i></button>
-
-
-						<div class="location default">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
-							</div>
-						</div>
-
-					</div>
-					<!-- //기타 아이콘들 -->
-
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer default">
-						<div class="mapIHead">
-							<button type="button" class="btnMapInfo">정보영역</button>
-						</div>
-
-						<div class="locationSearchList">
-							<ul>
-								<li>
-									<strong class="title"><span class="point">아름중</span>학교</strong>
-									<p class="address">세종특별자치시 달빛1호 167</p>
-									<p class="callNum">044-902-1000</p>
-								</li>
-
-								<li>
-									<strong class="title"><span class="point">아름중</span>학교</strong>
-									<p class="address">세종특별자치시 달빛1호 167</p>
-									<p class="callNum">044-902-1000</p>
-								</li>
-
-								<li>
-									<strong class="title"><span class="point">아름중</span>학교</strong>
-									<p class="address">세종특별자치시 달빛1호 167</p>
-									<p class="callNum">044-902-1000</p>
-								</li>
-
-								<li>
-									<strong class="title">지진옥외대피장소 <span class="point">아름중</span>학교</strong>
-									<p class="address">세종특별자치시 달빛1호 167</p>
-								</li>
-							</ul>
-						</div>
-
-						<div class="notResult">
-							<p class="text">찾으시는 장소가 없나요?</p>
-							<button type="button">새 장소 등록</button>
-						</div>
-
-					</div>
-					<!-- //정보 영역 -->
-
-					<script>
-						mapInfo.click('sub');
-					</script>
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
-
+				<div class="mapTab">
+					<button type="button">최근 기록</button>
+					<button type="button" class="active">지도 지정</button><!-- 활성화시 버튼에 active 추가 -->
 				</div>
 
+				<div class="mapArea">
+
+					<!-- 현재 내 위치표시 -->
+					<div class="mapIcons">
+						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							<div><span></span></div>
+						</div>
+					</div>
+					<!-- //현재 내 위치표시 -->
+
+					<!-- 위치 설정 마커 -->
+					<div class="markerMoveIcon" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+						<div class="text">지도를 움직여 위치를 설정하세요</div>
+						<i></i>
+					</div>
+					<!-- //위치 설정 마커 -->
+
+					<div class="mapMoveData">
+						<!-- 현재위치 버튼 표시 -->
+						<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+						<!-- 현재위치 버튼 표시 -->
+
+						<div class="locationText">
+							<div class="address">
+								세종특별자치시 한누리대로 328 (도시통합정보센터)
+							</div>
+
+							<button type="button" class="button blue">이 위치를 안심장소로 설정</button>
+						</div>
+					</div>
+
+					<div class="mapBg"></div> <!-- map 이미지 -->
+				</div>
 			</div>
 		</main>
 		<!-- //본문 -->
