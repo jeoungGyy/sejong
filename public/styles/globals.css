@@ -924,7 +924,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* UI-SJN-42-003L */
 .userLayer h3 { padding: 1rem 0; font-size: 2rem; line-height: 2.6rem;}
-.userLayer .infomation { position: relative; padding: 0 2rem 4rem; background: url(../image/map/map_report.png) no-repeat right top 1rem/13rem 16.425rem;}
+.userLayer .infomation { position: relative; padding: 0 2rem; background: url(../image/map/map_report.png) no-repeat right top 1rem/13rem 16.425rem;}
 .userLayer .infomation::after { content: ''; position: absolute; right: 0; top: 0;}
 .userLayer .infomation h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 1.6rem; font-size: 1.5rem;}
 .userLayer .infomation .contain { margin-top: 0.8rem;}
@@ -932,11 +932,13 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .userLayer .infomation ul li::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0rem 0/40rem 16rem;}
 .userLayer .infomation .danger li::after { background-position: -30rem -4rem;}
 .userLayer .infomation .incon li::after { background-position: -30rem -6rem;}
-.userLayer .infomation .promote { margin-top: 4rem;}
+.userLayer .infomation .promote { margin: 4rem -2rem 0;}
+.userLayer .infomation .promote .body { height: 16rem; padding: 2.7rem 0 0 3.4rem; background: #739B7F url(../image/map/map_safetyUser_bg.png) no-repeat right 3.2rem bottom/10.825rem 13.6rem;}
+.userLayer .infomation .promote .body p { font-size: 2rem; font-weight: 700; color: #fff; line-height: 2.6rem;}
 .userLayer .report { padding: 2.4rem 2rem 3.6rem; background: url(../image/map/map_report2.png) no-repeat right top 7.2rem/14.75rem 19.6rem;}
 .userLayer .report .guide1 { margin-top: 0.8rem; line-height: 2.4rem;}
 .userLayer .report .guide2 { width: 66%; margin-top: 1.6rem; color: #777;}
-.userLayer .buttonArrow { margin-top: 3.2rem;}
+.userLayer .report .buttonArrow { margin-top: 3.2rem;}
 
 /* UI-SJN-60-001L */
 .layerLnbBody .mapChange { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem;}
@@ -1203,15 +1205,13 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .fileForm .condition { margin: 0.9rem 0; color: #aaa;}
 .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .items-form >li .fileForm .ffH .all { color: #6684EA;}
-/*
+.items-form >li .fileForm .ffH .delete {display:inline-block; line-height:2.4rem; color: #555;}
 .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
-.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat -21.6rem 0/48rem 28.8rem; border-radius: 50%;}
-*/
-.items-form >li .fileForm .ffH .delete {display:inline-block; line-height:2.4rem;}
-.items-form >li .fileForm .ffH .delete label {position:relative; padding-left:3rem; line-height:2.4rem;}
+.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%;}
+/* .items-form >li .fileForm .ffH .delete label {position:relative; padding-left:3rem; line-height:2.4rem;}
 .items-form >li .fileForm .ffH .delete label::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background:#EAEDF2 url(../image/common/ico_chk_wh.png) no-repeat center/1.2rem auto; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .fileForm .ffH .delete input { position: absolute; opacity: 0;}
-.items-form >li .fileForm .ffH .delete input:checked + label::after { background-color: #6684EA;}
+.items-form >li .fileForm .ffH .delete input:checked + label::after { background-color: #6684EA;} */
 /*
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li { grid-column-end: span 3;}
 .items-form >li .fileForm .pictureList li:nth-child(3) ~ li label { height: 18rem;}
