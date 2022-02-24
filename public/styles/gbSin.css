@@ -324,6 +324,7 @@
 .mypage .openingList li .chechbox label { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.2rem; font-weight: 700; border: 1px solid #ddd; border-radius: 0.4rem; transition: all .3s ease-in-out; cursor: pointer;}
 .mypage .openingList li .timeInput { flex: 1;}
 .mypage .openingList li .timeInput button { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
+.mypage .openingList li .timeInput button.active { color: #111; border-color: #6684EA;}
 
 /* 잠금설정 - UI-SJN-80-003 */
 .mypage .mypageArea { padding: 0 2rem 4rem;}
