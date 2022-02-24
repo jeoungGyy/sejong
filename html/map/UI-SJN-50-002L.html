@@ -103,18 +103,18 @@
 						<div class="markerFriend girl" style="left: 25.5rem; top: 35rem;"></div> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
 						<!-- //친구 현재 위치표시 -->
 
-						<div class="location easy">
+						<div class="location easy" style="bottom: 39rem;">
 							<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
 
-							<button type="button" class="easyButton police"><i>치안시</i></button>
-							<button type="button" class="easyButton emergency"><i>비상</i></button>
-							<button type="button" class="easyButton relex"><i>안심장소</i></button>
+							<button type="button" class="easyButton police" ><i>치안시</i></button>
+							<button type="button" class="easyButton emergency" ><i>비상</i></button>
+							<button type="button" class="easyButton relex" ><i>안심장소</i></button>
 						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
 					
 					<!-- 정보 영역 -->
-					<div class="mapInfoLayer midHeight open">
+					<div class="mapInfoLayer default open">
 						<button type="button" class="btnMapInfo">정보영역</button>
 
 						<div class="btnModify">
@@ -131,18 +131,26 @@
 									<i><img src="../../public/image/map/icon_friendIcon_02.png" alt="친구 아이콘 이미지"></i>
 									<span>이보람</span>
 								</button>
-								<button type="button" class="friendIcon">
-									<i><img src="../../public/image/map/icon_friendIcon_03.png" alt="친구 아이콘 이미지"></i>
+								<button type="button" class="friendIcon noAgree"> <!-- 수락하지 않은 친구에 noAgree 추가 -->
+									<i><img src="../../public/image/map/icon_friendIcon_noAgree.png" alt="수락하지 않은 친구 아이콘 이미지"></i>
 									<span>이도령</span>
 								</button>
 
 								<button type="button" class="icon plus">
 									<i>친구추가</i>
+									<span class="notHas">친구가 어디 있는지 궁금하세요?</span>
 								</button>
 
 								<p class="popAlert" style="bottom:1rem; left:9rem;">친구요청을 수락하지 않은 친구입니다.</p><!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
 
 								<p class="popAlert" style="top:0; right:0;">친구가 어디 있는지 궁금하세요?</p><!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+							</div>
+
+							<div class="buttonArea noFriend"><!-- 등록된 친구가 하나도 없을때 noFriend 클래스 추가 필수 -->
+								<button type="button" class="icon plus">
+									<i>친구추가</i>
+									<span class="notHas">친구가 어디 있는지 궁금하세요?</span>
+								</button>
 							</div>
 
 							<div class="friendInfoArea">

@@ -818,11 +818,11 @@ span.M { background-color: #FD2020;}
 .header.mapSearch.notSearchBtn .subHeader .searchHeader {width:100%;}
 
 .button.orange { color: #fff; background-color:#FF940E;}
-.button.red { color: #fff; background-color:#EF1746;}
 .button.white { color: #FF940E; background-color:#fff;}
-.button.darkBlue { color: #fff; background-color:#00519F;}
 .button.grayLine { color: #777; border: 1px solid #CDD0D8;}
 
+.button.btn119 { color: #FD2020; border:1px solid #CDD0D8; background-color:#fff;}
+.button.btn112 { color: #6684EA; border:1px solid #CDD0D8; background-color:#fff;}
 
 /* UI-SJN-50-002L */
 .map .popMessageSlide {position:relative; position:absolute; top:8.8rem; left:50%; margin-left:-12rem; width:24rem; z-index:100; border:1px solid #FF940E; background-color:#fff; }
@@ -836,7 +836,7 @@ span.M { background-color: #FD2020;}
 .map .popMessage .popCont .btnArea button span {display:inline-block; color:#FF940E; font-weight:700; }
 .map .popMessage .popCont .btnArea button.add span {padding-left:2.4rem; background:url(../image/map/icon_plus_orange.png) no-repeat left center/2.4rem;}
 .map .popMessage .popCont .btnArea button.goLink span {padding-right:2.4rem; background:url(../image/map/icon_arrow_orange.png) no-repeat right center/2.4rem;}
-.map .popMessageSlide .popClose {position:absolute; top:0; right:1.2rem; width:2.4rem; height:2.4rem; text-indent:-9999rem; background:url(../image/map/icon_close_bk_24.png) no-repeat center/cover; }
+.map .popMessageSlide .popClose {position:absolute; top:1.2rem; right:1.2rem; width:2.4rem; height:2.4rem; text-indent:-9999rem; background:url(../image/map/icon_close_bk_24.png) no-repeat center/cover; }
 .map .popMessageSlide .popNum {position:absolute; top:-1.2rem; left:50%; margin-left:-2rem; display:inline-block; width:4rem; height:2.4rem; text-align: center; color:#fff; border-radius:1.2rem; background-color:#FF940E; }
 .map .popMessageSlide .popNum span {color:#fff; font-size:1.2rem; line-height:2.4rem;}
 .map .popMessageSlide .popNum span.swiper-pagination-current {font-weight:700;}
@@ -846,28 +846,29 @@ span.M { background-color: #FD2020;}
 .map .mapIcons .etcButton button i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
 .map .mapIcons .etcButton button i:before {content:''; }
 .map .mapIcons .etcButton button.helpCall {margin-top:0; }
-.map .mapIcons .etcButton button.helpCall i {background:#111; z-index:2;}
+.map .mapIcons .etcButton button.helpCall i {background:#FD2020; z-index:2;}
 .map .mapIcons .etcButton button.helpCall i:before {width:1.8rem; height:2.05rem; background: url(../image/map/ico_map_helpCall.png) no-repeat center/cover;}
-.map .mapIcons .etcButton button.helpCall span {display:inline-block; position:absolute; top:0.4rem; right:1rem; width:0; height:3.2rem; font-size:1.2rem; color:#fff; line-height:3.2rem; text-align:left; background-color:#111; border-radius:1.6rem; transition: all .3s ease-in-out;}
-.map .mapIcons .etcButton button.helpCall.active i {background-color:#FD2020;}
-.map .mapIcons .etcButton button.helpCall.active span {width:10rem; padding:0 1.2rem; z-index:1;}
+.map .mapIcons .etcButton button.helpCall span {display:inline-block; position:absolute; top:0; right:1rem; width:0; height:4rem; font-size:1.2rem; font-weight:700; color:#fff; line-height:4rem; text-align:left; background-color:#FD2020; border-radius:2rem; transition: all .3s ease-in-out;}
+.map .mapIcons .etcButton button.helpCall.active i {background-color:#FD2020; box-shadow:none;}
+.map .mapIcons .etcButton button.helpCall.active span {width:9.6rem; padding:0 1.2rem; z-index:1;}
 .map .mapIcons .etcButton button.roadView i:before {width:2rem; height:2.25rem; background: url(../image/map/ico_map_roadView.png) no-repeat center/cover;}
 .map .mapIcons .etcButton button.setting i:before {width:2rem; height:2rem; background: url(../image/map/ico_map_setting.png) no-repeat center/cover;}
 .map .mapIcons .etcButton button.help i:before {width:2.4rem; height:2.4rem; background: url(../image/map/ico_map_help.png) no-repeat center/cover;}
 .map .mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
 .map .mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
 .map .mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
-.map .mapIcons .location.easy {justify-content: left;}
+.map .mapIcons .location.easy {justify-content: left; position:absolute; left:1.2rem; bottom:1.6rem; width:100%;}
+.map .mapIcons .location.easy .myLocation {display:inline-block; position:static; left:inherit; bottom:inherit;}
 .map .mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
-.map .mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-top:4.2rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
+.map .mapIcons .location.easy .myLocation i {margin:0 auto;}
+.map .mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
 .map .mapIcons .location.easy .easyButton i {padding-left:2.4rem; font-size:1.4rem; color:#555;}
 .map .mapIcons .location.easy .police {margin-left:1.6rem;}
 .map .mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
-.map .mapIcons .location.easy { transform: translateY(calc(100% - 44.5rem));}
+.map .mapIcons .location.easy { /*transform: translateY(calc(100% - 44.5rem));*/}
 
-.map .mapInfoLayer.midHeight { height: calc(35rem + var(--vh));}
 .map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
 .map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
 
@@ -877,8 +878,9 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i img {width:3.2rem; height:3.2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon span {display:block; margin-top:0.4rem; font-size:1.6rem; color:#555; line-height:2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active i {border:2px solid #FF940E;}
-.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus {width:5.6rem; height:5.6rem; border-radius:50%; background-color:#FF940E;}
-.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus i {display:block; text-indent:-9999rem; background:url(../image/map/icon_wh_plus.png) no-repeat center/3.2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus {}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus i {width:5.6rem; height:5.6rem; display:block; text-indent:-9999rem; border-radius:50%; background:#FF940E url(../image/map/icon_wh_plus.png) no-repeat center/3.2rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus span {display:none;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .popAlert {position:absolute; display:inline-block; padding:0.8rem 1.2rem; border:1px solid #FF940E; font-size:1.2rem; line-height:1.4rem; border-radius:2rem; background-color:#fff;}
 
 .map .mapInfoLayer .safeServiceWrap .friendInfoArea {padding:1.7rem 0 2.1rem 0;}
@@ -894,6 +896,11 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button i img {width:100%;}
 .map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button span {display:block; font-size:1.2rem; color:#777;}
 .map .mapInfoLayer .safeServiceWrap .friendInfoArea .bottomBtnArea button strong {display:block; font-size:1.2rem; color:#FF940E;}
+
+.map .mapInfoLayer .safeServiceWrap .buttonArea.noFriend .icon.plus {display: flex; align-items: center; justify-content: flex-start; width:100%; height:5.6rem; border:1px solid #FF940E; border-radius:2.8rem;}
+.map .mapInfoLayer .safeServiceWrap .buttonArea.noFriend .icon.plus span {display:inline-block; margin-left:1.6rem; font-size:1.6rem; color:#FF940E; }
+.map .mapInfoLayer .safeServiceWrap .buttonArea.noFriend .friendIcon,
+.map .mapInfoLayer .safeServiceWrap .buttonArea.noFriend .popAlert {display:none;}
 
 
 /* UI-SJN-50-003L */
@@ -971,8 +978,8 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .moveData .calendarSet .daySelect .dayWrap button {width:3.2rem; height:3.2rem; line-height:3.2rem; font-family: var(--fontRoboto); font-size:1.6rem; color:#777; text-align: center; margin-left:1.5rem; border-radius:50%;}
 .map .mapInfoLayer .moveData .calendarSet .daySelect .dayWrap button.active {color:#fff; font-weight:700; background-color:#FF940E;}
 .map .mapInfoLayer .moveData .lineSelector {position:relative; height:4rem; display: flex; align-items: center; padding:0 2rem;}
-.map .mapInfoLayer .moveData .lineSelector .line {width:100%; height:1px; text-indent:-9999rem; background-color:#EAEDF2;}
-.map .mapInfoLayer .moveData .lineSelector .pointer {position:absolute; top:50%; width:2.4rem; height:2.4rem; margin-top:-1.2rem; text-indent:-9999rem; border:2px solid #292D32; border-radius:50%; background-color:#fff;}
+.map .mapInfoLayer .moveData .lineSelector .line {width:100%; height:5px; text-indent:-9999rem; background-color:#EAEDF2;}
+.map .mapInfoLayer .moveData .lineSelector .pointer {position:absolute; top:50%; width:2.4rem; height:2.4rem; margin-top:-1.2rem; text-indent:-9999rem; border:2px solid #292D32; border-radius:50%; background-color:#FFD800;}
 .map .mapInfoLayer .moveData .addressArea {margin-top:1.6rem; height:5.2rem; padding:1.6rem 2rem; font-size:1.6rem; line-height:1.8rem;}
 
 /* UI-SJN-50-006L */
@@ -1067,16 +1074,17 @@ span.M { background-color: #FD2020;}
 .map .recentSearchList ul li .record .date {width:3rem; font-size:1.4rem; color:#777; margin-left:0.8rem;}
 .map .recentSearchList ul li .iconTrash {width:2.4rem; height:2.4rem; text-indent:-9999rem; background: url(../image/map/icon_trash.png) no-repeat center/2.4rem; }
 
+
 .map .locationSearchList {flex:1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; border-bottom:1px solid #F4F5F7; }
 .map .locationSearchList ul li {padding:1.6rem 2rem; border-top:1px solid #F4F5F7;}
 .map .locationSearchList ul li:first-child {border-top:none;}
 .map .locationSearchList ul li .title {display:block; font-size:1.8rem; line-height:2.4rem;}
-.map .locationSearchList ul li .title .point {color:#FF940E;}
+.map .locationSearchList ul li .title .point {color:#6684EA;}
 .map .locationSearchList ul li .address {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.8rem; color:#555; }
 .map .locationSearchList ul li .callNum {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.4rem; color:#555; }
 .map .notResult {display: flex; align-items: center; justify-content: space-between; margin:2.4rem 2rem 3.2rem; padding:1.4rem 1.6rem; background-color:#EAEDF2;}
 .map .notResult .text {font-size:1.6rem; color:#555;}
-.map .notResult button {font-weight:700; font-size:1.6rem; color:#FF940E; padding-right:1.6rem; background: url(../image/map/arrow_right_orange.png) no-repeat right center/0.6rem auto;  }
+.map .notResult button {font-weight:700; font-size:1.6rem; color:#6684EA; padding-right:2.4rem; background: url(../image/map/arrow_right_blue.png) no-repeat right center/2.4rem auto;  }
 
 
 /* UI-SJN-50-012L */
@@ -1085,17 +1093,17 @@ span.M { background-color: #FD2020;}
 .map .mapTab button.active {font-weight:700; color:#111;}
 .map .mapTab button.active:before {content:''; width:100%; height:2px; position:absolute; bottom:-1px; left:0; background-color: #FF940E; }
 
-.map .mapArea .markerMyLocation { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.25); border-radius: 50%; transform: translateX(-50%);}
-.map .mapArea .markerMyLocation div { display: flex; align-items: center; justify-content: center; width: 1.2rem; height: 1.2rem; background-color: #fff; border-radius: 50%;}
-.map .mapArea .markerMyLocation div span { display: block; width: 1rem; height: 1rem; background-color: #FF940E; border-radius: 50%;}
+.map .mapArea .markerMyLocation { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 20; width: 8rem; height: 8rem; background-color: rgba(17, 17, 17, 0.15); border-radius: 50%; transform: translateX(-50%);}
+.map .mapArea .markerMyLocation div { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
+.map .mapArea .markerMyLocation div span { display: block; width: 1.6rem; height: 1.6rem; background-color: #FD2020; border-radius: 50%;}
 
 .map .mapArea .markerMoveIcon {display: flex; align-items: center; justify-content: center; position: absolute; z-index: 30; }
-.map .mapArea .markerMoveIcon .text {position: absolute; top:-4rem; left:50%; width:18rem; height:3.2rem; line-height:3.2rem; margin-left:-9rem; text-align: center; font-size:1.2rem; color:#fff; background-color:#FF940E; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
+.map .mapArea .markerMoveIcon .text {position: absolute; top:-4rem; left:50%; width:18rem; height:3.2rem; line-height:3.2rem; margin-left:-9rem; text-align: center; font-size:1.2rem; color:#fff; background-color:#6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
 .map .mapArea .markerMoveIcon i {width: 3.2rem; height: 4rem; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
 
 .map .mapArea .markerResultIcon {display: flex; flex-direction: column; position: absolute; z-index: 30; }
 .map .mapArea .markerResultIcon i {width: 3.2rem; height: 4rem; margin:0 auto; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
-.map .mapArea .markerResultIcon .result {height:3.2rem; text-align: center; font-size:1.2rem; padding:0.8rem 1.2rem; margin-top:0.7rem; color:#555; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border:1px solid #FF940E; border-radius:1.6rem;}
+.map .mapArea .markerResultIcon .result {height:3.2rem; text-align: center; font-size:1.2rem; padding:0.8rem 1.2rem; margin-bottom:0.7rem; color:#fff; background-color:#6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
 
 .map .mapMoveData {position: fixed; left: 0; bottom: 0; width:100%;}
 .map .mapMoveData .myLocation {position: absolute; left: 2rem; top: -5.6rem; display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
@@ -1134,7 +1142,8 @@ span.M { background-color: #FD2020;}
 .map .settingServiceWrap .section .titleBlack {font-size:1.6rem; line-height:2.2rem;}
 .map .settingServiceWrap .section .grayTitle + .titleBlack {margin-top:0.8rem;}
 .map .settingServiceWrap .section .flexBox {display: flex; align-items: center; justify-content: space-between; margin-bottom:0.4rem;}
-.map .settingServiceWrap .section .flexBox .btnOff {height:3.2rem; padding:0 1.4rem; border-radius:1.6rem; color:#fff; font-size:1.4rem; background-color:#A9B0C1;}
+.map .settingServiceWrap .section .flexBox .btnOff {height:3.2rem; padding:0 0.8rem; border-radius:1.6rem; color:#555; font-size:1.4rem; border:1px solid #CDD0D8; background-color:#fff;}
+.map .settingServiceWrap .section .flexBox .switch input:checked + label:before {background-color:#4EC457;}
 .map .settingServiceWrap .section .buttonSelectArea {display: flex; align-items: center; justify-content: space-between; margin-top:0.8rem;}
 .map .settingServiceWrap .section .buttonSelectArea button {width:100%; height:4rem; display:block; border:1px solid #EAEAEA; border-left:none;background-color:#fff; color:#777; }
 .map .settingServiceWrap .section .buttonSelectArea button:first-child {border-left:1px solid #EAEAEA;}
