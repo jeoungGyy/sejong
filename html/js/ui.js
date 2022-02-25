@@ -326,10 +326,8 @@ const moreBtn = {
 }
 
 const comparison = {
-	idx : null,
 	active : () => {
 		document.querySelectorAll(".comparisonSlider").forEach((element) => {
-			console.log(element)
 			const slider = element.querySelector(".gesture");
 			const resizeElement = element.querySelector(".conBefore");
 			if (!resizeElement) return;
@@ -351,8 +349,8 @@ const comparison = {
 						if (percentage >= 100) {
 								percentage = 100;
 						}
-						if (percentage <= 9) {
-							percentage = 9;
+						if (percentage <= 9.5) {
+							percentage = 9.5;
 						}
 
 						slider.style.top = `${percentage}%`;
