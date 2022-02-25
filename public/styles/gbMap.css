@@ -215,9 +215,6 @@ body { --vh: 1px;}
 .mapIcons .busStop .busLocation { position: absolute;}
 .mapIcons .busStop .busLocation i { display: block; width: 3.2rem; height: 4.25rem; text-indent: -9999rem; background: url(../image/map/ico_busLocation.png) no-repeat center/cover;}
 .mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
-.mapIcons .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -100%); border-radius: 50%; transition: opacity .3s ease-in-out;}
-.mapIcons .gesture span { font-size: 1.4rem; color: #fff; text-align: center; text-indent: -9999rem; line-height: 2rem;}
-.mapIcons .gesture.hide { opacity: 0; z-index: -1;}
 .mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
 .mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
 .mapIcons .reportSet .reportIcon { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
@@ -589,25 +586,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .map .mapInfoLayer .settingList li { padding: 1rem 2rem;}
 .map .mapInfoLayer .settingList li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
 .map .mapInfoLayer .settingList li .slBody h3 { overflow:hidden; font-size: 1.6rem; text-overflow:ellipsis; white-space:nowrap;}
@@ -764,6 +742,15 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li button .text b.plus { color: #6684EA;}
 .map .transformBody .transformNavList li button .text b.minus { color: #FD2020;}
 
+.map .comparisonSlider {position: relative;width: 100%;margin: auto;user-select: none;overflow: hidden;touch-action: pan-x;}
+.map .comparisonSlider .comparison {margin: 0;}
+.map .comparisonSlider .comparison.conBefore {position: absolute;top: 0;left: 0;height: 100%;clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);}
+.map .comparisonSlider .comparison > img {width: auto;height: 100%;display: block;object-fit: cover;pointer-events: none;}
+.map .comparisonSlider .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -50%); border-radius: 50%; transition: opacity .3s ease-in-out;}
+.map .comparisonSlider .gesture span { font-size: 1.4rem; color: #fff; text-align: center; text-indent: -9999rem; line-height: 2rem;}
+.map .comparisonSlider .gesture.hide { opacity: 0; z-index: -1;}
+
+
 /* UI-SJN-42-001L */
 .map .mapInfoLayer .reportHead { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; margin: 0 -2rem; padding: 0 2rem; border-bottom: 1px solid #EAEAEA;}
 .map .mapInfoLayer .reportHead .guide { display: flex; align-items: center;}
@@ -867,7 +854,6 @@ span.M { background-color: #FD2020;}
 .map .mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
 .map .mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
-.map .mapIcons .location.easy { /*transform: translateY(calc(100% - 44.5rem));*/}
 
 .map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
 .map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
@@ -878,7 +864,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon i img {width:3.2rem; height:3.2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon span {display:block; margin-top:0.4rem; font-size:1.6rem; color:#555; line-height:2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .friendIcon.active i {border:2px solid #FF940E;}
-.map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus {}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus i {width:5.6rem; height:5.6rem; display:block; text-indent:-9999rem; border-radius:50%; background:#FF940E url(../image/map/icon_wh_plus.png) no-repeat center/3.2rem;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .icon.plus span {display:none;}
 .map .mapInfoLayer .safeServiceWrap .buttonArea .popAlert {position:absolute; display:inline-block; padding:0.8rem 1.2rem; border:1px solid #FF940E; font-size:1.2rem; line-height:1.4rem; border-radius:2rem; background-color:#fff;}

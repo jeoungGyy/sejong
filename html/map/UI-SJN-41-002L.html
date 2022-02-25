@@ -22,10 +22,6 @@
 					<div class="mapIcons">
 						<button type="button" class="btnPin active"><i>핀</i></button>
 
-						<button type="button" class="gesture"> <!-- hide 클래스 추가 시 사라집니다. -->
-							<span>맵 이동</span>
-						</button>
-
 						<div class="location">
 							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
 							<div class="scaleBtn">
@@ -35,6 +31,27 @@
 						</div>
 					</div>
 					<!-- //기타 아이콘들 -->
+
+					
+					<!-- 이미지 전 후 비교 -->
+					<div class="comparisonSlider">
+						<div class="comparison">
+							<img src="../../public/image/temp/after.jpg" alt="before" />
+						</div>
+						<div class="comparison conBefore">
+							<img src="../../public/image/temp/before.jpg" alt="after" />
+						</div>
+
+						<button type="button" class="gesture">
+							<span>맵 이동</span>
+						</button>
+					</div>
+
+					<script>
+						comparison.active();
+					</script>
+					<!-- //이미지 전 후 비교 -->
+
 					
 					<!-- 정보 영역 -->
 					<div class="mapInfoLayer">
@@ -102,7 +119,7 @@
 					</div>
 					<!-- //정보 영역 -->
 
-					<div class="mapBg2"></div> <!-- map 이미지 -->
+					<!--<div class="mapBg2"></div>  map 이미지 -->
 				</div>
 			</div>
 		</main>

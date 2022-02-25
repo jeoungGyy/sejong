@@ -325,6 +325,61 @@ const moreBtn = {
 	},
 }
 
+const comparison = {
+	idx : null,
+	active : () => {
+		document.querySelectorAll(".comparisonSlider").forEach((element) => {
+			console.log(element)
+			const slider = element.querySelector(".gesture");
+			const resizeElement = element.querySelector(".conBefore");
+			if (!resizeElement) return;
+	
+			let ticking = false;
+	
+			const slide = (event) => {
+				if (!ticking) {
+					ticking = true;
+					requestAnimationFrame(() => {
+						ticking = false;
+
+						const clientX = event.clientY ?? event.touches[0].clientY;
+						const x = clientX - element.offsetTop;
+						let percentage = ((x / element.offsetHeight) * 10000) / 100;
+
+						if (percentage >= 100) {
+								ercentage = 100;
+						}
+						if (percentage <= 0) {
+							percentage = 0;
+						}
+
+						slider.style.top = `${percentage}%`;
+						resizeElement.style.clipPath = `polygon(0 ${percentage}% , 100% ${percentage}%, 100% 100%, 0 100%)`;
+					});
+				}
+			};
+			const dragStart = () => {
+				element.addEventListener("mousemove", slide, { passive: true });
+				element.addEventListener("touchmove", slide, { passive: true });
+				element.classList.add("dragging");
+			};
+			const dragDone = () => {
+				element.removeEventListener("mousemove", slide);
+				element.removeEventListener("touchmove", slide);
+				element.classList.remove("dragging");
+			};
+	
+			slider.addEventListener("mousedown", dragStart, { passive: true });
+			slider.addEventListener("touchstart", dragStart, { passive: true });
+	
+			document.addEventListener("mouseup", dragDone, { passive: true });
+			document.addEventListener("touchend", dragDone, { passive: true });
+			document.addEventListener("touchcancel", dragDone, { passive: true });
+		});
+	},
+}
+
+
 const mainWeather = {
 	weatherBoxY : null,
 	floatingBoxY : null,
