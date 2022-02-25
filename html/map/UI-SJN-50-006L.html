@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<script src="../include/head.js"></script>
+	
 </head>
 
 <body>
@@ -19,9 +20,12 @@
 
 							<p class="text">곧 구조요청이 전송됩니다.</p>
 
-							<div class="iconEmergency">
-								<i>긴급 구조 요청</i>
+							<div class="round">
+								<div id="countdownEv" class="countEmergency" >
+									<span id="timer" class="timer"></span>
+								</div>
 							</div>
+							
 						</div>
 					</div>
 
@@ -33,6 +37,24 @@
 					</div>
 				</div>
 			</div>
+
+			<script>
+				var count = 11;
+				var counter = setInterval(timer, 1000);
+
+				function timer(){
+					count--;
+
+					if(count <= 0){
+						clearInterval(counter);
+
+						document.getElementById("countdownEv").className = "countEmergency";
+						document.getElementById("timer").innerHTML = "";
+					}
+
+					document.getElementById("timer").innerHTML = count;
+				}
+			</script>
 		</main>
 		<!-- //본문 -->
 	</div>

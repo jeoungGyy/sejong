@@ -971,8 +971,15 @@ span.M { background-color: #FD2020;}
 .map .emergencyCall {height:calc(100vh - 8rem); text-align: center; margin: -5.6rem 0 -2rem; display: flex; align-items: center; justify-content: center; }
 .map .emergencyCall .title {font-size:2.1rem; line-height:2.8rem;}
 .map .emergencyCall .text {font-size:1.6rem; color:#777; line-height:1.8rem; margin-top:0.8rem;}
-.map .emergencyCall .iconEmergency {display: flex; align-items: center; justify-content: center; width:24rem; height:24rem; margin:5.6rem auto 0; background:#292D32; border-radius:50%;}
-.map .emergencyCall .iconEmergency i {width:16rem; height:16rem; margin:0 auto; text-indent:-9999rem; background:#FD2020 url(../image/map/icon_emergency.png) no-repeat center/3.6rem auto; border-radius:50%;}
+.map .emergencyCall .round {display: flex; align-items: center; justify-content: center; width:24rem; height:24rem; margin:5.6rem auto 0; background:#FD2020; border-radius:50%;}
+.map .emergencyCall .countEmergency {display: flex; align-items: center; justify-content: center; width:16rem; height:16rem; background:#fff; border-radius:50%; animation: timer 5s linear infinite;}
+.map .emergencyCall .countEmergency .timer {font-size:4rem; font-weight:700; font-family: var(--fontRoboto); }
+
+@keyframes timer {
+  0% { transform: scale(1); opacity: 1;}
+  50% { transform: scale(0.9); opacity: 1;}
+  100% { transform: scale(1); opacity: 1;}
+}
 
 
 /* UI-SJN-50-007L */
