@@ -742,10 +742,10 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li button .text b.plus { color: #6684EA;}
 .map .transformBody .transformNavList li button .text b.minus { color: #FD2020;}
 
-.map .comparisonSlider {position: relative;width: 100%;margin: auto;user-select: none;overflow: hidden;touch-action: pan-x;}
+.map .comparisonSlider { position: relative;width: 100%; height: calc(100vh - 23rem); margin: auto;user-select: none;overflow: hidden;touch-action: pan-y;}
 .map .comparisonSlider .comparison {margin: 0;}
-.map .comparisonSlider .comparison.conBefore {position: absolute;top: 0;left: 0;height: 100%;clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);}
-.map .comparisonSlider .comparison > img {width: auto;height: 100%;display: block;object-fit: cover;pointer-events: none;}
+.map .comparisonSlider .comparison.conBefore {position: absolute;top: 0;left: 0; width: 100%; height: 100%;clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);}
+.map .comparisonSlider .comparison > img {width: 100%; height: 100%;display: block;object-fit: cover;pointer-events: none;}
 .map .comparisonSlider .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -50%); border-radius: 50%; transition: opacity .3s ease-in-out;}
 .map .comparisonSlider .gesture span { font-size: 1.4rem; color: #fff; text-align: center; text-indent: -9999rem; line-height: 2rem;}
 .map .comparisonSlider .gesture.hide { opacity: 0; z-index: -1;}

@@ -346,11 +346,13 @@ const comparison = {
 						const x = clientX - element.offsetTop;
 						let percentage = ((x / element.offsetHeight) * 10000) / 100;
 
+						console.log(percentage)
+
 						if (percentage >= 100) {
-								ercentage = 100;
+								percentage = 100;
 						}
-						if (percentage <= 0) {
-							percentage = 0;
+						if (percentage <= 9) {
+							percentage = 9;
 						}
 
 						slider.style.top = `${percentage}%`;
