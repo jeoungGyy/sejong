@@ -40,7 +40,7 @@
 						<div class="recentService">
 							<h3>최근 이용한 서비스</h3>
 							<div>
-								<nav id="homeNavSwiper" class="mainNav">
+								<nav id="homeNavSwiper" class="homeNav">
 									<div class="slideContainer">
 										<ul class="swiper-wrapper">
 											<li class="swiper-slide"><a href="#">메뉴1</a></li>
@@ -49,83 +49,14 @@
 											<li class="swiper-slide"><a href="#">메뉴4</a></li>
 											<li class="swiper-slide"><a href="#">메뉴5</a></li>
 											<li class="swiper-slide"><a href="#">메뉴6</a></li>
+											<li class="swiper-slide"><a href="#">메뉴7</a></li>
+											<li class="swiper-slide"><a href="#">메뉴8</a></li>
 										</ul>
 									<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 								</nav>
 								<script>
 									slider.active('homeNavSwiper')
 								</script>
-							</div>
-						</div>
-
-						<div class="boxWrap covid19">
-							<div class="boxArea">
-								<h3>코로나19 현황</h3>
-								<div class="body">
-									<div class="title">
-										<i></i>
-										<div>
-											<b class="cRed">일상회복 잠시 멈춤</b>
-											<span>사적모임 기존 8명 → <em class="cRed">4명까지로 변경</em></span>
-										</div>
-									</div>
-									<div class="boxTab menu">
-										<ul class="btnTab">
-											<li class="itemBtn"><button type="button" class="active">선별진료소</button></li>
-											<li class="itemBtn"><button type="button">확진현황</button></li>
-											<li><a href="#">호흡기전담클리닉</a></li>
-										</ul>
-										<div class="tabContent">
-											<!-- 선별진료소 -->
-											<div class="clinic active">
-												<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
-											</div>
-											<!-- //선별진료소 -->
-
-											<!-- 확진현황 -->
-											<div class="situation">
-												<p class="sDate">12.20 00:00 기준</p>
-												<div>
-													<img src="../../public/image/temp/tesm041.png" alt="확진현황 그래프 모양 샘플">
-												</div>
-											</div>
-											<!-- //확진현황 -->
-										</div>
-									</div>
-									<div class="lineBox">
-										<div class="operation">
-											<span class="round operation"><i class="split20"></i> 운영중</span> <b>세종시청 임시선별진료소</b>
-										</div>
-										<div class="infomation veryCrowd">
-											<div>
-												<b>매우혼잡</b>
-												<span>200명이상(90분 이상)</span>
-											</div>
-											<button type="button" class="guide"><i></i><b>길안내</b></button>
-										</div>
-									</div>
-									<div class="lineBox">
-										<div class="operation">
-											<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <b>세종시청 임시선별진료소</b>
-										</div>
-									</div>
-									<div class="button-more">
-										<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
-									</div>
-									<div class="offerer">
-										<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
-									</div>
-								</div>
-							</div>
-							<span class="roundDeco"></span>
-						</div>
-
-						<div class="boxWrap infection">
-							<div class="boxArea">
-								<button type="button" class="infectionBtn">
-									<span><i class="split24"></i> 감염위험이 있을까요?</span>
-									<b class="cBlue">동선안심체크</b>
-								</button>
 							</div>
 						</div>
 
@@ -263,8 +194,73 @@
 									</div>
 								</div>
 							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="329.777" height="328.825" viewBox="0 0 329.777 328.825" class="roundDeco">
+								<path d="M115,0A115,115,0,0,1,230,115c0,63.513-62.442,131.811-125.955,131.811S-18.779,185.411-18.779,121.9c0-29.279,50.051-28.834,68.27-49.361C70.356,49.026,80.767,0,115,0Z" transform="translate(121.326 7.936) rotate(25)"/>
+							</svg>
 						</div>
-						
+
+						<div class="boxWrap covid19">
+							<div class="boxArea">
+								<h3>코로나19 현황</h3>
+								<div class="body">
+									<div class="title">
+										<i></i>
+										<div>
+											<b class="cRed">일상회복 잠시 멈춤</b>
+											<span>사적모임 기존 8명 → <em class="cRed">4명까지로 변경</em></span>
+										</div>
+									</div>
+									<div class="boxTab menu">
+										<ul class="btnTab">
+											<li class="itemBtn"><button type="button" class="active">선별진료소</button></li>
+											<li class="itemBtn"><button type="button">확진현황</button></li>
+											<li><a href="#">호흡기전담클리닉</a></li>
+										</ul>
+										<div class="tabContent">
+											<!-- 선별진료소 -->
+											<div class="clinic active">
+												<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
+											</div>
+											<!-- //선별진료소 -->
+
+											<!-- 확진현황 -->
+											<div class="situation">
+												<p class="sDate">12.20 00:00 기준</p>
+												<div>
+													<img src="../../public/image/temp/tesm041.png" alt="확진현황 그래프 모양 샘플">
+												</div>
+											</div>
+											<!-- //확진현황 -->
+										</div>
+									</div>
+									<div class="lineBox">
+										<div class="operation">
+											<span class="round operation"><i class="split20"></i> 운영중</span> <button type="button" class="name"><span>세종시청 임시선별진료소임시선별진료소<i class="split20"></i></span></button>
+										</div>
+										<div class="infomation veryCrowd">
+											<b>매우<br />혼잡</b>
+											<span>200명이상(90분 이상)</span>
+										</div>
+									</div>
+									<div class="lineBox">
+										<div class="operation">
+											<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
+										</div>
+									</div>
+									<div class="button-more">
+										<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
+									</div>
+									<div class="offerer">
+										<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
+									</div>
+
+									<button type="button" class="infectionBtn">
+										<span><i class="split24"></i> 감염위험이 있을까요?</span>
+										<b class="cBlue">동선안심체크</b>
+									</button>
+								</div>
+							</div>
+						</div>
 
 						<div class="boxWrap mainNews">
 							<div class="boxArea">
@@ -332,6 +328,9 @@
 								</div>
 							</div>
 							<span class="roundDeco"></span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="293.277" height="307.141" viewBox="0 0 293.277 307.141" class="roundDeco">
+								<path d="M127.742,49.744C191.255,49.744,230,51.487,230,115A115,115,0,0,1,115,230c-54.748,0-92.546-25.675-104.213-77.2-1.792-7.914-24.568-60.759-24.568-69.523C-13.781,19.761,64.229,49.744,127.742,49.744Z" transform="matrix(0.574, -0.819, 0.819, 0.574, -27.051, 163.929)"/>
+							</svg>
 						</div>
 
 						<div class="boxWrap oilPrice">
@@ -366,7 +365,9 @@
 									</div>
 								</div>
 							</div>
-							<span class="roundDeco"></span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="184.671" height="198.556" viewBox="0 0 184.671 198.556" class="roundDeco">
+								<path d="M90,0c49.706,0,99.658,57.56,99.658,107.266,0,18.391-61.5.04-71.135,14.545-15.952,24.009-10.422,53.174-41.736,53.174C27.081,174.984,0,139.706,0,90A90,90,0,0,1,90,0Z" transform="translate(0 189.398) rotate(-87)"/>
+							</svg>
 						</div>
 
 						<div class="boxWrap hospital">
@@ -381,6 +382,9 @@
 								</div>
 							</div>
 							<span class="roundDeco"></span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="254.578" height="230" viewBox="0 0 254.578 230" class="roundDeco">
+								<path d="M115,0a115,115,0,0,1,0,230C51.487,230-24.578,187.038-24.578,123.525c0-33.344,54.8-30.977,77.684-52.178C73.406,52.539,84.831,0,115,0Z" transform="translate(24.578)"/>
+							</svg>
 						</div>
 
 						<div class="boxWrap weekClosed">
@@ -445,7 +449,7 @@
 					<button type="button" class="chatbot">민원<br />챗봇</button>
 				</div>
 				<script>
-					mainWeather.floating();
+					// mainWeather.floating();
 				</script>
 			</div>
 		</main>
