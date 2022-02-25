@@ -340,11 +340,9 @@ const comparison = {
 					requestAnimationFrame(() => {
 						ticking = false;
 
-						const clientX = event.clientY ?? event.touches[0].clientY;
-						const x = clientX - element.offsetTop;
-						let percentage = ((x / element.offsetHeight) * 10000) / 100;
-
-						console.log(percentage)
+						const clientY = event.clientY ?? event.touches[0].clientY;
+						const y = clientY - element.offsetTop;
+						let percentage = ((y / element.offsetHeight) * 10000) / 100;
 
 						if (percentage >= 100) {
 								percentage = 100;
