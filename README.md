@@ -3,14 +3,17 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
-### 02-23
+### 02-25
+- UI-SJN-09-001P 수정 - 축제 부분 슬라이더 추가
+
+### 02-24
 - UI-SJN-40-005U 수정 - 즐겨찾기 위치 조정
 - UI-SJN-40-008U 수정 - 휴대전화 부분 미비점 보완
 - UI-SJN-70-002L 등록
 - UI-SJN-70-003L 등록
 - UI-SJN-70-004L 등록
 
-### 02-22
+### 02-23
 - [공통] layer-message 등록 - 기본알림
 - UI-SJN-03-100U 등록
 - UI-SJN-04-008U 수정 - 태그 나오는 textarea 크기 조정

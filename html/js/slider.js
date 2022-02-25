@@ -123,6 +123,10 @@ const slideOpt = {
     slidesOffsetBefore : 20,
     slidesOffsetAfter: 20,
 	},
+	infoCalendarFestivalSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 20,
+	},
 	/* UI-SJN-13-002U */
 	infoNotesSwiper: {
     slidesPerView: 'auto',

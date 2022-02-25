@@ -1453,7 +1453,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-review li { padding-top: 0.8rem;}
 .items-review li ~ li { margin-top: 2.4rem; border-top: 1px solid #F4F5F7;}
 
-.items-festival { margin-top: 0.8rem;}
+.items-festival { overflow: hidden; margin-top: 0.8rem;}
 .items-festival figure img { width: 100%; height: auto; vertical-align: top;}
 .items-festival .flFlex { display: flex; justify-content: space-between; flex: 1; margin-top: 1.6rem ;}
 .items-festival .flFlex .flHeader h4 { font-size: 1.6rem;}
