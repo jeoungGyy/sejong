@@ -1460,10 +1460,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-festival .flFlex .flHeader p { margin-top: 0.8rem; color: #555;}
 .items-festival .flFlex .movie { width: 9.2rem; height: 5.2rem; margin-left: 1rem; background-color: #ddd;}
 
-.items-culture li { display: flex; justify-content: space-between;}
+.items-culture li a { display: flex; justify-content: space-between; color: #111;}
 .items-culture li ~ li { margin-top: 1.6rem;}
 .items-culture li figure { width: 12rem; height: 16rem; margin-right: 1.2rem;}
-.items-culture li .text { display: block; flex: 1; color: #111;}
+.items-culture li .text { flex: 1; color: #111;}
 .items-culture li .text h4 { font-size: 1.6rem;}
 .items-culture li .text .t { margin-top: 0.4rem; color: #555;}
 .items-culture li .text .st { margin-top: 0.8rem; color: #555; line-height: 2.2rem;}

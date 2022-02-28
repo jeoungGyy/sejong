@@ -3,6 +3,10 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 02-28
+- UI-SJN-03-006U 수정 - 포토갤러리, 언론보도 버튼 추가
+- UI-SJN-09-001P 수정 - 문화행사 코딩 수정 내용 말줄임 추가
+
 ### 02-25
 - UI-SJN-09-001P 수정 - 축제 부분 슬라이더 추가
 - UI-SJN-41-002L 수정 - 이미지 전후 비교 슬라이드 추가
