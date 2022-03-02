@@ -5,7 +5,7 @@
 .boderTopGray { border-top: 1px solid #EAEAEA;}
 
 /* UI-SJN-01-001U */
-.mainArea { overflow: hidden; padding: 0 2rem; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
+.mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
 .mainArea .repMenu { position: relative; margin-top: 1.6rem;}
 .mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
 .mainArea .repMenu::after { content: ''; position: absolute; right: -2rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
@@ -214,7 +214,7 @@
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
 .mainMenuFixed { position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
-.mainMenuFixed .mainMenu { position: fixed; left: 0; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
+.mainMenuFixed .mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 410px; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 .mainMenuFixed .mainMenu .mainMenuList ul { display: flex;}
 .mainMenuFixed .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
 .mainMenuFixed .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center;}
