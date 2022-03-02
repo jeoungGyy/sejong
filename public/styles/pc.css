@@ -94,6 +94,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 @media all and (max-width:1190px){
 
 .pcContainer { width: 100%;}
+.pcContainer .pcView { position: relative; right: inherit; margin: 0 auto;}
 .pcContents { display: none;}
 .pcDeco.poa6 { margin-left: -810px;}
 .pcDeco.poa7 { margin-left: -320px;}
