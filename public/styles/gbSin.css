@@ -194,7 +194,7 @@
 .mainMenuFixed { position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
 .mainMenuFixed .mainMenu { position: fixed; left: 0; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; height: 7rem; padding: 0 4rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 /* .mainMenuFixed .mainMenu .mainMenuList .swiper-wrapper { transform: translate3d(0px, 0, 0) !important;} */
-.mainMenuFixed .mainMenu .mainMenuList .slideContainer { width: 33.33%; margin: 0 auto;}
+.mainMenuFixed .mainMenu .mainMenuList .slideContainer { overflow: inherit; width: 33.33%; margin: 0 auto;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li { padding-top: 1.18rem;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button { display: block; width: 100%; text-align: center;}
 .mainMenuFixed .mainMenu .mainMenuList .slideContainer ul li button >span { display: inline-block; font-size: 1.2rem; color: #777;}
