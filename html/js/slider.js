@@ -30,17 +30,6 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
-	mainMenuSwiper: {
-    slidesPerView: 1,
-		// slideToClickedSlide : true,
-		// centeredSlides: true,
-		// longSwipes: true,
-		// longSwipesRatio: 5,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	},
 	/* UI-SJN-03-001U */
 	infoNavSwiper: {
     slidesPerView: 'auto',

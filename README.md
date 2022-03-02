@@ -3,6 +3,10 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 03-02
+- UI-SJN-01-001U 수정 - [공통] 푸터 슬라이드 제거 일반 코딩으로 전환
+- UI-SJN-08-001P 수정 - 글자 나타내는 부분 수정
+
 ### 02-28
 - UI-SJN-03-006U 수정 - 포토갤러리, 언론보도 버튼 추가
 - UI-SJN-09-001P 수정 - 문화행사 코딩 수정 내용 말줄임 추가
