@@ -344,17 +344,16 @@ const comparison = {
 						const y = clientY - element.offsetTop;
 						let percentage = ((y / element.offsetHeight) * 10000) / 100;
 
-						console.log(percentage)
-
 						if (percentage >= 100) {
-								percentage = 100;
+							percentage = 100;
 						}
 						if (percentage <= 0) {
 							percentage = 0;
 						}
-
-						slider.style.top = `${percentage}%`;
-						resizeElement.style.clipPath = `polygon(0 ${percentage}% , 100% ${percentage}%, 100% 100%, 0 100%)`;
+						if(y >= 54) {
+							slider.style.top = `${percentage}%`;
+							resizeElement.style.clipPath = `polygon(0 ${percentage}% , 100% ${percentage}%, 100% 100%, 0 100%)`;
+						}
 					});
 				}
 			};
