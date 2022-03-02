@@ -1,0 +1,146 @@
+/* 초기화
+**********************************************/
+
+/* Fonts */
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Pretendard/Pretendard-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/Pretendard/Pretendard-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Gmarket Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/GmarketSans/GmarketSansBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Roboto/Roboto-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
+}
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,dfn,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file], input[type=tel], input[type=search], input[type=url]  {
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	background:transparent;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-webkit-text-size-adjust : none;
+  -moz-text-size-adjust : none;
+  text-size-adjust : none;
+}
+body {
+	font: 16px/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+	color:#111;
+	letter-spacing: -0.04em;
+}
+
+a:link,
+a:visited { text-decoration:none;}
+ul, ol { list-style:none;}
+
+
+body { background-color: #c9e6ff;}
+#root { overflow: hidden; position: relative;} 
+.container { display: flex; overflow: hidden; width: 1190px; height: 100vh; margin: 0 auto;}
+.contents { flex: 1; position: relative; z-index: 10; padding-left: 20px;}
+.view { position: relative; z-index: 10; width: 381px; padding-right: 20px;}
+.view img { vertical-align: top; box-shadow: 0 10px 30px rgba(102 132 234 / 40%);}
+h1 { padding-top: 38px;}
+h1 img { vertical-align: top;}
+h2 { margin-top: 124px; font-family: "Gmarket Sans"; font-size: 52px; line-height: 67px;}
+h3 { font-size: 24px;}
+.infomation { margin-top: 73px;}
+.infomation ul { display: flex; align-items: center; margin-top: 21px;}
+.infomation ul li { margin-right: 20px; text-align: center;}
+.infomation ul li .box { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background-color: #fff; box-shadow: 0 10px 30px rgba(102 132 234 / 40%); border-radius: 24px;}
+.infomation ul li .text { display: block; margin-top: 10px;}
+.app { margin-top: 53px;}
+.app .links { display: flex; align-items: center; margin-top: 21px;}
+.app .links a { display: flex; align-items: center; justify-content: center; width: 178px; height: 56px; margin-right: 12px; background-color: #fff; box-shadow: 0 10px 30px rgba(102 132 234 / 40%); border-radius: 24px;}
+
+.deco { position: absolute; left: 50%; border-radius: 50%;}
+.deco.poa1 { top: -467px; z-index: 1; width: 1200px; height: 1200px; margin-left: 35px; background-color: #6684EA; animation:ani1 40s infinite ease;}
+.deco.poa2 { top: 580px; z-index: 2; width: 283px; height: 283px; margin-left: 455px; background-color: rgba(50 187 237 / 90%); animation:ani2 30s infinite ease;}
+.deco.poa3 { top: 215px; z-index: 3; width: 118px; height: 118px; margin-left: 800px; background-color: #7fffff; animation:ani3 20s infinite ease;}
+.deco.poa4 { top: 726px; z-index: 1; width: 800px; height: 800px; margin-left: -1310px; background-color: #ADEDDC; animation:ani4 20s infinite ease;}
+.deco.poa5 { top: 647px; z-index: 2; width: 262px; height: 262px; margin-left: -720px; background-color: rgba(255 255 255 / 70%); animation:ani5 30s infinite ease;}
+.deco.poa6 { top: 164px; z-index: 2; width: 81px; height: 81px; margin-left: -930px; background-color: rgba(255 255 255 / 80%); animation:ani6 20s infinite ease;}
+
+
+@keyframes ani1 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(0, -20px);}
+	30%{ transform:translate(-20px, -35px);}
+	50%{ transform:translate(-35px, -35px);}
+	70%{ transform:translate(-35px, 0);}
+	80%{ transform:translate(-25px, 0);}
+	100%{ transform:translate(0, );}
+}
+@keyframes ani2 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(10px, 10px);}
+	30%{ transform:translate(10px, 5px);}
+	50%{ transform:translate(15px, 5px);}
+	70%{ transform:translate(5px, 0);}
+	80%{ transform:translate(15px, 10px);}
+	100%{ transform:translate(0, );}
+}
+@keyframes ani3 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(0, 10px);}
+	30%{ transform:translate(10px, 25px);}
+	50%{ transform:translate(25px, 25px);}
+	70%{ transform:translate(25px, 0);}
+	80%{ transform:translate(15px, 0);}
+	100%{ transform:translate(0, );}
+}
+@keyframes ani4 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(0, -20px);}
+	30%{ transform:translate(-20px, -35px);}
+	50%{ transform:translate(-35px, -35px);}
+	70%{ transform:translate(-35px, 0);}
+	80%{ transform:translate(-25px, 0);}
+	100%{ transform:translate(0, );}
+}
+@keyframes ani5 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(0, 10px);}
+	30%{ transform:translate(10px, 25px);}
+	50%{ transform:translate(25px, 25px);}
+	70%{ transform:translate(25px, 0);}
+	80%{ transform:translate(15px, 0);}
+	100%{ transform:translate(0, );}
+}
+@keyframes ani6 {
+	0%{ transform:translate(0, 0);}
+	20%{ transform:translate(10px, 10px);}
+	30%{ transform:translate(10px, 5px);}
+	50%{ transform:translate(15px, 5px);}
+	70%{ transform:translate(5px, 0);}
+	80%{ transform:translate(15px, 10px);}
+	100%{ transform:translate(0, );}
+}
+
+
+
+
