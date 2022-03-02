@@ -729,7 +729,7 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li { width: 5.6rem;}
 .map .transformBody .transformNavList li button { display: block; align-items: center; justify-content: center; width: 100%;}
 .map .transformBody .transformNavList li button .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; border: 1px solid #F4F5F7;}
-.map .transformBody .transformNavList li button .box i { width: 4rem; height: 4rem; background: url(../image/map/split_satellite.png) no-repeat 0 0/24rem 4rem;}
+.map .transformBody .transformNavList li button .box i { width: 4rem; height: 4rem; background: url(../image/map/split_satellite.png) no-repeat 0 0/28rem 4rem;}
 .map .transformBody .transformNavList li button.apartment .box i { background-position-x: 0;}
 .map .transformBody .transformNavList li button.building .box i { background-position-x: -4rem;}
 .map .transformBody .transformNavList li button.baseballS .box i { background-position-x: -8rem;}
@@ -737,12 +737,13 @@ span.M { background-color: #FD2020;}
 .map .transformBody .transformNavList li button.tennisC .box i { background-position-x: -16rem;}
 .map .transformBody .transformNavList li button.forestA .box i { background-position-x: -20rem;}
 .map .transformBody .transformNavList li button.farmland .box i { background-position-x: -24rem;}
+.map .transformBody .transformNavList li button.farmland .box i { background-position-x: -24rem;}
 .map .transformBody .transformNavList li button .text { display: block; margin-top: 0.8rem; color: #555; letter-spacing: -0.1em;}
 .map .transformBody .transformNavList li button .text b { display: block; margin-top: 0.2rem; font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
 .map .transformBody .transformNavList li button .text b.plus { color: #6684EA;}
 .map .transformBody .transformNavList li button .text b.minus { color: #FD2020;}
 
-.map .comparisonSlider { position: relative;width: 100%; height: calc(100vh - 23rem); margin: auto;user-select: none;overflow: hidden;touch-action: pan-y;}
+.map .comparisonSlider { overflow: hidden; position: relative; width: 100%; height: calc(100vh - 23rem); margin: auto; user-select: none; touch-action: pan-y;}
 .map .comparisonSlider .comparison { position: absolute; top: 0;left: 0; width: 100%; height: 100%;}
 .map .comparisonSlider .comparison.conBefore {clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);}
 .map .comparisonSlider .comparison > img {width: 100%; height: 100%;display: block;object-fit: cover;pointer-events: none;}

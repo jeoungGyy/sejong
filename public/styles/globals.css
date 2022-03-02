@@ -1598,6 +1598,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-category >li .accordionMenu.culture::before { background-position: -19.2rem -6.4rem;}
 .items-category >li .accordionMenu.tourism::before { background-position: -22.4rem -6.4rem;}
 .items-category >li .accordionMenu.safety::before { background-position: -25.6rem -6.4rem;}
+.items-category >li .accordionMenu.communication::before { background-position: -28.8rem -6.4rem;}
+.items-category >li .accordionMenu.environment::before { background-position: -28.8rem -3.2rem;}
 .items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 28.8rem;}
 .items-category >li .accordionMenu span::before { content: '#';}
 .items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
