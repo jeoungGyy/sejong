@@ -5,7 +5,7 @@
 @media screen and (min-width: 300px) { html {font-size: 53.33%;}}
 @media screen and (min-width: 350px) { html {font-size: 62.5%;}}
 @media screen and (min-width: 412px) { html {font-size: 67%;}}
-/* @media screen and (min-width: 768px) { html {font-size: 80%;}} */
+@media screen and (min-width: 768px) { html {font-size: 80%;}}
 
 /* Fonts */
 @font-face {
@@ -121,10 +121,10 @@ table td { vertical-align: middle;}
 **********************************************/
 
 /* container */
-.container { max-width: 410px; padding: 5.6rem 0 2rem; margin: 0 auto;}
+.container { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
-.header { position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 410px; background-color: #fff;}
+.header { position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
@@ -382,7 +382,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .swiper-rtl .swiper-button-prev { right: -1.2rem; left: auto;}
 .swiper-slide-thumb-active figure {	border: 1px solid #000;}
 
-
+.swiper { all: unset; }
 
 
 
@@ -392,7 +392,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 **********************************************/
 
 /* 레이어공통 */
-.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: 0; opacity: 0; width: 100%; max-width: 410px; text-align: center; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
+.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: 0; opacity: 0; width: 100%; max-width: 57rem; text-align: center; background: rgba(0,0,0,0.25); outline: none; transition: opacity .3s;}
 .layerPopup::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
 .layerPopup.ready { display: block;}
 .layerPopup.show { opacity: 1;}

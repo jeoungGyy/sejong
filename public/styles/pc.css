@@ -91,6 +91,16 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 }
 
 
+
+/* PC에 맞게 모바일 크기 조정
+**********************************************/
+
+.container { max-width: 410px;}
+.header { max-width: 410px;}
+.layerPopup { max-width: 410px;}
+.mainMenuFixed .mainMenu { max-width: 410px;}
+
+
 @media all and (max-width:1190px){
 
 .pcContainer { width: 100%;}

@@ -214,7 +214,7 @@
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
 .mainMenuFixed { position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
-.mainMenuFixed .mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 410px; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
+.mainMenuFixed .mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 57rem; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 .mainMenuFixed .mainMenu .mainMenuList ul { display: flex;}
 .mainMenuFixed .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
 .mainMenuFixed .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center;}
