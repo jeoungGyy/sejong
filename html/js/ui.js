@@ -383,7 +383,6 @@ const comparison = {
 const mainWeather = {
 	weatherBoxY : null,
 	weatherBoxHeight : null,
-	test : false,
 	init : () => {
 		const weatherBox = document.querySelector(".weatherBox");
 		const weatherLink = document.querySelector(".weatherLink");
