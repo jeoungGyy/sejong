@@ -94,9 +94,9 @@
 .mainArea .dataConnect .cleanNetBtn i { margin-left: 0.4rem; background-position-x: -38rem;}
 .mainArea .dataConnect .textLinks { margin-top: 2.4rem;}
 .mainArea .dataConnect .textLinks li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
-.mainArea .dataConnect .textLinks li a { display: flex; align-items: center; color: #6684EA;}
-.mainArea .dataConnect .textLinks li a span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #4EC457; border-radius: 50%;}
-.mainArea .dataConnect .textLinks li a span i { background-position: -24rem -19.2rem;}
+.mainArea .dataConnect .textLinks li >div { display: flex; align-items: center; color: #6684EA;}
+.mainArea .dataConnect .textLinks li >div span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #4EC457; border-radius: 50%;}
+.mainArea .dataConnect .textLinks li >div span i { background-position: -24rem -19.2rem;}
 .mainArea .dataConnect .textLinks li ~ li { border-top: 1px solid #F2F2F2;}
 .mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
 

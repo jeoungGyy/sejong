@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 03-03
+- UI-SJN-03-002U 수정 - 코딩 수정
+
 ### 03-02
 - [공통] loading 등록 - 로딩바
 - UI-SJN-01-001U 수정 - [공통] 푸터 슬라이드 제거 일반 코딩으로 전환
