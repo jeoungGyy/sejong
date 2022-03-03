@@ -382,7 +382,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .swiper-rtl .swiper-button-prev { right: -1.2rem; left: auto;}
 .swiper-slide-thumb-active figure {	border: 1px solid #000;}
 
-.swiper { all: unset; }
+.swiper { overflow: initial;}
 
 
 
