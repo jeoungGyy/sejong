@@ -1644,7 +1644,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .hos >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .hos >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation li .hos .facilities { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
-.items-gasStation li .hos .facilities span { padding-left: 2.4rem; font-size: 1.3rem; color: #777;}
+.items-gasStation li .hos .facilities span { display: flex; height: 2rem; padding-left: 2.4rem; font-size: 1.3rem; color: #777; line-height: 2rem;}
 .items-gasStation li .hos .facilities span  ~ span { margin-left: 1rem;}
 .items-gasStation li .hos .facilities span.holiday { color: #FD2020; background: url(../image/map/ico_20_holiday.png) no-repeat left center/2rem;}
 .items-gasStation li .hos .facilities span.hospital { background: url(../image/map/ico_20_hospital.png) no-repeat left center/2rem;}
