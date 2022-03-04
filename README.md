@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 03-04
+- UI-SJN-07-001P 수정 - 탭 삭제, 메시먼지 버튼 추가
+
 ### 03-03
 - UI-SJN-03-002U 수정 - 코딩 수정
 - UI-SJN-83-003U 수정 - 코딩 수정
