@@ -169,6 +169,7 @@ body { --vh: 1px;}
 .mapIcons .evCharge .evChargeIco.reCharge i { background-color: #6684EA; background-position: -14.4rem -9.6rem;}
 .mapIcons .evCharge .evChargeIco.charging i { background-color: #4EC457; background-position: -14.4rem -9.6rem;}
 .mapIcons .evCharge .evChargeIco.overhaul i { background-color: #aaa; background-position: -14.4rem -9.6rem;}
+.mapIcons .evCharge .evChargeIco.operstop i { background-color: #aaa; background-position: -14.4rem -12rem;}
 .mapIcons .evCharge .evChargeIco.stop i { background-color: #aaa; background-position: -14.4rem -12rem;}
 .mapIcons .bikeCharge .bikeIco i { background-color: #32BBED; background-position: -16.8rem -9.6rem;}
 .mapIcons .cleanNetLot .cleanNetIco.normal i { background-color: #6684EA; background-position: -19.2rem -9.6rem;}
