@@ -102,6 +102,8 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .layerPopup { max-width: 410px;}
 .mainMenuFixed .mainMenu { max-width: 410px;}
 .mainMenuFixed .chatbot { position: fixed; right: inherit; margin-left: 340px;}
+.layerAlert { max-width: 410px;}
+
 
 
 @media all and (max-width:1190px){
