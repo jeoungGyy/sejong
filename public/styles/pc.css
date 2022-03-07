@@ -1,8 +1,10 @@
 /* 초기화
 **********************************************/
 
+@media screen and (min-width: 412px) { html {font-size: 67%;}}
+
 body {
-	font: 14px/1.4 'Noto Sans KR', sans-serif;
+	font: 15px/1.5 'Noto Sans KR', sans-serif;
 	color:#111;
 	font-weight: 400;
 	letter-spacing: -0.04em;

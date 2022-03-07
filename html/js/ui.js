@@ -25,7 +25,6 @@ const container = {
 	scrollAct : () => {
 		let containerWrap = document.querySelector('.container');
 		window.addEventListener('scroll', function(){
-			console.log(1)
 			if(container.currentTop > window.scrollY && window.scrollY+window.innerHeight < document.body.offsetHeight) {
 				if(containerWrap.classList.contains('scrollDown')) containerWrap.classList.remove('scrollDown');
 			} else {
