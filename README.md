@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 03-07
+- common_404 등록 - 404페이지
+
 ### 03-04
 - UI-SJN-07-001P 수정 - 탭 삭제, 메시먼지 버튼 추가
 - UI-SJN-30-006L 수정 - 부족한 콘텐츠 추가

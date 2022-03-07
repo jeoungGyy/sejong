@@ -368,6 +368,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
   100% { opacity: 0;}
 }
 
+/* 404 */
+.h404 { position: absolute; top: 50%; width: 100%; text-align: center; transform: translateY(-50%);}
+.h404 .icon { display: flex; align-items: center; justify-content: center; width: 8rem; height: 8rem; margin: 0 auto; background-color: #EAECEF; border-radius: 50%;}
+.h404 .icon i { width: 0.8rem; height: 3.6rem; background: url(../image/common/ico_404.png) no-repeat center/cover;}
+.h404 p { margin-top: 2rem; font-size: 1.6rem; color: #6D7179;}
 
 /* Swipe */
 .swiper-button-prev,
