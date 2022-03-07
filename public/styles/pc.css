@@ -14,7 +14,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 #pcRoot { position: relative;} 
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
 .pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}
-.pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 412px; margin: 0 auto; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%); border: 1px solid #ddd;}
+.pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 412px; margin: 0 auto; box-shadow: 0 10px 20px rgba(102 132 234 / 16%); border: 1px solid #ddd;}
 .pcContainer .pch1 { padding-top: 38px;}
 .pcContainer .pch1 img { vertical-align: top;}
 .pcContainer .pch2 { margin-top: 124px; font-size: 52px; line-height: 67px;}
@@ -101,6 +101,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .header { max-width: 410px;}
 .layerPopup { max-width: 410px;}
 .mainMenuFixed .mainMenu { max-width: 410px;}
+.mainMenuFixed .chatbot { position: fixed; right: inherit; margin-left: 340px;}
 
 
 @media all and (max-width:1190px){

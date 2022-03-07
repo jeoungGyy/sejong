@@ -234,7 +234,7 @@
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a .icon { display: none;}
-.mainMenuFixed .chatbot { display: block; position: fixed; right: 2rem; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
+.mainMenuFixed .chatbot { display: block; position: fixed; right: 50%; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
 .mainMenuFixed .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
 
 /* UI-SJN-02-001U */
