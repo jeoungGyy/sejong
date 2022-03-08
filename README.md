@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/sejong/html/guide/ia.html
 
 
+### 03-08
+- UI-SJN-03-001U ~ 6 - 상단 메뉴 부분 수정
+
 ### 03-07
 - common_404 등록 - 404페이지
 

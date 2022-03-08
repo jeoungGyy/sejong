@@ -125,6 +125,8 @@ table td { vertical-align: middle;}
 
 /* header */
 .header { position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;}
+.header.bgGreen { background-color: #4EC457;}
+.header.bgGreen h2 { color: #fff;}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
@@ -132,6 +134,8 @@ table td { vertical-align: middle;}
 .subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 28.8rem;}
 .subHeader .icoClose { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoClose i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
+.subHeader .icoNext { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center; transform: rotate(180deg);}
+.subHeader .icoNext i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev_map_wh.png) no-repeat center/cover;}
 .subHeader h2 { font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
 .subHeader .searchHeader { width: 74%;}
@@ -298,7 +302,7 @@ table td { vertical-align: middle;}
 
 /* 하단고정 */
 .bottomFixed { position: relative; padding-bottom: 8rem;}
-.bottomFixed .btnGroup { position: fixed; left: 0; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
+.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; max-width: 57rem; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
 .bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
 .bottomFixed .btnGroup .twins button:last-child { margin-left: 0.8rem;}

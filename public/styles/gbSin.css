@@ -26,6 +26,7 @@
 .mainArea .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
 .mainArea .recentService .homeNav ul li { width: 7.2rem;}
 .mainArea .recentService .homeNav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 7.2rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.mainArea .recentService.typeB { margin-top: 2rem;}
 .mainArea .boxWrap { position: relative;}
 .mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 2.4rem 1.6rem 3.2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 20%);}
 .mainArea .covid19 { margin-top: 3.2rem;}
@@ -213,11 +214,11 @@
 .home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #777; text-align: center;}
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
-.mainMenuFixed { position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
+.mainMenuFixed { overflow: hidden; position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
 .mainMenuFixed .mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 57rem; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 .mainMenuFixed .mainMenu .mainMenuList ul { display: flex;}
 .mainMenuFixed .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center;}
+.mainMenuFixed .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center; cursor: pointer;}
 .mainMenuFixed .mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #777;}
 .mainMenuFixed .mainMenu .mainMenuList ul li a >span .name { display: block; margin-top: 0.5rem;}
 .mainMenuFixed .mainMenu .mainMenuList ul li a br { display: none;}
