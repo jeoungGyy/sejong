@@ -153,6 +153,8 @@ const slideOpt = {
 	transformNavSwiper: {
     slidesPerView: 'auto',
 		spaceBetween: 8,
+		slidesOffsetBefore : 20,
+    slidesOffsetAfter: 20,
 	},
 	/* UI-SJN-42-002L */
 	reportReviewSwiper: {

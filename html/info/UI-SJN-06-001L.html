@@ -6,77 +6,90 @@
 </head>
 
 <body>
-<div id="root">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
 	
-		<!-- 레이어 -->
-		<div id="layerLife" class="layerPopup">
-			<div class="layerWrap full">
-				<div class="headerBtn">
-					<h2>생활정보</h2>
-					<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-				</div>
-				<div class="fullFlex infoLayer bgGray">
-					<header class="header-large">
-						<h3>생활민원 기동 처리반, <span class="style">척척 세종</span></h3>
-						<div class="operation">
-							<span class="box">운영</span> 9시 ~ 18시 (평일만)
-						</div>
-					</header>
-	
-					<div class="compArea">
-						<div class="caCon">
-							<h4>생활민원</h4>
-							<div class="caItem">
-								<div class="service">
-									<span class="box">서비스대상</span>
-								</div>
-								<ul class="caList">
-									<li><span class="gray">65세 이상</span> 독거노인</li>
-									<li><span class="gray">[국민기초 생활보장법]에 따른</span> 수급자</li>
-									<li><span class="gray">[장애인 복지법]에 따른 1급 ~3급까지</span> 중증 장애인</li>
-									<li><span class="gray">[한부모 가족지원법]에 따른</span> 한부모 가족</li>
-									<li><span class="gray">65세이상 조부모와 만18세 이하인 손자녀로 구성된</span> 조손가정</li>
-									<li><span class="gray">그 밖의</span> 저소득층 <span class="gray">으로 거주지</span> 읍·면·동장의 추천 받은 사람</li>
-									<li>마을회관 및 경로당<br /><span class="orange">제외</span> (관리주체가 있는 시설, 아파트 단지내 시설 제외)</li>
-								</ul>
+					<!-- 레이어 -->
+					<div id="layerLife" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>생활정보</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 							</div>
-							<div class="caItem">
-								<div class="service">
-									<span class="box">서비스범위</span> <strong>재료비 5만원 <span class="gray">이내 수리비</span></strong>
-								</div>
-								<ul class="caList">
-									<li><span class="orange">제외</span> <span class="gray">신규설치, 가전제품 수리, 보일러, 광범위 집수리등</span></li>
-								</ul>
-							</div>
-						</div>
-	
-						<div class="caCon">
-							<h4>공공시설물</h4>
-							<div class="caItem">
-								<div class="service">
-									<span class="box">서비스대상</span>
-								</div>
-								<ul class="caList">
-									<li><span class="gray">파손된 도로·교통시설물 등</span> 소규모 공공시설물</li>
-								</ul>
-							</div>
-							<div class="caItem">
-								<div class="service">
-									<span class="box">서비스범위</span> <strong>재료비 30만원 <span class="gray">이내 수리비</span></strong>
+							<div class="fullFlex infoLayer bgGray">
+								<header class="header-large">
+									<h3>생활민원 기동 처리반, <span class="style">척척 세종</span></h3>
+									<div class="operation">
+										<span class="box">운영</span> 9시 ~ 18시 (평일만)
+									</div>
+								</header>
+				
+								<div class="compArea">
+									<div class="caCon">
+										<h4>생활민원</h4>
+										<div class="caItem">
+											<div class="service">
+												<span class="box">서비스대상</span>
+											</div>
+											<ul class="caList">
+												<li><span class="gray">65세 이상</span> 독거노인</li>
+												<li><span class="gray">[국민기초 생활보장법]에 따른</span> 수급자</li>
+												<li><span class="gray">[장애인 복지법]에 따른 1급 ~3급까지</span> 중증 장애인</li>
+												<li><span class="gray">[한부모 가족지원법]에 따른</span> 한부모 가족</li>
+												<li><span class="gray">65세이상 조부모와 만18세 이하인 손자녀로 구성된</span> 조손가정</li>
+												<li><span class="gray">그 밖의</span> 저소득층 <span class="gray">으로 거주지</span> 읍·면·동장의 추천 받은 사람</li>
+												<li>마을회관 및 경로당<br /><span class="orange">제외</span> (관리주체가 있는 시설, 아파트 단지내 시설 제외)</li>
+											</ul>
+										</div>
+										<div class="caItem">
+											<div class="service">
+												<span class="box">서비스범위</span> <strong>재료비 5만원 <span class="gray">이내 수리비</span></strong>
+											</div>
+											<ul class="caList">
+												<li><span class="orange">제외</span> <span class="gray">신규설치, 가전제품 수리, 보일러, 광범위 집수리등</span></li>
+											</ul>
+										</div>
+									</div>
+				
+									<div class="caCon">
+										<h4>공공시설물</h4>
+										<div class="caItem">
+											<div class="service">
+												<span class="box">서비스대상</span>
+											</div>
+											<ul class="caList">
+												<li><span class="gray">파손된 도로·교통시설물 등</span> 소규모 공공시설물</li>
+											</ul>
+										</div>
+										<div class="caItem">
+											<div class="service">
+												<span class="box">서비스범위</span> <strong>재료비 30만원 <span class="gray">이내 수리비</span></strong>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<script>
+						layerPopup.open('layerLife');
+					</script>
+					<!-- //레이어 -->
+			
 				</div>
 			</div>
+			<!-- //모바일 내용 -->
+
 		</div>
-		<script>
-			layerPopup.open('layerLife');
-		</script>
-		<!-- //레이어 -->
-
-
 	</div>
 </div>
 </body>

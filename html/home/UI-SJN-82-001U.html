@@ -6,101 +6,115 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents mypage"> <!-- [내정보 Class] mypage-->
-			<h2 class="visible"><div class="headerClone">자주하는 질문</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="mypageWrap">
-				<div class="faqTabBody">
-					<ul class="nav-faq">
-						<li><button type="button" class="active">전체</button></li>
-						<li><button type="button">스마트맵</button></li>
-						<li><button type="button">생활정보</button></li>
-						<li><button type="button">기타</button></li>
-					</ul>
-				</div>
-
-				<div class="accordionBox">
-					<ul class="items-faq accordionContainer">
-						<li>
-							<button type="button" class="accordionMenu btn" title="축소됨">
-								<span class="head">Q1</span>
-								<span class="div cBlue">스마트맵</span>
-								<span class="title">승하차 알림은 어떻게 사용해요?</span>
-								<i></i>
-							</button>
-							<div class="accordionTarget">
-								<div class="tHead">
-									<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
-								</div>
-								<div class="tInfo">
-									<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
+					<!-- 본문 -->
+					<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+						<h2 class="visible"><div class="headerClone">자주하는 질문</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mypageWrap">
+							<div class="faqTabBody">
+								<ul class="nav-faq">
+									<li><button type="button" class="active">전체</button></li>
+									<li><button type="button">스마트맵</button></li>
+									<li><button type="button">생활정보</button></li>
+									<li><button type="button">기타</button></li>
+								</ul>
+							</div>
+			
+							<div class="accordionBox">
+								<ul class="items-faq accordionContainer">
+									<li>
+										<button type="button" class="accordionMenu btn" title="축소됨">
+											<span class="head">Q1</span>
+											<span class="div cBlue">스마트맵</span>
+											<span class="title">승하차 알림은 어떻게 사용해요?</span>
+											<i></i>
+										</button>
+										<div class="accordionTarget">
+											<div class="tHead">
+												<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
+											</div>
+											<div class="tInfo">
+												<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button type="button" class="accordionMenu btn" title="축소됨">
+											<span class="head">Q2</span>
+											<span class="div cBlue">스마트맵</span>
+											<span class="title">승하차 알림은 어떻게 사용해요 승하차 알림은 어떻게 사용해요?</span>
+											<i></i>
+										</button>
+										<div class="accordionTarget">
+											<div class="tHead">
+												<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
+											</div>
+											<div class="tInfo">
+												<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button type="button" class="accordionMenu btn" title="축소됨">
+											<span class="head">Q3</span>
+											<span class="div cGreen">생활정보</span>
+											<span class="title">가게를 홍보하고 싶어요.</span>
+											<i></i>
+										</button>
+										<div class="accordionTarget">
+											<div class="tHead">
+												<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
+											</div>
+											<div class="tInfo">
+												<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<button type="button" class="accordionMenu btn" title="축소됨">
+											<span class="head">Q4</span>
+											<span class="div cGray">기타</span>
+											<span class="title">프로필은 어떻게 바꾸나요?</span>
+											<i></i>
+										</button>
+										<div class="accordionTarget">
+											<div class="tHead">
+												<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
+											</div>
+											<div class="tInfo">
+												<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+			
+								<div class="button-moreNews">
+									<button type="button" class="btn"><span>더보기</span></button>
 								</div>
 							</div>
-						</li>
-						<li>
-							<button type="button" class="accordionMenu btn" title="축소됨">
-								<span class="head">Q2</span>
-								<span class="div cBlue">스마트맵</span>
-								<span class="title">승하차 알림은 어떻게 사용해요 승하차 알림은 어떻게 사용해요?</span>
-								<i></i>
-							</button>
-							<div class="accordionTarget">
-								<div class="tHead">
-									<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
-								</div>
-								<div class="tInfo">
-									<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<button type="button" class="accordionMenu btn" title="축소됨">
-								<span class="head">Q3</span>
-								<span class="div cGreen">생활정보</span>
-								<span class="title">가게를 홍보하고 싶어요.</span>
-								<i></i>
-							</button>
-							<div class="accordionTarget">
-								<div class="tHead">
-									<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
-								</div>
-								<div class="tInfo">
-									<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<button type="button" class="accordionMenu btn" title="축소됨">
-								<span class="head">Q4</span>
-								<span class="div cGray">기타</span>
-								<span class="title">프로필은 어떻게 바꾸나요?</span>
-								<i></i>
-							</button>
-							<div class="accordionTarget">
-								<div class="tHead">
-									<p>로그인 한 후, 내 정보 상단에 프로필 사진을 터치하여 바꿀 수 있습니다.</p>
-								</div>
-								<div class="tInfo">
-									<p>도시통합정보센터(044-300-2499) 2021-12-12</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-
-					<div class="button-moreNews">
-						<button type="button" class="btn"><span>더보기</span></button>
-					</div>
+						</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

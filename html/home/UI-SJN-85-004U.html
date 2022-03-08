@@ -6,33 +6,47 @@
 </head>
 
 <body>
-<div id="root">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
 
-		<!-- 레이어 -->
-		<div id="layerFingerprint" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="securityLayer">
-					<div class="fingerprint">
-						<i></i>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+					<!-- 레이어 -->
+					<div id="layerFingerprint" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="securityLayer">
+								<div class="fingerprint">
+									<i></i>
+								</div>
+								<div class="fingerprint complete">
+									<i></i>
+								</div>
+								<div class="guide">
+									<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
+									<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
+								</div>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</div>
 					</div>
-					<div class="fingerprint complete">
-						<i></i>
-					</div>
-					<div class="guide">
-						<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
-						<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
-					</div>
+					<script>
+						layerPopup.open('layerFingerprint');
+					</script>
+					<!-- //레이어 -->
+			
 				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 			</div>
-		</div>
-		<script>
-			layerPopup.open('layerFingerprint');
-		</script>
-		<!-- //레이어 -->
+			<!-- //모바일 내용 -->
 
-		
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -6,96 +6,110 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents openApi"> <!-- [오픈API Class] openApi-->
-			<h2 class="visible"><div class="headerClone">오픈API 상세 내용</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="openApiWrap">
-				<div class="bottomFixed bgGray">
-					<div class="explain-default">
-						<h3>세종시 블로그 정보</h3>
-						<div class="whiteBox">
-							<h4>기본정보</h4>
-							<ul>
-								<li>
-									<strong>서비스명</strong>
-									<div class="detail">
-										<span>CCTV 위치정보</span>
+					<!-- 본문 -->
+					<main class="contents openApi"> <!-- [오픈API Class] openApi-->
+						<h2 class="visible"><div class="headerClone">오픈API 상세 내용</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="openApiWrap">
+							<div class="bottomFixed bgGray">
+								<div class="explain-default">
+									<h3>세종시 블로그 정보</h3>
+									<div class="whiteBox">
+										<h4>기본정보</h4>
+										<ul>
+											<li>
+												<strong>서비스명</strong>
+												<div class="detail">
+													<span>CCTV 위치정보</span>
+												</div>
+											</li>
+											<li>
+												<strong>심의여부</strong>
+												<div class="detail">
+													<span>자동승인</span>
+												</div>
+											</li>
+											<li>
+												<strong>심의여부</strong>
+												<div class="detail">
+													<span>신청</span>
+												</div>
+											</li>
+											<li>
+												<strong>심의여부</strong>
+												<div class="detail">
+													<span>승인일로부터 <span class="cBlue">24개월</span></span>
+												</div>
+											</li>
+										</ul>
 									</div>
-								</li>
-								<li>
-									<strong>심의여부</strong>
-									<div class="detail">
-										<span>자동승인</span>
-									</div>
-								</li>
-								<li>
-									<strong>심의여부</strong>
-									<div class="detail">
-										<span>신청</span>
-									</div>
-								</li>
-								<li>
-									<strong>심의여부</strong>
-									<div class="detail">
-										<span>승인일로부터 <span class="cBlue">24개월</span></span>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<div class="whiteBox">
-							<h4 id="use">활용목적<span class="required">필수</span></h4>
-							<div class="radiogroupBody">
-								<div class="radiogroup" role="radiogroup" aria-labelledby="use">
-									<input type="radio" id="temp1" name="radio"><label for="temp1">웹개발</label>
-									<input type="radio" id="temp2" name="radio"><label for="temp2">앱개발</label>
-									<input type="radio" id="temp3" name="radio"><label for="temp3">연구(논문 등)</label>
-									<input type="radio" id="temp4" name="radio"><label for="temp4">참고자료</label>
-									<input type="radio" id="temp5" name="radio"><label for="temp5">기타</label>
-								</div>
-								<input type="text" placeholder="기타 활용 목적을 입력하세요">
-							</div>
-						</div>
-
-						<div class="whiteBox">
-							<h4 id="use">라이센스 표시<span class="required">필수</span></h4>
-							<div>
-								<ul>
-									<li>
-										<strong class="large normal">이용허락범위</strong>
-										<div class="detail textRight">
-											<span><b>출처표시 및 상업적 이용금지</b></span>
+			
+									<div class="whiteBox">
+										<h4 id="use">활용목적<span class="required">필수</span></h4>
+										<div class="radiogroupBody">
+											<div class="radiogroup" role="radiogroup" aria-labelledby="use">
+												<input type="radio" id="temp1" name="radio"><label for="temp1">웹개발</label>
+												<input type="radio" id="temp2" name="radio"><label for="temp2">앱개발</label>
+												<input type="radio" id="temp3" name="radio"><label for="temp3">연구(논문 등)</label>
+												<input type="radio" id="temp4" name="radio"><label for="temp4">참고자료</label>
+												<input type="radio" id="temp5" name="radio"><label for="temp5">기타</label>
+											</div>
+											<input type="text" placeholder="기타 활용 목적을 입력하세요">
 										</div>
-									</li>
-								</ul>
-								<div class="agree">
-									<span class="cBlue">동의합니다</span>
-									<div class="switch">
-										<input type="checkbox" id="switch0" title="라이센스 동의">
-										<label for="switch0"></label>
+									</div>
+			
+									<div class="whiteBox">
+										<h4 id="use">라이센스 표시<span class="required">필수</span></h4>
+										<div>
+											<ul>
+												<li>
+													<strong class="large normal">이용허락범위</strong>
+													<div class="detail textRight">
+														<span><b>출처표시 및 상업적 이용금지</b></span>
+													</div>
+												</li>
+											</ul>
+											<div class="agree">
+												<span class="cBlue">동의합니다</span>
+												<div class="switch">
+													<input type="checkbox" id="switch0" title="라이센스 동의">
+													<label for="switch0"></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+			
+								<div class="btnGroup">
+									<div class="twins">
+										<button type="button" class="button whiteLine">취소</button>
+										<button type="button" class="button blue">신청</button>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="btnGroup">
-						<div class="twins">
-							<button type="button" class="button whiteLine">취소</button>
-							<button type="button" class="button blue">신청</button>
-						</div>
-					</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

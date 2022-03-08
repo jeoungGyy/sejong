@@ -6,136 +6,150 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">주차장</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="mapArea subStyle">
-					<!-- 기타 아이콘들 -->
-					<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
-						<button type="button" class="btnPin"><i>핀</i></button>
-						<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
-
-						<!-- 마커 -->
-						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-							<div><span></span></div>
-						</div>
-						<!-- //마커 -->
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">주차장</div></h2> <!-- [헤더에 넣어줄 제목] -->
 						
-						<div class="parkingLot">
-							<span class="commIco24 mapIco pin active" style="left: 32rem; top: 20rem;"><i class="split24">주차장</i></span> <!-- active 추가 시 녹색으로 변경됩니다. -->
-							<span class="commIco24 mapIco pin" style="left: 25rem; top: 20rem;"><i class="split24">주차장</i></span>
-							<span class="commIco24 mapIco pin" style="left: 30rem; top: 40rem;"><i class="split24">주차장</i></span>
-						</div>
-
-						<div class="parkingPinSet">
-							<button type="button" class="btnParking" style="left: 10rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');">
-								<i>센터주차장</i>
-								<span class="textBox bgGreen"><i class="split24"></i><span class="ellipsis">공영주차장</span></span>
-							</button>
-							<button type="button" class="btnParking" style="left: 30rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');" >
-								<i>세종주차장</i>
-								<span class="textBox bgGray"><i class="split24"></i><span class="ellipsis">공영주차장 공영주차장</span></span>
-							</button>
-						</div>
-
-						<div class="location">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
+						<div class="mapWrap">
+							<div class="mapArea subStyle">
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
+									<button type="button" class="btnPin"><i>핀</i></button>
+									<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+			
+									<!-- 마커 -->
+									<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+										<div><span></span></div>
+									</div>
+									<!-- //마커 -->
+									
+									<div class="parkingLot">
+										<span class="commIco24 mapIco pin active" style="left: 32rem; top: 20rem;"><i class="split24">주차장</i></span> <!-- active 추가 시 녹색으로 변경됩니다. -->
+										<span class="commIco24 mapIco pin" style="left: 25rem; top: 20rem;"><i class="split24">주차장</i></span>
+										<span class="commIco24 mapIco pin" style="left: 30rem; top: 40rem;"><i class="split24">주차장</i></span>
+									</div>
+			
+									<div class="parkingPinSet">
+										<button type="button" class="btnParking" style="left: 10rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');">
+											<i>센터주차장</i>
+											<span class="textBox bgGreen"><i class="split24"></i><span class="ellipsis">공영주차장</span></span>
+										</button>
+										<button type="button" class="btnParking" style="left: 30rem; top: 30rem;" onclick="parkingTip.open('parkingPinSet');" >
+											<i>세종주차장</i>
+											<span class="textBox bgGray"><i class="split24"></i><span class="ellipsis">공영주차장 공영주차장</span></span>
+										</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
+								</div>
+								<!-- //기타 아이콘들 -->
+			
+			
+								<!-- 메뉴 -->
+								<div id="parkingPinSet" class="mapMenuLayer" tabindex="0">
+									<div class="mapMenuBody">
+										<nav>
+											<ul>
+												<li>
+													<button type="button" class="btn"><span>핀고정</span></button>
+												</li>
+												<li>
+													<a href="#" class="btn"><span>리뷰</span></a>
+												</li>
+												<li>
+													<a href="#" class="btn"><span>길찾기</span></a>
+												</li>
+												<li>
+													<a href="#" class="btn"><i></i><span>영상</span></a>
+												</li>
+												<li>
+													<a href="#" class="btn"><i></i><span>이미지</span></a>
+												</li>
+												<li>
+													<a href="#" class="btn"><i></i><span>검색</span></a>
+												</li>
+											</ul>
+										</nav>
+										<div class="parkingName">
+											<b class="t">센터주차장</b>
+											<b class="cBlue">70면</b>
+										</div>
+									</div>
+								</div>
+								<!-- //메뉴 -->
+			
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer">
+									<div class="myArea paddingDefault">
+										<div class="mapIHead"> <!-- 주유소 정보 oil 추가 -->
+											<button type="button" class="btnMapInfo">정보영역</button>
+										</div>
+										
+										<section class="centerSec">
+											<div class="center">
+												<button type="button" class="favorite active">즐겨찾기</button>
+												<h3>센터주차장</h3>
+											</div>
+											<div class="address">
+												<span>세종특별자치시 세종로 1328</span>
+											</div>
+											<div class="infomation">
+												<span>주차면 <b class="cBlue">70면</b></span>
+												<span>요금 <b class="free">무료</b><b class="paid">유료</b></span>
+												<span>운영구분 <b class="cBlack">공영</b></span>
+											</div>
+											<div class="etc">
+												<span>운영시간 평일 08:00 ~ 23:00</span> 
+												<span>공휴일 08:00 ~ 08:00</span>
+											</div>
+											<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
+											<div class="btns">
+												<a href="tel:010-1234-5678" class="call"><i></i><span>전화걸기</span></a>
+												<button type="button" class="aroundIfo"><i></i><span>주변정보</span></button>
+												<button type="button" class="share"><i></i><span>공유</span></button>
+												<button type="button" class="directions"><i></i><span>길안내</span></button>
+											</div>
+										</section>
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
-					</div>
-					<!-- //기타 아이콘들 -->
-
-
-					<!-- 메뉴 -->
-					<div id="parkingPinSet" class="mapMenuLayer" tabindex="0">
-						<div class="mapMenuBody">
-							<nav>
-								<ul>
-									<li>
-										<button type="button" class="btn"><span>핀고정</span></button>
-									</li>
-									<li>
-										<a href="#" class="btn"><span>리뷰</span></a>
-									</li>
-									<li>
-										<a href="#" class="btn"><span>길찾기</span></a>
-									</li>
-									<li>
-										<a href="#" class="btn"><i></i><span>영상</span></a>
-									</li>
-									<li>
-										<a href="#" class="btn"><i></i><span>이미지</span></a>
-									</li>
-									<li>
-										<a href="#" class="btn"><i></i><span>검색</span></a>
-									</li>
-								</ul>
-							</nav>
-							<div class="parkingName">
-								<b class="t">센터주차장</b>
-								<b class="cBlue">70면</b>
-							</div>
-						</div>
-					</div>
-					<!-- //메뉴 -->
-
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어-->
 					
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer">
-						<div class="myArea paddingDefault">
-							<div class="mapIHead"> <!-- 주유소 정보 oil 추가 -->
-								<button type="button" class="btnMapInfo">정보영역</button>
-							</div>
-							
-							<section class="centerSec">
-								<div class="center">
-									<button type="button" class="favorite active">즐겨찾기</button>
-									<h3>센터주차장</h3>
-								</div>
-								<div class="address">
-									<span>세종특별자치시 세종로 1328</span>
-								</div>
-								<div class="infomation">
-									<span>주차면 <b class="cBlue">70면</b></span>
-									<span>요금 <b class="free">무료</b><b class="paid">유료</b></span>
-									<span>운영구분 <b class="cBlack">공영</b></span>
-								</div>
-								<div class="etc">
-									<span>운영시간 평일 08:00 ~ 23:00</span> 
-									<span>공휴일 08:00 ~ 08:00</span>
-								</div>
-								<h3 class="name">해밀마을세종마스터힐스 개인이동수단</h3>
-								<div class="btns">
-									<a href="tel:010-1234-5678" class="call"><i></i><span>전화걸기</span></a>
-									<button type="button" class="aroundIfo"><i></i><span>주변정보</span></button>
-									<button type="button" class="share"><i></i><span>공유</span></button>
-									<button type="button" class="directions"><i></i><span>길안내</span></button>
-								</div>
-							</section>
-						</div>
-					</div>
-					<!-- //정보 영역 -->
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
+					<!-- //레이어-->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
 
-		<!-- 레이어-->
-		
-		<!-- //레이어-->
+		</div>
 	</div>
 </div>
 </body>

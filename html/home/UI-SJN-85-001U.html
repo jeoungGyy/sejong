@@ -6,228 +6,242 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents mypage"> <!-- [내정보 Class] mypage-->
-			<h2 class="visible"><div class="headerClone">잠금설정</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="mypageWrap">
-				<div class="mypageArea">
-					<div class="section">
-						<div class="heading headA">
-							<h3>내 계정 정보</h3>
-							<div class="setting">
-								<button type="button"><span>알림설정</span></button>
+					<!-- 본문 -->
+					<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+						<h2 class="visible"><div class="headerClone">잠금설정</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mypageWrap">
+							<div class="mypageArea">
+								<div class="section">
+									<div class="heading headA">
+										<h3>내 계정 정보</h3>
+										<div class="setting">
+											<button type="button"><span>알림설정</span></button>
+										</div>
+									</div>
+									<div class="box">
+										<p>이세종</p>
+										<p>연결(ID) Smartsejoing</p>
+									</div>
+								</div>
+			
+								<div class="section">
+									<div class="heading headB">
+										<h3>자동 로그인</h3>
+										<div class="switch">
+											<input type="checkbox" id="switch0" title="자동 로그인">
+											<label for="switch0"></label>
+										</div>
+									</div>
+									<div class="pragraph">
+										<p>신속하게 다양한 서비스를 이용할 수 있습니다.</p>
+									</div>
+								</div>
+			
+								<div class="section">
+									<div class="heading headC">
+										<h3>간편 로그인 설정</h3>
+									</div>
+									<ul class="securityList">
+										<li>
+											<input type="radio" id="list0" name="redio" />
+											<label for="list0" onclick="layerPopup.open('layerNumber');">
+												<i class="ico icoA"></i>
+												<span>간편비밀번호</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="list1" name="redio" />
+											<label for="list1" onclick="layerPopup.open('layerPattern');">
+												<i class="ico icoB"></i>
+												<span>패턴</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="list2" name="redio" />
+											<label for="list2" onclick="layerPopup.open('layerFingerprint');">
+												<i class="ico icoC"></i>
+												<span>지문</span>
+											</label>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="box">
-							<p>이세종</p>
-							<p>연결(ID) Smartsejoing</p>
-						</div>
-					</div>
-
-					<div class="section">
-						<div class="heading headB">
-							<h3>자동 로그인</h3>
-							<div class="switch">
-								<input type="checkbox" id="switch0" title="자동 로그인">
-								<label for="switch0"></label>
+					</main>
+					<!-- //본문 -->
+			
+			
+					<!-- 레이어 -->
+					<!-- 간편번호 입력 -->
+					<div id="layerNumber" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="securityLayer">
+								<h4 class="head">간편번호를 입력하세요</h4>
+								<div>
+									<div class="password">
+										<input type="password" value="1" class="active" /> <!-- 값이 있을경우 active 클래스 넣어주세요. -->
+										<input type="password" />
+										<input type="password" />
+										<input type="password" />
+									</div>
+									<ol class="number">
+										<li>
+											<button type="button">
+												<span class="n">1</span>
+												<span class="t"></span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">2</span>
+												<span class="t">ABC</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">3</span>
+												<span class="t">DEF</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">4</span>
+												<span class="t">GHI</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">5</span>
+												<span class="t">JKL</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">6</span>
+												<span class="t">MNO</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">7</span>
+												<span class="t">PQRS</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">8</span>
+												<span class="t">TUV</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">9</span>
+												<span class="t">WXYZ</span>
+											</button>
+										</li>
+										<li>
+											<button type="button">
+												<span class="n">0</span>
+												<span class="t"></span>
+											</button>
+										</li>
+									</ol>
+								</div>
 							</div>
-						</div>
-						<div class="pragraph">
-							<p>신속하게 다양한 서비스를 이용할 수 있습니다.</p>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 						</div>
 					</div>
-
-					<div class="section">
-						<div class="heading headC">
-							<h3>간편 로그인 설정</h3>
+					<!-- //간편번호 입력 -->
+			
+					<!-- 패턴 입력 -->
+					<div id="layerPattern" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="securityLayer">
+								<h4 class="head">변경 패턴 입력</h4>
+								<div>
+									<div>
+										<ol class="pattern">
+											<li>
+												<button type="button" class="active">1</button>
+											</li>
+											<li>
+												<button type="button" class="active">2</button>
+											</li>
+											<li>
+												<button type="button" class="active">3</button>
+											</li>
+											<li>
+												<button type="button">4</button>
+											</li>
+											<li>
+												<button type="button">5</button>
+											</li>
+											<li>
+												<button type="button">6</button>
+											</li>
+											<li>
+												<button type="button">7</button>
+											</li>
+											<li>
+												<button type="button">8</button>
+											</li>
+											<li>
+												<button type="button">9</button>
+											</li>
+										</ol>
+									</div>
+									<div class="guide">
+										<p class="textext"><span>4개 이상의 점을 연결해 주세요</span></p>
+										<!-- <p class="textext complete"><span>패턴 등록이 완료 되었습니다</span></p> -->
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 						</div>
-						<ul class="securityList">
-							<li>
-								<input type="radio" id="list0" name="redio" />
-								<label for="list0" onclick="layerPopup.open('layerNumber');">
-									<i class="ico icoA"></i>
-									<span>간편비밀번호</span>
-								</label>
-							</li>
-							<li>
-								<input type="radio" id="list1" name="redio" />
-								<label for="list1" onclick="layerPopup.open('layerPattern');">
-									<i class="ico icoB"></i>
-									<span>패턴</span>
-								</label>
-							</li>
-							<li>
-								<input type="radio" id="list2" name="redio" />
-								<label for="list2" onclick="layerPopup.open('layerFingerprint');">
-									<i class="ico icoC"></i>
-									<span>지문</span>
-								</label>
-							</li>
-						</ul>
 					</div>
+					<!-- //패턴 입력 -->
+			
+					<!-- 지문 입력 -->
+					<div id="layerFingerprint" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="securityLayer">
+								<div class="fingerprint">
+									<i></i>
+								</div>
+								<div class="fingerprint complete">
+									<i></i>
+								</div>
+								<div class="guide">
+									<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
+									<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
+								</div>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</div>
+					</div>
+					<!-- //지문 입력 -->
+					<!-- //레이어 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
 
-
-		<!-- 레이어 -->
-		<!-- 간편번호 입력 -->
-		<div id="layerNumber" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="securityLayer">
-					<h4 class="head">간편번호를 입력하세요</h4>
-					<div>
-						<div class="password">
-							<input type="password" value="1" class="active" /> <!-- 값이 있을경우 active 클래스 넣어주세요. -->
-							<input type="password" />
-							<input type="password" />
-							<input type="password" />
-						</div>
-						<ol class="number">
-							<li>
-								<button type="button">
-									<span class="n">1</span>
-									<span class="t"></span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">2</span>
-									<span class="t">ABC</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">3</span>
-									<span class="t">DEF</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">4</span>
-									<span class="t">GHI</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">5</span>
-									<span class="t">JKL</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">6</span>
-									<span class="t">MNO</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">7</span>
-									<span class="t">PQRS</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">8</span>
-									<span class="t">TUV</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">9</span>
-									<span class="t">WXYZ</span>
-								</button>
-							</li>
-							<li>
-								<button type="button">
-									<span class="n">0</span>
-									<span class="t"></span>
-								</button>
-							</li>
-						</ol>
-					</div>
-				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-			</div>
 		</div>
-		<!-- //간편번호 입력 -->
-
-		<!-- 패턴 입력 -->
-		<div id="layerPattern" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="securityLayer">
-					<h4 class="head">변경 패턴 입력</h4>
-					<div>
-						<div>
-							<ol class="pattern">
-								<li>
-									<button type="button" class="active">1</button>
-								</li>
-								<li>
-									<button type="button" class="active">2</button>
-								</li>
-								<li>
-									<button type="button" class="active">3</button>
-								</li>
-								<li>
-									<button type="button">4</button>
-								</li>
-								<li>
-									<button type="button">5</button>
-								</li>
-								<li>
-									<button type="button">6</button>
-								</li>
-								<li>
-									<button type="button">7</button>
-								</li>
-								<li>
-									<button type="button">8</button>
-								</li>
-								<li>
-									<button type="button">9</button>
-								</li>
-							</ol>
-						</div>
-						<div class="guide">
-							<p class="textext"><span>4개 이상의 점을 연결해 주세요</span></p>
-							<!-- <p class="textext complete"><span>패턴 등록이 완료 되었습니다</span></p> -->
-						</div>
-					</div>
-				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-			</div>
-		</div>
-		<!-- //패턴 입력 -->
-
-		<!-- 지문 입력 -->
-		<div id="layerFingerprint" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="securityLayer">
-					<div class="fingerprint">
-						<i></i>
-					</div>
-					<div class="fingerprint complete">
-						<i></i>
-					</div>
-					<div class="guide">
-						<p class="textext"><span>손가락을 지문 인식 센서에 올려주세요</span></p>
-						<!-- <p class="textext"><span>지문 등록이 완료되었습니다</span></p> -->
-					</div>
-				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-			</div>
-		</div>
-		<!-- //지문 입력 -->
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>

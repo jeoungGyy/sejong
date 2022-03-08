@@ -6,239 +6,253 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<header class="header bgGreen">
-		  <div class="subHeader">
-				<h2></h2>
-		    <button type="button" class="icoNext"><i>오늘 세종엔</i></button>
-		  </div>
-		</header>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents info"> <!-- [생활정보 Class] info-->
-			<h2 class="visible"><div class="headerClone">생활정보</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<header class="header bgGreen">
+						<div class="subHeader">
+							<h2></h2>
+							<button type="button" class="icoNext"><i>오늘 세종엔</i></button>
+						</div>
+					</header>
 			
-			<div class="infoWrap">
-				<div class="mainMenuFixed">
-					<div class="decoBgLeft"></div>
-					<div class="decoBgRight"></div>
-
-					<nav id="infoNavSwiper" class="infoNav">
-						<div class="slideContainer">
-							<ul class="swiper-wrapper">
-								<li class="swiper-slide"><button type="button" class="menuSetting" onclick="layerPopup.open('layerSharing');"><i class="split24">메뉴 설정</i></button></li>
-								<li class="swiper-slide"><a href="#">스마트세종</a></li>
-								<li class="swiper-slide"><a href="#" class="active">세종여행</a></li>
-								<li class="swiper-slide"><a href="#">교육ㆍ문화</a></li>
-								<li class="swiper-slide"><a href="#">교통ㆍ안전</a></li>
-								<li class="swiper-slide"><a href="#">건강ㆍ환경</a></li>
-								<li class="swiper-slide"><a href="#">함께 소통</a></li>
-							</ul>
-						</div>
-					</nav>
-					<script>
-						slider.active('infoNavSwiper')
-					</script>
-
-					<div class="mainArea">
-						<div class="recentService typeB">
-							<h3>이용이 많은 정보</h3>
-							<div>
-								<nav id="homeNavSwiper" class="homeNav">
+					<!-- 본문 -->
+					<main class="contents info"> <!-- [생활정보 Class] info-->
+						<h2 class="visible"><div class="headerClone">생활정보</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="infoWrap">
+							<div class="mainMenuFixed">
+								<div class="decoBgLeft"></div>
+								<div class="decoBgRight"></div>
+			
+								<nav id="infoNavSwiper" class="infoNav">
 									<div class="slideContainer">
 										<ul class="swiper-wrapper">
-											<li class="swiper-slide"><a href="#">메뉴1</a></li>
-											<li class="swiper-slide"><a href="#">메뉴2</a></li>
-											<li class="swiper-slide"><a href="#">메뉴3</a></li>
-											<li class="swiper-slide"><a href="#">메뉴4</a></li>
-											<li class="swiper-slide"><a href="#">메뉴5</a></li>
-											<li class="swiper-slide"><a href="#">메뉴6</a></li>
-											<li class="swiper-slide"><a href="#">메뉴7</a></li>
-											<li class="swiper-slide"><a href="#">메뉴8</a></li>
-										</ul>
-									<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-								</nav>
-								<script>
-									slider.active('homeNavSwiper')
-								</script>
-							</div>
-						</div>
-
-						<div class="boxWrap toVisit">
-							<div class="boxArea">
-								<h3><span class="small">세종시 여기저기 관광명소</span> 가볼만한곳</h3>
-								<div id="infoToVisitSwiper" class="body">
-									<div class="slideContainer">
-										<ul class="swiper-wrapper">
-											<li class="swiper-slide">
-												<a href="#">
-													<figure>
-														<img src="../../public/image/info/info_toVisit_img.png" alt="">
-													</figure>
-													<p><b>세종호수공원</b></p>
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a href="#">
-													<figure>
-														<img src="../../public/image/info/info_toVisit_img2.png" alt="">
-													</figure>
-													<p><b>방죽천</b></p>
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a href="#">
-													<figure>
-														<img src="../../public/image/info/info_toVisit_img.png" alt="">
-													</figure>
-													<p><b>세종호수공원</b></p>
-												</a>
-											</li>
+											<li class="swiper-slide"><button type="button" class="menuSetting" onclick="layerPopup.open('layerSharing');"><i class="split24">메뉴 설정</i></button></li>
+											<li class="swiper-slide"><a href="#">스마트세종</a></li>
+											<li class="swiper-slide"><a href="#" class="active">세종여행</a></li>
+											<li class="swiper-slide"><a href="#">교육ㆍ문화</a></li>
+											<li class="swiper-slide"><a href="#">교통ㆍ안전</a></li>
+											<li class="swiper-slide"><a href="#">건강ㆍ환경</a></li>
+											<li class="swiper-slide"><a href="#">함께 소통</a></li>
 										</ul>
 									</div>
-								</div>
+								</nav>
 								<script>
-									slider.active('infoToVisitSwiper')
+									slider.active('infoNavSwiper')
 								</script>
-							</div>
-							<span class="roundDeco"></span>
-						</div>
-
-						<div class="dullegil">
-							<a href="#">
-								<div>함께 걷고 싶은 행복도시</div>
-								<b>둘레길</b>
-							</a>
-						</div>
-
-						<div class="boxWrap campingSite">
-							<div class="boxArea">
-								<h3><span class="small">자연과 사람이 만나는</span> 캠핑장</h3>
-								<div class="body">
-									<ul>
-										<li>
-											<a href="#">
-												<figure>
-													<img src="../../public/image/info/info_campingSite_img.png" alt="">
-												</figure>
-												<p>전월산국민<br />여가캠핑장</p>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<figure>
-													<img src="../../public/image/info/info_campingSite_img2.png" alt="">
-												</figure>
-												<p>합강캠핑장</p>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<figure>
-													<img src="../../public/image/info/info_campingSite_img3.png" alt="">
-												</figure>
-												<p>합강바베큐장</p>
-											</a>
-										</li>
-									</ul>
+			
+								<div class="mainArea">
+									<div class="recentService typeB">
+										<h3>이용이 많은 정보</h3>
+										<div>
+											<nav id="homeNavSwiper" class="homeNav">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><a href="#">메뉴1</a></li>
+														<li class="swiper-slide"><a href="#">메뉴2</a></li>
+														<li class="swiper-slide"><a href="#">메뉴3</a></li>
+														<li class="swiper-slide"><a href="#">메뉴4</a></li>
+														<li class="swiper-slide"><a href="#">메뉴5</a></li>
+														<li class="swiper-slide"><a href="#">메뉴6</a></li>
+														<li class="swiper-slide"><a href="#">메뉴7</a></li>
+														<li class="swiper-slide"><a href="#">메뉴8</a></li>
+													</ul>
+												<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+											</nav>
+											<script>
+												slider.active('homeNavSwiper')
+											</script>
+										</div>
+									</div>
+			
+									<div class="boxWrap toVisit">
+										<div class="boxArea">
+											<h3><span class="small">세종시 여기저기 관광명소</span> 가볼만한곳</h3>
+											<div id="infoToVisitSwiper" class="body">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide">
+															<a href="#">
+																<figure>
+																	<img src="../../public/image/info/info_toVisit_img.png" alt="">
+																</figure>
+																<p><b>세종호수공원</b></p>
+															</a>
+														</li>
+														<li class="swiper-slide">
+															<a href="#">
+																<figure>
+																	<img src="../../public/image/info/info_toVisit_img2.png" alt="">
+																</figure>
+																<p><b>방죽천</b></p>
+															</a>
+														</li>
+														<li class="swiper-slide">
+															<a href="#">
+																<figure>
+																	<img src="../../public/image/info/info_toVisit_img.png" alt="">
+																</figure>
+																<p><b>세종호수공원</b></p>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<script>
+												slider.active('infoToVisitSwiper')
+											</script>
+										</div>
+										<span class="roundDeco"></span>
+									</div>
+			
+									<div class="dullegil">
+										<a href="#">
+											<div>함께 걷고 싶은 행복도시</div>
+											<b>둘레길</b>
+										</a>
+									</div>
+			
+									<div class="boxWrap campingSite">
+										<div class="boxArea">
+											<h3><span class="small">자연과 사람이 만나는</span> 캠핑장</h3>
+											<div class="body">
+												<ul>
+													<li>
+														<a href="#">
+															<figure>
+																<img src="../../public/image/info/info_campingSite_img.png" alt="">
+															</figure>
+															<p>전월산국민<br />여가캠핑장</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<figure>
+																<img src="../../public/image/info/info_campingSite_img2.png" alt="">
+															</figure>
+															<p>합강캠핑장</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<figure>
+																<img src="../../public/image/info/info_campingSite_img3.png" alt="">
+															</figure>
+															<p>합강바베큐장</p>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+			
+									<div class="gourmetTravel">
+										<a href="#">
+											<div>세종시 블로그 기자단 추천</div>
+											<b>식도락 여행<i class="split20"></i></b>
+										</a>
+									</div>
+			
+									<div class="boxWrap healthFacility pb80">
+										<div class="boxArea">
+											<div class="body">
+												<ul class="boxLinks space2">
+													<li><a href="#">숙박</a></li>
+													<li><a href="#">농촌민박</a></li>
+												</ul>
+											</div>
+										</div>
+										<span class="roundDeco"></span>
+									</div>
+								</div>
+			
+								<div class="mainMenu">
+									<nav id="mainMenuSwiper" class="mainMenuList">
+										<ul>
+											<li>
+												<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
+											</li>
+											<li class="active"> <!-- 활성화 시 active 추가 -->
+												<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
+											</li>
+										</ul>
+									</nav>
 								</div>
 							</div>
 						</div>
-
-						<div class="gourmetTravel">
-							<a href="#">
-								<div>세종시 블로그 기자단 추천</div>
-								<b>식도락 여행<i class="split20"></i></b>
-							</a>
-						</div>
-
-						<div class="boxWrap healthFacility pb80">
-							<div class="boxArea">
-								<div class="body">
-									<ul class="boxLinks space2">
-										<li><a href="#">숙박</a></li>
-										<li><a href="#">농촌민박</a></li>
-									</ul>
-								</div>
+					</main>
+					<!-- //본문 -->
+			
+					
+					<!-- 레이어 -->
+					<!-- 메뉴설정 -->
+					<div id="layerSharing" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="layerSetting">
+								<ul class="items-label">
+									<li>
+										<div class="labelForm">
+											<input type="radio" name="radio" id="list0">
+											<label for="list0">세종엔에서 제공하는 기본 보기</label>
+										</div>
+									</li>
+									<li>
+										<div class="labelForm">
+											<input type="radio" name="radio" id="list1">
+											<label for="list1">직접 순서와 항목 변경하여 보기</label>
+											<button type="button" class="tootipBtn" onclick="tooltip.show('layerTooltip', 'bottom');" title="도움말 열림"><i class="split20">항목 변경 안내</i></button>
+										</div>
+									</li>
+								</ul>
+								<ul class="settingMenu line">
+									<li><button type="button">함께 소통</button></li>
+									<li><button type="button">건강ㆍ환경</button></li>
+									<li><button type="button">교통ㆍ안전</button></li>
+									<li><button type="button">교육ㆍ문화</button></li>
+								</ul>
+								<ul class="settingMenu">
+									<li><button type="button" class="disabled">함께 소통</button></li>
+									<li><button type="button" class="disabled">건강ㆍ환경</button></li>
+									<li><button type="button" class="disabled">교통ㆍ안전</button></li>
+									<li><button type="button">교육ㆍ문화</button></li>
+									<li><button type="button">세종여행</button></li>
+									<li><button type="button">스마트세종</button></li>
+								</ul>
+								<button type="button" class="button blue">저장</button>
 							</div>
-							<span class="roundDeco"></span>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 						</div>
 					</div>
-
-					<div class="mainMenu">
-						<nav id="mainMenuSwiper" class="mainMenuList">
-							<ul>
-								<li>
-									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
-								</li>
-								<li class="active"> <!-- 활성화 시 active 추가 -->
-									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
-								</li>
-							</ul>
-						</nav>
+					<!-- //메뉴설정 -->
+			
+					<!-- 툴팁 -->
+					<div id="layerTooltip" class="boxTooltipLayer">
+						<div class="boxTooltipBody">
+							<div class="paragraphGroup">
+								<p>항목을 꾹 눌러 이동하거나, X를 눌러 제외할 수 있어요.</p>
+							</div>
+							<button type="button" class="btnClose"><i>닫기</i></button>
+						</div>
 					</div>
+					<!-- //툴팁 -->
+					<!-- //레이어 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
 
-		
-		<!-- 레이어 -->
-		<!-- 메뉴설정 -->
-		<div id="layerSharing" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="layerSetting">
-					<ul class="items-label">
-						<li>
-							<div class="labelForm">
-								<input type="radio" name="radio" id="list0">
-								<label for="list0">세종엔에서 제공하는 기본 보기</label>
-							</div>
-						</li>
-						<li>
-							<div class="labelForm">
-								<input type="radio" name="radio" id="list1">
-								<label for="list1">직접 순서와 항목 변경하여 보기</label>
-								<button type="button" class="tootipBtn" onclick="tooltip.show('layerTooltip', 'bottom');" title="도움말 열림"><i class="split20">항목 변경 안내</i></button>
-							</div>
-						</li>
-					</ul>
-					<ul class="settingMenu line">
-						<li><button type="button">함께 소통</button></li>
-						<li><button type="button">건강ㆍ환경</button></li>
-						<li><button type="button">교통ㆍ안전</button></li>
-						<li><button type="button">교육ㆍ문화</button></li>
-					</ul>
-					<ul class="settingMenu">
-						<li><button type="button" class="disabled">함께 소통</button></li>
-						<li><button type="button" class="disabled">건강ㆍ환경</button></li>
-						<li><button type="button" class="disabled">교통ㆍ안전</button></li>
-						<li><button type="button">교육ㆍ문화</button></li>
-						<li><button type="button">세종여행</button></li>
-						<li><button type="button">스마트세종</button></li>
-					</ul>
-					<button type="button" class="button blue">저장</button>
-				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-			</div>
 		</div>
-		<!-- //메뉴설정 -->
-
-		<!-- 툴팁 -->
-		<div id="layerTooltip" class="boxTooltipLayer">
-			<div class="boxTooltipBody">
-				<div class="paragraphGroup">
-					<p>항목을 꾹 눌러 이동하거나, X를 눌러 제외할 수 있어요.</p>
-				</div>
-				<button type="button" class="btnClose"><i>닫기</i></button>
-			</div>
-		</div>
-		<!-- //툴팁 -->
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>

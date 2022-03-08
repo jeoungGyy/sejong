@@ -6,59 +6,73 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
 
-		<!-- 레이어 -->
-		<div id="layerLnb" class="layerPopup" tabindex="0">
-			<div class="layerWrap typeBot">
-				<div class="mapIHead">
-					<button type="button" class="btnMapInfo">정보영역</button>
-				</div>
-				<div class="layerLnbBody">
-					<div class="mapChange">
-						<button type="button">
-							<span class="img"><img src="../../public/image/map/lnb_img.png" alt=""></span>
-							<span class="text">일반지도</span>
-						</button>
-						<button type="button">
-							<span class="img"><img src="../../public/image/map/lnb_img2.png" alt=""></span>
-							<span class="text">위성지도</span>
-						</button>
-						<button type="button">
-							<span class="img"><img src="../../public/image/map/lnb_img3.png" alt=""></span>
-							<span class="text">도시변화</span>
-						</button>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+					<!-- 레이어 -->
+					<div id="layerLnb" class="layerPopup" tabindex="0">
+						<div class="layerWrap typeBot">
+							<div class="mapIHead">
+								<button type="button" class="btnMapInfo">정보영역</button>
+							</div>
+							<div class="layerLnbBody">
+								<div class="mapChange">
+									<button type="button">
+										<span class="img"><img src="../../public/image/map/lnb_img.png" alt=""></span>
+										<span class="text">일반지도</span>
+									</button>
+									<button type="button">
+										<span class="img"><img src="../../public/image/map/lnb_img2.png" alt=""></span>
+										<span class="text">위성지도</span>
+									</button>
+									<button type="button">
+										<span class="img"><img src="../../public/image/map/lnb_img3.png" alt=""></span>
+										<span class="text">도시변화</span>
+									</button>
+								</div>
+			
+								<div class="lnbLinks">
+									<button type="button" class="traffic active"> <!-- 활성화 시 active 추가 -->
+										<span class="icon"><i class="split32"></i></span>
+										<span class="text">교통정보</span>
+									</button>
+									<button type="button" class="cctv">
+										<span class="icon"><i class="split32"></i></span>
+										<span class="text">CCTV</span>
+									</button>
+									<button type="button" class="streetLamp">
+										<span class="icon"><i class="split32"></i></span>
+										<span class="text">가로등</span>
+									</button>
+									<button type="button" class="favorite">
+										<span class="icon"><i class="split32"></i></span>
+										<span class="text">즐겨찾기</span>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
-
-					<div class="lnbLinks">
-						<button type="button" class="traffic active"> <!-- 활성화 시 active 추가 -->
-							<span class="icon"><i class="split32"></i></span>
-							<span class="text">교통정보</span>
-						</button>
-						<button type="button" class="cctv">
-							<span class="icon"><i class="split32"></i></span>
-							<span class="text">CCTV</span>
-						</button>
-						<button type="button" class="streetLamp">
-							<span class="icon"><i class="split32"></i></span>
-							<span class="text">가로등</span>
-						</button>
-						<button type="button" class="favorite">
-							<span class="icon"><i class="split32"></i></span>
-							<span class="text">즐겨찾기</span>
-						</button>
-					</div>
+					<!-- //레이어 -->
+					<script>
+						layerPopup.open('layerLnb');
+					</script>
+			
+			
 				</div>
 			</div>
+			<!-- //모바일 내용 -->
+
 		</div>
-		<!-- //레이어 -->
-		<script>
-			layerPopup.open('layerLnb');
-		</script>
-
-
 	</div>
 </div>
 </body>

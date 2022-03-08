@@ -6,42 +6,56 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents mypage">
-			<h2 class="visible"><div class="headerClone">메뉴</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="mypageWrap">
-				<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
-					<div class="mypageArea">
-						<ul class="menuAddList">
-							<li>
-								<input type="text" placeholder="메뉴명" />
-								<input type="tel" class="textRight" placeholder="금액" />
-							</li>
-							<li>
-								<input type="text" placeholder="메뉴명" />
-								<input type="tel" class="textRight" placeholder="금액" />
-								<button type="button" class="pnRemove"><i class="split24">두번째 메뉴 삭제</i></button>
-							</li>
-						</ul>
-						<div class="pnAddGroup">
-							<button type="button" class="pnAdd"><i class="split20"></i>메뉴 추가</button>
+					<!-- 본문 -->
+					<main class="contents mypage">
+						<h2 class="visible"><div class="headerClone">메뉴</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mypageWrap">
+							<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+								<div class="mypageArea">
+									<ul class="menuAddList">
+										<li>
+											<input type="text" placeholder="메뉴명" />
+											<input type="tel" class="textRight" placeholder="금액" />
+										</li>
+										<li>
+											<input type="text" placeholder="메뉴명" />
+											<input type="tel" class="textRight" placeholder="금액" />
+											<button type="button" class="pnRemove"><i class="split24">두번째 메뉴 삭제</i></button>
+										</li>
+									</ul>
+									<div class="pnAddGroup">
+										<button type="button" class="pnAdd"><i class="split20"></i>메뉴 추가</button>
+									</div>
+								</div>
+			
+								<div class="btnGroup">
+									<button type="button" class="button blue noShadow">완료</button>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div class="btnGroup">
-						<button type="button" class="button blue noShadow">완료</button>
-					</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

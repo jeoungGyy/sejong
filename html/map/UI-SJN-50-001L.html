@@ -6,38 +6,52 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
 
-
-		<!-- 레이어 -->
-		<div id="changeLocation" class="layerPopup">
-			<div class="layerWrap typeLocation">
-				<h4 class="sejongnTitle">
-					<img src="../../public/image/map/sejong_text_img.png" alt="세종엔"> 에서
-				</h4>
-				<div class="layerBody">
-					<div class="contSejongN">
-						<p class="title">세종안심이를 새롭게<br /> 시작합니다!</p>
-						<p class="text">스마트도시 세종시의 차별화된 <br />안심서비스를 경험해보세요</p>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+			
+					<!-- 레이어 -->
+					<div id="changeLocation" class="layerPopup">
+						<div class="layerWrap typeLocation">
+							<h4 class="sejongnTitle">
+								<img src="../../public/image/map/sejong_text_img.png" alt="세종엔"> 에서
+							</h4>
+							<div class="layerBody">
+								<div class="contSejongN">
+									<p class="title">세종안심이를 새롭게<br /> 시작합니다!</p>
+									<p class="text">스마트도시 세종시의 차별화된 <br />안심서비스를 경험해보세요</p>
+								</div>
+								
+								<div class="buttonArea">
+									<button type="button" class="button orange">
+										<span class="arrow">안심서비스 이용하기</span>
+									</button>
+								</div>
+							</div>
+			
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</div>
 					</div>
-					
-					<div class="buttonArea">
-						<button type="button" class="button orange">
-							<span class="arrow">안심서비스 이용하기</span>
-						</button>
-					</div>
+			
+					<script>
+						layerPopup.open('changeLocation');
+					</script>
+					<!-- //레이어 -->
 				</div>
-
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 			</div>
-		</div>
+			<!-- //모바일 내용 -->
 
-		<script>
-			layerPopup.open('changeLocation');
-		</script>
-		<!-- //레이어 -->
+		</div>
 	</div>
 </div>
 </body>

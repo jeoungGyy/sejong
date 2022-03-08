@@ -56,7 +56,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
-.map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
+.map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.3rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
 .map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem; border-radius: 50%;}
 .map .mapInfoLayer .convenience .feature.gasStation i { background-position: -21.6rem -4.8rem;}
 .map .mapInfoLayer .convenience .feature.store i { background-position: -24rem -4.8rem;}
@@ -350,7 +350,7 @@ span.M { background-color: #FD2020;}
 .map .shortestPath { display: flex; position: absolute; left: 1.2rem; right: 0; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 100;}
 .map .shortestPath .btnPrev { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .shortestPath .btnPrev i { display: block; width: 0.85rem; height: 1.4rem; text-indent: -9999rem; background: url(../image/map/ico_prev.png) no-repeat center/cover;}
-.map .shortestPath .items-wordList { flex: 1; margin: 0; padding: 0 1.2rem 0 0;}
+.map .shortestPath .items-wordList { flex: 1; margin: 0 -1.2rem 0 0; padding: 0 1.2rem 0 0;}
 .map .shortestPath .items-wordList ul li button::before { display: none;}
 
 /* 장소 카테고리 - UI-SJN-22-001U */
@@ -621,7 +621,7 @@ span.M { background-color: #FD2020;}
 
 /* UI-SJN-40-006L */
 .map .goNotice { padding-top: 6.2rem;}
-.map .goNotice .busHead { display: flex; align-items: center; position: fixed; left: 0; top: 5.6rem; z-index: 201; width: 100%; height: 4.8rem; padding: 0 2rem; border-bottom: 0.6rem solid #F4F5F7; background-color: #fff;}
+.map .goNotice .busHead { display: flex; align-items: center; position: fixed; top: 5.6rem; z-index: 201; width: 100%; max-width: 57rem; height: 4.8rem; padding: 0 2rem; border-bottom: 0.6rem solid #F4F5F7; background-color: #fff;}
 .map .goNotice .busHead h3 { margin-left: 0.8rem; font-size: 1.8rem;}
 .map .goNotice .busHead >div { margin-left: 0.4rem;}
 .map .goNotice .busHead >div span { font-size: 1.6rem; font-weight: 700;}
@@ -727,7 +727,7 @@ span.M { background-color: #FD2020;}
 .map .transformBody .head { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
 .map .transformBody .head h3 { font-size: 1.8rem;}
 .map .transformBody .head span { margin-left: 0.8rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #777; letter-spacing: 0;}
-.map .transformBody .transformNavList { overflow: hidden; margin-top: 0.8rem; padding: 0 2rem;}
+.map .transformBody .transformNavList { overflow: hidden; margin-top: 0.8rem;}
 .map .transformBody .transformNavList li { width: 5.6rem;}
 .map .transformBody .transformNavList li button { display: block; align-items: center; justify-content: center; width: 100%;}
 .map .transformBody .transformNavList li button .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; border: 1px solid #F4F5F7;}
@@ -749,7 +749,7 @@ span.M { background-color: #FD2020;}
 .map .comparisonSlider .comparison { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .map .comparisonSlider .comparison.conBefore {clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);}
 .map .comparisonSlider .comparison > img {width: 100%; height: 100%;display: block;object-fit: cover;pointer-events: none;}
-.map .comparisonSlider .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -50%); border-radius: 50%; transition: opacity .3s ease-in-out;}
+.map .comparisonSlider .gesture { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background: rgba(17 17 17 / 90%) url(../image/map/ico_gesture.png) no-repeat center/1.175rem 2.475rem; transform: translate(-50%, -50%); border-radius: 50%; transition: opacity .3s ease-in-out; cursor: grab;}
 .map .comparisonSlider .gesture span { font-size: 1.4rem; color: #fff; text-align: center; text-indent: -9999rem; line-height: 2rem;}
 .map .comparisonSlider .gesture.hide { opacity: 0; z-index: -1;}
 
@@ -847,7 +847,7 @@ span.M { background-color: #FD2020;}
 .map .mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
 .map .mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
 .map .mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
-.map .mapIcons .location.easy {justify-content: left; position:absolute; left:1.2rem; bottom:1.6rem; width:100%;}
+.map .mapIcons .location.easy {justify-content: left; position:absolute; left:1.2rem; bottom:1.6rem;}
 .map .mapIcons .location.easy .myLocation {display:inline-block; position:static; left:inherit; bottom:inherit;}
 .map .mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
 .map .mapIcons .location.easy .myLocation i {margin:0 auto;}
@@ -892,7 +892,7 @@ span.M { background-color: #FD2020;}
 
 
 /* UI-SJN-50-003L */
-.map .friendModify {background-color:#F4F5F7; padding:3.2rem 0;}
+.map .friendModify { min-height: calc(100vh - 5.6rem); margin-bottom: -2rem; padding:3.2rem 0; background-color:#F4F5F7;}
 .map .friendModify .addFriendList {margin-top:0.8rem; background-color:#fff; padding:2.4rem 0;}
 .map .friendModify .addFriendList ul li {position:relative; display: flex; align-items: center; justify-content: space-between; height:7.2rem; border-top:1px solid #F4F5F7; padding:0.8rem 2rem;}
 .map .friendModify .addFriendList ul li:first-child {border-top:none;}
@@ -1056,7 +1056,10 @@ span.M { background-color: #FD2020;}
 
 
 /* UI-SJN-50-011L */
-.map .mapTabContent {min-height:calc(100vh - 13.2rem); padding-top:5.2rem;}
+.map .mapTabPor { position: relative;}
+.map .mapTabBody { display: flex; flex-direction: column; position: absolute; top: 5.6rem; z-index: 150; width: 100%;}
+.map .mapTabBody .mapTab { position: fixed;}
+.map .mapTabContent { min-height: calc(100vh - 12.6rem); padding-top: 5rem;}
 
 .map .recentSearchList {padding:0 2rem; }
 .map .recentSearchList ul li {display: flex; align-items: center; justify-content: space-between; min-height:5.6rem; padding:1.7rem 0; border-top:1px solid #EAEAEA;}
@@ -1083,7 +1086,7 @@ span.M { background-color: #FD2020;}
 
 
 /* UI-SJN-50-012L */
-.map .mapTab {display: flex; align-items: center; justify-content: center; position:absolute; top:5.6rem; left:0; z-index: 30; width:100%; height:5.2rem; border:1px solid #F2F2F2; border-width:1px 0; background-color:#fff;}
+.map .mapTab {display: flex; align-items: center; justify-content: center; position:absolute; top:5.6rem; z-index: 30; width:100%; max-width: 57rem; height:5.2rem; border:1px solid #F2F2F2; border-width:1px 0; background-color:#fff;}
 .map .mapTab button {position:relative; text-align: center; width:50%;height:5rem; font-size:1.6rem; color:#555;}
 .map .mapTab button.active {font-weight:700; color:#111;}
 .map .mapTab button.active:before {content:''; width:100%; height:2px; position:absolute; bottom:-1px; left:0; background-color: #FF940E; }
@@ -1100,7 +1103,7 @@ span.M { background-color: #FD2020;}
 .map .mapArea .markerResultIcon i {width: 3.2rem; height: 4rem; margin:0 auto; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
 .map .mapArea .markerResultIcon .result {height:3.2rem; text-align: center; font-size:1.2rem; padding:0.8rem 1.2rem; margin-bottom:0.7rem; color:#fff; background-color:#6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
 
-.map .mapMoveData {position: fixed; left: 0; bottom: 0; width:100%;}
+.map .mapMoveData {position: fixed; bottom: 0; width:100%; max-width: 57rem;}
 .map .mapMoveData .myLocation {position: absolute; left: 2rem; top: -5.6rem; display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
 .map .mapMoveData .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .map .mapMoveData .myLocation.active { background-color: #FF940E;}
@@ -1131,7 +1134,7 @@ span.M { background-color: #FD2020;}
 .map .listArea .streetLampList li .btnBody .more b { font-size: 1.2rem; color: #fff;}
 
 /* UI-SJN-81-001L */
-.map .settingServiceWrap {padding:2.4rem 0 7.2rem; background-color:#F4F5F7;}
+.map .settingServiceWrap { min-height: calc(100vh - 5.6rem); margin-bottom: -2rem; padding:2.4rem 0; background-color:#F4F5F7;}
 .map .settingServiceWrap .section {padding:2.4rem 2rem; border-bottom:1px solid #EAEDF2; background-color:#fff;}
 .map .settingServiceWrap .section .grayTitle {font-size:1.4rem; color:#777;}
 .map .settingServiceWrap .section .titleBlack {font-size:1.6rem; line-height:2.2rem;}

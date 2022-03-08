@@ -22,6 +22,8 @@
 .mainArea .repMenu .body a.service4 i { background: url(../image/home/main_repMenu4.png) no-repeat center/cover;}
 .mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .mainArea h3 .small { margin-right: 0.8rem; font-size: 1.5rem; font-weight: 400; color: #555;}
+.mainArea .titleFlex { display: flex; align-items: center;}
+.mainArea .titleFlex select { flex: 1; margin-left: 1rem; padding: 0; font-size: 1.6rem; font-weight: 700; border: none;}
 .mainArea .recentService { margin-top: 6rem;}
 .mainArea .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
 .mainArea .recentService .homeNav ul li { width: 7.2rem;}
@@ -77,19 +79,6 @@
 .mainArea .weatherBox.active .weatherLink .toggleBtn { display: flex;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature { text-align: center;}
 .mainArea .weatherBox.active .weatherLink .val { margin: 0.3rem 0 0 0.6rem;} */
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mainArea .weatherBox .weatherLink { display: flex; align-items: center; position: relative; color: #111;}
 .mainArea .weatherBox .weatherLink .weather { display: flex; align-items: center; position: relative; width: 15.5rem; margin-right: -2rem; padding-left: 4.6rem; white-space: nowrap;}
 .mainArea .weatherBox .weatherLink .weather .icon { margin-top: -0.2rem;}
@@ -164,10 +153,8 @@
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
 .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
 .mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
-.mainArea .oilPrice .average .oilDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777; letter-spacing: 0;}
-.mainArea .oilPrice .price { margin-top: 2.4rem;}
-.mainArea .oilPrice .price select { padding: 0; font-size: 1.6rem; border: none; border-bottom: 1px solid #ddd;}
-.mainArea .oilPrice .price .t { display: flex; align-items: center; margin-top: 3.2rem;}
+.mainArea .oilPrice .price { margin-top: 2rem;}
+.mainArea .oilPrice .price .t { display: flex; align-items: center;}
 .mainArea .oilPrice .price .t b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
 .mainArea .oilPrice .price .t span { font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
 .mainArea .oilPrice .price .up { color: #FD2020;}
@@ -235,7 +222,7 @@
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenuFixed .mainMenu .mainMenuList ul li.active a .icon { display: none;}
-.mainMenuFixed .chatbot { display: block; position: fixed; right: 50%; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
+.mainMenuFixed .chatbot { display: block; position: fixed; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
 .mainMenuFixed .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
 
 /* UI-SJN-02-001U */
@@ -248,7 +235,7 @@
 .home .popularHeader .popularBody .tooggleWord { display: flex; align-items: center; justify-content: center; width: 4rem;}
 .home .popularHeader .popularBody .tooggleWord i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover;     transition: transform .3s;}
 .home .popularHeader .popularBody .favorite { display: block;}
-.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
+.home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -19.2rem/48rem 28.8rem;}
 .home .popularHeader .popularBody .favorite.active i { background-position-y: -2.4rem;}
 .home .popularHeader .wordCloud { color: #fff; background-color: #A5BFD6;}
 .home .popularHeader.active .popularBody .tooggleWord i { transform: rotate(-180deg);}

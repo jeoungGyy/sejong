@@ -6,58 +6,76 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 세종 안심서비스 헤더 -->
-		<script src="../include/header_map_search.js"></script>
-		<!-- //공통: 세종 안심서비스 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 세종 안심서비스 헤더 -->
+					<script src="../include/header_map_search.js"></script>
+					<!-- //공통: 세종 안심서비스 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="mapTab">
-					<button type="button">최근 기록</button>
-					<button type="button" class="active">지도 지정</button><!-- 활성화시 버튼에 active 추가 -->
-				</div>
-
-				<div class="mapArea">
-
-					<!-- 현재 내 위치표시 -->
-					<div class="mapIcons">
-						<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-							<div><span></span></div>
-						</div>
-					</div>
-					<!-- //현재 내 위치표시 -->
-
-					<!-- 위치 설정 마커 -->
-					<div class="markerMoveIcon" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-						<div class="text">지도를 움직여 위치를 설정하세요</div>
-						<i></i>
-					</div>
-					<!-- //위치 설정 마커 -->
-
-					<div class="mapMoveData">
-						<!-- 현재위치 버튼 표시 -->
-						<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-						<!-- 현재위치 버튼 표시 -->
-
-						<div class="locationText">
-							<div class="address">
-								세종특별자치시 한누리대로 328 (도시통합정보센터)
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapTabPor">
+								<div class="mapTabBody">
+									<div class="mapTab">
+										<button type="button">최근 기록</button>
+										<button type="button" class="active">지도 지정</button><!-- 활성화시 버튼에 active 추가 -->
+									</div>
+								</div>
 							</div>
-
-							<button type="button" class="button blue">이 위치를 안심장소로 설정</button>
+			
+							<div class="mapArea">
+			
+								<!-- 현재 내 위치표시 -->
+								<div class="mapIcons">
+									<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+										<div><span></span></div>
+									</div>
+								</div>
+								<!-- //현재 내 위치표시 -->
+			
+								<!-- 위치 설정 마커 -->
+								<div class="markerMoveIcon" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+									<div class="text">지도를 움직여 위치를 설정하세요</div>
+									<i></i>
+								</div>
+								<!-- //위치 설정 마커 -->
+			
+								<div class="mapMoveData">
+									<!-- 현재위치 버튼 표시 -->
+									<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+									<!-- 현재위치 버튼 표시 -->
+			
+									<div class="locationText">
+										<div class="address">
+											세종특별자치시 한누리대로 328 (도시통합정보센터)
+										</div>
+			
+										<button type="button" class="button blue">이 위치를 안심장소로 설정</button>
+									</div>
+								</div>
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
+							</div>
 						</div>
-					</div>
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

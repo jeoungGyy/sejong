@@ -6,201 +6,215 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">도시변화(위성영상)</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="mapArea fixed"> <!-- fixed 하단 정보영역 고정일 경우 사용 -->
-					<!-- 기타 아이콘들 -->
-					<div class="mapIcons">
-						<button type="button" class="btnPin active"><i>핀</i></button>
-
-						<div class="location">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">도시변화(위성영상)</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea fixed"> <!-- fixed 하단 정보영역 고정일 경우 사용 -->
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<button type="button" class="btnPin active"><i>핀</i></button>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
+								</div>
+								<!-- //기타 아이콘들 -->
+			
+								
+								<!-- 이미지 전 후 비교 -->
+								<div class="comparisonSlider">
+									<div class="comparison">
+										<img src="../../public/image/temp/after.jpg" alt="before" />
+									</div>
+									<div class="comparison conBefore">
+										<img src="../../public/image/temp/before.jpg" alt="after" />
+									</div>
+			
+									<button type="button" class="gesture">
+										<span>맵 이동</span>
+									</button>
+								</div>
+			
+								<script>
+									comparison.active();
+								</script>
+								<!-- //이미지 전 후 비교 -->
+			
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+									</div>
+									<div class="transformBody">
+										<header class="head">
+											<h3>도시변화</h3>
+											<span>2015.10.28~2019.01.29</span>
+										</header>
+										
+										<nav id="transformNavSwiper" class="transformNavList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<button type="button" class="apartment">
+															<span class="box"><i></i></span>
+															<span class="text">아파트<b class="plus">+396</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="building">
+															<span class="box"><i></i></span>
+															<span class="text">건축물<b class="plus">+396</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="baseballS">
+															<span class="box"><i></i></span>
+															<span class="text">야구장<b class="plus">+31</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="soccerF">
+															<span class="box"><i></i></span>
+															<span class="text">축구장<b class="plus">+6</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="tennisC">
+															<span class="box"><i></i></span>
+															<span class="text">테니스장<b class="plus">+4</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="forestA">
+															<span class="box"><i></i></span>
+															<span class="text">산림영역<b class="minus">-9.57%</b></span>
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button" class="farmland">
+															<span class="box"><i></i></span>
+															<span class="text">농경지<b class="minus">-323.23%</b></span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</nav>
+										<script>
+											slider.active('transformNavSwiper')
+										</script>
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+			
+								<!--<div class="mapBg2"></div>  map 이미지 -->
 							</div>
 						</div>
-					</div>
-					<!-- //기타 아이콘들 -->
-
-					
-					<!-- 이미지 전 후 비교 -->
-					<div class="comparisonSlider">
-						<div class="comparison">
-							<img src="../../public/image/temp/after.jpg" alt="before" />
-						</div>
-						<div class="comparison conBefore">
-							<img src="../../public/image/temp/before.jpg" alt="after" />
-						</div>
-
-						<button type="button" class="gesture">
-							<span>맵 이동</span>
-						</button>
-					</div>
-
-					<script>
-						comparison.active();
-					</script>
-					<!-- //이미지 전 후 비교 -->
-
-					
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer">
-						<div class="mapIHead">
-							<button type="button" class="btnMapInfo">정보영역</button>
-						</div>
-						<div class="transformBody">
-							<header class="head">
-								<h3>도시변화</h3>
-								<span>2015.10.28~2019.01.29</span>
-							</header>
-							
-							<nav id="transformNavSwiper" class="transformNavList">
-								<div class="slideContainer">
-									<ul class="swiper-wrapper">
-										<li class="swiper-slide">
-											<button type="button" class="apartment">
-												<span class="box"><i></i></span>
-												<span class="text">아파트<b class="plus">+396</b></span>
-											</button>
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어 -->
+					<div id="layerSatelliteComparison" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<h4>인공위성영상 선택</h4>
+							<div class="layerReplace">
+								<div class="control">
+									<p>비교 위성영상 2개를 선택하세요.</p>
+									<span><i></i>변화비교 시 수 초~ 수 분이 소요될 수 있습니다.</span>
+								</div>
+								<div class="layerBody">
+									<ul class="items-label">
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list0">
+												<label for="list0">2021-03-21</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="building">
-												<span class="box"><i></i></span>
-												<span class="text">건축물<b class="plus">+396</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list1">
+												<label for="list1">2021-03-22</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="baseballS">
-												<span class="box"><i></i></span>
-												<span class="text">야구장<b class="plus">+31</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list2">
+												<label for="list2">2021-03-23</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="soccerF">
-												<span class="box"><i></i></span>
-												<span class="text">축구장<b class="plus">+6</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list3">
+												<label for="list3">2021-03-24</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="tennisC">
-												<span class="box"><i></i></span>
-												<span class="text">테니스장<b class="plus">+4</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list4">
+												<label for="list4">2021-03-25</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="forestA">
-												<span class="box"><i></i></span>
-												<span class="text">산림영역<b class="minus">-9.57%</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list5">
+												<label for="list5">2021-03-26</label>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button" class="farmland">
-												<span class="box"><i></i></span>
-												<span class="text">농경지<b class="minus">-323.23%</b></span>
-											</button>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list6">
+												<label for="list6">2021-03-27</label>
+											</div>
+										</li>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list7">
+												<label for="list7">2021-03-28</label>
+											</div>
+										</li>
+										<li>
+											<div class="labelForm">
+												<input type="checkbox" name="checkbox" id="list8">
+												<label for="list8">2021-03-29</label>
+											</div>
 										</li>
 									</ul>
+									<div class="twins">
+										<button type="button" class="button whiteLine">취소</button>
+										<button type="button" class="button blue">확인</button>
+									</div>
 								</div>
-							</nav>
-							<script>
-								slider.active('transformNavSwiper')
-							</script>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 						</div>
 					</div>
-					<!-- //정보 영역 -->
-
-					<!--<div class="mapBg2"></div>  map 이미지 -->
+					<!-- //레이어 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
 
-		<!-- 레이어 -->
-		<div id="layerSatelliteComparison" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<h4>인공위성영상 선택</h4>
-				<div class="layerReplace">
-					<div class="control">
-						<p>비교 위성영상 2개를 선택하세요.</p>
-						<span><i></i>변화비교 시 수 초~ 수 분이 소요될 수 있습니다.</span>
-					</div>
-					<div class="layerBody">
-						<ul class="items-label">
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list0">
-									<label for="list0">2021-03-21</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list1">
-									<label for="list1">2021-03-22</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list2">
-									<label for="list2">2021-03-23</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list3">
-									<label for="list3">2021-03-24</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list4">
-									<label for="list4">2021-03-25</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list5">
-									<label for="list5">2021-03-26</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list6">
-									<label for="list6">2021-03-27</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list7">
-									<label for="list7">2021-03-28</label>
-								</div>
-							</li>
-							<li>
-								<div class="labelForm">
-									<input type="checkbox" name="checkbox" id="list8">
-									<label for="list8">2021-03-29</label>
-								</div>
-							</li>
-						</ul>
-						<div class="twins">
-							<button type="button" class="button whiteLine">취소</button>
-							<button type="button" class="button blue">확인</button>
-						</div>
-					</div>
-				</div>
-				<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-			</div>
 		</div>
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>

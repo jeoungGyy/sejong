@@ -6,76 +6,90 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents info"> <!-- [생활정보 Class] info-->
-			<h2 class="visible"><div class="headerClone">사진리뷰ㆍ<span class="number">98</span><span>/100</span></div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
 
-			<div class="infoWrap">
-				<div class="pictureArea">
-					<ul class="pgList">
-						<li>
-							<figure>
-								<img src="../../public/image/temp/temp008.png" alt="">
-							</figure>
-						</li>
-						<li>
-							<div id="infoPictureSwiper" class="pictureBodySlide">
-								<div class="slideContainer">
-									<ul class="swiper-wrapper">
-										<li class="swiper-slide">
-											<figure>
-												<img src="../../public/image/temp/temp008.png" alt="">
-											</figure>
-										</li>
-										<li class="swiper-slide">
-											<figure>
-												<img src="../../public/image/temp/temp009.png" alt="">
-											</figure>
-										</li>
-										<li class="swiper-slide">
-											<figure>
-												<img src="../../public/image/temp/temp010.png" alt="">
-											</figure>
-										</li>
-									</ul>
-									<div class="swiper-button-next">이전 이미지</div>
-									<div class="swiper-button-prev">다음 이미지</div>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+			
+					<!-- 본문 -->
+					<main class="contents info"> <!-- [생활정보 Class] info-->
+						<h2 class="visible"><div class="headerClone">사진리뷰ㆍ<span class="number">98</span><span>/100</span></div></h2> <!-- [헤더에 넣어줄 제목] -->
+			
+						<div class="infoWrap">
+							<div class="pictureArea">
+								<ul class="pgList">
+									<li>
+										<figure>
+											<img src="../../public/image/temp/temp008.png" alt="">
+										</figure>
+									</li>
+									<li>
+										<div id="infoPictureSwiper" class="pictureBodySlide">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<figure>
+															<img src="../../public/image/temp/temp008.png" alt="">
+														</figure>
+													</li>
+													<li class="swiper-slide">
+														<figure>
+															<img src="../../public/image/temp/temp009.png" alt="">
+														</figure>
+													</li>
+													<li class="swiper-slide">
+														<figure>
+															<img src="../../public/image/temp/temp010.png" alt="">
+														</figure>
+													</li>
+												</ul>
+												<div class="swiper-button-next">이전 이미지</div>
+												<div class="swiper-button-prev">다음 이미지</div>
+											</div>
+										</div>
+										<script>
+											slider.active('infoPictureSwiper');
+										</script>
+									</li>
+									<li>
+										<figure>
+										</figure>
+									</li>
+								</ul>
+								<div class="headTitle">
+									<div class="tlHead">
+										<div class="profile">개인 이미지</div>
+										<strong>홍길동</strong>
+										<span>2021.12.28</span>
+										<button type="button" class="report">신고하기</button>
+									</div>
+									<p class="text show">
+										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+									</p>
+									<div class="tlControls">
+										<p class="guide">도움이 되셨다면 버튼을 눌러주세요</p>
+										<button type="button" class="recommend">도움돼요</button>
+									</div>
 								</div>
 							</div>
-							<script>
-								slider.active('infoPictureSwiper');
-							</script>
-						</li>
-						<li>
-							<figure>
-							</figure>
-						</li>
-					</ul>
-					<div class="headTitle">
-						<div class="tlHead">
-							<div class="profile">개인 이미지</div>
-							<strong>홍길동</strong>
-							<span>2021.12.28</span>
-							<button type="button" class="report">신고하기</button>
 						</div>
-						<p class="text show">
-							가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-						</p>
-						<div class="tlControls">
-							<p class="guide">도움이 되셨다면 버튼을 눌러주세요</p>
-							<button type="button" class="recommend">도움돼요</button>
-						</div>
-					</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

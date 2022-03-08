@@ -6,161 +6,175 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents info"> <!-- [생활정보 Class] info-->
-			<h2 class="visible"><div class="headerClone">리뷰대상명</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="infoWrap">
-				<div class="pictureReview">
-					<div class="header-default">
-						<h3>사진리뷰 <span class="num">12,098건</span></h3>
-						<a href="#">지도에서 보기 &gt;</a>
-					</div>
-
-					<div id="infoReviewSwiper" class="pictureBody">
-						<div class="slideContainer">
-							<ul class="swiper-wrapper">
-								<li class="swiper-slide">
-									<a href="#">
-										<figure>
-											<img src="../../public/image/temp/temp011.png" alt="">
-										</figure>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#">
-										<figure>
-											<img src="../../public/image/temp/temp012.png" alt="">
-										</figure>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#">
-										<figure>
-											<img src="../../public/image/temp/temp013.png" alt="">
-										</figure>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#">
-										<figure>
-											<img src="../../public/image/temp/temp014.png" alt="">
-										</figure>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#" class="lastMore"> <!-- 20개 초과 등록 시 lastMore 클래스 추가 -->
-										<figure>
-											<img src="../../public/image/temp/temp014.png" alt="">
-										</figure>
-										<div class="blind">
-											<span>100</span>
+					<!-- 본문 -->
+					<main class="contents info"> <!-- [생활정보 Class] info-->
+						<h2 class="visible"><div class="headerClone">리뷰대상명</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="infoWrap">
+							<div class="pictureReview">
+								<div class="header-default">
+									<h3>사진리뷰 <span class="num">12,098건</span></h3>
+									<a href="#">지도에서 보기 &gt;</a>
+								</div>
+			
+								<div id="infoReviewSwiper" class="pictureBody">
+									<div class="slideContainer">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<a href="#">
+													<figure>
+														<img src="../../public/image/temp/temp011.png" alt="">
+													</figure>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<figure>
+														<img src="../../public/image/temp/temp012.png" alt="">
+													</figure>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<figure>
+														<img src="../../public/image/temp/temp013.png" alt="">
+													</figure>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<figure>
+														<img src="../../public/image/temp/temp014.png" alt="">
+													</figure>
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" class="lastMore"> <!-- 20개 초과 등록 시 lastMore 클래스 추가 -->
+													<figure>
+														<img src="../../public/image/temp/temp014.png" alt="">
+													</figure>
+													<div class="blind">
+														<span>100</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- 내용이 없을경우 -->
+									<div class="empty">
+										<p>등록된 사진리뷰가 없습니다.</p>
+									</div>
+									<!-- //내용이 없을경우 -->
+								</div>
+								<script>
+									slider.active('infoReviewSwiper')
+								</script>
+							</div>
+							<div class="textReview line-default">
+								<header class="locationHeader">
+									<h3>리뷰<span class="cGray">3건</span></h3>
+									<div>
+										<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+										<button type="button">도움많은순</button>
+										<button type="button">내가쓴글</button>
+									</div>
+								</header>
+								<ul class="items-review">
+									<li>
+										<div class="headTitle">
+											<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+												<div class="profile">개인 이미지</div>
+												<strong class="my">홍길동</strong>
+												<span>2021.12.28</span>
+												<button type="button" class="report">신고하기</button>
+											</div>
+											<figure>
+												<img src="../../public/image/temp/temp004.png" alt="">
+												<button type="button" class="zoom">이미지 크게보기</button>
+											</figure>
+											<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
+												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+											</p>
+											<div class="tlControls">
+												<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
+												<button type="button" class="recommend">도움돼요 3</button>
+											</div>
+											<div class="button-visible">
+												<button type="button">수정</button>
+												<button type="button">삭제</button>
+											</div>
 										</div>
-									</a>
-								</li>
-							</ul>
+									</li>
+									<li>
+										<div class="headTitle">
+											<div class="tlHead">
+												<div class="profile">개인 이미지</div>
+												<strong>홍길동</strong>
+												<span>2021.12.28</span>
+												<button type="button" class="report">신고하기</button>
+											</div>
+											<p class="text lineBreake">
+												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+											</p>
+											<div class="tlControls">
+												<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
+												<button type="button" class="recommend">도움돼요 3</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="headTitle">
+											<div class="tlHead">
+												<div class="profile">개인 이미지</div>
+												<strong>홍길동</strong>
+												<span>2021.12.28</span>
+												<button type="button" class="report">신고하기</button>
+											</div>
+											<figure>
+												<img src="../../public/image/temp/temp005.png" alt="">
+												<button type="button" class="zoom">이미지 크게보기</button>
+											</figure>
+											<p class="text lineBreake">
+												가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+											</p>
+											<div class="tlControls">
+												<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
+												<button type="button" class="recommend">도움돼요 3</button>
+											</div>
+										</div>
+									</li>
+									<!-- 내용이 없을경우 -->
+									<li>
+										<div class="empty">
+											<p>등록된 리뷰가 없습니다.</p>
+										</div>
+									</li>
+									<!-- //내용이 없을경우 -->
+								</ul>
+							</div>
 						</div>
-						<!-- 내용이 없을경우 -->
-						<div class="empty">
-							<p>등록된 사진리뷰가 없습니다.</p>
-						</div>
-						<!-- //내용이 없을경우 -->
-					</div>
-					<script>
-						slider.active('infoReviewSwiper')
-					</script>
-				</div>
-				<div class="textReview line-default">
-					<header class="locationHeader">
-						<h3>리뷰<span class="cGray">3건</span></h3>
-						<div>
-							<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
-							<button type="button">도움많은순</button>
-							<button type="button">내가쓴글</button>
-						</div>
-					</header>
-					<ul class="items-review">
-						<li>
-							<div class="headTitle">
-								<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
-									<div class="profile">개인 이미지</div>
-									<strong class="my">홍길동</strong>
-									<span>2021.12.28</span>
-									<button type="button" class="report">신고하기</button>
-								</div>
-								<figure>
-									<img src="../../public/image/temp/temp004.png" alt="">
-									<button type="button" class="zoom">이미지 크게보기</button>
-								</figure>
-								<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
-									가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-								</p>
-								<div class="tlControls">
-									<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
-									<button type="button" class="recommend">도움돼요 3</button>
-								</div>
-								<div class="button-visible">
-									<button type="button">수정</button>
-									<button type="button">삭제</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="headTitle">
-								<div class="tlHead">
-									<div class="profile">개인 이미지</div>
-									<strong>홍길동</strong>
-									<span>2021.12.28</span>
-									<button type="button" class="report">신고하기</button>
-								</div>
-								<p class="text lineBreake">
-									가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-								</p>
-								<div class="tlControls">
-									<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
-									<button type="button" class="recommend">도움돼요 3</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="headTitle">
-								<div class="tlHead">
-									<div class="profile">개인 이미지</div>
-									<strong>홍길동</strong>
-									<span>2021.12.28</span>
-									<button type="button" class="report">신고하기</button>
-								</div>
-								<figure>
-									<img src="../../public/image/temp/temp005.png" alt="">
-									<button type="button" class="zoom">이미지 크게보기</button>
-								</figure>
-								<p class="text lineBreake">
-									가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-								</p>
-								<div class="tlControls">
-									<button type="button" class="more" onclick="moreBtn.show()">더보기</button>
-									<button type="button" class="recommend">도움돼요 3</button>
-								</div>
-							</div>
-						</li>
-						<!-- 내용이 없을경우 -->
-						<li>
-							<div class="empty">
-								<p>등록된 리뷰가 없습니다.</p>
-							</div>
-						</li>
-						<!-- //내용이 없을경우 -->
-					</ul>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

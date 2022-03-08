@@ -6,161 +6,175 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
 
-		<!-- 레이어 -->
-		<div id="layerCalendar" class="layerPopup">
-			<div class="layerWrap typeBot">
-				<div class="calendarBody">
-					<div class="cbHead">
-						<button type="button" class="prev">이전 달</button>
-						<div class="year">
-							<select title="년도 선택">
-								<option>2021</option>
-								<option>2022</option>
-								<option>2023</option>
-							</select>년
-							<select title="월 선택">
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
-							</select>월
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+					<!-- 레이어 -->
+					<div id="layerCalendar" class="layerPopup">
+						<div class="layerWrap typeBot">
+							<div class="calendarBody">
+								<div class="cbHead">
+									<button type="button" class="prev">이전 달</button>
+									<div class="year">
+										<select title="년도 선택">
+											<option>2021</option>
+											<option>2022</option>
+											<option>2023</option>
+										</select>년
+										<select title="월 선택">
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+										</select>월
+									</div>
+									<button type="button" class="next">다음 달</button>
+								</div>
+			
+								<div class="calendar">
+									<ul class="cHead">
+										<li>일</li>
+										<li>월</li>
+										<li>화</li>
+										<li>수</li>
+										<li>목</li>
+										<li>금</li>
+										<li>토</li>
+									</ul>
+									<ul class="cList">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li><button type="button">1</button></li>
+										<li><button type="button">2</button></li>
+										<li><button type="button">3</button></li>
+										<li><button type="button">4</button></li>
+										<li><button type="button">5</button></li>
+										<li><button type="button">6</button></li>
+										<li><button type="button">7</button></li>
+										<li><button type="button">8</button></li>
+										<li><button type="button">9</button></li>
+										<li><button type="button">10</button></li>
+										<li><button type="button">11</button></li>
+										<li><button type="button">12</button></li>
+										<li><button type="button">13</button></li>
+										<li><button type="button" class="today">14</button></li> <!-- today 오늘 표시 -->
+										<li><button type="button">15</button></li>
+										<li><button type="button">16</button></li>
+										<li><button type="button">17</button></li>
+										<li><button type="button">18</button></li>
+										<li><button type="button">19</button></li>
+										<li><button type="button">20</button></li>
+										<li><button type="button">21</button></li>
+										<li><button type="button">22</button></li>
+										<li><button type="button">23</button></li>
+										<li><button type="button">24</button></li>
+										<li><button type="button" class="select">25</button></li> <!-- select 선택일 -->
+										<li><button type="button">26</button></li>
+										<li><button type="button">27</button></li>
+										<li><button type="button">28</button></li>
+										<li><button type="button">29</button></li>
+										<li><button type="button">30</button></li>
+										<li><button type="button">31</button></li>
+									</ul>
+								</div>
+			
+								<div class="time">
+									<div id="timeApmSwiper" class="apmBody">
+										<div class="slideContainer">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><button type="button">오전</button></li>
+												<li class="swiper-slide"><button type="button">오후</button></li>
+											</ul>
+										</div>
+										<div class="lineBg">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<script>
+										slider.active('timeApmSwiper');
+									</script>
+			
+									<div id="timeHourSwiper" class="hourBody">
+										<div class="slideContainer">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><button type="button">1</button></li>
+												<li class="swiper-slide"><button type="button">2</button></li>
+												<li class="swiper-slide"><button type="button">3</button></li>
+												<li class="swiper-slide"><button type="button">4</button></li>
+												<li class="swiper-slide"><button type="button">5</button></li>
+												<li class="swiper-slide"><button type="button">6</button></li>
+												<li class="swiper-slide"><button type="button">7</button></li>
+												<li class="swiper-slide"><button type="button">8</button></li>
+												<li class="swiper-slide"><button type="button">9</button></li>
+												<li class="swiper-slide"><button type="button">10</button></li>
+											</ul>
+										</div>
+										<div class="lineBg">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<script>
+										slider.active('timeHourSwiper');
+									</script>
+			
+									<div id="timeMinuteSwiper" class="minuteBody">
+										<div class="slideContainer">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><button type="button">00</button></li>
+												<li class="swiper-slide"><button type="button">01</button></li>
+												<li class="swiper-slide"><button type="button">02</button></li>
+												<li class="swiper-slide"><button type="button">03</button></li>
+												<li class="swiper-slide"><button type="button">04</button></li>
+												<li class="swiper-slide"><button type="button">05</button></li>
+												<li class="swiper-slide"><button type="button">06</button></li>
+												<li class="swiper-slide"><button type="button">07</button></li>
+												<li class="swiper-slide"><button type="button">08</button></li>
+												<li class="swiper-slide"><button type="button">09</button></li>
+												<li class="swiper-slide"><button type="button">10</button></li>
+											</ul>
+										</div>
+										<div class="lineBg">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<script>
+										slider.active('timeMinuteSwiper');
+									</script>
+								</div>
+			
+								<div class="buttonFlex">
+									<button type="button" class="button whiteLine">취소</button>
+									<button type="button" class="button blue">확인</button>
+								</div>
+							</div>
 						</div>
-						<button type="button" class="next">다음 달</button>
 					</div>
-
-					<div class="calendar">
-						<ul class="cHead">
-							<li>일</li>
-							<li>월</li>
-							<li>화</li>
-							<li>수</li>
-							<li>목</li>
-							<li>금</li>
-							<li>토</li>
-						</ul>
-						<ul class="cList">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li><button type="button">1</button></li>
-							<li><button type="button">2</button></li>
-							<li><button type="button">3</button></li>
-							<li><button type="button">4</button></li>
-							<li><button type="button">5</button></li>
-							<li><button type="button">6</button></li>
-							<li><button type="button">7</button></li>
-							<li><button type="button">8</button></li>
-							<li><button type="button">9</button></li>
-							<li><button type="button">10</button></li>
-							<li><button type="button">11</button></li>
-							<li><button type="button">12</button></li>
-							<li><button type="button">13</button></li>
-							<li><button type="button" class="today">14</button></li> <!-- today 오늘 표시 -->
-							<li><button type="button">15</button></li>
-							<li><button type="button">16</button></li>
-							<li><button type="button">17</button></li>
-							<li><button type="button">18</button></li>
-							<li><button type="button">19</button></li>
-							<li><button type="button">20</button></li>
-							<li><button type="button">21</button></li>
-							<li><button type="button">22</button></li>
-							<li><button type="button">23</button></li>
-							<li><button type="button">24</button></li>
-							<li><button type="button" class="select">25</button></li> <!-- select 선택일 -->
-							<li><button type="button">26</button></li>
-							<li><button type="button">27</button></li>
-							<li><button type="button">28</button></li>
-							<li><button type="button">29</button></li>
-							<li><button type="button">30</button></li>
-							<li><button type="button">31</button></li>
-						</ul>
-					</div>
-
-					<div class="time">
-						<div id="timeApmSwiper" class="apmBody">
-							<div class="slideContainer">
-								<ul class="swiper-wrapper">
-									<li class="swiper-slide"><button type="button">오전</button></li>
-									<li class="swiper-slide"><button type="button">오후</button></li>
-								</ul>
-							</div>
-							<div class="lineBg">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</div>
-						<script>
-							slider.active('timeApmSwiper');
-						</script>
-
-						<div id="timeHourSwiper" class="hourBody">
-							<div class="slideContainer">
-								<ul class="swiper-wrapper">
-									<li class="swiper-slide"><button type="button">1</button></li>
-									<li class="swiper-slide"><button type="button">2</button></li>
-									<li class="swiper-slide"><button type="button">3</button></li>
-									<li class="swiper-slide"><button type="button">4</button></li>
-									<li class="swiper-slide"><button type="button">5</button></li>
-									<li class="swiper-slide"><button type="button">6</button></li>
-									<li class="swiper-slide"><button type="button">7</button></li>
-									<li class="swiper-slide"><button type="button">8</button></li>
-									<li class="swiper-slide"><button type="button">9</button></li>
-									<li class="swiper-slide"><button type="button">10</button></li>
-								</ul>
-							</div>
-							<div class="lineBg">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</div>
-						<script>
-							slider.active('timeHourSwiper');
-						</script>
-
-						<div id="timeMinuteSwiper" class="minuteBody">
-							<div class="slideContainer">
-								<ul class="swiper-wrapper">
-									<li class="swiper-slide"><button type="button">00</button></li>
-									<li class="swiper-slide"><button type="button">01</button></li>
-									<li class="swiper-slide"><button type="button">02</button></li>
-									<li class="swiper-slide"><button type="button">03</button></li>
-									<li class="swiper-slide"><button type="button">04</button></li>
-									<li class="swiper-slide"><button type="button">05</button></li>
-									<li class="swiper-slide"><button type="button">06</button></li>
-									<li class="swiper-slide"><button type="button">07</button></li>
-									<li class="swiper-slide"><button type="button">08</button></li>
-									<li class="swiper-slide"><button type="button">09</button></li>
-									<li class="swiper-slide"><button type="button">10</button></li>
-								</ul>
-							</div>
-							<div class="lineBg">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</div>
-						<script>
-							slider.active('timeMinuteSwiper');
-						</script>
-					</div>
-
-					<div class="buttonFlex">
-						<button type="button" class="button whiteLine">취소</button>
-						<button type="button" class="button blue">확인</button>
-					</div>
+			
+					<script>
+						layerPopup.open('layerCalendar');
+					</script>
+					<!-- //레이어 -->
 				</div>
 			</div>
-		</div>
+			<!-- //모바일 내용 -->
 
-		<script>
-			layerPopup.open('layerCalendar');
-		</script>
-		<!-- //레이어 -->
+		</div>
 	</div>
 </div>
 </body>

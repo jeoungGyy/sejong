@@ -3,13 +3,6 @@
 
 @media screen and (min-width: 412px) { html {font-size: 67%;}}
 
-body {
-	font: 15px/1.5 'Noto Sans KR', sans-serif;
-	color:#111;
-	font-weight: 400;
-	letter-spacing: -0.04em;
-}
-
 body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 #pcRoot { position: relative;} 
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
@@ -97,14 +90,16 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 /* PC에 맞게 모바일 크기 조정
 **********************************************/
 
-.container { max-width: 410px; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
+.container { max-width: 410px; min-height: 100vh; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
 .header { max-width: 410px;}
 .layerPopup { max-width: 410px;}
 .mainMenuFixed .mainMenu { max-width: 410px;}
-.mainMenuFixed .chatbot { position: fixed; right: inherit; margin-left: 340px;}
 .layerAlert { max-width: 410px;}
 .bottomFixed .btnGroup { max-width: 410px;}
-
+.map .goNotice .busHead { max-width: 410px;}
+.map .mapMoveData { max-width: 410px;}
+.layerMapInfo .head { max-width: 410px;}
+.map .mapTab { max-width: 410px;}
 
 
 @media all and (max-width:1190px){

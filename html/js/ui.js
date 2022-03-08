@@ -62,8 +62,8 @@ const mapInfo = {
 			const scaleBtn = document.querySelector(".scaleBtn");
 
 			if(myLocation) {
-				myLocation.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
-				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
+				myLocation.style.bottom = (mapInfo.locationPosition/10)+'rem';
+				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+'rem';
 			}
 		}
 	},

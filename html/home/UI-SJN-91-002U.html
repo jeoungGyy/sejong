@@ -6,78 +6,92 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 서브 헤더 -->
-		<script src="../include/header_sub.js"></script>
-		<!-- //공통: 서브 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents openApi"> <!-- [오픈API Class] openApi-->
-			<h2 class="visible"><div class="headerClone">오픈API 이용안내</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
 			
-			<div class="openApiWrap">
-				<div class="openApiArea">
-					<div class="header-formSearch">
-						<select title="검색 조건선택">
-							<option>전체</option>
-						</select>
-						<div class="send">
-							<input type="text" placeholder="검색어를 입력하세요">
-							<button type="button" class="btnSend"><i>검색</i></button>
-						</div>
-					</div>
-					<div class="header-list">
-						<div>
-							<b class="num">30건</b>
-						</div>
-						<div>
-							<button type="button" class="active">전체</button> <!-- 활성화시 active -->
-							<button type="button">세종엔</button>
-							<button type="button">공공데이터포털</button>
-						</div>
-					</div>
-
-					<ul class="items-apiList">
-						<li>
-							<a href="#">
-								<h3>CCTV 위치정보</h3>
-								<div>
-									<p>기관 : 도시통합정보센터</p>
-									<p><span>조회수 1,209</span><span class="cBlue">활용신청건수 9</span></p>
+					<!-- 본문 -->
+					<main class="contents openApi"> <!-- [오픈API Class] openApi-->
+						<h2 class="visible"><div class="headerClone">오픈API 이용안내</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="openApiWrap">
+							<div class="openApiArea">
+								<div class="header-formSearch">
+									<select title="검색 조건선택">
+										<option>전체</option>
+									</select>
+									<div class="send">
+										<input type="text" placeholder="검색어를 입력하세요">
+										<button type="button" class="btnSend"><i>검색</i></button>
+									</div>
 								</div>
-								<i class="arrow"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h3>재난ㆍ재해 발생정보</h3>
-								<div>
-									<p>기관 : 도시통합정보센터</p>
+								<div class="header-list">
+									<div>
+										<b class="num">30건</b>
+									</div>
+									<div>
+										<button type="button" class="active">전체</button> <!-- 활성화시 active -->
+										<button type="button">세종엔</button>
+										<button type="button">공공데이터포털</button>
+									</div>
 								</div>
-								<i class="arrow"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<h3>재난ㆍ재해 발생정보</h3>
-								<div>
-									<p>기관 : 도시통합정보센터</p>
-									<p><span>2021-12-21</span><span>공지</span></p>
-								</div>
-								<i class="arrow"></i>
-							</a>
-						</li>
-						<li>
-							<div class="empty">
-								<p>등록된 게시물이 없습니다.</p>
+			
+								<ul class="items-apiList">
+									<li>
+										<a href="#">
+											<h3>CCTV 위치정보</h3>
+											<div>
+												<p>기관 : 도시통합정보센터</p>
+												<p><span>조회수 1,209</span><span class="cBlue">활용신청건수 9</span></p>
+											</div>
+											<i class="arrow"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>재난ㆍ재해 발생정보</h3>
+											<div>
+												<p>기관 : 도시통합정보센터</p>
+											</div>
+											<i class="arrow"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>재난ㆍ재해 발생정보</h3>
+											<div>
+												<p>기관 : 도시통합정보센터</p>
+												<p><span>2021-12-21</span><span>공지</span></p>
+											</div>
+											<i class="arrow"></i>
+										</a>
+									</li>
+									<li>
+										<div class="empty">
+											<p>등록된 게시물이 없습니다.</p>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

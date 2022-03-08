@@ -10,6 +10,7 @@ str += '<link rel="stylesheet" href="../../public/styles/gbSin.css"/>';
 str += '<link rel="stylesheet" href="../../public/styles/gbInfo.css" />';
 str += '<link rel="stylesheet" href="../../public/styles/gbMap.css" />';
 str += '<link rel="stylesheet" href="../../public/styles/globals.css" />';
+str += '<link rel="stylesheet" href="../../public/styles/pc.css" />';
 str += '<script src="../js//swiper-bundle.min.js"></script>';
 str += '<script src="../js/slider.js"></script>';
 str += '<script src="../js/ui.js"></script>';

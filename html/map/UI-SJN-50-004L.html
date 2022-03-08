@@ -6,72 +6,86 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 세종 안심서비스 헤더 -->
-		<script src="../include/header_map_prev.js"></script>
-		<!-- //공통: 세종 안심서비스 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">문자 위치 확인</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 세종 안심서비스 헤더 -->
+					<script src="../include/header_map_prev.js"></script>
+					<!-- //공통: 세종 안심서비스 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="bottomFixed bgGray"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
-					<div class="messageLocation">
-						<div class="textBox">
-							친구가 데이터통신(인터넷)이 안돼도<br />
-							<span class="point">문자로 위치를 확인</span>할 수 있어요
-						</div>
-
-						<div class="messageExample">
-							<div class="phoneBlock">
-								<div class="phone">
-									<p class="introImg"><img src="../../public/image/map/img_introduce_sejongN.png" alt="시민의 안전을 책임지는 세종 안심서비스"></p>
-
-									<div class="messageContent my">
-										[위치 좌표 링크]<br />
-										http://sejongsmartportal.go.kr/kjasn;dklfjn;a세종안심서비스
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">문자 위치 확인</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="bottomFixed bgGray"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+								<div class="messageLocation">
+									<div class="textBox">
+										친구가 데이터통신(인터넷)이 안돼도<br />
+										<span class="point">문자로 위치를 확인</span>할 수 있어요
 									</div>
-								</div>
-								<p class="text">내 화면</p>
-							</div>
-
-							<div class="arrowArea">
-								<div class="arrow red">
-									<span>위치확인 문자전송</span>
-								</div>
-								<div class="arrow blue">
-									<span>위치정보 문자전송</span>
-								</div>
-							</div>
-
-							<div class="phoneBlock">
-								<div class="phone">
-									<p class="introImg"><img src="../../public/image/map/img_introduce_sejongN.png" alt="시민의 안전을 책임지는 세종 안심서비스"></p>
-
-									<div class="messageContent other">
-										[위치 정보 요청]<br />
-										친구1님이 위치 정보를 요청하셨습니다.
+			
+									<div class="messageExample">
+										<div class="phoneBlock">
+											<div class="phone">
+												<p class="introImg"><img src="../../public/image/map/img_introduce_sejongN.png" alt="시민의 안전을 책임지는 세종 안심서비스"></p>
+			
+												<div class="messageContent my">
+													[위치 좌표 링크]<br />
+													http://sejongsmartportal.go.kr/kjasn;dklfjn;a세종안심서비스
+												</div>
+											</div>
+											<p class="text">내 화면</p>
+										</div>
+			
+										<div class="arrowArea">
+											<div class="arrow red">
+												<span>위치확인 문자전송</span>
+											</div>
+											<div class="arrow blue">
+												<span>위치정보 문자전송</span>
+											</div>
+										</div>
+			
+										<div class="phoneBlock">
+											<div class="phone">
+												<p class="introImg"><img src="../../public/image/map/img_introduce_sejongN.png" alt="시민의 안전을 책임지는 세종 안심서비스"></p>
+			
+												<div class="messageContent other">
+													[위치 정보 요청]<br />
+													친구1님이 위치 정보를 요청하셨습니다.
+												</div>
+											</div>
+											<p class="text">상대방 화면</p>
+										</div>
 									</div>
+			
+									<ul class="items-blet">
+										<li>친구가 아이폰(iOS)일 경우 지원되지 않는 기능입니다.</li>
+										<li>해외에 있는 친구일 경우 국가에 따라 메시지 요금이 발생합니다. </li>
+									</ul>
 								</div>
-								<p class="text">상대방 화면</p>
+			
+								<div class="btnGroup">
+									<button type="button" class="button orange">위치확인 메시지 전송</button>
+								</div>
 							</div>
 						</div>
-
-						<ul class="items-blet">
-							<li>친구가 아이폰(iOS)일 경우 지원되지 않는 기능입니다.</li>
-							<li>해외에 있는 친구일 경우 국가에 따라 메시지 요금이 발생합니다. </li>
-						</ul>
-					</div>
-
-					<div class="btnGroup">
-						<button type="button" class="button orange">위치확인 메시지 전송</button>
-					</div>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>

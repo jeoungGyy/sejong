@@ -6,228 +6,242 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 툴팁 -->
-		<div id="tooltip3" class="dustTooltipLayer" tabindex="0">
-			<div class="legendTooltipBody">
-				<div>
-					<h4>통합대기지수</h4>
-					<p>
-						통합대기지수는 6대~~~<br />
-						중략…
-					</p>
-					<div>
-						<ul class="numerical">
-							<li>
-								<i class="good"></i>
-								<span>좋음(50)</span>
-							</li>
-							<li>
-								<i class="usually"></i>
-								<span>보통(100)</span>
-							</li>
-							<li>
-								<i class="bed"></i>
-								<span>나쁨(250)</span>
-							</li>
-							<li>
-								<i class="veryBed"></i>
-								<span>매우나쁨(400)</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<button type="button" class="btnClose"><i>닫기</i></button>
-			</div>
-		</div>
-		<!-- //툴팁 -->
+		<div class="pcView">
 
-		<!-- 레이어 -->
-		<div id="layerFineDust" class="layerPopup" tabindex="0">
-			<div class="layerWrap full">
-				<div class="headerLocation">
-					<div class="hdeading">
-						<div class="title">
-							<h2>아름동 측정소</h2>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+					<!-- 툴팁 -->
+					<div id="tooltip3" class="dustTooltipLayer" tabindex="0">
+						<div class="legendTooltipBody">
 							<div>
-								<span>미세먼지</span>
+								<h4>통합대기지수</h4>
+								<p>
+									통합대기지수는 6대~~~<br />
+									중략…
+								</p>
+								<div>
+									<ul class="numerical">
+										<li>
+											<i class="good"></i>
+											<span>좋음(50)</span>
+										</li>
+										<li>
+											<i class="usually"></i>
+											<span>보통(100)</span>
+										</li>
+										<li>
+											<i class="bed"></i>
+											<span>나쁨(250)</span>
+										</li>
+										<li>
+											<i class="veryBed"></i>
+											<span>매우나쁨(400)</span>
+										</li>
+									</ul>
+								</div>
 							</div>
+							<button type="button" class="btnClose"><i>닫기</i></button>
 						</div>
-						<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 					</div>
-				</div>
-				<div class="fullFlex locationLayer">
-					<section class="basic">
-						<header class="locationHeader">
-							<h3>세종특별자치시 보듬3로 105(주1-15)</h3>
-						</header>
-						<div class="dustBody">
-							<!--
-								good: 좋음
-								usually: 보통
-								bad: 나쁨
-								veryBad: 매우나쁨
-							-->
-							<div class="good">
-								<button type="button" class="tooltipBtn legend" onclick="tooltip.show('tooltip3', 'bottom');">미세먼지<i class="split20"></i></button>
-								<div class="level">
-									<strong>60</strong>
-									<span>좋음</span>
+					<!-- //툴팁 -->
+			
+					<!-- 레이어 -->
+					<div id="layerFineDust" class="layerPopup" tabindex="0">
+						<div class="layerWrap full">
+							<div class="headerLocation">
+								<div class="hdeading">
+									<div class="title">
+										<h2>아름동 측정소</h2>
+										<div>
+											<span>미세먼지</span>
+										</div>
+									</div>
+									<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 								</div>
 							</div>
-							<div class="usually">
-								<button type="button" class="tooltipBtn legend" onclick="tooltip.show('tooltip3', 'bottom');">초미세먼지<i class="split20"></i></button>
-								<div class="level">
-									<strong>60</strong>
-									<span>보통</span>
-								</div>
+							<div class="fullFlex locationLayer">
+								<section class="basic">
+									<header class="locationHeader">
+										<h3>세종특별자치시 보듬3로 105(주1-15)</h3>
+									</header>
+									<div class="dustBody">
+										<!--
+											good: 좋음
+											usually: 보통
+											bad: 나쁨
+											veryBad: 매우나쁨
+										-->
+										<div class="good">
+											<button type="button" class="tooltipBtn legend" onclick="tooltip.show('tooltip3', 'bottom');">미세먼지<i class="split20"></i></button>
+											<div class="level">
+												<strong>60</strong>
+												<span>좋음</span>
+											</div>
+										</div>
+										<div class="usually">
+											<button type="button" class="tooltipBtn legend" onclick="tooltip.show('tooltip3', 'bottom');">초미세먼지<i class="split20"></i></button>
+											<div class="level">
+												<strong>60</strong>
+												<span>보통</span>
+											</div>
+										</div>
+									</div>
+									<div class="offerer">
+										<span>제공 : 에어코리아 2022-01-20 12:00</span>
+									</div>
+								</section>
+			
+								<section class="dustTransition line-default">
+									<h3 class="invisible">미세먼지 추이</h3>
+									<ul class="nav-faq">
+										<li><button type="button" class="active">시간대별 추이</button></li>
+										<li><button type="button">일별 추이 <span class="small">(최근 10일)</span></button></li>
+									</ul>
+									<div class="graph">
+										<img src="../../public/image/temp/temp036.png" alt="그래프 디자인" style="width: 100%;">
+									</div>
+								</section>
+			
+								<section class="pollutant line-default">
+									<header class="locationHeader">
+										<h3>오염물질</h3>
+									</header>
+									<div>
+										<ul class="ppmList">
+											<li>
+												<div class="name">
+													<span>오존</span>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">오존 오염물질 안내</i></button>
+												</div>
+												<div class="ppm good">
+													<i class="split20"></i>
+													<span>좋음 0.054ppm</span>
+												</div>
+											</li>
+											<li>
+												<div class="name">
+													<span>일산화탄소</span>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">일산화탄소 오염물질 안내</i></button>
+												</div>
+												<div class="ppm usually">
+													<i class="split20"></i>
+													<span>보통 0.054ppm</span>
+												</div>
+											</li>
+											<li>
+												<div class="name">
+													<span>아황산가스</span>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">아황산가스 오염물질 안내</i></button>
+												</div>
+												<div class="ppm bad">
+													<i class="split20"></i>
+													<span>나쁨 0.054ppm</span>
+												</div>
+											</li>
+											<li>
+												<div class="name">
+													<span>이산화질소</span>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">이산화질소 오염물질 안내</i></button>
+												</div>
+												<div class="ppm veryBad">
+													<i class="split20"></i>
+													<span>매우나쁨 0.054ppm</span>
+												</div>
+											</li>
+											<li>
+												<div class="name">
+													<span>통합대기</span>
+													<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">통합대기 오염물질 안내</i></button>
+												</div>
+												<div class="ppm usually">
+													<i class="split20"></i>
+													<span>보통 0.054ppm</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</section>
+			
+								<section class="nationalData line-default">
+									<header class="locationHeader">
+										<h3>국가망 관측 자료</h3>
+									</header>
+									<div class="dataList">
+										<button type="button" class="active">이름동</button>
+										<button type="button">한솔동</button>
+									</div>
+								</section>
+			
+								<section class="forecast line-default">
+									<header class="locationHeader">
+										<h3>예보</h3>
+									</header>
+									<div>
+										<ul class="forecastList">
+											<li>
+												<div class="head">
+													<span class="today">오늘 1.26</span>
+													<h4>세종특별자치시</h4>
+													<b class="usually">보통</b>
+												</div>
+												<article>
+													<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
+												</article>
+											</li>
+											<li>
+												<div class="head">
+													<span>내일 1.27</span>
+													<h4>세종특별자치시</h4>
+													<b class="good">좋음</b>
+												</div>
+												<article>
+													<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
+												</article>
+											</li>
+											<li>
+												<div class="head">
+													<span>내일 1.27</span>
+													<h4>세종특별자치시</h4>
+													<b class="bed">나쁨</b>
+												</div>
+												<article>
+													<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
+												</article>
+											</li>
+											<li>
+												<div class="head">
+													<span>내일 1.27</span>
+													<h4>세종특별자치시</h4>
+													<b class="veryBad">매우나쁨</b>
+												</div>
+												<article>
+													<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
+												</article>
+											</li>
+										</ul>
+									</div>
+								</section>
 							</div>
 						</div>
-						<div class="offerer">
-							<span>제공 : 에어코리아 2022-01-20 12:00</span>
-						</div>
-					</section>
-
-					<section class="dustTransition line-default">
-						<h3 class="invisible">미세먼지 추이</h3>
-						<ul class="nav-faq">
-							<li><button type="button" class="active">시간대별 추이</button></li>
-							<li><button type="button">일별 추이 <span class="small">(최근 10일)</span></button></li>
-						</ul>
-						<div class="graph">
-							<img src="../../public/image/temp/temp036.png" alt="그래프 디자인" style="width: 100%;">
-						</div>
-					</section>
-
-					<section class="pollutant line-default">
-						<header class="locationHeader">
-							<h3>오염물질</h3>
-						</header>
-						<div>
-							<ul class="ppmList">
-								<li>
-									<div class="name">
-										<span>오존</span>
-										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">오존 오염물질 안내</i></button>
-									</div>
-									<div class="ppm good">
-										<i class="split20"></i>
-										<span>좋음 0.054ppm</span>
-									</div>
-								</li>
-								<li>
-									<div class="name">
-										<span>일산화탄소</span>
-										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">일산화탄소 오염물질 안내</i></button>
-									</div>
-									<div class="ppm usually">
-										<i class="split20"></i>
-										<span>보통 0.054ppm</span>
-									</div>
-								</li>
-								<li>
-									<div class="name">
-										<span>아황산가스</span>
-										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">아황산가스 오염물질 안내</i></button>
-									</div>
-									<div class="ppm bad">
-										<i class="split20"></i>
-										<span>나쁨 0.054ppm</span>
-									</div>
-								</li>
-								<li>
-									<div class="name">
-										<span>이산화질소</span>
-										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">이산화질소 오염물질 안내</i></button>
-									</div>
-									<div class="ppm veryBad">
-										<i class="split20"></i>
-										<span>매우나쁨 0.054ppm</span>
-									</div>
-								</li>
-								<li>
-									<div class="name">
-										<span>통합대기</span>
-										<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip3', 'bottom');"><i class="split20">통합대기 오염물질 안내</i></button>
-									</div>
-									<div class="ppm usually">
-										<i class="split20"></i>
-										<span>보통 0.054ppm</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="nationalData line-default">
-						<header class="locationHeader">
-							<h3>국가망 관측 자료</h3>
-						</header>
-						<div class="dataList">
-							<button type="button" class="active">이름동</button>
-							<button type="button">한솔동</button>
-						</div>
-					</section>
-
-					<section class="forecast line-default">
-						<header class="locationHeader">
-							<h3>예보</h3>
-						</header>
-						<div>
-							<ul class="forecastList">
-								<li>
-									<div class="head">
-										<span class="today">오늘 1.26</span>
-										<h4>세종특별자치시</h4>
-										<b class="usually">보통</b>
-									</div>
-									<article>
-										<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
-									</article>
-								</li>
-								<li>
-									<div class="head">
-										<span>내일 1.27</span>
-										<h4>세종특별자치시</h4>
-										<b class="good">좋음</b>
-									</div>
-									<article>
-										<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
-									</article>
-								</li>
-								<li>
-									<div class="head">
-										<span>내일 1.27</span>
-										<h4>세종특별자치시</h4>
-										<b class="bed">나쁨</b>
-									</div>
-									<article>
-										<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
-									</article>
-								</li>
-								<li>
-									<div class="head">
-										<span>내일 1.27</span>
-										<h4>세종특별자치시</h4>
-										<b class="veryBad">매우나쁨</b>
-									</div>
-									<article>
-										<p>수도권 강원영서 충청도 호남권 대구 경북 제주권은 ‘나쁨’, 그 밖의 권역은 ‘보통으로 예상됩니다. 대부분 지역이 대기 정체로 국내 발생 미세먼지가 축적되고, 국외 미세먼지가 유입되어 농도가 높을 것으로 예상됩니다.</p>
-									</article>
-								</li>
-							</ul>
-						</div>
-					</section>
+					</div>
+					<script>
+						layerPopup.open('layerFineDust');
+					</script>
+					<!-- //레이어 -->
+					
 				</div>
 			</div>
+			<!-- //모바일 내용 -->
+
 		</div>
-		<script>
-			layerPopup.open('layerFineDust');
-		</script>
-		<!-- //레이어 -->
-		
 	</div>
 </div>
 </body>

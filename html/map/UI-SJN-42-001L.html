@@ -6,345 +6,359 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">B2</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
 			
-			<div class="mapWrap">
-				<div class="mapArea">
-					<!-- 맵 검색 -->
-					<div class="mapSearch">
-						<div class="mapheader">
-							<div class="mapBody">
-								<button type="button" class="btnPlace" title="장소 검색" onclick="maplnb.open();">
-									<span class="t"></span>
-									<span class="c"></span>
-									<span class="b"></span>
-								</button>
-								<div class="searchHeader">
-									<input type="text" title="장소, 버스 검색" placeholder="장소, 버스 검색">    
-								</div>
-								<div class="btnHeader">
-									<button type="button" class="icoMic"><i>마이크</i></button>
-								</div>
-							</div>
-							<button type="button" class="btnMapSearch">길찾기</button>
-						</div>
-						<nav id="mapWordListSwiper" class="items-wordList">
-							<div class="slideContainer">
-								<ul class="swiper-wrapper">
-									<li class="swiper-slide"><button type="button">코로나19</button></li>
-									<li class="swiper-slide"><button type="button">교통</button></li>
-									<li class="swiper-slide"><button type="button">건강</button></li>
-									<li class="swiper-slide"><button type="button">소통</button></li>
-									<li class="swiper-slide"><button type="button">편의시설</button></li>
-									<li class="swiper-slide"><button type="button">교통</button></li>
-									<li class="swiper-slide"><button type="button">건강</button></li>
-								</ul>
-							</div>
-						</nav>
-						<script>
-							slider.active('mapWordListSwiper')
-						</script>
-					</div>
-					<!-- //맵 검색 -->
-
-					<!-- 기타 아이콘들 -->
-					<div class="mapIcons">
-						<button type="button" class="btnPin"><i>핀</i></button>
-
-						<div class="busStop">
-							<button type="button" class="commIco24 busStopIco" style="left: 10rem; top: 15rem;" title="버스 정류소"><i class="split24">오송역</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
-							<button type="button" class="commIco24 busStopIco" style="left: 15rem; top: 15rem;" title="버스 정류소"><i class="split24">누리리</i></button>
-							<button type="button" class="busIco B" style="left: 10rem; top: 20rem;" title="간선 버스"><i>B0</i></button>
-							<button type="button" class="busIco G" style="left: 15rem; top: 20rem;" title="지선 버스"><i>B1</i></button>
-							<button type="button" class="busIco Y" style="left: 20rem; top: 20rem;" title="일반 버스"><i>B2</i></button>
-							<button type="button" class="busIco R" style="left: 25rem; top: 20rem;" title="급행 버스"><i>B3</i></button>
-							<button type="button" class="busIco M" style="left: 30rem; top: 20rem;" title="광역 버스"><i>B4</i></button>
-						</div>
-
-						<div class="reportSet">
-							<button type="button" class="reportIcon safetyReport" style="left: 10rem; top: 15rem;">
-								<i class="split24"></i><span>안전신고</span>
-							</button>
-							<button type="button" class="reportIcon safetyReport" style="left: 20rem; top: 15rem;">
-								<i class="split24"></i><span>안전신고</span>
-							</button>
-							<button type="button" class="reportIcon complaint" style="left: 10rem; top: 25rem;">
-								<i class="split24"></i><span>불편신고</span>
-							</button>
-							<button type="button" class="reportIcon complaint" style="left: 20rem; top: 25rem;">
-								<i class="split24"></i><span>불편신고</span>
-							</button>
-						</div>
-
-						<div class="btnView">
-							<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
-							<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
-						</div>
-
-						<div class="location">
-							<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-							<div class="scaleBtn">
-								<button type="button" class="scaleUp"><i>확대</i></button>
-								<button type="button" class="scaleDown"><i>축소</i></button>
-							</div>
-						</div>
-					</div>
-					<!-- //기타 아이콘들 -->
-					
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer default">
-						<div class="mapIHead">
-							<button type="button" class="btnMapInfo">정보영역</button>
-
-							<div class="reportHead">
-								<div class="guide">
-									<i class="split20"></i> <span>공개된 신고내용만 표시됩니다.</span>
-								</div>
-								<button type="button" class="reportBtn">
-									<i class="split24"></i> <span>신고하기</span>
-								</button>
-							</div>
-						</div>
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">B2</div></h2> <!-- [헤더에 넣어줄 제목] -->
 						
-						<div class="reportArea">
-							<ul class="reportList">
-								<li>
-									<div class="reportBody">
-										<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
-											<h3>너무 맛있어서 신고합니다</h3>
-											<p class="address">세종특별자치시 세종로 1328</p>
-											<div class="etc">
-												<span class="reDate">2020.2.23</span>
-												<span class="box safetyReport">안전신고</span>
-												<span class="box declaration">신고</span>
+						<div class="mapWrap">
+							<div class="mapArea">
+								<!-- 맵 검색 -->
+								<div class="mapSearch">
+									<div class="mapheader">
+										<div class="mapBody">
+											<button type="button" class="btnPlace" title="장소 검색" onclick="maplnb.open();">
+												<span class="t"></span>
+												<span class="c"></span>
+												<span class="b"></span>
+											</button>
+											<div class="searchHeader">
+												<input type="text" title="장소, 버스 검색" placeholder="장소, 버스 검색">    
 											</div>
-										</a>
-										<div class="control">
-											<button type="button" class="controlBtn">삭제</button>
+											<div class="btnHeader">
+												<button type="button" class="icoMic"><i>마이크</i></button>
+											</div>
+										</div>
+										<button type="button" class="btnMapSearch">길찾기</button>
+									</div>
+									<nav id="mapWordListSwiper" class="items-wordList">
+										<div class="slideContainer">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><button type="button">코로나19</button></li>
+												<li class="swiper-slide"><button type="button">교통</button></li>
+												<li class="swiper-slide"><button type="button">건강</button></li>
+												<li class="swiper-slide"><button type="button">소통</button></li>
+												<li class="swiper-slide"><button type="button">편의시설</button></li>
+												<li class="swiper-slide"><button type="button">교통</button></li>
+												<li class="swiper-slide"><button type="button">건강</button></li>
+											</ul>
+										</div>
+									</nav>
+									<script>
+										slider.active('mapWordListSwiper')
+									</script>
+								</div>
+								<!-- //맵 검색 -->
+			
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<button type="button" class="btnPin"><i>핀</i></button>
+			
+									<div class="busStop">
+										<button type="button" class="commIco24 busStopIco" style="left: 10rem; top: 15rem;" title="버스 정류소"><i class="split24">오송역</i></button> <!-- 해당하는 이름/명칭을 넣어주세요. -->
+										<button type="button" class="commIco24 busStopIco" style="left: 15rem; top: 15rem;" title="버스 정류소"><i class="split24">누리리</i></button>
+										<button type="button" class="busIco B" style="left: 10rem; top: 20rem;" title="간선 버스"><i>B0</i></button>
+										<button type="button" class="busIco G" style="left: 15rem; top: 20rem;" title="지선 버스"><i>B1</i></button>
+										<button type="button" class="busIco Y" style="left: 20rem; top: 20rem;" title="일반 버스"><i>B2</i></button>
+										<button type="button" class="busIco R" style="left: 25rem; top: 20rem;" title="급행 버스"><i>B3</i></button>
+										<button type="button" class="busIco M" style="left: 30rem; top: 20rem;" title="광역 버스"><i>B4</i></button>
+									</div>
+			
+									<div class="reportSet">
+										<button type="button" class="reportIcon safetyReport" style="left: 10rem; top: 15rem;">
+											<i class="split24"></i><span>안전신고</span>
+										</button>
+										<button type="button" class="reportIcon safetyReport" style="left: 20rem; top: 15rem;">
+											<i class="split24"></i><span>안전신고</span>
+										</button>
+										<button type="button" class="reportIcon complaint" style="left: 10rem; top: 25rem;">
+											<i class="split24"></i><span>불편신고</span>
+										</button>
+										<button type="button" class="reportIcon complaint" style="left: 20rem; top: 25rem;">
+											<i class="split24"></i><span>불편신고</span>
+										</button>
+									</div>
+			
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
 										</div>
 									</div>
-									<figure>
-										<img src="../../public/image/temp/temp030.png" alt="">
-									</figure>
-								</li>
-								<li>
-									<div class="reportBody">
-										<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
-											<h3>너무 맛있어서 신고합니다</h3>
-											<p class="address">세종특별자치시 세종로 1328</p>
-											<div class="etc">
-												<span class="reDate">2020.2.23</span>
-												<span class="box complaint">불편신고</span>
-												<span class="box receipt">접수</span>
+								</div>
+								<!-- //기타 아이콘들 -->
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer default">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+			
+										<div class="reportHead">
+											<div class="guide">
+												<i class="split20"></i> <span>공개된 신고내용만 표시됩니다.</span>
 											</div>
-										</a>
+											<button type="button" class="reportBtn">
+												<i class="split24"></i> <span>신고하기</span>
+											</button>
+										</div>
 									</div>
-									<figure>
-										<img src="../../public/image/temp/temp030.png" alt="">
-									</figure>
-								</li>
-								<li>
-									<div class="reportBody">
-										<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
-											<h3>너무 맛있어서 신고합니다</h3>
-											<p class="address">세종특별자치시 세종로 1328</p>
-											<div class="etc">
-												<span class="reDate">2020.2.23</span>
-												<span class="box complaint">불편신고</span>
-												<span class="box complete">완료</span>
+									
+									<div class="reportArea">
+										<ul class="reportList">
+											<li>
+												<div class="reportBody">
+													<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
+														<h3>너무 맛있어서 신고합니다</h3>
+														<p class="address">세종특별자치시 세종로 1328</p>
+														<div class="etc">
+															<span class="reDate">2020.2.23</span>
+															<span class="box safetyReport">안전신고</span>
+															<span class="box declaration">신고</span>
+														</div>
+													</a>
+													<div class="control">
+														<button type="button" class="controlBtn">삭제</button>
+													</div>
+												</div>
+												<figure>
+													<img src="../../public/image/temp/temp030.png" alt="">
+												</figure>
+											</li>
+											<li>
+												<div class="reportBody">
+													<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
+														<h3>너무 맛있어서 신고합니다</h3>
+														<p class="address">세종특별자치시 세종로 1328</p>
+														<div class="etc">
+															<span class="reDate">2020.2.23</span>
+															<span class="box complaint">불편신고</span>
+															<span class="box receipt">접수</span>
+														</div>
+													</a>
+												</div>
+												<figure>
+													<img src="../../public/image/temp/temp030.png" alt="">
+												</figure>
+											</li>
+											<li>
+												<div class="reportBody">
+													<a href="javascript:void(0);" onclick="layerPopup.open('layerSafetyReport');">
+														<h3>너무 맛있어서 신고합니다</h3>
+														<p class="address">세종특별자치시 세종로 1328</p>
+														<div class="etc">
+															<span class="reDate">2020.2.23</span>
+															<span class="box complaint">불편신고</span>
+															<span class="box complete">완료</span>
+														</div>
+													</a>
+												</div>
+												<figure>
+													<img src="../../public/image/temp/temp030.png" alt="">
+												</figure>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									mapInfo.click('sub');
+								</script>
+								<!-- //정보 영역 -->
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
+							</div>
+						</div>
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어 -->
+					<div id="layerSafetyReport" class="layerPopup" tabindex="0">
+						<div class="layerWrap full">
+							<div class="headerBtn textLeft">
+								<h2>
+									<span class="box safetyReport">안전신고</span>
+									<span class="box complaint">불편신고</span>
+									너무 맛있어서 신고합니다
+								</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex reportLayer">
+								<div class="reportReview">
+									<header class="reportHeader">
+										<h3>신고 내용</h3>
+										<button type="button" class="deleteBtn"><i class="split24"></i>삭제</button>
+									</header>
+									<div class="flex">
+										<h4>진행현황</h4>
+										<div>
+											<span class="box declaration">신고</span>
+											<span class="box receipt">접수</span>
+											<span class="box complete">완료</span>
+										</div>
+									</div>
+									<div class="flex">
+										<h4>진행장소</h4>
+										<div>
+											<p>세종특별자치시 세종로 1328</p>
+										</div>
+									</div>
+									<div class="flex">
+										<h4>진행일시</h4>
+										<div>
+											<p>2022.2.23</p>
+										</div>
+									</div>
+									<div class="flex block">
+										<h4>신고내용</h4>
+										<div>
+											<p>그들과 함께 할 아주 말끝마다 시니컬함이 끝인 이 신입 닥터 신고합니다. 그래도 까칠하지만, 수술 실력만큼은 ‘천재’라고 불릴 만큼 대단합니다</p>
+										</div>
+									</div>
+									<div class="flex block">
+										<h4>현장사진</h4>
+										<div id="reportReviewSwiper" class="reportReviewList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<button type="button">
+															<img src="../../public/image/temp/temp028.png" alt="">
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button">
+															<img src="../../public/image/temp/temp028.png" alt="">
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button">
+															<img src="../../public/image/temp/temp028.png" alt="">
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button">
+															<img src="../../public/image/temp/temp028.png" alt="">
+														</button>
+													</li>
+													<li class="swiper-slide">
+														<button type="button">
+															<img src="../../public/image/temp/temp028.png" alt="">
+														</button>
+													</li>
+												</ul>
 											</div>
-										</a>
+										</div>
+										<script>
+											slider.active('reportReviewSwiper')
+										</script>
 									</div>
-									<figure>
-										<img src="../../public/image/temp/temp030.png" alt="">
-									</figure>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<script>
-						mapInfo.click('sub');
-					</script>
-					<!-- //정보 영역 -->
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
-				</div>
-			</div>
-		</main>
-		<!-- //본문 -->
-
-		<!-- 레이어 -->
-		<div id="layerSafetyReport" class="layerPopup" tabindex="0">
-			<div class="layerWrap full">
-				<div class="headerBtn textLeft">
-					<h2>
-						<span class="box safetyReport">안전신고</span>
-						<span class="box complaint">불편신고</span>
-						너무 맛있어서 신고합니다
-					</h2>
-					<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-				</div>
-				<div class="fullFlex reportLayer">
-					<div class="reportReview">
-						<header class="reportHeader">
-							<h3>신고 내용</h3>
-							<button type="button" class="deleteBtn"><i class="split24"></i>삭제</button>
-						</header>
-						<div class="flex">
-							<h4>진행현황</h4>
-							<div>
-								<span class="box declaration">신고</span>
-								<span class="box receipt">접수</span>
-								<span class="box complete">완료</span>
-							</div>
-						</div>
-						<div class="flex">
-							<h4>진행장소</h4>
-							<div>
-								<p>세종특별자치시 세종로 1328</p>
-							</div>
-						</div>
-						<div class="flex">
-							<h4>진행일시</h4>
-							<div>
-								<p>2022.2.23</p>
-							</div>
-						</div>
-						<div class="flex block">
-							<h4>신고내용</h4>
-							<div>
-								<p>그들과 함께 할 아주 말끝마다 시니컬함이 끝인 이 신입 닥터 신고합니다. 그래도 까칠하지만, 수술 실력만큼은 ‘천재’라고 불릴 만큼 대단합니다</p>
-							</div>
-						</div>
-						<div class="flex block">
-							<h4>현장사진</h4>
-							<div id="reportReviewSwiper" class="reportReviewList">
-								<div class="slideContainer">
-									<ul class="swiper-wrapper">
-										<li class="swiper-slide">
-											<button type="button">
-												<img src="../../public/image/temp/temp028.png" alt="">
-											</button>
+								</div>
+								<div class="textReview line-default">
+									<div class="header-list">
+										<h3>리뷰 <span class="num">3건</span></h3>
+										<div>
+											<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+											<button type="button">도움많은순</button>
+											<button type="button">내가쓴글</button>
+										</div>
+									</div>
+									<ul class="items-review">
+										<li>
+											<div class="headTitle">
+												<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+													<div class="profile">개인 이미지</div>
+													<strong class="my">홍길동</strong>
+													<span>2021.12.28</span>
+													<button type="button" class="report">신고하기</button>
+												</div>
+												<figure>
+													<img src="../../public/image/temp/temp004.png" alt="">
+													<button type="button" class="zoom">이미지 크게보기</button>
+												</figure>
+												<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
+													가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+												</p>
+												<div class="tlControls">
+													<button type="button" class="more">더보기</button>
+													<button type="button" class="recommend">도움돼요 3</button>
+												</div>
+												<div class="button-visible">
+													<button type="button">수정</button>
+													<button type="button">삭제</button>
+												</div>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button">
-												<img src="../../public/image/temp/temp028.png" alt="">
-											</button>
+										<li>
+											<div class="headTitle">
+												<div class="tlHead">
+													<div class="profile">개인 이미지</div>
+													<strong>홍길동</strong>
+													<span>2021.12.28</span>
+													<button type="button" class="report">신고하기</button>
+												</div>
+												<p class="text">
+													가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+												</p>
+												<div class="tlControls">
+													<button type="button" class="more">더보기</button>
+													<button type="button" class="recommend">도움돼요 3</button>
+												</div>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button">
-												<img src="../../public/image/temp/temp028.png" alt="">
-											</button>
+										<li>
+											<div class="headTitle">
+												<div class="tlHead">
+													<div class="profile">개인 이미지</div>
+													<strong>홍길동</strong>
+													<span>2021.12.28</span>
+													<button type="button" class="report">신고하기</button>
+												</div>
+												<figure>
+													<img src="../../public/image/temp/temp005.png" alt="">
+													<button type="button" class="zoom">이미지 크게보기</button>
+												</figure>
+												<p class="text lineBreake">
+													가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+												</p>
+												<div class="tlControls">
+													<button type="button" class="more">더보기</button>
+													<button type="button" class="recommend">도움돼요 3</button>
+												</div>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button">
-												<img src="../../public/image/temp/temp028.png" alt="">
-											</button>
+										<!-- 내용이 없을경우 -->
+										<li>
+											<div class="empty">
+												<p>등록된 리뷰가 없습니다.</p>
+											</div>
 										</li>
-										<li class="swiper-slide">
-											<button type="button">
-												<img src="../../public/image/temp/temp028.png" alt="">
-											</button>
-										</li>
+										<!-- //내용이 없을경우 -->
 									</ul>
 								</div>
 							</div>
-							<script>
-								slider.active('reportReviewSwiper')
-							</script>
 						</div>
 					</div>
-					<div class="textReview line-default">
-						<div class="header-list">
-							<h3>리뷰 <span class="num">3건</span></h3>
-							<div>
-								<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
-								<button type="button">도움많은순</button>
-								<button type="button">내가쓴글</button>
-							</div>
-						</div>
-						<ul class="items-review">
-							<li>
-								<div class="headTitle">
-									<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
-										<div class="profile">개인 이미지</div>
-										<strong class="my">홍길동</strong>
-										<span>2021.12.28</span>
-										<button type="button" class="report">신고하기</button>
-									</div>
-									<figure>
-										<img src="../../public/image/temp/temp004.png" alt="">
-										<button type="button" class="zoom">이미지 크게보기</button>
-									</figure>
-									<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
-										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-									</p>
-									<div class="tlControls">
-										<button type="button" class="more">더보기</button>
-										<button type="button" class="recommend">도움돼요 3</button>
-									</div>
-									<div class="button-visible">
-										<button type="button">수정</button>
-										<button type="button">삭제</button>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="headTitle">
-									<div class="tlHead">
-										<div class="profile">개인 이미지</div>
-										<strong>홍길동</strong>
-										<span>2021.12.28</span>
-										<button type="button" class="report">신고하기</button>
-									</div>
-									<p class="text">
-										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-									</p>
-									<div class="tlControls">
-										<button type="button" class="more">더보기</button>
-										<button type="button" class="recommend">도움돼요 3</button>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="headTitle">
-									<div class="tlHead">
-										<div class="profile">개인 이미지</div>
-										<strong>홍길동</strong>
-										<span>2021.12.28</span>
-										<button type="button" class="report">신고하기</button>
-									</div>
-									<figure>
-										<img src="../../public/image/temp/temp005.png" alt="">
-										<button type="button" class="zoom">이미지 크게보기</button>
-									</figure>
-									<p class="text lineBreake">
-										가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
-									</p>
-									<div class="tlControls">
-										<button type="button" class="more">더보기</button>
-										<button type="button" class="recommend">도움돼요 3</button>
-									</div>
-								</div>
-							</li>
-							<!-- 내용이 없을경우 -->
-							<li>
-								<div class="empty">
-									<p>등록된 리뷰가 없습니다.</p>
-								</div>
-							</li>
-							<!-- //내용이 없을경우 -->
-						</ul>
-					</div>
+					<!-- //레이어 -->
 				</div>
 			</div>
+			<!-- //모바일 내용 -->
+
 		</div>
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>

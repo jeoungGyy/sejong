@@ -6,109 +6,123 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 세종 안심서비스 헤더 -->
-		<script src="../include/header_map_prev.js"></script>
-		<!-- //공통: 세종 안심서비스 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">안심장소 편집</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 세종 안심서비스 헤더 -->
+					<script src="../include/header_map_prev.js"></script>
+					<!-- //공통: 세종 안심서비스 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="mapArea">
-					
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer open">
-						<button type="button" class="btnMapInfo">정보영역</button>
-
-						<div class="uploadLocation">
-							<div class="topArea">
-								<p class="title">안심장소</p>
-								<button type="button" class="buttonModify">편집</button>
-							</div>
-
-							<div class="myList modifyType">
-								<ul>
-									<li>
-										<div class="chkImg">
-											<input type="checkbox" id="home">
-											<label for="home">우리집</label>
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">안심장소 편집</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea">
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer open">
+									<button type="button" class="btnMapInfo">정보영역</button>
+			
+									<div class="uploadLocation">
+										<div class="topArea">
+											<p class="title">안심장소</p>
+											<button type="button" class="buttonModify">편집</button>
 										</div>
-
-										<button type="button" class="buttonUpload">등록하기</button>
-									</li>
-									<li>
-										<div class="chkImg">
-											<input type="checkbox" id="school">
-											<label for="school">학교</label>
+			
+										<div class="myList modifyType">
+											<ul>
+												<li>
+													<div class="chkImg">
+														<input type="checkbox" id="home">
+														<label for="home">우리집</label>
+													</div>
+			
+													<button type="button" class="buttonUpload">등록하기</button>
+												</li>
+												<li>
+													<div class="chkImg">
+														<input type="checkbox" id="school">
+														<label for="school">학교</label>
+													</div>
+			
+													<button type="button" class="buttonUpload">등록하기</button>
+												</li>
+												<li>
+													<div class="chkImg">
+														<input type="checkbox" id="company">
+														<label for="company">회사 <span class="address">세종특별자치시 나성로 133-9 </span></label>
+													</div>
+			
+													<button type="button" class="buttonModify">수정하기</button>
+												</li>
+											</ul>
 										</div>
-
-										<button type="button" class="buttonUpload">등록하기</button>
-									</li>
-									<li>
-										<div class="chkImg">
-											<input type="checkbox" id="company">
-											<label for="company">회사 <span class="address">세종특별자치시 나성로 133-9 </span></label>
+			
+										<div class="myBlock modifyType">
+											<ul>
+												<li>
+													<div class="chkImg">
+														<input type="checkbox" id="address01">
+														<label for="address01">회사 <span class="address">세종특별자치시 나성로 133-9 </span></label>
+													</div>
+			
+													<button type="button" class="btnRewrite">편집</button>
+												</li>
+											</ul>
 										</div>
-
-										<button type="button" class="buttonModify">수정하기</button>
-									</li>
-								</ul>
-							</div>
-
-							<div class="myBlock modifyType">
-								<ul>
-									<li>
-										<div class="chkImg">
-											<input type="checkbox" id="address01">
-											<label for="address01">회사 <span class="address">세종특별자치시 나성로 133-9 </span></label>
+			
+										<div class="buttonArea">
+											<button type="button" class="button whiteLine">전체선택</button>
+											<button type="button" class="button orange">삭제 1</button>
 										</div>
-
-										<button type="button" class="btnRewrite">편집</button>
-									</li>
-								</ul>
+			
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
 							</div>
-
-							<div class="buttonArea">
-								<button type="button" class="button whiteLine">전체선택</button>
-								<button type="button" class="button orange">삭제 1</button>
+						</div>
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어 -->
+					<div id="changeLocation" class="layerPopup">
+						<div class="layerWrap typeLocation">
+							<h4>안심장소 이름 변경</h4>
+							<div class="layerBody">
+								<div class="modifyAddress">
+									<input type="text" id="tempAddress" value="세종특별자치시 한누리대로 328">
+			
+									<button type="button" class="icoDelete"><i>삭제</i></button>
+								</div>
+								
+								<div class="buttonArea">
+									<button type="button" class="button gray" onclick="layerPopup.close();">취소</button>
+									<button type="button" class="button orange">저장</button>
+								</div>
 							</div>
-
 						</div>
 					</div>
-					<!-- //정보 영역 -->
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
+			
+					<script>
+						layerPopup.open('changeLocation');
+					</script>
+					<!-- //레이어 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
 
-		<!-- 레이어 -->
-		<div id="changeLocation" class="layerPopup">
-			<div class="layerWrap typeLocation">
-				<h4>안심장소 이름 변경</h4>
-				<div class="layerBody">
-					<div class="modifyAddress">
-						<input type="text" id="tempAddress" value="세종특별자치시 한누리대로 328">
-
-						<button type="button" class="icoDelete"><i>삭제</i></button>
-					</div>
-					
-					<div class="buttonArea">
-						<button type="button" class="button gray" onclick="layerPopup.close();">취소</button>
-						<button type="button" class="button orange">저장</button>
-					</div>
-				</div>
-			</div>
 		</div>
-
-		<script>
-			layerPopup.open('changeLocation');
-		</script>
-		<!-- //레이어 -->
 	</div>
 </div>
 </body>

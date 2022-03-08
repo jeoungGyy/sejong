@@ -6,23 +6,37 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
+		<div class="pcView">
 
-		<button type="button" class="button blue" onclick="layerAlert.open('layerAlert');">기본알림</button>
-
-		<!-- 레이어 -->
-		<!-- 기본 알림 -->
-		<div id="layerAlert" class="layerAlert">
-			<div class="alertWrap">
-				<p>기본 알림 내용이 들어갑니다.</p>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+					<button type="button" class="button blue" onclick="layerAlert.open('layerAlert');">기본알림</button>
+			
+					<!-- 레이어 -->
+					<!-- 기본 알림 -->
+					<div id="layerAlert" class="layerAlert">
+						<div class="alertWrap">
+							<p>기본 알림 내용이 들어갑니다.</p>
+						</div>
+					</div>
+					<!-- //기본 알림 -->
+					<!-- //레이어 -->
+			
+			
+				</div>
 			</div>
+			<!-- //모바일 내용 -->
+
 		</div>
-		<!-- //기본 알림 -->
-		<!-- //레이어 -->
-
-
 	</div>
 </div>
 </body>

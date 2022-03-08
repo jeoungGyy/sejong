@@ -7,56 +7,70 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<div class="mapWrap">
-				<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
-					<div class="emergencyCall">
-						<div class="emergencyCont">
-							<p class="title"><strong>긴급 구조 요청</strong></p>
+		<div class="pcView">
 
-							<p class="text">곧 구조요청이 전송됩니다.</p>
-
-							<div class="round">
-								<div id="countdownEv" class="countEmergency" >
-									<span id="timer" class="timer"></span>
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<div class="mapWrap">
+							<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+								<div class="emergencyCall">
+									<div class="emergencyCont">
+										<p class="title"><strong>긴급 구조 요청</strong></p>
+			
+										<p class="text">곧 구조요청이 전송됩니다.</p>
+			
+										<div class="round">
+											<div id="countdownEv" class="countEmergency" >
+												<span id="timer" class="timer"></span>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+			
+								<div class="btnGroup">
+									<div class="twins">
+										<button type="button" class="button orange">즉시 요청</button>
+										<button type="button" class="button grayLine">요청 취소</button>
+									</div>
 								</div>
 							</div>
-							
 						</div>
-					</div>
-
-					<div class="btnGroup">
-						<div class="twins">
-							<button type="button" class="button orange">즉시 요청</button>
-							<button type="button" class="button grayLine">요청 취소</button>
-						</div>
-					</div>
+			
+						<script>
+							var count = 11;
+							var counter = setInterval(timer, 1000);
+			
+							function timer(){
+								count--;
+			
+								if(count <= 0){
+									clearInterval(counter);
+			
+									document.getElementById("countdownEv").className = "countEmergency";
+									document.getElementById("timer").innerHTML = "";
+								}
+			
+								document.getElementById("timer").innerHTML = count;
+							}
+						</script>
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
+			<!-- //모바일 내용 -->
 
-			<script>
-				var count = 11;
-				var counter = setInterval(timer, 1000);
-
-				function timer(){
-					count--;
-
-					if(count <= 0){
-						clearInterval(counter);
-
-						document.getElementById("countdownEv").className = "countEmergency";
-						document.getElementById("timer").innerHTML = "";
-					}
-
-					document.getElementById("timer").innerHTML = count;
-				}
-			</script>
-		</main>
-		<!-- //본문 -->
+		</div>
 	</div>
 </div>
 </body>

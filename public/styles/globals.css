@@ -41,6 +41,25 @@
 	src: url(../fonts/Roboto/Roboto-Bold.woff2) format('woff2');
 }
 
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/noto/NotoSansKR-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/noto/NotoSansKR-Medium.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/noto/NotoSansKR-Bold.woff2) format('woff2');
+}
+
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,dfn,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file], input[type=tel], input[type=search], input[type=url]  {
 	margin:0;
 	padding:0;
@@ -54,7 +73,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,d
   text-size-adjust : none;
 }
 body {
-	font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+	font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Noto Sans KR", "Microsoft NeoGothic ", sans-serif;
 	color:#111;
 	letter-spacing: -0.04em;
 }
@@ -301,7 +320,7 @@ table td { vertical-align: middle;}
 .dustTooltipLayer.show { display: block;}
 
 /* 하단고정 */
-.bottomFixed { position: relative; padding-bottom: 8rem;}
+.bottomFixed { position: relative; min-height: calc(100vh - 7.6rem); padding-bottom: 8rem;}
 .bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; max-width: 57rem; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
 .bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
@@ -349,6 +368,9 @@ figure .label.wood { background-color: #D69630;}
 figure .label.black { background-color: rgba(51, 51, 51, 0.9);}
 figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
+
+/* 페이지 풀사이즈 */
+.fullFlexDefault { background-color: #F4F5F7;}
 
 /* 프로그레스바/로딩 */
 .jmLoading { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; z-index: 9999; width: 100%; height: 100vh; background-color: rgba(0 0 0 / 20%);}
@@ -861,7 +883,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 /* UI-SJN-40-005L */
 .layerMapInfo .headTitle { padding: 2.7rem 2rem 2.3rem;}
 .layerMapInfo .headTitle h2 { font-size: 1.8rem;}
-.layerMapInfo .head { display: flex; align-items: center; justify-content: center; position: fixed; left: 0; top: env(safe-area-inset-top); right: 0; z-index: 200; height: 5.6rem; background-color: #fff;}
+.layerMapInfo .head { display: flex; align-items: center; justify-content: center; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; height: 5.6rem; background-color: #fff;}
 .layerMapInfo .head h2 { font-size: 1.8rem;}
 .layerMapInfo .head .btnClose { top: 1.6rem;}
 .layerMapInfo .figure { display: flex; justify-content: center; align-items: center; flex: 1; overflow-x: hidden; overflow-y: auto; height: 21.2rem; padding: 2rem 0; background-color: #EAEDF2;}
@@ -1146,7 +1168,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-moreNews .btn span { color: #777;}
 .button-moreNews .btn span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
 
-.button-write { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem;}
+.button-write { position: fixed; bottom: 3.5rem; margin-left: 20.5rem; transform: translateX(-50%);}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
@@ -1409,7 +1431,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu.boxStyle >li { padding: 1.9rem 1.6rem 2.2rem; border: 1px solid #EAEAEA;}
 .items-edu.boxStyle >li ~ li { margin-top: 1.6rem;}
 .items-edu.boxStyle >li .title .sub { display: block;}
-.items-edu.boxStyle >li .title h4 { display: block; margin-top: 0.9rem;}
+/* .items-edu.boxStyle >li .title h4 { display: block; margin-top: 0.9rem;} */
 
 .items-newStore { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
 .items-newStore li { width: calc(100% / 2 - 0.8rem); min-height: 20.4rem; margin: 0.8rem 0 0 0.8rem;}
@@ -1504,6 +1526,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-culture li.full { display: block;}
 
 .items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}
+.items-wordList .slideContainer { padding-bottom: 1rem;}
 .items-wordList ul li { width: auto;}
 .items-wordList ul li button { display: block; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
 .items-wordList ul li button::before { content: '#';}

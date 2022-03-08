@@ -451,7 +451,7 @@
 .info .introduce .introduceHeader { display: flex; align-items: center; height: 7.2rem;}
 .info .introduce .introduceHeader h3 { font-size: 2rem;}
 .info .introduce .introduceHeader h3 .cBlue { display: block;}
-.info .introduce .introduceGuide { position: relative; height: 48rem; margin-top: 21rem;}
+.info .introduce .introduceGuide { position: relative; z-index: 1; height: 48rem; margin-top: 21rem;}
 .info .introduce .introduceGuide .data { position: absolute; left: 0; top: -1rem; width: 100%; height: 31rem;}
 .info .introduce .introduceGuide .data .dataPosition { position: relative; width: 32rem; height: 100%; margin: 0 auto;}
 .info .introduce .introduceGuide .data .dataPosition >div { position: absolute; text-align: center; border-radius: 50%;}
@@ -476,7 +476,7 @@
 .info .introduce .introduceGuide .textPoa_b::before { right: 7.3rem; top: -9.7rem;; height: 8.3rem;}
 .info .introduce .introduceGuide .textPoa_c::after { left: 6.6rem; top: -2rem;}
 .info .introduce .introduceGuide .textPoa_c::before { left: 7.3rem; top: -9.7rem;; height: 8.3rem;}
-.info .introduce .deco { position: absolute; left: 50%; top: 50%; z-index: -1; margin-top: -1.1rem; border: 1px solid #F4F5F7; border-radius: 50%; transform: translate(-50%, -50%);}
+.info .introduce .deco { position: absolute; left: 50%; top: 50%; margin-top: -1.1rem; border: 1px solid #F4F5F7; border-radius: 50%; transform: translate(-50%, -50%);}
 .info .introduce .deco.circle_a { width: 24rem; height: 24rem;}
 .info .introduce .deco.circle_b { width: 32rem; height: 32rem;}
 .info .introduce .deco.circle_b::before { content: ''; position: absolute; left: 1.2rem; top: 6.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/info/ico_introduce_arrow.png) no-repeat center/cover; transform: rotate(-52deg);}

@@ -6,112 +6,126 @@
 </head>
 
 <body>
-<div id="root">
-	<div class="container">
-		<!-- 공통: 세종 안심서비스 헤더 -->
-		<script src="../include/header_map.js"></script>
-		<!-- //공통: 세종 안심서비스 헤더 -->
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
 
-		<!-- 본문 -->
-		<main class="contents map"> <!-- [생활정보 Class] map-->
-			<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 세종 안심서비스 헤더 -->
+					<script src="../include/header_map.js"></script>
+					<!-- //공통: 세종 안심서비스 헤더 -->
 			
-			<div class="mapWrap">
-				<div class="mapArea">
-					
-					<!-- 기타 아이콘들 -->
-					<div class="mapIcons">
-						<div class="etcButton">
-							<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
-								<i>구조요청</i>
-								<span>구조요청</span>
-							</button>
-
-							<button type="button" class="roadView"><i>거리뷰</i></button>
-							<button type="button" class="setting"><i>설정</i></button>
-							<button type="button" class="help"><i>도움말</i></button>
-						</div>
-
-						<!-- 긴급구조 요청자 위치표시 -->
-						<div class="markerEmergency" style="left: 10rem; top: 25rem;"></div><!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-						<!-- //긴급구조 요청자 위치표시 -->
-
-						<div class="location easy">
-							<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-
-							<button type="button" class="easyButton police"><i>치안시</i></button>
-							<button type="button" class="easyButton emergency"><i>비상</i></button>
-							<button type="button" class="easyButton relex"><i>안심장소</i></button>
-						</div>
-					</div>
-					<!-- //기타 아이콘들 -->
-					
-					<!-- 정보 영역 -->
-					<div class="mapInfoLayer midHeight open">
-						<button type="button" class="btnMapInfo">정보영역</button>
-
-						<div class="safeServiceWrap">
-							
-							<div class="friendInfoArea">
-								<div class="topArea">
-									<p>
-										<strong class="name">이세종</strong>
-										<strong class="sort">보호자</strong>
-									</p>
-									<p>
-										<strong class="text">위치갱신</strong>
-										<span class="time">5시간 전</span>
-									</p>
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><div class="headerClone">안심이 서비스</div></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea">
+								
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<div class="etcButton">
+										<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
+											<i>구조요청</i>
+											<span>구조요청</span>
+										</button>
+			
+										<button type="button" class="roadView"><i>거리뷰</i></button>
+										<button type="button" class="setting"><i>설정</i></button>
+										<button type="button" class="help"><i>도움말</i></button>
+									</div>
+			
+									<!-- 긴급구조 요청자 위치표시 -->
+									<div class="markerEmergency" style="left: 10rem; top: 25rem;"></div><!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+									<!-- //긴급구조 요청자 위치표시 -->
+			
+									<div class="location easy">
+										<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+			
+										<button type="button" class="easyButton police"><i>치안시</i></button>
+										<button type="button" class="easyButton emergency"><i>비상</i></button>
+										<button type="button" class="easyButton relex"><i>안심장소</i></button>
+									</div>
 								</div>
-
-								<p class="address">세종특별자치시 세종로 1328</p>
-
-								<div class="bottomBtnArea">
-									<button type="button">
-										<i><img src="../../public/image/map/icon_map_call.png" alt="전화 아이콘 이미지"></i>
-										<span>전화</span>
-									</button>
-
-									<button type="button">
-										<i><img src="../../public/image/map/icon_map_message.png" alt="문자 아이콘 이미지"></i>
-										<span>문자</span>
-										<strong>위치확인</strong>
-									</button>
-
-									<button type="button">
-										<i><img src="../../public/image/map/icon_map_battery.png" alt="배터리 아이콘 이미지"></i>
-										<span>배터리</span>
-										<strong>75%</strong>
-									</button>
-
-									<button type="button">
-										<i><img src="../../public/image/map/icon_map_range.png" alt="오차범위 아이콘 이미지"></i>
-										<span>오차범위</span>
-										<strong>17m</strong>
-									</button>
-
-									<button type="button">
-										<i><img src="../../public/image/map/icon_map_location.png" alt="위치기록 아이콘 이미지"></i>
-										<span>위치기록</span>
-									</button>
+								<!-- //기타 아이콘들 -->
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer open">
+									<button type="button" class="btnMapInfo">정보영역</button>
+			
+									<div class="safeServiceWrap">
+										
+										<div class="friendInfoArea">
+											<div class="topArea">
+												<p>
+													<strong class="name">이세종</strong>
+													<strong class="sort">보호자</strong>
+												</p>
+												<p>
+													<strong class="text">위치갱신</strong>
+													<span class="time">5시간 전</span>
+												</p>
+											</div>
+			
+											<p class="address">세종특별자치시 세종로 1328</p>
+			
+											<div class="bottomBtnArea">
+												<button type="button">
+													<i><img src="../../public/image/map/icon_map_call.png" alt="전화 아이콘 이미지"></i>
+													<span>전화</span>
+												</button>
+			
+												<button type="button">
+													<i><img src="../../public/image/map/icon_map_message.png" alt="문자 아이콘 이미지"></i>
+													<span>문자</span>
+													<strong>위치확인</strong>
+												</button>
+			
+												<button type="button">
+													<i><img src="../../public/image/map/icon_map_battery.png" alt="배터리 아이콘 이미지"></i>
+													<span>배터리</span>
+													<strong>75%</strong>
+												</button>
+			
+												<button type="button">
+													<i><img src="../../public/image/map/icon_map_range.png" alt="오차범위 아이콘 이미지"></i>
+													<span>오차범위</span>
+													<strong>17m</strong>
+												</button>
+			
+												<button type="button">
+													<i><img src="../../public/image/map/icon_map_location.png" alt="위치기록 아이콘 이미지"></i>
+													<span>위치기록</span>
+												</button>
+											</div>
+										</div>
+									</div>
+			
+									<div class="emergencyBtn">
+										<div class="twins">
+											<a href="tel:112" class="button noShadow btn112">112</a>
+											<a href="tel:119" class="button noShadow btn119">119</a>
+										</div>
+									</div>
 								</div>
+								<!-- //정보 영역 -->
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
-
-						<div class="emergencyBtn">
-							<div class="twins">
-								<a href="tel:112" class="button noShadow btn112">112</a>
-								<a href="tel:119" class="button noShadow btn119">119</a>
-							</div>
-						</div>
-					</div>
-					<!-- //정보 영역 -->
-
-					<div class="mapBg"></div> <!-- map 이미지 -->
+					</main>
+					<!-- //본문 -->
 				</div>
 			</div>
-		</main>
-		<!-- //본문 -->
+			<!-- //모바일 내용 -->
+
+		</div>
 	</div>
 </div>
 </body>
