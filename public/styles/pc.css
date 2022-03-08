@@ -14,7 +14,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 #pcRoot { position: relative;} 
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
 .pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}
-.pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 410px; height: 100vh; margin: 0 auto; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
+.pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 410px; height: 100vh; margin: 0 auto;}
 .pcContainer .pch1 { padding-top: 38px;}
 .pcContainer .pch1 img { vertical-align: top;}
 .pcContainer .pch2 { margin-top: 124px; font-size: 52px; line-height: 67px;}
@@ -97,13 +97,14 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 /* PC에 맞게 모바일 크기 조정
 **********************************************/
 
-.container { max-width: 410px;}
+.container { max-width: 410px; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
 .header { max-width: 410px;}
 .layerPopup { max-width: 410px;}
 .mainMenuFixed .mainMenu { max-width: 410px;}
 .mainMenuFixed .chatbot { position: fixed; right: inherit; margin-left: 340px;}
 .layerAlert { max-width: 410px;}
 .bottomFixed .btnGroup { max-width: 410px;}
+
 
 
 @media all and (max-width:1190px){

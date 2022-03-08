@@ -424,6 +424,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerWrap.full .headerBtn .btnClose { top: inherit;}
 .layerWrap.full .headerBtn.textLeft { justify-content: flex-start; padding-left: 2rem;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto;}
+.layerWrap.full .fullFlex.bgGray { background-color: #F4F5F7;}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
 .layerWrap >h4 i.eval { margin-right: 0.4rem; background-position: -10rem -4rem;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
@@ -1121,7 +1122,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .header-CalendarLine ul li button.doday .tD { font-weight: 700; color: #fff;}
 .header-CalendarLine ul li button.doday .tW { color: #fff;}
 
-.header-large { padding: 0 2rem 1.6rem;}
+.header-large { padding: 0 2rem 1.6rem; background-color: #fff;}
 .header-large h3 { display: flex; flex-direction: column; justify-content: center; height: 7.2rem; font-size: 2rem;}
 .header-large h3 .style { display: block; color: #6684EA;}
 .header-large .operation { display: flex; align-items: center; height: 4rem;}
