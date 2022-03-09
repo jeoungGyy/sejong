@@ -602,15 +602,17 @@ const parkingTip = {
 		parkingTip.showEl = document.querySelector('#'+id);
 
 		if(parkingTip.showEl) {
-			let _target = event.currentTarget.getBoundingClientRect();
+			// let _target = event.currentTarget.getBoundingClientRect();
+			let _targetLeft = event.currentTarget.offsetLeft;
+			let _targetTop = event.currentTarget.offsetTop;
 			let mapMenuLayerWidth = parkingTip.showEl.clientWidth;
 			let mapMenuLayerHeight = parkingTip.showEl.clientHeight;
 
 			parkingTip.showEl.classList.remove('show', 'ready');
 
 			setTimeout(()=>{
-				let top = _target.top - (mapMenuLayerWidth/2 - 24);
-				let left = _target.left - (mapMenuLayerHeight/2 - 10);
+				let top = _targetTop - (mapMenuLayerWidth/2 - 24);
+				let left = _targetLeft - (mapMenuLayerHeight/2 - 10);
 				parkingTip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
 				
 				parkingTip.showEl.classList.add('ready');
