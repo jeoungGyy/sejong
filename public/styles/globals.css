@@ -139,23 +139,19 @@ table td { vertical-align: middle;}
 /* 구조
 **********************************************/
 
-/* 테스트용 */
-.headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; max-width:410px; width: 100%;}
-.headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
-.headerWrap .headerClear.add { transition-duration: 500ms;}
-
-
-
 /* container */
 .container { overflow: hidden;}
 .contents { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
+.headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
+.headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
+.headerWrap .headerClear.add { transition-duration: 500ms;}
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
-.header.bgGreen { background-color: #4EC457;}
+.header.bgGreen { position: relative; top: 0; background-color: #4EC457; transition: top .1s ease;}
 .header.bgGreen h2 { color: #fff;}
-.subHeader { max-width: 410px; display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
+.subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
@@ -174,7 +170,9 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
-.stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);}
+
+.stickyHeader .header.bgGreen { top: -5.6rem}
+/* .stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);} */
 .stickyHeader .boderTopGray { border: none;}
 
 
@@ -478,6 +476,19 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerSelect .items-label li ~ li { border-top: 1px solid #EAEAEA;}
 
 
+/* UI-SJN-01-001U */
+.layerNotice { padding: 1.1rem 0 6rem;}
+.layerNotice a { display: block; color: #111; text-align: left;}
+.layerNotice a .title { padding-right: 3rem;}
+.layerNotice a .title p { font-size: 1.8rem; font-weight: 700;}
+.layerNotice a .contexte { clear: both; overflow: hidden; margin-top: 1.6rem;}
+.layerNotice a .contexte p .img { float: right; overflow: hidden; width: auto; width: 12rem; height: 12rem; margin-left: 0.4rem; border-radius: 50%;}
+.layerNotice a .more { display: block; margin-top: 1.6rem; font-size: 1.4rem; color: #6684EA;}
+.layerNotice a .full { width: 100%; height: auto;}
+.layerNotice .noticeCheck { display: flex; justify-content: flex-end; align-items: baseline; margin-top: 1rem;}
+.layerNotice .noticeCheck .radioSet label { zoom: 0.8;}
+.layerNotice .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
+
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding-top: 7.2rem;}
 .layerSetting .items-label .tootipBtn i { margin: -0.2rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
@@ -491,10 +502,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerSetting .button { margin-top: 2.4rem;}
 .layerSetting .labelForm { position: relative;}
 .layerSetting .labelForm .tootipBtn { position: absolute; left: 22rem; top: 50%; transform: translateY(-50%);}
-
-
-
-
 
 
 /* UI-SJN-04-006U–1 */
@@ -749,6 +756,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400;}
 .locationLayer .detail h4 .normal { margin-left: 0.8rem; color: #4EC457;}
 .locationLayer .detail h4 .breakdown { margin-left: 0.8rem; color: #FD2020;}
+.locationLayer .detail h4 .partialBreakdown { margin-left: 0.8rem; color: #A9B0C1;}
+.locationLayer .detail h4 .totalBreakdown { margin-left: 0.8rem; color: #555;}
 .locationLayer .detail h4.first { margin-top: 0;}
 .locationLayer .detail >div p { position: relative; margin-top: 0.8rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .locationLayer .detail >div p.blet { padding-left: 1.6rem;}

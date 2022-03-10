@@ -7,17 +7,19 @@
 
 
 /* 메인 UI-SJN-03-001U */
-.decoBgLeft { position: absolute; left: 0; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
-.decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
+/* .decoBgLeft { position: absolute; left: 0; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
+.decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;} */
 
-.info .infoNav { position: relative; margin-top: 0.8rem; padding: 0 2rem;}
-.info .infoNav .slideContainer { overflow: hidden; background-color: #fff; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%); border-radius: 1.6rem;}
+.info .infoNav { position: relative; top: 0; z-index: 200; width: 100%;}
+.info .infoNav .slideContainer { overflow: hidden; display: flex; background-color: #fff; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%);}
 .info .infoNav li { width: auto;}
 .info .infoNav li a { display: flex; align-items: center; position: relative; height: 6rem; font-size: 1.6rem; color: #555; cursor: pointer;}
 .info .infoNav li a.active { font-weight: 700; color: #4EC457;}
 .info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
-.info .infoNav li .menuSetting { display: flex; align-items: center; height: 6rem;}
-.info .infoNav li .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
+.info .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 6rem; padding-left: 2rem; background-color: #fff;}
+.info .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
+
+/* .stickyHeader .info .infoNav { position: fixed; top: 0; z-index: 200;} */
 
 .info .mainArea { background: #F3F5F7;}
 .mainArea .flex { display: flex; align-items: center; justify-content: space-between;}
@@ -86,7 +88,6 @@
 .mainArea .popular .body ul li a.setup5 .icon { background-color: #777;}
 .mainArea .popular .body ul li a h4 { margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #777;}
-.mainArea .reservation { margin-top: 3.2rem;}
 .mainArea .reservation .roundDeco { display: block; position: absolute; right: -7.5rem; top: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
 .mainArea .healthFacility { margin-top: 3.2rem;}
 .mainArea .healthFacility .boxArea { padding: 3.2rem 1.6rem;}
@@ -104,7 +105,6 @@
 .mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
 
 /* UI-SJN-03-003U */
-.mainArea .trafficInformation { margin-top: 3.2rem;}
 .mainArea .trafficInformation .boxArea { padding-bottom: 4rem;}
 .mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 2.4rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #6684EA; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
 .mainArea .trafficInformation .vividBus span { font-size: 1.4rem;}
@@ -127,7 +127,6 @@
 .mainArea .improvement .roundDeco { display: block; position: absolute; right: -8.5rem; top: -10.5rem; z-index: 1; width: 14.7rem; height: 14.7rem; background-color: #D57298; border-radius: 50%;}
 
 /* UI-SJN-03-004U */
-.mainArea .eduProgram { margin-top: 3.2rem;}
 .mainArea .eduProgram .boxArea { padding-bottom: 4rem;}
 .mainArea .eduProgram .textLinks { margin-top: 1.7rem; border-top: 1px solid #F4F5F7;}
 .mainArea .eduProgram .textLinks li { border-bottom: 1px solid #F4F5F7;}
@@ -158,7 +157,6 @@
 .mainArea .culturalLife .roundDeco { display: block; position: absolute; right: -8.2rem; bottom: 3.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #D69630; border-radius: 50%;}
 
 /* UI-SJN-03-005U */
-.mainArea .toVisit { margin-top: 3.2rem;}
 .mainArea .toVisit .body { margin-top: 1.6rem;}
 .mainArea .toVisit .boxArea { padding-bottom: 4rem;}
 .mainArea .toVisit .slideContainer { overflow: hidden;}
@@ -185,7 +183,6 @@
 .mainArea .healthFacility.pb80 .roundDeco { display: block; position: absolute; left: -9.4rem; top: -9.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #FFD800; border-radius: 50%;}
 
 /* UI-SJN-03-006U */
-.mainArea .sejongAbout { margin-top: 3.2rem;}
 .mainArea .sejongAbout .body >p { font-size: 1.6rem; color: #555;}
 .mainArea .sejongAbout .body .saBg { display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; height: 16rem; margin-top: 1.6rem; padding: 1.6rem 2rem; font-size: 1.4rem; color: #fff; background: url(../image/info/info_sejongAbout_img.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .sejongAbout .body .saBg b { color: #22FFFF;} 
