@@ -135,6 +135,9 @@ table td { vertical-align: middle;}
   --fontRoboto: 'Roboto';
 }
 
+.aa { display: flex; position: relative; left: 0; transition: left .3s ease-in-out;}
+.aa.add { left: -100%;}
+
 
 /* 구조
 **********************************************/
@@ -149,8 +152,8 @@ table td { vertical-align: middle;}
 .headerWrap .headerClear.add { transition-duration: 500ms;}
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
-.header.bgGreen { position: relative; top: 0; background-color: #4EC457; transition: top .1s ease;}
-.header.bgGreen h2 { color: #fff;}
+.header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
+.header.bgGreen h2 { color: #000;}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
@@ -158,8 +161,8 @@ table td { vertical-align: middle;}
 .subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 28.8rem;}
 .subHeader .icoClose { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoClose i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
-.subHeader .icoNext { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center; transform: rotate(180deg);}
-.subHeader .icoNext i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev_map_wh.png) no-repeat center/cover;}
+.subHeader .icoNext { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
+.subHeader .icoNext i { display: inline-block; width: 1.725rem; height: 1.325rem; text-indent: -9999rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
 .subHeader h2 { font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
 .subHeader .searchHeader { width: 74%;}
