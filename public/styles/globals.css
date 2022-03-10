@@ -139,14 +139,23 @@ table td { vertical-align: middle;}
 /* 구조
 **********************************************/
 
+/* 테스트용 */
+.headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; max-width:410px; width: 100%;}
+.headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
+.headerWrap .headerClear.add { transition-duration: 500ms;}
+
+
+
 /* container */
-.container { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
+.container { overflow: hidden;}
+.contents { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
-.header { position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;}
+/* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
+.header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { background-color: #4EC457;}
 .header.bgGreen h2 { color: #fff;}
-.subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
+.subHeader { max-width: 410px; display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}

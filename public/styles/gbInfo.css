@@ -8,7 +8,7 @@
 
 /* 메인 UI-SJN-03-001U */
 .decoBgLeft { position: absolute; left: 0; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
-.decoBgRight { position: absolute; right: 0; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
+.decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
 
 .info .infoNav { position: relative; margin-top: 0.8rem; padding: 0 2rem;}
 .info .infoNav .slideContainer { overflow: hidden; background-color: #fff; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%); border-radius: 1.6rem;}

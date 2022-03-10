@@ -8,7 +8,7 @@
 .mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
 .mainArea .repMenu { position: relative; margin-top: 1.6rem;}
 .mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
-.mainArea .repMenu::after { content: ''; position: absolute; right: -2rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
+.mainArea .repMenu::after { content: ''; position: absolute; right: -2.1rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
 .mainArea .boxWrap.repMenu .boxArea { padding: 3.2rem 2.4rem 4rem;}
 .mainArea .repMenu h2 { font-size: 2.2rem;}
 .mainArea .repMenu .mainTitle { margin-top: 0.8rem; font-size: 1.6rem; line-height: 2.4rem;}
@@ -202,28 +202,29 @@
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
 .mainMenuFixed { overflow: hidden; position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
-.mainMenuFixed .mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 57rem; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
-.mainMenuFixed .mainMenu .mainMenuList ul { display: flex;}
-.mainMenuFixed .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center; cursor: pointer;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #777;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a >span .name { display: block; margin-top: 0.5rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a br { display: none;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a .deco { position: absolute; left: 50%; top: 0; z-index: -1; width: 7.875rem; height: 1.9rem; margin-left: -3.9rem; background: url(../image/common/main_manubg.png) no-repeat center/cover; opacity: 0; transition: top .2s ease;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a .icon { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 28.8rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a.infoMenu .icon { background-position: -9.6rem -19.2rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a.homeMenu .icon { background-position: -12rem -19.2rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li a.mapMenu .icon { background-position: -14.4rem -19.2rem;}
-.mainMenuFixed .mainMenu .mainMenuList ul li.active a br { display: block;}
-.mainMenuFixed .mainMenu .mainMenuList ul li.active a >span { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: -0.6rem; z-index: 2; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
-.mainMenuFixed .mainMenu .mainMenuList ul li:nth-child(1).active a >span { border: 1px solid #40B549; background-color: #4EC457;}
-.mainMenuFixed .mainMenu .mainMenuList ul li:nth-child(2).active a >span { border: 1px solid #5575E2; background-color: #6684EA;}
-.mainMenuFixed .mainMenu .mainMenuList ul li:nth-child(3).active a >span { border: 1px solid #D69630; background-color: #D69630;}
-.mainMenuFixed .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
-.mainMenuFixed .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
-.mainMenuFixed .mainMenu .mainMenuList ul li.active a .icon { display: none;}
-.mainMenuFixed .chatbot { display: block; position: fixed; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%; transition: bottom .3s ease-in-out;}
-.mainMenuFixed .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
+.mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 50; width: 100%; max-width: 57rem; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
+.mainMenu .mainMenuList ul { display: flex;}
+.mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
+.mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center; cursor: pointer;}
+.mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #777;}
+.mainMenu .mainMenuList ul li a >span .name { display: block; margin-top: 0.5rem;}
+.mainMenu .mainMenuList ul li a br { display: none;}
+.mainMenu .mainMenuList ul li a .deco { position: absolute; left: 50%; top: 0; z-index: -1; width: 7.875rem; height: 1.9rem; margin-left: -3.9rem; background: url(../image/common/main_manubg.png) no-repeat center/cover; opacity: 0; transition: top .2s ease;}
+.mainMenu .mainMenuList ul li a .icon { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 28.8rem;}
+.mainMenu .mainMenuList ul li a.infoMenu .icon { background-position: -9.6rem -19.2rem;}
+.mainMenu .mainMenuList ul li a.homeMenu .icon { background-position: -12rem -19.2rem;}
+.mainMenu .mainMenuList ul li a.mapMenu .icon { background-position: -14.4rem -19.2rem;}
+.mainMenu .mainMenuList ul li.active a br { display: block;}
+.mainMenu .mainMenuList ul li.active a >span { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: -0.6rem; z-index: 2; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
+.mainMenu .mainMenuList ul li:nth-child(1).active a >span { border: 1px solid #40B549; background-color: #4EC457;}
+.mainMenu .mainMenuList ul li:nth-child(2).active a >span { border: 1px solid #5575E2; background-color: #6684EA;}
+.mainMenu .mainMenuList ul li:nth-child(3).active a >span { border: 1px solid #D69630; background-color: #D69630;}
+.mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
+.mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
+.mainMenu .mainMenuList ul li.active a .icon { display: none;}
+.chatbot { display: flex; justify-content: flex-end; position: fixed; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 100%; padding-right: 2rem; transition: bottom .3s ease-in-out;}
+.chatbot .chatbotBtn { width: 4.8rem; height: 4.8rem; font-size: 1.3rem; font-weight: 700; background-color: #FFD800; box-shadow: 0 0.4rem 2rem rgba(0 0 0 / 10%); border-radius: 50%;}
+.chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
 
 /* UI-SJN-02-001U */
 .home .popularHeader .popularBody { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}

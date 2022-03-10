@@ -15,6 +15,25 @@ const slideOpt = {
 		// observer: true,
 		// observeParents: true,
 	},
+	mainTest: {
+    slidesPerView: 'auto',
+		autoHeight: true,
+		spaceBetween: 50,
+		on: {
+			setTranslate: function() {
+				const headerClear = document.querySelector(".headerClear");
+				headerClear.style.transform = `translateX(${this.translate}px)`;
+			},
+			touchStart: function() {
+				const headerClear = document.querySelector(".headerClear");
+				headerClear.classList.remove('add');
+			},
+			touchEnd: function() {
+				const headerClear = document.querySelector(".headerClear");
+				headerClear.classList.add('add');
+			},
+		},
+	},
 	/* UI-SJN-01-001U */
 	homeNavSwiper: {
     slidesPerView: 'auto',
