@@ -17,16 +17,25 @@
 			<!-- 모바일 내용 -->
 			<div id="root">
 				<div class="container">
-					<header class="header global bgBlue">
-						<div class="subHeader">
-							<div class="globalLogo"><i>세종엔 로고</i></div>
-							<div class="btnGlobal">
-								<button type="button" class="icoSearch"><i class="split24">검색</i></button>
-								<button type="button" class="icoAlert"><i class="split24">알림</i></button>
-								<button type="button" class="icoMy"><i class="split24">내정보</i></button>
-							</div>
+
+					<div class="headerWrap">
+						<div class="headerClear">
+							<!-- 각각 헤드 들 -->
+							<header class="header global bgBlue">
+								<div class="subHeader">
+									<div class="globalLogo"><i>세종엔 로고</i></div>
+									<div class="btnGlobal">
+										<button type="button" class="icoSearch"><i class="split24">검색</i></button>
+										<button type="button" class="icoAlert"><i class="split24">알림</i></button>
+										<button type="button" class="icoMy"><i class="split24">내정보</i></button>
+									</div>
+								</div>
+							</header>
+							<!-- //각각 헤드 들 -->
 						</div>
-					</header>
+					</div>
+
+					
 			
 					<!-- 본문 -->
 					<main class="contents home"> <!-- [통합검색 Class] home-->
@@ -434,24 +443,6 @@
 									</div>
 									<p>세종특별자치시 도시통합정보센터</p>
 								</footer>
-							
-								<div class="mainMenu">
-									<nav id="mainMenuSwiper" class="mainMenuList">
-										<ul>
-											<li>
-												<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
-											</li>
-											<li class="active"> <!-- 활성화 시 active 추가 -->
-												<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
-											</li>
-											<li>
-												<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-			
-								<button type="button" class="chatbot">민원<br />챗봇</button>
 							</div>
 							<script>
 								mainWeather.init();
@@ -459,6 +450,26 @@
 						</div>
 					</main>
 					<!-- //본문 -->
+
+					<div class="mainMenu">
+						<nav id="mainMenuSwiper" class="mainMenuList">
+							<ul>
+								<li>
+									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
+								</li>
+								<li class="active"> <!-- 활성화 시 active 추가 -->
+									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="chatbot">
+						<button type="button" class="chatbotBtn">민원<br />챗봇</button>
+					</div>
 			
 			
 					<!-- 레이어 -->

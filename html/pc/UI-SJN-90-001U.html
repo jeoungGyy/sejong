@@ -65,6 +65,77 @@
 								<li class="swiper-slide">
 									<!-- 본문 -->
 									<main class="contents info"> <!-- [생활정보 Class] info-->
+										<h2 class="visible"><span class="headerClone">신고하기</span></h2> <!-- [헤더에 넣어줄 제목] -->
+										
+										<div class="infoWrap">
+											<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+												<div class="reportArea">
+													<fieldset>
+														<legend>신고하기 선택</legend>
+														<ul class="items-label">
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list0" />
+																	<label for="list0">개인정보 노출</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list1" />
+																	<label for="list1">욕설/인신공격</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list2" />
+																	<label for="list2">음란/선정성</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list3" />
+																	<label for="list3">불법정보</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list4" />
+																	<label for="list4">같은 내용 도배</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list5" />
+																	<label for="list5">불법촬영물 등 유통신고</label>
+																</div>
+															</li>
+															<li>
+																<div class="labelForm">
+																	<input type="radio" name="radio" id="list6" checked="checked" />
+																	<label for="list6">기타</label>
+																</div>
+																<div class="textareaForm">
+																	<textarea cols="10" rows="10" required="required" title="기사 사유 작성" placeholder="기타 사유를 작성해 주세요"></textarea>
+																	<div class="byte">
+																		<span>49</span>/300
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</fieldset>
+												</div>
+							
+												<div class="btnGroup">
+													<button type="button" class="button blue" onclick="layerPopup.open('layerReport');">확인</button>
+												</div>
+											</div>
+										</div>
+									</main>
+									<!-- //본문 -->
+								</li>
+								<li class="swiper-slide">
+									<!-- 본문 -->
+									<main class="contents info"> <!-- [생활정보 Class] info-->
 										
 										<div class="infoWrap">
 											<div class="mainMenuFixed">
@@ -979,13 +1050,13 @@
 
 
 
-					<div class="mainMenu">
+					<!-- <div class="mainMenu">
 						<nav class="mainMenuList">
 							<ul>
 								<li>
 									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
 								</li>
-								<li class="active"> <!-- 활성화 시 active 추가 -->
+								<li class="active">
 									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
 								</li>
 								<li>
@@ -996,7 +1067,7 @@
 					</div>
 					<div class="chatbot">
 						<button type="button" class="chatbotBtn">민원<br />챗봇</button>
-					</div>
+					</div> -->
 
 
 				</div>

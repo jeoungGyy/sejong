@@ -17,12 +17,18 @@
 			<!-- 모바일 내용 -->
 			<div id="root">
 				<div class="container">
-					<header class="header bgGreen">
-						<div class="subHeader">
-							<h2></h2>
-							<button type="button" class="icoNext"><i>오늘 세종엔</i></button>
+					<!-- 공통: 서브 헤더 -->
+					<div class="headerWrap">
+						<div class="headerClear">
+							<header class="header bgGreen" style="margin-right: 50px;">
+								<div class="subHeader">
+									<h2></h2>
+									<button type="button" class="icoNext"><i>오늘 세종엔</i></button>
+								</div>
+							</header>
 						</div>
-					</header>
+					</div>
+					<!-- //공통: 서브 헤더 -->
 			
 					<!-- 본문 -->
 					<main class="contents info"> <!-- [생활정보 Class] info-->
@@ -174,26 +180,27 @@
 										<span class="roundDeco"></span>
 									</div>
 								</div>
-			
-								<div class="mainMenu">
-									<nav id="mainMenuSwiper" class="mainMenuList">
-										<ul>
-											<li>
-												<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
-											</li>
-											<li class="active"> <!-- 활성화 시 active 추가 -->
-												<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
-											</li>
-											<li>
-												<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
-											</li>
-										</ul>
-									</nav>
-								</div>
 							</div>
 						</div>
 					</main>
 					<!-- //본문 -->
+
+
+					<div class="mainMenu">
+						<nav id="mainMenuSwiper" class="mainMenuList">
+							<ul>
+								<li>
+									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
+								</li>
+								<li class="active"> <!-- 활성화 시 active 추가 -->
+									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 			
 					
 					<!-- 레이어 -->
