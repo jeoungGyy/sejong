@@ -1,3 +1,60 @@
+const test = {
+	startX: null,
+	open : () => {
+		document.querySelectorAll(".bb").forEach((element) => {
+		
+	
+			const aa = document.querySelector('.aa');
+
+			
+
+			const slide = (event) => {
+
+				const clientX = event.layerX ?? event.touches[0].layerX;
+				const x = event.layerX - element.offsetLeft;
+
+				// console.log("test.startX : " + test.startX)
+				// console.log(test.startX - clientX)
+
+				// let percentage = ((y / element.offsetHeight) * 10000) / 100;
+
+				if ((test.startX - clientX) <= -100) {
+					aa.classList.add('active');
+				}
+				if ((test.startX - clientX) >= 100) {
+					aa.classList.remove('active');
+				}
+
+
+			
+			};
+
+			const dragStart = () => {
+				test.startX = event.layerX ?? event.touches[0].layerX;
+				element.addEventListener("mousemove", slide, { passive: true });
+				element.addEventListener("touchmove", slide, { passive: true });
+				
+				setTimeout(()=>{
+					dragDone();
+				},1000)
+			};
+			const dragDone = () => {
+				element.removeEventListener("mousemove", slide);
+				element.removeEventListener("touchmove", slide);
+			};
+
+			element.addEventListener("touchstart", dragStart, { passive: true });
+			element.addEventListener("mousedown", dragStart, { passive: true });
+
+			document.addEventListener("mouseup", dragDone, { passive: true });
+			document.addEventListener("touchend", dragDone, { passive: true });
+			document.addEventListener("touchcancel", dragDone, { passive: true });
+
+
+		});
+	},
+}
+
 const header = {
 	set : () => {
 		header.textCopy();
@@ -24,16 +81,16 @@ const container = {
   /* Container 스크롤에 따른 클래스명 추가 */
 	scrollAct : () => {
 		let containerWrap = document.querySelector('.container');
-		const infoNav = document.querySelector('.infoNav');
+		// const infoNav = document.querySelector('.infoNav');
 		window.addEventListener('scroll', function(){
 			/* 생활정보 메인 메뉴 고정을 하기 위해 사용 */
-			if(infoNav) {
-				if(window.scrollY > 56) {
-					infoNav.style.top = `${window.scrollY - 62}px`;
-				} else {
-					infoNav.style.top = '0px';
-				}
-			}
+			// if(infoNav) {
+			// 	if(window.scrollY > 56) {
+			// 		infoNav.style.top = `${window.scrollY - 62}px`;
+			// 	} else {
+			// 		infoNav.style.top = '0px';
+			// 	}
+			// }
 
 			if(container.currentTop > window.scrollY && window.scrollY+window.innerHeight < document.body.offsetHeight) {
 				if(containerWrap.classList.contains('scrollDown')) containerWrap.classList.remove('scrollDown');

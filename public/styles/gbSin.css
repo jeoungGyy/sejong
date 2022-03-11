@@ -379,6 +379,19 @@
 .mypage .mypageArea .section .securityList li input:checked + label::after { background-color: #6684EA;}
 .mypage .mypageArea .section .securityList li input:checked + label { z-index: 1; border-color: #6684EA;}
 .mypage .mypageArea .section .securityList li ~ li label { margin-left: -0.1rem;}
+.mypage .mypageSpace .boxTab .btnTab { display: flex; height: 4.8rem;}
+.mypage .mypageSpace .boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
+.mypage .mypageSpace .boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
+.mypage .mypageSpace .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+.mypage .mypageSpace .tabContent { padding: 0.8rem 0 4rem;}
+.mypage .mypageSpace .tabContent >div { display: none;}
+.mypage .mypageSpace .tabContent >div.active { display: block;}
+.mypage .mypageSpace .tabContent .promote { padding: 0 2rem;}
+.mypage .mypageSpace .tabContent .ourStore { padding: 1.6rem 2rem 0;}
+.mypage .mypageSpace .tabContent .economy { padding: 1.6rem 2rem 0;}
+.mypage .mypageSpace .tabContent .textReview { padding: 0 2rem;}
+
+
 
 /* 개인정보처리방침 - UI-SJN-80-010U */
 .mypage .explain-default { padding: 2.4rem 2rem; background-color: #F4F5F7;}
@@ -464,6 +477,9 @@
 .header.global .subHeader .icoSearch i {  background-position: -9.6rem -14.4rem;}
 .header.global .subHeader .icoAlert i { background-position: -7.2rem -14.4rem;}
 .header.global .subHeader .icoMy i { background-position: -4.8rem -14.4rem;}
+.header.global .subHeader .icoMy i.icoProfile { width: 2.4rem; height: 2.4rem; background-position: 0 0 !important;}
+.header.global .subHeader .icoMy .img { display: inline-block; overflow: hidden; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
+.header.global .subHeader .icoMy .img img { width: 100%; height: 100%;}
 .header.global.bgBlue { background-color: #6684EA;}
 .header.global.bgBlue .subHeader .globalLogo i { background-position-y: -2rem;}
 .header.global.bgBlue .subHeader .icoSearch i,
