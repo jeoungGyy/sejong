@@ -137,6 +137,10 @@ table td { vertical-align: middle;}
 
 .aa { display: flex; position: relative; left: -100%; transition: left .3s ease-in-out;}
 .aa.active { left: 0;}
+.bb { flex-shrink: 0; width: 100%;}
+.bb .contents { padding: 0;}
+.cc { display: flex; overflow: hidden; position: relative; left: 0; transition: left .3s ease-in-out;}
+.cc li { flex-shrink: 0; width: 100%;}
 
 
 /* 구조
@@ -153,7 +157,7 @@ table td { vertical-align: middle;}
 .headerWrap .headerClear.add { transition-duration: 500ms;}
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
-.header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .2s ease;}
+.header.bgGreen { position: relative; top: 0; background-color: #fff;}
 .header.bgGreen h2 { color: #000;}
 .subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
@@ -175,7 +179,7 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
 
-.stickyHeader .header.bgGreen { top: -5.6rem}
+/* .stickyHeader .header.bgGreen { top: -5.6rem} */
 /* .stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);} */
 .stickyHeader .boderTopGray { border: none;}
 
@@ -273,8 +277,10 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative; height: 3.2rem;}
+/* .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
+.switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;} */
 .switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
-.switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
+.switch label { position: relative; padding: 0 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
 .switch label::after { content: ""; position: absolute; display: block; left: 0.6rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
 .switch input:checked + label:after { margin-left: 2.1rem;}
@@ -619,21 +625,56 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .myInfoLayer .myLogin .my .icon .icoProfile { width: 4rem; height: 4rem;}
 .myInfoLayer .myLogin .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 2.4rem; height: 2.4rem; background-color: #292D32; border-radius: 50%;}
 .myInfoLayer .myLogin .my .profileBtn i { background-position: -43.2rem -14.4rem;}
-.myInfoLayer .myActivity { display: flex; flex-wrap: wrap; margin-top: 1.6rem; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
-.myInfoLayer .myActivity li { display: flex; flex-direction: column; justify-content: center; width: calc(100% / 3); height: 12rem; padding: 0 1.2rem 0 2rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
-.myInfoLayer .myActivity li:nth-child(1),
-.myInfoLayer .myActivity li:nth-child(2) { width: 50%;}
-.myInfoLayer .myActivity li p { color: #555;}
-.myInfoLayer .myActivity li >div { display: flex; align-items: center; justify-content: space-between; margin-top: 1.3rem;}
-.myInfoLayer .myActivity li >div strong { display: block; font-family: var(--fontRoboto); font-size: 2.4rem; font-weight: 700;}
-.myInfoLayer .myActivity li >div i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
-.myInfoLayer .myActivity li >div.safety i { background-position-x: 0;}
-.myInfoLayer .myActivity li >div.review i { background-position-x: -3.2rem;}
-.myInfoLayer .myActivity li >div.donation i { background-position-x: -6.4rem;}
-.myInfoLayer .myActivity li >div.used i { background-position-x: -9.6rem;}
-.myInfoLayer .myActivity li >div.share i { background-position-x: -12.8rem;}
+.myInfoLayer .myActivity { margin-top: 4rem;}
+.myInfoLayer .myActivity li { padding-left: 4rem; border-top: 1px solid #EAEDF2;}
+.myInfoLayer .myActivity li i { display: block; position: absolute; left: -4rem; top: 1.4rem; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
+.myInfoLayer .myActivity li .review { display: flex; align-items: center; justify-content: space-between; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li .review i { background-position-x: -3.2rem;}
+.myInfoLayer .myActivity li .review .cBlue { margin-left: 0.8rem;}
+.myInfoLayer .myActivity li .possess { position: relative; padding: 1.8rem 0;}
+.myInfoLayer .myActivity li .possess i { background-position-x: 0;}
+.myInfoLayer .myActivity li .possess .pointBody { display: flex; align-items: center; justify-content: space-between; color: #111;}
+.myInfoLayer .myActivity li .possess .pointBody .text { font-size: 1.6rem;}
+.myInfoLayer .myActivity li .possess .pointBody .cBlue { font-size: 1.4rem;}
+.myInfoLayer .myActivity li .possess .pointBody .point { font-size: 1.8rem; font-family: var(--fontRoboto);}
+.myInfoLayer .myActivity li .possess .currency { display: block; color: #111;}
+.myInfoLayer .myActivity li .possess .guide { margin-top: 0.9rem; color: #555;}
+.myInfoLayer .myActivity li .possess .currency { display: block; margin-top: 2.3rem; font-size: 1.6rem; color: #6684EA;}
+.myInfoLayer .myActivity li .favorite { display: block; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li .favorite i { background-position-x: -6.4rem;}
+.myInfoLayer .myActivity li .favorite b { font-size: 1.6rem;}
+.myInfoLayer .myActivity li .arrowRight { position: relative; padding-right: 3rem;}
+.myInfoLayer .myActivity li .arrowRight::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
+.myInfoLayer h3 { display: flex; align-items: center; height: 3.2rem; margin-top: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #6684EA;}
+.myInfoLayer .sevieceBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
+.myInfoLayer a.link { display: flex; align-items: center; position: relative; height: 4.8rem; font-size: 1.6rem; font-weight: 700; color: #111;}
+.myInfoLayer a.link::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
+.myInfoLayer a.link.between { justify-content: space-between; padding-right: 3.2rem;}
+.myInfoLayer .sevieceBox .flex { display: flex; align-items: center; justify-content: space-between; height: 3.2rem;}
+.myInfoLayer .sevieceBox .guide { margin: 0.9rem 0 1.5rem; font-size: 1.4rem; color: #555;}
+.myInfoLayer .membershipBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
+.myInfoLayer .membershipBox .text { margin-top: 1.6rem;}
+.myInfoLayer .membershipBox .radioSet { margin: 1.4rem 0;}
+.myInfoLayer .membershipBox .radioSet input:checked + label + .btn { color: #fff; background-color: #6684EA;}
+.myInfoLayer .membershipBox .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; border: 1px solid #ddd; transition: all .3s ease-in-out;}
+.myInfoLayer .appInfo { margin: 2.4rem -2rem -2rem; padding: 2.4rem 2rem; background-color: #F4F5F7;}
+.myInfoLayer .appInfo .title { font-size: 1.4rem; color: #333;}
+.myInfoLayer .appInfo h4 { margin-top: 1.8rem;}
+.myInfoLayer .appInfo >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #555;}
+
+
+
+
+
+
+
+
+
+
+
 .myInfoLayer .accordionBox { margin-top: 3.3rem;}
 .myInfoLayer .accordionBox >li .btn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 5.2rem; color: #111;}
+.myInfoLayer .accordionBox >li button.btn { font-weight: 600;}
 .myInfoLayer .accordionBox >li .btn p { font-size: 1.6rem;}
 .myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 28.8rem;}
 .myInfoLayer .accordionBox >li a.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
@@ -1081,7 +1122,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profileLayer .myHead .myName .write .myNameBtn i { background-position: -36rem -7.2rem;}
 .profileLayer .myHead .myName .guide { margin-top: 0.7rem; text-align: left;}
 .profileLayer .myHead .myName .guide p { font-size: 1.4rem;}
-.profileLayer .profileArea { }
 .profileLayer .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.2rem;}
 .profileLayer .pictureList li button { display: block; width: 100%; height: 11.7rem;}
 .profileLayer .pictureList li button img { width: 6rem; height: 6rem;}
