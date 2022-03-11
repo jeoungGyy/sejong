@@ -375,7 +375,7 @@ const moreBtn = {
 	idx : null,
 	show : () => {
 		let more = document.querySelectorAll('.more');
-		let text = document.querySelectorAll('.text');
+		let text = document.querySelectorAll('.headTitle .text');
 		let reviewLi = document.querySelectorAll('.items-review li');
 		let els = Array.prototype.slice.call( document.getElementsByClassName('more'), 0 );
 		let target = reviewLi[els.indexOf(event.currentTarget)];
@@ -383,6 +383,7 @@ const moreBtn = {
 		moreBtn.idx = els.indexOf(event.currentTarget);
 
 		if(target.getElementsByClassName('text')[0].classList.contains('lineBreake')) {
+			console.log(text[moreBtn.idx])
 			more[moreBtn.idx].classList.add('active');
 			text[moreBtn.idx].classList.remove('lineBreake');
 		} else {
