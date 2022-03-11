@@ -137,11 +137,13 @@ table td { vertical-align: middle;}
 
 .aa { display: flex; position: relative; left: -100%; transition: left .3s ease-in-out;}
 .aa.active { left: 0;}
-.bb { flex-shrink: 0; width: 100%;}
-.bb .contents { padding: 0;}
-.cc { display: flex; overflow: hidden; position: relative; left: 0; transition: left .3s ease-in-out;}
-.cc li { flex-shrink: 0; width: 100%;}
 
+.bb { flex-shrink: 0; width: 100%; }
+.bb .contents { padding: 0;}
+
+.cc { display: flex; position: relative; left: 0; transition: left .3s ease-in-out;}
+.dd { flex-shrink: 0; width: 100%; }
+/* .cc.active { left: -calc(var(--space) * 100)%;} */
 
 /* 구조
 **********************************************/

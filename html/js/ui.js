@@ -5,41 +5,46 @@ const test = {
 		
 	
 			const aa = document.querySelector('.aa');
-
+			let containerWrap = document.querySelector('.container');
 			
 
 			const slide = (event) => {
 
-				const clientX = event.layerX ?? event.touches[0].layerX;
-				const x = event.layerX - element.offsetLeft;
+				const clientX = event.layerX ?? event.touches[0].pageX;
 
 				// console.log("test.startX : " + test.startX)
 				// console.log(test.startX - clientX)
 
-				// let percentage = ((y / element.offsetHeight) * 10000) / 100;
 
 				if ((test.startX - clientX) <= -100) {
 					aa.classList.add('active');
+					
 				}
 				// if ((test.startX - clientX) >= 100) {
 				// 	aa.classList.remove('active');
 				// }
-
-
-
 			
 			};
 
 			const dragStart = () => {
-				test.startX = event.layerX ?? event.touches[0].layerX;
+				test.startX = event.layerX ?? event.touches[0].pageX;
 				element.addEventListener("mousemove", slide, { passive: true });
 				element.addEventListener("touchmove", slide, { passive: true });
+				console.log(5)
 				
-				setTimeout(()=>{
-					dragDone();
-				},1000)
+				// setTimeout(()=>{
+				// 	dragDone();
+				// },1000)
 			};
 			const dragDone = () => {
+				// setTimeout(()=>{
+				// 	console.log(5)
+				// 	if(containerWrap.classList.contains('stickyHeader')) {
+				// 		window.scrollTo({ top: 0, behavior: 'smooth' });
+				// 	} else {
+				// 		return
+				// 	}
+				// },100);
 				element.removeEventListener("mousemove", slide);
 				element.removeEventListener("touchmove", slide);
 			};
@@ -62,34 +67,55 @@ const test2 = {
 		
 	
 			const aa = document.querySelector('.aa');
+			const cc = document.querySelector('.cc');
 
 			
 
 			const slide = (event) => {
 
-				const clientX = event.layerX ?? event.touches[0].layerX;
-				const x = event.layerX - element.offsetLeft;
+				const clientX = event.layerX ?? event.touches[0].pageX;
+				let space = Number(element.style.getPropertyValue('--space'));
+
+
+
 
 				// console.log("test.startX : " + test.startX)
-				// console.log(test.startX - clientX)
 
 				// let percentage = ((y / element.offsetHeight) * 10000) / 100;
 
-				// if ((test.startX - clientX) <= -100) {
-				// 	aa.classList.add('active');
-				// }
-				// if ((test.startX - clientX) >= 100) {
-				// 	aa.classList.remove('active');
-				// }
+				// if(space == 1) return;
+				
+				if ((test2.startX - clientX) <= -100) {
+					if(space == 1) { 
+						return
+					} else {
+						cc.style.left = -((space - 2) * 100)+'%';
+					}
+				}
+				if ((test2.startX - clientX) >= 100) {
+					if(space == 3) { 
+						aa.classList.remove('active');
+						setTimeout(()=>{
+							cc.style.setProperty("left", "");
+						},500)
+					} else {
+						cc.style.left = -(space * 100)+'%';
+					}
+				}
 
-				console.log(1)
+				
+
+				// var cc = element.style.getPropertyValue('--space');
+
+
+				// console.log(cc )
 
 
 			
 			};
 
 			const dragStart = () => {
-				test.startX = event.layerX ?? event.touches[0].layerX;
+				test2.startX = event.layerX ?? event.touches[0].pageX;
 				element.addEventListener("mousemove", slide, { passive: true });
 				element.addEventListener("touchmove", slide, { passive: true });
 				
