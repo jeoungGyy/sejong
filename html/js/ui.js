@@ -5,12 +5,15 @@ const test = {
 		
 	
 			const aa = document.querySelector('.aa');
+			const cc = document.querySelector('.cc');
 			let containerWrap = document.querySelector('.container');
 			
 
 			const slide = (event) => {
 
 				const clientX = event.layerX ?? event.touches[0].pageX;
+				
+				let space = Number(element.style.getPropertyValue('--space'));
 
 				// console.log("test.startX : " + test.startX)
 				// console.log(test.startX - clientX)
@@ -18,11 +21,13 @@ const test = {
 
 				if ((test.startX - clientX) <= -100) {
 					aa.classList.add('active');
-					
 				}
 				// if ((test.startX - clientX) >= 100) {
 				// 	aa.classList.remove('active');
 				// }
+
+
+		
 			
 			};
 
@@ -30,7 +35,6 @@ const test = {
 				test.startX = event.layerX ?? event.touches[0].pageX;
 				element.addEventListener("mousemove", slide, { passive: true });
 				element.addEventListener("touchmove", slide, { passive: true });
-				console.log(5)
 				
 				// setTimeout(()=>{
 				// 	dragDone();
