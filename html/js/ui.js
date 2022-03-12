@@ -5,37 +5,26 @@ const test = {
 		
 	
 			const aa = document.querySelector('.aa');
+			const bb = document.querySelector('.bb');
 			const cc = document.querySelector('.cc');
-			let containerWrap = document.querySelector('.container');
-			
+
 
 			const slide = (event) => {
 
 				const clientX = event.layerX ?? event.touches[0].pageX;
 				
-				let space = Number(element.style.getPropertyValue('--space'));
-
-				// console.log("test.startX : " + test.startX)
-				// console.log(test.startX - clientX)
-
-
-				if ((test.startX - clientX) <= -100) {
+				if ((test.startX - clientX) <= -50) {
 					aa.classList.add('active');
 				}
 				// if ((test.startX - clientX) >= 100) {
 				// 	aa.classList.remove('active');
 				// }
-
-
-		
-			
 			};
 
 			const dragStart = () => {
 				test.startX = event.layerX ?? event.touches[0].pageX;
-				element.addEventListener("mousemove", slide, { passive: true });
-				element.addEventListener("touchmove", slide, { passive: true });
-				
+				element.addEventListener("mousemove", slide, false);
+				element.addEventListener("touchmove", slide, false);
 				// setTimeout(()=>{
 				// 	dragDone();
 				// },1000)
@@ -53,12 +42,12 @@ const test = {
 				element.removeEventListener("touchmove", slide);
 			};
 
-			element.addEventListener("touchstart", dragStart, { passive: true });
-			element.addEventListener("mousedown", dragStart, { passive: true });
+			element.addEventListener("touchstart", dragStart, false);
+			element.addEventListener("mousedown", dragStart, false);
 
-			document.addEventListener("mouseup", dragDone, { passive: true });
-			document.addEventListener("touchend", dragDone, { passive: true });
-			document.addEventListener("touchcancel", dragDone, { passive: true });
+			element.addEventListener("mouseup", dragDone, false);
+			element.addEventListener("touchend", dragDone, false);
+			element.addEventListener("touchcancel", dragDone, false);
 
 
 		});
@@ -66,78 +55,106 @@ const test = {
 }
 const test2 = {
 	startX: null,
+	listIndex: 0,
 	open : () => {
-		document.querySelectorAll(".dd").forEach((element) => {
-		
-	
-			const aa = document.querySelector('.aa');
-			const cc = document.querySelector('.cc');
+		const infoNav = document.querySelectorAll('.infoNav li');
+		const aa = document.querySelector('.aa');
+		const cc = document.querySelector('.cc');
 
+		const xx = () => {
+
+
+			let selectedEl;
+			[].forEach.call(infoNav, (_this, index)=>{
+				_this.querySelector('a').classList.remove('active');
+				infoNav[test2.listIndex].querySelector('a').classList.add('active');
+
+				selectedEl = infoNav[test2.listIndex].querySelector('a')
+				_this.addEventListener("click", e => {
+					selectedEl && selectedEl.classList.remove("active");
+					selectedEl = e.target;
+					selectedEl.classList.add("active");
+					test2.listIndex = index;
+
+					cc.style.left = -(test2.listIndex * 100)+'%';
+				});
+			});
+		};
+
+		const zz = () => {
 			
+		}
+
+
+
+
+		document.querySelectorAll(".dd").forEach((element) => {
+			let space = Number(element.style.getPropertyValue('--space'));
 
 			const slide = (event) => {
 
 				const clientX = event.layerX ?? event.touches[0].pageX;
-				let space = Number(element.style.getPropertyValue('--space'));
-
-
-
-
-				// console.log("test.startX : " + test.startX)
-
-				// let percentage = ((y / element.offsetHeight) * 10000) / 100;
-
-				// if(space == 1) return;
 				
-				if ((test2.startX - clientX) <= -100) {
+				if ((test2.startX - clientX) <= -50) {
 					if(space == 1) { 
 						return
 					} else {
+
+						test2.listIndex = space - 2;
 						cc.style.left = -((space - 2) * 100)+'%';
 					}
 				}
-				if ((test2.startX - clientX) >= 100) {
+				if ((test2.startX - clientX) >= 50) {
 					if(space == 3) { 
 						aa.classList.remove('active');
 						setTimeout(()=>{
 							cc.style.setProperty("left", "");
 						},500)
 					} else {
+						
+						
+						test2.listIndex = space;
 						cc.style.left = -(space * 100)+'%';
 					}
 				}
-
-				
-
-				// var cc = element.style.getPropertyValue('--space');
-
-
-				// console.log(cc )
-
+			};
 
 			
-			};
+
+
 
 			const dragStart = () => {
 				test2.startX = event.layerX ?? event.touches[0].pageX;
-				element.addEventListener("mousemove", slide, { passive: true });
-				element.addEventListener("touchmove", slide, { passive: true });
+				element.addEventListener("mousemove", slide, false);
+				element.addEventListener("touchmove", slide, false);
 				
-				setTimeout(()=>{
-					dragDone();
-				},1000)
+				// setTimeout(()=>{
+				// 	dragDone();
+				// },1000)
 			};
 			const dragDone = () => {
+
+
+				// [].forEach.call(infoNav, (_this)=>{
+					
+				// 	console.log(_this)
+				// });
+			
+				xx()
+
+
+
+				
 				element.removeEventListener("mousemove", slide);
 				element.removeEventListener("touchmove", slide);
 			};
 
-			element.addEventListener("touchstart", dragStart, { passive: true });
-			element.addEventListener("mousedown", dragStart, { passive: true });
+			element.addEventListener("touchstart", dragStart, false);
+			element.addEventListener("mousedown", dragStart, false);
 
-			document.addEventListener("mouseup", dragDone, { passive: true });
-			document.addEventListener("touchend", dragDone, { passive: true });
-			document.addEventListener("touchcancel", dragDone, { passive: true });
+			document.addEventListener("mouseup", dragDone, false);
+			element.addEventListener("touchend", dragDone, false);
+			element.addEventListener("touchcancel", dragDone, false);
 
 
 		});
@@ -171,6 +188,7 @@ const container = {
 	scrollAct : () => {
 		let containerWrap = document.querySelector('.container');
 		const infoNav = document.querySelector('.infoNav');
+		const recentService = document.querySelector('.infoWrap .recentService');
 		window.addEventListener('scroll', function(){
 			/* 생활정보 메인 메뉴 고정을 하기 위해 사용 */
 			// if(infoNav) {
@@ -183,8 +201,10 @@ const container = {
 			if(infoNav) {
 				if(window.scrollY > 56) {
 					infoNav.classList.add('active');
+					recentService.classList.add('active');
 				} else {
 					infoNav.classList.remove('active');
+					recentService.classList.remove('active');
 				}
 			}
 
