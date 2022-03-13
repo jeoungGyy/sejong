@@ -81,10 +81,6 @@ const test2 = {
 			});
 		};
 
-		const zz = () => {
-			
-		}
-
 
 
 
@@ -109,6 +105,7 @@ const test2 = {
 						aa.classList.remove('active');
 						setTimeout(()=>{
 							cc.style.setProperty("left", "");
+							test2.listIndex = 0;
 						},500)
 					} else {
 						
@@ -153,8 +150,8 @@ const test2 = {
 			element.addEventListener("mousedown", dragStart, false);
 
 			document.addEventListener("mouseup", dragDone, false);
-			element.addEventListener("touchend", dragDone, false);
-			element.addEventListener("touchcancel", dragDone, false);
+			document.addEventListener("touchend", dragDone, false);
+			document.addEventListener("touchcancel", dragDone, false);
 
 
 		});
