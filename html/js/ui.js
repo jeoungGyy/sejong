@@ -23,11 +23,12 @@ const test = {
 
 			const dragStart = () => {
 				test.startX = event.layerX ?? event.touches[0].pageX;
+				event.preventDefault();
 				element.addEventListener("mousemove", slide, false);
 				element.addEventListener("touchmove", slide, false);
 				// setTimeout(()=>{
 				// 	dragDone();
-				// },1000)
+				// },500)
 			};
 			const dragDone = () => {
 				// setTimeout(()=>{
@@ -122,12 +123,13 @@ const test2 = {
 
 			const dragStart = () => {
 				test2.startX = event.layerX ?? event.touches[0].pageX;
+				event.preventDefault();
 				element.addEventListener("mousemove", slide, false);
 				element.addEventListener("touchmove", slide, false);
 				
-				// setTimeout(()=>{
-				// 	dragDone();
-				// },1000)
+				setTimeout(()=>{
+					dragDone();
+				},1000)
 			};
 			const dragDone = () => {
 
