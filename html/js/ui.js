@@ -10,16 +10,11 @@ const test = {
 
 		let arr = [];
 		[].forEach.call(mainArea, ss =>{
-			arr.push(Math.floor(ss.getBoundingClientRect().height)+310);
+			arr.push(Math.floor(ss.getBoundingClientRect().height)+360);
 		});
 
 		const xx = () => {
-			
-
-			// console.log(arr);
-			// let pp = `${arr[test.listIndex+1]}px`
-			// console.log(test.listIndex);
-			// aa.style.height = pp;
+			aa.style.height = `${arr[test.listIndex]}px`;
 
 			let selectedEl;
 			[].forEach.call(infoNav, (_this, index)=>{
@@ -45,7 +40,10 @@ const test = {
 				
 				if ((test.startX - clientX) <= -50) {
 					aa.classList.add('active');
-					console.log(1)
+
+					setTimeout(()=>{
+						aa.style.height = `${arr[0]}px`
+					},500)
 				}
 			};
 
@@ -92,6 +90,7 @@ const test = {
 						aa.classList.remove('active');
 						test.listIndex = 0;
 						setTimeout(()=>{
+							aa.style.height = "";
 							cc.style.setProperty("left", "");
 						},500)
 					} else {
