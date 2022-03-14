@@ -151,7 +151,7 @@ table td { vertical-align: middle;}
 /* container */
 .container { overflow: hidden;}
 /* .contents { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;} */
-.contents { max-width: 57rem; margin: 0 auto; padding: 5.6rem 0 2rem;}
+.contents { max-width: 57rem; margin: 0 auto;}
 
 /* header */
 .headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}

@@ -1030,7 +1030,7 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 }
 
 function _lazyLoad() {
-  header.set();
+  // header.set();
   container.set();
 	accordion.active();
 	tab.active();

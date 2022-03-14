@@ -17,189 +17,193 @@
 			<!-- 모바일 내용 -->
 			<div id="root">
 				<div class="container">
-					<!-- 공통: 서브 헤더 -->
-					<script src="../include/header_sub.js"></script>
-					<!-- //공통: 서브 헤더 -->
-			
-					<!-- 본문 -->
-					<main class="contents info"> <!-- [생활정보 Class] info-->
-						<h2 class="visible"><span class="headerClone">소통ㆍ참여</span></h2> <!-- [헤더에 넣어줄 제목] -->
-						
-						<div class="infoWrap">
-							<div class="subMenuGroup">
-								<nav id="infoMenuSwiper" class="infoMenu">
-									<div class="slideContainer">
-										<ul class="swiper-wrapper">
-											<li class="swiper-slide"><a href="#">우리가게</a></li>
-											<li class="swiper-slide"><a href="#" class="active">장소공유</a></li>
-											<li class="swiper-slide"><a href="#">지식ㆍ재능공유</a></li>
-											<li class="swiper-slide"><a href="#">물품공유</a></li>
-											<li class="swiper-slide"><a href="#">홍보 행사</a></li>
+
+					<!-- 레이어 -->
+					<div id="layerAlram" class="layerPopup">
+						<div class="layerWrap full">
+							<header class="header"><div class="subHeader"><button type="button" class="icoPrev"><i>이전 페이지</i></button><h2><div class="headerClone">소통ㆍ참여</div></h2><button type="button" class="icoClose"><i>창닫기</i></button></div></header>
+							<main class="contents info fullFlex"> <!-- [생활정보 Class] info-->
+								<div class="infoWrap">
+									<div class="subMenuGroup">
+										<nav id="infoMenuSwiper" class="infoMenu">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide"><a href="#">우리가게</a></li>
+													<li class="swiper-slide"><a href="#" class="active">장소공유</a></li>
+													<li class="swiper-slide"><a href="#">지식ㆍ재능공유</a></li>
+													<li class="swiper-slide"><a href="#">물품공유</a></li>
+													<li class="swiper-slide"><a href="#">홍보 행사</a></li>
+												</ul>
+											</div>
+										</nav>
+										<script>
+											slider.active('infoMenuSwiper')
+										</script>
+									</div>
+					
+									<div class="facility">
+										<div class="header-default">
+											<h3>예약가능 시설대관</h3>
+											<a href="#">통합예약시스템 &gt;</a>
+										</div>
+										<ul class="fList">
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp017.png" alt="" />
+													<figcaption>
+														<p>미술실</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp023.png" alt="" />
+													<figcaption>
+														<p>다목적강당</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp022.png" alt="" />
+													<figcaption>
+														<p>시청각실</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp021.png" alt="" />
+													<figcaption> 
+														<p>문화교실</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp022.png" alt="" />
+													<figcaption>
+														<p>G.X룸</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp037.png" alt="" />
+													<figcaption>
+														<p>음악실</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp038.png" alt="" />
+													<figcaption>
+														<p>회의실</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure>
+													<img src="../../public/image/temp/temp039.png" alt="" />
+													<figcaption>
+														<p>기타시설</p>
+														<span class="blur"></span>
+													</figcaption>
+												</figure>
+											</li>
 										</ul>
 									</div>
-								</nav>
-								<script>
-									slider.active('infoMenuSwiper')
-								</script>
-							</div>
-			
-							<div class="facility">
-								<div class="header-default">
-									<h3>예약가능 시설대관</h3>
-									<a href="#">통합예약시스템 &gt;</a>
-								</div>
-								<ul class="fList">
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp017.png" alt="" />
-											<figcaption>
-												<p>미술실</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp023.png" alt="" />
-											<figcaption>
-												<p>다목적강당</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp022.png" alt="" />
-											<figcaption>
-												<p>시청각실</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp021.png" alt="" />
-											<figcaption> 
-												<p>문화교실</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp022.png" alt="" />
-											<figcaption>
-												<p>G.X룸</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp037.png" alt="" />
-											<figcaption>
-												<p>음악실</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp038.png" alt="" />
-											<figcaption>
-												<p>회의실</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-									<li>
-										<figure>
-											<img src="../../public/image/temp/temp039.png" alt="" />
-											<figcaption>
-												<p>기타시설</p>
-												<span class="blur"></span>
-											</figcaption>
-										</figure>
-									</li>
-								</ul>
-							</div>
-			
-							<div class="economy line-default">
-								<div class="header-list">
-									<span class="num">30건</span>
-									<div>
-										<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
-										<button type="button">추천순</button>
-										<button type="button">내가쓴글</button>
+					
+									<div class="economy line-default">
+										<div class="header-list">
+											<span class="num">30건</span>
+											<div>
+												<button type="button" class="active">최신순</button> <!-- 활성화시 active -->
+												<button type="button">추천순</button>
+												<button type="button">내가쓴글</button>
+											</div>
+										</div>
+										<ul class="items-default">
+											<li>
+												<a href="#">
+													<figure>
+														<span class="label blue">유료</span>
+														<img src="../../public/image/temp/temp019.png" alt="" />
+													</figure>
+												</a>
+												<div class="header-icons">
+													<div>
+														<button type="button" class="good" title="추천 수">12</button>
+														<button type="button" class="comment" title="댓글 수">1,234</button>
+													</div>
+													<div>
+														<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
+													</div>
+												</div>
+												<a href="#">
+													<h4>공유경제를 위한 세종시의 올바른 정책 <span class="me">나</span></h4>
+													<p>경제 활성화를 위한 세종시 거시 공유정책을 만나보세요</p>
+												</a>
+												<div class="button-visible">
+													<button type="button">수정</button>
+													<button type="button">삭제</button>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<figure>
+														<span class="label black">무료</span>
+														<img src="../../public/image/temp/temp018.png" alt="" />
+													</figure>
+												</a>
+												<div class="header-icons">
+													<div>
+														<button type="button" class="good active" title="추천 수">1</button> <!-- 활성화 시 active 추가 -->
+														<button type="button" class="comment active" title="댓글 수">1,234</button> <!-- 활성화 시 active 추가 -->
+													</div>
+													<div>
+														<button type="button" class="favorite">즐겨찾기</button>
+													</div>
+												</div>
+												<a href="#">
+													<h4>공유경제를 위한 세종시의 올바른 정책</h4>
+													<p>경제 활성화를 위한 세종시 거시 공유정책을 세종엔에서 만나보세요</p>
+												</a>
+												<div class="button-visible">
+													<button type="button">수정</button>
+													<button type="button">삭제</button>
+												</div>
+											</li>
+											<!-- 내용이 없을경우 -->
+											<li>
+												<div class="empty">
+													<p>현재 등록된 게시물이 없습니다.</p>
+												</div>
+											</li>
+											<!-- //내용이 없을경우 -->
+										</ul>
+									</div>
+					
+									<div class="button-write">
+										<a href="UI-SJN-04-004U.html" class="btn"><i>공유경제 등록/수정</i></a>
 									</div>
 								</div>
-								<ul class="items-default">
-									<li>
-										<a href="#">
-											<figure>
-												<span class="label blue">유료</span>
-												<img src="../../public/image/temp/temp019.png" alt="" />
-											</figure>
-										</a>
-										<div class="header-icons">
-											<div>
-												<button type="button" class="good" title="추천 수">12</button>
-												<button type="button" class="comment" title="댓글 수">1,234</button>
-											</div>
-											<div>
-												<button type="button" class="favorite active">즐겨찾기</button> <!-- 클릭시 active -->
-											</div>
-										</div>
-										<a href="#">
-											<h4>공유경제를 위한 세종시의 올바른 정책 <span class="me">나</span></h4>
-											<p>경제 활성화를 위한 세종시 거시 공유정책을 만나보세요</p>
-										</a>
-										<div class="button-visible">
-											<button type="button">수정</button>
-											<button type="button">삭제</button>
-										</div>
-									</li>
-									<li>
-										<a href="#">
-											<figure>
-												<span class="label black">무료</span>
-												<img src="../../public/image/temp/temp018.png" alt="" />
-											</figure>
-										</a>
-										<div class="header-icons">
-											<div>
-												<button type="button" class="good active" title="추천 수">1</button> <!-- 활성화 시 active 추가 -->
-												<button type="button" class="comment active" title="댓글 수">1,234</button> <!-- 활성화 시 active 추가 -->
-											</div>
-											<div>
-												<button type="button" class="favorite">즐겨찾기</button>
-											</div>
-										</div>
-										<a href="#">
-											<h4>공유경제를 위한 세종시의 올바른 정책</h4>
-											<p>경제 활성화를 위한 세종시 거시 공유정책을 세종엔에서 만나보세요</p>
-										</a>
-										<div class="button-visible">
-											<button type="button">수정</button>
-											<button type="button">삭제</button>
-										</div>
-									</li>
-									<!-- 내용이 없을경우 -->
-									<li>
-										<div class="empty">
-											<p>현재 등록된 게시물이 없습니다.</p>
-										</div>
-									</li>
-									<!-- //내용이 없을경우 -->
-								</ul>
-							</div>
-			
-							<div class="button-write">
-								<a href="UI-SJN-04-004U.html" class="btn"><i>공유경제 등록/수정</i></a>
-							</div>
+							</main>
 						</div>
-					</main>
-					<!-- //본문 -->
+					</div>
+			
+					<script>
+						layerPopup.open('layerAlram');
+					</script>
+					<!-- //레이어 -->
 				</div>
 			</div>
 			<!-- //모바일 내용 -->
