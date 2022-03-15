@@ -89,8 +89,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 /* PC에 맞게 모바일 크기 조정
 **********************************************/
 
-/* .contents { max-width: 420px; min-height: 100vh; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);} */
-.contents { max-width: 420px; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
+.contents { max-width: 420px; min-height: 100vh; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%);}
 /* .header { max-width: 420px;} */
 .layerPopup,
 .mainMenuFixed .mainMenu,

@@ -1,135 +1,3 @@
-const test = {
-	startX: null,
-	listIndex: 0,
-	listHiehgt: null,
-	open : () => {
-		const infoNav = document.querySelectorAll('.infoNav li');
-		const aa = document.querySelector('.aa');
-		const cc = document.querySelector('.cc');
-		const mainArea = document.querySelectorAll('.mainArea');
-
-		let arr = [];
-		[].forEach.call(mainArea, ss =>{
-			arr.push(Math.floor(ss.getBoundingClientRect().height)+360);
-		});
-
-		const xx = () => {
-			aa.style.height = `${arr[test.listIndex]}px`;
-
-			let selectedEl;
-			[].forEach.call(infoNav, (_this, index)=>{
-				_this.querySelector('a').classList.remove('active');
-				infoNav[test.listIndex].querySelector('a').classList.add('active');
-
-				selectedEl = infoNav[test.listIndex].querySelector('a')
-				_this.addEventListener("click", e => {
-					selectedEl && selectedEl.classList.remove("active");
-					selectedEl = e.target;
-					selectedEl.classList.add("active");
-					test.listIndex = index;
-
-					cc.style.left = -(test.listIndex * 100)+'%';
-				});
-			});
-		};
-
-
-		document.querySelectorAll(".bb").forEach((element) => {
-			const slide = (event) => {
-				const clientX = event.layerX ?? event.touches[0].pageX;
-				
-				if ((test.startX - clientX) <= -50) {
-					aa.classList.add('active');
-
-					setTimeout(()=>{
-						aa.style.height = `${arr[0]}px`
-					},500)
-				}
-			};
-
-			const dragStart = () => {
-				test.startX = event.layerX ?? event.touches[0].pageX;
-				event.preventDefault();
-				element.addEventListener("mousemove", slide, false);
-				element.addEventListener("touchmove", slide, false);
-				// setTimeout(()=>{
-				// 	dragDone();
-				// },500)
-			};
-			const dragDone = () => {
-				element.removeEventListener("mousemove", slide);
-				element.removeEventListener("touchmove", slide);
-			};
-
-			element.addEventListener("touchstart", dragStart, false);
-			element.addEventListener("mousedown", dragStart, false);
-
-			element.addEventListener("mouseup", dragDone, false);
-			element.addEventListener("touchend", dragDone, false);
-			element.addEventListener("touchcancel", dragDone, false);
-		});
-
-
-		document.querySelectorAll(".dd").forEach((element) => {
-			let space = Number(element.style.getPropertyValue('--space'));
-
-			const slide = (event) => {
-
-				const clientX = event.layerX ?? event.touches[0].pageX;
-				
-				if ((test.startX - clientX) <= -50) {
-					if(space == 1) { 
-						return
-					} else {
-						test.listIndex = space - 2;
-						cc.style.left = -((space - 2) * 100)+'%';
-					}
-				}
-				if ((test.startX - clientX) >= 50) {
-					if(space == 3) { 
-						aa.classList.remove('active');
-						test.listIndex = 0;
-						setTimeout(()=>{
-							aa.style.height = "";
-							cc.style.setProperty("left", "");
-						},500)
-					} else {
-						test.listIndex = space;
-						cc.style.left = -(space * 100)+'%';
-					}
-				}
-			};
-
-
-			const dragStart = () => {
-				test.startX = event.layerX ?? event.touches[0].pageX;
-				event.preventDefault();
-				element.addEventListener("mousemove", slide, false);
-				element.addEventListener("touchmove", slide, false);
-				
-				// setTimeout(()=>{
-				// 	dragDone();
-				// },1000)
-			};
-			const dragDone = () => {
-				// let tt = element.getBoundingClientRect();
-		
-				xx();
-
-				element.removeEventListener("mousemove", slide);
-				element.removeEventListener("touchmove", slide);
-			};
-
-			element.addEventListener("touchstart", dragStart, false);
-			element.addEventListener("mousedown", dragStart, false);
-
-			element.addEventListener("mouseup", dragDone, false);
-			element.addEventListener("touchend", dragDone, false);
-			element.addEventListener("touchcancel", dragDone, false);
-		});
-	},
-}
-
 const header = {
 	set : () => {
 		header.textCopy();
@@ -160,20 +28,11 @@ const container = {
 		const recentService = document.querySelector('.infoWrap .recentService');
 		window.addEventListener('scroll', function(){
 			/* 생활정보 메인 메뉴 고정을 하기 위해 사용 */
-			// if(infoNav) {
-			// 	if(window.scrollY > 56) {
-			// 		infoNav.style.top = `${window.scrollY - 62}px`;
-			// 	} else {
-			// 		infoNav.style.top = '0px';
-			// 	}
-			// }
 			if(infoNav) {
 				if(window.scrollY > 56) {
-					infoNav.classList.add('active');
-					recentService.classList.add('active');
+					infoNav.style.top = `${window.scrollY - 62}px`;
 				} else {
-					infoNav.classList.remove('active');
-					recentService.classList.remove('active');
+					infoNav.style.top = '0px';
 				}
 			}
 
@@ -468,7 +327,6 @@ const moreBtn = {
 		moreBtn.idx = els.indexOf(event.currentTarget);
 
 		if(target.getElementsByClassName('text')[0].classList.contains('lineBreake')) {
-			console.log(text[moreBtn.idx])
 			more[moreBtn.idx].classList.add('active');
 			text[moreBtn.idx].classList.remove('lineBreake');
 		} else {
@@ -1000,7 +858,7 @@ if(typeof _lazy === 'undefined' || _lazy !== true) {
 }
 
 function _lazyLoad() {
-  // header.set();
+  header.set();
   container.set();
 	accordion.active();
 	tab.active();
