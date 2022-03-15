@@ -409,6 +409,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .h404 .icon { display: flex; align-items: center; justify-content: center; width: 8rem; height: 8rem; margin: 0 auto; background-color: #EAECEF; border-radius: 50%;}
 .h404 .icon i { width: 0.8rem; height: 3.6rem; background: url(../image/common/ico_404.png) no-repeat center/cover;}
 .h404 p { margin-top: 2rem; font-size: 1.6rem; color: #6D7179;}
+.h404 .homeBtn { display: inline-flex; align-items: center; justify-content: center; margin-top: 1rem; padding: 0.4rem 1rem; font-size: 1.4rem; color: #111; border: 1px solid #555; border-radius: 0.4rem;}
 
 /* Swipe */
 .swiper-button-prev,
