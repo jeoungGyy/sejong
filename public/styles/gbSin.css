@@ -139,12 +139,13 @@
 .mainArea .mainNews { margin-top: 3.2rem;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -20.7rem; z-index: 1;}
 .mainArea .mainNews .roundDeco path { fill: #32bbed;}
-.mainArea .mainNews .mainNewsList { position: relative; padding-bottom: 2.8rem;}
+.mainArea .mainNews .mainNewsList { overflow: hidden; position: relative; padding-bottom: 2.8rem;}
 .mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
-.mainArea .mainNews .slideContainer { overflow: hidden;}
+.mainArea .mainNews .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
 .mainArea .mainNews .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
+.mainArea .mainNews .slideContainer li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
 .mainArea .mainNews .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
 .mainArea .mainNews .mainNewsPiece .slideContainer { padding: 0 1.6rem;}
