@@ -615,23 +615,50 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .myInfoLayer .myLogin .my { position: relative; width: 4.8rem; height: 4.4rem;}
 .myInfoLayer .myLogin .my .img { display: inline-block; overflow: hidden; width: 4rem; height: 4rem; background: url(../image/home/mypage_my.png) no-repeat center/cover; border-radius: 50%;}
 .myInfoLayer .myLogin .my .img img { width: 100%; height: auto;}
+.myInfoLayer .myLogin .my .icon { width: 4rem; height: 4rem;}
+.myInfoLayer .myLogin .my .icon .icoProfile { width: 4rem; height: 4rem;}
 .myInfoLayer .myLogin .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 2.4rem; height: 2.4rem; background-color: #292D32; border-radius: 50%;}
 .myInfoLayer .myLogin .my .profileBtn i { background-position: -43.2rem -14.4rem;}
-.myInfoLayer .myActivity { display: flex; flex-wrap: wrap; margin-top: 1.6rem; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
-.myInfoLayer .myActivity li { display: flex; flex-direction: column; justify-content: center; width: calc(100% / 3); height: 12rem; padding: 0 1.2rem 0 2rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
-.myInfoLayer .myActivity li:nth-child(1),
-.myInfoLayer .myActivity li:nth-child(2) { width: 50%;}
-.myInfoLayer .myActivity li p { color: #555;}
-.myInfoLayer .myActivity li >div { display: flex; align-items: center; justify-content: space-between; margin-top: 1.3rem;}
-.myInfoLayer .myActivity li >div strong { display: block; font-family: var(--fontRoboto); font-size: 2.4rem; font-weight: 700;}
-.myInfoLayer .myActivity li >div i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
-.myInfoLayer .myActivity li >div.safety i { background-position-x: 0;}
-.myInfoLayer .myActivity li >div.review i { background-position-x: -3.2rem;}
-.myInfoLayer .myActivity li >div.donation i { background-position-x: -6.4rem;}
-.myInfoLayer .myActivity li >div.used i { background-position-x: -9.6rem;}
-.myInfoLayer .myActivity li >div.share i { background-position-x: -12.8rem;}
+.myInfoLayer .myActivity { margin-top: 4rem;}
+.myInfoLayer .myActivity li { padding-left: 4rem; border-top: 1px solid #EAEDF2;}
+.myInfoLayer .myActivity li i { display: block; position: absolute; left: -4rem; top: 1.4rem; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
+.myInfoLayer .myActivity li .review { display: flex; align-items: center; justify-content: space-between; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li .review i { background-position-x: -3.2rem;}
+.myInfoLayer .myActivity li .review .cBlue { margin-left: 0.8rem;}
+.myInfoLayer .myActivity li .possess { position: relative; padding: 1.8rem 0;}
+.myInfoLayer .myActivity li .possess i { background-position-x: 0;}
+.myInfoLayer .myActivity li .possess .pointBody { display: flex; align-items: center; justify-content: space-between; color: #111;}
+.myInfoLayer .myActivity li .possess .pointBody .text { font-size: 1.6rem;}
+.myInfoLayer .myActivity li .possess .pointBody .cBlue { font-size: 1.4rem;}
+.myInfoLayer .myActivity li .possess .pointBody .point { font-size: 1.8rem; font-family: var(--fontRoboto);}
+.myInfoLayer .myActivity li .possess .currency { display: block; color: #111;}
+.myInfoLayer .myActivity li .possess .guide { margin-top: 0.9rem; color: #555;}
+.myInfoLayer .myActivity li .possess .currency { display: block; margin-top: 2.3rem; font-size: 1.6rem; color: #6684EA;}
+.myInfoLayer .myActivity li .favorite { display: block; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li .favorite i { background-position-x: -6.4rem;}
+.myInfoLayer .myActivity li .favorite b { font-size: 1.6rem;}
+.myInfoLayer .myActivity li .arrowRight { position: relative; padding-right: 3rem;}
+.myInfoLayer .myActivity li .arrowRight::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
+.myInfoLayer h3 { display: flex; align-items: center; height: 3.2rem; margin-top: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #6684EA;}
+.myInfoLayer .sevieceBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
+.myInfoLayer a.link { display: flex; align-items: center; position: relative; height: 4.8rem; font-size: 1.6rem; font-weight: 700; color: #111;}
+.myInfoLayer a.link::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
+.myInfoLayer a.link.between { justify-content: space-between; padding-right: 3.2rem;}
+.myInfoLayer .sevieceBox .flex { display: flex; align-items: center; justify-content: space-between; height: 3.2rem;}
+.myInfoLayer .sevieceBox .guide { margin: 0.9rem 0 1.5rem; font-size: 1.4rem; color: #555;}
+.myInfoLayer .membershipBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
+.myInfoLayer .membershipBox .text { margin-top: 1.6rem;}
+.myInfoLayer .membershipBox .radioSet { margin: 1.4rem 0;}
+.myInfoLayer .membershipBox .radioSet input:checked + label + .btn { color: #fff; background-color: #6684EA;}
+.myInfoLayer .membershipBox .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; border: 1px solid #ddd; transition: all .3s ease-in-out;}
+.myInfoLayer .appInfo { margin: 2.4rem -2rem -2rem; padding: 2.4rem 2rem; background-color: #F4F5F7;}
+.myInfoLayer .appInfo .title { font-size: 1.4rem; color: #333;}
+.myInfoLayer .appInfo h4 { margin-top: 1.8rem;}
+.myInfoLayer .appInfo >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #555;}
+
 .myInfoLayer .accordionBox { margin-top: 3.3rem;}
 .myInfoLayer .accordionBox >li .btn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 5.2rem; color: #111;}
+.myInfoLayer .accordionBox >li button.btn { font-weight: 600;}
 .myInfoLayer .accordionBox >li .btn p { font-size: 1.6rem;}
 .myInfoLayer .accordionBox >li button.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 28.8rem;}
 .myInfoLayer .accordionBox >li a.btn i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
@@ -1068,6 +1095,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profileLayer .myHead .my { position: relative; width: 8rem; margin-right: 1.6rem;}
 .profileLayer .myHead .my .img { display: inline-block; overflow: hidden; width: 8rem; height: 8rem; background: url(../image/home/mypage_my.png) no-repeat center/cover; border-radius: 50%;}
 .profileLayer .myHead .my .img img { width: 100%; height: 100%;}
+.profileLayer .myHead .my .icon .icoProfile { width: 8rem; height: 8rem;}
+
 .profileLayer .myHead .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 3.2rem; height: 3.2rem; background-color: #292D32; border-radius: 50%;}
 .profileLayer .myHead .my .profileBtn i { background-position: -43.2rem -14.4rem;}
 .profileLayer .myHead .myName { flex: 1;}
@@ -1077,18 +1106,24 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profileLayer .myHead .myName .write .myNameBtn i { background-position: -36rem -7.2rem;}
 .profileLayer .myHead .myName .guide { margin-top: 0.7rem; text-align: left;}
 .profileLayer .myHead .myName .guide p { font-size: 1.4rem;}
-.profileLayer .profileArea { overflow-x: hidden; overflow-y: auto; max-height: 40rem; margin: 0 -1.8rem -3.7rem;}
-.profileLayer .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0 -0.2rem;}
-.profileLayer .pictureList li { margin: 0.4rem 0.2rem 0;}
-.profileLayer .pictureList li label { display: block; overflow: hidden; position: relative; height: 11.7rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
-.profileLayer .pictureList li label img { width: 100%; height: 100%; vertical-align: top;}
-.profileLayer .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.profileLayer .pictureList li input { position: absolute; opacity: 0;}
-.profileLayer .pictureList li input:checked + label::after { background-color: #111;}
+.profileLayer .pictureList { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.2rem;}
+.profileLayer .pictureList li button { display: block; width: 100%; height: 11.7rem;}
+.profileLayer .pictureList li button img { width: 6rem; height: 6rem;}
 .profileLayer .pictureList li .pictureBtn { display: block; width: 100%; height: 100%; background-color: #F4F5F7;}
 .profileLayer .pictureList li .pictureBtn i { display: inline-block; width: 3.6rem; height: 2.9rem; text-indent: -9999rem; background: url(../image/home/ico_camera.png) no-repeat center/cover;}
-.profileLayer .formBtn { position: absolute; left: 0; right: 0; bottom: calc(3rem + env(safe-area-inset-bottom)); font-size: 1.8rem; font-weight: 700; color: #fff; background-color: #6684EA;}
-
+.profileLayer .pictureList li button.active { border: 2px solid #6684EA; background-color: #F4F5F7;}
+.profileLayer .pictureList li:nth-child(2) { background-color: #FFD800;}
+.profileLayer .pictureList li:nth-child(3) { background-color: #E3C3EF;}
+.profileLayer .pictureList li:nth-child(4) { background-color: #CCBBA0;}
+.profileLayer .pictureList li:nth-child(5) { background-color: #FF7D5C;}
+.profileLayer .pictureList li:nth-child(6) { background-color: #FFE3AB;}
+.profileLayer .formBtn { margin-top: 1.6rem; font-size: 1.8rem; font-weight: 700; color: #fff; background-color: #6684EA;}
+.icoProfile { display: inline-block; width: 6rem; height: 6rem; text-indent: -9999rem;}
+.profile1 { background: url(../image/home/ico_profile1.png) no-repeat center/cover;}
+.profile2 { background: url(../image/home/ico_profile2.png) no-repeat center/cover;}
+.profile3 { background: url(../image/home/ico_profile3.png) no-repeat center/cover;}
+.profile4 { background: url(../image/home/ico_profile4.png) no-repeat center/cover;}
+.profile5 { background: url(../image/home/ico_profile5.png) no-repeat center/cover;}
 
 
 
