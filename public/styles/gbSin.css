@@ -23,7 +23,7 @@
 .mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .mainArea h3 .small { margin-right: 0.8rem; font-size: 1.5rem; font-weight: 400; color: #555;}
 .mainArea .titleFlex { display: flex; align-items: center;}
-.mainArea .titleFlex select { flex: 1; margin-left: 1rem; padding: 0; font-size: 1.6rem; font-weight: 700; border: none;}
+.mainArea .titleFlex select { flex: 1; margin-left: 1rem; padding: 0; font-size: 1.6rem; font-weight: 700; border: none; background-position: right 0 top 1.2rem;}
 .recentService { padding: 2rem 0 0;}
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
@@ -143,12 +143,12 @@
 .mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
-.mainArea .mainNews .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
-.mainArea .mainNews .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
-.mainArea .mainNews .slideContainer li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
-.mainArea .mainNews .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
+.mainArea .mainNews .mainNewsList .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
+.mainArea .mainNews .mainNewsList .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
+.mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
+.mainArea .mainNews .mainNewsList .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
-.mainArea .mainNews .mainNewsPiece .slideContainer { padding: 0 1.6rem;}
+.mainArea .mainNews .mainNewsPiece .slideContainer { overflow: hidden; padding: 0 1.6rem;}
 .mainArea .mainNews .mainNewsPiece li { width: 14rem;}
 .mainArea .mainNews .mainNewsPiece li a { display: block; color: #111;}
 .mainArea .mainNews .mainNewsPiece li a figure { width: 14rem; height: 9.2rem;}
@@ -162,14 +162,17 @@
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
 .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
 .mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto);  font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .price { margin-top: 2rem;}
 .mainArea .oilPrice .price .t { display: flex; align-items: center;}
 .mainArea .oilPrice .price .t b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
-.mainArea .oilPrice .price .t span { font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
+.mainArea .oilPrice .price .t span { margin-left: 1.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
+.mainArea .oilPrice .price .t span.equal { position: relative; padding-left: 1.2rem;}
+.mainArea .oilPrice .price .t span.equal::after { content: ''; position: absolute; left: 0; top: 0.8rem; width: 0.8rem; height: 0.2rem; background-color: #111;}
 .mainArea .oilPrice .price .up { color: #FD2020;}
 .mainArea .oilPrice .price .down { color: #6684EA;}
 .mainArea .oilPrice .price .u { margin-top: 1rem;}
-.mainArea .oilPrice .price .u span { font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
+.mainArea .oilPrice .price .u span { margin-right: 1.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
 .mainArea .oilPrice .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; margin-top: 0.4rem;}
 .mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .button-more { margin-top: 0.4rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
@@ -190,10 +193,11 @@
 .mainArea .weekClosed .boxArea { padding-bottom: 4rem;}
 .mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
-.mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-between; margin-top: 2.4rem;}
-.mainArea .weekClosed .body a { display: block; width: 8rem; color: #111; text-align: center;}
-.mainArea .weekClosed .body a span { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
-.mainArea .weekClosed .body a img { width: 100%; height: 8rem;}
+.mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-evenly; margin-top: 2.4rem;}
+.mainArea .weekClosed .body a { display: block; width: 7rem; color: #111; text-align: center;}
+.mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
+.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #777;}
+.mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
 .mainArea .sejong { margin-top: 3.2rem;}
 .mainArea .sejong .roundDeco { display: block; position: absolute; left: -5rem; top: -9.1rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
 .mainArea .sejong .boxArea { padding-bottom: 4rem;}
