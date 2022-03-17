@@ -28,8 +28,8 @@
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
-.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
-.recentService .homeNav ul li { width: 7.2rem;}
+.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0 2rem;}
+.recentService .homeNav ul li { width: 7.2rem; padding: 0.8rem 0 4rem;}
 .recentService .homeNav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 7.2rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 /* .mainArea .recentService { margin-top: 6rem;}
@@ -144,7 +144,7 @@
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
 .mainArea .mainNews .mainNewsList .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
-.mainArea .mainNews .mainNewsList .slideContainer li { overflow: hidden; border-radius: 0.8rem;}
+.mainArea .mainNews .mainNewsList .slideContainer li { overflow: hidden; height: 100%; border-radius: 0.8rem;}
 .mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
 .mainArea .mainNews .mainNewsList .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}

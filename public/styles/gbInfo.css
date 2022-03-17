@@ -441,6 +441,9 @@
 .info .tripCalendar .notes .swiper-slide span.modify::after { background-color: #D69630;}
 
 /* 포토갤러리 UI-SJN-13-006U */
+.info .galleryView figure { min-height: 16rem;}
+
+/* 포토갤러리 UI-SJN-13-006U */
 .info .pictureNewsArea { padding-top: 1.5rem;}
 
 /* 스마트도시 소개 UI-SJN-14-001U */
