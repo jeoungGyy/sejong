@@ -149,7 +149,7 @@ table td { vertical-align: middle;}
 /* header */
 .headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
 .headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
-.headerWrap .headerClear.add { transition-duration: 500ms;}
+.headerWrap .headerClear.add { transition-duration: 200ms;}
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
