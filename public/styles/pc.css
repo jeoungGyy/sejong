@@ -90,7 +90,6 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 **********************************************/
 
 .contents { max-width: 420px; min-height: 100vh; background-color: #fff;}
-/* .header { max-width: 420px;} */
 .layerPopup,
 .mainMenuFixed .mainMenu,
 .layerAlert,
@@ -113,18 +112,35 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcDeco.poa6 { margin-left: -810px;}
 .pcDeco.poa7 { margin-left: -320px;}
 
-
-
-
-
-
-
 }
 
 @media all and (max-width:420px){
 
 .pcContainer .pcView { width: 100%; border: none; box-shadow: none;}
 	
-	
 }
+
+
+/* PC에 맞게 모바일 크기 조정
+**********************************************/
+.tabletMode .contents,
+.tabletMode .layerPopup,
+.tabletMode .mainMenuFixed .mainMenu,
+.tabletMode .layerAlert,
+.tabletMode .bottomFixed .btnGroup,
+.tabletMode .map .goNotice .busHead,
+.tabletMode .map .mapMoveData,
+.tabletMode .layerMapInfo .head,
+.tabletMode .map .mapTab,
+.tabletMode .mainMenu,
+.tabletMode .chatbot,
+.tabletMode .subHeader,
+.tabletMode .headerWrap,
+.tabletMode .info .infoNav,
+.tabletMode .pcContainer .pcView,
+.tabletMode .pcContainer { max-width: inherit; width: 100%;}
+html.tabletMode {font-size: 100%;} /* 이것을 수정하면 전체 크기가 변경됩니다. */
+
+
+
 

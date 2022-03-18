@@ -623,7 +623,7 @@ span.M { background-color: #FD2020;}
 
 /* UI-SJN-40-006L */
 .map .goNotice { padding-top: 6.2rem;}
-.map .goNotice .busHead { display: flex; align-items: center; position: fixed; top: 5.6rem; z-index: 201; width: 100%; max-width: 57rem; height: 4.8rem; padding: 0 2rem; border-bottom: 0.6rem solid #F4F5F7; background-color: #fff;}
+.map .goNotice .busHead { display: flex; align-items: center; position: fixed; top: 5.6rem; z-index: 201; width: 100%; height: 4.8rem; padding: 0 2rem; border-bottom: 0.6rem solid #F4F5F7; background-color: #fff;}
 .map .goNotice .busHead h3 { margin-left: 0.8rem; font-size: 1.8rem;}
 .map .goNotice .busHead >div { margin-left: 0.4rem;}
 .map .goNotice .busHead >div span { font-size: 1.6rem; font-weight: 700;}
@@ -1088,7 +1088,7 @@ span.M { background-color: #FD2020;}
 
 
 /* UI-SJN-50-012L */
-.map .mapTab {display: flex; align-items: center; justify-content: center; position:absolute; top:5.6rem; z-index: 30; width:100%; max-width: 57rem; height:5.2rem; border:1px solid #F2F2F2; border-width:1px 0; background-color:#fff;}
+.map .mapTab {display: flex; align-items: center; justify-content: center; position:absolute; top:5.6rem; z-index: 30; width:100%; height:5.2rem; border:1px solid #F2F2F2; border-width:1px 0; background-color:#fff;}
 .map .mapTab button {position:relative; text-align: center; width:50%;height:5rem; font-size:1.6rem; color:#555;}
 .map .mapTab button.active {font-weight:700; color:#111;}
 .map .mapTab button.active:before {content:''; width:100%; height:2px; position:absolute; bottom:-1px; left:0; background-color: #FF940E; }
@@ -1105,7 +1105,7 @@ span.M { background-color: #FD2020;}
 .map .mapArea .markerResultIcon i {width: 3.2rem; height: 4rem; margin:0 auto; background: url(../image/map/icon_move_marker.png) no-repeat center/3.2rem auto; }
 .map .mapArea .markerResultIcon .result {height:3.2rem; text-align: center; font-size:1.2rem; padding:0.8rem 1.2rem; margin-bottom:0.7rem; color:#fff; background-color:#6684EA; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius:1.6rem;}
 
-.map .mapMoveData {position: fixed; bottom: 0; width:100%; max-width: 57rem;}
+.map .mapMoveData {position: fixed; bottom: 0; width:100%;}
 .map .mapMoveData .myLocation {position: absolute; left: 2rem; top: -5.6rem; display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16); border-radius: 50%;}
 .map .mapMoveData .myLocation i { display: block; width: 1.95rem; height: 1.95rem; text-indent: -9999rem; background: url(../image/map/ico_my_location.png) no-repeat 0 0/1.95rem 3.9rem;}
 .map .mapMoveData .myLocation.active { background-color: #FF940E;}

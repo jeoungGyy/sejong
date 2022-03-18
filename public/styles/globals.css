@@ -144,13 +144,13 @@ table td { vertical-align: middle;}
 
 /* container */
 .container { overflow: hidden; box-shadow: 0 10px 20px rgb(102 132 234 / 16%);}
-.contents { max-width: 57rem; padding: 5.6rem 0 2rem; margin: 0 auto;}
+.contents { padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
 .headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
 .headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
 .headerWrap .headerClear.add { transition-duration: 200ms;}
-/* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; background-color: #fff;} */
+/* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
 .header.bgGreen h2 { color: #000;}
@@ -331,7 +331,7 @@ table td { vertical-align: middle;}
 
 /* 하단고정 */
 .bottomFixed { position: relative; min-height: calc(100vh - 7.6rem); padding-bottom: 8rem;}
-.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; max-width: 57rem; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
+.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
 .bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
 .bottomFixed .btnGroup .twins button:last-child { margin-left: 0.8rem;}
@@ -370,13 +370,21 @@ table td { vertical-align: middle;}
 /* 피규어 마커 */
 figure { overflow: hidden; position: relative; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}
 figure img { width: 100%; height: auto; vertical-align: top;}
+.mainNewsList .label,
 figure .label { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.mainNewsList .label.blue,
 figure .label.blue { background-color: rgba(102, 132, 234, 0.9);}
+.mainNewsList .label.skyBlue,
 figure .label.skyBlue { background-color: rgba(50, 187, 237, 0.9);}
+.mainNewsList .label.darkBlue,
 figure .label.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
+.mainNewsList .label.wood,
 figure .label.wood { background-color: #D69630;}
+.mainNewsList .label.black,
 figure .label.black { background-color: rgba(51, 51, 51, 0.9);}
+.mainNewsList .label.green,
 figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
+.mainNewsList .label.red,
 figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* 페이지 풀사이즈 */
@@ -434,7 +442,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 **********************************************/
 
 /* 레이어공통 */
-.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: 0; width: 100%; max-width: 57rem; text-align: center; background: rgba(0,0,0,0.25); opacity: 0;  outline: none; transition: opacity .3s;}
+.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: 0; width: 100%; text-align: center; background: rgba(0,0,0,0.25); opacity: 0;  outline: none; transition: opacity .3s;}
 .layerPopup::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
 .layerPopup.ready { display: block;}
 .layerPopup.show { opacity: 1;}
@@ -442,7 +450,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerPopup.top { z-index: 900;}
 .layerPopup .contents { padding: 0;}
 
-.layerAlert { display: none; position: fixed; z-index: 310; top: 5.6rem; width: 100%; max-width: 57rem; padding: 0 2rem 3.7rem; text-align: center; opacity: 0; transition: opacity .3s;}
+.layerAlert { display: none; position: fixed; z-index: 310; top: 5.6rem; width: 100%; padding: 0 2rem 3.7rem; text-align: center; opacity: 0; transition: opacity .3s;}
 .layerAlert .alertWrap { display: flex; align-items: center; justify-content: center; min-height: 4.8rem; color: #fff; background-color: #111;}
 .layerAlert.alertWrap p { font-size: 1.6rem; font-weight: 700;}
 .layerAlert.ready { display: block;}
@@ -934,7 +942,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 /* UI-SJN-40-005L */
 .layerMapInfo .headTitle { padding: 2.7rem 2rem 2.3rem;}
 .layerMapInfo .headTitle h2 { font-size: 1.8rem;}
-.layerMapInfo .head { display: flex; align-items: center; justify-content: center; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; max-width: 57rem; height: 5.6rem; background-color: #fff;}
+.layerMapInfo .head { display: flex; align-items: center; justify-content: center; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; height: 5.6rem; background-color: #fff;}
 .layerMapInfo .head h2 { font-size: 1.8rem;}
 .layerMapInfo .head .btnClose { top: 1.6rem;}
 .layerMapInfo .figure { display: flex; justify-content: center; align-items: center; flex: 1; overflow-x: hidden; overflow-y: auto; height: 21.2rem; padding: 2rem 0; background-color: #EAEDF2;}

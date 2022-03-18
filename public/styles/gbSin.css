@@ -7,8 +7,8 @@
 /* UI-SJN-01-001U */
 .mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
 .mainArea .repMenu { position: relative; margin-top: 1.6rem;}
-.mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
-.mainArea .repMenu::after { content: ''; position: absolute; right: -2.1rem; top: -1.6rem; width: 100rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
+.mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 350rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/350rem 10rem;}
+.mainArea .repMenu::after { content: ''; position: absolute; right: -2.1rem; top: -1.6rem; width: 10rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
 .mainArea .boxWrap.repMenu .boxArea { padding: 3.2rem 2.4rem 4rem;}
 .mainArea .repMenu h2 { font-size: 2.2rem;}
 .mainArea .repMenu .mainTitle { margin-top: 0.8rem; font-size: 1.6rem; line-height: 2.4rem;}
@@ -145,7 +145,8 @@
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
 .mainArea .mainNews .mainNewsList .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
 .mainArea .mainNews .mainNewsList .slideContainer li { overflow: hidden; height: 100%; border-radius: 0.8rem;}
-.mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
+.mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; position: relative; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
+.mainArea .mainNews .mainNewsList .slideContainer li a figure { position: initial; background: inherit !important;}
 .mainArea .mainNews .mainNewsList .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
 .mainArea .mainNews .mainNewsPiece .slideContainer { overflow: hidden; padding: 0 1.6rem;}
@@ -215,7 +216,7 @@
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
 .mainMenuFixed { overflow: hidden; position: relative; margin-bottom: -2rem; padding-bottom: 7rem;}
-.mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 350; width: 100%; max-width: 57rem; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
+.mainMenu { position: fixed; bottom: env(safe-area-inset-bottom); z-index: 350; width: 100%; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 .mainMenu .mainMenuList ul { display: flex;}
 .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
 .mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center; cursor: pointer;}
