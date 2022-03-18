@@ -4,8 +4,9 @@
 @media screen and (min-width: 0) { html {font-size: 48%;}}
 @media screen and (min-width: 300px) { html {font-size: 53.33%;}}
 @media screen and (min-width: 350px) { html {font-size: 62.5%;}}
-@media screen and (min-width: 412px) { html {font-size: 67%;}}
-@media screen and (min-width: 768px) { html {font-size: 80%;}}
+@media screen and (min-width: 420px) { html {font-size: 67%;}}
+@media screen and (min-width: 676px) { html {font-size: 100%;}}
+@media screen and (min-width: 1190px) { html {font-size: 67%;}}
 
 /* Fonts */
 @font-face {

@@ -192,8 +192,8 @@ body { --vh: 1px;}
 .mapIcons .fineDust button.usually { background-color: #4EC457;}
 .mapIcons .fineDust button.bad { background-color: #FF940E;}
 .mapIcons .fineDust button.veryBad { background-color: #FD2020;}
-.mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
-.mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
+.mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
+.mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
 .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
 .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; }
 .mapIcons .busStop .busIco i { width: 2.4rem; height: 2.8rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; z-index: 3; }
