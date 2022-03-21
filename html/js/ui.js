@@ -64,8 +64,13 @@ const mapInfo = {
 			const startTouch = document.querySelector(".mapIHead");
 			const mapInfoLayer = document.querySelector(".mapInfoLayer");
 			startTouch.addEventListener('touchstart', mapInfo.start);
+			// startTouch.addEventListener("mousedown", mapInfo.start);
+
 			startTouch.addEventListener('touchmove', mapInfo.move);
+			// startTouch.addEventListener("mousemove", mapInfo.move);
+
 			startTouch.addEventListener('touchend', mapInfo.end);
+			// startTouch.addEventListener("mouseup", mapInfo.end);
 
 			mapInfo.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
@@ -99,13 +104,14 @@ const mapInfo = {
 		// event.preventDefault()
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		mapInfoLayer.classList.add('easeNone');
-		mapInfo.startY = event.touches[0].pageY;
+		mapInfo.startY = event.layerY ?? event.touches[0].pageY;
+		
 	},
 	move : (event) => {
 		// event.preventDefault()
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 
-		mapInfo.moveY = event.changedTouches[0].pageY;
+		mapInfo.moveY = event.layerY ?? event.changedTouches[0].pageY;
 		var vh = mapInfo.startY - mapInfo.moveY;
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
 		mapInfoLayer.classList.add('easeNone');
@@ -114,7 +120,7 @@ const mapInfo = {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		mapInfoLayer.classList.remove('easeNone');
 
-		mapInfo.endY = event.changedTouches[0].pageY;
+		mapInfo.endY = event.layerY ?? event.changedTouches[0].pageY;
 		mapInfo.active();
 	},
 	active : (act) => {

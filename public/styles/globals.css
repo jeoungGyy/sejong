@@ -5,7 +5,6 @@
 @media screen and (min-width: 300px) { html {font-size: 53.33%;}}
 @media screen and (min-width: 350px) { html {font-size: 62.5%;}}
 @media screen and (min-width: 420px) { html {font-size: 67%;}}
-@media screen and (min-width: 676px) { html {font-size: 100%;}}
 @media screen and (min-width: 1190px) { html {font-size: 67%;}}
 
 /* Fonts */
@@ -492,7 +491,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 /* UI-SJN-01-001U */
-.layerNotice { padding: 1.1rem 0 6rem;}
+.layerNotice { padding: 4rem 0 6rem;}
+.layerNotice > div { overflow-x: hidden; overflow-y: auto;}
 .layerNotice a { display: block; color: #111; text-align: left;}
 .layerNotice a .title { padding-right: 3rem;}
 .layerNotice a .title p { font-size: 1.8rem; font-weight: 700;}

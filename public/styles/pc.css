@@ -104,28 +104,49 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .headerWrap,
 .info .infoNav { max-width: 420px;}
 
-@media all and (max-width:1190px) {
 
-.contents,
-.layerPopup,
-.mainMenuFixed .mainMenu,
-.layerAlert,
-.bottomFixed .btnGroup,
-.map .goNotice .busHead,
-.map .mapMoveData,
-.layerMapInfo .head,
-.map .mapTab,
-.mainMenu,
-.chatbot,
-.subHeader,
-.headerWrap,
-.info .infoNav,
-.pcContainer .pcView { max-width: inherit; width: 100%;}
-
+@media screen and (max-width: 420px) { 
+.pcContainer .pcView { position: relative; right: inherit; margin: 0 auto; width: 100%;}
+}
+@media screen and (max-width: 1190px) { 
 .pcContainer { width: 100%;}
-.pcContainer .pcView { position: relative; right: inherit; margin: 0 auto;}
 .pcContents { display: none;}
 .pcDeco.poa6 { margin-left: -810px;}
 .pcDeco.poa7 { margin-left: -320px;}
-
+.pcContainer .pcView { position: relative; max-width: inherit;}
 }
+
+
+
+
+/* 태블릿 기기에 맞게 크기 조정
+**********************************************/
+
+html.tabletMode {font-size: 80%;}
+html.tabletMode .contents,
+html.tabletMode .layerPopup,
+html.tabletMode .mainMenuFixed .mainMenu,
+html.tabletMode .layerAlert,
+html.tabletMode .bottomFixed .btnGroup,
+html.tabletMode .map .goNotice .busHead,
+html.tabletMode .map .mapMoveData,
+html.tabletMode .layerMapInfo .head,
+html.tabletMode .map .mapTab,
+html.tabletMode .mainMenu,
+html.tabletMode .chatbot,
+html.tabletMode .subHeader,
+html.tabletMode .headerWrap,
+html.tabletMode .info .infoNav,
+html.tabletMode .pcContents,
+html.tabletMode .pcContainer,
+html.tabletMode .pcContainer .pcView { max-width: inherit; width: 100%;}
+html.tabletMode .pcContents { display: none;}
+
+
+
+
+
+
+
+
+

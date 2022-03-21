@@ -17,13 +17,10 @@
 .mainArea .repMenu .body a { display: block; position: relative; text-align: center;}
 .mainArea .repMenu .body a >span { display: block; width: 100%; margin-top: 1.2rem; color: #555;}
 .mainArea .repMenu .body a i { display: block; width: 6.2rem; height: 6.2rem; margin: 0 auto;}
-.mainArea .repMenu .body a.service1 i { background: url(../image/home/main_repMenu.png) no-repeat center/cover;}
-.mainArea .repMenu .body a.service2 i { background: url(../image/home/main_repMenu2.png) no-repeat center/cover;}
-.mainArea .repMenu .body a.service3 i { background: url(../image/home/main_repMenu3.png) no-repeat center/cover;}
-.mainArea .repMenu .body a.service4 i { background: url(../image/home/main_repMenu4.png) no-repeat center/cover;}
+.mainArea .repMenu .body a i img { width: 100%; height: auto;}
 .mainArea .repMenu .rolling { overflow: hidden; margin-top: 0.8rem;}
-.mainArea .repMenu .rolling .slideContainer { height: 5rem;}
-.mainArea .repMenu .rolling .slideContainer .mainTitle { display: flex; align-items: center; height: 100%; font-size: 1.6rem; line-height: 2.4rem;}
+.mainArea .repMenu .rolling .slideContainer { height: 8.6rem;}
+.mainArea .repMenu .rolling .slideContainer .mainTitle { display: flex; align-items: center; margin-top: 0.8rem; font-size: 1.6rem; line-height: 2.4rem;}
 
 .mainArea .titleFlex { display: flex; align-items: center;}
 .mainArea .titleFlex select { flex: 1; margin-left: 1rem; padding: 0; font-size: 1.6rem; font-weight: 700; border: none; background-position: right 0 top 1.2rem;}
@@ -166,7 +163,7 @@
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
 .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
 .mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
-.mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto);  font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .price { margin-top: 2rem;}
 .mainArea .oilPrice .price .t { display: flex; align-items: center;}
 .mainArea .oilPrice .price .t b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
@@ -489,8 +486,9 @@
 .header.global .subHeader {justify-content: space-between; padding:0 2rem;}
 .header.global .subHeader .globalLogo i { display: inline-block; width: 5.825rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/logo-sj-global.png) no-repeat 0 0/5.825rem 4rem;}
 .header.global .subHeader .btnGlobal { display: flex; align-items: center;}
-.header.global .subHeader .btnGlobal button {width:2.4rem; height:2.4rem; margin-left:1.6rem;}
+.header.global .subHeader .btnGlobal button { position: relative; width:2.4rem; height:2.4rem; margin-left:1.6rem;}
 .header.global .subHeader .btnGlobal button i { text-indent: -9999rem;}
+.header.global .subHeader .btnGlobal button .round { display: flex; align-items: center; justify-content: center; position: absolute; right: -0.4rem; top: -0.2rem; width: 1.6rem; height: 1.6rem; font-family: var(--fontRoboto); font-size: 1.1rem; color: #fff; background-color: #D57298; border-radius: 50%;}
 .header.global .subHeader .icoSearch i {  background-position: -9.6rem -14.4rem;}
 .header.global .subHeader .icoAlert i { background-position: -7.2rem -14.4rem;}
 .header.global .subHeader .icoMy i { background-position: -4.8rem -14.4rem;}
