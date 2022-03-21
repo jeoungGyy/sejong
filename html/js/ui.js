@@ -63,14 +63,9 @@ const mapInfo = {
 		if(!tooltip.showEl) {
 			const startTouch = document.querySelector(".mapIHead");
 			const mapInfoLayer = document.querySelector(".mapInfoLayer");
+
 			startTouch.addEventListener('touchstart', mapInfo.start);
-			// startTouch.addEventListener("mousedown", mapInfo.start);
-
-			startTouch.addEventListener('touchmove', mapInfo.move);
-			// startTouch.addEventListener("mousemove", mapInfo.move);
-
-			startTouch.addEventListener('touchend', mapInfo.end);
-			// startTouch.addEventListener("mouseup", mapInfo.end);
+			mapInfoLayer.addEventListener("mousedown", mapInfo.start);
 
 			mapInfo.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
@@ -78,8 +73,8 @@ const mapInfo = {
 			const scaleBtn = document.querySelector(".scaleBtn");
 
 			if(myLocation) {
-				myLocation.style.bottom = (mapInfo.locationPosition/10)+'rem';
-				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+'rem';
+				myLocation.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
+				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+2+'rem';
 			}
 		}
 	},
@@ -102,34 +97,40 @@ const mapInfo = {
 	},
 	start : (event) => {
 		// event.preventDefault()
+		const startTouch = document.querySelector(".mapIHead");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		mapInfoLayer.classList.add('easeNone');
-		mapInfo.startY = event.layerY ?? event.touches[0].pageY;
-		
+		mapInfo.startY = event.clientY ?? event.touches[0].pageY;
+
+		startTouch.addEventListener('touchmove', mapInfo.move);
+		mapInfoLayer.addEventListener("mousemove", mapInfo.move);
 	},
 	move : (event) => {
 		// event.preventDefault()
+		const startTouch = document.querySelector(".mapIHead");
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 
-		mapInfo.moveY = event.layerY ?? event.changedTouches[0].pageY;
+		mapInfo.moveY = event.clientY ?? event.changedTouches[0].pageY;
 		var vh = mapInfo.startY - mapInfo.moveY;
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
-		mapInfoLayer.classList.add('easeNone');
+
+		startTouch.addEventListener('touchend', mapInfo.end);
+		mapInfoLayer.addEventListener("mouseup", mapInfo.end);
 	},
 	end : (event) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		mapInfoLayer.classList.remove('easeNone');
-
-		mapInfo.endY = event.layerY ?? event.changedTouches[0].pageY;
+	
+		mapInfo.endY = event.clientY ?? event.changedTouches[0].pageY;
 		mapInfo.active();
 	},
 	active : (act) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
 		const btnView = document.querySelector(".btnView");
 		const location = document.querySelector(".mapIcons .location");
-
 		const myLocation = document.querySelector(".myLocation");
 		const scaleBtn = document.querySelector(".scaleBtn");
+		const startTouch = document.querySelector(".mapIHead");
 
 		if(mapInfo.endY <= mapInfo.startY) {
 			if(mapInfo.startY - mapInfo.endY > 30) {
@@ -159,7 +160,12 @@ const mapInfo = {
 			scaleBtn && scaleBtn.removeAttribute('style');
 			mapInfo.showEl = false;
 		}
-		mapInfoLayer.style.setProperty('--vh', '0px');
+		
+		setTimeout(()=>{
+			startTouch.removeEventListener("touchmove", mapInfo.move);
+			mapInfoLayer.removeEventListener("mousemove", mapInfo.move);
+			mapInfoLayer.style.setProperty('--vh', '0px');
+		},10);
 	},
 }
 
@@ -605,8 +611,6 @@ const parkingTip = {
 		const scaleBtn = document.querySelector(".scaleBtn");
 
 		parkingTip.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
-
-		
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(btnParking, (_this, idx)=>{
