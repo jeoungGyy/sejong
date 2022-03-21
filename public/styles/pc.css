@@ -28,6 +28,21 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcDeco.poa6 { top: 726px; z-index: 1; width: 800px; height: 800px; margin-left: -1310px; background-color: #ADEDDC; animation:ani4 30s infinite ease;}
 .pcDeco.poa7 { top: 647px; z-index: 2; width: 262px; height: 262px; margin-left: -720px; background-color: rgba(255 255 255 / 50%); animation:ani5 30s infinite ease;}
 .pcDeco.poa8 { top: 164px; z-index: 2; width: 212px; height: 212px; margin-left: -930px; background-color: #A8EFAE; animation:ani6 30s infinite ease;}
+.map .mapInfoLayer .btnMapInfo { display: none;}
+.map .mapInfoLayer .mapIHead .mapUpDown { display: flex; align-items: center; justify-content: center;}
+.map .mapInfoLayer .mapIHead .mapUpDown button { display: block; position: relative; width: 50%; text-indent: -99999px;}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnMapUp::before { content: ''; position: absolute; right: 28px; top: 10px; width: 20px; height: 4px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(-10deg);}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnMapUp::after { content: ''; position: absolute; right: 10px; top: 10px; width: 20px; height: 4px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(10deg);}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnMapDown::before { content: ''; position: absolute; left: 10px; top: 10px; width: 20px; height: 4px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(10deg);}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnMapDown::after { content: ''; position: absolute; left: 28px; top: 10px; width: 20px; height: 4px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(-10deg);}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnBottom { display: none;}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnBottom::before { content: ''; position: absolute; left: 50%; top: 10px; width: 20px; height: 4px; margin-left: -18px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(10deg);}
+.map .mapInfoLayer .mapIHead .mapUpDown .btnBottom::after { content: ''; position: absolute; left: 50%; top: 10px; width: 20px; height: 4px; background-color: #CDD0D8; border-radius: 2px; transform: rotate(-10deg);}
+.map .mapInfoLayer.up {}
+.map .mapInfoLayer.up .mapIHead .btnMapUp { display: none;}
+.map .mapInfoLayer.up .mapIHead .btnMapDown { display: none;}
+.map .mapInfoLayer.up .mapIHead .mapUpDown .btnBottom { display: block;}
+
 
 @keyframes ani1 {
 	0%{ transform:translate(0, 0);}
@@ -105,10 +120,12 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .info .infoNav { max-width: 420px;}
 
 
-@media screen and (max-width: 420px) { 
+@media screen and (max-width: 420px) {
 .pcContainer .pcView { position: relative; right: inherit; margin: 0 auto; width: 100%;}
+.map .mapInfoLayer .btnMapInfo { display: block;}
+.map .mapInfoLayer .mapIHead .mapUpDown { display: none;}
 }
-@media screen and (max-width: 1190px) { 
+@media screen and (max-width: 1190px) {
 .pcContainer { width: 100%;}
 .pcContents { display: none;}
 .pcDeco.poa6 { margin-left: -810px;}

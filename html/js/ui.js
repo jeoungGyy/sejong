@@ -72,9 +72,11 @@ const mapInfo = {
 			const myLocation = document.querySelector(".myLocation");
 			const scaleBtn = document.querySelector(".scaleBtn");
 
+			console.log(mapInfo.locationPosition)
+
 			if(myLocation) {
-				myLocation.style.bottom = (mapInfo.locationPosition/10)+'rem';
-				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+'rem';
+				myLocation.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
+				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
 			}
 		}
 	},
@@ -132,23 +134,18 @@ const mapInfo = {
 		const scaleBtn = document.querySelector(".scaleBtn");
 		const startTouch = document.querySelector(".mapIHead");
 
-		if(mapInfo.endY <= mapInfo.startY) {
+		if(mapInfo.endY <= mapInfo.startY || act === 'infoUp') {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.add('up');
 				btnView && btnView.classList.add('up');
+				console.log(3)
 			}
 		} else {
 			if(mapInfo.startY - mapInfo.endY < -30) {
 				if (mapInfoLayer.classList.contains('up')) {
-					mapInfoLayer.classList.remove('up');
-					btnView && btnView.classList.remove('up');
+					infoBottom();
 				} else {
-					mapInfoLayer.classList.remove('open');
-					btnView && btnView.classList.remove('open');
-					location && location.classList.remove('default');
-					myLocation && myLocation.removeAttribute('style');
-					scaleBtn && scaleBtn.removeAttribute('style');
-					mapInfo.showEl = false;
+					infoDown();
 				}
 			}
 		}
@@ -160,6 +157,30 @@ const mapInfo = {
 			scaleBtn && scaleBtn.removeAttribute('style');
 			mapInfo.showEl = false;
 		}
+		if(act === 'infoUp') {
+			mapInfoLayer.classList.add('up');
+			btnView && btnView.classList.add('up');
+			mapInfoLayer.classList.remove('easeNone');
+		}
+		if(act === 'infoDown') {
+			infoDown();
+		}
+		if(act === 'infoBottom') {
+			infoBottom();
+		}
+
+		function infoDown() {
+			mapInfoLayer.classList.remove('open');
+			btnView && btnView.classList.remove('open');
+			location && location.classList.remove('default');
+			myLocation && myLocation.removeAttribute('style');
+			scaleBtn && scaleBtn.removeAttribute('style');
+			mapInfo.showEl = false;
+		};
+		function infoBottom() {
+			mapInfoLayer.classList.remove('up');
+			btnView && btnView.classList.remove('up');
+		};
 		
 		setTimeout(()=>{
 			startTouch.removeEventListener("touchmove", mapInfo.move);
