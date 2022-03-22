@@ -158,6 +158,8 @@ html.tabletMode .pcContents,
 html.tabletMode .pcContainer,
 html.tabletMode .pcContainer .pcView { max-width: inherit; width: 100%;}
 html.tabletMode .pcContents { display: none;}
+html.tabletMode .info .infoNav li { margin-right: 1rem !important;}
+html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}
 }
 
 
