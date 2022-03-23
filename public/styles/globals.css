@@ -205,7 +205,7 @@ table td { vertical-align: middle;}
 .cWood { color: #D69630 !important;}
 
 /* Split 아이콘 */
-.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 6.4rem;}
+.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
 .weather .icon.weather2 { background-position: -3.2rem 0;}
 .weather .icon.weather3 { background-position: -6.4rem 0;}
@@ -226,6 +226,16 @@ table td { vertical-align: middle;}
 .weather .icon.weather18 { background-position: -22.4rem -3.2rem;}
 .weather .icon.weather19 { background-position: -25.6rem -3.2rem;}
 .weather .icon.weather20 { background-position: -28.8rem -3.2rem;}
+.weather .icon.weather21 { background-position: 0 -6.4rem;}
+
+.weather .windDirec { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem;}
+.weather .windDirec.direc1 { background: url(../image/common/icon-wind-direc-01.png) no-repeat center/cover;}
+.weather .windDirec.direc2 { background: url(../image/common/icon-wind-direc-02.png) no-repeat center/cover;}
+.weather .windDirec.direc3 { background: url(../image/common/icon-wind-direc-03.png) no-repeat center/cover;}
+.weather .windDirec.direc4 { background: url(../image/common/icon-wind-direc-04.png) no-repeat center/cover;}
+.weather .windDirec.direc5 { background: url(../image/common/icon-wind-direc-05.png) no-repeat center/cover;}
+.weather .windDirec.direc6 { background: url(../image/common/icon-wind-direc-06.png) no-repeat center/cover;}
+
 .weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 4.8rem;}
 .weather.wh24  .icon.weather1 { background-position: 0 0;}
 .weather.wh24  .icon.weather2 { background-position: -2.4rem 0;}
@@ -247,10 +257,13 @@ table td { vertical-align: middle;}
 .weather.wh24  .icon.weather18 { background-position: -16.8rem -2.4rem;}
 .weather.wh24  .icon.weather19 { background-position: -19.2rem -2.4rem;}
 .weather.wh24  .icon.weather20 { background-position: -21.6rem -2.4rem;}
+.weather.wh24  .icon.weather21 { background-position: 0 -4.8rem;}
 
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .split32 { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
+
+
 
 
 /* 버튼 */
@@ -1541,17 +1554,19 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .wTime { display: block; min-width: 3.2rem; width: 26%; margin: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #555; letter-spacing: 0;}
 
 .items-uv li { display: flex; padding: 1.2rem 0; border-bottom: 1px solid #F4F5F7;}
-.items-uv li .uvIcons { display: flex; flex-direction: column; align-items: center; width: 4.4rem; margin-right: 0.8rem; padding-top: 0.6rem;}
-.items-uv li .uvIcons i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem;}
-.items-uv li .uvIcons i.lowness { background-position: -3.2rem -9.6rem;}
-.items-uv li .uvIcons i.caution { background-position: -6.4rem -9.6rem;}
-.items-uv li .uvIcons i.highness { background-position: -9.6rem -9.6rem;}
-.items-uv li .uvIcons span { display: block; margin-top: 0.6rem; font-size: 1.3rem; font-weight: 700; color: #aaa;}
-.items-uv li .uvBody { display: flex; flex-direction: column; justify-content: center; flex: 1;}
-.items-uv li .uvBody >div { display: flex; align-items: center;}
-.items-uv li .uvBody >div h4 { font-size: 1.6rem;}
-.items-uv li .uvBody >div .legend { width: 2rem; height: 2rem; margin-left: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
-.items-uv li .uvBody p { margin-top: 0.4rem; color: #555; line-height: 2rem;}
+.uvIcons { display: flex; flex-direction: column; align-items: center; width: 4.4rem; margin-right: 0.8rem; padding-top: 0.6rem;}
+.uvIcons i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem;}
+.uvIcons i.normal { background-position: -3.2rem -9.6rem;}
+.uvIcons i.highness { background-position: -6.4rem -9.6rem;}
+.uvIcons i.danger { background-position: -9.6rem -9.6rem;}
+.uvIcons i.lowness { background-position: -12.8rem -9.6rem;}
+.uvIcons i.caution { background-position: -16rem -9.6rem;}
+.uvIcons span { display: block; margin-top: 0.6rem; font-size: 1.3rem; font-weight: 700; color: #aaa; white-space: nowrap;}
+.uvBody { display: flex; flex-direction: column; justify-content: center; flex: 1;}
+.uvBody >div { display: flex; align-items: center;}
+.uvBody >div h4 { font-size: 1.6rem;}
+.uvBody >div .legend { width: 2rem; height: 2rem; margin-left: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
+.uvBody p { margin-top: 0.4rem; color: #555; line-height: 2rem;}
 
 .items-weatherInfo { display: inline-flex; margin-top: 0.8rem; align-items: center; text-align: center;}
 .items-weatherInfo li { flex: 1 1 auto; width: 4.4rem;}
