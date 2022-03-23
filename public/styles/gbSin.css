@@ -541,12 +541,14 @@
 .mypage .bookmarkWrap .searchType button.active {color:#6684EA;}
 
 .mypage .bookmarkWrap .bookmarkList ul li {display: flex; align-items: center; justify-content: space-between; padding:1.3rem 2rem; border-top:1px solid #F4F5F7; }
+.mypage .bookmarkWrap .bookmarkList ul li .list { flex: 1;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .title {display: flex; align-items: center;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .title strong {font-size:1.6rem;}
-.mypage .bookmarkWrap .bookmarkList ul li .list .title .modifyText {width:2.4rem; height:2.4rem; background:url(../image/common/ico_24_pen.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
-.mypage .bookmarkWrap .bookmarkList ul li .list .title .modifyText {width:2.4rem; height:2.4rem; background:url(../image/common/ico_24_pen.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
+.mypage .bookmarkWrap .bookmarkList ul li .list .title .modifyText {width:2.4rem; height:2.4rem; margin-left: 0.6rem; background:url(../image/common/ico_24_pen.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .address {font-size:1.4rem; color:#555; margin-top:1.1rem;}
-.mypage .bookmarkWrap .bookmarkList ul li .btnDelete {width:2.4rem; height:2.4rem; background:url(../image/common/ico_24_close.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
+.mypage .bookmarkWrap .bookmarkList ul li .list input { flex: 1; height: 4rem; padding: 0; font-size: 1.6rem; font-weight: 700; color: #6684EA; border: none; border-bottom: 1px solid #ddd;}
+.mypage .bookmarkWrap .bookmarkList ul li .list .modifyBtn { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA;}
+.mypage .bookmarkWrap .bookmarkList ul li .btnDelete { width:2.4rem; height:2.4rem; margin-left: 2rem; background:url(../image/common/ico_24_close.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus {padding-left:3.2rem; background:url(../image/common/ico_24_bus.png) no-repeat left top/2.4rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.R + span {color:#FD2020; margin-left:0.8rem;}
