@@ -21,7 +21,7 @@ body { --vh: 1px;}
 .mapArea.subStyle .mapIcons .location .myLocation,
 .mapArea.subStyle .mapIcons .location .scaleBtn { bottom: 2rem;}
 
-.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 99; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
+.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 100; background-color: #fff; transform: translateY(100%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}

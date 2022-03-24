@@ -344,7 +344,7 @@ table td { vertical-align: middle;}
 
 /* 하단고정 */
 .bottomFixed { position: relative; min-height: calc(100vh - 7.6rem); padding-bottom: 8rem;}
-.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
+.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; height: 7.8rem; margin-left: -2rem; padding: 0 2rem; background-color: #fff;}
 .bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
 .bottomFixed .btnGroup .twins button:last-child { margin-left: 0.8rem;}
@@ -501,6 +501,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerSelect { overflow-y: auto; max-height: 37rem;}
 .layerSelect .items-label li { padding: 0 2rem;}
 .layerSelect .items-label li ~ li { border-top: 1px solid #EAEAEA;}
+
+/* 우편번호 찾기 닫기 */
+.postCode_btn { display: block; position: absolute; right: 1rem; top: 1.5rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
 
 
 /* UI-SJN-01-001U */
@@ -1171,7 +1174,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .header-icons button.good { padding-left: 2.2rem;}
 .header-icons button.good::after { left: 0; background-position: -6rem 0;}
 .header-icons button.good.active::after { left: 0; background-position-y: -2rem;}
-.header-icons button.comment { margin-left: 0.5rem; padding-left: 2.2rem;}
+.header-icons button.comment { margin-left: 0.6rem; padding-left: 2.2rem;}
 .header-icons button.comment::after { left: 0; background-position: -8rem 0;}
 .header-icons button.comment.active::after { left: 0; background-position-y: -2rem;}
 .header-icons button.favorite { width: 2rem; text-indent: -9999rem;}
@@ -1315,6 +1318,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-blet li::after { content: ''; position: absolute; left: 0.6rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .items-blet li ~ li { margin-top: 0.8rem;}
 
+.items-form { padding-bottom: 2rem;}
 .items-form >li ~ li { margin-top: 1.6rem;}
 /* .form-default .items-form >li input:focus + label { outline: 2px solid #000; border-radius: 2px;} */
 .items-form >li .labelH { display: flex; align-items: center; height: 4rem;}
@@ -1502,14 +1506,14 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
 .items-edu >li .title { display: flex; padding: 1.2rem 0 0.9rem;}
 .items-edu >li .title h4 { flex: 1; font-size: 1.6rem; color: #111; vertical-align: middle;}
-.items-edu >li .title .sub { margin-right: 0.4rem; vertical-align: middle;}
+.items-edu >li .title .sub { margin-right: 0.6rem; vertical-align: middle;}
 .items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
 .items-edu >li .title .sub span.ing { background-color: #32BBED;}
 .items-edu >li .title .sub span.schedule { background-color: #4EC457;}
 .items-edu >li .title .sub span.closing { background-color: #aaa;}
 .items-edu >li .title .sub span.blue { background-color: #6684EA;}
 .items-edu >li .title .sub span.wood { background-color: #D69630;}
-.items-edu.boxStyle >li { padding: 1.9rem 1.6rem 2.2rem; border: 1px solid #EAEAEA;}
+.items-edu.boxStyle >li { padding: 1rem 1.6rem 1.6rem; border: 1px solid #EAEAEA;}
 .items-edu.boxStyle >li ~ li { margin-top: 1.6rem;}
 .items-edu.boxStyle >li .title .sub { display: block;}
 /* .items-edu.boxStyle >li .title h4 { display: block; margin-top: 0.9rem;} */

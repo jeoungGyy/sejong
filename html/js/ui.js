@@ -630,7 +630,7 @@ const parkingTip = {
 		const btnParking = document.querySelectorAll(".btnParking");
 		const myLocation = document.querySelector(".myLocation");
 		const scaleBtn = document.querySelector(".scaleBtn");
-
+		
 		parkingTip.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
 		if(parkingTip.idx == null) {
@@ -670,9 +670,18 @@ const parkingTip = {
 				},500);
 			},500);
 
-			parkingTip.showEl.addEventListener('click',()=>{
-				event.stopPropagation();
+			const test = document.querySelectorAll(".mapMenuLayer .btn");
+
+			test.forEach((element) => {
+				const stopProp = () => {
+					event.stopPropagation();
+				};
+				element.addEventListener("click", stopProp, false);
 			});
+
+			// parkingTip.showEl.addEventListener('click',()=>{
+			// 	event.stopPropagation();
+			// });
 			mapInfoLayer.addEventListener('click',()=>{
 				event.stopPropagation();
 			});
