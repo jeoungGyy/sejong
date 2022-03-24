@@ -11,7 +11,7 @@
 .mainArea .repMenu { position: relative; margin-top: 1.6rem;}
 .mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 350rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/350rem 10rem;}
 .mainArea .repMenu::after { content: ''; position: absolute; right: -2.1rem; top: -1.6rem; width: 10rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
-.mainArea .boxWrap.repMenu .boxArea { padding: 3.2rem 2.4rem 4rem;}
+.mainArea .boxWrap.repMenu .boxArea { padding: 1rem 2.4rem 2.2rem;}
 .mainArea .repMenu h2 { font-size: 2.2rem;}
 .mainArea .repMenu .body { display: flex; justify-content: space-between; margin-top: 2rem;}
 .mainArea .repMenu .body a { display: block; position: relative; text-align: center;}
@@ -27,9 +27,9 @@
 .recentService { padding: 2rem 0 0;}
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
-.recentService h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
 .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0 2rem;}
-.recentService .homeNav ul li { width: 7.2rem; padding: 0.8rem 0 4rem;}
+.recentService .homeNav ul li { width: 7.2rem; padding: 0.8rem 0 2rem;}
 .recentService .homeNav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 7.2rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 /* .mainArea .recentService { margin-top: 6rem;}
@@ -38,8 +38,8 @@
 .mainArea .recentService .homeNav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 7.2rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
 .mainArea .recentService.typeB { margin-top: 2rem;} */
 .mainArea .boxWrap { position: relative;}
-.mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 2.4rem 1.6rem 3.2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 20%);}
-.mainArea .covid19 { margin-top: 3.2rem;}
+.mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 1rem 1.6rem 2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 10%);}
+.mainArea .covid19 { margin-top: 2.4rem;}
 .mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; margin-top: 0.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
 .mainArea .covid19 .title >div { flex: 1;}
@@ -79,6 +79,7 @@
 .mainArea .covid19 .infectionBtn span { display: flex; align-items: center; font-size: 1.4rem; color: #333;}
 .mainArea .covid19 .infectionBtn span i { margin-right: 0.4rem; vertical-align: middle; background-position: 0 -19.2rem;}
 .mainArea .covid19 .infectionBtn b { font-size: 1.6rem;}
+.mainArea .weatherBox .boxArea { padding-top: 1.8rem;}
 .mainArea .weatherBox .roundDeco { display: block; position: absolute; left: -16rem; top: -13rem; z-index: 1;}
 .mainArea .weatherBox .roundDeco path { fill: #6684ea}
 /* .mainArea .weatherBox.active .accordionTarget { height: 0;}
@@ -136,7 +137,8 @@
 .mainArea .weatherBox.active .weatherLink .val { margin: 0.4rem 0 0 0;}
 
 
-.mainArea .mainNews { margin-top: 3.2rem;}
+.mainArea .mainNews { margin-top: 2.4rem;}
+.mainArea .mainNews .boxArea { padding-bottom: 1.2rem;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -20.7rem; z-index: 1;}
 .mainArea .mainNews .roundDeco path { fill: #32bbed;}
 .mainArea .mainNews .mainNewsList { overflow: hidden; position: relative; padding-bottom: 2.8rem;}
@@ -157,7 +159,8 @@
 .mainArea .mainNews .mainNewsPiece li a span { display: block; margin-top: 0.9rem; font-size: 1.4rem; color: #777;}
 .mainArea .mainNews .button-more { margin-top: 2.5rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .mainNews .button-more .btn { color: #333;}
-.mainArea .oilPrice { margin-top: 3.2rem;}
+.mainArea .oilPrice { margin-top: 2.4rem;}
+.mainArea .oilPrice .boxArea { padding-bottom: 1.2rem;}
 .mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -13.8rem; z-index: 1;}
 .mainArea .oilPrice .roundDeco path { fill: #4ec457;}
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
@@ -178,10 +181,9 @@
 .mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .button-more { margin-top: 0.4rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .oilPrice .button-more .btn { color: #333;}
-.mainArea .hospital { margin-top: 3.2rem;}
+.mainArea .hospital { margin-top: 2.4rem;}
 .mainArea .hospital .roundDeco { display: block; position: absolute; right: -15rem; top: -5.6rem; z-index: 1;}
 .mainArea .hospital .roundDeco path { fill: #a9b0c1;}
-.mainArea .hospital .boxArea { padding-bottom: 4rem;}
 .mainArea .hospital h3 { height: 6.8rem;}
 .mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #777;}
 .mainArea .hospital ul { margin-top: 3.3rem; border-top: 1px solid #F4F5F7;}
@@ -190,8 +192,8 @@
 .mainArea .hospital ul li a.hospitalLink i { margin-right: 0.8rem; background-position: -2.4rem -19.2rem;}
 .mainArea .hospital ul li a.pharmacyLink i { margin-right: 0.8rem; background-position: -4.8rem -19.2rem;}
 .mainArea .hospital ul li a::after { content: ''; }
-.mainArea .weekClosed { margin-top: 3.2rem;}
-.mainArea .weekClosed .boxArea { padding-bottom: 4rem;}
+.mainArea .weekClosed { margin-top: 2.4rem;}
+.mainArea .weekClosed .boxArea { padding-bottom: 2.4rem;}
 .mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
 .mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-evenly; margin-top: 2.4rem;}
@@ -199,14 +201,13 @@
 .mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
 .mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #777;}
 .mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
-.mainArea .sejong { margin-top: 3.2rem;}
+.mainArea .sejong { margin-top: 2.4rem;}
 .mainArea .sejong .roundDeco { display: block; position: absolute; left: -5rem; top: -9.1rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
-.mainArea .sejong .boxArea { padding-bottom: 4rem;}
 .mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 9.2rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .sejong .body >div img { width: 8.55rem; height: 1.825rem; margin-right: 0.9rem; vertical-align: middle;}
 .mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; margin-top: -0.6rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
 .mainArea .sejong .body span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
-.mainArea .anchorTop { margin-top: 4rem;}
+.mainArea .anchorTop { margin-top: 1rem;}
 .mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
 .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 
