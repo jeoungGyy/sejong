@@ -55,7 +55,7 @@ const slideOpt = {
 		loop: true,
 		autoplay: true,
 		autoplay: {
-			delay: 3000,
+			delay: 300000,
 			disableOnInteraction: false
 		},
 	},

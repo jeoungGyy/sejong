@@ -36,25 +36,25 @@
 .mainArea .iconLinks.space4 li a img { width: 4rem; height: 4rem;}
 .mainArea .iconLinks.space4 li a p { font-size: 1.4rem;}
 .mainArea .iconLinks.space4 li a .round { width: 6rem; height: 6rem; border-radius: 1.6rem;}
-.mainArea .iconLinks.mt24 { margin-top: 2.4rem;}
+.mainArea .iconLinks.mt24 { margin-top: 1.4rem;}
 .mainArea .iconLinks.mt32 { margin-top: 3.2rem;}
 .mainArea .boxLinks { display: grid;}
 .mainArea .boxLinks li { display: flex; align-items: center; justify-content: center; margin: -0.1rem 0 0 -0.1rem; border: 1px solid #EAEDF2;}
-.mainArea .boxLinks li a { display: block; padding: 1.6rem 0.4rem; font-size: 1.4rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .boxLinks li a { display: block; padding: 1.6rem 0.4rem; font-size: 1.3rem; color: #333; text-align: center; letter-spacing: -0.1em;}
 .mainArea .boxLinks li a .img24 { width: 7.2rem; height: 2.6rem;}
 .mainArea .boxLinks.space2 { grid-template-columns: repeat(2, 1fr);}
 .mainArea .boxLinks.space3 { grid-template-columns: repeat(3, 1fr);}
 .mainArea .boxLinks.mt24 { margin-top: 2.4rem;}
 .mainArea .boxLinks.mt40 { margin-top: 4rem;}
 .mainArea .together .boxArea { padding-bottom: 4rem;}
-.mainArea .together .textLinks { margin-top: 1.7rem; border-top: 1px solid #F4F5F7;}
+.mainArea .together .textLinks { margin-top: 0.6rem; border-top: 1px solid #F4F5F7;}
 .mainArea .together .textLinks li { border-bottom: 1px solid #F4F5F7;}
 .mainArea .together .textLinks li a { display: flex; align-items: center; min-height: 4.8rem; padding: 1rem 0;}
 .mainArea .together .textLinks li a span { flex: 1; color: #555;}
 .mainArea .together .textLinks li a b { width: 7rem; font-size: 1.6rem; color: #4EC457; text-align: right;}
-.mainArea .complaint { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .complaint { margin-top: 2.4rem; padding-bottom: 8rem;}
 .mainArea .complaint .boxArea { padding-bottom: 4rem;}
-.mainArea .complaint .body { margin-top: 2.4rem;}
+.mainArea .complaint .body { margin-top: 1rem;}
 .mainArea .complaint .body .citizen { display: flex; justify-content: space-between;}
 .mainArea .complaint .body .citizen b { color: #32BBED; letter-spacing: -0.1em;}
 .mainArea .complaint .body .citizen .write { position: relative; width: calc(50% - 0.8rem);}
@@ -88,10 +88,10 @@
 .mainArea .popular .body ul li a.setup5 .icon { background-color: #777;}
 .mainArea .popular .body ul li a h4 { margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #777;}
-.mainArea .reservation .roundDeco { display: block; position: absolute; right: -7.5rem; top: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
-.mainArea .healthFacility { margin-top: 3.2rem;}
-.mainArea .healthFacility .boxArea { padding: 3.2rem 1.6rem;}
-.mainArea .dataConnect { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .reservation .roundDeco { display: block; position: absolute; right: -8.5rem; bottom: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .healthFacility { margin-top: 2.4rem;}
+.mainArea .healthFacility .boxArea { padding: 2rem 1.6rem;}
+.mainArea .dataConnect { margin-top: 2rem; padding-bottom: 8rem;}
 .mainArea .dataConnect .boxArea { padding: 3.2rem 1.6rem;}
 .mainArea .dataConnect .cleanNetBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.2rem; margin-top: 3.2rem; font-size: 1.6rem; font-weight: 700; color: #6684EA; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .dataConnect .cleanNetBtn i { margin-left: 0.4rem; background-position-x: -38rem;}
@@ -105,15 +105,14 @@
 .mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
 
 /* UI-SJN-03-003U */
-.mainArea .trafficInformation .boxArea { padding-bottom: 4rem;}
-.mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 2.4rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #6684EA; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
+.mainArea .trafficInformation .boxArea { padding-bottom: 3rem;}
+.mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 0.2rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #6684EA; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
 .mainArea .trafficInformation .vividBus span { font-size: 1.4rem;}
 .mainArea .trafficInformation .vividBus b { margin-top: 1rem; font-size: 1.6rem;}
 .mainArea .trafficInformation .vividBus b i { margin: -0.1rem 0 0 0.8rem; vertical-align: middle; background-position: -36rem -4rem;}
 
-.mainArea .safetyInfo { margin-top: 3.2rem;}
-.mainArea .safetyInfo .boxArea { padding-bottom: 4rem;}
-.mainArea .safetyInfo .safetyUse { display: flex; align-items: center; justify-content: space-between; margin-top: 2.3rem; padding: 2.7rem 2rem 2.3rem; color: #fff; background-color: #FF940E; border-radius: 0.8rem;}
+.mainArea .safetyInfo { margin-top: 2.4rem;}
+.mainArea .safetyInfo .safetyUse { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem; padding: 2.7rem 2rem 2.3rem; color: #fff; background-color: #FF940E; border-radius: 0.8rem;}
 .mainArea .safetyInfo .safetyUse .title p { font-size: 1.6rem; font-weight: 700; line-height: 2.3rem;}
 .mainArea .safetyInfo .safetyUse .title span { display: block; margin-top: 0.8rem; font-size: 1.4rem; line-height: 2rem;}
 .mainArea .safetyInfo .safetyUse .icon .whiteRound { display: flex; align-items: center; justify-content: center; width: 8.4rem; height: 8.4rem; background-color: #fff; border-radius: 50%;}
@@ -121,7 +120,8 @@
 .mainArea .safetyInfo .safetyUse .icon .blackRound { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-top: -0.4rem; font-size: 1.4rem; background-color: #111; border-radius: 1.8rem;}
 .mainArea .safetyInfo .roundDeco { display: block; position: absolute; left: -6.2rem; top: -12.3rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #6684EA; border-radius: 50%;}
 
-.mainArea .improvement { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .improvement { margin-top: 2.4rem; padding-bottom: 8rem;}
+.mainArea .improvement .boxArea { padding-top: 2rem;}
 .mainArea .improvement a { display: flex; align-items: center; justify-content: space-between; font-size: 1.4rem; color: #333;}
 .mainArea .improvement a i { margin: -0.5rem 0.8rem 0 0; vertical-align: middle; background-position: -28.8rem -19.2rem;}
 .mainArea .improvement .roundDeco { display: block; position: absolute; right: -8.5rem; top: -10.5rem; z-index: 1; width: 14.7rem; height: 14.7rem; background-color: #D57298; border-radius: 50%;}
@@ -134,13 +134,13 @@
 .mainArea .eduProgram .textLinks li a span { color: #555;}
 .mainArea .eduProgram .textLinks li a b { font-size: 1.6rem; color: #4EC457; text-align: right;}
 .mainArea .eduProgram .roundDeco { display: block; position: absolute; left: -5.2rem; bottom: -18rem; z-index: 1; width: 22.2rem; height: 22.2rem; background-color: #CCD2E3; border-radius: 50%;}
-.mainArea .donation { position: relative; margin-top: 3.2rem;}
+.mainArea .donation { position: relative; margin-top: 2.4rem;}
 .mainArea .donation a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 0 2.4rem; color: #fff; background: #D69630 url(../image/info/info_donation_img.png) no-repeat right 4.8rem center/4.425rem 6rem; border-radius: 1.6rem;}
 .mainArea .donation a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
 .mainArea .donation a b i { margin: -0.5rem 0 0 0.8rem; vertical-align: middle; background-position: -24rem -4rem;}
-.mainArea .culturalLife { margin-top: 3.2rem; padding-bottom: 8rem;}
+.mainArea .culturalLife { margin-top: 2.4rem; padding-bottom: 8rem;}
 .mainArea .culturalLife .boxArea { padding-bottom: 4rem;}
-.mainArea .culturalLife .culturalBtns { display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
+.mainArea .culturalLife .culturalBtns { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem;}
 .mainArea .culturalLife .culturalBtns a { display: flex; align-items: center; justify-content: center; width: calc(50% - 0.4rem); height: 5.2rem; font-size: 1.6rem; color: #111; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .culturalLife .culturalBtns a.infoCalendar i { margin-right: 0.4rem; background-position: -31.2rem -19.2rem;}
 .mainArea .culturalLife .culturalBtns a.infoEvent i { margin-right: 0.4rem; background-position: -2.4rem -4.8rem;}
@@ -149,7 +149,7 @@
 .mainArea .culturalLife .links li { width: calc();}
 .mainArea .culturalLife .links li a { display: block; color: #333;}
 .mainArea .culturalLife .links li a figure { overflow: hidden; border-radius: 0.4rem;}
-.mainArea .culturalLife .links li a p { margin-top: 1.2rem; letter-spacing: -0.1em; text-align: center;}
+.mainArea .culturalLife .links li a p { margin-top: 1.2rem; font-size: 1.4rem; letter-spacing: -0.1em; text-align: center;}
 .mainArea .culturalLife .publicityEvents { display: flex; flex-direction: column; justify-content: center; height: 7.8rem; margin-top: 4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_culturalLife_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .culturalLife .publicityEvents div { font-size: 1.3rem;}
 .mainArea .culturalLife .publicityEvents b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
@@ -158,29 +158,29 @@
 
 /* UI-SJN-03-005U */
 .mainArea .toVisit .body { margin-top: 1.6rem;}
-.mainArea .toVisit .boxArea { padding-bottom: 4rem;}
+.mainArea .toVisit .boxArea { padding-bottom: 3rem;}
 .mainArea .toVisit .slideContainer { overflow: hidden;}
 .mainArea .toVisit li { width: 20rem;}
 .mainArea .toVisit li a { display: block; color: #111; text-align: center;}
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
 .mainArea .toVisit li a p { margin-top: 1.6rem;}
 .mainArea .toVisit .roundDeco { display: block; position: absolute; right: -7.1rem; bottom: -8.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #4EC457; border-radius: 50%;}
-.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 3.2rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .dullegil a div { font-size: 1.3rem;}
 .mainArea .dullegil a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
-.mainArea .campingSite { margin-top: 3.2rem;}
-.mainArea .campingSite .boxArea { padding-bottom: 4rem;}
-.mainArea .campingSite ul { display: flex; justify-content: space-between; margin: 2.4rem -0.4rem 0;}
+.mainArea .campingSite { margin-top: 2.4rem;}
+.mainArea .campingSite .boxArea { padding-bottom: 3rem;}
+.mainArea .campingSite ul { display: flex; justify-content: space-between; margin: 0.4rem -0.4rem 0;}
 .mainArea .campingSite ul li { margin: 0 0.4rem;}
 .mainArea .campingSite ul li a { display: block; text-align: center; color: #333;}
 .mainArea .campingSite ul li a figure { overflow: hidden; border-radius: 0.4rem;}
 .mainArea .campingSite ul li a p { margin-top: 1.2rem;}
-.mainArea .gourmetTravel a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 3.2rem; padding-left: 2rem; color: #111; background: url(../image/info/info_gourmetTravel_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .gourmetTravel a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 2rem; color: #111; background: url(../image/info/info_gourmetTravel_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .gourmetTravel a div { color: #555;}
 .mainArea .gourmetTravel a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
 .mainArea .gourmetTravel a i { margin: -0.5rem 0 0 0.8rem; vertical-align: middle; background-position: -36rem -6rem;}
 .mainArea .healthFacility.pb80 { padding-bottom: 8rem;}
-.mainArea .healthFacility.pb80 .roundDeco { display: block; position: absolute; left: -9.4rem; top: -9.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #FFD800; border-radius: 50%;}
+.mainArea .healthFacility.pb80 .roundDeco { display: block; position: absolute; left: -12.4rem; top: -9.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #FFD800; border-radius: 50%;}
 
 /* UI-SJN-03-006U */
 .mainArea .sejongAbout .body >p { font-size: 1.6rem; color: #555;}
