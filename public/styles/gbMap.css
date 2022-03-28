@@ -31,6 +31,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .mapIHead .locationFlex select { width: 12.5rem; height: 3.4rem; padding: 0 0 0 1rem; font-size: 1.5rem; background-position: right 0.6rem top 0.6rem; border-radius: 1.7rem;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
 .map .mapInfoLayer .btnMapInfo::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4.8rem; height: 0.4rem; margin: -0.2rem 0 0 -2.4rem; background-color: #CDD0D8; border-radius: 0.2rem;}
+.map .mapInfoLayer .btnMapInfo.block { display: flex;}
 .map .mapInfoLayer .area { display: flex; align-items: center;}
 .map .mapInfoLayer .area .region { flex: 1;}
 .map .mapInfoLayer .area .region p { position: relative; padding-left: 2.4rem;}
@@ -71,7 +72,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
 .mapInfoLayer.open { transform: translateY(0);}
-.mapInfoLayer.default { height: calc(37rem + var(--vh));}
+.mapInfoLayer.default { height: calc(37rem + var(--vh)); border-radius: 2.4rem 2.4rem 0 0;}
 .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
 .map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));}
 
@@ -276,18 +277,18 @@ span.M { background-color: #FD2020;}
 .map .mapSearch.lnbShow .mapheader .mapBody .btnPlace .t { top: 1.5rem; transform: rotate(45deg);}
 .map .mapSearch.lnbShow .mapheader .mapBody .btnPlace .c { opacity: 0;}
 .map .mapSearch.lnbShow .mapheader .mapBody .btnPlace .b { top: 1.5rem; transform: rotate(-225deg);}
-.map .mapFooter { display: flex; align-items: center; justify-content: center; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 6.8rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
-.map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; height: 5.2rem; text-align: center;}
+.map .mapFooter { display: flex; align-items: center; justify-content: center; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 6.4rem; background-color: #6684EA; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 1.6rem;}
+.map .mapFooter button { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 20%; text-align: center;}
 .map .mapFooter button i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .map .mapFooter button.home i { background-position: 0 -4.8rem;}
 .map .mapFooter button.around i { background-position: -2.4rem -4.8rem;}
 .map .mapFooter button.bus i { background-position: -4.8rem -4.8rem;}
 .map .mapFooter button.declaration i { background-position: -7.2rem -4.8rem;}
 .map .mapFooter button.safe i { background-position: -9.6rem -4.8rem;}
-.map .mapFooter button span { display: block; margin-top: 0.3rem; font-size: 1.2rem; color: #777; letter-spacing: -0.12em;}
+.map .mapFooter button span { display: block; margin-top: 0.3rem; font-size: 1.2rem; color: rgb(255 255 255 / 60%); letter-spacing: -0.12em;}
 .map .mapFooter button.active { background: url(../image/map/map_footer_bg.png) no-repeat center/5.2rem;}
 .map .mapFooter button.active i { background-position-y: -7.2rem;}
-.map .mapFooter button.active span { color: #fff;}
+.map .mapFooter button.active span { font-weight: 700; color: #fff;}
 
 /* 길찾기 - UI-SJN-21-002L, UI-SJN-21-003L */
 .map .wayArea.btnTab { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 2rem;}
