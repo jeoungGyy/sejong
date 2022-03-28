@@ -1638,8 +1638,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-culture li .text .st { margin-top: 0.8rem; color: #555; line-height: 2.2rem;}
 .items-culture li.full { display: block;}
 
-.items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0; padding: 0 1.2rem;}
-.items-wordList .slideContainer { padding-bottom: 1rem;}
+.items-wordList { overflow: hidden; margin: 1.2rem -1.2rem 0;}
+.items-wordList .slideContainer { padding: 0 1.2rem 1rem;}
 .items-wordList ul li { width: auto;}
 .items-wordList ul li button { display: block; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);}
 .items-wordList ul li button::before { content: '#';}

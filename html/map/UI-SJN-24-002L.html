@@ -29,23 +29,25 @@
 							<div class="mapArea subStyle">
 								<!-- 기타 아이콘들 -->
 								<div class="mapIcons"> <!-- 주유소 콘텐츠 otherPosition 추가 -->
-									<button type="button" class="btnPin"><i>핀</i></button>
+									<ul class="sideBtns">
+										<li><button type="button" class="btnPin"><i>핀</i></button></li>
+										<li>
+											<button type="button" class="fixedPinBody " onclick="layerAlert.open('layerPinAlert');"> <!-- 활성화 시 active -->
+												<i class="split24">핀고정 정보</i>
+												<span class="number">4</span>
+											</button>
+										</li>
+									</ul>
+									
 									<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
 			
 									<!-- 고정 핀 -->
-									<div class="fixedPin">
-										<button type="button" class="fixedPinBody" onclick="layerAlert.open('layerPinAlert');"> <!-- 활성화 시 active -->
-											<i class="split24">핀고정 정보</i>
-											<span class="number">4</span>
-										</button>
-			
-										<span class="btnFixedPin" style="left: 10rem; top: 20rem;" title="고정핀1"><i class="split20">장소명 또는 주소</i></span>
-										<span class="btnFixedPin" style="left: 20rem; top: 20rem;" title="고정핀2"><i class="split20">장소명 또는 주소</i></span>
-										<span class="btnFixedPin" style="left: 15rem; top: 20rem;" title="고정핀3"><i class="split20">장소명 또는 주소</i></span>
-			
-										<span class="commIco24 deleteIco" style="left: 10rem; top: 25rem;"><i class="split24">내용</i></span>
-										<span class="commIco24 printIco" style="left: 15rem; top: 25rem;"><i class="split24">내용</i></span>
-									</div>
+									<span class="btnFixedPin" style="left: 10rem; top: 20rem;" title="고정핀1"><i class="split20">장소명 또는 주소</i></span>
+									<span class="btnFixedPin" style="left: 20rem; top: 20rem;" title="고정핀2"><i class="split20">장소명 또는 주소</i></span>
+									<span class="btnFixedPin" style="left: 15rem; top: 20rem;" title="고정핀3"><i class="split20">장소명 또는 주소</i></span>
+		
+									<span class="commIco24 deleteIco" style="left: 10rem; top: 25rem;"><i class="split24">내용</i></span>
+									<span class="commIco24 printIco" style="left: 15rem; top: 25rem;"><i class="split24">내용</i></span>
 									<!-- 고정 핀 -->
 			
 									<!-- 마커 -->
@@ -126,7 +128,7 @@
 											</div>
 											<div class="btns">
 												<button type="button" class="sharing"><i class="split32"></i></button>
-												<button type="button" class="sequence"><i class="split32"></i></button>
+												<button type="button" class="sequence"><i class="split32">핀 전체 삭제</i></button>
 											</div>
 										</div>
 									</div>

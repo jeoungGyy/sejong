@@ -26,7 +26,7 @@
 						<h2 class="visible"><span class="headerClone">안심이 서비스</span></h2> <!-- [헤더에 넣어줄 제목] -->
 						
 						<div class="mapWrap">
-							<div class="mapArea">
+							<div class="mapArea subStyle">
 								<div id="popMSlideSwiper" class="popMessageSlide">
 									<div class="slideContainer">
 										<ul class="swiper-wrapper">
@@ -95,16 +95,17 @@
 			
 								<!-- 기타 아이콘들 -->
 								<div class="mapIcons">
-									<div class="etcButton">
-										<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
-											<i>구조요청</i>
-											<span>구조요청</span>
-										</button>
-			
-										<button type="button" class="roadView"><i>거리뷰</i></button>
-										<button type="button" class="setting"><i>설정</i></button>
-										<button type="button" class="help"><i>도움말</i></button>
-									</div>
+									<ul class="sideBtns">
+										<li>
+											<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
+												<span>구조요청</span>
+												<i>구조요청</i>
+											</button>
+										</li>
+										<li><button type="button" class="roadView"><i>거리뷰</i></button></li>
+										<li><button type="button" class="setting"><i>설정</i></button></li>
+										<li><button type="button" class="help"><i>도움말</i></button></li>
+									</ul>
 			
 									<!-- 친구 현재 위치표시 -->
 									<div class="markerFriend boy" style="left: 10rem; top: 30rem;"></div><!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
