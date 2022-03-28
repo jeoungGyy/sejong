@@ -259,27 +259,27 @@ table td { vertical-align: middle;}
 .weather.wh24  .icon.weather20 { background-position: -21.6rem -2.4rem;}
 .weather.wh24  .icon.weather21 { background-position: 0 -4.8rem;}
 
-.environment .weather .icon.weather1 { background-position: 0 0;}
-.environment .weather .icon.weather2 { background-position: -5.2rem 0;}
-.environment .weather .icon.weather3 { background-position: -10.4rem 0;}
-.environment .weather .icon.weather4 { background-position: -15.6rem 0;}
-.environment .weather .icon.weather5 { background-position: -20.8rem 0;}
-.environment .weather .icon.weather6 { background-position: -26rem 0;}
-.environment .weather .icon.weather7 { background-position: -31.2rem 0;}
-.environment .weather .icon.weather8 { background-position: -36.4rem 0;}
-.environment .weather .icon.weather9 { background-position: -41.6rem  0;}
-.environment .weather .icon.weather10 { background-position: -46.8rem 0;}
-.environment .weather .icon.weather11 { background-position: 0 -5.2rem;}
-.environment .weather .icon.weather12 { background-position: -5.5rem -5.2rem;}
-.environment .weather .icon.weather13 { background-position: -10.4rem -5.2rem;}
-.environment .weather .icon.weather14 { background-position: -15.6rem -5.2rem;}
-.environment .weather .icon.weather15 { background-position: -20.8rem -5.2rem;}
-.environment .weather .icon.weather16 { background-position: -26rem -5.2rem;}
-.environment .weather .icon.weather17 { background-position: -31.2rem -5.2rem;}
-.environment .weather .icon.weather18 { background-position: -36.4rem -5.2rem;}
-.environment .weather .icon.weather19 { background-position: -41.6rem -5.2rem;}
-.environment .weather .icon.weather20 { background-position: -46.8rem -5.2rem;}
-.environment .weather .icon.weather21 { background-position: 0 -10.4rem;}
+.weatherTop .weather .icon.weather1 { background-position: 0 0;}
+.weatherTop .weather .icon.weather2 { background-position: -5.2rem 0;}
+.weatherTop .weather .icon.weather3 { background-position: -10.4rem 0;}
+.weatherTop .weather .icon.weather4 { background-position: -15.6rem 0;}
+.weatherTop .weather .icon.weather5 { background-position: -20.8rem 0;}
+.weatherTop .weather .icon.weather6 { background-position: -26rem 0;}
+.weatherTop .weather .icon.weather7 { background-position: -31.2rem 0;}
+.weatherTop .weather .icon.weather8 { background-position: -36.4rem 0;}
+.weatherTop .weather .icon.weather9 { background-position: -41.6rem  0;}
+.weatherTop .weather .icon.weather10 { background-position: -46.8rem 0;}
+.weatherTop .weather .icon.weather11 { background-position: 0 -5.2rem;}
+.weatherTop .weather .icon.weather12 { background-position: -5.5rem -5.2rem;}
+.weatherTop .weather .icon.weather13 { background-position: -10.4rem -5.2rem;}
+.weatherTop .weather .icon.weather14 { background-position: -15.6rem -5.2rem;}
+.weatherTop .weather .icon.weather15 { background-position: -20.8rem -5.2rem;}
+.weatherTop .weather .icon.weather16 { background-position: -26rem -5.2rem;}
+.weatherTop .weather .icon.weather17 { background-position: -31.2rem -5.2rem;}
+.weatherTop .weather .icon.weather18 { background-position: -36.4rem -5.2rem;}
+.weatherTop .weather .icon.weather19 { background-position: -41.6rem -5.2rem;}
+.weatherTop .weather .icon.weather20 { background-position: -46.8rem -5.2rem;}
+.weatherTop .weather .icon.weather21 { background-position: 0 -10.4rem;}
 
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
@@ -544,8 +544,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerNotice .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
 /* UI-SJN-03-100U–1 */
-.layerSetting { padding-top: 7.2rem;}
+.layerSetting { padding: 5.2rem 0 6rem;}
 .layerSetting .items-label .tootipBtn i { margin: -0.2rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
+.layerSetting .items-label .labelForm { display: block;}
+.layerSetting .settingMenuBody { overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
+.layerSetting .items-label input:checked +label +button + .settingMenuBody { height: inherit; opacity: 1;}
 .layerSetting .settingMenu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 1.6rem;}
 .layerSetting .settingMenu li button { display: flex; align-items: center; position: relative; width: 100%; min-height: 4.8rem; padding: 0 2rem 0 1.2rem; border: 1px solid #EAEDF2;}
 .layerSetting .settingMenu li button::after { content: ''; position: absolute; right: 0.4rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/split_40.png) no-repeat 0 -8rem/40rem 16rem;}
@@ -555,7 +558,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerSetting .settingMenu.line li button::after { background-position: -2rem -8rem;}
 .layerSetting .button { margin-top: 2.4rem;}
 .layerSetting .labelForm { position: relative;}
-.layerSetting .labelForm .tootipBtn { position: absolute; left: 22rem; top: 50%; transform: translateY(-50%);}
+.layerSetting .labelForm .tootipBtn { position: absolute; left: 20rem; top: 1.7rem;}
 
 
 /* UI-SJN-04-006U–1 */

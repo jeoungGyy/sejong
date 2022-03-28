@@ -61,10 +61,11 @@
 .mainArea .complaint .body .citizen .write .line { display: block; position: relative; width: 88%; height: 10.6rem; border: 0.5rem solid #1751a0;}
 .mainArea .complaint .body .citizen .write .line >div { position: absolute; left: -0.5rem; top: -0.5rem; width: calc(100% - 1.6rem); padding: 0.2rem 0 1rem 0.2rem; background-color: #fff;}
 .mainArea .complaint .body .citizen .write .line >div img { display: block; width: 6.825rem; height: 3.775rem;}
+.mainArea .complaint .body .citizen .write .line >div p { font-size: 0.9rem;}
 .mainArea .complaint .body .citizen .write .line >div b { display: block; margin-top: 0.8rem; font-size: 1.4rem;}
 .mainArea .complaint .body .citizen .write .complaintImg { position: absolute; right: 0; bottom: 0; width: 6.665rem; height: 7.2rem;} 
 .mainArea .complaint .body .citizen .issue { width: calc(50% - 0.8rem);}
-.mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.2rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div a b { color: #111;}
 .mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
