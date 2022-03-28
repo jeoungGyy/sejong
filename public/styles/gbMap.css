@@ -91,11 +91,6 @@ body { --vh: 1px;}
 .mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 16rem;}
 .mapIcons .btnBikePin.active { background-color: #6684EA;}
 .mapIcons .btnBikePin.active i { background-position-y: -6rem;}
-.mapIcons .bikeAir { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
-.mapIcons .bikeAir i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #32BBED url(../image/common/split_48.png) no-repeat -45.6rem -14.4rem/48rem 28.8rem; border-radius: 50%;}
-.mapIcons .bikeAir span { font-size: 1.3rem; color: #333;}
-.mapIcons .bikeAir::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
-.mapIcons .bikeAir::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
 .mapIcons .markerMy { position: absolute;}
 .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
 .mapIcons .markerMy div::before { content: ''; display: block; position: absolute; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 2s linear infinite;}
@@ -185,15 +180,15 @@ body { --vh: 1px;}
 .mapIcons .AED .AEDIco i { background-color: #DD6493; background-position: -31.2rem -9.6rem;}
 .mapIcons .localCurrency .localCurrencyIco i { background-color: #D69630; background-position: -33.6rem -9.6rem;}
 .mapIcons .localCurrency .localCurrencyAddIco i { background-color: #D69630; background-position: -33.6rem -12rem;}
-.mapIcons .fineDust button { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.2rem; padding: 0 1rem 0 0.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.6rem;}
-.mapIcons .fineDust button b ~ b { position: relative; margin-left: 0.4rem; padding-left: 0.4rem;}
-.mapIcons .fineDust button b ~ b::after { content: ''; display: block; position: absolute; left: 0; top: 0.2rem; width: 0.1rem; height: 1.2rem; background-color: #fff;}
-.mapIcons .fineDust button.good { background-color: #6684EA;}
-.mapIcons .fineDust button.usually { background-color: #4EC457;}
-.mapIcons .fineDust button.bad { background-color: #FF940E;}
-.mapIcons .fineDust button.veryBad { background-color: #FD2020;}
-.mapIcons .fineDust button.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
-.mapIcons .fineDust button.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
+.mapIcons .fineDustIco { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.2rem; padding: 0 1rem 0 0.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.6rem;}
+.mapIcons .fineDustIco b ~ b { position: relative; margin-left: 0.4rem; padding-left: 0.4rem;}
+.mapIcons .fineDustIco b ~ b::after { content: ''; display: block; position: absolute; left: 0; top: 0.2rem; width: 0.1rem; height: 1.2rem; background-color: #fff;}
+.mapIcons .fineDustIco.good { background-color: #6684EA;}
+.mapIcons .fineDustIco.usually { background-color: #4EC457;}
+.mapIcons .fineDustIco.bad { background-color: #FF940E;}
+.mapIcons .fineDustIco.veryBad { background-color: #FD2020;}
+.mapIcons .fineDustIco.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
+.mapIcons .fineDustIco.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
 .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
 .mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; }
 .mapIcons .busStop .busIco i { width: 2.4rem; height: 2.8rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; z-index: 3; }
@@ -220,13 +215,9 @@ body { --vh: 1px;}
 .mapIcons .busStop .busLocation .box { display: block; width: 10rem; margin: 0.7rem 0 0 -3.3rem; padding: 0.4rem 0; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; border: 1px solid #A9B0C1;}
 .mapIcons .wayPoint { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; background-color: #fff; border-radius: 50%;}
 .mapIcons .wayPoint.active { color: #fff; border-color: #32BBED; background-color: #32BBED;}
-.mapIcons .reportSet .reportIcon { display: flex; align-items: center; justify-content: center; position: absolute; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
-.mapIcons .reportSet .reportIcon i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -9.6rem/48rem 28.8rem; border-radius: 50%;}
-.mapIcons .reportSet .reportIcon span { font-size: 1.3rem; color: #333;}
-.mapIcons .reportSet .reportIcon::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
-.mapIcons .reportSet .reportIcon::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
-.mapIcons .reportSet .reportIcon.safetyReport i { background-color: #FD2020; background-position: -24rem -14.4rem;}
-.mapIcons .reportSet .reportIcon.complaint i { background-color: #D69630; background-position: -26.4rem -14.4rem;}
+
+
+
 .mapIcons .fixedPinBody { display: flex; align-items: center; justify-content: center; position: relative; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .mapIcons .fixedPinBody i { text-indent: -9999rem; background-position: -31.2rem -14.4rem;}
 .mapIcons .fixedPinBody .number { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 0; width: 2rem; height: 1.6rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #fff; background-color: #D69630; border-radius: 0.8rem;}
@@ -242,6 +233,17 @@ body { --vh: 1px;}
 .mapIcons .cctvIco i { text-indent: -9999rem; background-position: -26.4rem -4.8rem;}
 .mapIcons .zoomOut { display: flex; align-items: center; justify-content: center; position: absolute; border-radius: 50%;}
 .mapIcons .zoomOut b { font-family: var(--fontRoboto); font-size: 1.6rem; color: #fff;}
+
+.mapIcons .bubbleBox { display: flex; align-items: center; position: absolute; width: 12rem; height: 3.6rem; padding: 0 0.8rem 0 0.6rem; border: 0.1rem solid #A9B0C1; background-color: #fff; border-radius: 1.8rem;}
+.mapIcons .bubbleBox i { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -9.6rem/48rem 28.8rem; border-radius: 50%;}
+.mapIcons .bubbleBox span { flex: 1; overflow:hidden; font-size: 1.3rem; color: #333; text-overflow:ellipsis; white-space:nowrap; text-align: left;}
+.mapIcons .bubbleBox::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
+.mapIcons .bubbleBox::after { content: ''; position: absolute; left: 50%; bottom: -2.2rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #fff; border-bottom: 1.1rem solid transparent;}
+
+.mapIcons .bubbleBox.safetyReport i { background-color: #FD2020; background-position: -24rem -14.4rem;}
+.mapIcons .bubbleBox.complaint i { background-color: #D69630; background-position: -26.4rem -14.4rem;}
+.mapIcons .bubbleBox.bikeAir i { background-color: #32BBED; background-position: -45.6rem -14.4rem;}
+.mapIcons .bubbleBox.seSchool i { background-position: -43.2rem -19.2rem;}
 
 .mapIcons .sideBtns { display: flex; flex-direction: column; align-items: flex-end; position: absolute; top: 13.2rem; right: 1.2rem; z-index: 1;}
 .mapIcons .sideBtns li ~ li { margin-top: 1rem;}
@@ -421,7 +423,7 @@ span.M { background-color: #FD2020;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
 .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
-.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 7.4rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.6rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-45%);}
 .mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; min-height: 1.8rem; font-size: 1.3rem;}
 .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
 .mapMenuLayer.ready { z-index: 90; transform: scale(0);}

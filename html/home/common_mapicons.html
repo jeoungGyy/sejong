@@ -7,10 +7,85 @@
 
 <body>
 <style>
+	.mapGuide,
+	h3,
 	table { max-width: 600px; margin: 0 auto;}
 	th { padding: 10px; border: 1px solid #000;}
-	td { padding: 10px; text-align: center; border: 1px solid #000;}
+	td { position: relative; height: 7rem; padding: 10px; text-align: center; border: 1px solid #000;}
+
+	.bubbleBox,
+	.fineDustIco { left: 50%; top: 50%; transform: translate(-50%, -50%);}
+	h3 { margin-bottom: 1rem; font-size: 1.4rem;}
 </style>
+
+<h3>말풍성 아이콘 모음</h3>
+<div class="mapIcons">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<button type="button" class="bubbleBox safetyReport">
+						<i class="split24"></i><span>안전신고</span>
+					</button>
+				</td>
+				<td>
+					<button type="button" class="bubbleBox complaint">
+						<i class="split24"></i><span>불편신고</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="bubbleBox bikeAir">
+						<i></i><span>호수공원(어진동638)</span>
+					</div>
+				</td>
+				<td>
+					<div class="bubbleBox seSchool">
+						<i></i><span>아름중학교</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="fineDustIco good" title="미세먼지 좋음"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+				</td>
+				<td>
+					<button type="button" class="fineDustIco usually" title="미세먼지 보통"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="fineDustIco bad" title="미세먼지 나쁨"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+				</td>
+				<td>
+					<button type="button" class="fineDustIco veryBad" title="미세먼지 매우나쁨"><i class="split24 government"></i> <b>75</b><b>66</b></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="fineDustIco good" title="미세먼지 좋음"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+				</td>
+				<td>
+					<button type="button" class="fineDustIco usually" title="미세먼지 보통"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="fineDustIco bad" title="미세먼지 나쁨"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+				</td>
+				<td>
+					<button type="button" class="fineDustIco veryBad" title="미세먼지 매우나쁨"><i class="split24 dust"></i> <b>75</b><b>66</b></button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<br />
+<br />
+
+<h3>맵 아이콘 모음</h3>
 <table>
 	<thead>
 		<tr>
