@@ -57,15 +57,16 @@
 .mainArea .complaint .body { margin-top: 1rem;}
 .mainArea .complaint .body .citizen { display: flex; justify-content: space-between;}
 .mainArea .complaint .body .citizen b { color: #32BBED; letter-spacing: -0.1em;}
-.mainArea .complaint .body .citizen .write { position: relative; width: calc(50% - 0.8rem);}
-.mainArea .complaint .body .citizen .write .line { display: block; position: relative; height: 10.6rem; border: 0.2rem solid #32BBED;}
-.mainArea .complaint .body .citizen .write .line >div { position: absolute; left: -0.2rem; top: -0.2rem; width: calc(100% - 1.6rem); padding: 0.2rem 0 1rem 0.2rem; background-color: #fff;}
-.mainArea .complaint .body .citizen .write .line >div img { display: block; width: 7.4rem; height: 3rem;}
+.mainArea .complaint .body .citizen .write { position: relative; width: calc(50% - 0.8rem); padding-top: 2rem;}
+.mainArea .complaint .body .citizen .write .line { display: block; position: relative; width: 88%; height: 10.6rem; border: 0.5rem solid #1751a0;}
+.mainArea .complaint .body .citizen .write .line >div { position: absolute; left: -0.5rem; top: -0.5rem; width: calc(100% - 1.6rem); padding: 0.2rem 0 1rem 0.2rem; background-color: #fff;}
+.mainArea .complaint .body .citizen .write .line >div img { display: block; width: 6.825rem; height: 3.775rem;}
 .mainArea .complaint .body .citizen .write .line >div b { display: block; margin-top: 0.8rem; font-size: 1.4rem;}
-.mainArea .complaint .body .citizen .write .complaintImg { position: absolute; right: 0; bottom: 0; width: 7.175rem; height: 8.7rem;} 
+.mainArea .complaint .body .citizen .write .complaintImg { position: absolute; right: 0; bottom: 0; width: 6.665rem; height: 7.2rem;} 
 .mainArea .complaint .body .citizen .issue { width: calc(50% - 0.8rem);}
 .mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
+.mainArea .complaint .body .citizen .issue >div ~ div a b { color: #111;}
 .mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
 .mainArea .complaint .body .citizen .issue >div b { display: block; font-size: 1.6rem;}
 .mainArea .complaint .body .citizen .issue >div >b { margin-top: 0.4rem;}
@@ -310,7 +311,7 @@
 .info .environment .envHeader header h3 { font-size: 1.6rem;}
 .info .environment .envHeader header .myLocation i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem 0/48rem 28.8rem;}
 .info .environment .weatherTop { display: flex; align-items: center; justify-content: center; height: 7.6rem;}
-.info .environment .weatherTop .icon { width: 5.2rem; height: 5.2rem; margin-right: 1.2rem; background-size: 52rem 10.4rem;}
+.info .environment .weatherTop .icon { width: 5.2rem; height: 5.2rem; margin-right: 1.2rem; background-size: 52rem 15.6rem;}
 .info .environment .weatherTop .big { font-family: var(--fontRoboto); font-size: 4.3rem;}
 .info .environment .weatherTop .big sup { display: inline-block; position: relative; margin-left: 0.1rem; padding-left: 1rem; font-size: 2rem; font-weight: 700; vertical-align: super;}
 .info .environment .weatherTop .big sup::before { content: ''; display: block; position: absolute; left: 0; top: 0.9rem; width: 0.4rem; height: 0.4rem; border: 2px solid #111; border-radius: 50%;}
@@ -339,7 +340,10 @@
 .info .environment .offerer span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.6rem;}
 .info .environment .offerer span ~ span::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
 
-.info .environment .overflowX { overflow-x: auto; overflow-y: hidden; padding: 0 2rem; scroll-behavior:smooth;}
+.info .environment .overflowX { overflow-x: auto; overflow-y: hidden; padding: 0 2rem 1.4rem; scroll-behavior:smooth;}
+.info .environment .overflowX::-webkit-scrollbar { height: 6px;}
+.info .environment .overflowX::-webkit-scrollbar-track { background-color: #F4F5F7; border-radius: 10px;}
+.info .environment .overflowX::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 10px;}
 
 .info .weatherSubTab { margin: 0 -2rem; padding: 1.6rem 0 2.4rem;}
 .info .weatherSubTab .boxTab.roundStyle .btnTab { display: flex; align-items: center; height: 4.8rem; padding: 0 1.8rem;}

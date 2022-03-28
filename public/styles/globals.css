@@ -259,6 +259,28 @@ table td { vertical-align: middle;}
 .weather.wh24  .icon.weather20 { background-position: -21.6rem -2.4rem;}
 .weather.wh24  .icon.weather21 { background-position: 0 -4.8rem;}
 
+.environment .weather .icon.weather1 { background-position: 0 0;}
+.environment .weather .icon.weather2 { background-position: -5.2rem 0;}
+.environment .weather .icon.weather3 { background-position: -10.4rem 0;}
+.environment .weather .icon.weather4 { background-position: -15.6rem 0;}
+.environment .weather .icon.weather5 { background-position: -20.8rem 0;}
+.environment .weather .icon.weather6 { background-position: -26rem 0;}
+.environment .weather .icon.weather7 { background-position: -31.2rem 0;}
+.environment .weather .icon.weather8 { background-position: -36.4rem 0;}
+.environment .weather .icon.weather9 { background-position: -41.6rem  0;}
+.environment .weather .icon.weather10 { background-position: -46.8rem 0;}
+.environment .weather .icon.weather11 { background-position: 0 -5.2rem;}
+.environment .weather .icon.weather12 { background-position: -5.5rem -5.2rem;}
+.environment .weather .icon.weather13 { background-position: -10.4rem -5.2rem;}
+.environment .weather .icon.weather14 { background-position: -15.6rem -5.2rem;}
+.environment .weather .icon.weather15 { background-position: -20.8rem -5.2rem;}
+.environment .weather .icon.weather16 { background-position: -26rem -5.2rem;}
+.environment .weather .icon.weather17 { background-position: -31.2rem -5.2rem;}
+.environment .weather .icon.weather18 { background-position: -36.4rem -5.2rem;}
+.environment .weather .icon.weather19 { background-position: -41.6rem -5.2rem;}
+.environment .weather .icon.weather20 { background-position: -46.8rem -5.2rem;}
+.environment .weather .icon.weather21 { background-position: 0 -10.4rem;}
+
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .split32 { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
@@ -471,6 +493,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .layerWrap { position: relative; display: inline-block; width: calc(100% - 4rem);  vertical-align: middle; text-align: left; background: #fff; outline: none;}
 .layerWrap.typeBot { all: unset; position: absolute; right: 0; left: 0; bottom: 0; padding: 1.6rem 2rem 3.7rem; background: #fff; transform: translateY(100%); transition: transform .5s;}
+.layerWrap.typeCenter { padding: 1.6rem 2rem 3.7rem; background: #fff; transition: transform .5s;}
 .layerWrap.full { display: flex; flex-direction: column; position: absolute; right: 0; left: 0; bottom: 0; top: 0; width: 100%;}
 .layerWrap.full .headerBtn { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 4rem;}
 .layerWrap.full .headerBtn h2 { font-size: 1.8rem;}
@@ -1876,9 +1899,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
 .items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 28.8rem;}
 
-.items-improvement .accordionMenu { padding: 2rem; cursor: pointer;}
+.items-improvement .accordionMenu { padding: 1rem 2rem; cursor: pointer;}
 .items-improvement .accordionTarget { overflow: hidden; max-height: 0; transition: min-height 0.3s ease-in-out;}
-.items-improvement .accordionTargetArea { margin-top: 2rem; padding: 2.4rem 1.6rem; background-color: #F4F5F7;}
+.items-improvement .accordionTargetArea { margin-top: 2rem; padding: 1.2rem 1.6rem; background-color: #F4F5F7;}
 .items-improvement .accordionTargetArea .tHead { display: flex; align-items: center; justify-content: space-between;}
 .items-improvement .accordionTargetArea .tHead h4 { font-size: 1.5rem;}
 .items-improvement .accordionTargetArea .tHead div span { display: inline-block; position: relative; font-size: 1.4rem; color: #777; vertical-align: middle;}
@@ -1889,7 +1912,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-improvement { margin-top: 1.6rem;}
 .items-improvement >li { border: 1px solid #EAEAEA;}
 .items-improvement >li ~ li { margin-top: 0.8rem;}
-.items-improvement >li h3 { font-size: 1.6rem;}
+.items-improvement >li h3 { overflow:hidden; font-size: 1.6rem; text-overflow:ellipsis; white-space:nowrap;}
 .items-improvement >li .authList { display: flex; align-items: center; flex-wrap: wrap; padding: 0 2rem;}
 .items-improvement >li .authList li { width: 50%; margin-top: 1.2rem; font-size: 1.4rem; color: #777;}
 .items-improvement >li .authList li:nth-child(2) { text-align: right;}
