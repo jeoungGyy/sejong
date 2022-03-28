@@ -69,10 +69,10 @@
 .mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div a b { color: #111;}
 .mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
-.mainArea .complaint .body .citizen .issue >div b { display: block; font-size: 1.6rem;}
+.mainArea .complaint .body .citizen .issue >div b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
 .mainArea .complaint .body .citizen .issue >div >b { margin-top: 0.4rem;}
 .mainArea .complaint .body .citizen .issue >div a { display: block;}
-.mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 1.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 0.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .body .citizen .issue >div .phone i { background-position: -24rem -19.2rem;}
 .mainArea .complaint .roundDeco { display: block; position: absolute; left: -11.6rem; top: -8.6rem; z-index: 1; width: 22rem; height: 22rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .roundDeco2 { display: block; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
