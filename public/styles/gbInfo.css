@@ -320,7 +320,7 @@
 .info .environment .weatherTop .smallBody span { font-size: 1.3rem;}
 .info .environment .weatherTop .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
 .info .environment .weatherTop .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #32BBED; border-radius: 50%;}
-.info .environment .weatherTop .smallBody .cBlue { color: #32BBED;}
+.info .environment .weatherTop .smallBody .cBlue { color: #32BBED !important;}
 .info .environment .weatherTop .smallBody .cWood { margin-left: 0.4rem; color: #D37398;}
 .info .environment .weatherTop .smallBody .cWood::before { content: '/'; margin-right: 0.4rem; color: #ddd;}
 .info .environment .weatherTop .smallBody .cWood sup::before { border-color: #D37398;}
