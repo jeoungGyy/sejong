@@ -21,19 +21,19 @@
 
 /* .stickyHeader .info .infoNav { position: fixed; top: 0; z-index: 200;} */
 
-.info .mainArea { background: #F3F5F7;}
+.info .mainArea { min-height: calc(100vh - 18.6rem); background: #F3F5F7;}
 .mainArea .flex { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .flex .mapLink { color: #6684EA;}
 .mainArea .flex .mapLink i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -26.4rem -19.2rem;}
 .mainArea .iconLinks li a { display: block; text-align: center;}
 .mainArea .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
-.mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto; background-color: #F4F5F7;}
+.mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto;}
 .mainArea .iconLinks.space3 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(3, 1fr);}
 .mainArea .iconLinks.space3 li a img { width: 8rem; height: 8rem;}
 .mainArea .iconLinks.space3 li a p { font-size: 1.6rem;}
 .mainArea .iconLinks.space3 li a .round { width: 8rem; height: 8rem; border-radius: 2.4rem;}
 .mainArea .iconLinks.space4 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(4, 1fr);}
-.mainArea .iconLinks.space4 li a img { width: 4rem; height: 4rem;}
+.mainArea .iconLinks.space4 li a img { width: 6rem; height: 6rem;}
 .mainArea .iconLinks.space4 li a p { font-size: 1.4rem;}
 .mainArea .iconLinks.space4 li a .round { width: 6rem; height: 6rem; border-radius: 1.6rem;}
 .mainArea .iconLinks.mt24 { margin-top: 1.4rem;}
@@ -159,9 +159,9 @@
 .mainArea .culturalLife .roundDeco { display: block; position: absolute; right: -8.2rem; bottom: 3.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #D69630; border-radius: 50%;}
 
 /* UI-SJN-03-005U */
-.mainArea .toVisit .body { margin-top: 1.6rem;}
+.mainArea .toVisit .body { margin: 1.6rem -1.6rem 0;}
 .mainArea .toVisit .boxArea { padding-bottom: 3rem;}
-.mainArea .toVisit .slideContainer { overflow: hidden;}
+.mainArea .toVisit .slideContainer { overflow: hidden; padding: 0 1.6rem;}
 .mainArea .toVisit li { width: 20rem;}
 .mainArea .toVisit li a { display: block; color: #111; text-align: center;}
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
