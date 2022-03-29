@@ -780,6 +780,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
 .locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
+.locationLayer .locationHeader .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
+.locationLayer .locationHeader .sale .discount { color: #FD2020;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
 .locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; height: 4rem; color: #aaa;}
