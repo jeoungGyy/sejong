@@ -236,7 +236,7 @@ table td { vertical-align: middle;}
 .weather .windDirec.direc5 { background: url(../image/common/icon-wind-direc-05.png) no-repeat center/cover;}
 .weather .windDirec.direc6 { background: url(../image/common/icon-wind-direc-06.png) no-repeat center/cover;}
 
-.weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 4.8rem;}
+.weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 7.2rem;}
 .weather.wh24  .icon.weather1 { background-position: 0 0;}
 .weather.wh24  .icon.weather2 { background-position: -2.4rem 0;}
 .weather.wh24  .icon.weather3 { background-position: -4.8rem 0;}
@@ -247,7 +247,7 @@ table td { vertical-align: middle;}
 .weather.wh24  .icon.weather8 { background-position: -16.8rem 0;}
 .weather.wh24  .icon.weather9 { background-position: -19.2rem  0;}
 .weather.wh24  .icon.weather10 { background-position: -21.6rem 0;}
-.weather.wh24  .icon.weather11 { background-position: 0 -3.2rem;}
+.weather.wh24  .icon.weather11 { background-position: 0 -2.4rem;}
 .weather.wh24  .icon.weather12 { background-position: -2.4rem -2.4rem;}
 .weather.wh24  .icon.weather13 { background-position: -4.8rem -2.4rem;}
 .weather.wh24  .icon.weather14 { background-position: -7.2rem -2.4rem;}
@@ -259,27 +259,27 @@ table td { vertical-align: middle;}
 .weather.wh24  .icon.weather20 { background-position: -21.6rem -2.4rem;}
 .weather.wh24  .icon.weather21 { background-position: 0 -4.8rem;}
 
-.weatherTop .weather .icon.weather1 { background-position: 0 0;}
-.weatherTop .weather .icon.weather2 { background-position: -5.2rem 0;}
-.weatherTop .weather .icon.weather3 { background-position: -10.4rem 0;}
-.weatherTop .weather .icon.weather4 { background-position: -15.6rem 0;}
-.weatherTop .weather .icon.weather5 { background-position: -20.8rem 0;}
-.weatherTop .weather .icon.weather6 { background-position: -26rem 0;}
-.weatherTop .weather .icon.weather7 { background-position: -31.2rem 0;}
-.weatherTop .weather .icon.weather8 { background-position: -36.4rem 0;}
-.weatherTop .weather .icon.weather9 { background-position: -41.6rem  0;}
-.weatherTop .weather .icon.weather10 { background-position: -46.8rem 0;}
-.weatherTop .weather .icon.weather11 { background-position: 0 -5.2rem;}
-.weatherTop .weather .icon.weather12 { background-position: -5.5rem -5.2rem;}
-.weatherTop .weather .icon.weather13 { background-position: -10.4rem -5.2rem;}
-.weatherTop .weather .icon.weather14 { background-position: -15.6rem -5.2rem;}
-.weatherTop .weather .icon.weather15 { background-position: -20.8rem -5.2rem;}
-.weatherTop .weather .icon.weather16 { background-position: -26rem -5.2rem;}
-.weatherTop .weather .icon.weather17 { background-position: -31.2rem -5.2rem;}
-.weatherTop .weather .icon.weather18 { background-position: -36.4rem -5.2rem;}
-.weatherTop .weather .icon.weather19 { background-position: -41.6rem -5.2rem;}
-.weatherTop .weather .icon.weather20 { background-position: -46.8rem -5.2rem;}
-.weatherTop .weather .icon.weather21 { background-position: 0 -10.4rem;}
+.weather .weatherTop .icon.weather1 { background-position: 0 0;}
+.weather .weatherTop .icon.weather2 { background-position: -5.2rem 0;}
+.weather .weatherTop .icon.weather3 { background-position: -10.4rem 0;}
+.weather .weatherTop .icon.weather4 { background-position: -15.6rem 0;}
+.weather .weatherTop .icon.weather5 { background-position: -20.8rem 0;}
+.weather .weatherTop .icon.weather6 { background-position: -26rem 0;}
+.weather .weatherTop .icon.weather7 { background-position: -31.2rem 0;}
+.weather .weatherTop .icon.weather8 { background-position: -36.4rem 0;}
+.weather .weatherTop .icon.weather9 { background-position: -41.6rem  0;}
+.weather .weatherTop .icon.weather10 { background-position: -46.8rem 0;}
+.weather .weatherTop .icon.weather11 { background-position: 0 -5.2rem;}
+.weather .weatherTop .icon.weather12 { background-position: -5.5rem -5.2rem;}
+.weather .weatherTop .icon.weather13 { background-position: -10.4rem -5.2rem;}
+.weather .weatherTop .icon.weather14 { background-position: -15.6rem -5.2rem;}
+.weather .weatherTop .icon.weather15 { background-position: -20.8rem -5.2rem;}
+.weather .weatherTop .icon.weather16 { background-position: -26rem -5.2rem;}
+.weather .weatherTop .icon.weather17 { background-position: -31.2rem -5.2rem;}
+.weather .weatherTop .icon.weather18 { background-position: -36.4rem -5.2rem;}
+.weather .weatherTop .icon.weather19 { background-position: -41.6rem -5.2rem;}
+.weather .weatherTop .icon.weather20 { background-position: -46.8rem -5.2rem;}
+.weather .weatherTop .icon.weather21 { background-position: 0 -10.4rem;}
 
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
@@ -340,10 +340,11 @@ table td { vertical-align: middle;}
 .legendTooltipLayer .legendTooltipBody .numerical li { flex: 1;}
 .legendTooltipLayer .legendTooltipBody .numerical li ~ li { margin-left: 0.4rem;}
 .legendTooltipLayer .legendTooltipBody .numerical li i { display: block; height: 0.4rem;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.lowness { background-color: #6684EA;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.caution { background-color: #4EC457;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.highness { background-color: #FEA60E;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.veryHighness { background-color: #FD7802;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.lowness { background-color: #32a2ff;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.normal { background-color: #01c73d;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.caution { background-color: #ffa60e;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.highness { background-color: #fd7803;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.danger { background-color: #e84548;}
 .legendTooltipLayer .legendTooltipBody .numerical li span { display: block; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 700; color: #aaa;}
 .legendTooltipLayer.show { display: block;}
 
@@ -1605,7 +1606,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weatherInfo li ~ li { margin-left: 0.4rem;}
 .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.2rem; color: #777;}
 .items-weatherInfo li .state { display: block; margin-top: 0.4rem; font-size: 1.2rem; color: #aaa; letter-spacing: -0.1em;}
-.items-weatherInfo li i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem; background: url(../image/common/split_weather_24.png) no-repeat 0 0/24rem 4.8rem;}
+.items-weatherInfo li i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem;}
 .items-weatherInfo li i.humidity { background-position-x: -2.4rem;}
 .items-weatherInfo li i.precipitation { background-position-x: -4.8rem;}
 .items-weatherInfo li i.wind { background-position-x: -7.2rem;}

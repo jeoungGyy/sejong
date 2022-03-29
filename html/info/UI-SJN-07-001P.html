@@ -87,7 +87,118 @@
 											<!-- 서브 - 날씨 -->
 											<div class="active">
 												<div class="overflowX">
-													<img src="../../public/image/temp/temp040.png" alt="날씨 디자인 샘플" style="width: 100%; height: auto;">
+													<ul class="items-weatherInfo weather wh24">
+														<li>
+															<span class="time">00시</span>
+															<i class="icon weather1">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather2">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather3">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather4">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather5">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather6">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather7">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather1">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather8">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather9">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather10">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather11">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather12">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather13">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather14">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather15">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather16">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather17">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather18">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather19">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather20">맑음</i>
+															<b>0℃</b>
+														</li>
+														<li>
+															<span class="time">01시</span>
+															<i class="icon weather21">맑음</i>
+															<b>0℃</b>
+														</li>
+													</ul>
 												</div>
 											</div>
 											<!-- //서브 - 날씨 -->
@@ -553,7 +664,7 @@
 												<div class="uvBody">
 													<div>
 														<h4>자외선지수</h4>
-														<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button>
+														<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip2', 'bottom');"><i>자외선지수 범례</i></button>
 													</div>
 													<p>보호조치가 별도로 필요 없으나, 민감한 분들은 자외선 차단에 유의하세요.</p>
 												</div>
@@ -638,16 +749,50 @@
 											<span>낮음</span>
 										</li>
 										<li>
-											<i class="caution"></i>
+											<i class="normal"></i>
 											<span>보통</span>
 										</li>
 										<li>
-											<i class="highness"></i>
+											<i class="caution"></i>
 											<span>높음</span>
 										</li>
 										<li>
-											<i class="veryHighness"></i>
+											<i class="highness"></i>
 											<span>매우높음</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button type="button" class="btnClose"><i>닫기</i></button>
+						</div>
+					</div>
+
+					<div id="tooltip2" class="legendTooltipLayer" tabindex="0">
+						<div class="legendTooltipBody">
+							<div>
+								<h4>자외선지수</h4>
+								<p>내용이 들어갑니다.</p>
+								<div>
+									<ul class="numerical">
+										<li>
+											<i class="lowness"></i>
+											<span>낮음</span>
+										</li>
+										<li>
+											<i class="normal"></i>
+											<span>보통</span>
+										</li>
+										<li>
+											<i class="caution"></i>
+											<span>높음</span>
+										</li>
+										<li>
+											<i class="highness"></i>
+											<span>매우높음</span>
+										</li>
+										<li>
+											<i class="danger"></i>
+											<span>위험</span>
 										</li>
 									</ul>
 								</div>
