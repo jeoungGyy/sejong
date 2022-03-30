@@ -167,7 +167,7 @@
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
 .mainArea .toVisit li a p { margin-top: 1.6rem;}
 .mainArea .toVisit .roundDeco { display: block; position: absolute; right: -7.1rem; bottom: -8.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #4EC457; border-radius: 50%;}
-.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 1.6rem;}
 .mainArea .dullegil a div { font-size: 1.3rem;}
 .mainArea .dullegil a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
 .mainArea .campingSite { margin-top: 2.4rem;}
