@@ -16,7 +16,7 @@
 .info .infoNav li a { display: flex; align-items: center; position: relative; height: 6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
 .info .infoNav li a.active { font-weight: 700; color: #fff;}
 .info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
-.info .menuSetting { display: flex; align-items: center; justify-content: flex-end; position: relative; z-index: 2; width: 4rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
+.info .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
 .info .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
 /* .stickyHeader .info .infoNav { position: fixed; top: 0; z-index: 200;} */
@@ -75,7 +75,7 @@
 .mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 0.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .body .citizen .issue >div .phone i { background-position: -24rem -19.2rem;}
 .mainArea .complaint .roundDeco { display: block; position: absolute; left: -11.6rem; top: -8.6rem; z-index: 1; width: 22rem; height: 22rem; background-color: #4EC457; border-radius: 50%;}
-.mainArea .complaint .roundDeco2 { display: block; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .complaint .roundDeco2 { display: none; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
 
 /* UI-SJN-03-002U */
 .mainArea .popular .boxArea { padding-bottom: 4rem;}

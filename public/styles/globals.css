@@ -367,7 +367,7 @@ table td { vertical-align: middle;}
 
 /* 하단고정 */
 .bottomFixed { position: relative; min-height: calc(100vh - 7.6rem); padding-bottom: 8rem;}
-.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; height: 7.8rem; margin-left: -2rem; padding: 0 2rem; background-color: #fff;}
+.bottomFixed .btnGroup { position: fixed; bottom: 0; width: 100%; height: 7.8rem; padding: 0 2rem; background-color: #fff;}
 .bottomFixed .btnGroup .arrowRight { width: 2.4rem; height: 2.4rem; margin-left: 0.2rem; background: url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .bottomFixed .btnGroup .twins { display: flex; align-items: center; justify-content: space-between;}
 .bottomFixed .btnGroup .twins button:last-child { margin-left: 0.8rem;}
@@ -781,8 +781,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
 .locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
-.locationLayer .locationHeader .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
-.locationLayer .locationHeader .sale .discount { color: #FD2020;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
 .locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; height: 4rem; color: #aaa;}
@@ -839,22 +837,28 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .basic .dustBody >div .level span { font-size: 1.6rem; font-weight: 700;}
 .locationLayer .basic .offerer { margin-bottom: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .locationLayer .detail { padding: 0.2rem 2rem 2.4rem;}
-.locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem;}
+.locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 0.4rem;}
 .locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400;}
 .locationLayer .detail h4 .normal { margin-left: 0.8rem; color: #4EC457;}
 .locationLayer .detail h4 .breakdown { margin-left: 0.8rem; color: #FD2020;}
 .locationLayer .detail h4 .partialBreakdown { margin-left: 0.8rem; color: #A9B0C1;}
 .locationLayer .detail h4 .totalBreakdown { margin-left: 0.8rem; color: #555;}
 .locationLayer .detail h4.first { margin-top: 0;}
-.locationLayer .detail >div p { position: relative; margin-top: 0.8rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
+.locationLayer .detail h4 .roundBox { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; margin-left: 0.8rem; vertical-align: middle; border: 1px solid #ddd; border-radius: 50%;}
+.locationLayer .detail h4 .roundBox .icon { margin: 0;}
+.locationLayer .detail >div p { position: relative; margin-top: 0.4rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .locationLayer .detail >div p.blet { padding-left: 1.6rem;}
 .locationLayer .detail >div p.blet::after { content: ''; position: absolute; left: 0.6rem; top: 1rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .locationLayer .detail >div p .textMore { display: inline-block; color: #6684EA; vertical-align: baseline;}
 .locationLayer .detail >div p .textMore i { margin-top: -0.3rem; vertical-align: middle; background-position: -38.4rem -9.6rem;}
+.locationLayer .detail >div p .icon { margin-top: -0.4rem; vertical-align: middle;}
 .locationLayer .detail .detailbtn a { display: flex; align-items: center; position: relative; height: 4.8rem; margin-top: 1.6rem; padding: 0 1.6rem; font-size: 1.6rem; color: #111; border: 1px solid #ddd;}
 .locationLayer .detail .detailbtn a::after { content: ''; display: block; position: absolute; right: 1.6rem; top: 1.6rem; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
-.locationLayer .detail .flex { display: flex; align-items: center; min-height: 3.6rem;}
+.locationLayer .detail .flex { display: flex; align-items: center; position: relative; min-height: 3.6rem;}
 .locationLayer .detail .flex h4 { height: inherit; margin: 0 0.8rem 0 0;}
+.locationLayer .detail .flex .sale { position: absolute; right: 0; top: 0.6rem;}
+.locationLayer .detail .flex .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
+.locationLayer .detail .flex .sale .discount { color: #FD2020;}
 .locationLayer .detail .flex >div p { margin-top: 0; font-size: 1.5rem; color: #535353;}
 .locationLayer .detail .flex >div p.paid { color: #FD2020;}
 .locationLayer .detail .flex >div p.free { color: #6684EA;}
@@ -1648,30 +1652,51 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-wordList ul li button img { width: 2.4rem; height: 2.4rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle;}
 .items-wordList ul li button.active { color: #fff; background-color: #6684EA;}
 
-.items-placeList { display: flex; align-items: center; overflow: hidden; height: 4.8rem; margin: 0 -1.2rem 0; padding: 0 1.2rem;}
+.items-placeList { display: flex; align-items: center; overflow: hidden; height: 4.8rem; margin: 0 -2rem 0;;}
+.items-placeList >ul,
+.items-placeList >div { padding: 0 2rem;}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 .items-placeList ul li select { height: 3.6rem; padding-left: 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
 .items-placeList ul li select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
+.items-placeList ul li select.active 
+.locationLayer .detail .icon,
 .map .gasStation .commIco24 i,
-.items-placeList ul li .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/map/split_gas_station.png) no-repeat 0 0/cover;}
+.items-placeList ul li .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/map/split_gas_station.png) no-repeat 0 0/26.4rem 2.4rem;}
+.locationLayer .detail .icon.gs,
 .map .gasStation .commIco24.gs i,
-.items-placeList ul li .icon.gs { background-position-x: 0;}
+.items-placeList ul li .icon.gs { background-position-x: 0;} /* GS */
+.locationLayer .detail .icon.skE,
 .map .gasStation .commIco24.skE i,
-.items-placeList ul li .icon.skE { background-position-x: -2.4rem;}
+.items-placeList ul li .icon.skE { background-position-x: -2.4rem;} /* SK에너지 */
+.locationLayer .detail .icon.hyundai,
 .map .gasStation .commIco24.hyundai i,
-.items-placeList ul li .icon.hyundai { background-position-x: -4.8rem;}
+.items-placeList ul li .icon.hyundai { background-position-x: -4.8rem;} /* 현대 */
+.locationLayer .detail .icon.soil,
 .map .gasStation .commIco24.soil i,
-.items-placeList ul li .icon.soil { background-position-x: -7.2rem;}
+.items-placeList ul li .icon.soil { background-position-x: -7.2rem;} /* S오일 */
+.locationLayer .detail .icon.thrifty,
 .map .gasStation .commIco24.thrifty i,
-.items-placeList ul li .icon.thrifty { background-position-x: -9.6rem;}
+.items-placeList ul li .icon.thrifty { background-position-x: -9.6rem;} /* 알뜰 */
+.locationLayer .detail .icon.skG,
 .map .gasStation .commIco24.skG i,
-.items-placeList ul li .icon.skG { background-position-x: -12rem;}
+.items-placeList ul li .icon.skG { background-position-x: -12rem;} /* SK가스 */
+.locationLayer .detail .icon.e1,
 .map .gasStation .commIco24.e1 i,
-.items-placeList ul li .icon.e1 { background-position-x: -14.4rem;}
+.items-placeList ul li .icon.e1 { background-position-x: -14.4rem;} /* E1 */
+.locationLayer .detail .icon.other,
 .map .gasStation .commIco24.other i,
-.items-placeList ul li .icon.other { background-position-x: -16.8rem;}
+.items-placeList ul li .icon.other { background-position-x: -16.8rem;} /* 기타 정유사 */
+.locationLayer .detail .icon.thriftyNH,
+.map .gasStation .commIco24.thriftyNH i,
+.items-placeList ul li .icon.thriftyNH { background-position-x: -19.2rem;} /* 알뜰 농협 */
+.locationLayer .detail .icon.ex,
+.map .gasStation .commIco24.ex i,
+.items-placeList ul li .icon.ex { background-position-x: -21.6rem;} /* ex oil */
+.locationLayer .detail .icon.nc,
+.map .gasStation .commIco24.nc i,
+.items-placeList ul li .icon.nc { background-position-x: -24rem;} /* nc */
 .items-placeList ul.inline { display: flex; align-items: center;}
 .items-placeList ul.inline li { margin-right: 0.8rem;}
 

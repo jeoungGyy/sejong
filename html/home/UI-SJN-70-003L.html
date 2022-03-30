@@ -17,40 +17,45 @@
 			<!-- 모바일 내용 -->
 			<div id="root">
 				<div class="container">
-					<!-- 공통: 서브 헤더 -->
-					<script src="../include/header_sub.js"></script>
-					<!-- //공통: 서브 헤더 -->
 			
-					<!-- 본문 -->
-					<main class="contents mypage">
-						<h2 class="visible"><span class="headerClone">메뉴</span></h2> <!-- [헤더에 넣어줄 제목] -->
-						
-						<div class="mypageWrap">
-							<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
-								<div class="mypageArea">
-									<ul class="menuAddList">
-										<li>
-											<input type="text" placeholder="메뉴명" />
-											<input type="tel" class="textRight" placeholder="금액" />
-										</li>
-										<li>
-											<input type="text" placeholder="메뉴명" />
-											<input type="tel" class="textRight" placeholder="금액" />
-											<button type="button" class="pnRemove"><i class="split24">두번째 메뉴 삭제</i></button>
-										</li>
-									</ul>
-									<div class="pnAddGroup">
-										<button type="button" class="pnAdd"><i class="split20"></i>메뉴 추가</button>
+					<!-- 레이어 -->
+					<div id="UI-SJN-70-003L" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>메뉴</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex">
+								<div class="bottomFixed"> <!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+									<div class="mypageArea">
+										<ul class="menuAddList">
+											<li>
+												<input type="text" placeholder="메뉴명" />
+												<input type="tel" class="textRight" placeholder="금액" />
+											</li>
+											<li>
+												<input type="text" placeholder="메뉴명" />
+												<input type="tel" class="textRight" placeholder="금액" />
+												<button type="button" class="pnRemove"><i class="split24">두번째 메뉴 삭제</i></button>
+											</li>
+										</ul>
+										<div class="pnAddGroup">
+											<button type="button" class="pnAdd"><i class="split20"></i>메뉴 추가</button>
+										</div>
 									</div>
-								</div>
-			
-								<div class="btnGroup">
-									<button type="button" class="button blue noShadow">완료</button>
+				
+									<div class="btnGroup">
+										<button type="button" class="button blue noShadow">완료</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</main>
-					<!-- //본문 -->
+					</div>
+					<script>
+						layerPopup.open('UI-SJN-70-003L');
+					</script>
+					<!-- //레이어 -->
+
 				</div>
 			</div>
 			<!-- //모바일 내용 -->

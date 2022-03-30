@@ -350,36 +350,35 @@
 **********************************************/
 
 /* UI-SJN-70-002L */
-.mypage .openingGuide { margin-top: 1.6rem; font-size: 1.4rem; color: #aaa;}
-.mypage .openingList { margin-top: 2.2rem;}
-.mypage .openingList li { display: flex; align-items: center; height: 4.8rem;}
-.mypage .openingList li .chechbox { position: relative; width: 6rem;}
-.mypage .openingList li .chechbox input { position: absolute; opacity: 0;}
-.mypage .openingList li .chechbox input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.mypage .openingList li .chechbox label { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.2rem; font-weight: 700; border: 1px solid #ddd; border-radius: 0.4rem; transition: all .3s ease-in-out; cursor: pointer;}
-.mypage .openingList li .timeInput { flex: 1;}
-.mypage .openingList li .timeInput button { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
-.mypage .openingList li .timeInput button.active { color: #111; border-color: #6684EA;}
-
-/* UI-SJN-70-002L */
-.mypage .menuAddList { margin-top: 1.6rem;}
-.mypage .menuAddList li { display: flex; align-items: center; position: relative; padding-right: 3.2rem;}
-.mypage .menuAddList li ~ li { margin-top: 0.8rem;}
-.mypage .menuAddList li input[type=tel] { margin-left: 0.8rem;}
-.mypage .menuAddList li .pnRemove { position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background-color: #EAEDF2; border-radius: 50%;}
-.mypage .menuAddList li .pnRemove i { text-indent: -9999rem; background-position: -26.4rem -2.4rem;}
-.mypage .pnAddGroup .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; font-size: 1.6rem; border: 1px solid #6684EA;}
-.mypage .pnAddGroup .pnAdd  i { margin-right: 0.4rem; vertical-align: middle; background-position: -6rem -4rem;}
+.layerPopup .bottomFixed .mypageArea { padding: 0 2rem 4rem;}
+.openingGuide { margin-top: 1.6rem; font-size: 1.4rem; color: #aaa;}
+.openingList { margin-top: 2.2rem;}
+.openingList li { display: flex; align-items: center; height: 4.8rem;}
+.openingList li .chechbox { position: relative; width: 6rem;}
+.openingList li .chechbox input { position: absolute; opacity: 0;}
+.openingList li .chechbox input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.openingList li .chechbox label { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.2rem; font-weight: 700; border: 1px solid #ddd; border-radius: 0.4rem; transition: all .3s ease-in-out; cursor: pointer;}
+.openingList li .timeInput { flex: 1;}
+.openingList li .timeInput button { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
+.openingList li .timeInput button.active { color: #111; border-color: #6684EA;}
+.menuAddList { margin-top: 1.6rem;}
+.menuAddList li { display: flex; align-items: center; position: relative; padding-right: 3.2rem;}
+.menuAddList li ~ li { margin-top: 0.8rem;}
+.menuAddList li input[type=tel] { margin-left: 0.8rem;}
+.menuAddList li .pnRemove { position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background-color: #EAEDF2; border-radius: 50%;}
+.menuAddList li .pnRemove i { text-indent: -9999rem; background-position: -26.4rem -2.4rem;}
+.pnAddGroup .pnAdd  i { margin-right: 0.4rem; vertical-align: middle; background-position: -6rem -4rem;}
+.pnAddGroup .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; font-size: 1.6rem; border: 1px solid #6684EA;}
 
 /* UI-SJN-70-004L */
-.mypage .menuSelectList { margin-top: 1.6rem;}
-.mypage .menuSelectList li { display: flex; align-items: center; justify-content: space-between; height: 5.2rem;}
-.mypage .menuSelectList li b { font-size: 1.6rem;}
-.mypage .menuSelectList li >div { display: flex; align-items: center;}
-.mypage .menuSelectList li >div .por { position: relative;}
-.mypage .menuSelectList li >div .por input { position: absolute; opacity: 0;}
-.mypage .menuSelectList li >div .por input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.mypage .menuSelectList li >div .por label { display: flex; align-items: center; justify-content: center; width: 5.6rem; height: 3.6rem; margin-left: -0.1rem; font-size: 1.4rem; font-weight: 700; color: #aaa; border: 1px solid #ddd; transition: all .3s ease-in-out; cursor: pointer;}
+.menuSelectList { margin-top: 1.6rem;}
+.menuSelectList li { display: flex; align-items: center; justify-content: space-between; height: 5.2rem;}
+.menuSelectList li b { font-size: 1.6rem;}
+.menuSelectList li >div { display: flex; align-items: center;}
+.menuSelectList li >div .por { position: relative;}
+.menuSelectList li >div .por input { position: absolute; opacity: 0;}
+.menuSelectList li >div .por input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.menuSelectList li >div .por label { display: flex; align-items: center; justify-content: center; width: 5.6rem; height: 3.6rem; margin-left: -0.1rem; font-size: 1.4rem; font-weight: 700; color: #aaa; border: 1px solid #ddd; transition: all .3s ease-in-out; cursor: pointer;}
 
 /* 잠금설정 - UI-SJN-80-003 */
 .mypage .mypageArea { padding: 0 2rem 4rem;}
