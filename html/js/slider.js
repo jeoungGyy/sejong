@@ -37,7 +37,7 @@ const slideOpt = {
 	/* UI-SJN-01-001U */
 	homeNavSwiper: {
     slidesPerView: 'auto',
-		spaceBetween: 8,
+		spaceBetween: 20,
 	},
 	mainNewsSwiper: {
 		spaceBetween: 16,

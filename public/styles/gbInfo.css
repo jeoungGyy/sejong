@@ -16,7 +16,7 @@
 .info .infoNav li a { display: flex; align-items: center; position: relative; height: 6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
 .info .infoNav li a.active { font-weight: 700; color: #fff;}
 .info .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;}
-.info .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 6rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
+.info .menuSetting { display: flex; align-items: center; justify-content: flex-end; position: relative; z-index: 2; width: 4rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
 .info .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
 /* .stickyHeader .info .infoNav { position: fixed; top: 0; z-index: 200;} */

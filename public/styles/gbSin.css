@@ -30,9 +30,12 @@
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
-.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0 2rem;}
-.recentService .homeNav ul li { width: 7.2rem; padding: 0.8rem 0 2rem;}
-.recentService .homeNav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 7.2rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; text-align: center; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
+.recentService .homeNav ul li { width: 5rem;}
+.recentService .homeNav ul li a { display: block; text-align: center;}
+.recentService .homeNav ul li a .roundBox { display: flex; align-items: center; justify-content: center; width: 100%; height: 5rem; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem;}
+.recentService .homeNav ul li a p { overflow: hidden; height: 4rem; margin-top: 0.6rem; font-size: 1.3rem; color: #555; text-align: center;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 /* .mainArea .recentService { margin-top: 6rem;}
 .mainArea .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
@@ -81,6 +84,7 @@
 .mainArea .covid19 .infectionBtn span { display: flex; align-items: center; font-size: 1.4rem; color: #333;}
 .mainArea .covid19 .infectionBtn span i { margin-right: 0.4rem; vertical-align: middle; background-position: 0 -19.2rem;}
 .mainArea .covid19 .infectionBtn b { font-size: 1.6rem;}
+.mainArea .weatherBox { margin-top: 2rem;}
 .mainArea .weatherBox .boxArea { padding-top: 1.8rem;}
 .mainArea .weatherBox .roundDeco { display: none; position: absolute; left: -16rem; top: -13rem; z-index: 1;}
 .mainArea .weatherBox .roundDeco path { fill: #6684ea}
