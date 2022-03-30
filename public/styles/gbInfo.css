@@ -11,7 +11,7 @@
 .decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;} */
 
 .info .infoNav { display: flex; position: relative; top: 0; z-index: 200; width: 100%; background-color: #4EC457; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%);}
-.info .infoNav .slideContainer { overflow: hidden; display: flex; flex: 1; margin-left: 0;}
+.info .infoNav .slideContainer { overflow: hidden; display: flex; flex: 1; margin-left: 0; padding-right: 1.6rem;}
 .info .infoNav li { width: auto;}
 .info .infoNav li a { display: flex; align-items: center; position: relative; height: 6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
 .info .infoNav li a.active { font-weight: 700; color: #fff;}
@@ -167,8 +167,8 @@
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
 .mainArea .toVisit li a p { margin-top: 1.6rem;}
 .mainArea .toVisit .roundDeco { display: block; position: absolute; right: -7.1rem; bottom: -8.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #4EC457; border-radius: 50%;}
-.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 1.6rem;}
-.mainArea .dullegil a div { font-size: 1.3rem;}
+.mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.4rem; padding-left: 3.2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 1.6rem;}
+.mainArea .dullegil a div { font-size: 1.5rem;}
 .mainArea .dullegil a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
 .mainArea .campingSite { margin-top: 2.4rem;}
 .mainArea .campingSite .boxArea { padding-bottom: 3rem;}
