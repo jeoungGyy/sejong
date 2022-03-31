@@ -62,7 +62,7 @@ const slideOpt = {
 	/* UI-SJN-03-001U */
 	infoNavSwiper: {
     slidesPerView: 'auto',
-		spaceBetween: 12,
+		spaceBetween: 20,
 	},
 	/* UI-SJN-03-005U */
 	infoToVisitSwiper: {
