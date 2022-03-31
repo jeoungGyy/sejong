@@ -65,7 +65,7 @@ const mapInfo = {
 			const mapInfoLayer = document.querySelector(".mapInfoLayer");
 
 			startTouch.addEventListener('touchstart', mapInfo.start);
-			mapInfoLayer.addEventListener("mousedown", mapInfo.start);
+			// mapInfoLayer.addEventListener("mousedown", mapInfo.start);
 
 			mapInfo.locationPosition = Math.floor(mapInfoLayer.getBoundingClientRect().height);
 
@@ -105,7 +105,7 @@ const mapInfo = {
 		mapInfo.startY = event.clientY ?? event.touches[0].pageY;
 
 		startTouch.addEventListener('touchmove', mapInfo.move);
-		mapInfoLayer.addEventListener("mousemove", mapInfo.move);
+		// mapInfoLayer.addEventListener("mousemove", mapInfo.move);
 	},
 	move : (event) => {
 		// event.preventDefault()
@@ -117,7 +117,7 @@ const mapInfo = {
 		mapInfoLayer.style.setProperty('--vh', vh+'px');
 
 		startTouch.addEventListener('touchend', mapInfo.end);
-		mapInfoLayer.addEventListener("mouseup", mapInfo.end);
+		// mapInfoLayer.addEventListener("mouseup", mapInfo.end);
 	},
 	end : (event) => {
 		const mapInfoLayer = document.querySelector(".mapInfoLayer");
@@ -184,7 +184,7 @@ const mapInfo = {
 		
 		setTimeout(()=>{
 			startTouch.removeEventListener("touchmove", mapInfo.move);
-			mapInfoLayer.removeEventListener("mousemove", mapInfo.move);
+			// mapInfoLayer.removeEventListener("mousemove", mapInfo.move);
 			mapInfoLayer.style.setProperty('--vh', '0px');
 		},10);
 	},

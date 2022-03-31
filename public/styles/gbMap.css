@@ -54,6 +54,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .radioGroup input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 
 .map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; padding: 0 2rem 10rem;}
+.map .mapInfoLayer .myArea >section + section { margin: 0 -2rem; padding: 1.5rem 2rem; border-top: 0.6rem solid #F4F5F7;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
@@ -190,11 +191,12 @@ body { --vh: 1px;}
 .mapIcons .fineDustIco.fineDustIco i.dust { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -12rem; border-radius: 50%;}
 .mapIcons .fineDustIco.fineDustIco i.government { margin-right: 0.8rem; background-color: #fff; background-position: -40.8rem -9.6rem; border-radius: 50%;}
 .mapIcons .busStop button.busStopIco i { border: 1px solid #7A8193; background-color: #8B92A2; background-position: -45.7rem -9.7rem; border-radius: 50%;}
-.mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute; }
+.mapIcons .busStop .busIco { display: flex; justify-content: center; position: absolute;}
 .mapIcons .busStop .busIco i { width: 2.4rem; height: 2.8rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; font-weight: 700; color: #fff; z-index: 3; }
-.mapIcons .targer { position: absolute; z-index: 1; width: 2.4rem; height: 2.8rem;}
+.mapIcons .busStop .busIco b { position: absolute; left: 50%; top: -2.4rem; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 0.6rem 0.4rem; font-family: var(--fontRoboto); font-size: 1.2rem; color: #fff; background-color: rgb(0 0 0 / 80%); border-radius: 0.4rem; transform: translateX(-50%);}
+.mapIcons .busStop .busIco b::after { content: ''; position: absolute; left: 50%; top: 2.6rem; z-index: 10; width: 0.1rem; height: 1rem; background-color: rgb(0 0 0 / 80%);}
+.mapIcons .targer { position: absolute; z-index: 1; width: 2.4rem; height: 2.6rem;}
 .mapIcons .targer::before { content: ''; display: block; position: absolute; left: -2.9rem; top: -2.7rem; width: 8rem; height: 8rem; background-color: rgba(17 17 17 / 15%); border-radius: 50%; animation: lds-scale 2s linear infinite;}
-.mapIcons .targer::after { content: ''; display: block; position: absolute; left: -0.9rem; top: -0.7rem; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%;}
 @keyframes lds-scale {
   0% { transform: scale(0); opacity: 1;}
   30% { transform: scale(0.8); opacity: 1;}
