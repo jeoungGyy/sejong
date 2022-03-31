@@ -156,6 +156,7 @@
 .mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; position: relative; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
 .mainArea .mainNews .mainNewsList .slideContainer li a figure { position: initial; background: inherit !important;}
 .mainArea .mainNews .mainNewsList .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
+.mainArea .mainNews .mainNewsList .slideContainer li a p { padding: 0 2rem; font-size: 1.8rem;}
 .mainArea .mainNews .mainNewsPiece { margin: 3.2rem -1.6rem 0;}
 .mainArea .mainNews .mainNewsPiece .slideContainer { overflow: hidden; padding: 0 1.6rem;}
 .mainArea .mainNews .mainNewsPiece li { width: 14rem;}

@@ -1606,18 +1606,18 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .uvBody p { margin-top: 0.4rem; color: #555; line-height: 2rem;}
 
 .items-weatherInfo { display: inline-flex; margin-top: 0.8rem; align-items: center; text-align: center;}
-.items-weatherInfo li { flex: 1 1 auto; width: 4.4rem;}
+.items-weatherInfo li { flex: 1 1 auto; width: 5rem;}
 .items-weatherInfo li ~ li { margin-left: 0.4rem;}
 .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.2rem; color: #777;}
 .items-weatherInfo li .state { display: block; margin-top: 0.4rem; font-size: 1.2rem; color: #aaa; letter-spacing: -0.1em;}
-.items-weatherInfo li i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem;}
+.items-weatherInfo li i { overflow: hidden; display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem;}
 .items-weatherInfo li i.humidity { background-position-x: -2.4rem;}
 .items-weatherInfo li i.precipitation { background-position-x: -4.8rem;}
 .items-weatherInfo li i.wind { background-position-x: -7.2rem;}
 .items-weatherInfo li b { display: block; font-size: 1.3rem; color: #32BBED;}
 .items-weatherInfo li b.force { color: #8D9ABA;}
 .items-weatherInfo li.now .time { border: 1px solid #32BBED; border-radius: 1.2rem;}
-.items-weatherInfo.weather li { flex: 1; width: auto;}
+/* .items-weatherInfo.weather li { flex: 1; width: auto;} */
 .items-weatherInfo.weather li ~ li { margin-left: 0;}
 .items-weatherInfo.weather li .temperature { display: flex; flex-direction: column;}
 .items-weatherInfo.weather li .temperature div ~ div { position: relative; margin-top: 1.4rem;}
