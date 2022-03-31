@@ -27,7 +27,7 @@
 .mainArea .flex .mapLink i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -26.4rem -19.2rem;}
 .mainArea .iconLinks li a { display: block; text-align: center;}
 .mainArea .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
-.mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto;}
+.mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto; background-color: #F4F5F7;}
 .mainArea .iconLinks.space3 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(3, 1fr);}
 .mainArea .iconLinks.space3 li a img { width: 8rem; height: 8rem;}
 .mainArea .iconLinks.space3 li a p { font-size: 1.6rem;}
@@ -65,7 +65,7 @@
 .mainArea .complaint .body .citizen .write .line >div b { display: block; margin-top: 0.8rem; font-size: 1.4rem;}
 .mainArea .complaint .body .citizen .write .complaintImg { position: absolute; right: 0; bottom: 0; width: 6.665rem; height: 7.2rem;} 
 .mainArea .complaint .body .citizen .issue { width: calc(50% - 0.8rem);}
-.mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.2rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.2rem 1.6rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div a b { color: #111;}
 .mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
@@ -145,7 +145,7 @@
 .mainArea .culturalLife .culturalBtns { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem;}
 .mainArea .culturalLife .culturalBtns a { display: flex; align-items: center; justify-content: center; width: calc(50% - 0.4rem); height: 5.2rem; font-size: 1.6rem; color: #111; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .culturalLife .culturalBtns a.infoCalendar i { margin-right: 0.4rem; background-position: -31.2rem -19.2rem;}
-.mainArea .culturalLife .culturalBtns a.infoEvent i { margin-right: 0.4rem; background-position: -2.4rem -4.8rem;}
+.mainArea .culturalLife .culturalBtns a.infoEvent i { margin-right: 0.4rem; background-position: -38.4rem -4.8rem;}
 .mainArea .culturalLife h4 { margin-top: 2.4rem; font-size: 1.6rem;}
 .mainArea .culturalLife .links { display: grid; gap: 1.8rem 0.8rem; grid-template-columns: repeat(3, 1fr); margin-top: 1.8rem;}
 .mainArea .culturalLife .links li { width: calc();}
