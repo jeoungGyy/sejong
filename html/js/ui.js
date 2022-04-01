@@ -72,8 +72,6 @@ const mapInfo = {
 			const myLocation = document.querySelector(".myLocation");
 			const scaleBtn = document.querySelector(".scaleBtn");
 
-			console.log(mapInfo.locationPosition)
-
 			if(myLocation) {
 				myLocation.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
 				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
@@ -138,7 +136,6 @@ const mapInfo = {
 			if(mapInfo.startY - mapInfo.endY > 30) {
 				mapInfoLayer.classList.add('up');
 				btnView && btnView.classList.add('up');
-				console.log(3)
 			}
 		} else {
 			if(mapInfo.startY - mapInfo.endY < -30) {
@@ -635,7 +632,6 @@ const parkingTip = {
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(btnParking, (_this, idx)=>{
-				console.log(7)
 				if(_this.classList.contains('active')) {
 					_this.classList.remove('active');
 				}
