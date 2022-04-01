@@ -30,12 +30,15 @@
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
-.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
-.recentService .homeNav ul li { width: 5rem;}
-.recentService .homeNav ul li a { display: block; text-align: center;}
-.recentService .homeNav ul li a .roundBox { display: flex; align-items: center; justify-content: center; width: 100%; height: 5rem; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.recentService .homeNav { position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
+.recentService .homeNav ul li { width: auto; max-width: 13rem;}
+.recentService .homeNav ul li a { display: block; position: relative; text-align: center;}
+.recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2rem; height: 2rem; font-family: var(--fontRoboto); font-size: 1.1rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
+.recentService .homeNav ul li a .roundBox { display: flex; align-items: center; justify-content: center; width: 100%; height: 7rem; padding: 0 1rem 0 0.6rem; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
 .recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem;}
-.recentService .homeNav ul li a p { overflow: hidden; height: 4rem; margin-top: 0.6rem; font-size: 1.3rem; color: #555; text-align: center;}
+.recentService .homeNav ul li a .roundBox .textGroup { display: flex; flex-direction: column; margin-left: 0.6rem; text-align: left;}
+.recentService .homeNav ul li a .roundBox .text { font-size: 1.4rem; color: #111;}
+.recentService .homeNav ul li a .roundBox .subText { font-size: 1.3rem; color: #555;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 /* .mainArea .recentService { margin-top: 6rem;}
 .mainArea .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
@@ -245,10 +248,27 @@
 .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenu .mainMenuList ul li.active a .icon { display: none;}
 .chatbot { display: flex; justify-content: flex-end; position: fixed; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 100%; padding-right: 2rem; transition: bottom .3s ease-in-out;}
-.chatbot .chatbotBtn { display: flex; align-items: center; justify-content: flex-end; width: 26.5rem; height: 5.4rem; padding: 0 1rem 0 2rem; background-color: #fff; box-shadow: 0 0.3rem 1rem rgba(0 0 0 / 15%); border-radius: 2.7rem; animation: chatbotAni 0.5s 8.2s forwards ease; transition: all .3s ease-in-out;}
-.chatbot .chatbotBtn b { display: flex; align-items: center; flex: 1; overflow: hidden; white-space: nowrap; width: 100%; height: 5.4rem; animation: chatbotAniText 0.5s 8s forwards ease; transition: all .3s ease-in-out; opacity: 1;}
+.chatbot .chatbotBtn { display: flex; align-items: center; justify-content: flex-end; width: 26.5rem; height: 5.4rem; padding: 0 1rem 0 2rem; background-color: #fff; box-shadow: 0 0.3rem 1rem rgba(0 0 0 / 15%); border-radius: 2.7rem; animation: chatbotAni 0.5s forwards ease; transition: all .3s ease-in-out;}
+.chatbot .chatbotBtn b { display: flex; align-items: center; flex: 1; overflow: hidden; white-space: nowrap; width: 100%; height: 5.4rem; animation: chatbotAniText 0.5s forwards ease; transition: all .3s ease-in-out; opacity: 1;}
 .chatbot .chatbotBtn .chatbotIcon { display: inline-block; width: 3.3rem; height: 4.2rem; vertical-align: middle; background: url(../image/common/sub010301_character23.jpg) no-repeat center/cover;}
 .chatbot.bottom { bottom: calc(9rem + env(safe-area-inset-bottom));}
+.chatbot.second3 .chatbotBtn { animation-delay: 3.2s;}
+.chatbot.second3 .chatbotBtn b { animation-delay: 3s;}
+.chatbot.second4 .chatbotBtn { animation-delay: 4.2s;}
+.chatbot.second4 .chatbotBtn b { animation-delay: 4s;}
+.chatbot.second5 .chatbotBtn { animation-delay: 5.2s;}
+.chatbot.second5 .chatbotBtn b { animation-delay: 5s;}
+.chatbot.second5 .chatbotBtn { animation-delay: 6.2s;}
+.chatbot.second5 .chatbotBtn b { animation-delay: 6s;}
+.chatbot.second7 .chatbotBtn { animation-delay: 7.2s;}
+.chatbot.second7 .chatbotBtn b { animation-delay: 7s;}
+.chatbot.second8 .chatbotBtn { animation-delay: 8.2s;}
+.chatbot.second8 .chatbotBtn b { animation-delay: 8s;}
+.chatbot.second9 .chatbotBtn { animation-delay: 9.2s;}
+.chatbot.second9 .chatbotBtn b { animation-delay: 9s;}
+.chatbot.second10 .chatbotBtn { animation-delay: 10.2s;}
+.chatbot.second10 .chatbotBtn b { animation-delay: 10s;}
+
 @keyframes chatbotAni {
   100%{ width: 5.4rem; padding: 0 1rem;}
 }

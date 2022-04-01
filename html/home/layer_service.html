@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+					<!-- 레이어 -->
+					<div id="layerService" class="layerPopup">
+						<div class="layerWrap typeBot layerGoNotice">
+							<div class="layerService">
+								<div class="serviceLogo">
+									<img src="../../public/image/map/sejong_text_img.png" alt="세종엔">
+								</div>
+								<div class="serviceBody">
+									<img src="../../public/image/common/service_img.png" alt="">
+									<div class="pGroup">
+										<p>서비스 준비중입니다.</p>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</div>
+					</div>
+			
+					<script>
+						layerPopup.open('layerService');
+					</script>
+					<!-- //레이어 -->
+			
+			
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
