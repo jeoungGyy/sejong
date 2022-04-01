@@ -427,7 +427,7 @@ span.M { background-color: #FD2020;}
 .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
 .mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.8rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-50%);}
 .mapMenuLayer .mapMenuBody .parkingName b { display: flex; justify-content: center; min-height: 1.8rem; font-size: 1.6rem;}
-.mapMenuLayer .mapMenuBody .parkingName b.t { overflow: hidden; height: 4.5rem;}
+.mapMenuLayer .mapMenuBody .parkingName b.t { overflow: hidden; max-height: 4.5rem;}
 .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.6rem;}
 .mapMenuLayer.ready { z-index: 90; transform: translate(-44.5%, -46%) scale(0);}
 .mapMenuLayer.show { opacity: 1; transform: translate(-50%, -50%) scale(0.8);}
