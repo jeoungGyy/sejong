@@ -31,14 +31,14 @@
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
 .recentService .homeNav { position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
-.recentService .homeNav ul li { width: auto; max-width: 13rem;}
-.recentService .homeNav ul li a { display: block; position: relative; text-align: center;}
-.recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2rem; height: 2rem; font-family: var(--fontRoboto); font-size: 1.1rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
-.recentService .homeNav ul li a .roundBox { display: flex; align-items: center; justify-content: center; width: 100%; height: 7rem; padding: 0 1rem 0 0.6rem; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
-.recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem;}
-.recentService .homeNav ul li a .roundBox .textGroup { display: flex; flex-direction: column; margin-left: 0.6rem; text-align: left;}
-.recentService .homeNav ul li a .roundBox .text { font-size: 1.4rem; color: #111;}
-.recentService .homeNav ul li a .roundBox .subText { font-size: 1.3rem; color: #555;}
+.recentService .homeNav ul li { width: auto; min-width: 9.2rem;}
+.recentService .homeNav ul li a { display: block; position: relative; color: #111; text-align: center;}
+.recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2.4rem; height: 2.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
+.recentService .homeNav ul li a .text { font-size: 1.6rem;}
+.recentService .homeNav ul li a .roundBox { width: 100%; height: 10.2rem; padding: 2.4rem 1.6rem 0; text-align: center; white-space: nowrap; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem;}
+.recentService .homeNav ul li a .roundBox .textGroup { display: flex; align-items: center; margin-top: 0.8rem;}
+.recentService .homeNav ul li a .roundBox .subText { font-size: 1.4rem; color: #555;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 /* .mainArea .recentService { margin-top: 6rem;}
 .mainArea .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 0.8rem 2rem 4rem;}
@@ -114,6 +114,8 @@
 .mainArea .weatherBox .accordionTarget .tabContent { height: 16rem;}
 .mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
 .mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX { overflow-x: auto; overflow-y: hidden; padding: 0 0 1.4rem; scroll-behavior: smooth;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .items-weatherInfo li { width: auto;}
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
 .mainArea .weatherBox .anniversary span { font-size: 1.6rem;}
@@ -380,8 +382,8 @@
 .openingList li .chechbox input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 .openingList li .chechbox label { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.2rem; font-weight: 700; border: 1px solid #ddd; border-radius: 0.4rem; transition: all .3s ease-in-out; cursor: pointer;}
 .openingList li .timeInput { flex: 1;}
-.openingList li .timeInput button { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
-.openingList li .timeInput button.active { color: #111; border-color: #6684EA;}
+.openingList li .timeInput span { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
+.openingList li .timeInput span.active { color: #111; border-color: #6684EA;}
 .menuAddList { margin-top: 1.6rem;}
 .menuAddList li { display: flex; align-items: center; position: relative; padding-right: 3.2rem;}
 .menuAddList li ~ li { margin-top: 0.8rem;}

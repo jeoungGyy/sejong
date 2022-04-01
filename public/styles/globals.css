@@ -100,7 +100,7 @@ input[type=search]::placeholder,
 input[type=url]::placeholder,
 input[type=tel]::placeholder,
 textarea::placeholder { font-weight: 400; letter-spacing: -0.04em;}
-button { border:0 none; padding:0; margin:0; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+button { border:0 none; padding:0; margin:0; font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Noto Sans KR", "Microsoft NeoGothic ", sans-serif; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
 textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.4rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
@@ -237,27 +237,27 @@ table td { vertical-align: middle;}
 .weather .windDirec.direc6 { background: url(../image/common/icon-wind-direc-06.png) no-repeat center/cover;}
 
 .weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 7.2rem;}
-.weather.wh24  .icon.weather1 { background-position: 0 0;}
-.weather.wh24  .icon.weather2 { background-position: -2.4rem 0;}
-.weather.wh24  .icon.weather3 { background-position: -4.8rem 0;}
-.weather.wh24  .icon.weather4 { background-position: -7.2rem 0;}
-.weather.wh24  .icon.weather5 { background-position: -9.6rem 0;}
-.weather.wh24  .icon.weather6 { background-position: -12rem 0;}
-.weather.wh24  .icon.weather7 { background-position: -14.4rem 0;}
-.weather.wh24  .icon.weather8 { background-position: -16.8rem 0;}
-.weather.wh24  .icon.weather9 { background-position: -19.2rem  0;}
-.weather.wh24  .icon.weather10 { background-position: -21.6rem 0;}
-.weather.wh24  .icon.weather11 { background-position: 0 -2.4rem;}
-.weather.wh24  .icon.weather12 { background-position: -2.4rem -2.4rem;}
-.weather.wh24  .icon.weather13 { background-position: -4.8rem -2.4rem;}
-.weather.wh24  .icon.weather14 { background-position: -7.2rem -2.4rem;}
-.weather.wh24  .icon.weather15 { background-position: -9.6rem -2.4rem;}
-.weather.wh24  .icon.weather16 { background-position: -12rem -2.4rem;}
-.weather.wh24  .icon.weather17 { background-position: -14.4rem -2.4rem;}
-.weather.wh24  .icon.weather18 { background-position: -16.8rem -2.4rem;}
-.weather.wh24  .icon.weather19 { background-position: -19.2rem -2.4rem;}
-.weather.wh24  .icon.weather20 { background-position: -21.6rem -2.4rem;}
-.weather.wh24  .icon.weather21 { background-position: 0 -4.8rem;}
+.weather.wh24 .icon.weather1 { background-position: 0 0;}
+.weather.wh24 .icon.weather2 { background-position: -2.4rem 0;}
+.weather.wh24 .icon.weather3 { background-position: -4.8rem 0;}
+.weather.wh24 .icon.weather4 { background-position: -7.2rem 0;}
+.weather.wh24 .icon.weather5 { background-position: -9.6rem 0;}
+.weather.wh24 .icon.weather6 { background-position: -12rem 0;}
+.weather.wh24 .icon.weather7 { background-position: -14.4rem 0;}
+.weather.wh24 .icon.weather8 { background-position: -16.8rem 0;}
+.weather.wh24 .icon.weather9 { background-position: -19.2rem  0;}
+.weather.wh24 .icon.weather10 { background-position: -21.6rem 0;}
+.weather.wh24 .icon.weather11 { background-position: 0 -2.4rem;}
+.weather.wh24 .icon.weather12 { background-position: -2.4rem -2.4rem;}
+.weather.wh24 .icon.weather13 { background-position: -4.8rem -2.4rem;}
+.weather.wh24 .icon.weather14 { background-position: -7.2rem -2.4rem;}
+.weather.wh24 .icon.weather15 { background-position: -9.6rem -2.4rem;}
+.weather.wh24 .icon.weather16 { background-position: -12rem -2.4rem;}
+.weather.wh24 .icon.weather17 { background-position: -14.4rem -2.4rem;}
+.weather.wh24 .icon.weather18 { background-position: -16.8rem -2.4rem;}
+.weather.wh24 .icon.weather19 { background-position: -19.2rem -2.4rem;}
+.weather.wh24 .icon.weather20 { background-position: -21.6rem -2.4rem;}
+.weather.wh24 .icon.weather21 { background-position: 0 -4.8rem;}
 
 .weather .weatherTop .icon.weather1 { background-position: 0 0;}
 .weather .weatherTop .icon.weather2 { background-position: -5.2rem 0;}
@@ -772,8 +772,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .headerLocation .hdeading { display: flex; align-items: flex-start; padding: 1.6rem 2rem;}
 .headerLocation .hdeading .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; margin: 0.2rem 0.4rem 0 0; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .headerLocation .hdeading .favorite.active i { background-position-y: -2.4rem;}
-.headerLocation .hdeading .title { flex: 1;}
-.headerLocation .hdeading .title h2 { font-size: 1.8rem;}
+.headerLocation .hdeading .title { flex: 1; width: 100%; padding-right: 5rem;}
+.headerLocation .hdeading .title h2 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size: 1.8rem;}
 .headerLocation .hdeading .title >div { margin-top: 0.4rem;}
 .headerLocation .hdeading .title >div span { position: relative; font-size: 1.4rem; font-weight: 700; color: #6684EA;}
 .headerLocation .hdeading .title >div span ~ span { margin-left: 0.3rem; padding-left: 0.8rem;}
@@ -784,20 +784,21 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .headerLocation .menu button { height: 4.8rem;}
 .headerLocation .menu button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
 .locationLayer .locationHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; margin-top: 1.4rem;}
-.locationLayer .locationHeader h3 { display: flex; align-items: center; font-size: 1.6rem;}
+.locationLayer .locationHeader h3 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; font-size: 1.6rem;}
 .locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
 .locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
-.locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; height: 4rem; color: #aaa;}
+.locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #aaa; text-align: left;}
+.locationLayer .basic .bbInfo button .con { flex: 1; display: flex; align-items: center; overflow: hidden;}
+.locationLayer .basic .bbInfo button .ellipsis { display: inline-block; max-width: calc(100% - 3rem); padding-right: 0.6rem;}
 .locationLayer .basic .bbInfo .div i,
-.locationLayer .basic .bbInfo button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
-.locationLayer .basic .bbInfo button::after { content: ''; position: absolute; right: -3.2rem; top: 0.9rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat 0rem 0/48rem 28.8rem;}
+.locationLayer .basic .bbInfo button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: 0 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .locationLayer .basic .bbInfo .homepage i { background-position: -31.2rem -4.8rem;}
-.locationLayer .basic .bbInfo .homepage::after { background-position: -36rem 0;}
+.locationLayer .basic .bbInfo .homepage i.tw { background-position: -36rem 0;}
 .locationLayer .basic .bbInfo .phone i { background-position: -33.6rem -4.8rem;}
-.locationLayer .basic .bbInfo .phone::after { background-position: -36rem -4.8rem;}
+.locationLayer .basic .bbInfo .phone i.tw { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo .location i { background-position: -9.6rem -9.6rem;}
 .locationLayer .basic .bbInfo .time i { background-position: -12rem -9.6rem;}
 .locationLayer .basic .bbInfo button.active { color: #000;}
@@ -808,9 +809,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .basic .bbInfo .offerer .write i { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo.bdt { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid #F4F5F7;}
 .locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
-.locationLayer .basic .accordionTarget p { display: flex; align-items: center; min-height: 3rem;}
-.locationLayer .basic .accordionTarget p:first-child { padding-top: 0.8rem;}
-.locationLayer .basic .accordionTarget p:last-child { padding-bottom: 0.8rem;}
+.locationLayer .basic .accordionTarget p { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; padding: 0.2rem 0;}
+.locationLayer .basic .accordionTarget p:first-child { padding-top: 1.4rem;}
+.locationLayer .basic .accordionTarget p:last-child { padding-bottom: 1.4rem;}
 .locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
 .locationLayer .basic .bbBtns .div,
 .locationLayer .basic .bbBtns .flex { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
@@ -820,6 +821,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .basic .bbBtns .shareLink i { background: url(../image/map/ico_link2.png) no-repeat center/cover;}
 .locationLayer .basic .bbBtns .directionsLink { color: #111;}
 .locationLayer .basic .bbBtns .directionsLink i { background: url(../image/map/ico_link3.png) no-repeat center/cover;}
+.locationLayer .basic .bbBtns .directionsLink .text { display: block; font-weight: 700; margin-top: 0.5rem;}
 .locationLayer .basic .bbBtns .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem; margin-top: 1.2rem; font-size: 1.3rem; color: #777; background-color: #F4F5F7; border-radius: 1.3rem;}
 .locationLayer .basic .bbBtns >a p { margin-top: 0.8rem;}
 .locationLayer .basic .bbBtns >a .switch { margin-top: 1.6rem;}
@@ -937,7 +939,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .streetLampInfo .slInfoBody .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; color: #aaa;}
 
 /* 건강 - UI-SJN-33-005L */
-.layerCare { text-align: left;}
+.layerCare { padding-bottom: 6rem; text-align: left;}
 .layerCare dl { margin-top: 0.8rem;}
 .layerCare dl dt { font-size: 1.6rem; font-weight: 700;}
 .layerCare dl dd { margin-top: 0.8rem; color: #555; line-height: 2.4rem;}
@@ -1662,9 +1664,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-wordList ul li button img { width: 2.4rem; height: 2.4rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle;}
 .items-wordList ul li button.active { color: #fff; background-color: #6684EA;}
 
-.items-placeList { display: flex; align-items: center; overflow: hidden; height: 5rem; margin: 0 -2rem 1.6rem;}
+.items-placeList { display: flex; align-items: center; overflow: hidden; height: 6.4rem; margin: 0 -2rem 1.6rem;}
 .items-placeList >ul,
 .items-placeList >div { padding: 0 2rem;}
+.items-placeList .swiper-wrapper { padding-bottom: 1.4rem; border-bottom: 1px solid #F4F5F7;}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 0.1rem solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
@@ -1673,39 +1676,51 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul li select.active 
 .locationLayer .detail .icon,
 .map .gasStation .commIco24 i,
+.locationLayer .detail h4 .roundBox .icon,
 .items-placeList ul li .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: url(../image/map/split_gas_station.png) no-repeat 0 0/26.4rem 2.4rem;}
 .locationLayer .detail .icon.gs,
 .map .gasStation .commIco24.gs i,
+.locationLayer .detail h4 .roundBox .icon.gs,
 .items-placeList ul li .icon.gs { background-position-x: 0;} /* GS */
 .locationLayer .detail .icon.skE,
 .map .gasStation .commIco24.skE i,
+.locationLayer .detail h4 .roundBox .icon.skE,
 .items-placeList ul li .icon.skE { background-position-x: -2.4rem;} /* SK에너지 */
 .locationLayer .detail .icon.hyundai,
 .map .gasStation .commIco24.hyundai i,
+.locationLayer .detail h4 .roundBox .icon.hyundai,
 .items-placeList ul li .icon.hyundai { background-position-x: -4.8rem;} /* 현대 */
 .locationLayer .detail .icon.soil,
 .map .gasStation .commIco24.soil i,
+.locationLayer .detail h4 .roundBox .icon.soil,
 .items-placeList ul li .icon.soil { background-position-x: -7.2rem;} /* S오일 */
 .locationLayer .detail .icon.thrifty,
 .map .gasStation .commIco24.thrifty i,
+.locationLayer .detail h4 .roundBox .icon.thrifty,
 .items-placeList ul li .icon.thrifty { background-position-x: -9.6rem;} /* 알뜰 */
 .locationLayer .detail .icon.skG,
 .map .gasStation .commIco24.skG i,
+.locationLayer .detail h4 .roundBox .icon.skG,
 .items-placeList ul li .icon.skG { background-position-x: -12rem;} /* SK가스 */
 .locationLayer .detail .icon.e1,
 .map .gasStation .commIco24.e1 i,
+.locationLayer .detail h4 .roundBox .icon.e1,
 .items-placeList ul li .icon.e1 { background-position-x: -14.4rem;} /* E1 */
 .locationLayer .detail .icon.other,
 .map .gasStation .commIco24.other i,
+.locationLayer .detail h4 .roundBox .icon.other,
 .items-placeList ul li .icon.other { background-position-x: -16.8rem;} /* 기타 정유사 */
 .locationLayer .detail .icon.thriftyNH,
 .map .gasStation .commIco24.thriftyNH i,
+.locationLayer .detail h4 .roundBox .icon.thriftyNH,
 .items-placeList ul li .icon.thriftyNH { background-position-x: -19.2rem;} /* 알뜰 농협 */
 .locationLayer .detail .icon.ex,
 .map .gasStation .commIco24.ex i,
+.locationLayer .detail h4 .roundBox .icon.ex,
 .items-placeList ul li .icon.ex { background-position-x: -21.6rem;} /* ex oil */
 .locationLayer .detail .icon.nc,
 .map .gasStation .commIco24.nc i,
+.locationLayer .detail h4 .roundBox .icon.nc,
 .items-placeList ul li .icon.nc { background-position-x: -24rem;} /* nc */
 .items-placeList ul.inline { display: flex; align-items: center;}
 .items-placeList ul.inline li { margin-right: 0.8rem;}
@@ -1715,7 +1730,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-mapInfo li ~ li { margin-top: 1.6rem;}
 .items-mapInfo li figure { position: absolute; left: 0; top: 0; width: 7.2rem; height: 7.2rem;}
 .items-mapInfo li .mapInfoBody { position: relative;}
-.items-mapInfo li .mapInfoBody h4 { font-size: 1.6rem;}
+.items-mapInfo li .mapInfoBody h4 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right: 2.8rem; font-size: 1.6rem;}
 .items-mapInfo li .mapInfoBody .st { overflow:hidden; margin-top: 0.8rem; font-size: 1.4rem; text-overflow:ellipsis; white-space:nowrap;}
 .items-mapInfo li .mapInfoBody .other {  margin-top: 0.2rem; font-size: 1.4rem;}
 .items-mapInfo li .mapInfoBody .other span ~ span { position: relative; margin-left: 0.8rem; padding-left: 0.8rem;}

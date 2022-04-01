@@ -652,9 +652,18 @@ const parkingTip = {
 
 			parkingTip.showEl.classList.remove('show', 'ready');
 
+		
+
 			setTimeout(()=>{
-				let top = _targetTop - (mapMenuLayerWidth/2 - 24);
-				let left = _targetLeft - (mapMenuLayerHeight/2 - 10);
+				let top = _targetTop;
+				let left = _targetLeft;
+				// let top = _targetTop - (mapMenuLayerHeight);
+				// let left = _targetLeft - (mapMenuLayerWidth);
+
+				console.log(_targetLeft)
+				console.log(mapMenuLayerWidth)
+
+
 				parkingTip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
 				
 				parkingTip.showEl.classList.add('ready');
