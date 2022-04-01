@@ -126,7 +126,7 @@ body { --vh: 1px;}
 .mapIcons .transit span.num5 { background: url(../image/map/ico_transit5.png) no-repeat center/cover;}
 .mapIcons .btnMapSearch { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: 7.4rem; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #555; background-color: #fff; border-radius: 1.8rem; transform: translateX(-50%); box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%);}
 .mapIcons .btnMapSearch i { display: block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat -36rem 0/40rem 16rem;}
-.mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 2.55rem; height: 3.35rem; border: 1px solid #000;}
+.mapIcons .parkingPinSet .btnParking { display: block; position: absolute; z-index: 30; width: 2.55rem; height: 3.35rem;}
 .mapIcons .parkingPinSet .btnParking >i { display: block; width: 2.55rem; height: 3.35rem; text-indent: -9999rem; background: url(../image/map/ico_parking.png) no-repeat 0 0/2.55rem 6.7rem;}
 .mapIcons .parkingPinSet .btnParking .textBox { display: flex; align-items: center; position: absolute; left: 0; top: 0; width: 12rem; height: 4rem; margin: -5.4rem 0 0 -4.7rem; padding: 0 0.8rem; font-size: 1.4rem; color: #333; letter-spacing: -0.1em; background-color: #fff; border: 1px solid #A9B0C1; border-radius: 2rem; opacity: 1; transition: bottom .5s ease-in-out;}
 .mapIcons .parkingPinSet .btnParking .textBox::before { content: ''; position: absolute; left: 50%; bottom: -2.3rem; width: 0; height: 0; margin-left: -0.6rem; border-left: 0.6rem solid transparent; border-right: 0.6rem solid transparent; border-top: 1.1rem solid #A9B0C1; border-bottom: 1.1rem solid transparent;}
@@ -404,9 +404,8 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .btns .directions span { font-size: 1.2rem; font-weight: 700;}
 .map .mapInfoLayer .centerSec .btns span { display: block; font-size: 1.6rem;}
 
-.mapMenuLayer { border: 1px solid red; position: absolute; left: 0; top: 0; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: scale(1); zoom: 0.8; transition: all .2s ease-in-out;}
-/* .mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 2.55rem; height: 3.35rem; transform: translate(-50%, -50%);} */
-.mapMenuLayer .mapMenuBody { position: relative; left: calc(50% - 1.675rem); top: calc(50% - 2.075rem); width: 3.35rem; height: 4.15rem; border: 1px solid #000;}
+.mapMenuLayer { position: absolute; left: 0; top: 0; z-index: -1; width: 24rem; height: 24rem; opacity: 0; transform: translate(-44.5%, -46%) scale(1); transition: all .2s ease-in-out;}
+.mapMenuLayer .mapMenuBody { position: relative; left: 50%; top: 50%; width: 3.1rem; height: 4.35rem;}
 .mapMenuLayer .mapMenuBody ul li { display: flex; align-items: center; justify-content: center;}
 .mapMenuLayer .mapMenuBody ul li span { display: block;}
 .mapMenuLayer .mapMenuBody ul li i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto 0.4rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
@@ -426,11 +425,12 @@ span.M { background-color: #FD2020;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
 .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
-.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.6rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-45%);}
-.mapMenuLayer .mapMenuBody .parkingName b { display: flex; align-items: center; justify-content: center; min-height: 1.8rem; font-size: 1.3rem;}
-.mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.3rem;}
-.mapMenuLayer.ready { z-index: 90; transform: scale(0);}
-.mapMenuLayer.show { opacity: 1; transform: scale(1);}
+.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.8rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.mapMenuLayer .mapMenuBody .parkingName b { display: flex; justify-content: center; min-height: 1.8rem; font-size: 1.6rem;}
+.mapMenuLayer .mapMenuBody .parkingName b.t { overflow: hidden; height: 4.5rem;}
+.mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.6rem;}
+.mapMenuLayer.ready { z-index: 90; transform: translate(-44.5%, -46%) scale(0);}
+.mapMenuLayer.show { opacity: 1; transform: translate(-50%, -50%) scale(0.8);}
 /* .mapMenuLayer.show { opacity: 1; transform: scale(1) translate(calc(-50% + 1.6rem), calc(-50% + 1.6rem));} */
 
 

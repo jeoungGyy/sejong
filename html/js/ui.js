@@ -635,6 +635,7 @@ const parkingTip = {
 
 		if(parkingTip.idx == null) {
 			[].forEach.call(btnParking, (_this, idx)=>{
+				console.log(7)
 				if(_this.classList.contains('active')) {
 					_this.classList.remove('active');
 				}
@@ -645,26 +646,20 @@ const parkingTip = {
 
 		if(parkingTip.showEl) {
 			// let _target = event.currentTarget.getBoundingClientRect();
-			let _targetLeft = event.currentTarget.offsetLeft;
-			let _targetTop = event.currentTarget.offsetTop;
-			let mapMenuLayerWidth = parkingTip.showEl.clientWidth;
-			let mapMenuLayerHeight = parkingTip.showEl.clientHeight;
+			let _targetLeft = Math.floor(event.currentTarget.offsetLeft - 2);
+			let _targetTop = Math.floor(event.currentTarget.offsetTop - 2);
+			// let mapMenuLayerWidth = parkingTip.showEl.clientWidth;
+			// let mapMenuLayerHeight = parkingTip.showEl.clientHeight;
 
-			parkingTip.showEl.classList.remove('show', 'ready');
-
-		
+			
+			parkingTip.showEl.classList.remove('show');
+			// parkingTip.showEl.classList.remove('show', 'ready');
 
 			setTimeout(()=>{
-				let top = _targetTop;
-				let left = _targetLeft;
 				// let top = _targetTop - (mapMenuLayerHeight);
 				// let left = _targetLeft - (mapMenuLayerWidth);
 
-				console.log(_targetLeft)
-				console.log(mapMenuLayerWidth)
-
-
-				parkingTip.showEl.style.cssText = `left: ${left}px; top: ${top}px;`
+				parkingTip.showEl.style.cssText = `left: ${_targetLeft}px; top: ${_targetTop}px;`
 				
 				parkingTip.showEl.classList.add('ready');
 				location.classList.add('parkingDefault');
@@ -702,15 +697,12 @@ const parkingTip = {
 		if(parkingTip.winClose === false) {
 			window.addEventListener('click', (e)=>{
 				if(parkingTip.showEl) {
+
 					mapInfoLayer.classList.remove('open');
 
 					parkingTip.showEl.classList.remove('show');
 					myLocation.removeAttribute('style');
 					scaleBtn.removeAttribute('style');
-
-					setTimeout(()=>{
-						parkingTip.showEl.classList.remove('ready');
-					},400);
 				}
 			});
 			parkingTip.winClose = true;
