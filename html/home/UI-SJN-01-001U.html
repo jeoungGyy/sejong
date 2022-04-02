@@ -271,19 +271,35 @@
 													<i></i>
 													<div>
 														<b class="cRed">일상회복 잠시 멈춤</b>
-														<span>사적모임 기존 8명 → <em class="cRed">4명까지로 변경</em></span>
+														<span>사적모임 <em class="cRed">10명</em> 12시까지(4.4~)</span>
 													</div>
 												</div>
 												<div class="boxTab menu">
 													<ul class="btnTab">
 														<li class="itemBtn"><button type="button" class="active">선별진료소</button></li>
 														<li class="itemBtn"><button type="button">확진현황</button></li>
-														<li><a href="#">호흡기전담클리닉</a></li>
 													</ul>
 													<div class="tabContent">
 														<!-- 선별진료소 -->
 														<div class="clinic active">
+															<div class="lineBox">
+																<div class="operation">
+																	<span class="round operation"><i class="split20"></i> 운영중</span> <button type="button" class="name"><span>세종시청 임시선별진료소임시선별진료소<i class="split20"></i></span></button>
+																</div>
+																<div class="infomation veryCrowd">
+																	<b>매우혼잡</b>
+																	<span>200명이상(90분 이상)</span>
+																</div>
+															</div>
+															<div class="lineBox">
+																<div class="operation">
+																	<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
+																</div>
+															</div>
 															<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
+															<div class="button-more">
+																<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
+															</div>
 														</div>
 														<!-- //선별진료소 -->
 			
@@ -297,31 +313,10 @@
 														<!-- //확진현황 -->
 													</div>
 												</div>
-												<div class="lineBox">
-													<div class="operation">
-														<span class="round operation"><i class="split20"></i> 운영중</span> <button type="button" class="name"><span>세종시청 임시선별진료소임시선별진료소<i class="split20"></i></span></button>
-													</div>
-													<div class="infomation veryCrowd">
-														<b>매우<br />혼잡</b>
-														<span>200명이상(90분 이상)</span>
-													</div>
-												</div>
-												<div class="lineBox">
-													<div class="operation">
-														<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
-													</div>
-												</div>
-												<div class="button-more">
-													<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
-												</div>
+												
 												<div class="offerer">
 													<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
 												</div>
-			
-												<button type="button" class="infectionBtn">
-													<span><i class="split24"></i> 감염위험이 있을까요?</span>
-													<b class="cBlue">동선안심체크</b>
-												</button>
 											</div>
 										</div>
 									</div>
@@ -330,6 +325,10 @@
 										<div class="boxArea">
 											<h3>세종소식</h3>
 											<div>
+												<div class="flex">
+													<h4>공지사항</h4>
+													<a href="#" class="more">+ 더보기</a>
+												</div>
 												<div id="mainNewsSwiper" class="mainNewsList">
 													<div class="slideContainer">
 														<ul class="swiper-wrapper">
@@ -351,6 +350,11 @@
 												<script>
 													slider.active('mainNewsSwiper');
 												</script>
+											
+												<div class="flex">
+													<h4>세종시블로그</h4>
+													<a href="#" class="more">+ 더보기</a>
+												</div>
 												<div id="mainNewsPieceSwiper" class="mainNewsPiece">
 													<div class="slideContainer">
 														<ul class="swiper-wrapper">
@@ -402,7 +406,7 @@
 									<div class="boxWrap oilPrice">
 										<div class="boxArea">
 											<div class="titleFlex">
-												<h3>오늘의 유가 :</h3>
+												<h3>오늘의 유가</h3>
 												<select title="유늘의 유가 종류 선택">
 													<option>휘발유</option>
 													<option>경유</option>
@@ -418,19 +422,20 @@
 													<span class="baseDate">2020.02.25 기준</span>
 												</div>
 												<div class="price">
-													
 													<div class="t">
-														<b>1717.04</b> <span class="up">▲ 3.66</span><span class="down">▼ 3.66</span><span class="equal">0.0</span>
-													</div>
-													<div class="u">
-														<span>최저가 <b class="down">1560</b></span>
-														<span>최고가 <b class="up">1775</b></span>
+														<div class="tBox">
+															<b>1717.04</b> <span class="up">▲ 3.66</span><!--<span class="down">▼ 3.66</span><span class="equal">0.0</span>-->
+														</div>
+														<div class="u">
+															<span>최저가 <b class="down">1560</b></span>
+															<span>최고가 <b class="up">1775</b></span>
+														</div>
 													</div>
 													<div class="offerer">
 														<span>제공: 오피넷(한국석유공사)</span>
 													</div>
 													<div class="button-more">
-														<a href="#" class="btn"><span><b class="blue">지도에서 주유소</b> 더보기</span></a>
+														<a href="#" class="btn"><span><b class="blue">주유소</b> 더보기</span></a>
 													</div>
 												</div>
 											</div>
@@ -442,7 +447,7 @@
 			
 									<div class="boxWrap hospital">
 										<div class="boxArea">
-											<h3>주변에 병원ㆍ약국<br />정보를 알려드립니다.</h3>
+											<h3><span>휴일 야간운영</span> 병원ㆍ약국</h3>
 											<div>
 												<p>운영 시간은 방문 전 병원ㆍ약국에 확인하세요</p>
 												<ul>

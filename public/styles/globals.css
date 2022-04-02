@@ -259,26 +259,47 @@ table td { vertical-align: middle;}
 .weather.wh24 .icon.weather20 { background-position: -21.6rem -2.4rem;}
 .weather.wh24 .icon.weather21 { background-position: 0 -4.8rem;}
 
+.mainArea .weatherBox.active .weather .icon.weather1,
 .weather .weatherTop .icon.weather1 { background-position: 0 0;}
+.mainArea .weatherBox.active .weather .icon.weather2,
 .weather .weatherTop .icon.weather2 { background-position: -5.2rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather3,
 .weather .weatherTop .icon.weather3 { background-position: -10.4rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather4,
 .weather .weatherTop .icon.weather4 { background-position: -15.6rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather5,
 .weather .weatherTop .icon.weather5 { background-position: -20.8rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather6,
 .weather .weatherTop .icon.weather6 { background-position: -26rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather7,
 .weather .weatherTop .icon.weather7 { background-position: -31.2rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather8,
 .weather .weatherTop .icon.weather8 { background-position: -36.4rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather9,
 .weather .weatherTop .icon.weather9 { background-position: -41.6rem  0;}
+.mainArea .weatherBox.active .weather .icon.weather10,
 .weather .weatherTop .icon.weather10 { background-position: -46.8rem 0;}
+.mainArea .weatherBox.active .weather .icon.weather11,
 .weather .weatherTop .icon.weather11 { background-position: 0 -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather12,
 .weather .weatherTop .icon.weather12 { background-position: -5.5rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather13,
 .weather .weatherTop .icon.weather13 { background-position: -10.4rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather14,
 .weather .weatherTop .icon.weather14 { background-position: -15.6rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather15,
 .weather .weatherTop .icon.weather15 { background-position: -20.8rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather16,
 .weather .weatherTop .icon.weather16 { background-position: -26rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather17,
 .weather .weatherTop .icon.weather17 { background-position: -31.2rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather18,
 .weather .weatherTop .icon.weather18 { background-position: -36.4rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather19,
 .weather .weatherTop .icon.weather19 { background-position: -41.6rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather20,
 .weather .weatherTop .icon.weather20 { background-position: -46.8rem -5.2rem;}
+.mainArea .weatherBox.active .weather .icon.weather21,
 .weather .weatherTop .icon.weather21 { background-position: 0 -10.4rem;}
 
 .split20 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
@@ -539,6 +560,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* UI-SJN-01-001U */
 .layerNotice { padding: 4rem 0 6rem;}
+.layerNotice img { max-width: 100%; height: auto;}
 .layerNotice > div { overflow-x: hidden; overflow-y: auto;}
 .layerNotice a { display: block; color: #111; text-align: left;}
 .layerNotice a .title { padding-right: 3rem;}
