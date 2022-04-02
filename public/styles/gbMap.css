@@ -46,9 +46,8 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .selectGroup { display: flex; align-items: center; height: 4.8rem;}
 .map .mapInfoLayer .area .selectGroup select { width: inherit; min-width: 9rem; max-width: 12rem; height: 3.6rem; margin-right: 0.8rem; padding-left: 1.2rem; color:#777; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
 .map .mapInfoLayer .area .selectGroup select.active { border-color: #6684EA; background-color: #fff; }
-.map .mapInfoLayer .area .selectGroup .state { display: flex; align-items: center; justify-content: center; min-width: 4.6rem; height: 3.6rem; font-size: 1.4rem; color: #777; background-color: #F4F5F7; border-radius: 1.8rem;}
-.map .mapInfoLayer .area .selectGroup .state.normal.active { color: #fff; background-color: #6684EA;}
-.map .mapInfoLayer .area .selectGroup .state.breakdown.active { color: #fff; background-color: #FD2020;}
+.map .mapInfoLayer .area .selectGroup button { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; height: 3.6rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem; transition: all .3s ease-in-out;}
+.map .mapInfoLayer .area .selectGroup button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 .map .mapInfoLayer .area .radioGroup { display: flex; align-items: center; height: 4.8rem;}
 .map .mapInfoLayer .area .radioGroup button { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; height: 3.6rem; margin-right: 0.8rem; padding: 0 1.2rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; background-color: #fff; border-radius: 1.8rem; transition: all .3s ease-in-out;}
 .map .mapInfoLayer .area .radioGroup button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
