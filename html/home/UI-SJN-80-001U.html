@@ -76,7 +76,7 @@
 									<div>
 										<a href="#" class="link">계정 연결 (간편 로그인)</a>
 										<div class="flex">
-											<span>길안내 시 네비로 바로 연결</span>
+											<span>길안내 시 네비로 바로 연결 <button type="button" class="tooltipBtn" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i>자외선지수 범례</i></button></span>
 											<div class="switch">
 												<input type="checkbox" id="switch0" checked="checked" title="길안내 시 네비로 바로 연결" />
 												<label for="switch0"></label>
@@ -128,7 +128,7 @@
 
 											<button type="button" class="btn">세종엔 서비스 탈퇴</button>
 										</div>
-										<a href="#" class="link">로그아웃</a>
+										<a href="#" class="link noArrow">로그아웃</a>
 										<a href="#" class="link">회원탈퇴</a>
 									</div>
 								</div>
@@ -192,6 +192,17 @@
 						</div>
 					</div>
 					<!-- //레이어 -->
+
+					<!-- 툴팁 -->
+					<div id="tooltip1" class="boxTooltipLayer">
+						<div class="boxTooltipBody">
+							<div class="paragraphGroup">
+								<p>카카오내비를 연동하여 길안내 서비스를 합니다.</p>
+							</div>
+							<button type="button" class="btnClose"><i>닫기</i></button>
+						</div>
+					</div>
+					<!-- //툴팁 -->
 			
 			
 				</div>
