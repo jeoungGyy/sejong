@@ -360,7 +360,9 @@
 .info .weeklySunrise .titleBox .wSunset { margin-right: 5%; color: #fff; background-color: #A9B0C1;}
 .info .weeklyIndex { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySatellite { margin: 0 -2rem; padding: 1.6rem 2rem;}
+.info .weeklySatellite .Radr a,
 .info .weeklySatellite .Stlt a { display: block;}
+.info .weeklySatellite .Radr a img,
 .info .weeklySatellite .Stlt a img { max-width: 100%; height: auto;}
 .info .weeklySatellite .imagery { margin-top: 0.8rem;}
 
