@@ -307,7 +307,7 @@
 
 /* UI-SJN-07-001P */
 .info .environment { padding: 0 2rem;}
-.info .environment .envHeader { padding-bottom: 2.6rem;}
+.info .environment .envHeader { padding: 1.6rem 0 2.6rem;}
 .info .environment .envHeader header { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .info .environment .envHeader header h3 { font-size: 1.6rem;}
 .info .environment .envHeader header .myLocation i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -45.6rem 0/48rem 28.8rem;}
@@ -350,12 +350,18 @@
 .info .weatherSubTab .boxTab.roundStyle .btnTab { display: flex; align-items: center; height: 4.8rem; padding: 0 1.8rem;}
 .info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn { flex: 1; margin: 0 0.4rem;}
 .info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
-.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button.active { color: #fff; background-color: #32BBED; border-color: #32BBED;}
+.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button.active { color: #fff; background-color: #6684EA; border-color: #6684EA;}
 .info .boxTab.roundStyle .tabContent { margin-top: 0.8rem; padding: 0;}
 .info .weeklyWeather { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySunrise { margin: 0 -2rem; padding: 1.6rem 2rem;}
+.info .weeklySunrise .titleBox { display: flex; justify-content: space-between;}
+.info .weeklySunrise .titleBox .wState { display: flex; align-items: center; justify-content: center; width: 5rem; height: 3rem; font-size: 1.2rem; color: #777; border-radius: 1.5rem;}
+.info .weeklySunrise .titleBox .wSunrise { margin-left: 18%; color: #777; border: 1px solid #CDD0D8;}
+.info .weeklySunrise .titleBox .wSunset { margin-right: 5%; color: #fff; background-color: #A9B0C1;}
 .info .weeklyIndex { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySatellite { margin: 0 -2rem; padding: 1.6rem 2rem;}
+.info .weeklySatellite .Stlt a { display: block;}
+.info .weeklySatellite .Stlt a img { max-width: 100%; height: auto;}
 .info .weeklySatellite .imagery { margin-top: 0.8rem;}
 
 
@@ -368,7 +374,8 @@
 /* 교육정보 UI-SJN-08-001P */
 .info .boxTab .btnTab { display: flex; height: 4.8rem;}
 .info .boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
-.info .boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
+.info .boxTab .btnTab .itemBtn button,
+.info .boxTab .btnTab .itemBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
 .info .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
 .info .tabContent { padding: 0.8rem 2rem 4rem;}
 .info .tabContent >div { display: none;}
