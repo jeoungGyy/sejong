@@ -1140,7 +1140,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .userLayer .infomation .promote { margin: 4rem -2rem 0;}
 .userLayer .infomation .promote .body img { max-width: 100%; height: auto; vertical-align: top;}
 .userLayer .report { padding: 2.4rem 2rem 3.6rem;}
-.userLayer .report .guide1 { margin-top: 0.8rem; line-height: 2.4rem;}
+.userLayer .report .guide1 { margin-top: 0.8rem; font-size: 1.4rem;  line-height: 2.4rem;}
 .userLayer .report .guide2 { margin-top: 1.6rem; font-size: 1.4rem; color: #777;}
 .userLayer .report .buttonArrow { margin-top: 3.2rem;}
 
