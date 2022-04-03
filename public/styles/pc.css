@@ -4,8 +4,10 @@
 /* @media screen and (min-width: 412px) { html {font-size: 67%;}} */
 
 body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
+#modal,
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
 .pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}
+#modal .modalBody,
 .pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 420px; height: 100vh; margin: 0 auto;}
 .pcContainer .pch1 { padding-top: 38px;}
 .pcContainer .pch1 img { vertical-align: top;}
@@ -119,15 +121,18 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 
 
 @media screen and (max-width: 420px) {
+#modal .modalBody,
 .pcContainer .pcView { position: relative; right: inherit; margin: 0 auto; width: 100%;}
 .map .mapInfoLayer .btnMapInfo { display: block;}
 .map .mapInfoLayer .mapIHead .mapUpDown { display: none;}
 }
 @media screen and (max-width: 1190px) {
+#modal,
 .pcContainer { width: 100%;}
 .pcContents { display: none;}
 .pcDeco.poa6 { margin-left: -810px;}
 .pcDeco.poa7 { margin-left: -320px;}
+#modal .modalBody,
 .pcContainer .pcView { position: relative; max-width: inherit;}
 }
 
@@ -155,6 +160,7 @@ html.tabletMode .headerWrap,
 html.tabletMode .info .infoNav,
 html.tabletMode .pcContents,
 html.tabletMode .pcContainer,
+html.tabletMode #modal .modalBody,
 html.tabletMode .pcContainer .pcView { max-width: inherit; width: 100%;}
 html.tabletMode .pcContents { display: none;}
 html.tabletMode .info .infoNav li { margin-right: 1rem !important;}
