@@ -58,7 +58,10 @@
 .mainArea .covid19 .menu .btnTab li { width: calc(50% - 0.4rem);}
 .mainArea .covid19 .menu .btnTab li button,
 .mainArea .covid19 .menu .btnTab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.mainArea .covid19 .menu .btnTab li .clinic { margin-right: 0.2rem; background-position: -10rem -8rem;}
+.mainArea .covid19 .menu .btnTab li .situation { margin-right: 0.2rem; background-position: -12rem -8rem;}
 .mainArea .covid19 .menu .btnTab li button.active { color: #fff; border-color: #D57298; background-color: #D57298;}
+.mainArea .covid19 .menu .btnTab li .active i { background-position-y: -10rem;}
 .mainArea .covid19 .menu .tabContent >div { display: none;}
 .mainArea .covid19 .menu .tabContent >div.active { display: block;}
 .mainArea .covid19 .menu .tabContent .clinic { padding: 0.7rem 0;}
