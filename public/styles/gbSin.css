@@ -25,7 +25,7 @@
 .mainArea .repMenu .rolling .slideContainer .mainTitle { display: flex; align-items: center; margin-top: 0.8rem; font-size: 1.6rem; line-height: 2.4rem;}
 
 .mainArea .titleFlex { display: flex; align-items: center; justify-content: space-between;}
-.mainArea .titleFlex select { width: auto; margin-left: 1rem; padding: 0 2.5rem 0 0; font-size: 1.6rem; font-weight: 700; border: none; background-position: right 0 top 1.4rem;}
+.mainArea .titleFlex select { width: auto; margin-left: 1rem; padding: 0 2.5rem 0 0; font-size: 1.4rem; border: none; background-position: right 0 top 1.4rem;}
 .recentService { padding: 2rem 0 0;}
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
@@ -89,7 +89,7 @@
 .mainArea .covid19 .infectionBtn span i { margin-right: 0.4rem; vertical-align: middle; background-position: 0 -19.2rem;}
 .mainArea .covid19 .infectionBtn b { font-size: 1.6rem;}
 .mainArea .weatherBox { margin-top: 2rem;}
-.mainArea .weatherBox .boxArea { padding-top: 1.8rem;}
+.mainArea .weatherBox .boxArea { padding: 1.8rem;}
 .mainArea .weatherBox .roundDeco { display: none; position: absolute; left: -16rem; top: -13rem; z-index: 1;}
 .mainArea .weatherBox .roundDeco path { fill: #6684ea}
 /* .mainArea .weatherBox.active .accordionTarget { height: 0;}
@@ -108,7 +108,7 @@
 .mainArea .weatherBox .weatherLink .poa { position: absolute; right: 0; top: 0.2rem;}
 .mainArea .weatherBox .weatherLink .toggleBtn { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #F3F5F7; border-radius: 50%;}
 .mainArea .weatherBox .weatherLink .toggleBtn i { background-position: -16.8rem -19.2rem;}
-.mainArea .weatherBox .nav_side { margin: 0.8rem 0 1.6rem;}
+.mainArea .weatherBox .nav_side { margin: 0.8rem 0 0.6rem;}
 .mainArea .weatherBox .accordionTarget { overflow: hidden; height: 0; transition: height 0.3s ease-in-out;}
 .mainArea .weatherBox .accordionTarget img { width: 100%; height: auto;}
 .mainArea .weatherBox .accordionTarget .tabContent { height: 16rem;}
@@ -116,9 +116,9 @@
 .mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
 .mainArea .weatherBox .accordionTarget .tabContent >div .overflowX { overflow-x: auto; overflow-y: hidden; padding: 0 0 1.4rem; scroll-behavior: smooth;}
 .mainArea .weatherBox .accordionTarget .tabContent >div .items-weatherInfo li { width: auto;}
-.mainArea .weatherBox .anniversary { display: flex; align-items: center; height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
+.mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
-.mainArea .weatherBox .anniversary span { font-size: 1.6rem;}
+.mainArea .weatherBox .anniversary span { flex: 1; font-size: 1.4rem;}
 .mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
 .mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
 .mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
@@ -135,9 +135,10 @@
 .mainArea .weatherBox .weatherLink .weather .temperature { display: block; position: relative; font-size: 1.8rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature::after { content: ''; position: absolute; left: 1.2rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .mainArea .weatherBox .weatherLink .weather .temperature span { margin-left: 0.5rem; font-size: 1.6rem;}
-.mainArea .weatherBox .good { color: #4EC457;}
-.mainArea .weatherBox .bed { color: #FD2020;}
-
+.mainArea .weatherBox .lowness { color: #32A2FF;}
+.mainArea .weatherBox .normal { color: #01C73D;}
+.mainArea .weatherBox .caution { color: #FFA60E;}
+.mainArea .weatherBox .highness { color: #FD7803;}
 
 .mainArea .weatherBox.active .accordionTarget { height: 29rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
@@ -149,7 +150,8 @@
 .mainArea .weatherBox.active .weatherLink .location { display: block;}
 .mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}
 .mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
-.mainArea .weatherBox.active .weatherLink .val { position: absolute; right: -13.7rem; top: 2.6rem;}
+.mainArea .weatherBox.active .weatherLink .location .myLocation { margin-left: 0.4rem;}
+.mainArea .weatherBox.active .weatherLink .val { position: absolute; right: -13.2rem; top: 2.6rem;}
 
 .mainArea .mainNews { margin-top: 2.4rem;}
 .mainArea .mainNews .boxArea { padding-bottom: 1.6rem;}
@@ -186,7 +188,7 @@
 .mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .price { margin-top: 1rem;}
-.mainArea .oilPrice .price .t { display: flex; align-items: center;}
+.mainArea .oilPrice .price .t { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .oilPrice .price .t .tBox { display: flex; align-items: center;}
 .mainArea .oilPrice .price .t .tBox b { margin-right: 0.8rem; font-family: var(--fontRoboto); font-size: 2rem; letter-spacing: 0;}
 .mainArea .oilPrice .price .t .tBox span { margin-left: 1.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
@@ -194,8 +196,8 @@
 .mainArea .oilPrice .price .t .tBox span.equal::after { content: ''; position: absolute; left: 0; top: 0.8rem; width: 0.8rem; height: 0.2rem; background-color: #111;}
 .mainArea .oilPrice .price .up { color: #FD2020;}
 .mainArea .oilPrice .price .down { color: #6684EA;}
-.mainArea .oilPrice .price .u { margin-left: 2.8rem;}
-.mainArea .oilPrice .price .u span { display: block; margin-right: 1.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
+.mainArea .oilPrice .price .u { text-align: right;}
+.mainArea .oilPrice .price .u span { display: block; font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
 .mainArea .oilPrice .offerer { display: flex; align-items: center; justify-content: flex-end; height: 3.8rem;}
 .mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
 .mainArea .oilPrice .button-more { margin-top: 0.4rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
