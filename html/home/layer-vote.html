@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+			
+					<!-- 레이어 -->
+					<div id="layerVote" class="layerPopup">
+						<div class="layerWrap typeBot layerGoNotice">
+							<div class="layerVote">
+								<div class="title">
+									<h4>제8회 전국동시지방선거 <span class="voteDate">2022.06.01</span></h4>
+									<a href="#">
+										<img src="../../public/image/map/map_vote_text.png" alt="세종엔에서 내 주변 사전투표소를 확인해보세요">
+										<span>자세히 &gt;</span>
+									</a>
+								</div>
+								<div class="con">
+									<h4>투표대기시간</h4>
+									<div>
+										<ul class="list">
+											<li class="blue">5분이내</li>
+											<li class="green">10분이내</li>
+											<li class="orange">20분이내</li>
+											<li class="red">30분이내</li>
+										</ul>
+										<div class="conDay">
+											<div class="text">
+												<b>사전투표 : 2022.05.01 ~ 31</b>
+												<span>오전6시 ~ 오후 6시</span>
+											</div>
+											<ul>
+												<li>
+													<div>
+														<b>27일</b>
+														<span>금</span>
+													</div>
+													<img src="../../public/image/map/map_vote_ico.png" alt="">
+												</li>
+												<li>
+													<div>
+														<b>28일</b>
+														<span>토</span>
+													</div>
+													<img src="../../public/image/map/map_vote_ico.png" alt="">
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btnClose colorWhite" onclick="layerPopup.close();">창닫기</button>
+						</div>
+					</div>
+			
+					<script>
+						layerPopup.open('layerVote');
+					</script>
+					<!-- //레이어 -->
+			
+			
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

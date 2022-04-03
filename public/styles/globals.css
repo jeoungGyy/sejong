@@ -307,8 +307,6 @@ table td { vertical-align: middle;}
 .split32 { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
 
 
-
-
 /* 버튼 */
 .button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);}
 .button.middle { height: 4.8rem; font-size: 1.6rem;}
@@ -530,6 +528,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerWrap >h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem; font-weight: 700;}
 .layerWrap >h4 i.eval { margin-right: 0.4rem; background-position: -10rem -4rem;}
 .layerWrap .btnClose { display: block; position: absolute; right: 1.2rem; top: 2.7rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
+.layerWrap .btnClose.colorWhite { background-position-y: -2.4rem;}
 .layerWrap .layerBody { text-align: left;}
 .layerWrap .layerBody .twins { display: flex; margin: 2.4rem -0.4rem 0;}
 .layerWrap .layerBody .twins .button { margin: 0 0.4rem;}
@@ -541,7 +540,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 .scrollLock body { overflow: hidden;}
-
 
 /* 레이어 셀렉트 폼 */
 .layerSelect { overflow-y: auto; max-height: 37rem;}
@@ -558,6 +556,32 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerService .serviceBody { margin-top: 2rem;}
 .layerService .serviceBody img { width: 13.56rem; height: auto;}
 .layerService .serviceBody .pGroup p { margin-top: 1.6rem; font-size: 1.8rem; font-weight: 700;}
+
+/* 투표 레이어 */
+.layerVote {}
+.layerVote .title { margin: -1.6rem -2rem 0; padding: 2.7rem 2.5rem; text-align: left; background-color: #6684EA;}
+.layerVote .title h4 { font-size: 1.8rem; color: #fff;}
+.layerVote .title h4 .voteDate { font-family: var(--fontRoboto); font-weight: 400; font-size: 1.4rem;}
+.layerVote .title a { display: block; color: #fff;}
+.layerVote .title a img { display: block; width: 17.6rem; height: auto; margin-top: 2rem;}
+.layerVote .title a span { display: block; margin-top: 1rem; font-size: 1.4rem;}
+.layerVote .con { margin-top: 1.6rem;}
+.layerVote .con h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.layerVote .con .list { display: flex; align-items: center; height: 3.6rem;}
+.layerVote .con .list li { position: relative; padding-left: 2rem; color: #535353; font-size: 1.4rem;}
+.layerVote .con .list li::after { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.layerVote .con .list li.blue::after { background-color: #2E8FF9;}
+.layerVote .con .list li.green::after { background-color: #4EC457;}
+.layerVote .con .list li.orange::after { background-color: #FF940E;}
+.layerVote .con .list li.red::after { background-color: #FD2020;}
+.layerVote .con .list li ~ li { margin-left: 1.3rem;}
+.layerVote .con .conDay { margin-top: 1.6rem; padding: 2rem 1.6rem 1.5rem; background-color: #F4F5F7; border-radius: 1rem;}
+.layerVote .con .conDay .text b { font-size: 1.6rem;}
+.layerVote .con .conDay .text span { font-size: 1.4rem; color: #555;}
+.layerVote .con .conDay ul { display: flex; align-items: center; gap: 0 0.8rem; margin-top: 1.5rem;}
+.layerVote .con .conDay ul li { flex: 1; padding: 1rem 0; background-color: #fff; border-radius: 0.6rem;}
+.layerVote .con .conDay ul li img { display: inline-block; width: 2.6em; height: auto; margin-top: 0.8rem;}
+
 
 /* UI-SJN-01-001U */
 .layerNotice { padding: 4rem 0 6rem;}

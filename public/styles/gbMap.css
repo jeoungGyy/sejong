@@ -55,7 +55,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea >section + section { margin: 0 -2rem; padding: 1.5rem 2rem; border-top: 0.6rem solid #F4F5F7;}
 .map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
-.map .mapInfoLayer .myArea section { margin-top: 1.6rem;}
+.map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
 .map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.3rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
@@ -486,7 +486,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .pTransportation li .infomation .cGray { color: #777;}
 .map .mapInfoLayer .pTransportation li .infomation .cOrange { color: #FD2020;}
 
-
 /* UI-SJN-32-010L */
 .map .mapInfoLayer .pTransportation li .etc.mt { margin-top: 0.6rem;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNetBody { display: inline-flex; position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
@@ -498,6 +497,30 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .pTransportation li .etc.mt .cleanNet.partialBreakdown { background-color: #A9B0C1; background-position: -8rem -4rem;}
 .map .mapInfoLayer .pTransportation li .call a { display: flex; align-items: center; margin-top: 1rem; font-size: 1.4rem; color: #777;}
 .map .mapInfoLayer .pTransportation li .call a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.6rem; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
+
+/* UI-SJN-32-010L */
+.map .vote-list { margin: 0 -2rem -2rem;}
+.map .vote-list li { position: relative; padding: 1.5rem 2rem 1.2rem; border-bottom: 1px solid #F4F5F7;}
+.map .vote-list li .infomation { display: flex; align-items: center; padding-right: 6rem;}
+.map .vote-list li .infomation >span { font-size: 1.4rem; color: #6684EA; letter-spacing: 0;}
+.map .vote-list li .infomation >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
+.map .vote-list li .infomation >span ~ span::after { content: ''; position: absolute; top: 50%; left: 0; width: 0.1rem; height: 1.4rem; margin-top: -0.7rem; background-color: #e1e1e1;}
+.map .vote-list li .voteTime { position: relative;}
+.map .vote-list li .voteTime .tit { position: absolute; left: 0; top: 0;}
+.map .vote-list li .voteTime .titBody { margin-top: 1rem; padding-left: 6rem;}
+.map .vote-list li .voteTime .titBody >div { display: flex; align-items: center; font-size: 1.4rem;}
+.map .vote-list li .voteTime .titBody >div b { width: 9.8rem;}
+.map .vote-list li .voteTime .titBody >div span { position: relative; padding-left: 2rem; color: #535353; font-size: 1.4rem;}
+.map .vote-list li .voteTime .titBody >div span::after { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.map .vote-list li .voteTime .titBody >div span.blue::after { background-color: #2E8FF9;}
+.map .vote-list li .voteTime .titBody >div span.green::after { background-color: #4EC457;}
+.map .vote-list li .voteTime .titBody >div span.orange::after { background-color: #FF940E;}
+.map .vote-list li .voteTime .titBody >div span.red::after { background-color: #FD2020;}
+.map .vote-list .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 2.2rem; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
+.map .vote-list .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
+.map .vote-list .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.map .vote-list .guidance.top { top: 5.2rem;}
+
 
 /* UI-SJN-33-005L */
 .map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between;}

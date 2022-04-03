@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+			
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><span class="headerClone">자동크린넷</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea">
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<ul class="sideBtns">
+										<li><button type="button" class="btnPin"><i>핀</i></button></li>
+									</ul>
+									
+									<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+			
+									<!-- 마커 -->
+									<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+										<div><span></span></div>
+									</div>
+									<!-- //마커 -->
+			
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
+								</div>
+								<!-- //기타 아이콘들 -->
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer default">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+										<div class="mapUpDown">
+											<button type="button" class="btnMapUp" onclick="mapInfo.active('infoUp');">정보영역 위로</button>
+											<button type="button" class="btnMapDown" onclick="mapInfo.active('infoDown');">정보영역 아래로</button>
+											<button type="button" class="btnBottom" onclick="mapInfo.active('infoBottom');">정보영역 닫기</button>
+										</div>
+									</div>
+									<div class="myArea paddingDefault">
+										<section>
+											<ul class="vote-list">
+												<li>
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack">새롬중앙로 44 새롬동 복합커뮤니티</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="blue">5분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="green">10분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+												</li>
+												<li>
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack"> 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="orange">20분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="red">30분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+												</li>
+												<li>
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack"> 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="blue"><span>5분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="green"><span>10분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+												</li>
+											</ul>
+										</section>
+									</div>
+									<div class="offerer">
+										<p>업데이트 : 2022.05.27 15:30</p>
+									</div>
+								</div>
+								<script>
+									mapInfo.click('sub');
+								</script>
+								<!-- //정보 영역 -->
+			
+								<div class="mapBg"></div> <!-- map 이미지 -->
+							</div>
+						</div>
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어 -->
+					<!-- //레이어 -->
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
