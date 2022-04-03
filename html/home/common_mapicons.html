@@ -19,6 +19,7 @@
 	h3 { margin-bottom: 1rem; font-size: 1.4rem;}
 	.busStop { display: flex; align-items: center; position: relative; height: 100px;}
 	.busStop .busIco { position: inherit !important; left: 0; top: 0; transform:none; margin: 0 30px;}
+	.mapIcons .sideBtns { display: block; position: inherit;}
 </style>
 
 <h3>말풍성 아이콘 모음</h3>
@@ -117,7 +118,35 @@
 		</button>
 	</div>
 </div>
-<table>
+
+
+<div class="mapIcons" style="width: 200px; margin: 30px auto 0;">
+	<ul class="sideBtns">
+		<li><button type="button" class="btnPin"><i>핀</i></button></li> <!-- 활성화 시 active -->
+		<li>
+			<button type="button" class="fixedPinBody " onclick="layerAlert.open('layerPinAlert');"> <!-- 활성화 시 active -->
+				<i class="split24">핀고정 정보</i>
+				<span class="number">4</span>
+			</button>
+		</li>
+		<li><button type="button" class="btnBikePin"><i>공기주입기</i></button> <!-- 활성화 시 active 클래스 추가 --></li>
+		<li><button type="button" class="generalMap"><i>일반지도</i></button> <!-- 활성화 시 active 클래스 추가 --></li>
+		<li><button type="button" class="satelliteMap"><i>위성지도</i></button> <!-- 활성화 시 active 클래스 추가 --></li>
+		<li><button type="button" class="diffcheck active"><span>변화비교</span><i class="split24"></i></button> <!-- 활성화시 버튼에 active 추가 --></li>
+		<li>
+			<button type="button" class="helpCall active"><!-- 활성화시 버튼에 active 추가 -->
+				<span>구조요청</span>
+				<i>구조요청</i>
+			</button>
+		</li>
+		<li><button type="button" class="roadView"><i>거리뷰</i></button></li>
+		<li><button type="button" class="setting"><i>설정</i></button></li>
+		<li><button type="button" class="help"><i>도움말</i></button></li>
+		<li><button type="button" class="cctvPin" onclick="layerPopup.open('layerCCTVSelect');"><i>CCTV 범례 및 필터</i></button></li>
+	</ul>
+</div>
+
+<table style="margin-top: 30px;">
 	<thead>
 		<tr>
 			<th>제목</th>

@@ -322,6 +322,7 @@ table td { vertical-align: middle;}
 .buttonArrow i { background-position: -24rem -4rem;}
 .buttonArrow.wood { background-color: #D69630;}
 .buttonArrow.blue { background-color: #6684EA;}
+.buttonArrow.black { background-color: #292D32;}
 
 /* 라인 중단점 */
 .line-default { border-top: 0.6rem solid #F4F5F7;}
@@ -1128,7 +1129,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* UI-SJN-42-003L */
 .userLayer h3 { padding: 1rem 0; font-size: 2rem; line-height: 2.6rem;}
-.userLayer h3 span { font-size: 1.6rem;}
 .userLayer .infomation { position: relative; padding: 0 2rem; background: url(../image/map/map_report.png) no-repeat right top 1rem/13rem 16.425rem;}
 .userLayer .infomation::after { content: ''; position: absolute; right: 0; top: 0;}
 .userLayer .infomation h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 1.6rem; font-size: 1.5rem;}
@@ -1138,27 +1138,29 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .userLayer .infomation .danger li::after { background-position: -30rem -4rem;}
 .userLayer .infomation .incon li::after { background-position: -30rem -6rem;}
 .userLayer .infomation .promote { margin: 4rem -2rem 0;}
-.userLayer .infomation .promote .body { height: 16rem; padding: 2.7rem 0 0 3.4rem; background: #739B7F url(../image/map/map_safetyUser_bg.png) no-repeat right 3.2rem bottom/10.825rem 13.6rem;}
-.userLayer .infomation .promote .body p { font-size: 2rem; font-weight: 700; color: #fff; line-height: 2.6rem;}
+.userLayer .infomation .promote .body img { max-width: 100%; height: auto; vertical-align: top;}
 .userLayer .report { padding: 2.4rem 2rem 3.6rem;}
 .userLayer .report .guide1 { margin-top: 0.8rem; line-height: 2.4rem;}
-.userLayer .report .guide2 { width: 66%; margin-top: 1.6rem; color: #777;}
+.userLayer .report .guide2 { margin-top: 1.6rem; font-size: 1.4rem; color: #777;}
 .userLayer .report .buttonArrow { margin-top: 3.2rem;}
 
 /* UI-SJN-60-001L */
-.layerLnbBody .mapChange { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem;}
-.layerLnbBody .mapChange button { display: block; width: 10rem;}
-.layerLnbBody .mapChange button .img { display: block; overflow: hidden; height: 6.4rem;}
-.layerLnbBody .mapChange button .img img { vertical-align: top;}
-.layerLnbBody .mapChange button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem;}
-.layerLnbBody .lnbLinks { display: flex; align-items: center; justify-content: space-between; margin: 1.4rem -2rem 0; padding: 2.4rem 2rem 0.5rem; border-top: 1px solid #F4F5F7;}
+.layerLnbBody .mapChange { display: flex; align-items: center; justify-content: center; height: 10.2rem;}
+.layerLnbBody .mapChange button { display: block; width: 10rem; margin: 0 0.5rem;}
+.layerLnbBody .mapChange button .icon { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; margin: 0 auto; border: 1px solid #EAEDF2; border-radius: 1rem;}
+.layerLnbBody .mapChange button.cityChange .icon i { background-position: 0 -24rem;}
+.layerLnbBody .mapChange button.streetView .icon i { background-position: -2.4rem -24rem;}
+.layerLnbBody .mapChange button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
+.layerLnbBody .mapChange button.active .icon { border: 1px solid #6684EA; background-color: #6684EA;}
+.layerLnbBody .mapChange button.active .icon i { background-position-y: -26.4rem;}
+.layerLnbBody .lnbLinks { display: flex; align-items: center; justify-content: space-between; margin: 0 -2rem; padding: 2.4rem 2rem 0.5rem; border-top: 1px solid #F4F5F7;}
 .layerLnbBody .lnbLinks button { display: block; width: 8rem; text-align: center;}
 .layerLnbBody .lnbLinks button .icon { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0 auto; background-color: #CCD2E3; border-radius: 1.6rem;}
 .layerLnbBody .lnbLinks button.traffic .icon i { background-position: -19.2rem -9.6rem;}
-.layerLnbBody .lnbLinks button.cctv .icon i { background-position: -22.4rem -9.6rem;}
+.layerLnbBody .lnbLinks button.bikePath .icon i { background-position: -22.4rem -9.6rem;}
 .layerLnbBody .lnbLinks button.streetLamp .icon i { background-position: -25.6rem -9.6rem;}
-.layerLnbBody .lnbLinks button.favorite .icon i { background-position: -28.8rem -9.6rem;}
-.layerLnbBody .lnbLinks button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem;}
+.layerLnbBody .lnbLinks button.dulleGil .icon i { background-position: -28.8rem -9.6rem;}
+.layerLnbBody .lnbLinks button .text { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
 .layerLnbBody .lnbLinks button.active .icon { background-color: #6684EA;}
 
 /* UI-SJN-60-002L */

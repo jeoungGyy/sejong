@@ -9,12 +9,12 @@ body { --vh: 1px;}
 .mapArea.fixed .mapIcons .sideBtns { top: 7rem;}
 .mapArea.fixed .mapIcons .location .myLocation,
 .mapArea.fixed .mapIcons .location .scaleBtn { bottom: 25rem;}
-.mapArea.fixed .mapIcons .diffcheck { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
-.mapArea.fixed .mapIcons .diffcheck span { display: none; color: #fff;}
-.mapArea.fixed .mapIcons .diffcheck i { background-position: -38.4rem -19.2rem;}
-.mapArea.fixed .mapIcons .diffcheck.active { display: flex; align-items: center; width: 10.6rem; background-color: #6684EA; border-radius: 2rem;}
-.mapArea.fixed .mapIcons .diffcheck.active span { display: block;}
-.mapArea.fixed .mapIcons .diffcheck.active i { margin-left: 0.4rem; background-position-y: -21.6rem;}
+.mapIcons .diffcheck { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .diffcheck span { display: none; color: #fff;}
+.mapIcons .diffcheck i { background-position: -38.4rem -19.2rem;}
+.mapIcons .diffcheck.active { display: flex; align-items: center; width: 10.6rem; background-color: #6684EA; border-radius: 2rem;}
+.mapIcons .diffcheck.active span { display: block;}
+.mapIcons .diffcheck.active i { margin-left: 0.4rem; background-position-y: -21.6rem;}
 .mapArea.subStyle .mapIcons .sideBtns { top: 7.4rem;}
 /* .mapArea.subStyle .mapIcons .location { transform: translateY(calc(100% - 12rem));} */
 .mapArea.subStyle .mapIcons .location .myLocation,
@@ -91,6 +91,22 @@ body { --vh: 1px;}
 .mapIcons .btnBikePin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -22rem -4rem/40rem 16rem;}
 .mapIcons .btnBikePin.active { background-color: #6684EA;}
 .mapIcons .btnBikePin.active i { background-position-y: -6rem;}
+
+.mapIcons .generalMap { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .generalMap i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -6rem -8rem/40rem 16rem;}
+.mapIcons .generalMap.active { background-color: #6684EA;}
+.mapIcons .generalMap.active i { background-position-y: -10rem;}
+
+.mapIcons .satelliteMap { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .satelliteMap i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -8rem -8rem/40rem 16rem;}
+.mapIcons .satelliteMap.active { background-color: #6684EA;}
+.mapIcons .satelliteMap.active i { background-position-y: -10rem;}
+
+
+
+
+
+
 .mapIcons .markerMy { position: absolute;}
 .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
 .mapIcons .markerMy div::after { content: ''; display: block; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
@@ -807,13 +823,9 @@ span.M { background-color: #FD2020;}
 /* UI-SJN-42-003L */
 
 /* UI-SJN-42-004L */
-.map .explain-default { padding-top: 3.2rem; background-color: #F4F5F7;}
+.map .explain-default { padding-top: 3.2rem;}
 .map .explain-default .text { padding: 0 2rem 2.8rem; color: #555; line-height: 2.3rem;}
-.map .explain-default .reportBtn { width: 100%; padding: 2rem 3.2rem; text-align: left; background: #D69630 url(../image/map/map_safetyUser_bg2.png) no-repeat right 3.4rem bottom/8.575rem 10.175rem;}
-.map .explain-default .reportBtn .title { display: block; font-size: 1.4rem; color: #fff; line-height: 2rem;}
-.map .explain-default .reportBtn .btnArrow { display: flex; align-items: center; margin-top: 1.5rem; color: #FFD800;}
-.map .explain-default .reportBtn .btnArrow i { margin-left: 0.8rem; background-position: -24rem -6rem;}
-
+.map .explain-default .promote .body img { max-width: 100%; height: auto; vertical-align: top;}
 
 /* 윤사랑 추가 */
 /* 공통 */
@@ -855,32 +867,31 @@ span.M { background-color: #FD2020;}
 .map .popMessageSlide .popNum span {color:#fff; font-size:1.2rem; line-height:2.4rem;}
 .map .popMessageSlide .popNum span.swiper-pagination-current {font-weight:700;}
 
-.map .mapIcons button.helpCall { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #FD2020; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%); border-radius: 50%;}
-.map .mapIcons button.helpCall span { display: none; color: #fff;}
-.map .mapIcons button.helpCall i { display: inline-block; width:1.8rem; height:2.05rem; text-indent: -9999rem; background: url(../image/map/ico_map_helpCall.png) no-repeat center/cover;}
-.map .mapIcons button.helpCall.active { display: flex; align-items: center; width: 10.6rem; border-radius: 2rem;}
-.map .mapIcons button.helpCall.active span { display: block;}
-.map .mapIcons button.helpCall.active i { margin: -0.2rem 0 0 0.8rem;}
-.map .mapIcons button.roadView i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
-.map .mapIcons button.roadView i:before { content:'';  width:2rem; height:2.25rem; background: url(../image/map/ico_map_roadView.png) no-repeat center/cover;}
-.map .mapIcons button.setting i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
-.map .mapIcons button.setting i:before { content:'';  width:2rem; height:2rem; background: url(../image/map/ico_map_setting.png) no-repeat center/cover;}
-.map .mapIcons button.help i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
-.map .mapIcons button.help i:before { content:'';  width:2.4rem; height:2.4rem; background: url(../image/map/ico_map_help.png) no-repeat center/cover;}
-
-.map .mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
-.map .mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
-.map .mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
-.map .mapIcons .location.easy {justify-content: left; position:absolute; left:1.2rem; bottom:1.6rem;}
-.map .mapIcons .location.easy .myLocation {display:inline-block; position:static; left:inherit; bottom:inherit;}
-.map .mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
-.map .mapIcons .location.easy .myLocation i {margin:0 auto;}
-.map .mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
-.map .mapIcons .location.easy .easyButton i {padding-left:2.4rem; font-size:1.4rem; color:#555;}
-.map .mapIcons .location.easy .police {margin-left:1.6rem;}
-.map .mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
-.map .mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
-.map .mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
+.mapIcons button.helpCall { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #FD2020; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%); border-radius: 50%;}
+.mapIcons button.helpCall span { display: none; color: #fff;}
+.mapIcons button.helpCall i { display: inline-block; width:1.8rem; height:2.05rem; text-indent: -9999rem; background: url(../image/map/ico_map_helpCall.png) no-repeat center/cover;}
+.mapIcons button.helpCall.active { display: flex; align-items: center; width: 10.6rem; border-radius: 2rem;}
+.mapIcons button.helpCall.active span { display: block;}
+.mapIcons button.helpCall.active i { margin: -0.2rem 0 0 0.8rem;}
+.mapIcons button.roadView i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
+.mapIcons button.roadView i:before { content:'';  width:2rem; height:2.25rem; background: url(../image/map/ico_map_roadView.png) no-repeat center/cover;}
+.mapIcons button.setting i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
+.mapIcons button.setting i:before { content:'';  width:2rem; height:2rem; background: url(../image/map/ico_map_setting.png) no-repeat center/cover;}
+.mapIcons button.help i {position:relative; display: flex; align-items: center; justify-content: center; width:4rem; height:4rem; text-indent:-9999rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%); background:#fff; border-radius: 50%;}
+.mapIcons button.help i:before { content:'';  width:2.4rem; height:2.4rem; background: url(../image/map/ico_map_help.png) no-repeat center/cover;}
+.mapIcons .markerFriend {position:absolute; width: 3.2rem; height: 4.4rem; }
+.mapIcons .markerFriend.boy {background: url(../image/map/icon_pin_boy.png) no-repeat center/cover;}
+.mapIcons .markerFriend.girl {background: url(../image/map/icon_pin_girl.png) no-repeat center/cover;}
+.mapIcons .location.easy {justify-content: left; position:absolute; left:1.2rem; bottom:1.6rem;}
+.mapIcons .location.easy .myLocation {display:inline-block; position:static; left:inherit; bottom:inherit;}
+.mapIcons .location.easy .myLocation.active {background-color:#FF940E;}
+.mapIcons .location.easy .myLocation i {margin:0 auto;}
+.mapIcons .location.easy .easyButton {height:3.6rem; padding:0 1.3rem 0 0.8rem; margin-left:0.8rem; border-radius:1.8rem; background-color:#fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
+.mapIcons .location.easy .easyButton i {padding-left:2.4rem; font-size:1.4rem; color:#555;}
+.mapIcons .location.easy .police {margin-left:1.6rem;}
+.mapIcons .location.easy .police i {background: url(../image/map/ico_map_easy_police.png) no-repeat left center/2rem;}
+.mapIcons .location.easy .emergency i {background: url(../image/map/ico_map_easy_emergency.png) no-repeat left center/2rem;}
+.mapIcons .location.easy .relex i {background: url(../image/map/ico_map_easy_relex.png) no-repeat left center/2rem;}
 
 .map .mapInfoLayer .btnModify {text-align: right; height:2.4rem; padding:0 2rem; }
 .map .mapInfoLayer .btnModify button {font-size:1.4rem; color:#FF940E;}
