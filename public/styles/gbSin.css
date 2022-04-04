@@ -225,6 +225,9 @@
 .mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
 .mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #777;}
 .mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
+.mainArea .weekClosed .open { padding: 2.5rem 0 2rem; text-align: center;}
+.mainArea .weekClosed .open img { width: 8rem; height: auto;}
+.mainArea .weekClosed .open span { display: block; margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .sejong { margin-top: 2.4rem;}
 .mainArea .sejong .roundDeco { display: block; position: absolute; left: -6rem; top: -7rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
 .mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 9.2rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}

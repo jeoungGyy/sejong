@@ -19,7 +19,8 @@
 .info .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
 .info .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
-/* .stickyHeader .info .infoNav { position: fixed; top: 0; z-index: 200;} */
+.info .infoNav.active { position: fixed;}
+.info .infoNav.active +.mainArea { padding-top: 6rem;}
 
 .info .mainArea { min-height: calc(100vh - 18.6rem); background: #F3F5F7;}
 .mainArea .flex { display: flex; align-items: center; justify-content: space-between;}

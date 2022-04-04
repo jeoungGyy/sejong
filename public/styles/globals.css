@@ -174,7 +174,7 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
 
-.stickyHeader .header.bgGreen { top: -5.6rem}
+/* .stickyHeader .header.bgGreen { top: -5.6rem} */
 /* .stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);} */
 .stickyHeader .boderTopGray { border: none;}
 
