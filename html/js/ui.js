@@ -24,17 +24,17 @@ const container = {
   /* Container 스크롤에 따른 클래스명 추가 */
 	scrollAct : () => {
 		let containerWrap = document.querySelector('.container');
-		// const infoNav = document.querySelector('.infoNav');
+		const infoNav = document.querySelector('.infoNav');
 		const recentService = document.querySelector('.infoWrap .recentService');
 		window.addEventListener('scroll', function(){
 			/* 생활정보 메인 메뉴 고정을 하기 위해 사용 */
-			// if(infoNav) {
-			// 	if(window.scrollY > 56) {
-			// 		infoNav.classList.add('active');
-			// 	} else {
-			// 		infoNav.classList.remove('active');
-			// 	}
-			// }
+			if(infoNav) {
+				if(window.scrollY > 56) {
+					infoNav.classList.add('active');
+				} else {
+					infoNav.classList.remove('active');
+				}
+			}
 
 			if(container.currentTop > window.scrollY && window.scrollY+window.innerHeight < document.body.offsetHeight) {
 				if(containerWrap.classList.contains('scrollDown')) containerWrap.classList.remove('scrollDown');

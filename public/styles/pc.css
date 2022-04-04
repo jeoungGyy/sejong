@@ -115,7 +115,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .chatbot,
 .subHeader,
 .headerWrap,
-.info .infoNav { max-width: 420px;}
+.infoNav { max-width: 420px;}
 
 
 @media screen and (max-width: 420px) {
@@ -152,12 +152,12 @@ html.tabletMode .mainMenu,
 html.tabletMode .chatbot,
 html.tabletMode .subHeader,
 html.tabletMode .headerWrap,
-html.tabletMode .info .infoNav,
+html.tabletMode .infoNav,
 html.tabletMode .pcContents,
 html.tabletMode .pcContainer,
 html.tabletMode .pcContainer .pcView { max-width: inherit; width: 100%;}
 html.tabletMode .pcContents { display: none;}
-html.tabletMode .info .infoNav li { margin-right: 1rem !important;}
+html.tabletMode .infoNav li { margin-right: 1rem !important;}
 html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}
 }
 
