@@ -54,7 +54,7 @@ body { --vh: 1px;}
 
 .map .mapInfoLayer .myArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; padding: 0 2rem 10rem;}
 .map .mapInfoLayer .myArea >section + section { margin: 0 -2rem; padding: 1.5rem 2rem; border-top: 0.6rem solid #F4F5F7;}
-.map .mapInfoLayer .myArea h3 { display: flex; align-items: center; height: 4rem; font-size: 1.6rem;}
+.map .mapInfoLayer .myArea h3 { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: 4rem; padding: 1rem 0; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
