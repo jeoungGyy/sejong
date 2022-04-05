@@ -10,7 +10,7 @@
 /* .decoBgLeft { position: absolute; left: 0; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_left.png) no-repeat left bottom/100rem 10rem;}
 .decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;} */
 
-.infoNav { display: flex; position: relative; top: 0; z-index: 200; width: 100%; background-color: #4EC457; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%);}
+.infoNav { display: flex; position: relative; top: 5.6rem; z-index: 200; width: 100%; background-color: #4EC457; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%);}
 .infoNav .slideContainer { overflow: hidden; display: flex; flex: 1; margin-left: 0; padding-right: 1.6rem;}
 .infoNav li { width: auto;}
 .infoNav li a { display: flex; align-items: center; position: relative; height: 6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
@@ -19,7 +19,7 @@
 .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 6rem; padding-left: 1rem; background-color: #4EC457;}
 .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
-.infoNav.active { position: fixed;}
+.infoNav.active { position: fixed; top: 0;}
 .infoNav.active +.swiper { padding-top: 6rem;}
 
 .info .mainArea { min-height: calc(100vh - 18.6rem); background: #F3F5F7;}
