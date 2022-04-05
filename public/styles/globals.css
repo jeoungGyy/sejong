@@ -147,7 +147,7 @@ table td { vertical-align: middle;}
 .contents { padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
-.headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
+.headerWrap { overflow: hidden; position: relative; top:0; z-index: 200; width: 100%;}
 .headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
 .headerWrap .headerClear.add { transition-duration: 200ms;}
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; background-color: #fff;} */
@@ -550,7 +550,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .postCode_btn { display: block; position: absolute; right: 1rem; top: 1.5rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
 
 /* 서비스 준비 중입니다. */
-.layerService { padding: 3rem 0 1rem;}
+.layerService { padding: 3rem 0 7rem;}
 .layerService .serviceLogo { text-align: left;}
 .layerService .serviceLogo img { width: 5.825rem; height: 2rem;}
 .layerService .serviceBody { margin-top: 2rem;}
@@ -1648,10 +1648,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .smallBody { width: 9.2rem; text-align: right;}
 .items-weeklyWeather li .smallBody span { font-size: 1.2rem;}
 .items-weeklyWeather li .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
-.items-weeklyWeather li .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #32BBED; border-radius: 50%;}
-.items-weeklyWeather li .smallBody .cBlue { color: #32BBED;}
-.items-weeklyWeather li .smallBody .cWood { color: #D37398;}
-.items-weeklyWeather li .smallBody .cWood::before { content: '/'; margin-right: 0.4rem; color: #ddd;}
+.items-weeklyWeather li .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #6684EA; border-radius: 50%;}
+.items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #32BBED;}
+.items-weeklyWeather li .smallBody .cWood { display: inline-block; position: relative; width: 4.4rem; margin-left: 0.4rem; color: #D37398;}
+.items-weeklyWeather li .smallBody .cWood::before { content: '/'; position: absolute; left: 0; top: 0; color: #ddd;}
 .items-weeklyWeather li .smallBody .cWood sup::before { border-color: #D37398;}
 .items-weeklyWeather li .sunrise { display: inline-flex; align-items: center; justify-content: center; }
 .items-weeklyWeather li .sunset { display: inline-flex; align-items: center; justify-content: flex-end; }

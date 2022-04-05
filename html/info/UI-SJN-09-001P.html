@@ -165,9 +165,9 @@
 							<div class="culture line-default">
 								<div class="header-default">
 									<h3>문화행사 <span class="num">4건</span></h3>
-									<button type="button" class="labelType">
+									<button type="button" class="labelType" onclick="tooltip.show('tooltipCitizen', 'bottom');">
 										<i class="split20"></i>
-										<span class="label black" onclick="tooltip.show('tooltipCitizen', 'bottom');">시민</span>
+										<span class="label black">시민</span>
 									</button>
 								</div>
 								<ul class="items-culture">
@@ -254,16 +254,7 @@
 					</main>
 					<!-- //본문 -->
 			
-					<!-- 툴팁 -->
-					<div id="tooltipCitizen" class="boxTooltipLayer">
-						<div class="boxTooltipBody">
-							<div class="paragraphGroup">
-								<p>시민을 위한 공간입니다.</p>
-							</div>
-							<button type="button" class="btnClose"><i>닫기</i></button>
-						</div>
-					</div>
-					<!-- //툴팁 -->
+					
 				</div>
 			</div>
 			<!-- //모바일 내용 -->
@@ -271,5 +262,16 @@
 		</div>
 	</div>
 </div>
+
+<!-- 툴팁 -->
+<div id="tooltipCitizen" class="boxTooltipLayer">
+	<div class="boxTooltipBody">
+		<div class="paragraphGroup">
+			<p>시민을 위한 공간입니다.</p>
+		</div>
+		<button type="button" class="btnClose"><i>닫기</i></button>
+	</div>
+</div>
+<!-- //툴팁 -->
 </body>
 </html>

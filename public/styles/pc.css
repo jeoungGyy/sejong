@@ -3,6 +3,9 @@
 
 /* @media screen and (min-width: 412px) { html {font-size: 67%;}} */
 
+#modal { border: 1px solid #000;}
+.modalContainer { border: 1px solid red;}
+
 body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
 .pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}
@@ -117,11 +120,13 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .headerWrap,
 .infoNav { max-width: 420px;}
 
+/* .boxTooltipLayer {left: 50%; width: 40rem; margin-left: 16rem;} */
 
 @media screen and (max-width: 420px) {
 .pcContainer .pcView { position: relative; right: inherit; margin: 0 auto; width: 100%;}
 .map .mapInfoLayer .btnMapInfo { display: block;}
 .map .mapInfoLayer .mapIHead .mapUpDown { display: none;}
+/* .boxTooltipLayer { left: 0; width: 100%; transform: inherit;} */
 }
 @media screen and (max-width: 1190px) {
 .pcContainer { width: 100%;}
@@ -129,6 +134,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcDeco.poa6 { margin-left: -810px;}
 .pcDeco.poa7 { margin-left: -320px;}
 .pcContainer .pcView { position: relative; max-width: inherit;}
+/* .boxTooltipLayer { margin-left: 0; transform: translateX(-50%);} */
 }
 
 
