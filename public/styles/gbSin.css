@@ -35,7 +35,7 @@
 .recentService .homeNav ul li a { display: block; position: relative; color: #111; text-align: center;}
 .recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2.4rem; height: 2.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
 .recentService .homeNav ul li a .text { font-size: 1.6rem;}
-.recentService .homeNav ul li a .roundBox { width: 100%; height: 10.2rem; padding: 2.4rem 1.6rem 0; text-align: center; white-space: nowrap; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 16%); border-radius: 2rem;}
+.recentService .homeNav ul li a .roundBox { width: 100%; height: 10.2rem; padding: 2.4rem 1.6rem 0; text-align: center; white-space: nowrap; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 10%); border-radius: 2rem;}
 .recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem;}
 .recentService .homeNav ul li a .roundBox .textGroup { display: flex; align-items: center; justify-content: center; margin-top: 0.8rem;}
 .recentService .homeNav ul li a .roundBox .subText { font-size: 1.4rem; color: #555;}
