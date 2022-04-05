@@ -1782,9 +1782,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul.inline li { margin-right: 0.8rem;}
 
 .items-mapInfo { margin-top: 0.8rem;}
-.items-mapInfo li { position: relative; min-height: 7.2rem; padding-left: 8.8rem;}
+.items-mapInfo li { clear: left; overflow: hidden; position: relative; min-height: 7.2rem;}
 .items-mapInfo li ~ li { margin-top: 1.6rem;}
-.items-mapInfo li figure { position: absolute; left: 0; top: 0; width: 7.2rem; height: 7.2rem;}
+.items-mapInfo li figure { float: left; width: 7.2rem; height: 7.2rem; margin-right: 1.6rem;}
 .items-mapInfo li .mapInfoBody { position: relative;}
 .items-mapInfo li .mapInfoBody h4 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right: 2.8rem; font-size: 1.6rem;}
 .items-mapInfo li .mapInfoBody .st { overflow:hidden; margin-top: 0.8rem; font-size: 1.4rem; text-overflow:ellipsis; white-space:nowrap;}
@@ -1882,6 +1882,13 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation >span.charge .paid { color: #FD2020;}
 .items-gasStation li .infomation >span.charge .free { color: #6684EA;}
 .items-gasStation li .infomation >span .cGreen { color: #4EC457;}
+.items-gasStation li .infomation .link { margin-left: 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
+.items-gasStation li .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
+.items-gasStation li .infomation2 { margin-top: 0.4rem;}
+.items-gasStation li .infomation2 span { font-size: 1.4rem;}
+.items-gasStation li .infomation2 .ava { display: inline-flex; align-items: center; justify-content: center; padding: 0 0.6rem; font-size: 1.3rem; color: #fff; border-radius: 1rem;}
+.items-gasStation li .infomation2 .ava.possible { background-color: #6684EA;}
+.items-gasStation li .infomation2 .ava.impossible { background-color: #555;}
 
 .items-gasStation li .etc { display: flex; align-items: center; margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .etc >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
