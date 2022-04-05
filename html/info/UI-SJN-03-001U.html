@@ -20,14 +20,33 @@
 					<!-- 공통: 서브 헤더 -->
 					<div class="headerWrap">
 						<div class="headerClear">
-							<header class="header bgGreen" style="margin-right: 50px;">
-								<div class="subHeader">
+							<header class="header bgGreen">
+								<div class="subHeader" style="transform: translateX(-100px);"> <!-- 여기에 값 -->
 									<h2></h2>
 									<button type="button" class="icoNext"><i>오늘 세종엔</i></button>
 								</div>
 							</header>
 						</div>
 					</div>
+
+					<nav id="infoNavSwiper" class="infoNav">
+						<div class="infoNavBody" style="transform: translateX(-100px);"> <!-- 여기에 값 -->
+							<button type="button" class="menuSetting" onclick="layerPopup.open('layerSharing');"><i class="split24">메뉴 설정</i></button>
+							<div class="slideContainer">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide"><a href="#">스마트세종</a></li>
+									<li class="swiper-slide"><a href="#">세종여행</a></li>
+									<li class="swiper-slide"><a href="#">스마트세종</a></li>
+									<li class="swiper-slide"><a href="#">세종여행</a></li>
+									<li class="swiper-slide"><a href="#">스마트세종</a></li>
+									<li class="swiper-slide"><a href="#">세종여행</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<script>
+						slider.active('infoNavSwiper')
+					</script>
 					<!-- //공통: 서브 헤더 -->
 			
 					<!-- 본문 -->
@@ -36,19 +55,6 @@
 						
 						<div class="infoWrap">
 							<div class="mainMenuFixed">
-								<nav id="infoNavSwiper" class="infoNav">
-									<button type="button" class="menuSetting" onclick="layerPopup.open('layerSharing');"><i class="split24">메뉴 설정</i></button>
-									<div class="slideContainer">
-										<ul class="swiper-wrapper">
-											<li class="swiper-slide"><a href="#">스마트세종</a></li>
-											<li class="swiper-slide"><a href="#">세종여행</a></li>
-										</ul>
-									</div>
-								</nav>
-								<script>
-									slider.active('infoNavSwiper')
-								</script>
-			
 								<div class="mainArea">
 									<div class="recentService typeB">
 										<h3>이용이 많은 정보</h3>

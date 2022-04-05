@@ -848,6 +848,8 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .reportList li .reportBody .control { display: flex; align-items: center; margin-top: 0.8rem;}
 .map .mapInfoLayer .reportList li .reportBody .control .controlBtn { font-size: 1.4rem; color: #6684EA;}
 .map .mapInfoLayer .reportList li figure { width: 7.2rem; height: 7.2rem; margin-left: 1.6rem;}
+.map .mapInfoLayer .reportList li figure .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; bottom: 0.4rem; height: 2.4rem; padding: 0 0.8rem; font-size: 1.2rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
+.map .mapInfoLayer .reportList li figure .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
 
 /* UI-SJN-42-003L */
 
