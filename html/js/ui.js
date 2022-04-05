@@ -76,6 +76,16 @@ const mapInfo = {
 				myLocation.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
 				scaleBtn.style.bottom = (mapInfo.locationPosition/10)+1+'rem';
 			}
+
+
+
+
+
+			const naverMap = document.querySelector("#naver-map");
+			naverMap.style.transform = `translateY(-${(mapInfo.locationPosition/2)/10}rem)`;
+
+
+
 		}
 	},
 	click : (division) => {
@@ -167,6 +177,10 @@ const mapInfo = {
 		}
 
 		function infoDown() {
+			const naverMap = document.querySelector("#naver-map");
+			naverMap.style.transform = `translateY(0rem)`;
+
+
 			mapInfoLayer.classList.remove('open');
 			btnView && btnView.classList.remove('open');
 			location && location.classList.remove('default');
