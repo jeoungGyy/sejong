@@ -166,6 +166,11 @@ const slideOpt = {
     slidesPerView: 'auto',
 		spaceBetween: 8,
 	},
+	/* UI-SJN-32-020L */
+	mapToVisitSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
+	},
 	/* UI-SJN-34-002 */
 	mapParkingSpace: {
     slidesPerView: 'auto',
