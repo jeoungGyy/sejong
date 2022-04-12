@@ -584,7 +584,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 /* UI-SJN-01-001U */
-.layerNotice { padding: 4rem 0 6rem;}
+.layerNotice { padding: 4rem 0 0;}
 .layerNotice img { max-width: 100%; height: auto;}
 .layerNotice > div { overflow-x: hidden; overflow-y: auto;}
 .layerNotice a { display: block; color: #111; text-align: left;}
@@ -594,7 +594,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerNotice a .contexte p .img { float: right; overflow: hidden; width: auto; width: 12rem; height: 12rem; margin-left: 0.4rem; border-radius: 50%;}
 .layerNotice a .more { display: block; margin-top: 1.6rem; font-size: 1.4rem; color: #6684EA;}
 .layerNotice a .full { width: 100%; height: auto;}
-.layerNotice .noticeCheck { display: flex; justify-content: flex-end; align-items: baseline; margin-top: 1rem;}
+.layerNotice .noticeCheck { display: flex; justify-content: flex-end; align-items: baseline; margin: 1rem 0 -2rem;}
 .layerNotice .noticeCheck .radioSet label { zoom: 0.8;}
 .layerNotice .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
