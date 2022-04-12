@@ -269,6 +269,11 @@ body { --vh: 1px;}
 .mapIcons .sideBtns li ~ li { margin-top: 1rem;}
 .mapIcons .imgMarker { position: absolute; width: 31.8rem; height: 22.6rem; padding: 1rem 1.1rem 1.7rem; background: url(../../public/image/map/map_marker_bg.png) no-repeat center/cover;}
 .mapIcons .imgMarker img { width: 100%; height: 100%;}
+.mapIcons .storeName { position: relative;}
+.mapIcons .storeName span { display: block; overflow: hidden; position: absolute; left: 50%; bottom: 0; width: 10rem; height: 3.7rem; font-size: 14px; transform: translate(-50% , 100%);}
+.mapIcons .communication { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .communication i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -14rem -8rem/40rem 16rem;}
+.mapIcons .communication.active i { background-position-y: -10rem;}
 
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}
@@ -452,7 +457,7 @@ span.M { background-color: #FD2020;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) i { background-position: -4.8rem  -9.6rem;}
 .mapMenuLayer .mapMenuBody ul li:nth-child(6) .btn { margin: -2rem 0 0 0;}
 .mapMenuLayer .mapMenuBody ul li .btn { display: grid; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff;}
-.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.8rem; padding: 0.4rem 0; text-align: center; border: 1px solid #CDD0D8; transform: translateX(-50%);}
+.mapMenuLayer .mapMenuBody .parkingName { position: absolute; left: 50%; top: 6.8rem; width: 8.8rem; padding: 0.4rem 0; text-align: center; transform: translateX(-50%);}
 .mapMenuLayer .mapMenuBody .parkingName b { display: flex; justify-content: center; min-height: 1.8rem; font-size: 1.6rem;}
 .mapMenuLayer .mapMenuBody .parkingName b.t { overflow: hidden; max-height: 4.5rem;}
 .mapMenuLayer .mapMenuBody .parkingName .cBlue { font-size: 1.6rem;}
