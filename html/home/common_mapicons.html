@@ -20,6 +20,7 @@
 	.busStop { display: flex; align-items: center; position: relative; height: 100px;}
 	.busStop .busIco { position: inherit !important; left: 0; top: 0; transform:none; margin: 0 30px;}
 	.mapIcons .sideBtns { display: block; position: inherit;}
+	.imgMarker { position: inherit !important;}
 </style>
 
 <h3>말풍성 아이콘 모음</h3>
@@ -142,8 +143,19 @@
 		<li><button type="button" class="roadView"><i>거리뷰</i></button></li>
 		<li><button type="button" class="setting"><i>설정</i></button></li>
 		<li><button type="button" class="help"><i>도움말</i></button></li>
-		<li><button type="button" class="cctvPin" onclick="layerPopup.open('layerCCTVSelect');"><i>CCTV 범례 및 필터</i></button></li>
+		<li><button type="button" class="cctvPin"><i>CCTV 범례 및 필터</i></button></li>
+		<li><button type="button" class="communication"><i>소통</i></button> <!-- 활성화 시 active 클래스 추가 --></li>
 	</ul>
+</div>
+
+<br /><br /><br />
+
+<div class="mapIcons" style="width: 400px; margin: 30px auto 0;">
+	<div class="imgMarker">
+		<img src="../../public/image/temp/temp015.png" alt="">
+	</div>
+
+	<div class="imgMarker" style="left: 500px;"></div>
 </div>
 
 <table style="margin-top: 30px;">
@@ -159,6 +171,17 @@
 		<tr>
 			<td>핀</td>
 			<td colspan="3"><img src="../../public/image/map/icons/ico_pin.png" alt=""></td>
+		</tr>
+		<tr>
+			<td>마커 내용</td>
+			<td colspan="3" style="height: 200px;">
+				<div class="mapIcons">
+					<div class="storeName">
+						<img src="../../public/image/map/icons/ico40_bus.png" alt="">
+						<span>내용이 들어갑 들어갑니다용이 들어갑니다.</span>
+					</div>
+				</div>
+			</td>
 		</tr>
 		<tr>
 			<td>bus</td>

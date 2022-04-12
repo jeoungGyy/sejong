@@ -965,6 +965,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .article { margin-top: 1.6rem; padding-left: 1.6rem; color: #555;}
 .locationLayer .detail .article .title { position: relative;}
 .locationLayer .detail .article .title::after { content: ''; display: block; position: absolute; left: -1rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
+.locationLayer .detail .slideBody .slideContainer { overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
+.locationLayer .detail .slideBody li { width: 20rem;}
 .locationLayer .app { padding: 0 2rem 2.4rem;}
 .locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
 .locationLayer .app ul li a figure { overflow: hidden; width: 6rem; height: 6rem; margin: 0 2.2rem 0 0.2rem;}
@@ -1884,12 +1886,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation >span .cGreen { color: #4EC457;}
 .items-gasStation li .infomation .link { margin-left: 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
 .items-gasStation li .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
+.items-gasStation li .infomation .oper { display: inline-flex; align-items: center; justify-content: center; width: 5rem; height: 2.2rem; color: #fff; background-color: #4EC457; border-radius: 1.1rem;}
+.items-gasStation li .infomation .ready { display: inline-flex; align-items: center; justify-content: center; width: 5rem; height: 2.2rem; color: #fff; background-color: #aaa; border-radius: 1.1rem;}
+.items-gasStation li .infomation .people { display: inline-flex; align-items: center; justify-content: center; position: relative; margin-left: 1rem; color: #111;}
+.items-gasStation li .infomation .people i { display: inline-block; width: 1rem; height: 1rem; margin-right: 0.4rem; border-radius: 50%;}
 .items-gasStation li .infomation2 { margin-top: 0.4rem;}
 .items-gasStation li .infomation2 span { font-size: 1.4rem;}
 .items-gasStation li .infomation2 .ava { display: inline-flex; align-items: center; justify-content: center; padding: 0 0.6rem; font-size: 1.3rem; color: #fff; border-radius: 1rem;}
 .items-gasStation li .infomation2 .ava.possible { background-color: #6684EA;}
 .items-gasStation li .infomation2 .ava.impossible { background-color: #555;}
-
 .items-gasStation li .etc { display: flex; align-items: center; margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .etc >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
@@ -1900,7 +1905,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .etc >span { font-size: 1.4rem; color: #555;}
 .items-gasStation li .etc >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .etc >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-
 .items-gasStation li .hos { margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .hos >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .hos >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
@@ -1911,13 +1915,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .hos .facilities span.hospital { background: url(../image/map/ico_20_hospital.png) no-repeat left center/2rem;}
 .items-gasStation li .hos .facilities span.night { background: url(../image/map/ico_20_night.png) no-repeat left center/2rem;}
 .items-gasStation li .hos .facilities span.emergency { background: url(../image/map/ico_20_emergency.png) no-repeat left center/2rem;}
-
-
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
-/* .items-gasStation li .guidance.top { top: 1.2rem;} */
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+.items-gasStation li.promote { background-color: #F4F5F7;}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
 
 .items-LocalCurrency { margin-top: 0.8rem;}
