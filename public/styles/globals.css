@@ -1963,10 +1963,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
-.items-gasStation li button.view.deactive { display: none !important;}
-.items-gasStation li.promote { background-color: #F4F5F7;}
-.items-gasStation li.active button.view { display: flex;}
-.items-gasStation li.active button.view.deactive { display: flex;}
+.items-gasStation li button.view.active { display: flex;}
+.items-gasStation li.promote { background-color: #f4f9fd;}
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation li.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
