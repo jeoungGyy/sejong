@@ -269,8 +269,13 @@ body { --vh: 1px;}
 .mapIcons .sideBtns li ~ li { margin-top: 1rem;}
 .mapIcons .imgMarker { position: absolute; width: 31.8rem; height: 22.6rem; padding: 1rem 1.1rem 1.7rem; background: url(../../public/image/map/map_marker_bg.png) no-repeat center/cover;}
 .mapIcons .imgMarker img { width: 100%; height: 100%;}
-.mapIcons .stressMarker { position: absolute; padding: 0.8rem; background-color: #fff;}
-.mapIcons .stressMarker img { width: 100%; height: 100%;}
+.mapIcons .stressMarker { position: absolute; padding: 0.8rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgb(0 0 0 / 10%);}
+.mapIcons .stressMarker img { width: 100%; height: auto; vertical-align: top;}
+.mapIcons .stressMarker::after { content: ''; position: absolute; left: 50%; bottom: -2.6rem; width: 0; height: 0; border-style: solid; margin-left: -1rem; border-width: 1.5rem 1rem; border-color: #fff transparent transparent transparent;}
+.mapIcons .stressMarker p { margin: 0.8rem 0; font-size: 1.4rem; font-weight: 700;}
+.mapIcons .stressMarker.active { background-color: #6684EA;}
+.mapIcons .stressMarker.active p { color: #fff;}
+.mapIcons .stressMarker.active::after { border-color: #6684EA transparent transparent transparent;}
 
 .mapIcons .storeName { position: relative;}
 .mapIcons .storeName span { display: block; overflow: hidden; position: absolute; left: 50%; bottom: 0; width: 10rem; height: 3.7rem; font-size: 14px; transform: translate(-50% , 100%);}
