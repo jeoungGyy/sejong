@@ -975,6 +975,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .article .title::after { content: ''; display: block; position: absolute; left: -1rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .locationLayer .detail .slideBody .slideContainer { overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
 .locationLayer .detail .slideBody li { width: 15.6rem;}
+.locationLayer .detail .slideBody li a { display: block;}
+.locationLayer .detail .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #6684EA; border: 1px solid #eaedf2;}
 .locationLayer .detail .slideBody.mt { margin-top: 3.2rem;}
 .locationLayer .detail .chartBox { position: relative; margin-top: 0.8rem; padding: 1.6rem 2rem; background-color: #F8F8F8;}
 .locationLayer .detail .chartBox .chart img { width: 100%; height: auto;}
