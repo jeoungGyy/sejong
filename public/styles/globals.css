@@ -836,6 +836,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .headerLocation .menu button { flex: 1; height: 4.8rem;}
 .headerLocation .menu button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
 .locationLayer .locationHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; margin-top: 1.4rem;}
+.locationLayer .locationHeader + .flex { margin-top: 0;}
 .locationLayer .locationHeader h3 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; font-size: 1.6rem;}
 .locationLayer .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
 .locationLayer .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
@@ -915,11 +916,13 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail >div p .icon { margin-top: -0.4rem; vertical-align: middle;}
 .locationLayer .detail .detailbtn a { display: flex; align-items: center; position: relative; height: 4.8rem; margin-top: 1.6rem; padding: 0 1.6rem; font-size: 1.6rem; color: #111; border: 1px solid #ddd;}
 .locationLayer .detail .detailbtn a::after { content: ''; display: block; position: absolute; right: 1.6rem; top: 1.6rem; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
-.locationLayer .detail .flex { display: flex; align-items: center; position: relative; min-height: 3.6rem;}
+.locationLayer .detail .flex { display: flex; align-items: center; position: relative; min-height: 3.6rem; margin-top: 0.4rem;}
 .locationLayer .detail .flex h4 { height: inherit; margin: 0 0.8rem 0 0;}
 .locationLayer .detail .flex .sale { position: absolute; right: 0; top: 0.6rem;}
 .locationLayer .detail .flex .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
 .locationLayer .detail .flex .sale .discount { color: #FD2020;}
+.locationLayer .detail .flex .selectBox { position: absolute; right: 0; top: 0;}
+.locationLayer .detail .flex .selectBox .selectBlue { height: 3.6rem; padding: 0 2.5rem 0 0; color: #6684EA; border: none; background: #fff url(../image/common/ico_select_blue.png) no-repeat right top 0.8rem/2rem;}
 .locationLayer .detail .flex >div p { margin-top: 0; font-size: 1.5rem; color: #535353;}
 .locationLayer .detail .flex >div p.paid { color: #FD2020;}
 .locationLayer .detail .flex >div p.free { color: #6684EA;}
@@ -966,7 +969,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .article .title { position: relative;}
 .locationLayer .detail .article .title::after { content: ''; display: block; position: absolute; left: -1rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .locationLayer .detail .slideBody .slideContainer { overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
-.locationLayer .detail .slideBody li { width: 20rem;}
+.locationLayer .detail .slideBody li { width: 15.6rem;}
+.locationLayer .detail .chartBox { position: relative; margin-top: 0.8rem; padding: 1.6rem 0.8rem 3.5rem; background-color: #F8F8F8;}
+.locationLayer .detail .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 3rem;}
+.locationLayer .detail .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
+.locationLayer .detail .chartBox .arrow { display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; width: 4rem; height: 4rem; margin-top: -2rem; background-color: #fff; border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%);}
+.locationLayer .detail .chartBox .arrow.left { left: -1.2rem;}
+.locationLayer .detail .chartBox .arrow.left i { background-position: -40.8rem -2.4rem;}
+.locationLayer .detail .chartBox .arrow.right { right: -1.2rem;}
+.locationLayer .detail .chartBox .arrow.right i { background-position-x: -40.8rem;}
 .locationLayer .app { padding: 0 2rem 2.4rem;}
 .locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
 .locationLayer .app ul li a figure { overflow: hidden; width: 6rem; height: 6rem; margin: 0 2.2rem 0 0.2rem;}
