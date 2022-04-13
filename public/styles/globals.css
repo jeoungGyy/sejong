@@ -201,6 +201,7 @@ table td { vertical-align: middle;}
 .cRed { color: #FD2020 !important;}
 .cGreen { color: #4EC457 !important;}
 .cBlack { color: #111 !important;}
+.cLightBlack { color: #555 !important;}
 .cGray { color: #777 !important;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
@@ -940,6 +941,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .flex.baseline { align-items: baseline;}
 .locationLayer .detail .flex >div .oper { color: #4EC457;}
 .locationLayer .detail .flex >div .ready { color: #6684EA;}
+.locationLayer .detail .flex >div .end { color: #555;}
 .locationLayer .detail .parkingList { display: flex; align-items: center; flex-wrap: wrap; margin: 0 0 0 -0.8rem;}
 .locationLayer .detail .parkingList li { margin: 0.8rem 0 0 0.8rem; padding: 0.6rem 1.2rem; border: 1px solid #EAEAEA;}
 .locationLayer .detail .parkingList li span { font-size: 1.4rem; color: #777;}
@@ -973,14 +975,38 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .article .title::after { content: ''; display: block; position: absolute; left: -1rem; top: 0.6rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 .locationLayer .detail .slideBody .slideContainer { overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
 .locationLayer .detail .slideBody li { width: 15.6rem;}
-.locationLayer .detail .chartBox { position: relative; margin-top: 0.8rem; padding: 1.6rem 0.8rem 3.5rem; background-color: #F8F8F8;}
+.locationLayer .detail .slideBody.mt { margin-top: 3.2rem;}
+.locationLayer .detail .chartBox { position: relative; margin-top: 0.8rem; padding: 1.6rem 2rem; background-color: #F8F8F8;}
+.locationLayer .detail .chartBox .chart img { width: 100%; height: auto;}
 .locationLayer .detail .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 3rem;}
 .locationLayer .detail .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
+.locationLayer .detail .chartBox .text .nod ~ .nod { margin-left: 1.6rem;}
+.locationLayer .detail .chartBox .text .nod i { display: inline-block; width: 1rem; height: 1rem; margin-right: 0.4rem; border-radius: 50%;}
+.locationLayer .detail .chartBox .text.mt { margin: 1.4rem 0 0;}
 .locationLayer .detail .chartBox .arrow { display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; width: 3.2rem; height: 3.2rem; margin-top: -1.6rem; background-color: #fff; border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%);}
 .locationLayer .detail .chartBox .arrow.left { left: -1.2rem;}
 .locationLayer .detail .chartBox .arrow.left i { background-position: -40.8rem -2.4rem;}
 .locationLayer .detail .chartBox .arrow.right { right: -1.2rem;}
 .locationLayer .detail .chartBox .arrow.right i { background-position-x: -40.8rem;}
+.locationLayer .detail .visitor { display: flex; align-items: center; justify-content: center; height: 4.8rem; margin-top: 0.4rem; font-size: 1.6rem; font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 0.4rem;}
+.locationLayer .detail .visitorDetail { margin-top: 1.6rem; padding: 2.4rem 1rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.locationLayer .detail .visitorDetail >div ~ div { margin-top: 2.3rem;}
+.locationLayer .detail .visitorDetail >div { display: flex; align-items: center;}
+.locationLayer .detail .visitorDetail >div .title { display: flex; align-items: center; width: 11rem; font-size: 1.6rem; color: #555;}
+.locationLayer .detail .visitorDetail >div .walking i { margin-right: 0.4rem; background-position: -4.8rem -24rem;}
+.locationLayer .detail .visitorDetail >div .bike i { margin-right: 0.4rem; background-position: -7.2rem -24rem;}
+.locationLayer .detail .visitorDetail >div b { flex: 1; font-size: 1.8rem;}
+.locationLayer .detail .visitorDetail >div .today { width: 10.5rem; font-size: 1.6rem; color: #555; text-align: right;}
+.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
+.locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center;}
+.locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
+.locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.locationLayer .detail .tabCount .combo { display: flex; align-items: center;}
+.locationLayer .detail .tabCount .combo >span { margin-right: 0.8rem; color: #555;}
+.locationLayer .detail .tabCount .combo .switch input:checked + label:before { background-color: #4EC457;}
+
+
 .locationLayer .app { padding: 0 2rem 2.4rem;}
 .locationLayer .app ul li a { display: flex; align-items: center; padding: 1rem 0;}
 .locationLayer .app ul li a figure { overflow: hidden; width: 6rem; height: 6rem; margin: 0 2.2rem 0 0.2rem;}
@@ -1900,8 +1926,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation >span .cGreen { color: #4EC457;}
 .items-gasStation li .infomation .link { margin-left: 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
 .items-gasStation li .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
-.items-gasStation li .infomation .oper { display: inline-flex; align-items: center; justify-content: center; width: 5rem; height: 2.2rem; font-weight: 700; color: #4EC457;}
-.items-gasStation li .infomation .ready { display: inline-flex; align-items: center; justify-content: center; width: 5rem; height: 2.2rem; font-weight: 700; color: #6684EA;}
+.items-gasStation li .infomation .oper { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #4EC457;}
+.items-gasStation li .infomation .ready { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #6684EA;}
+.items-gasStation li .infomation .end { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #555;}
 .items-gasStation li .infomation .people { display: inline-flex; align-items: center; justify-content: center; position: relative; margin-left: 1rem; color: #111;}
 .items-gasStation li .infomation .people i { display: inline-block; width: 1rem; height: 1rem; margin-right: 0.4rem; border-radius: 50%;}
 .items-gasStation li .infomation2 { margin-top: 0.4rem;}
