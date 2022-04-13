@@ -30,6 +30,8 @@
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
+.recentService .items-wordList { margin: 1.2rem -2rem 0;}
+.recentService .items-wordList .slideContainer { padding: 0 2rem 1rem;}
 .recentService .homeNav { position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
 .recentService .homeNav ul li { width: auto; min-width: 9.2rem;}
 .recentService .homeNav ul li a { display: block; position: relative; color: #111; text-align: center;}
