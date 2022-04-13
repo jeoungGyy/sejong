@@ -264,16 +264,24 @@
 										<h3>상세정보</h3>
 									</header>
 			
-									<h4>주요시설</h4>
+									<div class="flex">
+										<h4>주요시설</h4>
+										<div>
+											<p class="oper"><b>운영중</b></p>
+											<p class="ready"><b>준비중</b></p>
+										</div>
+									</div>
 									<div>
 										<p>
 											뒤웅박고을은 전통장류로 유명한 곳이다. 전통장류박물관(체험장), 전통장류음식 전문식당, 전통장류 등 전시판매장, 커피전문점, 대규모 장독대, 야외전시장 등이 있다. 
 											전통장류박물관은 130여 점의 옹기 유물을 전시하고 있다. 또, 1950년대 뒤웅박고을 설립자의 어머니가 담근 씨간장과 장항아리를 볼 수 있다.
 										</p>
 									</div>
-									<h4>운영시간</h4>
-									<div>
-										<p>09:00 ~ 18:00</p>
+									<div class="flex">
+										<h4>이용시간</h4>
+										<div>
+											<p>09:00 ~ 18:00</p>
+										</div>
 									</div>
 									<h4>종합안내도 및 사진</h4>
 									<div>
@@ -307,6 +315,31 @@
 										<script>
 											slider.active('mapToVisitSwiper')
 										</script>
+									</div>
+									<div class="flex">
+										<h4>인기 시간대</h4>
+										<div class="selectBox">
+											<select class="selectBlue" title="인기 시간대 날짜 선택">
+												<option>일요일</option>
+											</select>
+										</div>
+									</div>
+									<div class="chartBox">
+										<div class="text">
+											<!--
+												30명 이내 : background-color: #e84548
+												20명 이내 : background-color: #ffa60e
+												10명 이내 : background-color: #01c73d
+												5명 이내 : background-color: #32a2ff
+											-->
+											<span class="roundBox" style="background-color: #e84548;">혼잡</span>
+											<b>30명이상 (평소보다 혼잡)</b>
+										</div>
+										<div class="chart">
+											그래프 자리
+										</div>
+										<button type="button" class="arrow left"><i class="split24">왼쪽 이동</i></button>
+										<button type="button" class="arrow right"><i class="split24">오른쪽 이동</i></button>
 									</div>
 								</section>
 			
