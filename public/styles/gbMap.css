@@ -538,6 +538,7 @@ span.M { background-color: #FD2020;}
 
 /* UI-SJN-32-020L */
 .map .mapInfoLayer .headFlex .note.otherStyle { font-size: 1.3rem;}
+.map .mapInfoLayer .headFlex.flex-end { justify-content: flex-end;}
 
 /* UI-SJN-33-005L */
 .map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between;}
