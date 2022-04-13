@@ -59,6 +59,13 @@ const slideOpt = {
 			disableOnInteraction: false
 		},
 	},
+	mainPromotionSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 12,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	},
 	/* UI-SJN-03-001U */
 	infoNavSwiper: {
     slidesPerView: 'auto',

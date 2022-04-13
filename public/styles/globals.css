@@ -1005,7 +1005,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
 .locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 .locationLayer .detail .tabCount .combo { display: flex; align-items: center;}
-.locationLayer .detail .tabCount .combo >span { margin-right: 0.8rem; color: #555;}
+.locationLayer .detail .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .locationLayer .detail .tabCount .combo .switch input:checked + label:before { background-color: #4EC457;}
 
 
