@@ -1964,7 +1964,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; position: absolute; left: 0; bottom: 0; width: 100%; height: 3.4rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation li.promote { background-color: #F4F5F7;}
-.items-gasStation li.active { padding-bottom: 4.4rem;}
+.items-gasStation li.active { padding-bottom: 5rem;}
 .items-gasStation li.active button.view { display: flex;}
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
