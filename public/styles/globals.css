@@ -1675,7 +1675,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .uvBody >div .legend { width: 2rem; height: 2rem; margin-left: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
 .uvBody p { margin-top: 0.4rem; color: #555; line-height: 2rem;}
 
-.items-weatherInfo { display: inline-flex; margin-top: 0.8rem; align-items: center; text-align: center;}
+.items-weatherInfo { display: inline-flex; margin-top: 0; align-items: center; text-align: center;}
 .items-weatherInfo li { flex: 1 1 auto; width: 5rem;}
 .items-weatherInfo li ~ li { margin-left: 0.4rem;}
 .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.2rem; color: #777;}

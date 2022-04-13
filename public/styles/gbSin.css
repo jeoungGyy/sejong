@@ -114,10 +114,10 @@
 .mainArea .weatherBox .nav_side { margin: 0.8rem 0 0.6rem;}
 .mainArea .weatherBox .accordionTarget { overflow: hidden; height: 0; transition: height 0.3s ease-in-out;}
 .mainArea .weatherBox .accordionTarget img { width: 100%; height: auto;}
-.mainArea .weatherBox .accordionTarget .tabContent { height: 16rem;}
+.mainArea .weatherBox .accordionTarget .tabContent { height: 13rem;}
 .mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
 .mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
-.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX { overflow-x: auto; overflow-y: hidden; padding: 0 0 1.4rem; scroll-behavior: smooth;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX { overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth;}
 .mainArea .weatherBox .accordionTarget .tabContent >div .items-weatherInfo li { width: auto;}
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
@@ -143,7 +143,7 @@
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
 
-.mainArea .weatherBox.active .accordionTarget { height: 29rem;}
+.mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
 .mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: 0; background-size: 52rem 15.6rem;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature { font-size: 2.4rem;}
