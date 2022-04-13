@@ -120,6 +120,9 @@
 .mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
 .mainArea .weatherBox .accordionTarget .tabContent >div.active { display: block;}
 .mainArea .weatherBox .accordionTarget .tabContent >div .overflowX { overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX::-webkit-scrollbar { height: 6px;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX::-webkit-scrollbar-track { background-color: #F4F5F7; border-radius: 10px;}
+.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 10px;}
 .mainArea .weatherBox .accordionTarget .tabContent >div .items-weatherInfo li { width: auto;}
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
