@@ -5,6 +5,7 @@ str += '<meta name="viewport" content="width=device-width, viewport-fit=cover" /
 str += '<meta name="theme-color" content="#6684EA" />';
 str += '<meta name="author" content="세종엔" />';
 str += '<title>세종엔</title>';
+str += '<link rel="shortcut icon" href="../../public/image/common/smartCity_favicon.ico">';
 str += '<link rel="stylesheet" href="../../public/styles/swiper-bundle.min.css" />';
 str += '<link rel="stylesheet" href="../../public/styles/gbSin.css"/>';
 str += '<link rel="stylesheet" href="../../public/styles/gbInfo.css" />';
