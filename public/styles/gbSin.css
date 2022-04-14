@@ -339,9 +339,10 @@
 
 .mainArea .mainPromotion { padding-bottom: 2.8rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
-.mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
+.mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; margin: -1rem;}
 .mainArea .mainPromotion .swiper-pagination { bottom: 0;}
-.mainArea .mainPromotion .promotionList a { display: block;}
+.mainArea .mainPromotion .promotionList li { padding: 1rem;}
+.mainArea .mainPromotion .promotionList a { display: block; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
 
 .home .footer { padding: 2.2rem 0 4rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
