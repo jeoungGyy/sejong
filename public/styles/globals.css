@@ -588,7 +588,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 /* UI-SJN-01-001U */
 .layerNotice { padding: 4rem 0 0;}
 .layerNotice img { max-width: 100%; height: auto;}
-.layerNotice > div { overflow-x: hidden; overflow-y: auto;}
+.layerNotice >div { overflow-x: hidden; overflow-y: auto;}
+.layerNotice >div::-webkit-scrollbar { width: 6px;}
+.layerNotice >div::-webkit-scrollbar-track { background-color: #F4F5F7; border-radius: 3px;}
+.layerNotice >div::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 3px;}
 .layerNotice a { display: block; color: #111; text-align: left;}
 .layerNotice a .title { padding-right: 3rem;}
 .layerNotice a .title p { font-size: 1.8rem; font-weight: 700;}
