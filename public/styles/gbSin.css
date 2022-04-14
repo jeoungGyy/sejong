@@ -339,7 +339,7 @@
 
 .mainArea .mainPromotion { padding-bottom: 2.8rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
-.mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden;}
+.mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 .mainArea .mainPromotion .swiper-pagination { bottom: 0;}
 .mainArea .mainPromotion .promotionList a { display: block;}
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
