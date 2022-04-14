@@ -1941,7 +1941,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation2 .ava { display: inline-flex; align-items: center; justify-content: center; padding: 0 0.6rem; font-size: 1.3rem; color: #fff; border-radius: 1rem;}
 .items-gasStation li .infomation2 .ava.possible { background-color: #6684EA;}
 .items-gasStation li .infomation2 .ava.impossible { background-color: #555;}
-.items-gasStation li .etc { display: flex; align-items: center; margin: 0.8rem -5.3rem 0 0;}
+.items-gasStation li .etc { display: flex; align-items: center; margin: 0.8rem 0 0 0;}
 .items-gasStation li .etc >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation li .etc .facilities { display: flex; flex: 1;}
