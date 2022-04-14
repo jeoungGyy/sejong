@@ -47,8 +47,8 @@
 .recentService .homeNav ul li a .roundBox .subText { font-size: 1.4rem; color: #555;}
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 .mainArea .boxWrap { position: relative;}
-.mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 1rem 1.6rem 2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 1rem 3rem rgba(102 132 234 / 10%);}
-.mainArea .serviceGroup { overflow: hidden; position: relative; margin-top: 2.7rem; padding: 1.1rem 2rem 1.8rem; background-color: #6684ea; border-radius: 1.6rem;}
+.mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 1rem 1.6rem 2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+.mainArea .serviceGroup { overflow: hidden; position: relative; margin-top: 2.7rem; padding: 1.1rem 2rem 1.8rem; background-color: #6684ea; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
 .mainArea .serviceGroup::before { content: ''; display: block; position: absolute; left: -3.8rem; top: -10.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
 .mainArea .serviceGroup::after { content: ''; display: block; position: absolute; right: -8.8rem; bottom: -7.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
 .mainArea .serviceGroup h3 { position: relative; z-index: 1; align-items: flex-end; font-size: 2rem; color: #fff;}
