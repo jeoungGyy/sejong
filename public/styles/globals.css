@@ -2131,9 +2131,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-alram .accordionMenu .icon i { background-position: -12rem -14.4rem;}
 .items-alram .accordionMenu b { font-size: 1.6rem;}
 .items-alram .accordionMenu .alramDate { margin-left: 0.8rem; font-size: 1.3rem; color: #555;}
+.items-alram .accordionMenu.active .icon { background-color: #6684EA;}
 .items-alram .accordionTarget { overflow: hidden; max-height: 0; transition: min-height 0.3s ease-in-out;}
 .items-alram .accordionTarget p { padding-bottom: 2.4rem;}
-.items-alram li.open .accordionMenu .icon { background-color: #6684EA;}
 .items-alram li.open .accordionMenu::before { background-position: -38.4rem -12rem;}
 
 
