@@ -660,7 +660,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .calendarBody .calendar .cList li button { display: block; width: 3.2rem; height: 3rem; font-family: var(--fontRoboto); font-size: 1.6rem; color: #777;}
 .calendarBody .calendar .cList li button.today { font-weight: 700; color: #6684EA;}
 .calendarBody .calendar .cList li button.select { font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 50%;}
-.calendarBody .calendar .cList.reservation li { height: 8rem; align-items: flex-start; flex-wrap: wrap;}
+.calendarBody .calendar .cList.reservation li { height: 8rem; padding: 0 0.3rem; align-items: flex-start; flex-wrap: wrap;}
 .calendarBody .calendar .cList.reservation li button { width: 100%;}
 .calendarBody .calendar .cList.reservation li .spans { display: flex; flex-wrap: wrap; height: 5rem; justify-content: center; align-items: flex-start; margin-top: 1rem;}
 .calendarBody .calendar .cList.reservation li .spans span { display: flex; align-items: center; justify-content: center; width: 100%; height: 2rem; margin-top: -0.8rem; padding: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #fff; letter-spacing: 0; border-radius: 1rem;}
