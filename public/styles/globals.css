@@ -524,6 +524,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerWrap.full .headerBtn h2 .box.safetyReport { background-color: #FD2020;}
 .layerWrap.full .headerBtn h2 .box.complaint { background-color: #D69630;}
 .layerWrap.full .headerBtn .btnClose { top: inherit;}
+.layerWrap.full .headerBtn .btnCloseArrow { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
+.layerWrap.full .headerBtn .btnCloseArrow i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
+.layerWrap.full .headerBtn .btnAllRemove { display: flex; align-items: center; position: absolute; right: 2rem; top: 0; height: 5.6rem; font-weight: 700; color: #6684EA;}
 .layerWrap.full .headerBtn.textLeft { justify-content: flex-start; padding-left: 2rem;}
 .layerWrap.full .fullFlex { flex: 1; overflow: auto; width: 100%;}
 .layerWrap.full .fullFlex.bgGray { background-color: #F4F5F7;}
@@ -2120,11 +2123,18 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-apiListBox li .text >div span ~ span { position: relative; padding-left: 1.6rem; color: #111;}
 .items-apiListBox li .text >div span ~ span::before { content: 'ㆍ'; position: absolute; left: 0; top: 0;}
 
-
-
-
-
-
+.items-alram { padding: 0 2rem;}
+.items-alram li { border-bottom: 1px solid #F4F5F7;}
+.items-alram .accordionMenu { display: flex; align-items: center; position: relative; width: 100%; padding: 1.6rem 0;}
+.items-alram .accordionMenu::before { content: ''; display: block; position: absolute; right: 0; top: 2.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -16.8rem -19.2rem/48rem 28.8rem;}
+.items-alram .accordionMenu .icon { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #CCD2E3; border-radius: 50%;}
+.items-alram .accordionMenu .icon i { background-position: -12rem -14.4rem;}
+.items-alram .accordionMenu b { font-size: 1.6rem;}
+.items-alram .accordionMenu .alramDate { margin-left: 0.8rem; font-size: 1.3rem; color: #555;}
+.items-alram .accordionTarget { overflow: hidden; max-height: 0; transition: min-height 0.3s ease-in-out;}
+.items-alram .accordionTarget p { padding-bottom: 2.4rem;}
+.items-alram li.open .accordionMenu .icon { background-color: #6684EA;}
+.items-alram li.open .accordionMenu::before { background-position: -38.4rem -12rem;}
 
 
 
