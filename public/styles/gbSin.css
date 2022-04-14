@@ -349,12 +349,18 @@
 .mainArea .visitorGroup .slideBody li { width: 15.6rem;}
 .mainArea .visitorGroup .slideBody li a { display: block;}
 .mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #6684EA; border: 1px solid #eaedf2;}
+.mainArea .visitorGroup .ingBody { display: flex; align-items: center;}
 .mainArea .visitorGroup .ingBody p { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 0.8rem 0 0.4em; color: #fff; border-radius: 1.2rem;}
 .mainArea .visitorGroup .ingBody p i { vertical-align: middle; background-position: -4rem -8rem;}
 .mainArea .visitorGroup .ingBody p.oper { background-color: #4EC457;}
 .mainArea .visitorGroup .ingBody p.ready { background-color: #6684EA;}
 .mainArea .visitorGroup .ingBody p.end { background-color: #555;}
-.mainArea .visitorGroup .ingBody p b { margin-top: -0.2rem; font-weight: 400; font-weight: 1.4rem;}
+.mainArea .visitorGroup .ingBody p b { font-weight: 400; font-weight: 1.4rem;}
+.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
+.mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;}
+.mainArea .visitorGroup .ingBody .toggleBtn.active i { background-position: -16.8rem -21.6rem;}
+.mainArea .visitorGroup .targetHeight { overflow: hidden;	height: 0; transition: height 0.3s ease-in-out;}
+.mainArea .visitorGroup .targetHeight.active { height: 43rem;}
 
 .mainArea .mainPromotion { padding-bottom: 2.8rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}

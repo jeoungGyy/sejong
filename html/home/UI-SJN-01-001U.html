@@ -431,6 +431,7 @@
 													<p class="ready"><i class="split20"></i><b>준비중</b></p>
 													<p class="end"><i class="split20"></i><b>운영종료</b></p>
 													-->
+													<button type="button" class="toggleBtn bridge"><i class="split24">토글 버튼</i></button>
 												</div>
 											</div>
 											<div>
@@ -449,6 +450,8 @@
 														<span class="today">오늘 <span class="cBlue">+00명</span></span>
 													</div>
 												</div>
+											</div>
+											<div class="targetHeight">
 												<div class="tabCount">
 													<div class="tabBtns">
 														<button type="button" class="active">전체</button>
@@ -511,6 +514,15 @@
 											</div>
 										</div>
 									</div>
+									<script>
+										const bridge = document.querySelector(".visitorGroup .bridge");
+										const targetHeight = document.querySelector(".visitorGroup .targetHeight");
+
+										bridge.addEventListener('click', function(event) {
+											this.classList.toggle('active');
+											targetHeight.classList.toggle('active');
+										});
+									</script>
 			
 									<div class="boxWrap mainNews">
 										<div class="boxArea">
