@@ -1421,7 +1421,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .nav_side { display: flex; align-items: center; height: 4.8rem;}
 .nav_side li { margin-right: 0.8rem;}
-.nav_side li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.nav_side li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 .nav_side li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
 
 

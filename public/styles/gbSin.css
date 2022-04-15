@@ -113,8 +113,8 @@
 .mainArea .weatherBox.active .weatherLink .weather .temperature { text-align: center;}
 .mainArea .weatherBox.active .weatherLink .val { margin: 0.3rem 0 0 0.6rem;} */
 .mainArea .weatherBox .weatherLink { display: flex; align-items: center; position: relative; color: #111;}
-.mainArea .weatherBox .weatherLink .weather { display: flex; align-items: center; position: relative; width: 15.5rem; margin-right: -2rem; padding-left: 4.6rem; white-space: nowrap;}
-.mainArea .weatherBox .weatherLink .weather .icon { position: absolute; left: 0; top: 0; margin: -0.3rem 0 0 0;}
+.mainArea .weatherBox .weatherLink .weather { display: flex; align-items: center; width: 15.5rem; margin-right: -2rem; padding-left: 4.6rem; white-space: nowrap;}
+.mainArea .weatherBox .weatherLink .weather .icon { position: absolute; left: 0; top: 0; margin: -0.4rem 0 0 0;}
 .mainArea .weatherBox .weatherLink .val { display: flex; align-items: center; margin: 0.3rem 0 0 0.6rem;}
 .mainArea .weatherBox .weatherLink .val p { position: relative; font-size: 1.3rem; color: #555;}
 .mainArea .weatherBox .weatherLink .val p ~ p { margin-left: 0.5rem; padding-left: 0.5rem;}
@@ -156,7 +156,7 @@
 .mainArea .weatherBox .normal { color: #01C73D;}
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
-.mainArea .weatherBox .cautionText { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-top: 1.6rem; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 0.8rem;}
+.mainArea .weatherBox .cautionText { display: flex; justify-content: center; height: 5.2rem; margin-bottom: -1.5rem; padding-top: 1rem; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
@@ -169,7 +169,7 @@
 .mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}
 .mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
 .mainArea .weatherBox.active .weatherLink .location .myLocation { margin-left: 0.4rem;}
-.mainArea .weatherBox.active .weatherLink .val { position: absolute; right: -13.2rem; top: 2.6rem;}
+.mainArea .weatherBox.active .weatherLink .val { position: absolute; right: 2.8rem; top: 2.3rem;}
 
 .mainArea .mainNews { margin-top: 2.7rem;}
 .mainArea .mainNews .boxArea { padding-bottom: 1.6rem;}
