@@ -66,7 +66,7 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea >section + section { margin: 0 -2rem; padding: 1.5rem 2rem; border-top: 0.6rem solid #F4F5F7;}
 .map .mapInfoLayer .myArea h3 { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: 4rem; padding: 1rem 0; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
-.map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem 2rem;}
+.map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem;}
 .map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
 .map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.3rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
 .map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem; border-radius: 50%;}
@@ -1166,7 +1166,7 @@ span.M { background-color: #FD2020;}
 .map .locationSearchList ul li .title .point {color:#6684EA;}
 .map .locationSearchList ul li .address {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.8rem; color:#555; }
 .map .locationSearchList ul li .callNum {display:block; font-size:1.6rem; line-height:2.2rem; margin-top:0.4rem; color:#555; }
-.map .notResult {display: flex; align-items: center; justify-content: space-between; margin:2.4rem 2rem 3.2rem; padding:1.4rem 1.6rem; background-color:#EAEDF2;}
+.map .notResult {display: flex; align-items: center; justify-content: space-between; margin:2.4rem 2rem; padding:1.4rem 1.6rem; background-color:#EAEDF2;}
 .map .notResult .text {font-size:1.6rem; color:#555;}
 .map .notResult button {font-weight:700; font-size:1.6rem; color:#6684EA; padding-right:2.4rem; background: url(../image/map/arrow_right_blue.png) no-repeat right center/2.4rem auto;  }
 

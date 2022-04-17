@@ -109,8 +109,9 @@
 														<span>완속 1</span>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
 												</li>
-												<li>
+												<li class="promote">
 													<div class="title">
 														<button type="button" class="favorite active"><i>즐겨찾기</i></button>
 														<h3 class="name">정부청사전기차충전소</h3>
@@ -124,6 +125,7 @@
 														<span>완속 1</span>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 												<li>
 													<div class="title">
@@ -139,6 +141,7 @@
 														<span>완속 1</span>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 												<li>
 													<div class="title">
@@ -154,20 +157,21 @@
 														<span>완속 1</span>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 											</ul>
 										</section>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->

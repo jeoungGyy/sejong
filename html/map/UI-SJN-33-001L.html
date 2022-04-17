@@ -157,6 +157,25 @@
 														</div>
 													</div>
 													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="promote">
+													<div class="title">
+														<button type="button" class="favorite"><i>즐겨찾기</i></button>
+														<h3 class="name">세종어린이종합병원</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cGray">운영시간 수요일 09:00~20:00</span>
+													</div>
+													<div class="hos">
+														<a href="tel:010-1234-5678"><i></i>전화걸기</a>
+														<div class="facilities">
+															<span class="holiday">공휴일</span>
+														</div>
+													</div>
+													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 												<li>
 													<div class="title">
@@ -174,37 +193,21 @@
 														</div>
 													</div>
 													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
-												</li>
-												<li>
-													<div class="title">
-														<button type="button" class="favorite"><i>즐겨찾기</i></button>
-														<h3 class="name">세종어린이종합병원</h3>
-													</div>
-													<div class="infomation">
-														<span>3.9km</span>
-														<span class="cGray">운영시간 수요일 09:00~20:00</span>
-													</div>
-													<div class="hos">
-														<a href="tel:010-1234-5678"><i></i>전화걸기</a>
-														<div class="facilities">
-															<span class="holiday">공휴일</span>
-														</div>
-													</div>
-													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 											</ul>
 										</section>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->

@@ -30,15 +30,15 @@
 						<h2 class="visible"><span class="headerClone">안심이 서비스</span></h2> <!-- [헤더에 넣어줄 제목] -->
 						
 						<div class="mapWrap">
-							<!-- 검색 전 -->
+							<!-- 검색 전 
 							<div class="mapTabPor">
 								<div class="mapTabBody">
 									<div class="mapTab">
-										<button type="button" class="active">최근 기록</button><!-- 활성화시 버튼에 active 추가 -->
+										<button type="button" class="active">최근 기록</button>
 										<button type="button">지도 지정</button>
 									</div>
 			
-									<div class="mapTabContent bottomFixed bgGray"><!-- 버튼 하단 고정형 레이아웃 bottomFixed 추가 -->
+									<div class="mapTabContent bottomFixed bgGray">
 										<div class="recentSearchList">
 											<ul>
 												<li>
@@ -79,7 +79,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- // 검색 전 -->
+							검색 전 -->
 			
 			
 			
@@ -116,8 +116,57 @@
 								<div class="mapInfoLayer default">
 									<div class="mapIHead">
 										<button type="button" class="btnMapInfo">정보영역</button>
+										<div class="mapUpDown">
+											<button type="button" class="btnMapUp" onclick="mapInfo.active('infoUp');">정보영역 위로</button>
+											<button type="button" class="btnMapDown" onclick="mapInfo.active('infoDown');">정보영역 아래로</button>
+											<button type="button" class="btnBottom" onclick="mapInfo.active('infoBottom');">정보영역 닫기</button>
+										</div>
 									</div>
 			
+									<div class="myArea paddingDefault">
+										<section>
+											<ul class="items-gasStation">
+												<li class="full">
+													<div class="title">
+														<h3 class="name"><span class="cBlue">아름중</span>학교</h3>
+													</div>
+													<div class="infomation">
+														<span class="cBlack">세종특별자치시 달빛1호 167</span>
+													</div>
+													<div class="infomation2">
+														<span>044-902-1000</span>
+													</div>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="full promote">
+													<div class="title">
+														<h3 class="name"><span class="cBlue">아름중</span>학교</h3>
+													</div>
+													<div class="infomation">
+														<span class="cBlack">세종특별자치시 달빛1호 167</span>
+													</div>
+													<div class="infomation2">
+														<span>044-902-1000</span>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+												<li class="full">
+													<div class="title">
+														<h3 class="name"><span class="cBlue">아름중</span>학교</h3>
+													</div>
+													<div class="infomation">
+														<span class="cBlack">세종특별자치시 달빛1호 167</span>
+													</div>
+													<div class="infomation2">
+														<span>044-902-1000</span>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+											</ul>
+										</section>
+									</div>
+									
+									<!-- 구버전
 									<div class="locationSearchList">
 										<ul>
 											<li>
@@ -125,46 +174,40 @@
 												<p class="address">세종특별자치시 달빛1호 167</p>
 												<p class="callNum">044-902-1000</p>
 											</li>
-			
 											<li>
 												<strong class="title"><span class="point">아름중</span>학교</strong>
 												<p class="address">세종특별자치시 달빛1호 167</p>
 												<p class="callNum">044-902-1000</p>
 											</li>
-			
 											<li>
 												<strong class="title"><span class="point">아름중</span>학교</strong>
 												<p class="address">세종특별자치시 달빛1호 167</p>
 												<p class="callNum">044-902-1000</p>
 											</li>
-			
 											<li>
 												<strong class="title">지진옥외대피장소 <span class="point">아름중</span>학교</strong>
 												<p class="address">세종특별자치시 달빛1호 167</p>
 											</li>
 										</ul>
 									</div>
+									-->
 			
 									<div class="notResult">
 										<p class="text">찾으시는 장소가 없나요?</p>
 										<button type="button">새 장소 등록</button>
 									</div>
-			
 								</div>
 								<!-- //정보 영역 -->
 			
-								<script>
-									mapInfo.click('sub');
-								</script>
-			
-								<div class="mapBg"></div> <!-- map 이미지 -->
-			
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 							<!-- // 검색 후 -->
-							
 			
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 				</div>
 			</div>

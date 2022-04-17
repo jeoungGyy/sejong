@@ -88,15 +88,70 @@
 									</div>
 									<div class="myArea paddingDefault">
 										<section>
-											<ul class="pTransportation">
-												<li>
-													<h3 class="name">반곡동 단독주책-6(LC7-3-6)</h3>
-													<div class="etc mt">
+											<ul class="items-gasStation">
+												<li class="full">
+													<div class="title">
+														<h3 class="name">반곡동 단독주책-6(LC7-3-6)</h3>
+													</div>
+													<div class="etc">
 														<!-- 
 															normal: 정상
 															totalBreakdown: 전체고장
 															partialBreakdown: 부분고장
 														-->
+														<span class="cBlue">2.3km</span>
+														<span class="cleanNetBody">
+															<span><i class="cleanNet normal" title="자동크린넷 정상"></i>음식물</span>
+															<span><i class="cleanNet totalBreakdown" title="자동크린넷 전체고장"></i>소형</span>
+															<span><i class="cleanNet partialBreakdown" title="자동크린넷 부분고장"></i></i>대형</span>
+														</span>
+													</div>
+													<div class="call">
+														<a href="tel:010-1234-4567"><i></i>전화걸기</a>
+													</div>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="full promote">
+													<div class="title">
+														<h3 class="name">반곡동 단독주책-6(LC7-3-6)</h3>
+													</div>
+													<div class="etc">
+														<span class="cBlue">2.3km</span>
+														<span class="cleanNetBody">
+															<span><i class="cleanNet normal" title="자동크린넷 정상"></i>음식물</span>
+															<span><i class="cleanNet totalBreakdown" title="자동크린넷 전체고장"></i>소형</span>
+															<span><i class="cleanNet partialBreakdown" title="자동크린넷 부분고장"></i></i>대형</span>
+														</span>
+													</div>
+													<div class="call">
+														<a href="tel:010-1234-4567"><i></i>전화걸기</a>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+												<li class="full">
+													<div class="title">
+														<h3 class="name">반곡동 단독주책-6(LC7-3-6)</h3>
+													</div>
+													<div class="etc">
+														<span class="cBlue">2.3km</span>
+														<span class="cleanNetBody">
+															<span><i class="cleanNet normal" title="자동크린넷 정상"></i>음식물</span>
+															<span><i class="cleanNet totalBreakdown" title="자동크린넷 전체고장"></i>소형</span>
+															<span><i class="cleanNet partialBreakdown" title="자동크린넷 부분고장"></i></i>대형</span>
+														</span>
+													</div>
+													<div class="call">
+														<a href="tel:010-1234-4567"><i></i>전화걸기</a>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+											</ul>
+											
+											<!-- 구버전
+											<ul class="pTransportation">
+												<li>
+													<h3 class="name">반곡동 단독주책-6(LC7-3-6)</h3>
+													<div class="etc mt">
 														<span class="cBlue">2.3km</span>
 														<span class="cleanNetBody">
 															<span><i class="cleanNet normal" title="자동크린넷 정상"></i>음식물</span>
@@ -137,18 +192,19 @@
 													</div>
 												</li>
 											</ul>
+											-->
 										</section>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->

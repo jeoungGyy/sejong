@@ -89,6 +89,60 @@
 											</select>
 										</div>
 									</div>
+									
+									<div class="myArea paddingDefault">
+										<section>
+											<ul class="items-gasStation">
+												<li class="full">
+													<div class="title">
+														<i class="split24 logo"></i>
+														<h3 class="name">아름동 측정소 기준</h3>
+														<button type="button" class="tooltipBtn legend" title="도움말 닫힘" onclick="tooltip.show('tooltip1', 'bottom');"><i class="split20">국가망 관측소에 대한 간략 안내
+														</i></button>
+													</div>
+													<div class="infomation">
+														<span>미세먼지<b class="good">52 좋음</b></span>
+														<span>초미세먼지<b class="usually">52 보통</b></span>
+													</div>
+													<div class="update">
+														<span>제공 : 에어코리아 2022-01-20 12:00</span>
+													</div>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="full promote">
+													<div class="title">
+														<i class="split24 logo"></i>
+														<h3 class="name">아름동 측정소 기준</h3>
+													</div>
+													<div class="infomation">
+														<span>미세먼지<b class="bad">52 나쁨</b></span>
+														<span>초미세먼지<b class="veryBad">52 매우나쁨</b></span>
+													</div>
+													<div class="update">
+														<span>제공 : 에어코리아 2022-01-20 12:00</span>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+												<li class="full">
+													<div class="title">
+														<i class="split24 logo"></i>
+														<h3 class="name">아름동 측정소 기준</h3>
+													</div>
+													<div class="infomation">
+														<span>미세먼지<b class="good">52 좋음</b></span>
+														<span>초미세먼지<b class="usually">52 보통</b></span>
+													</div>
+													<div class="update">
+														<span>제공 : 에어코리아 2022-01-20 12:00</span>
+													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+											</ul>
+										</section>
+									</div>
+									
+									
+									<!-- 구버전
 									<div class="dustArea">
 										<section>
 											<ul class="fineDustList">
@@ -153,16 +207,17 @@
 											</ul>
 										</section>
 									</div>
+									-->
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 툴팁 -->

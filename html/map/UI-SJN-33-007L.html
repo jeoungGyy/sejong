@@ -93,8 +93,8 @@
 									</div>
 									<div class="myArea paddingDefault">
 										<section>
-											<ul class="items-gasStation full">
-												<li>
+											<ul class="items-gasStation">
+												<li class="full">
 													<div class="title">
 														<button type="button" class="favorite"><i>즐겨찾기</i></button>
 														<h3 class="name">한솔동 복합커뮤니티센터 정음관</h3>
@@ -103,8 +103,9 @@
 														<span>3.9km</span>
 														<span><b class="cGreen">현재 이용가능</b></span>
 													</div>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
 												</li>
-												<li>
+												<li class="full promote">
 													<div class="title">
 														<button type="button" class="favorite active"><i>즐겨찾기</i></button>
 														<h3 class="name">한솔동 복합커뮤니티센터 정음관</h3>
@@ -113,8 +114,9 @@
 														<span>3.9km</span>
 														<span class="cGray">운영시간 월요일 09:00~22:00</span>
 													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
-												<li>
+												<li class="full">
 													<div class="title">
 														<button type="button" class="favorite"><i>즐겨찾기</i></button>
 														<h3 class="name">한솔동 복합커뮤니티센터 정음관</h3>
@@ -123,20 +125,21 @@
 														<span>3.9km</span>
 														<span class="cGray">운영시간 수요일 09:00~20:00</span>
 													</div>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 											</ul>
 										</section>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->

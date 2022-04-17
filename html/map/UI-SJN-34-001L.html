@@ -137,8 +137,9 @@
 														</div>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
 												</li>
-												<li>
+												<li class="promote">
 													<a href="javascript:void(0);" onclick="layerPopup.open('layerLocalCurrency');">
 														<figure class="figure">
 														</figure>
@@ -157,6 +158,7 @@
 														<a href="tel:010-1234-5678"><i></i>전화걸기</a>
 													</div>
 													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
 												</li>
 												<li>
 													<a href="javascript:void(0);" onclick="layerPopup.open('layerLocalCurrency');">
@@ -186,15 +188,15 @@
 										</section>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->

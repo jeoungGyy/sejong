@@ -205,9 +205,9 @@ table td { vertical-align: middle;}
 .cGray { color: #777 !important;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
+.cOrange { color: #FD2020 !important;}
 
-/* Split 아이콘 */
-.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
+/* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
 .weather .icon.weather2 { background-position: -3.2rem 0;}
 .weather .icon.weather3 { background-position: -6.4rem 0;}
@@ -563,7 +563,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerService .serviceBody .pGroup p { margin-top: 1.6rem; font-size: 1.8rem; font-weight: 700;}
 
 /* 투표 레이어 */
-.layerVote {}
 .layerVote .title { margin: -1.6rem -2rem 0; padding: 2.7rem 2.5rem; text-align: left; background-color: #6684EA;}
 .layerVote .title h4 { font-size: 1.8rem; color: #fff;}
 .layerVote .title h4 .voteDate { font-family: var(--fontRoboto); font-weight: 400; font-size: 1.4rem;}
@@ -1930,6 +1929,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .items-gasStation li .title .favorite.active i { background-position-y: -2.4rem;}
 .items-gasStation li .title h3.name { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: inherit; font-size: 1.6rem;}
+.items-gasStation li .title .logo { margin-right: 0.8rem; background-position: -40.8rem -9.6rem;}
+.items-gasStation li .title .legend i { margin-left: 0.4rem; background-position-x: -38rem;}
 .items-gasStation li .infomation { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
 .items-gasStation li .infomation >span { font-size: 1.4rem; color: #6684EA; letter-spacing: 0;}
 .items-gasStation li .infomation .gsCost { position: relative; margin-left: 1rem;}
@@ -1937,10 +1938,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .infomation >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 .items-gasStation li .infomation >span.charge { color: #555;}
-.items-gasStation li .infomation >span.cGray { color: #777;}
 .items-gasStation li .infomation >span.charge .paid { color: #FD2020;}
 .items-gasStation li .infomation >span.charge .free { color: #6684EA;}
-.items-gasStation li .infomation >span .cGreen { color: #4EC457;}
 .items-gasStation li .infomation .link { margin-left: 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
 .items-gasStation li .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
 .items-gasStation li .infomation .oper { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #4EC457;}
@@ -1948,6 +1947,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation .end { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #555;}
 .items-gasStation li .infomation .people { display: inline-flex; align-items: center; justify-content: center; position: relative; margin-left: 1rem; color: #111;}
 .items-gasStation li .infomation .people i { display: inline-block; width: 1rem; height: 1rem; margin-right: 0.4rem; border-radius: 50%;}
+.items-gasStation li .infomation .usually { margin-left: 0.4rem; color: #4EC457;}
+.items-gasStation li .infomation .bad { margin-left: 0.4rem; color: #FF940E;}
+.items-gasStation li .infomation .veryBad { margin-left: 0.4rem; color: #FD2020;}
+.items-gasStation li .infomation .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+
+
 .items-gasStation li .infomation2 { margin-top: 0.4rem;}
 .items-gasStation li .infomation2 span { font-size: 1.4rem;}
 .items-gasStation li .infomation2 .ava { display: inline-flex; align-items: center; justify-content: center; padding: 0 0.6rem; font-size: 1.3rem; color: #fff; border-radius: 1rem;}
@@ -1963,6 +1968,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .etc >span { font-size: 1.4rem; color: #555;}
 .items-gasStation li .etc >span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
 .items-gasStation li .etc >span ~ span::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.items-gasStation li .etc .cleanNet { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0.4rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem; border-radius: 50%;}
+.items-gasStation li .etc .cleanNet.normal { background-color: #6684EA; background-position: -8rem -4rem;}
+.items-gasStation li .etc .cleanNet.totalBreakdown { background-color: #555; background-position: -8rem -6rem;}
+.items-gasStation li .etc .cleanNet.partialBreakdown { background-color: #A9B0C1; background-position: -8rem -4rem;}
+.items-gasStation li .call a { display: flex; align-items: center; margin-top: 1rem; font-size: 1.4rem; color: #777;}
+.items-gasStation li .call a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.6rem; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation li .hos { margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation li .hos >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #777;}
 .items-gasStation li .hos >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
@@ -1973,19 +1984,37 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .hos .facilities span.hospital { background: url(../image/map/ico_20_hospital.png) no-repeat left center/2rem;}
 .items-gasStation li .hos .facilities span.night { background: url(../image/map/ico_20_night.png) no-repeat left center/2rem;}
 .items-gasStation li .hos .facilities span.emergency { background: url(../image/map/ico_20_emergency.png) no-repeat left center/2rem;}
+.items-gasStation li .voteTime { position: relative;}
+.items-gasStation li .voteTime .tit { position: absolute; left: 0; top: 0;}
+.items-gasStation li .voteTime .titBody { margin-top: 1rem; padding-left: 6rem;}
+.items-gasStation li .voteTime .titBody >div { display: flex; align-items: center; font-size: 1.4rem;}
+.items-gasStation li .voteTime .titBody >div b { width: 9.8rem;}
+.items-gasStation li .voteTime .titBody >div span { position: relative; padding-left: 2rem; color: #535353; font-size: 1.4rem;}
+.items-gasStation li .voteTime .titBody >div span::after { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.items-gasStation li .voteTime .titBody >div span.blue::after { background-color: #2E8FF9;}
+.items-gasStation li .voteTime .titBody >div span.green::after { background-color: #4EC457;}
+.items-gasStation li .voteTime .titBody >div span.orange::after { background-color: #FF940E;}
+.items-gasStation li .voteTime .titBody >div span.red::after { background-color: #FD2020;}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation li button.view.active { display: flex;}
 .items-gasStation li.promote { background-color: #f4f9fd;}
+.items-gasStation li .pinDelete { position: absolute; right: 2rem; top: 50%; width: 3.4rem; margin-top: -1.7rem; padding: 0.5rem;}
+.items-gasStation li .pinDelete i { background-position: -38.4rem -14.4rem;}
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation li.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
+.items-gasStation {}
+
+
+
 
 .items-LocalCurrency { margin-top: 0.8rem;}
-.items-LocalCurrency li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 1.2rem 10.8rem; border-bottom: 1px solid #F4F5F7;}
+.items-LocalCurrency li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 4.6rem 10.8rem; border-bottom: 1px solid #F4F5F7;}
 .items-LocalCurrency li .title { display: flex; align-items: center;}
 .items-LocalCurrency li .title .favorite { margin-right: 0.4rem;}
 .items-LocalCurrency li .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
@@ -2001,10 +2030,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-LocalCurrency li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-LocalCurrency li .etc { display: flex; align-items: center; height: 2.4rem; margin: 0.8rem -5.3rem 0 0;}
 .items-LocalCurrency li .etc >a { display: block; width: 8.5rem; font-size: 1.4rem; color: #777;}
-.items-LocalCurrency li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
+.items-LocalCurrency li .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: middle; background: #4EC457 url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-LocalCurrency li .etc .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
 .items-LocalCurrency li .etc .sale .discount { color: #FD2020;}
-
+.items-LocalCurrency li button.view { display: none; align-items: center; justify-content: flex-end; position: absolute; left: 0; bottom: 0; width: 100%; height: 3.4rem; padding-right: 2rem; background-color: #eaedf2;}
+.items-LocalCurrency li button.view.active { display: flex;}
+.items-LocalCurrency li.promote { background-color: #f4f9fd;}
 
 .item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
 .item-mapSearch li { width: calc(100% / 3); border-right: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}

@@ -68,6 +68,83 @@
 									</div>
 									<div class="myArea paddingDefault">
 										<section>
+											<ul class="items-gasStation">
+												<li>
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack">새롬중앙로 44 새롬동 복합커뮤니티</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="blue">5분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="green">10분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view active">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="promote">
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack">새롬중앙로 44 새롬동 복합커뮤니티</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="orange">20분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="red">30분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+												<li>
+													<div class="title">
+														<h3 class="name">새롬동사전투표소</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlack">새롬중앙로 44 새롬동 복합커뮤니티</span>
+													</div>
+													<div class="voteTime">
+														<span class="tit">대기시간</span>
+														<div class="titBody">
+															<div>
+																<b>관내(세종시)</b>
+																<span class="blue">5분이내</span>
+															</div>
+															<div>
+																<b>관내(세종시외)</b>
+																<span class="green">10분이내</span>
+															</div>
+														</div>
+													</div>
+													<button type="button" class="guidance"><i></i><b>길안내</b></button>
+													<button type="button" class="view">상세보기 &gt;</button>
+												</li>
+											</ul>
+											
+											
+											<!-- 구버전
 											<ul class="vote-list">
 												<li>
 													<div class="title">
@@ -138,6 +215,7 @@
 													</div>
 													<button type="button" class="guidance top"><i></i><b>길안내</b></button>
 												</li>
+												-->
 											</ul>
 										</section>
 									</div>
@@ -145,15 +223,15 @@
 										<p>업데이트 : 2022.05.27 15:30</p>
 									</div>
 								</div>
-								<script>
-									mapInfo.click('sub');
-								</script>
 								<!-- //정보 영역 -->
 			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
 							</div>
 						</div>
 					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
 					<!-- //본문 -->
 			
 					<!-- 레이어 -->
