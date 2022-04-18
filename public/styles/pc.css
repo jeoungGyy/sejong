@@ -118,7 +118,8 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .chatbot,
 .subHeader,
 .headerWrap,
-.infoNav { max-width: 420px;}
+.infoNav,
+.header.global { max-width: 420px;}
 
 /* .boxTooltipLayer {left: 50%; width: 40rem; margin-left: 16rem;} */
 

@@ -136,9 +136,6 @@ table td { vertical-align: middle;}
   --fontRoboto: 'Roboto';
 }
 
-.aa { display: flex; position: relative; left: 0; transition: left .3s ease-in-out;}
-.aa.add { left: -100%;}
-
 
 /* 구조
 **********************************************/
@@ -317,6 +314,7 @@ table td { vertical-align: middle;}
 .button.blue { color: #fff; background-color: #6684EA;}
 .button.gray { color: #aaa; background-color: #EAEDF2;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
+.button.lineBlue { font-weight: 400; border: 1px solid #6684EA; box-shadow: none;}
 
 .buttonArrow { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 4.8rem; padding: 0 2rem; font-size: 1.6rem;}
 .buttonArrow span { color: #fff;}
@@ -1312,6 +1310,30 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profile4 { background: url(../image/home/ico_profile4.png) no-repeat center/cover;}
 .profile5 { background: url(../image/home/ico_profile5.png) no-repeat center/cover;}
 
+/* UI-SJN-98-002L */
+.loginLayer { padding: 3.5rem 2rem;}
+.loginLayer .formLogin { margin: -3.5rem -2rem 0; padding: 2.4rem 2rem 3.2rem; background-color: #fff;}
+.loginLayer .formLogin >input { margin-bottom: 0.8rem;}
+.loginLayer .formLogin .formBtns .lineBlue { margin-top: 2.4rem;}
+.loginLayer .formLogin .formEtc .linkBtn { display: flex; align-items: center; justify-content: center; margin-top: 2.5rem;}
+.loginLayer .formLogin .formEtc .linkBtn button { color: #6684EA;}
+.loginLayer .formLogin .formEtc .linkBtn button ~ button { position: relative; margin-left: 1.2rem; padding-left: 1.1rem;}
+.loginLayer .formLogin .formEtc .linkBtn button ~ button::before { content: ''; display: block; position: absolute; left: 0; top: 0.5rem; width: 0.1rem; height: 1.2rem; background-color: #CDD0D8;}
+.loginLayer .formLogin .formEtc >p { margin-top: 2.2rem; color: #777; text-align: center; line-height: 2rem;}
+.loginLayer .formLogin .formEtc >p .cPink { color: #D57298;}
+.loginLayer .loginBtns { padding-top: 3.5rem; background-color: #F4F5F7;}
+.loginLayer .loginBtns .h3Text { margin-bottom: 3rem; font-size: 1.6rem; font-weight: 400; text-align: center;}
+.loginLayer .loginBtns button { display: flex; align-items: center; width: 100%; height: 4.8rem; padding-left: 3.6rem; font-size: 1.6rem}
+.loginLayer .loginBtns button i { margin-right: 2rem;}
+.loginLayer .loginBtns .onePass { color: #fff; background-color: #1A2674;}
+.loginLayer .loginBtns .onePass i { background-position: -9.6rem -24rem;}
+.loginLayer .loginBtns .naver { color: #fff; background-color: #00C300;}
+.loginLayer .loginBtns .naver i { background-position: -12rem -24rem;}
+.loginLayer .loginBtns .kakao { background-color: #FFE208;}
+.loginLayer .loginBtns .kakao i { background-position: -14.4rem -24rem;}
+.loginLayer .loginBtns .facebook { color: #fff; background-color: #3B589E;}
+.loginLayer .loginBtns .facebook i { background-position: -16.8rem -24rem;}
+.loginLayer .loginBtns button ~ button { margin-top: 1.6rem;}
 
 
 /* *-모음

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+
+					<!-- 레이어 -->
+					<div id="UI-SJN-98-002L" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>로그인</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex loginLayer bgGray">
+								<div class="formLogin">
+									<input type="text" required="required" title="아이디 입력" placeholder="아이디 입력" />
+									<input type="password" required="required" title="비밀번호 입력" placeholder="비밀번호 입력" />
+									<div class="formBtns">
+										<button type="button" class="button middle blue">로그인</button>
+										<button type="button" class="button middle lineBlue">회원가입</button>
+									</div>
+									<div class="formEtc">
+										<div class="linkBtn">
+											<button type="button">아이디 찾기</button>
+											<button type="button">비밀번호 찾기</button>
+										</div>
+										<p>
+											로그인하면 세종특별자치시 ‘세종엔’의<br />
+											<span class="cPink">서비스 약관</span> 및 <span class="cPink">개인정보 보호정책</span>에<br />
+											동의하는 것으로 간주됩니다.
+										</p>
+									</div>
+								</div>
+								<div class="loginBtns">
+									<h3 class="h3Text">간편하게 시작하세요</h3>
+									<button type="button" class="onePass"><i class="split24"></i><span>디지털원패스로 로그인</span></button>
+									<button type="button" class="naver"><i class="split24"></i><span>네이버 로그인</span></button>
+									<button type="button" class="kakao"><i class="split24"></i><span>카카오 로그인</span></button>
+									<button type="button" class="facebook"><i class="split24"></i><span>페이스북 로그인</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						layerPopup.open('UI-SJN-98-002L');
+					</script>
+					<!-- //레이어 -->
+					
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
