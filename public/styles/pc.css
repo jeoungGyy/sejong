@@ -163,7 +163,7 @@ html.tabletMode .infoNav,
 html.tabletMode .pcContents,
 html.tabletMode .pcContainer,
 html.tabletMode .pcContainer .pcView,
-html.tabletMode .header.global  { max-width: inherit; width: 100%;}
+html.tabletMode .header.global  {max-width: inherit; width: 100%;}
 html.tabletMode .pcContents { display: none;}
 html.tabletMode .infoNav li { margin-right: 1rem !important;}
 html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}

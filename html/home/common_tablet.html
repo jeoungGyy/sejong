@@ -6,545 +6,282 @@
 </head>
 
 <body>
-<div id="pcRoot">
-	<div class="pcContainer">
-		<!-- 공통: PC 내용 -->
-		<script src="../include/pc_deco.js"></script>
-		<!-- //공통: PC 내용 -->
-
-		<div class="pcView">
-
-			<!-- 모바일 내용 -->
-			<div id="root">
-				<div class="container">
-
-					<div class="headerWrap">
-						<div class="headerClear">
-							<!-- 각각 헤드 들 -->
-							<header class="header global bgBlue">
-								<div class="subHeader">
-									<div class="globalLogo"><i>세종엔 로고</i></div>
-									<div class="btnGlobal">
-										<button type="button" class="icoSearch"><i class="split24">검색</i></button>
-										<button type="button" class="icoAlert"><i class="split24">알림</i></button>
-										<button type="button" class="icoMy">
-											<!-- <i class="split24">내정보</i> -->
-											<span class="img"><img src="../../public/image/temp/temp011.png" alt="" /></span>
-											<span class="icon"><i class="icoProfile profile1">프로필1</i></span>
-											<!-- profile1 ~ profile5 -->
-										</button>
-									</div>
+	<div id="pcRoot">
+		<div class="pcContainer">
+			<!-- 공통: PC 내용 -->
+			<script src="../include/pc_deco.js"></script>
+			<!-- //공통: PC 내용 -->
+	
+			<div class="pcView">
+	
+				<!-- 모바일 내용 -->
+				<div id="root">
+					<div class="container">
+						<!-- 공통: 서브 헤더 -->
+								<nav id="infoNavSwiper" class="infoNav">
+							<div class="infoNavBody"> <!-- 여기에 값 -->
+								<button type="button" class="menuSetting" onclick="layerPopup.open('layerSharing');"><i class="split24">메뉴 설정</i></button>
+								<div class="slideContainer">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide"><a href="#">스마트세종</a></li>
+										<li class="swiper-slide"><a href="#">세종여행</a></li>
+										<li class="swiper-slide"><a href="#">스마트세종</a></li>
+										<li class="swiper-slide"><a href="#">세종여행</a></li>
+										<li class="swiper-slide"><a href="#">스마트세종</a></li>
+										<li class="swiper-slide"><a href="#">세종여행</a></li>
+									</ul>
 								</div>
-							</header>
-							<!-- //각각 헤드 들 -->
-						</div>
-					</div>
-
-					
-			
-					<!-- 본문 -->
-					<main class="contents home"> <!-- [통합검색 Class] home-->
-						<div class="homeWrap">
-							<div class="mainMenuFixed">
-								<div class="mainArea">
-									<div class="boxWrap repMenu">
-										<div class="boxArea">
-											<h2>안심서비스</h2>
-											<p class="mainTitle">사랑하는 사람의 안심귀가!<br />세종엔과 함께해요~</p>
-											<div class="body">
-												<a href="#" class="service1"><i><img src="../../public/image/home/main_repMenu.png" alt="" /></i><span>안심<br />서비스</span></a>
-												<a href="#" class="service2"><i><img src="../../public/image/home/main_repMenu2.png" alt="" /></i><span>생생버스</span></a>
-												<a href="#" class="service3"><i><img src="../../public/image/home/main_repMenu3.png" alt="" /></i><span>동선안심<br />체크</span></a>
-												<a href="#" class="service4"><i><img src="../../public/image/home/main_repMenu4.png" alt="" /></i><span>투표소 현황<br /><span class="cBlue">(준비중)</span></span></a>
-											</div>
-										</div>
-									</div>
-			
-									<div class="recentService">
-										<h3>최근 이용한 서비스</h3>
-										<div>
-											<nav id="homeNavSwiper" class="homeNav">
-												<div class="slideContainer">
-													<ul class="swiper-wrapper">
-														<li class="swiper-slide"><a href="#">메뉴1</a></li>
-														<li class="swiper-slide"><a href="#">메뉴2</a></li>
-														<li class="swiper-slide"><a href="#">메뉴3</a></li>
-														<li class="swiper-slide"><a href="#">메뉴4</a></li>
-														<li class="swiper-slide"><a href="#">메뉴5</a></li>
-														<li class="swiper-slide"><a href="#">메뉴6</a></li>
-														<li class="swiper-slide"><a href="#">메뉴7</a></li>
-														<li class="swiper-slide"><a href="#">메뉴8</a></li>
-													</ul>
-												<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-											</nav>
-											<script>
-												slider.active('homeNavSwiper')
-											</script>
-										</div>
-									</div>
-			
-									<div class="boxWrap weatherBox accordionContainer">
-										<div class="boxArea">
-											<a href="javascript:void(0);" class="weatherLink">
-												<div class="weather">
-													<!--
-														* 날씨 아이콘 종류 이름을 지을수 없어 숫자로 넘버링 했습니다.
-														- /public/image/common/weather_sample.png 에 도움이미지 넣었습니다.
-													-->
-													<i class="icon weather1"></i>
-													<b class="temperature">4 <span>맑음</span></b>
-													<div class="val">
-														<p>미세 <span class="good">좋음</span></p>
-														<p>초미세 <span class="bed">나쁨</span></p>
-													</div>
-												</div>
-												<div class="poa">
-													<div class="location">
-														<span>세종특별자치시 새롬동</span> <i class="split24"></i>
-													</div>
-													<span class="toggleBtn"><i class="split24"></i></span>
-												</div>
-											</a>
-											<div class="accordionTarget">
-												<div class="boxTab">
-													<ul class="nav_side btnTab">
-														<li class="itemBtn"><button type="button" class="active">시간별 날씨</button></li>
-														<li class="itemBtn"><button type="button">주간 날씨</button></li>
-														<li class="itemBtn"><button type="button">미세먼지</button></li>
-													</ul>
-			
-													<div class="tabContent">
-														<!-- 시간별 날씨 -->
-														<div class="active">
-															<img src="../../public/image/temp/temp040.png" alt="날씨 샘플 이미지">
-														</div>
-														<!-- //시간별 날씨 -->
-			
-														<!-- 주간 날씨 -->
-														<div>
-															<ul class="items-weatherInfo weather wh24">
-																<li>
-																	<span class="time">월</span>
-																	<i class="icon weather1">맑음</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li>
-																	<span class="time">화</span>
-																	<i class="icon weather2">흐림</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li>
-																	<span class="time">수</span>
-																	<i class="icon weather3">비</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li>
-																	<span class="time">목</span>
-																	<i class="icon weather1">맑음</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li class="now">
-																	<span class="time">오늘</span>
-																	<i class="icon weather1">맑음</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li>
-																	<span class="time">토</span>
-																	<i class="icon weather1">맑음</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-																<li>
-																	<span class="time">일</span>
-																	<i class="icon weather1">맑음</i>
-																	<div class="temperature">
-																		<div><span>7</span></div>
-																		<div><span>10</span></div>
-																	</div>
-																</li>
-															</ul>
-														</div>
-														<!-- //주간 날씨 -->
-			
-														<!-- 미세먼지 -->
-														<div>
-															<div class="particulates">
-																<div class="body">
-																	<div>
-																		<h4>미세먼지</h4>
-																		<div class="number">
-																			<i class="split24 pm10"></i><b>60</b>
-																		</div>
-																		<span class="good">보통</span>
-																	</div>
-																	<div>
-																		<h4>초미세먼지</h4>
-																		<div class="number">
-																			<i class="split24 pm25"></i><b>139</b>
-																		</div>
-																		<span class="bed">나쁨</span>
-																	</div>
-																</div>
-																<div class="offerer">
-																	<span>제공 : 에어코리아 2021-12-22 23:00</span>
-																</div>
-															</div>
-														</div>
-														<!-- //미세먼지 -->
-													</div>
-													
-												</div>
-			
-												<div class="anniversary">
-													<b>기념일</b> <span>3월 9일은 제 20회 대통령선거</span>
-												</div>
-											</div>
-										</div>
-										<svg xmlns="http://www.w3.org/2000/svg" width="329.777" height="328.825" viewBox="0 0 329.777 328.825" class="roundDeco">
-											<path d="M115,0A115,115,0,0,1,230,115c0,63.513-62.442,131.811-125.955,131.811S-18.779,185.411-18.779,121.9c0-29.279,50.051-28.834,68.27-49.361C70.356,49.026,80.767,0,115,0Z" transform="translate(121.326 7.936) rotate(25)"/>
-										</svg>
-									</div>
-			
-									<div class="boxWrap covid19">
-										<div class="boxArea">
-											<h3>코로나19 현황</h3>
-											<div class="body">
-												<div class="title">
-													<i></i>
-													<div>
-														<b class="cRed">일상회복 잠시 멈춤</b>
-														<span>사적모임 기존 8명 → <em class="cRed">4명까지로 변경</em></span>
-													</div>
-												</div>
-												<div class="boxTab menu">
-													<ul class="btnTab">
-														<li class="itemBtn"><button type="button" class="active">선별진료소</button></li>
-														<li class="itemBtn"><button type="button">확진현황</button></li>
-														<li><a href="#">호흡기전담클리닉</a></li>
-													</ul>
-													<div class="tabContent">
-														<!-- 선별진료소 -->
-														<div class="clinic active">
-															<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
-														</div>
-														<!-- //선별진료소 -->
-			
-														<!-- 확진현황 -->
-														<div class="situation">
-															<p class="sDate">12.20 00:00 기준</p>
-															<div>
-																<img src="../../public/image/temp/tesm041.png" alt="확진현황 그래프 모양 샘플">
-															</div>
-														</div>
-														<!-- //확진현황 -->
-													</div>
-												</div>
-												<div class="lineBox">
-													<div class="operation">
-														<span class="round operation"><i class="split20"></i> 운영중</span> <button type="button" class="name"><span>세종시청 임시선별진료소임시선별진료소<i class="split20"></i></span></button>
-													</div>
-													<div class="infomation veryCrowd">
-														<b>매우<br />혼잡</b>
-														<span>200명이상(90분 이상)</span>
-													</div>
-												</div>
-												<div class="lineBox">
-													<div class="operation">
-														<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
-													</div>
-												</div>
-												<div class="button-more">
-													<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
-												</div>
-												<div class="offerer">
-													<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
-												</div>
-			
-												<button type="button" class="infectionBtn">
-													<span><i class="split24"></i> 감염위험이 있을까요?</span>
-													<b class="cBlue">동선안심체크</b>
-												</button>
-											</div>
-										</div>
-									</div>
-			
-									<div class="boxWrap mainNews">
-										<div class="boxArea">
-											<h3>세종소식</h3>
-											<div>
-												<div id="mainNewsSwiper" class="mainNewsList">
-													<div class="slideContainer">
-														<ul class="swiper-wrapper">
-															<li class="swiper-slide">
-																<a href="#">
-																	<span class="label black">시청</span>
-																	<p>글자가 들어갑니다.</p>
-																</a>
-															</li>
-															<li class="swiper-slide">
-																<a href="#">
-																	<figure style="position: initial;"><span class="label black">시청</span><img referrerpolicy="no-referrer" src="https://www.sejong.go.kr/thumbnail/R0071/920_BBS_202203170944512030.png" alt="[남세종종합청소년센터] '스튜디오 NSJ' 참가자 모집"></figure>
-																</a>
-															</li>
-														</ul>
-													</div>
-													<div class="swiper-pagination"></div>
-												</div>
-												<script>
-													slider.active('mainNewsSwiper');
-												</script>
-												<div id="mainNewsPieceSwiper" class="mainNewsPiece">
-													<div class="slideContainer">
-														<ul class="swiper-wrapper">
-															<li class="swiper-slide">
-																<a href="#">
-																	<figure>
-																		<img src="../../public/image/temp/temp041.png" alt="">
-																	</figure>
-																	<p class="lineBreake">드디어 개관한 고운동 세종시립 도서관 탐방</p>
-																	<span>세종시 블로그</span>
-																</a>
-															</li>
-															<li class="swiper-slide">
-																<a href="#">
-																	<figure>
-																		<img src="../../public/image/temp/temp042.png" alt="">
-																	</figure>
-																	<p class="lineBreake">세종호수공원의 가을</p>
-																	<span>세종시 블로그</span>
-																</a>
-															</li>
-															<li class="swiper-slide">
-																<a href="#">
-																	<figure>
-																		<img src="../../public/image/temp/temp041.png" alt="">
-																	</figure>
-																	<p class="lineBreake">금강수목원 단뭉길 행복나들이</p>
-																	<span>세종시 블로그</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-													<div class="swiper-pagination"></div>
-												</div>
-												<script>
-													slider.active('mainNewsPieceSwiper');
-												</script>
-												<div class="button-more">
-													<a href="#" class="btn"><span><b class="blue">#세종시, #행복도시</b> 뉴스보기</span></a>
-												</div>
-											</div>
-										</div>
-										<span class="roundDeco"></span>
-										<svg xmlns="http://www.w3.org/2000/svg" width="293.277" height="307.141" viewBox="0 0 293.277 307.141" class="roundDeco">
-											<path d="M127.742,49.744C191.255,49.744,230,51.487,230,115A115,115,0,0,1,115,230c-54.748,0-92.546-25.675-104.213-77.2-1.792-7.914-24.568-60.759-24.568-69.523C-13.781,19.761,64.229,49.744,127.742,49.744Z" transform="matrix(0.574, -0.819, 0.819, 0.574, -27.051, 163.929)"/>
-										</svg>
-									</div>
-			
-									<div class="boxWrap oilPrice">
-										<div class="boxArea">
-											<div class="titleFlex">
-												<h3>오늘의 유가 :</h3>
-												<select title="유늘의 유가 종류 선택">
-													<option>휘발유</option>
-													<option>경유</option>
-													<option>LPG</option>
-												</select>
-											</div>
-											
-											<div>
-												<div class="average">
-													<div class="title">
-														<b>세종평균</b> <span>(원/리터)</span>
-													</div>
-													<span class="baseDate">2020.02.25 기준</span>
-												</div>
-												<div class="price">
-													
-													<div class="t">
-														<b>1717.04</b> <span class="up">▲ 3.66</span><span class="down">▼ 3.66</span><span class="equal">0.0</span>
-													</div>
-													<div class="u">
-														<span>최저가 <b class="down">1560</b></span>
-														<span>최고가 <b class="up">1775</b></span>
-													</div>
-													<div class="offerer">
-														<span>제공: 오피넷(한국석유공사)</span>
-													</div>
-													<div class="button-more">
-														<a href="#" class="btn"><span><b class="blue">지도에서 주유소</b> 더보기</span></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<svg xmlns="http://www.w3.org/2000/svg" width="184.671" height="198.556" viewBox="0 0 184.671 198.556" class="roundDeco">
-											<path d="M90,0c49.706,0,99.658,57.56,99.658,107.266,0,18.391-61.5.04-71.135,14.545-15.952,24.009-10.422,53.174-41.736,53.174C27.081,174.984,0,139.706,0,90A90,90,0,0,1,90,0Z" transform="translate(0 189.398) rotate(-87)"/>
-										</svg>
-									</div>
-			
-									<div class="boxWrap hospital">
-										<div class="boxArea">
-											<h3>주변에 병원ㆍ약국<br />정보를 알려드립니다.</h3>
-											<div>
-												<p>운영 시간은 방문 전 병원ㆍ약국에 확인하세요</p>
-												<ul>
-													<li><a href="#" class="hospitalLink"><i class="split24"></i> 병원찾기</a></li>
-													<li><a href="#" class="pharmacyLink"><i class="split24"></i> 약국찾기</a></li>
-												</ul>
-											</div>
-										</div>
-										<span class="roundDeco"></span>
-										<svg xmlns="http://www.w3.org/2000/svg" width="254.578" height="230" viewBox="0 0 254.578 230" class="roundDeco">
-											<path d="M115,0a115,115,0,0,1,0,230C51.487,230-24.578,187.038-24.578,123.525c0-33.344,54.8-30.977,77.684-52.178C73.406,52.539,84.831,0,115,0Z" transform="translate(24.578)"/>
-										</svg>
-									</div>
-			
-									<div class="boxWrap weekClosed">
-										<div class="boxArea">
-											<h3>이번 주 <span class="cRed">11.28 일요일</span><br />휴무인 마트</h3>
-											<div class="body">
-												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_emart.png" alt="이마트 세종점" /><span class="text">이마트<span>(세종점)</span></span></a>
-												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_costco.png" alt="코스트코 세종점" /><span class="text">코스트코<span>(세종점)</span></span></a>
-												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_homeplus.png" alt="홈플러스 세종점" /><span class="text">홈플러스<span>(세종점)</span></span></a>
-												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_homeplus.png" alt="홈플러스 조치원점" /><span class="text">홈플러스<span>(조치원점)</span></span></a>
-											</div>
-										</div>
-									</div>
-			
-									<div class="boxWrap sejong">
-										<div class="boxArea">
-											<h3>어제, 그리고 오늘</h3>
-											<a href="#" class="body">
-												<div><img src="../../public/image/home/main_sejong_text.png" alt="10살 세종" /><i></i></div>
-												<span>도시 변화를 위성영상으로 확인하세요</span>
-											</a>
-										</div>
-										<span class="roundDeco"></span>
-									</div>
-			
-									<div class="anchorTop">
-										<a href="#" class="anchorTopBtn"><i class="split24"></i>위로</a>
-									</div>
-								</div>
-								<footer class="footer">
-									<div>
-										<a href="#" class="cBlack">개인정보처리방침</a>
-										<a href="#">저작권정책</a>
-										<a href="#">이메일무단수집거부</a>
-										<a href="#">영상정보처리기기운영방침</a>
-									</div>
-									<p>세종특별자치시 도시통합정보센터</p>
-								</footer>
 							</div>
-							<script>
-								mainWeather.init();
-							</script>
-						</div>
-					</main>
-					<!-- //본문 -->
-
-					<div class="mainMenu">
-						<nav id="mainMenuSwiper" class="mainMenuList">
-							<ul>
-								<li>
-									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
-								</li>
-								<li class="active"> <!-- 활성화 시 active 추가 -->
-									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
-								</li>
-							</ul>
 						</nav>
-					</div>
-
-					<div class="chatbot">
-						<button type="button" class="chatbotBtn">민원<br />챗봇</button>
-					</div>
-			
-			
-					<!-- 레이어 -->
-					<!-- 운영정보 표시 -->
-					<div id="layerAlram" class="layerPopup" tabindex="0">
-						<div class="layerWrap typeBot">
-							<h4>운영정보 표시</h4>
-							<div class="layerCare">
-								<dl>
-									<dt>보건소</dt>
-									<dd>
-										운영시간 09:00 ~ 12:00 / 13:30 ~ 16:30 (평일만 운영)<br />
-										한파 시에는 단축 운영<br />
-										한파기준 : 일일 최저기온 -15℃ 또는 최고기온 -5℃ 이하
-									</dd>
-									<dt>시청</dt>
-									<dd>
-										운영시간 09:00 ~ 12:00 / 13:30 ~ 16:30 / 17:30 ~ 21:00 (평일, 주말 및 공휴일 운영)<br />
-										워킹스루만 운영 (상황 변경 시까지 드라이브스루 운영 중단, 한파 시에는 단축 운영
-									</dd>
-								</dl>
-							</div>
-							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
-						</div>
-					</div>
-					<!-- //운영정보 표시 -->
-
-					<!-- 공통 공지 -->
-					<div id="layerNotice" class="layerPopup" tabindex="0">
-						<div class="layerWrap typeBot">
-							<div class="layerNotice">
-								<a href="#">
-									<div class="title">
-										<p>세종시민의 쉼터 세종호수공원!</p>
+						<script>
+							slider.active('infoNavSwiper')
+						</script>
+						<!-- //공통: 서브 헤더 -->
+				
+						<!-- 본문 -->
+						<main class="contents info"> <!-- [생활정보 Class] info-->
+							<h2 class="visible"><span class="headerClone">생활정보</span></h2> <!-- [헤더에 넣어줄 제목] -->
+							
+							<div class="infoWrap">
+								<div class="mainMenuFixed">
+									<div class="mainArea">
+										<div class="recentService typeB">
+											<h3>이용이 많은 정보</h3>
+											<div>
+												<nav id="homeNavSwiper" class="homeNav">
+													<div class="slideContainer">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<a href="#">
+																	<b class="poa">1</b>
+																	<div class="roundBox">
+																		<b class="text">여민전/상생플러스</b>
+																		<div class="textGroup">
+																			<img src="../../public/image/common/ico24_fill/@2x/ico_24_24store_filled.png" alt="">	
+																			<span class="subText">무인민원발급기</span>
+																		</div>
+																	</div>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<b class="poa">2</b>
+																	<div class="roundBox">
+																		<b class="text">세글자</b>
+																		<div class="textGroup">
+																			<img src="../../public/image/common/ico24_fill/@2x/ico_24_light_filled.png" alt="">
+																			<span class="subText">안전</span>
+																		</div>
+																	</div>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<b class="poa">3</b>
+																	<div class="roundBox">
+																		<b class="text">우리가게</b>
+																		<div class="textGroup">
+																			<img src="../../public/image/common/ico24_fill/@2x/ico_24_carehouse_filled.png" alt="">
+																			<span class="subText">소통</span>
+																		</div>
+																	</div>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<b class="poa">4</b>
+																	<div class="roundBox">
+																		<b class="text">어울링</b>
+																		<div class="textGroup">
+																			<img src="../../public/image/common/ico24_fill/@2x/ico_24_management_filled.png" alt="">
+																			<span class="subText">교통</span>
+																		</div>
+																	</div>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<script>
+														slider.active('homeNavSwiper')
+													</script>
+												</nav>
+											</div>
+										</div>
+				
+										<div class="boxWrap together">
+											<div class="boxArea">
+												<h3>함께 소통하는 생활</h3>
+												<div class="body">
+													<ul class="textLinks">
+														<li>
+															<a href="#">
+																<span>우리 동네 가게를 소개해요~</span>
+																<b>우리가게</b>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span>생활 속 위험요인 불편함 개선! 생활 속 위험요인 불편함 개선! </span>
+																<b>안전신고</b>
+															</a>
+														</li>
+													</ul>
+													<ul class="iconLinks space3 mt32">
+														<li>
+															<a href="#">
+																<span class="round"><img src="../../public/image/info/info_together_img.png" alt="" /></span>
+																<p>장소 공유</p>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="round"><img src="../../public/image/info/info_together_img2.png" alt="" /></span>
+																<p>재능 공유</p>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="round"><img src="../../public/image/info/info_together_img3.png" alt="" /></span>
+																<p>물품 공유</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+				
+										<div class="boxWrap complaint">
+											<div class="boxArea">
+												<h3>생활 속 민원</h3>
+												<div class="body">
+													<div class="citizen">
+														<div class="write">
+															<a href="#" class="line">
+																<div>
+																	<img src="../../public/image/info/info_complaint_title.png" alt="시민의 창" />
+																	<b>민원 글쓰기</b>
+																</div>
+															</a>
+															<img src="../../public/image/info/info_complaint_img.png" class="complaintImg" alt="" />
+														</div>
+														<div class="issue">
+															<div>
+																<a href="#">
+																	<span>소외이웃의 손발</span>
+																	<b>척척세종</b>
+																</a>
+																<a href="tel:044-300-7730" class="phone"><i class="split24">전화걸기</i></a>
+															</div>
+															<div>
+																<a href="#"><b>무인민원발급기</b></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<h3>생활민원안내</h3>
+												<div>
+													<ul class="boxLinks space3">
+														<li><a href="#">전학절차</a></li>
+														<li><a href="#">주민등록증 발급</a></li>
+														<li><a href="#">가족관계 증명</a></li>
+														<li><a href="#">여권발급</a></li>
+														<li><a href="#">출산축하금 지원</a></li>
+														<li><a href="#">양육수당 지원</a></li>
+														<li><a href="#">팩스민원</a></li>
+														<li><a href="#">자동차 <br />등록ㆍ변경</a></li>
+														<li><a href="#"><img src="../../public/image/info/info_complaint_img24.png" alt="정부24" class="img24"></a></li>
+													</ul>
+												</div>
+											</div>
+											<span class="roundDeco"></span>
+											<span class="roundDeco2"></span>
+										</div>
 									</div>
-									<div class="contexte">
-										<p>
-											<img src="../../public/image/temp/temp015.png" alt="" class="img"> <!-- 240*240이 최적 크기입니다. -->
-											강당 전시관 카페등 갖춘 지역대표 도서관에 초대합니다.
-										</p>
-									</div>
-									<span class="more">자세히 &gt;</span>
-								</a>
-								<a href="#">
-									<img src="../../public/image/temp/temp015.png" alt="" class="full">
-								</a>
-
-								<div class="noticeCheck">
-									<div class="radioSet">
-										<input type="checkbox" id="list0"><label for="list0"><b>오늘하루 열지않음</b></label>
-									</div>
-									<button type="button" class="checkBtn">확인</button>
 								</div>
 							</div>
-			
-							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</main>
+						<!-- //본문 -->
+	
+	
+						<div class="mainMenu">
+							<nav id="mainMenuSwiper" class="mainMenuList">
+								<ul>
+									<li>
+										<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
+									</li>
+									<li class="active"> <!-- 활성화 시 active 추가 -->
+										<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
+									</li>
+								</ul>
+							</nav>
 						</div>
+				
+				
+						<!-- 레이어 -->
+						<!-- 메뉴설정 -->
+						<div id="layerSharing" class="layerPopup">
+							<div class="layerWrap typeBot">
+								<div class="layerSetting">
+									<ul class="items-label">
+										<li>
+											<div class="labelForm">
+												<input type="radio" name="radio" id="list0">
+												<label for="list0">세종엔에서 제공하는 기본 보기</label>
+											</div>
+										</li>
+										<li>
+											<div class="labelForm">
+												<input type="radio" name="radio" id="list1">
+												<label for="list1">직접 순서와 항목 변경하여 보기</label>
+												<button type="button" class="tootipBtn" onclick="tooltip.show('layerTooltip', 'bottom');" title="도움말 열림"><i class="split20">항목 변경 안내</i></button>
+	
+												<div class="settingMenuBody">
+													<ul class="settingMenu line">
+														<li><button type="button">함께 소통</button></li>
+														<li><button type="button">건강ㆍ환경</button></li>
+														<li><button type="button">교통ㆍ안전</button></li>
+														<li><button type="button">교육ㆍ문화</button></li>
+													</ul>
+													<ul class="settingMenu">
+														<li><button type="button" class="disabled">함께 소통</button></li>
+														<li><button type="button" class="disabled">건강ㆍ환경</button></li>
+														<li><button type="button" class="disabled">교통ㆍ안전</button></li>
+														<li><button type="button">교육ㆍ문화</button></li>
+														<li><button type="button">세종여행</button></li>
+														<li><button type="button">스마트세종</button></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									
+									<button type="button" class="button blue">저장</button>
+								</div>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+						</div>
+						<!-- //메뉴설정 -->
+				
+						<!-- 툴팁 -->
+						<div id="layerTooltip" class="boxTooltipLayer">
+							<div class="boxTooltipBody">
+								<div class="paragraphGroup">
+									<p>항목을 꾹 눌러 이동하거나, X를 눌러 제외할 수 있어요.</p>
+								</div>
+								<button type="button" class="btnClose"><i>닫기</i></button>
+							</div>
+						</div>
+						<!-- //툴팁 -->
+						<!-- //레이어 -->
 					</div>
-					<!-- 공통 공지 -->
-					<!-- //레이어 -->
 				</div>
+				<!-- //모바일 내용 -->
+	
 			</div>
-			<!-- //모바일 내용 -->
-
 		</div>
 	</div>
-</div>
 </body>
 </html>
