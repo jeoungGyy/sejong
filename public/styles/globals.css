@@ -2033,10 +2033,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation li.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
-.items-gasStation {}
-
-
-
 
 .items-LocalCurrency { margin-top: 0.8rem;}
 .items-LocalCurrency li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 4.6rem 10.8rem; border-bottom: 1px solid #F4F5F7;}
