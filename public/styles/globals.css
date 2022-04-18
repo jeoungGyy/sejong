@@ -1006,14 +1006,16 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .chartBox .arrow.right { right: -1.2rem;}
 .locationLayer .detail .chartBox .arrow.right i { background-position-x: -40.8rem;}
 .locationLayer .detail .visitor { display: flex; align-items: center; justify-content: center; height: 4.8rem; margin-top: 0.4rem; font-size: 1.6rem; font-weight: 700; color: #fff; background-color: #6684EA; border-radius: 0.4rem;}
-.locationLayer .detail .visitorDetail { margin-top: 1.6rem; padding: 2.4rem 1rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
-.locationLayer .detail .visitorDetail >div ~ div { margin-top: 2.3rem;}
-.locationLayer .detail .visitorDetail >div { display: flex; align-items: center;}
+.locationLayer .detail .visitorDetail { margin-top: 1.6rem; padding: 1.8rem 2rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.locationLayer .detail .visitorDetail >div ~ div { margin-top: 1.8rem;}
+.locationLayer .detail .visitorDetail >div { display: flex; align-items: center; justify-content: space-between;}
 .locationLayer .detail .visitorDetail >div .title { display: flex; align-items: center; width: 11rem; font-size: 1.6rem; color: #555;}
 .locationLayer .detail .visitorDetail >div .walking i { margin-right: 0.4rem; background-position: -4.8rem -24rem;}
 .locationLayer .detail .visitorDetail >div .bike i { margin-right: 0.4rem; background-position: -7.2rem -24rem;}
-.locationLayer .detail .visitorDetail >div b { flex: 1; font-size: 1.8rem;}
-.locationLayer .detail .visitorDetail >div .today { width: 10.5rem; font-size: 1.6rem; color: #555; text-align: right;}
+.locationLayer .detail .visitorDetail .visitorToday { text-align: right;}
+.locationLayer .detail .visitorDetail .visitorToday b { display: block;}
+.locationLayer .detail .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
+.locationLayer .detail .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
 .locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
 .locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}

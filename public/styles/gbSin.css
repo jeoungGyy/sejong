@@ -261,6 +261,7 @@
 .mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
 .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 .mainArea .playground { margin-top: 2.7rem;}
+.mainArea .playground .boxArea > div { padding-top: 1rem;}
 .mainArea .playground h3 span { margin: 0 0.6rem;}
 .mainArea .playground .playgroundBtn { display: block;}
 .mainArea .playground .playgroundBtn img { width: 4.9rem; height: 4.9rem; vertical-align: top;}
@@ -305,14 +306,16 @@
 .mainArea .visitorGroup { margin-top: 2.7rem;}
 .mainArea .visitorGroup h3 .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.4rem; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
 .mainArea .visitorGroup .visitor { margin-top: 2.5rem;}
-.mainArea .visitorGroup .visitorDetail { margin-top: 2.5rem; padding: 2.4rem 1rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
-.mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 2.3rem;}
-.mainArea .visitorGroup .visitorDetail >div { display: flex; align-items: center;}
+.mainArea .visitorGroup .visitorDetail { margin-top: 2.5rem; padding: 1.8rem 2rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 1.8rem;}
+.mainArea .visitorGroup .visitorDetail >div { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .visitorGroup .visitorDetail >div .title { display: flex; align-items: center; width: 11rem; font-size: 1.6rem; color: #555;}
 .mainArea .visitorGroup .visitorDetail >div .walking i { margin-right: 0.4rem; background-position: -4.8rem -24rem;}
 .mainArea .visitorGroup .visitorDetail >div .bike i { margin-right: 0.4rem; background-position: -7.2rem -24rem;}
-.mainArea .visitorGroup .visitorDetail >div b { flex: 1; font-size: 1.8rem;}
-.mainArea .visitorGroup .visitorDetail >div .today { width: 10.5rem; font-size: 1.6rem; color: #555; text-align: right;}
+.mainArea .visitorGroup .visitorDetail .visitorToday { text-align: right;}
+.mainArea .visitorGroup .visitorDetail .visitorToday b { display: block;}
+.mainArea .visitorGroup .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
+.mainArea .visitorGroup .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
 .mainArea .visitorGroup .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 1.1rem;}
 .mainArea .visitorGroup .tabCount .tabBtns { display: flex; align-items: center;}
 .mainArea .visitorGroup .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
