@@ -666,12 +666,7 @@
 
 /* 윤사랑 추가 */
 /* 로그인 - UI-SJN-98-001U */
-.header.global {overflow: hidden;
-	position: fixed;
-	top: 0;
-	z-index: 200;
-	width: 100%;}
-.header.global .subHeader {justify-content: space-between; padding:0 2rem;}
+.header.global .subHeader { justify-content: space-between; padding:0 2rem;}
 .header.global .subHeader .globalLogo i { display: inline-block; width: 5.825rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/logo-sj-global.png) no-repeat 0 0/5.825rem 4rem;}
 .header.global .subHeader .btnGlobal { display: flex; align-items: center;}
 .header.global .subHeader .btnGlobal button { position: relative; width:2.4rem; height:2.4rem; margin-left:1.6rem;}
@@ -708,7 +703,7 @@
 .openApi .loginWrap .memberBtn { margin-top: 1.6rem;}
 .openApi .loginWrap .btnGroup { margin-top: 1.6rem;}
 .openApi .loginWrap .btnGroup li ~ li { margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid #F4F5F7;}
-.openApi .loginWrap .member { padding: 0 2rem 3.2rem;}
+.openApi .loginWrap .member { padding: 1rem 2rem 3.2rem;}
 .openApi .loginWrap .nonMember { padding: 3.2rem 2rem;}
 .openApi .loginWrap .logo { margin-top: 3.2rem; text-align: center;}
 .openApi .loginWrap .logo i { display: inline-block; width:9.6rem; height:5.2rem; text-indent: -9999rem; background:url(../image/home/logo_sejong.png) no-repeat center/cover;}
