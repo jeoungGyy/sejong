@@ -177,6 +177,9 @@ const slideOpt = {
 	mapToVisitSwiper: {
     slidesPerView: 'auto',
 		spaceBetween: 8,
+		pagination: {
+			el: ".swiper-pagination",
+		},
 	},
 	/* UI-SJN-34-002 */
 	mapParkingSpace: {

@@ -52,7 +52,7 @@
 .mainArea .serviceGroup::before { content: ''; display: block; position: absolute; left: -3.8rem; top: -10.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
 .mainArea .serviceGroup::after { content: ''; display: block; position: absolute; right: -8.8rem; bottom: -7.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
 .mainArea .serviceGroup h3 { position: relative; z-index: 1; align-items: flex-end; font-size: 2rem; color: #fff;}
-.mainArea .serviceGroup h3 img { width: 7.4rem; height: auto; margin: 0 0 0.4rem 0.6rem;}
+.mainArea .serviceGroup h3 img { width: 16.725rem; height: auto; margin: 0 0 0.4rem 0.6rem;}
 .mainArea .serviceGroup ul { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
 .mainArea .serviceGroup ul li a { display: block; text-align: center;}
 .mainArea .serviceGroup ul li a img { width: 6rem; height: 6rem;}
@@ -156,7 +156,14 @@
 .mainArea .weatherBox .normal { color: #01C73D;}
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
-.mainArea .weatherBox .cautionText { display: flex; justify-content: center; height: 5.2rem; margin-bottom: -1.5rem; padding-top: 1rem; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
+.mainArea .weatherBox .cautionText { display: flex; overflow: hidden; height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
+.mainArea .weatherBox .cautionText p { padding-left: 100%; white-space: nowrap;
+	animation: marquee 30s forwards linear infinite;
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
@@ -257,9 +264,10 @@
 .mainArea .playground h3 span { margin: 0 0.6rem;}
 .mainArea .playground .playgroundBtn { display: block;}
 .mainArea .playground .playgroundBtn img { width: 4.9rem; height: 4.9rem; vertical-align: top;}
-.mainArea .playground .byDate { font-size: 1.3rem; color: #555;}
+.mainArea .playground .byDate { display: block; margin-top: 1rem; font-size: 1.3rem; color: #555;}
 .mainArea .playground .listForm { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem;}
 .mainArea .playground .listForm li { width: calc(50% - 0.4rem); padding: 1.8rem 0.8rem 1.6rem; background-color: #F4F5F7; border-radius: 0.4rem;}
+.mainArea .playground .listForm li a { display: block; color: #111;}
 .mainArea .playground .listForm li .title { font-size: 1.4rem; text-align: center;}
 .mainArea .playground .listForm li .title b { display: block;}
 .mainArea .playground .listForm li .title span { display: block; margin-top: 0.3rem;}
@@ -296,8 +304,8 @@
 .mainArea .playground .chartBox .arrow.right i { background-position-x: -40.8rem;}
 .mainArea .visitorGroup { margin-top: 2.7rem;}
 .mainArea .visitorGroup h3 .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.4rem; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
-.mainArea .visitorGroup .visitor { display: flex; align-items: center; justify-content: center; height: 4.8rem; margin-top: 1.8rem; font-size: 1.6rem; color: #fff; background-color: #6684EA; border-radius: 0.4rem;}
-.mainArea .visitorGroup .visitorDetail { margin-top: 1.6rem; padding: 2.4rem 1rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.mainArea .visitorGroup .visitor { margin-top: 2.5rem;}
+.mainArea .visitorGroup .visitorDetail { margin-top: 2.5rem; padding: 2.4rem 1rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
 .mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 2.3rem;}
 .mainArea .visitorGroup .visitorDetail >div { display: flex; align-items: center;}
 .mainArea .visitorGroup .visitorDetail >div .title { display: flex; align-items: center; width: 11rem; font-size: 1.6rem; color: #555;}
@@ -329,11 +337,12 @@
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .bike i { background-position: -7.2rem -24rem;}
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .conBtn.active { border-color: #6684EA;}
 .mainArea .visitorGroup .chartBox .chartControl .chart { flex: 1;}
-.mainArea .visitorGroup .slideBody { margin-top: 3.4rem;}
-.mainArea .visitorGroup .slideBody .slideContainer { overflow: hidden; margin: 0 -1.6rem; padding: 0 2rem;}
+.mainArea .visitorGroup .slideBody { margin-top: 3rem;}
+.mainArea .visitorGroup .slideBody .slideContainer { position: relative; margin: 0 -1.6rem; padding: 0 2rem;}
 .mainArea .visitorGroup .slideBody li { width: 15.6rem;}
 .mainArea .visitorGroup .slideBody li a { display: block;}
 .mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #6684EA; border: 1px solid #eaedf2;}
+.mainArea .visitorGroup .slideBody .swiper-pagination { bottom: -28px;}
 .mainArea .visitorGroup .ingBody { display: flex; align-items: center;}
 .mainArea .visitorGroup .ingBody p { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 0.8rem 0 0.4em; color: #fff; border-radius: 1.2rem;}
 .mainArea .visitorGroup .ingBody p i { vertical-align: middle; background-position: -4rem -8rem;}
@@ -345,7 +354,7 @@
 .mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active i { background-position: -16.8rem -21.6rem;}
 .mainArea .visitorGroup .targetHeight { overflow: hidden;	height: 0; transition: height 0.3s ease-in-out;}
-.mainArea .visitorGroup .targetHeight.active { height: 36.5rem;}
+.mainArea .visitorGroup .targetHeight.active { height: 38.5rem;}
 
 .mainArea .mainPromotion { padding-bottom: 2.8rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
