@@ -340,7 +340,7 @@
 .mainArea .visitorGroup .slideBody { margin-top: 3rem;}
 .mainArea .visitorGroup .slideBody .slideContainer { position: relative; margin: 0 -1.6rem; padding: 0 2rem;}
 .mainArea .visitorGroup .slideBody li { width: 15.6rem;}
-.mainArea .visitorGroup .slideBody li a { display: block;}
+.mainArea .visitorGroup .slideBody li a { display: block; overflow: hidden; height: 9.4rem;}
 .mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #6684EA; border: 1px solid #eaedf2;}
 .mainArea .visitorGroup .slideBody .swiper-pagination { bottom: -28px;}
 .mainArea .visitorGroup .ingBody { display: flex; align-items: center;}
