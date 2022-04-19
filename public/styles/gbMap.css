@@ -298,9 +298,8 @@ span.M { background-color: #FD2020;}
 .map .mapSearch { position: absolute; left: 1.2rem; right: 1.2rem; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 90;}
 .map .mapSearch .mapSearchBtns { display: flex; align-items: center;}
 .map .mapSearch .mapSearchBtns .favicon { width: 3.3rem; height: 3.3rem; margin: 0.2rem 0.8rem 0 0; background-color: #fff; border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);}
-.map .mapSearch .mapSearchBtns .favicon i { background-position: -33.6rem -2.4rem;}
-.map .mapSearch .mapSearchBtns .favicon.active { background-color: #6684EA;}
-.map .mapSearch .mapSearchBtns .favicon.active i { background-position: -33.6rem 0;}
+.map .mapSearch .mapSearchBtns .favicon i { background-position: -33.6rem 0;}
+.map .mapSearch .mapSearchBtns .favicon.active i { background-position: -33.6rem -2.4rem;}
 .map .mapSearch .mapSearchBtns .items-wordList { flex: 1; margin-left: 0;}
 .map .mapSearch .mapSearchBtns .items-wordList .slideContainer { padding: 0 0 1rem;}
 .map .mapSearch .mapheader { display: flex; align-items: center; justify-content: space-between;}
