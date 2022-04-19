@@ -699,7 +699,7 @@
 .openApi .loginWrap .h2Text .blet::before { content: ''; display: block; position: absolute; left: 0.7rem; top: -0.3rem; width: 0.4rem; height: 0.4rem; background-color: #6684EA; border-radius: 50%;}
 .openApi .loginWrap .h3Text { font-size: 1.6rem;}
 .openApi .loginWrap .h3Text.mt { margin-top: 2.4rem;}
-.openApi .loginWrap p { margin-top: 1.6rem; line-height: 2.3rem;}
+.openApi .loginWrap p { margin-top: 1.6rem; color: #555; line-height: 2.3rem;}
 .openApi .loginWrap .memberBtn { margin-top: 1.6rem;}
 .openApi .loginWrap .btnGroup { margin-top: 1.6rem;}
 .openApi .loginWrap .btnGroup li ~ li { margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid #F4F5F7;}

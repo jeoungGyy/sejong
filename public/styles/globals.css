@@ -313,6 +313,7 @@ table td { vertical-align: middle;}
 .button.noShadow { box-shadow: none;}
 .button.blue { color: #fff; background-color: #6684EA;}
 .button.gray { color: #aaa; background-color: #EAEDF2;}
+.button.lightGray { font-weight: 400; color: #000; background-color: #EAEDF2;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 .button.lineBlue { font-weight: 400; border: 1px solid #6684EA; box-shadow: none;}
 
