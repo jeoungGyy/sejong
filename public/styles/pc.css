@@ -3,9 +3,6 @@
 
 /* @media screen and (min-width: 412px) { html {font-size: 67%;}} */
 
-#modal { border: 1px solid #000;}
-.modalContainer { border: 1px solid red;}
-
 body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
 .pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}

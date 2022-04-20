@@ -24,22 +24,24 @@ body { --vh: 1px;}
 
 .mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 105; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
+.map .mapInfoLayer .update { display: flex; align-items: center; justify-content: flex-end; height: 4rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .locationFlex { display: flex; align-items: center;}
 .map .mapInfoLayer .mapIHead .locationFlex .location { display: flex; align-items: center; flex: 1; height: 4.8rem; margin-right: 0.4rem;}
 .map .mapInfoLayer .mapIHead .locationFlex .location i { margin: 0 0.4rem 0 0; background-position-x: -30rem;}
 .map .mapInfoLayer .mapIHead .locationFlex select { width: 12.5rem; height: 3.4rem; padding: 0 0 0 1rem; font-size: 1.5rem; background-position: right 0.6rem top 0.6rem; border-radius: 1.7rem;}
+.map .mapInfoLayer .mapIHead .locationFlex .legend i { margin-left: 0.4rem; background-position-x: -38rem;}
 .map .mapInfoLayer .mapIHead .items-placeList { height: inherit; margin: 0;}
 .map .mapInfoLayer .mapIHead .items-placeList >ul { padding: 0;}
 .map .mapInfoLayer .btnMapInfo { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; height: 2.4rem; text-indent: -9999rem;}
 .map .mapInfoLayer .btnMapInfo::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4.8rem; height: 0.4rem; margin: -0.2rem 0 0 -2.4rem; background-color: #CDD0D8; border-radius: 0.2rem;}
 .map .mapInfoLayer .btnMapInfo.block { display: flex;}
 .map .mapInfoLayer .area { display: flex; align-items: center;}
-.map .mapInfoLayer .area .region { flex: 1;}
+.map .mapInfoLayer .area .region { flex: 1; margin-bottom: 1rem;}
 .map .mapInfoLayer .area .region >p { position: relative; padding-left: 2.4rem;}
 .map .mapInfoLayer .area .region >p::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -30rem 0/40rem 16rem;}
-.map .mapInfoLayer .area .weather { width: 7.5rem;}
+.map .mapInfoLayer .area .weather { width: 7.5rem; margin-bottom: 1rem;}
 .map .mapInfoLayer .area .weather .weatherIcons { display: flex; align-items: center; justify-content: center;}
 .map .mapInfoLayer .area .weather .temperature { display: inline-block; position: relative; min-width: 2rem; padding-right: 0.7rem; font-size: 1.8rem; text-align: center;}
 .map .mapInfoLayer .area .weather .temperature::after { content: ''; position: absolute; right: 0; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
