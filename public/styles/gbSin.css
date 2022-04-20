@@ -30,10 +30,10 @@
 
 .mainArea .titleFlex { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .titleFlex select { width: auto; margin-left: 1rem; padding: 0 2.5rem 0 0; font-size: 1.4rem; border: none; background-position: right 0 top 1.4rem;}
-.recentService { padding: 2rem 0 0;}
+.recentService { padding: 1.5rem 0 0;}
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
-.recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.8rem;}
+.recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.6rem;}
 .recentService .items-wordList { margin: 1.2rem -2rem 0;}
 .recentService .items-wordList .slideContainer { padding: 0 2rem 1rem;}
 .recentService .homeNav { position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
@@ -86,7 +86,7 @@
 .mainArea .covid19 .lineBox .operation .round.operation { background-color: #4EC457;}
 .mainArea .covid19 .lineBox .operation .round.closed { background-color: #777;}
 .mainArea .covid19 .lineBox .operation .round i { background-position: -4rem -8rem;}
-.mainArea .covid19 .lineBox .operation .name { flex: 1; font-size: 1.6rem; font-weight: 700; text-align: left;}
+.mainArea .covid19 .lineBox .operation .name { flex: 1; font-size: 1.5rem; font-weight: 700; text-align: left;}
 .mainArea .covid19 .lineBox .operation .name span i { margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background-position-x: -30rem;}
 .mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; margin-top: 0.6rem;}
 .mainArea .covid19 .lineBox .infomation b { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #fff; background-color: #FD2020; border-radius: 1.2rem;}
@@ -157,9 +157,8 @@
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
 .mainArea .weatherBox .cautionText { display: flex; overflow: hidden; height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
-.mainArea .weatherBox .cautionText p { padding-left: 100%; white-space: nowrap;
-	animation: marquee 30s forwards linear infinite;
-}
+.mainArea .weatherBox .cautionText .hiddenBox { display: flex; overflow: hidden;}
+.mainArea .weatherBox .cautionText p { padding-left: 100%; white-space: nowrap;	animation: marquee 30s forwards linear infinite;}
 @keyframes marquee {
   from   { transform: translate(0%);}
   99%,to { transform: translate(-100%);}
