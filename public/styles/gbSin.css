@@ -171,7 +171,7 @@
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
-.mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: 0; background-size: 52rem 15.6rem;}
+.mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: 0; background-size: 52rem 15.6rem; transition: all .3s ease-in-out;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature { font-size: 2.4rem;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature::after { left: 1.6rem; top: 0.7rem;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 2rem;}
