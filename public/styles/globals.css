@@ -427,7 +427,7 @@ table td { vertical-align: middle;}
 
 /* 피규어 마커 */
 figure { overflow: hidden; position: relative; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}
-figure.wFirst img { width: auto; height: 100%; transform: translateX(-25%);}
+figure.wFirst img { position: absolute; left: 50%; width: auto; height: 100%; transform: translateX(-50%);}
 
 figure img { width: 100%; height: auto; vertical-align: top;}
 .mainNewsList .label,
