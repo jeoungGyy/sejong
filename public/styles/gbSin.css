@@ -156,12 +156,17 @@
 .mainArea .weatherBox .normal { color: #01C73D;}
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
-.mainArea .weatherBox .cautionText { display: flex; overflow: hidden; height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
+.mainArea .weatherBox .cautionText { height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
 .mainArea .weatherBox .cautionText .hiddenBox { display: flex; overflow: hidden;}
 .mainArea .weatherBox .cautionText p { padding-left: 100%; white-space: nowrap;	animation: marquee 30s forwards linear infinite;}
+.mainArea .weatherBox .cautionText p.s5 { animation-duration: 5s;}
+.mainArea .weatherBox .cautionText p.s10 { animation-duration: 10s;}
+.mainArea .weatherBox .cautionText p.s15 { animation-duration: 15s;}
+.mainArea .weatherBox .cautionText p.s20 { animation-duration: 20s;}
+.mainArea .weatherBox .cautionText p.s25 { animation-duration: 25s;}
 @keyframes marquee {
   from   { transform: translate(0%);}
-  99%,to { transform: translate(-100%);}
+  to { transform: translate(-100%);}
 }
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
