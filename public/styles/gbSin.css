@@ -451,7 +451,7 @@
 .home .recentSearch .emptySearch p { position: relative; margin-top: 9rem; font-size: 1.6rem; color: #777;}
 .home .recentSearch .emptySearch p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty_search.png) no-repeat center/2.4rem 2.4rem; border-radius: 50%;}
 
-.home .mapSearch { padding: 1.6rem 2rem;}
+#root .home .mapSearch { position: inherit; left: inherit; right: inherit; top: inherit; z-index: inherit; padding: 1.6rem 2rem;}
 
 /* UI-SJN-02-010U */
 .home .homeSearchArea .afterSearch { color: #6684EA;}

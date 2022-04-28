@@ -157,6 +157,9 @@ const mapInfo = {
 			}
 		}
 		if(act === 'close') {
+			const naverMap = document.querySelector("#naver-map");
+			naverMap.style.transform = `translateY(0rem)`;
+
 			mapInfoLayer.classList.remove('up', 'open');
 			btnView.classList.remove('up', 'open');
 			location && location.classList.remove('default');
@@ -179,7 +182,6 @@ const mapInfo = {
 		function infoDown() {
 			const naverMap = document.querySelector("#naver-map");
 			naverMap.style.transform = `translateY(0rem)`;
-
 
 			mapInfoLayer.classList.remove('open');
 			btnView && btnView.classList.remove('open');

@@ -22,7 +22,7 @@ body { --vh: 1px;}
 .mapArea.subStyle .mapIcons .location .myLocation,
 .mapArea.subStyle .mapIcons .location .scaleBtn { bottom: 2rem;}
 
-.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 105; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
+.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 101; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
 .map .mapInfoLayer .update { display: flex; align-items: center; justify-content: flex-end; height: 4rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
@@ -88,7 +88,7 @@ body { --vh: 1px;}
 .map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));}
 
 .mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
-.mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 100; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
+.mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 102; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
 .mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .mapIcons .btnView button.mapView i { background-position: 0 -4rem;}
 .mapIcons .btnView button.listView { bottom: 4rem;}
@@ -291,6 +291,9 @@ span.G { background-color: #32BBED;}
 span.Y { background-color: #4EC457;}
 span.R { background-color: #FD2020;}
 span.M { background-color: #FD2020;}
+
+#root .map .home { padding: 0;}
+#root .map .home .boderTopGray { border: none;}
 
 /* 메인 - UI-SJN-20-001U */
 .map .mapArea { overflow: hidden; position: relative; height: 100vh; margin: -5.6rem 0 -2rem;}
