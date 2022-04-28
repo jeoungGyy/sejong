@@ -140,7 +140,7 @@
 .mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
 .mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
 .mainArea .weatherBox .particulates .body >div ~ div::after { content: ''; position: absolute; left: 0; top: 50%; width: 0.1rem; height: 8rem; margin-top: -4rem; background-color: #EAEDF2;}
-.mainArea .weatherBox .particulates .body >div >span { font-size: 1.4rem;}
+.mainArea .weatherBox .particulates .body >div >span { display: block; height: 2.2rem; font-size: 1.4rem;}
 .mainArea .weatherBox .particulates .body >div h4 { font-size: 1.6rem;}
 .mainArea .weatherBox .particulates .body >div .number { margin: 0.7rem 0 0.5rem;}
 .mainArea .weatherBox .particulates .body >div .number .pm10 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -19.2rem;}
@@ -371,7 +371,7 @@
 .mainArea .mainPromotion .promotionList a { display: block; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
 
-.home .footer { padding: 2.2rem 0 4rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
+.home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
 .home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
 .home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #777; text-align: center;}
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
