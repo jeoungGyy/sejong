@@ -149,9 +149,9 @@
 .mainArea .weatherBox .offerer { display: flex; align-items: center; justify-content: flex-end; margin-top: 0.8rem;}
 .mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #777;}
 .mainArea .weatherBox .weatherLink .location { display: none;}
-.mainArea .weatherBox .weatherLink .weather .temperature { display: block; position: relative; font-size: 1.8rem;}
-.mainArea .weatherBox .weatherLink .weather .temperature::after { content: ''; position: absolute; left: 1.2rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
-.mainArea .weatherBox .weatherLink .weather .temperature span { margin-left: 0.5rem; font-size: 1.6rem;}
+.mainArea .weatherBox .weatherLink .weather .temperature { display: block; font-size: 1.8rem;}
+.mainArea .weatherBox .weatherLink .weather .temperature span { position: relative; margin-left: 1rem; font-size: 1.6rem;}
+.mainArea .weatherBox .weatherLink .weather .temperature span::after { content: ''; position: absolute; left: -0.8rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .mainArea .weatherBox .lowness { color: #32A2FF;}
 .mainArea .weatherBox .normal { color: #01C73D;}
 .mainArea .weatherBox .caution { color: #FFA60E;}

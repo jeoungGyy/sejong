@@ -2082,6 +2082,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
 .item-mapSearch li { width: calc(100% / 3); border-right: 1px solid #F2F2F2; border-bottom: 1px solid #F2F2F2;}
+.item-mapSearch li figure { background: none !important;}
+.item-mapSearch li figure { width: 34px;}
 .item-mapSearch li button { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%; padding: 2.7rem 0 1.4rem;}
 .item-mapSearch li button .mapSplit { width: 4.3rem; height: 4rem; background: url(../image/home/split_map_earch.png) no-repeat 0 0/21.5rem 12rem;}
 .item-mapSearch li button .mapSplit.bicycle { background-position: -4.3rem 0;}
