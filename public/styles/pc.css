@@ -168,7 +168,16 @@ html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}
 
 
 
+/* iOS only */ 
 
+@supports (-webkit-touch-callout: none) {
+	.jmLoading,
+	.layerMapInfo .mapArea,
+	.pcContainer,
+	.pcContainer .pcView,
+	.map .mapArea { height: -webkit-fill-available;}
+	.contents { min-height: -webkit-fill-available;}
+}
 
 
 
