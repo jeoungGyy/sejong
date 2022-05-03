@@ -141,7 +141,7 @@ table td { vertical-align: middle;}
 **********************************************/
 
 /* container */
-.container { overflow: hidden; box-shadow: 0 10px 20px rgb(102 132 234 / 16%);}
+.container { overflow: hidden; background-color: #fff; box-shadow: 0 10px 20px rgb(102 132 234 / 16%);}
 .contents { padding: 5.6rem 0 2rem; margin: 0 auto;}
 
 /* header */
@@ -502,7 +502,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 **********************************************/
 
 /* 레이어공통 */
-.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: 0; width: 100%; text-align: center; background: rgba(0,0,0,0.25); opacity: 0;  outline: none; transition: opacity .3s;}
+.layerPopup { display: none; position: fixed; z-index: 300; top: 0; bottom: env(safe-area-inset-bottom); width: 100%; text-align: center; background: rgba(0,0,0,0.25); opacity: 0;  outline: none; transition: opacity .3s;}
 .layerPopup::after { content: "";	display: inline-block; height: 100%;	vertical-align: middle;}
 .layerPopup.ready { display: block;}
 .layerPopup.show { opacity: 1;}
