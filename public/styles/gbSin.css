@@ -271,7 +271,7 @@
 .mainArea .playground .playgroundBtn img { width: 4.9rem; height: 4.9rem; vertical-align: top;}
 .mainArea .playground .byDate { display: block; margin-top: 1rem; font-size: 1.3rem; color: #555;}
 .mainArea .playground .listForm { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem;}
-.mainArea .playground .listForm li { width: calc(50% - 0.4rem); padding: 1.8rem 0.8rem 1.6rem; background-color: #F4F5F7; border-radius: 0.4rem;}
+.mainArea .playground .listForm li { display: flex; justify-content: center; align-items: center; width: calc(50% - 0.4rem); padding: 1.8rem 0.8rem 1.6rem; background-color: #F4F5F7; border-radius: 0.4rem;}
 .mainArea .playground .listForm li a { display: block; color: #111;}
 .mainArea .playground .listForm li .title { font-size: 1.4rem; text-align: center;}
 .mainArea .playground .listForm li .title b { display: block;}
@@ -286,6 +286,14 @@
 .mainArea .playground .listForm li .bodyArea .orMore { color: #777;}
 .mainArea .playground .listForm li .bodyArea.schedule span:first-child { width: 0; margin-right: 0;}
 .mainArea .playground .listForm li .bodyArea.schedule .orMore { text-align: center;}
+.mainArea .playground .listForm li.off { background-color: rgb(0 0 0 / 60%);}
+.mainArea .playground .listForm li.off a { color: #fff;}
+.mainArea .playground .listForm li.off a .offArea { display: flex; align-items: center; justify-content: center; margin-top: 0.8rem;}
+.mainArea .playground .listForm li.off a .offArea i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/home/ico_playground_off.png) no-repeat center/cover;}
+.mainArea .playground .listForm li.off a .offArea .offFlextBody { margin-left: 0.8rem;}
+.mainArea .playground .listForm li.off a .offArea .offFlextBody span { display: block; font-size: 1.3rem;}
+
+
 .mainArea .playground .guideText { display: flex; align-items: center; margin-top: 1.6rem;}
 .mainArea .playground .guideText i { background-position-x: -38rem;}
 .mainArea .playground .guideText span { margin-left: 0.4rem; font-size: 1.3rem; color: #555;}
