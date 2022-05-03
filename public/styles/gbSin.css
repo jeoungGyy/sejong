@@ -284,6 +284,8 @@
 .mainArea .playground .listForm li .bodyArea span.caution { background-color: #FF940E;}
 .mainArea .playground .listForm li .bodyArea span.danger { background-color: #FD2020;}
 .mainArea .playground .listForm li .bodyArea .orMore { color: #777;}
+.mainArea .playground .listForm li .bodyArea.schedule span:first-child { width: 0; margin-right: 0;}
+.mainArea .playground .listForm li .bodyArea.schedule .orMore { text-align: center;}
 .mainArea .playground .guideText { display: flex; align-items: center; margin-top: 1.6rem;}
 .mainArea .playground .guideText i { background-position-x: -38rem;}
 .mainArea .playground .guideText span { margin-left: 0.4rem; font-size: 1.3rem; color: #555;}
