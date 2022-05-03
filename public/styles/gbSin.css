@@ -247,7 +247,7 @@
 .mainArea .weekClosed .boxArea { padding-bottom: 2.4rem;}
 .mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
-.mainArea .weekClosed .body { display: flex; align-items: center; justify-content: space-evenly; margin-top: 1rem;}
+.mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; margin-top: 1rem;}
 .mainArea .weekClosed .body a { display: block; width: 7rem; color: #111; text-align: center;}
 .mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
 .mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #777;}
@@ -277,7 +277,7 @@
 .mainArea .playground .listForm li .title b { display: block;}
 .mainArea .playground .listForm li .title span { display: block; margin-top: 0.3rem;}
 .mainArea .playground .listForm li .title .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin-top: -0.5rem; vertical-align: middle; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
-.mainArea .playground .listForm li .bodyArea { display: flex; justify-content: center; align-items: center; margin-top: 1.2rem;}
+.mainArea .playground .listForm li .bodyArea { display: flex; justify-content: center; align-items: center; margin-top: 1rem;}
 .mainArea .playground .listForm li .bodyArea span:first-child { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.8rem; margin-right: 0.8rem; font-weight: 700; color: #fff; border-radius: 1.4rem;}
 .mainArea .playground .listForm li .bodyArea span.lowness { background-color: #6684EA;}
 .mainArea .playground .listForm li .bodyArea span.normal { background-color: #4EC457;}
