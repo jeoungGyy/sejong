@@ -167,19 +167,15 @@ html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}
 }
 
 
-
 /* iOS only */ 
-/* @supports (-webkit-touch-callout: none) {
-	.jmLoading,
-	.layerMapInfo .mapArea,
-	.pcContainer,
-	.pcContainer .pcView,
-	.map .mapArea { height: -webkit-fill-available;}
-	.contents { min-height: -webkit-fill-available;}
-} */
-
-
-
+@supports (-webkit-touch-callout: none) {
+	.jmLoading { height: -webkit-fill-available; }
+	.layerMapInfo .mapArea { height: -webkit-fill-available; }
+	.pcContainer { height: -webkit-fill-available; }
+	.pcContainer .pcView { height: -webkit-fill-available; }
+	.map .mapArea { margin: 0; height: -webkit-fill-available; }
+	.contents { padding: 0; min-height: -webkit-fill-available;   }
+}
 
 
 
