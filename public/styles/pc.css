@@ -174,7 +174,7 @@ html.tabletMode .recentService .homeNav ul li { margin-left: 0.4rem;}
 	.pcContainer { height: -webkit-fill-available; }
 	.pcContainer .pcView { height: -webkit-fill-available; }
 	.map .mapArea { margin: 0; height: -webkit-fill-available; }
-	.contents { padding: 0; min-height: -webkit-fill-available;   }
+	.map.contents { padding: 0; min-height: -webkit-fill-available;   }
 }
 
 
