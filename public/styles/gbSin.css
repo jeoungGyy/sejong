@@ -366,7 +366,7 @@
 .mainArea .visitorGroup .ingBody p.oper { background-color: #4EC457;}
 .mainArea .visitorGroup .ingBody p.ready { background-color: #6684EA;}
 .mainArea .visitorGroup .ingBody p.end { background-color: #555;}
-.mainArea .visitorGroup .ingBody p b { font-weight: 400; font-weight: 1.4rem;}
+.mainArea .visitorGroup .ingBody p b { font-size: 1.4rem; font-weight: 400;}
 .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
 .mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active i { background-position: -16.8rem -21.6rem;}

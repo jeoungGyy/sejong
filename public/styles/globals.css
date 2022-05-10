@@ -380,8 +380,8 @@ table td { vertical-align: middle;}
 .dustTooltipLayer .legendTooltipBody .numerical li { flex: 1;}
 .dustTooltipLayer .legendTooltipBody .numerical li ~ li { margin-left: 0.4rem;}
 .dustTooltipLayer .legendTooltipBody .numerical li i { display: block; height: 0.4rem;}
-.dustTooltipLayer .legendTooltipBody .numerical li i.usually { background-color: #6684EA;}
-.dustTooltipLayer .legendTooltipBody .numerical li i.good { background-color: #4EC457;}
+.dustTooltipLayer .legendTooltipBody .numerical li i.usually { background-color: #4EC457;}
+.dustTooltipLayer .legendTooltipBody .numerical li i.good { background-color: #6684EA;}
 .dustTooltipLayer .legendTooltipBody .numerical li i.bed { background-color: #FEA60E;}
 .dustTooltipLayer .legendTooltipBody .numerical li i.veryBed { background-color: #FD7802;}
 .dustTooltipLayer .legendTooltipBody .numerical li span { display: block; margin-top: 0.8rem; font-size: 1.4rem;}
