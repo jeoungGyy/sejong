@@ -2093,7 +2093,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .icons.tool .txtBox { margin-left: 0.8rem; padding: 0.2rem 0.4rem; font-size: 1.2rem; color: #fff; background-color: #A9B0C1;}
 .icons.tool.wrap { flex-wrap: wrap;}
 .icons.tool.wrap .iBox { display: flex; align-items: center; margin: 1rem 0.8rem 0 0; font-size: 1.3rem;}
-.icons.tool.wrap .txtBox { margin: 1rem 0 0 0; padding: 0.1rem 0.4rem 0.3rem;}
+.icons.tool.wrap .txtBox { margin: 1rem 0 0 0;}
 .icons.tool.wrap.mt0 { margin-top: 0;}
 
 .items-gasStation li.full { padding: 1.2rem 2rem;}
