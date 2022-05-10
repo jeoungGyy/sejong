@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					
+
+					<!-- 레이어 -->
+					<div id="layerCrowded" class="layerPopup" tabindex="0">
+						<div class="layerWrap full">
+							<div class="headerLocation">
+								<div class="hdeading">
+									<div class="title">
+										<b class="font14 cBlue">제 8회 전국동시 지방선거</b>
+										<h2>사전투표소 혼잡도(대기시간) 안내</h2>
+									</div>
+									<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+								</div>
+							</div>
+							<div class="fullFlex bgGray layerVote" tabindex="0">
+								<ul class="voteCrowd">
+									<li>
+										<div class="vcBody">
+											<a href="#"><b>조치원읍</b><i class="split24"></i></a>
+											<div class="vcNotice">
+												<div>
+													<span class="text">관내</span>
+													<span class="blue">5분</span>
+												</div>
+												<div>
+													<span class="text">관외</span>
+													<span class="green">10분</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="vcBody">
+											<a href="#"><b>조치원읍</b><i class="split24"></i></a>
+											<div class="vcNotice">
+												<div>
+													<span class="text">관내</span>
+													<span class="orange">20분</span>
+												</div>
+												<div>
+													<span class="text">관외</span>
+													<span class="red">30분</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<script>
+						layerPopup.open('layerCrowded');
+					</script>
+					<!-- //레이어 -->
+			
+			
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -574,8 +574,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .title a img { display: block; width: 17.6rem; height: auto; margin-top: 2rem;}
 .layerVote .title a span { display: block; margin-top: 1rem; font-size: 1.4rem;}
 .layerVote .con { margin-top: 1.6rem;}
-.layerVote .con .flexBetween { display: flex; align-items: center; justify-content: space-between;}
-.layerVote .con .flexBetween .fbBtn { display: flex; align-items: center; justify-content: center; width: 9.6rem; height: 3.6rem; font-size: 1.4rem; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 .layerVote .con h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .layerVote .con .list { display: flex; align-items: center; height: 3.6rem;}
 .layerVote .voteCrowd .vcNotice .text + span,
