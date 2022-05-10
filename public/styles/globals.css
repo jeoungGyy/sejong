@@ -574,13 +574,21 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .title a img { display: block; width: 17.6rem; height: auto; margin-top: 2rem;}
 .layerVote .title a span { display: block; margin-top: 1rem; font-size: 1.4rem;}
 .layerVote .con { margin-top: 1.6rem;}
+.layerVote .con .flexBetween { display: flex; align-items: center; justify-content: space-between;}
+.layerVote .con .flexBetween .fbBtn { display: flex; align-items: center; justify-content: center; width: 9.6rem; height: 3.6rem; font-size: 1.4rem; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 .layerVote .con h4 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .layerVote .con .list { display: flex; align-items: center; height: 3.6rem;}
+.layerVote .voteCrowd .vcNotice .text + span,
 .layerVote .con .list li { position: relative; padding-left: 2rem; color: #535353; font-size: 1.4rem;}
-.layerVote .con .list li::after { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.layerVote .voteCrowd .vcNotice .text + span::after,
+.layerVote .con .list li::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.layerVote .voteCrowd .vcNotice .text + span.blue::after,
 .layerVote .con .list li.blue::after { background-color: #2E8FF9;}
+.layerVote .voteCrowd .vcNotice .text + span.green::after,
 .layerVote .con .list li.green::after { background-color: #4EC457;}
+.layerVote .voteCrowd .vcNotice .text + span.orange::after,
 .layerVote .con .list li.orange::after { background-color: #FF940E;}
+.layerVote .voteCrowd .vcNotice .text + span.red::after,
 .layerVote .con .list li.red::after { background-color: #FD2020;}
 .layerVote .con .list li ~ li { margin-left: 1.3rem;}
 .layerVote .con .conDay { margin-top: 1.6rem; padding: 2rem 1.6rem 1.5rem; background-color: #F4F5F7; border-radius: 1rem;}
@@ -589,6 +597,16 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .con .conDay ul { display: flex; align-items: center; gap: 0 0.8rem; margin-top: 1.5rem;}
 .layerVote .con .conDay ul li { flex: 1; padding: 1rem 0; background-color: #fff; border-radius: 0.6rem;}
 .layerVote .con .conDay ul li img { display: inline-block; width: 2.6em; height: auto; margin-top: 0.8rem;}
+.layerVote .voteCrowd { padding: 2.4rem 2rem;}
+.layerVote .voteCrowd li ~ li { margin-top: 0.8rem;}
+.layerVote .voteCrowd .vcBody { padding: 0 2rem 1.9rem; background-color: #fff;}
+.layerVote .voteCrowd .vcBody a { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; color: #111;}
+.layerVote .voteCrowd .vcBody a i { background-position: -31.2rem -24rem;}
+.layerVote .voteCrowd .vcNotice { display: flex; align-items: center; padding-top: 1.5rem; border-top: 0.1rem solid #F4F5F7;}
+.layerVote .voteCrowd .vcNotice >div { display: flex; align-items: center; width: 50%;}
+.layerVote .voteCrowd .vcNotice .text { margin-right: 1.6rem;}
+
+
 
 
 /* UI-SJN-01-001U */
@@ -838,6 +856,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .headerLocation .hdeading .favorite.active i { background-position-y: -2.4rem;}
 .headerLocation .hdeading .title { flex: 1; width: 100%; padding-right: 5rem;}
 .headerLocation .hdeading .title h2 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size: 1.8rem;}
+.headerLocation .hdeading .title .font14 { display: block; margin-bottom: 0.4rem; font-size: 1.4rem;}
 .headerLocation .hdeading .title >div { margin-top: 0.4rem;}
 .headerLocation .hdeading .title >div span { position: relative; font-size: 1.4rem; font-weight: 700; color: #6684EA;}
 .headerLocation .hdeading .title >div span ~ span { margin-left: 0.3rem; padding-left: 0.8rem;}
@@ -1824,9 +1843,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 0.1rem solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.items-placeList ul li select { height: 3.6rem; padding: 0 2.7rem 0 1.2rem; color: #777; border-color: #EAEAEA; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.7rem;}
-.items-placeList ul li select.font14 { font-size: 1.4rem;}
-.items-placeList ul li select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
+.items-placeList ul li select { height: 3.6rem; padding: 0 2.7rem 0 1.2rem; font-size: 1.4rem; color: #777; border-color: #EAEAEA; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.7rem;}
+.items-placeList ul li select.active { color: #fff; border-color: #6684EA; background-position-y: -3.3rem; background-color: #6684EA;}
 .items-placeList ul li select.active 
 .locationLayer .detail .icon,
 .map .gasStation .commIco24 i,
