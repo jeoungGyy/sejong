@@ -573,6 +573,11 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .fineDustList li .veryBad { margin-left: 0.4rem; color: #FD2020;}
 .map .mapInfoLayer .fineDustList li .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 
+/* UI-SJN-36-001L */
+.map .mapInfoLayer .headFlex .BtnT { float: left; align-items: center;}
+.map .mapInfoLayer .headFlex .fostSmall { margin-left: -0.4rem;}
+.map .mapInfoLayer .headFlex .fostSmall span { font-size: 1.4rem;}
+
 /* 생생버스 - UI-SJN-40-003LL */
 .map .mapInfoLayer .busHead { padding: 1.2rem 0;}
 .map .mapInfoLayer .busHead .title { display: flex; align-items: center; height: 2.4rem;}

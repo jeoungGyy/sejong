@@ -1,0 +1,619 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><span class="headerClone">교육자원지도</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea">
+								<!-- 최단거리 버튼 -->
+								<div class="shortestPath">
+									<button type="button" class="btnPrev"><i>길찾기 이동</i></button>
+									<nav id="mapWordListSwiper" class="items-wordList">
+										<div class="slideContainer">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><button type="button">병원</button></li> <!-- 활성화 active 추가 -->
+												<li class="swiper-slide"><button type="button">약국</button></li>
+												<li class="swiper-slide"><button type="button" class="active">어르신돌봄</button></li>
+												<li class="swiper-slide"><button type="button">헬스케어존</button></li>
+												<li class="swiper-slide"><button type="button">자동심장충격기(AED)</button></li>
+											</ul>
+										</div>
+									</nav>
+									<script>
+										slider.active('mapWordListSwiper')
+									</script>
+								</div>
+								<!-- //최단거리 버튼 -->
+								
+								
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<ul class="sideBtns">
+										<li><button type="button" class="btnPin"><i>핀</i></button></li>
+									</ul>
+									
+									<button type="button" class="btnMapSearch"><i></i>현 지도에서 검색</button>
+			
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
+								</div>
+								<!-- //기타 아이콘들 -->
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer default">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+										<div class="mapUpDown">
+											<button type="button" class="btnMapUp" onclick="mapInfo.active('infoUp');">정보영역 위로</button>
+											<button type="button" class="btnMapDown" onclick="mapInfo.active('infoDown');">정보영역 아래로</button>
+											<button type="button" class="btnBottom" onclick="mapInfo.active('infoBottom');">정보영역 닫기</button>
+										</div>
+			
+										<div class="headFlex">
+											<div class="items-placeList">
+												<ul class="inline">
+													<li>
+														<select title="읍면동 선택" class="font14" style="width: 9rem;"> <!-- 활성화 시 active 추가 -->
+															<option>읍면동</option>
+														</select>
+													</li>
+													<li>
+														<select title="세종형 학력 선택" class="font14" style="width: 14rem;">
+															<option>지성ㆍ심성ㆍ시민성</option>
+														</select>
+													</li>
+												</ul>
+											</div>
+											<div class="BtnT">
+												<button type="button" class="note" onclick="tooltip.show('tooltip1', 'bottom');"><i class="split20">도움말</i></button>
+												<button type="button" class="fostSmall" onclick="layerPopup.open('layerLifeStory');"><span class="cBlue">생활권이야기</span></button>
+											</div>
+										</div>
+									</div>
+									<div class="myArea paddingDefault">
+										<section>
+											<ul class="items-gasStation">
+												<li>
+													<div class="title">
+														<button type="button" class="favorite"><i>즐겨찾기</i></button>
+														<h3 class="name">국립세종도서관</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cWood">[지성] 역사&amp;안전</span>
+													</div>
+													<div class="icons">
+														<i class="split24 iToilet">화장실</i>
+														<i class="split24 iParking">주차장</i>
+														<i class="split24 iCommentator">해설사</i>
+														<i class="split24 iMeal">식사가능</i>
+														<i class="split24 iFacilities">편의시설</i>
+														<span class="txtBox">60~120분</span>
+													</div>
+													<div class="movieBox">
+														<span>썸네일</span>
+													</div>
+													<button type="button" class="view active" onclick="layerPopup.open('layerEduResource');">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
+												</li>
+												<li class="promote">
+													<div class="title">
+														<button type="button" class="favorite"><i>즐겨찾기</i></button>
+														<h3 class="name">아름별가족축제</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cGreen">[시민성] 화합&amp;어울림</span>
+													</div>
+													<div class="icons">
+														<i class="split24 iToilet">화장실</i>
+														<i class="split24 iMeal">식사가능</i>
+														<i class="split24 iFacilities">편의시설</i>
+														<span class="txtBox">120분</span>
+													</div>
+													<div class="movieBox">
+														<span>썸네일</span>
+													</div>
+													<button type="button" class="view" onclick="layerPopup.open('layerEduResource');">상세보기 &gt;</button>
+												</li>
+												<li>
+													<div class="title">
+														<button type="button" class="favorite"><i>즐겨찾기</i></button>
+														<h3 class="name">밀마루전망대</h3>
+													</div>
+													<div class="infomation">
+														<span>3.9km</span>
+														<span class="cBlue">[심성]생태&amp;진로</span>
+													</div>
+													<div class="icons">
+														<i class="split24 iParking">주차장</i>
+														<i class="split24 iCommentator">해설사</i>
+														<i class="split24 iMeal">식사가능</i>
+														<span class="txtBox">60분</span>
+													</div>
+													<div class="movieBox">
+														<span>썸네일</span>
+													</div>
+													<button type="button" class="view" onclick="layerPopup.open('layerEduResource');">상세보기 &gt;</button>
+												</li>
+											</ul>
+										</section>
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+			
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
+							</div>
+						</div>
+					</main>
+					<script>
+						mapInfo.click('sub');
+					</script>
+					<!-- //본문 -->
+
+					<!-- 툴팁 -->
+					<div id="tooltip1" class="boxTooltipLayer" tabindex="0">
+						<div class="boxTooltipBody">
+							<div class="paragraphGroup">
+								<p>
+									지성ㆍ심성ㆍ시민성은 세종특별자치시교육청에서 추구하는 세종형 학력입니다.
+								</p>
+							</div>
+							<div class="icons">
+								<span class="iBox"><i class="split24 iToilet"></i>화장실</span>
+								<span class="iBox"><i class="split24 iParking"></i>주차장</span>
+								<span class="iBox"><i class="split24 iCommentator"></i>해설사</span>
+								<span class="iBox"><i class="split24 iMeal"></i>식사가능</span>
+								<span class="iBox"><i class="split24 iFacilities"></i>편의시설</span>
+								<span class="txtBox">관람소요시간(분)</span>
+							</div>
+							<button type="button" class="btnClose"><i>닫기</i></button>
+						</div>
+					</div>
+					<!-- //툴팁 -->
+			
+					<!-- 레이어 -->
+					<!-- 생활권 이야기 -->
+					<div id="layerLifeStory" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>1생활권 이야기</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex layerLifeStory">
+								<div class="lifeMap">
+									지도
+								</div>
+								<div class="textGroup">
+									<p class="first">1생활권은 중심행정타운으로 정보세종청사가 위치하며 행정중심복합도시의 이미지를 제고하고 있다</p>
+									<h3 class="cBlue">1-1 고운동(가락마을)</h3>
+									<p>고운동은 ‘곱다’의 우리말로 모양과 생김새가 산뜻하고 아름다운 친환경 주거단지를 뜻하고, 가락마을은 갈림길에 있는 마을, 가락처럼 좁은 골짜기에 있는 마을을 의미</p>
+									<h3 class="cBlue">1-2 아름동(범지기마을)</h3>
+									<p>종촌동은~</p>
+									<h3 class="cBlue">1-3 아름동(범지기마을)</h3>
+									<p>종촌동은~</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //생활권 이야기 -->
+					
+					
+					<div id="layerEduResource" class="layerPopup" tabindex="0">
+						<div class="layerWrap full">
+							<div class="headerLocation">
+								<div class="hdeading">
+									<button type="button" class="favorite"><i>즐겨찾기</i></button> <!-- 활성화시 active -->
+									<div class="title">
+										<h2>국립세종도서관</h2>
+										<div>
+											<span>교육자원지도</span>
+											<span>8km</span>
+										</div>
+									</div>
+									<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+								</div>
+								<nav class="menu">
+									<button type="button" class="active">기본정보</button>
+									<button type="button">상세정보</button>
+									<button type="button">관련 앱</button>
+									<button type="button">주변정보</button>
+									<button type="button">리뷰</button>
+								</nav>
+							</div>
+							<div class="fullFlex locationLayer" tabindex="0">
+								<section class="basic">
+									<header class="locationHeader">
+										<h3>세종특별자치시 보듬3로 105(주1-15)</h3>
+									</header>
+									<div class="basicBody">
+										<div class="bbInfo accordionBox">
+											<div class="accordionContainer">
+												<button type="button" class="homepage active accordionMenu" title="홈페이지 정보 더 보기"><i></i>http://smartsejong.kr</button>
+												<div class="accordionTarget">
+													<p>http://smartsejong.kr2</p>
+													<p>http://smartsejong.kr3</p>
+												</div>
+											</div>
+											<div>
+												<button type="button" class="phone accordionMenu" title="정보 수정하기"><i></i>전화번호를 올려주세요</button> <!-- 전화번호가 있다면 버튼에 active 넣어주세요. 글자가 진해집니다. -->
+											</div>
+										</div>
+										<div class="bbBtns">
+											<a href="tel:010-1234-5678" class="flex phoneLink">
+												<i></i>
+												<p>전화</p>
+											</a>
+											<a href="#" class="flex shareLink">
+												<i></i>
+												<p>공유</p>
+											</a>
+											<div class="flex">
+												<a href="#" class="directionsLink">
+													<i></i>
+													<p>길안내</p>
+												</a>
+												<div class="switch">
+													<input type="checkbox" id="switch0" title="길안내 설정">
+													<label for="switch0"></label>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="bbGuide">
+											<div>
+												<h4>정보 수정이 필요한가요?</h4>
+												<p>이곳의 부족하거나 잘못된 정보를 알려주세요</p>
+											</div>
+											<span class="deco"></span>
+										</a>
+									</div>
+								</section>
+			
+								<section class="detail">
+									<header class="locationHeader">
+										<h3>상세정보</h3>
+									</header>
+			
+									<div>
+										<div id="mapParkingSpace" class="parkingSpaceBody">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<a href="#">
+															<figure>
+																<img src="../../public/image/temp/temp034.png" alt="">
+															</figure>
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<figure>
+																<img src="../../public/image/temp/temp035.png" alt="">
+															</figure>
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<figure>
+																<img src="../../public/image/temp/temp034.png" alt="">
+															</figure>
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<figure>
+																<img src="../../public/image/temp/temp035.png" alt="">
+															</figure>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<!-- 내용이 없을경우 -->
+											<div class="empty">
+												<p>등록된 상세정보가 없습니다.</p>
+											</div>
+											<!-- //내용이 없을경우 -->
+										</div>
+										<script>
+											slider.active('mapParkingSpace')
+										</script>
+									</div>
+									<div class="flex">
+										<h4>건강심사평가원 평가결과</h4>
+										<div>
+											<button type="button" class="alertOpen" onclick="layerPopup.open('layerUnEval');">평가비대상<i></i></button>
+										</div>
+									</div>
+									<div class="flex">
+										<h4>이용정원</h4>
+										<div>
+											<p>0명</p>
+										</div>
+									</div>
+									<div class="flex">
+										<h4>병상 수(개소)</h4>
+										<div>
+											<p>1명</p>
+										</div>
+									</div>
+									<div>
+										<div class="flex">
+											<h4>인력현황</h4>
+											<div>
+												<p>총 3명</p>
+											</div>
+										</div>
+										<ul class="careList">
+											<li>- 시설장 : 1명</li>
+											<li>- 사회복지사 : 1명</li>
+											<li>- 기타 : 1명</li>
+										</ul>
+									</div>
+			
+									<div class="offerer">
+										<span>제공 : 국민건강보험공단, 건강심사평가원</span>
+									</div>
+								</section>
+			
+								<section class="app line-default">
+									<header class="locationHeader">
+										<h3>관련 앱<span class="cGray">이 장소에서 유용한 앱이 있어요!</span></h3>
+									</header>
+									<div class="appBody">
+										<ul>
+											<li>
+												<a href="#">
+													<figure>
+														<img src="" alt="">
+													</figure>
+													<div class="text">
+														<div>
+															<h4>앱 명칭</h4>
+															<span class="cBlue">사용하기</span>
+														</div>
+														<p class="lineBreake">
+															앱에 대한 간단한 설명<br />
+															두 줄 정도가 되도록 문자 수 제한
+														</p>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<figure>
+													</figure>
+													<div class="text">
+														<div>
+															<h4>세종 똑똑건강</h4>
+															<span class="cBlue">사용하기</span>
+														</div>
+														<p class="lineBreake">
+															앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한 앱에 대한 간단한 설명 두 줄 정도가 되도록 문자 수 제한
+														</p>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</section>
+			
+								<section class="around line-default">
+									<header class="locationHeader">
+										<h3>주변정보</h3>
+									</header>
+									<div class="mapIHead">
+										<nav id="mapPlaceListSwiper" class="items-placeList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide"><button type="button" class="active">음식점</button></li> <!-- 활성화시 active -->
+													<li class="swiper-slide"><button type="button">세종명소</button></li>
+													<li class="swiper-slide"><button type="button">문화행사</button></li>
+													<li class="swiper-slide"><button type="button">블로그</button></li>
+													<li class="swiper-slide"><button type="button">주차장</button></li>
+													<li class="swiper-slide"><button type="button">버스</button></li>
+												</ul>
+											</div>
+										</nav>
+										<script>
+											slider.active('mapPlaceListSwiper')
+										</script>
+									</div>
+			
+									<div class="myArea">
+										<section>
+											<h3>음식점</h3>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<img src="../../public/image/temp/temp030.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종시 미스터피자</h4>
+														<p class="st">세종시에서 가장 맛난 피자집</p>
+														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+														<button type="button" class="favorite">즐겨찾기</button>
+													</div>
+												</li>
+												<li>
+													<figure>
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종시 미스터피자</h4>
+														<p class="st">세종시에서 가장 맛난 피자집</p>
+														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+														<button type="button" class="favorite active">즐겨찾기</button>
+													</div>
+												</li>
+											</ul>
+										</section>
+			
+										<section>
+											<h3>세종명소</h3>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<img src="../../public/image/temp/temp031.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종호수공원</h4>
+														<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
+														<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
+													</div>
+												</li>
+											</ul>
+										</section>
+			
+										<section>
+											<h3>문화행사</h3>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<span class="label wood">공연</span>
+														<img src="../../public/image/temp/temp032.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>국제 핸드메이드 & 리빙페어</h4>
+														<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
+													</div>
+												</li>
+												<li>
+													<figure>
+														<span class="label green">이웃</span>
+														<img src="../../public/image/temp/temp033.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>사랑의 김장 나눔 행사</h4>
+														<p class="st">세종시 블로그에서 소개한 시립도서관</p>
+													</div>
+												</li>
+											</ul>
+										</section>
+									</div>
+								</section>
+			
+								<section class="review line-default">
+									<header class="locationHeader">
+										<h3>리뷰<span class="cGray">3건</span></h3>
+										<a href="#" class="write"><i></i>작성하기</a>
+									</header>
+									<div class="reviewBody">
+										<div class="textReview">
+											<ul class="items-review">
+												<li>
+													<div class="headTitle">
+														<div class="tlHead my"> <!-- 내가 쓴 글 일경우 my 클래스 추가 -->
+															<div class="profile">개인 이미지</div>
+															<strong class="my">홍길동</strong>
+															<span>2021.12.28</span>
+															<button type="button" class="report">신고하기</button>
+														</div>
+														<figure>
+															<img src="../../public/image/temp/temp004.png" alt="">
+															<button type="button" class="zoom">이미지 크게보기</button>
+														</figure>
+														<p class="text lineBreake"> <!-- 전체 글 보려면 lineBreake 제거 -->
+															가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+														</p>
+														<div class="tlControls">
+															<button type="button" class="more">더보기</button>
+															<button type="button" class="recommend">도움돼요 3</button>
+														</div>
+														<div class="button-visible">
+															<button type="button">수정</button>
+															<button type="button">삭제</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="headTitle">
+														<div class="tlHead">
+															<div class="profile">개인 이미지</div>
+															<strong>홍길동</strong>
+															<span>2021.12.28</span>
+															<button type="button" class="report">신고하기</button>
+														</div>
+														<p class="text">
+															가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+														</p>
+														<div class="tlControls">
+															<button type="button" class="more">더보기</button>
+															<button type="button" class="recommend">도움돼요 3</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="headTitle">
+														<div class="tlHead">
+															<div class="profile">개인 이미지</div>
+															<strong>홍길동</strong>
+															<span>2021.12.28</span>
+															<button type="button" class="report">신고하기</button>
+														</div>
+														<figure>
+															<img src="../../public/image/temp/temp005.png" alt="">
+															<button type="button" class="zoom">이미지 크게보기</button>
+														</figure>
+														<p class="text lineBreake">
+															가족들과 함께 다녀온 세종정부청사 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에 옆 도미노피자~세종 시민들께 추천합니다!! 첫방문시 첫방문할인에
+														</p>
+														<div class="tlControls">
+															<button type="button" class="more">더보기</button>
+															<button type="button" class="recommend">도움돼요 3</button>
+														</div>
+													</div>
+												</li>
+												<!-- 내용이 없을경우 -->
+												<li>
+													<div class="empty">
+														<p>등록된 리뷰가 없습니다.</p>
+													</div>
+												</li>
+												<!-- //내용이 없을경우 -->
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!-- //레이어 -->
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

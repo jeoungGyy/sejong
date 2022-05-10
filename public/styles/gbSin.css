@@ -140,16 +140,22 @@
 .mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
 .mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
 .mainArea .weatherBox .particulates .body >div ~ div::after { content: ''; position: absolute; left: 0; top: 50%; width: 0.1rem; height: 8rem; margin-top: -4rem; background-color: #EAEDF2;}
-.mainArea .weatherBox .particulates .body >div >span { display: block; height: 2.2rem; font-size: 1.4rem;}
+/* .mainArea .weatherBox .particulates .body >div >span { display: block; height: 2.2rem; font-size: 1.4rem;} */
 .mainArea .weatherBox .particulates .body >div h4 { font-size: 1.6rem;}
 .mainArea .weatherBox .particulates .body >div .number { margin: 0.7rem 0 0.5rem;}
 .mainArea .weatherBox .particulates .body >div .number .pm10 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -19.2rem;}
 .mainArea .weatherBox .particulates .body >div .number .pm25 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -21.6rem;}
-.mainArea .weatherBox .particulates .body >div .number b { font-size: 1.8rem;}
+.mainArea .weatherBox .particulates .round { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0.8rem auto 0; padding: 0 1rem; color: #fff; border-radius: 50%;}
+.mainArea .weatherBox .particulates .round.lowness { background-color: #32A2FF;}
+.mainArea .weatherBox .particulates .round.normal { background-color: #01C73D;}
+.mainArea .weatherBox .particulates .round.caution { background-color: #FFA60E;}
+.mainArea .weatherBox .particulates .round.highness { background-color: #FD7803;}
+
+.mainArea .weatherBparticulatesox .particulates .body >div .number b { font-size: 1.8rem;}
 .mainArea .weatherBox .offerer { display: flex; align-items: center; justify-content: flex-end; margin-top: 0.8rem;}
 .mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #777;}
 .mainArea .weatherBox .weatherLink .location { display: none;}
-.mainArea .weatherBox .weatherLink .weather .temperature { display: block; font-size: 1.8rem;}
+.mainArea .weatherBox .weatherLink .weather .temperature { display: flex; align-items: center; font-size: 1.8rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature span { position: relative; margin-left: 1rem; font-size: 1.6rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature span::after { content: ''; position: absolute; left: -0.8rem; top: 0.6rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .mainArea .weatherBox .lowness { color: #32A2FF;}
@@ -171,10 +177,10 @@
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
-.mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: 0; background-size: 52rem 15.6rem; transition: all .3s ease-in-out;}
+.mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: -0.2rem 0 0 0; background-size: 52rem 15.6rem; transition: all .3s ease-in-out;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature { font-size: 2.4rem;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature::after { left: 1.6rem; top: 0.7rem;}
-.mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 2rem;}
+/* .mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 2rem;} */
 .mainArea .weatherBox.active .weatherLink .toggleBtn { display: none;}
 .mainArea .weatherBox.active .weatherLink .location { display: block;}
 .mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}

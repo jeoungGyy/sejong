@@ -347,6 +347,17 @@ table td { vertical-align: middle;}
 .boxTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 305; width: 100%; padding: 0 1.2rem;}
 .boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #6684EA; box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 5%);}
 .boxTooltipLayer .boxTooltipBody .paragraphGroup p { font-size: 1.4rem; line-height:2.2rem;}
+.boxTooltipLayer .boxTooltipBody .icons { display: flex; align-items: center; flex-wrap: wrap;}
+.boxTooltipLayer .boxTooltipBody .icons .iBox { display: flex; align-items: center; margin: 1rem 0.8rem 0 0; font-size: 1.3rem;}
+.boxTooltipLayer .boxTooltipBody .icons i { margin-right: 0.4rem;}
+.boxTooltipLayer .boxTooltipBody .icons i.iToilet { background-position: -19.2rem -24rem;}
+.boxTooltipLayer .boxTooltipBody .icons i.iParking { background-position: -21.6rem -24rem;}
+.boxTooltipLayer .boxTooltipBody .icons i.iCommentator { background-position: -28.8rem -24rem;}
+.boxTooltipLayer .boxTooltipBody .icons i.iMeal { background-position: -24rem -24rem;}
+.boxTooltipLayer .boxTooltipBody .icons i.iFacilities { background-position: -26.4rem -24rem;}
+.boxTooltipLayer .boxTooltipBody .icons .txtBox { margin: 1rem 0 0 0; padding: 0.1rem 0.4rem 0.3rem; font-size: 1.2rem; color: #fff; background-color: #A9B0C1;}
+
+
 .boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
 .boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
 .boxTooltipLayer.show { display: block;}
@@ -1102,6 +1113,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .forecast .forecastList li .head b.bed { color: #FF940E;}
 .locationLayer .forecast .forecastList li .head b.veryBad { color: #FD2020;}
 
+/* UI-SJN-36-001L */
+.layerLifeStory {}
+.layerLifeStory .lifeMap { display: flex; align-items: center; justify-content: center; height: 24rem; background-color: #EAEDF2;}
+.layerLifeStory .textGroup { padding: 2.4rem 2rem;}
+.layerLifeStory .textGroup h3 { margin-top: 1.6rem;}
+.layerLifeStory .textGroup h3 + p { margin-top: 0.8rem;}
+.layerLifeStory .textGroup p { color: #555; line-height: 2.4rem;}
+.layerLifeStory .textGroup .first + h3 { margin-top: 2.4rem;}
+
 /* UI-SJN-40-003L */
 .layerBusInfo { text-align: left;}
 .layerBusInfo dl dt { font-size: 1.6rem; font-weight: 700;}
@@ -1814,7 +1834,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 0.1rem solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.items-placeList ul li select { height: 3.6rem; padding-left: 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.8rem;}
+.items-placeList ul li select { height: 3.6rem; padding: 0 2.7rem 0 1.2rem; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.7rem;}
+.items-placeList ul li select.font14 { font-size: 1.4rem;}
 .items-placeList ul li select.active { color: #fff; border-color: #6684EA; background-position-y: -3.2rem; background-color: #6684EA;}
 .items-placeList ul li select.active 
 .locationLayer .detail .icon,
@@ -1960,7 +1981,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .title h3.name { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: inherit; font-size: 1.6rem;}
 .items-gasStation li .title .logo { margin-right: 0.8rem; background-position: -40.8rem -9.6rem;}
 .items-gasStation li .title .legend i { margin-left: 0.4rem; background-position-x: -38rem;}
-.items-gasStation li .infomation { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
+.items-gasStation li .infomation { display: flex; align-items: center; height: 2.4rem; margin-top: 0.4rem;}
 .items-gasStation li .infomation >span { font-size: 1.4rem; color: #6684EA; letter-spacing: 0;}
 .items-gasStation li .infomation .gsCost { position: relative; margin-left: 1rem;}
 .items-gasStation li .infomation .gsCost::after { content: ''; position: absolute; top: 0.3rem; left: -0.2rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
@@ -1980,8 +2001,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation .bad { margin-left: 0.4rem; color: #FF940E;}
 .items-gasStation li .infomation .veryBad { margin-left: 0.4rem; color: #FD2020;}
 .items-gasStation li .infomation .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
-
-
 .items-gasStation li .infomation2 { margin-top: 0.4rem;}
 .items-gasStation li .infomation2 span { font-size: 1.4rem;}
 .items-gasStation li .infomation2 .ava { display: inline-flex; align-items: center; justify-content: center; padding: 0 0.6rem; font-size: 1.3rem; color: #fff; border-radius: 1rem;}
@@ -2027,6 +2046,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.items-gasStation li .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; padding-top: 0.3rem; background-color: #CCD2E3;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation li button.view.active { display: flex;}
@@ -2052,6 +2072,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .reportGroup figure { width: 7.2rem; height: 7.2rem; margin-top: 1rem;}
 .items-gasStation li .reportGroup figure .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; bottom: 0.4rem; height: 2.4rem; padding: 0 0.8rem; font-size: 1.2rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
 .items-gasStation li .reportGroup figure .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
+.items-gasStation li .icons { display: flex; align-items: center; margin-top: 0.8rem;}
+.items-gasStation li .icons i ~ i { margin-left: 0.4rem;}
+.items-gasStation li .icons i.iToilet { background-position: -19.2rem -24rem;}
+.items-gasStation li .icons i.iParking { background-position: -21.6rem -24rem;}
+.items-gasStation li .icons i.iCommentator { background-position: -28.8rem -24rem;}
+.items-gasStation li .icons i.iMeal { background-position: -24rem -24rem;}
+.items-gasStation li .icons i.iFacilities { background-position: -26.4rem -24rem;}
+.items-gasStation li .icons .txtBox { margin-left: 0.8rem; padding: 0.2rem 0.4rem; font-size: 1.2rem; color: #fff; background-color: #A9B0C1;}
+
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation li.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full li { padding: 1.2rem 2rem;}
