@@ -176,17 +176,35 @@
 }
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
-.mainArea .weatherBox.active .weatherLink .weather { height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
+.mainArea .weatherBox.active .weatherLink .weather { display: block; height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}
 .mainArea .weatherBox.active .weatherLink .weather .icon { width: 5.2rem; height: 5.2rem; margin: -0.2rem 0 0 0; background-size: 52rem 15.6rem; transition: all .3s ease-in-out;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature { font-size: 2.4rem;}
 .mainArea .weatherBox.active .weatherLink .weather .temperature::after { left: 1.6rem; top: 0.7rem;}
-/* .mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 2rem;} */
+.mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 2rem;}
 .mainArea .weatherBox.active .weatherLink .toggleBtn { display: none;}
 .mainArea .weatherBox.active .weatherLink .location { display: block;}
 .mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}
 .mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
 .mainArea .weatherBox.active .weatherLink .location .myLocation { margin-left: 0.4rem;}
-.mainArea .weatherBox.active .weatherLink .val { position: absolute; right: 2.8rem; top: 2.3rem;}
+.mainArea .weatherBox.active .weatherLink .val { margin-left: 0;}
+
+.mainArea .tourGroup { z-index: 2; margin-top: 2.7rem;}
+.mainArea .tourGroup .tourLink { display: flex; align-items: center; height: 10rem; padding: 0 2.4rem; font-size: 1.8rem; font-weight: 700; color: #fff; background: url(../image/home/main_tourBg.png) no-repeat center/cover; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+.mainArea .tourGroup .tourLink i { margin: -0.3rem 0 0 0.4rem; vertical-align: middle; background-position: -24rem -4rem;}
+
+.mainArea .eduGroup { z-index: 2; margin-top: 2.7rem;}
+.mainArea .eduGroup .bookBox { display: flex; position: relative; height: 16.8rem; margin: 2.2rem 0 11rem; padding: 3.6rem 2.4rem 0; border: 1px solid #EAEDF2;}
+.mainArea .eduGroup .bookBox::before { content: ''; display: block; position: absolute; left: 50%; top: -0.1rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book.png) no-repeat center/cover;}
+.mainArea .eduGroup .bookBox::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.5rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
+.mainArea .eduGroup .bookBox >div { width: 50%;}
+.mainArea .eduGroup .bookBox >div + div { padding-left: 1.2rem;}
+.mainArea .eduGroup .bookBox span { font-size: 1.4rem;}
+.mainArea .eduGroup .bookBox p { font-size: 1.8rem; font-weight: 700;}
+.mainArea .eduGroup .bookBox .eduLine { position: absolute; left: 0; bottom: -0.9rem; width: 100%; height: 0.1rem; background-color: #EAEDF2;}
+.mainArea .eduGroup .bookBox .eduLine::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.4rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
+.mainArea .eduGroup .bookBox .eduDeco { position: absolute; right: 0; bottom: -8.3rem; width: 10.4rem; height: 12.9rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
+.mainArea .eduGroup .button-more { margin-top: 0.4rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
+.mainArea .eduGroup .button-more .btn { color: #333;}
 
 .mainArea .mainNews { margin-top: 2.7rem;}
 .mainArea .mainNews .boxArea { padding-bottom: 1.6rem;}
@@ -217,7 +235,7 @@
 .mainArea .mainNews .button-more .btn { color: #333;}
 .mainArea .oilPrice { margin-top: 2.7rem;}
 .mainArea .oilPrice .boxArea { padding-bottom: 1.2rem;}
-.mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -7.8rem; z-index: 1;}
+.mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -13.8rem; z-index: 1;}
 .mainArea .oilPrice .roundDeco path { fill: #4ec457;}
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 0.6rem;}
 .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
@@ -263,10 +281,11 @@
 .mainArea .weekClosed .open span { display: block; margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .sejong { margin-top: 2.7rem;}
 .mainArea .sejong .roundDeco { display: block; position: absolute; left: -6rem; top: -7rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
-.mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 9.2rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
-.mainArea .sejong .body >div img { width: 8.55rem; height: 1.825rem; margin-right: 0.9rem; vertical-align: middle;}
-.mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; margin-top: -0.6rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
-.mainArea .sejong .body span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
+.mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 7.5rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .sejong .body >div { display: flex; align-items: center;}
+.mainArea .sejong .body >div span { margin-right: 0.9rem; font-size: 2.4rem; font-weight: 700; color: #fff;}
+.mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
+.mainArea .sejong .body >span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
 .mainArea .anchorTop { margin-top: 1rem;}
 .mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
 .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}

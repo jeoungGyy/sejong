@@ -113,6 +113,11 @@
 .mainArea .trafficInformation .vividBus span { font-size: 1.4rem;}
 .mainArea .trafficInformation .vividBus b { margin-top: 1rem; font-size: 1.6rem;}
 .mainArea .trafficInformation .vividBus b i { margin: -0.1rem 0 0 0.8rem; vertical-align: middle; background-position: -36rem -4rem;}
+.mainArea .trafficInformation .favoriteBus { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.6rem; color: #555;}
+.mainArea .trafficInformation .favoriteBus i { background-position: -22.4rem -3.2rem;}
+.mainArea .trafficInformation.mt { margin-top: 2.7rem;}
+.mainArea .trafficInformation .settingList >li ~ li { margin-top: 1.6rem;}
+
 
 .mainArea .safetyInfo { margin-top: 2.7rem;}
 .mainArea .safetyInfo .safetyUse { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem; padding: 2.7rem 2rem 2.3rem; color: #fff; background-color: #FF940E; border-radius: 0.8rem;}
