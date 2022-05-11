@@ -204,7 +204,6 @@ table td { vertical-align: middle;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
 .cOrange { color: #FD2020 !important;}
-.cSkyBlue { color: #32BBED !important;}
 
 /* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
@@ -579,7 +578,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .con .list { display: flex; align-items: center; height: 3.6rem;}
 .layerVote .voteCrowd .vcNotice .text + span,
 .layerVote .con .list li { position: relative; padding-left: 2rem; color: #535353; font-size: 1.4rem;}
-.layerVote .voteCrowd .vcNotice .text + span::after,
+.layerVote .voteCrowd .vcNotice .text + span::after { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
 .layerVote .con .list li::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
 .layerVote .voteCrowd .vcNotice .text + span.blue::after,
 .layerVote .con .list li.blue::after { background-color: #2E8FF9;}
@@ -598,14 +597,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .con .conDay ul li img { display: inline-block; width: 2.6em; height: auto; margin-top: 0.8rem;}
 .layerVote .voteCrowd { display: flex; flex-wrap: wrap; gap: 0.8rem; padding: 2.4rem 2rem;}
 .layerVote .voteCrowd li { width: calc(50% - 0.4rem);}
-.layerVote .voteCrowd .vcBody { padding: 0 1.6rem 1.5rem; background-color: #fff;}
-.layerVote .voteCrowd .vcBody a { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0 1.3rem; color: #111;}
+.layerVote .voteCrowd .vcBody { padding: 0 2rem 1.9rem; background-color: #fff;}
+.layerVote .voteCrowd .vcBody a { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0; color: #111;}
 .layerVote .voteCrowd .vcBody a i { background-position: -31.2rem -24rem;}
-.layerVote .voteCrowd .vcNotice { }
-.layerVote .voteCrowd .vcNotice >div { display: flex; align-items: center;}
-.layerVote .voteCrowd .vcNotice >div ~ div { margin-top: 0.4rem;}
-.layerVote .voteCrowd .vcNotice >div .text { width: 4rem;}
-.layerVote .voteCrowd .vcNotice >div .text + span { flex: 1;}
+.layerVote .voteCrowd .vcNotice { display: flex; align-items: center; padding-top: 1.5rem; border-top: 0.1rem solid #F4F5F7;}
+.layerVote .voteCrowd .vcNotice >div { display: flex;	flex-wrap: wrap; width: 50%;}
+.layerVote .voteCrowd .vcNotice span { display: block; width:100%;}
 
 
 
@@ -614,9 +611,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerNotice { padding: 4rem 0 0;}
 .layerNotice img { max-width: 100%; height: auto;}
 .layerNotice >div { overflow-x: hidden; overflow-y: auto;}
-.layerNotice >div::-webkit-scrollbar { width: 6px;}
-.layerNotice >div::-webkit-scrollbar-track { background-color: #F4F5F7; border-radius: 3px;}
-.layerNotice >div::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 3px;}
+
+@media (pointer:fine) {
+	.layerNotice >div::-webkit-scrollbar { width: 6px;}
+	.layerNotice >div::-webkit-scrollbar-track { background-color: #F4F5F7; border-radius: 3px;}
+	.layerNotice >div::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 3px;}
+}
 .layerNotice a { display: block; color: #111; text-align: left;}
 .layerNotice a .title { padding-right: 3rem;}
 .layerNotice a .title p { font-size: 1.8rem; font-weight: 700;}
