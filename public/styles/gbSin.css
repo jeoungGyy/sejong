@@ -373,14 +373,14 @@
 .mainArea .visitorGroup .ingBody p.ready { background-color: #6684EA;}
 .mainArea .visitorGroup .ingBody p.end { background-color: #555;}
 .mainArea .visitorGroup .ingBody p b { font-size: 1.4rem; font-weight: 400;}
-.mainArea .visitorGroup .ingBody .anyBox { position: relative; width: 2.4rem; height: 2.4rem; margin-left: 0.8rem;}
+/* .mainArea .visitorGroup .ingBody .anyBox { position: relative; width: 2.4rem; height: 2.4rem; margin-left: 0.8rem;}
 .mainArea .visitorGroup .ingBody .anyBox .deco { display: block; position: absolute; left: 50%; top: 50%;}
 .mainArea .visitorGroup .ingBody .deco1 { width: 0; height: 0.2rem; margin: -1rem 0 0 -1rem; background-color: #faa431; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(45deg); animation: anyToggleline1 3s infinite linear;}
 .mainArea .visitorGroup .ingBody .deco2 { width: 0; height: 0.2rem; margin: -1rem 0 0 1rem; background-color: #69dd7d; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(135deg); animation: anyToggleline2 3s infinite linear;}
 .mainArea .visitorGroup .ingBody .deco3 { width: 0; height: 0.2rem; margin: 1rem 0 0 -1rem; background-color: #7bcef7; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(-45deg); animation: anyToggleline3 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco4 { width: 0; height: 0.2rem; margin: 1rem 0 0 1rem; background-color: #7bcef7; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(-135deg); animation: anyToggleline4 3s infinite linear;}
-/* .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%; animation: anyToggle1 0.5s infinite linear;} */
-.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #6684EA; border-radius: 50%; animation: anyToggle1 3s infinite linear;}
+.mainArea .visitorGroup .ingBody .deco4 { width: 0; height: 0.2rem; margin: 1rem 0 0 1rem; background-color: #7bcef7; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(-135deg); animation: anyToggleline4 3s infinite linear;} */
+.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
+/* .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #6684EA; border-radius: 50%; animation: anyToggle1 3s infinite linear;} */
 .mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active i { background-position: -16.8rem -21.6rem;}
 .mainArea .visitorGroup .targetHeight { overflow: hidden;	height: 0; transition: height 0.3s ease-in-out;}
