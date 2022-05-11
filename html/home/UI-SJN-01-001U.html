@@ -703,13 +703,21 @@
 										<div class="boxArea pbNon">
 											<h3>내버스</h3>
 											<div class="body">
-												<a href="#" class="favoriteBus">
+												<!-- 즐겨찾기 한 버스가 없는 경우 -->
+												<a href="#" class="favoriteBus" style="display: none">
 													<p>자주 이용하는 버스의 위치정보를<br /> 빠르게 확인해보세요</p>
 													<i class="split32"></i>
 												</a>
+												<!-- //즐겨찾기 한 버스가 없는 경우 -->
 
 												<!-- 즐겨찾기 한 버스가 있는 경우 -->
 												<div>
+													<div class="flexReflash">
+														<div class="dispatchTil">
+															<span class="dTime">오후 12:23</span>
+															<button type="button" class="refresh"><i></i>15</button>
+														</div>
+													</div>
 													<ul class="settingList noPadding">
 														<li>
 															<div class="slBody">
