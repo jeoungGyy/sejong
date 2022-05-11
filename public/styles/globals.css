@@ -204,6 +204,7 @@ table td { vertical-align: middle;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
 .cOrange { color: #FD2020 !important;}
+.cSkyBlue { color: #32BBED !important;}
 
 /* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
