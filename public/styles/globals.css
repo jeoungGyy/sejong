@@ -597,7 +597,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .con .conDay ul li img { display: inline-block; width: 2.6em; height: auto; margin-top: 0.8rem;}
 .layerVote .voteCrowd { display: flex; flex-wrap: wrap; gap: 0.8rem; padding: 2.4rem 2rem;}
 .layerVote .voteCrowd li { width: calc(50% - 0.4rem);}
-.layerVote .voteCrowd .vcBody { padding: 0 2rem 1.9rem; background-color: #fff;}
+.layerVote .voteCrowd .vcBody { padding: 0 1.6rem 1.5rem; background-color: #fff;}
 .layerVote .voteCrowd .vcBody a { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 0 1.3rem; color: #111;}
 .layerVote .voteCrowd .vcBody a i { background-position: -31.2rem -24rem;}
 .layerVote .voteCrowd .vcNotice { }
