@@ -110,6 +110,7 @@
 /* UI-SJN-03-003U */
 .mainArea .trafficInformation { margin-top: 2.7rem;}
 .mainArea .trafficInformation .boxArea { padding-bottom: 3rem;}
+.mainArea .trafficInformation .boxArea.pbNon { padding-bottom: 0.4rem;}
 .mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 0.2rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #6684EA; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
 .mainArea .trafficInformation .vividBus span { font-size: 1.4rem;}
 .mainArea .trafficInformation .vividBus b { margin-top: 1rem; font-size: 1.6rem;}
