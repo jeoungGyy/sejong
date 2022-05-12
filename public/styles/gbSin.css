@@ -449,7 +449,7 @@
 .mainArea .mainPromotion .promotionList li { padding: 1rem;}
 .mainArea .mainPromotion .promotionList a { display: block; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
-.mainArea .mainPromotion .promotionList .empty { display: flex; align-items: center; justify-content: center; height: 28rem; padding: 2rem; font-size: 1.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
+.mainArea .mainPromotion .promotionList .empty { display: flex; align-items: center; justify-content: center; height: 31.41rem; padding: 2rem; font-size: 1.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 
 .home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
 .home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
