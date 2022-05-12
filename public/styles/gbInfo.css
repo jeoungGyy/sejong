@@ -118,8 +118,19 @@
 .mainArea .trafficInformation .vividBus b i { margin: -0.1rem 0 0 0.8rem; vertical-align: middle; background-position: -36rem -4rem;}
 .mainArea .trafficInformation .favoriteBus { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.6rem; color: #555;}
 .mainArea .trafficInformation .favoriteBus i { background-position: -22.4rem -3.2rem;}
+.mainArea .trafficInformation .settingList { margin-top: 0.8rem; padding-top: 2.4rem; border-top: 1px solid #F4F5F7;}
+.mainArea .trafficInformation .settingList >li { margin-bottom: 1.4rem; padding-bottom: 1.6rem; border-bottom: 1px solid #F4F5F7;}
+.mainArea .trafficInformation .settingList >li .slBody h3 { white-space: initial;}
+.mainArea .trafficInformation .settingList >li .slBody { position: relative;}
+.mainArea .trafficInformation .settingList >li .slBody >div { display: block; width: inherit;}
+.mainArea .trafficInformation .settingList >li .slBody >span { position: absolute; right: 0; bottom: 0; max-width: 17rem; text-align: right;}
+.mainArea .trafficInformation .settingList >li .slBody >div span { display: block; margin: 0.4rem 0 0 0;}
+.mainArea .trafficInformation .settingList >li:last-child { margin-bottom: 0;}
+
+.mainArea .trafficInformation .settingListSub { margin-top: 0.2rem;}
+.mainArea .trafficInformation .settingListSub li { padding: 0; border: none;}
+.mainArea .trafficInformation .settingListSub li .subHead >div h3 { margin-left: 0;}
 .mainArea .trafficInformation.mt { margin-top: 2.7rem;}
-.mainArea .trafficInformation .settingList >li ~ li { margin-top: 1.6rem;}
 
 
 .mainArea .safetyInfo { margin-top: 2.7rem;}

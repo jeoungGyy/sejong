@@ -2169,8 +2169,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 .item-place li .date { font-size: 1.4rem; color: #777;}
-.item-place li .btnClose { display: block;}
-.item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
+.item-place li .btnRemove { display: block;}
+.item-place li .btnRemove i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
 
 .items-term { padding: 4rem 2rem;}
 .items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
