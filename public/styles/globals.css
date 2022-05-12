@@ -675,7 +675,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .calendarBody .cbHead .year { flex: 1; display: flex; align-items: center; justify-content: center;}
 .calendarBody .cbHead .year select { padding-left: 0; font-family: var(--fontRoboto); font-weight: 700; border: none;}
 .calendarBody .cbHead .year select:nth-child(1) { width: 7rem;}
-.calendarBody .cbHead .year select:nth-child(2) { width: 5.5rem; margin-left: 1rem;}
+.calendarBody .cbHead .year select:nth-child(2) { width: 7rem; margin-left: 1rem;}
 .calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(7, 1fr); height: 4rem;}
 .calendarBody .calendar .cHead li { display: flex; align-items: center; justify-content: center; color: #777;}
 .calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(7, 1fr);}
@@ -2154,10 +2154,20 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .item-place li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; border-bottom: 1px solid #F2F2F2;}
 .item-place li .keyword { position: relative; padding-left: 2.8rem;}
 .item-place li .keyword::after { content: ''; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem;}
-.item-place li .icoLocation {width:100%; display: flex; align-items: center; justify-content: space-between; padding-right:0.5rem; }
+.item-place li .icoLocation,
+.item-place li .icoSearch,
+.item-place li .icoBus,
+.item-place li .icoDirection,
+.item-place li .icoStation,
+.item-place li .icoCategory {width:100%; display: flex; align-items: center; justify-content: space-between; padding-right:0.5rem; }
 .item-place li .icoLocation .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem 0/40rem 16rem;}
-.item-place li .icoSearch {width:100%; display: flex; align-items: center; justify-content: space-between; padding-right:0.5rem; }
 .item-place li .icoSearch .keyword::after { background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 16rem;}
+.item-place li .icoBus .keyword::after { background: url(../image/common/split_40.png) no-repeat -16rem -8rem/40rem 16rem;}
+.item-place li .icoDirection .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem -8rem/40rem 16rem;}
+.item-place li .icoStation .keyword::after { background: url(../image/common/split_40.png) no-repeat -20rem -8rem/40rem 16rem;}
+.item-place li .icoCategory .keyword::after { background: url(../image/common/split_40.png) no-repeat -22rem -8rem/40rem 16rem;}
+
+
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnClose { display: block;}
 .item-place li .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
