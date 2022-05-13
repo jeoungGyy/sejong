@@ -415,7 +415,6 @@
 .mainArea .visitorGroup .ingBody p b { font-size: 1.4rem; font-weight: 400;}
 /* .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
 .mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;} */
-.mainArea .visitorGroup .ingBody .toggleBtn.active { }
 .mainArea .visitorGroup .ingBody .toggleBtn.active { background: #EAEDF2 url(../image/common/split_48.png) no-repeat -16.8rem -21.6rem/48rem 28.8rem; animation: none;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active .lineBox { display: none;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active ~ span { display: none;}

@@ -26,6 +26,7 @@
 								<!-- 맵 검색 -->
 								<div class="mapSearch">
 									<div class="mapheader">
+										<button type="button" class="btnMapSearch">홈버튼</button>
 										<div class="mapBody">
 											<button type="button" class="btnPlace" title="장소 검색">
 												<span class="t"></span>
@@ -39,7 +40,6 @@
 												<button type="button" class="icoMic"><i>마이크</i></button>
 											</div>
 										</div>
-										<button type="button" class="btnMapSearch">길찾기</button>
 									</div>
 									<div class="mapSearchBtns">
 										<button type="button" class="favicon"><i class="split24">즐겨찾기</i></button> <!-- 활성화 시 active 클래스 및 파일명 추가 -->
@@ -75,10 +75,9 @@
 									</div>
 									<!-- //마커 -->
 
-									<div class="imgMarker" style="left: 5rem; top: 20rem;">
-										<img src="../../public/image/temp/temp015.png" alt="">
-									</div>
-									<div class="imgMarker" style="left: 5rem; top: 45rem;">
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
 									</div>
 			
 									<div class="location">
@@ -364,33 +363,12 @@
 									</div>
 								</div>
 								<!-- //정보 영역 -->
-			
-								<!-- 하단 고정 영역 -->
-								<div class="mapFooter">
-									<button type="button" class="home active">
-										<i></i>
-										<span>홈</span>
-									</button>
-									<button type="button" class="around" onclick="mapInfo.click();"> <!-- 활성화 active 추가 -->
-										<i></i>
-										<span>주변</span>
-									</button>
-									<button type="button" class="bus">
-										<i></i>
-										<span>생생버스</span>
-									</button>
-									<button type="button" class="declaration">
-										<i></i>
-										<span>안전신고</span>
-									</button>
-									<button type="button" class="safe">
-										<i></i>
-										<span>안심서비스</span>
-									</button>
-								</div>
-								<!-- //하단 고정 영역 -->
 								
 								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
+
+								<script>
+									mapInfo.click('sub');
+								</script>
 							</div>
 						</div>
 					</main>
