@@ -67,6 +67,14 @@
 										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
 										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
 									</div>
+
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
 								</div>
 								<!-- //기타 아이콘들 -->
 			
@@ -75,16 +83,16 @@
 								<div class="mapInfoLayer default open"> <!-- open 클래스 넣어주고 height 값으로 크기 조정 -->
 									<div class="convenience">
 										<!-- 자동차 -->
-										<div class="car">
-											<button type="button" class="feature gasStation active"><i></i><span>주유소</span></button> <!-- 활성화 active 추가 -->
+										<div class="car" style="display: none;"> <!-- 클래스명 work로 변경해도 상관없습니다. -->
+											<button type="button" class="feature gasStation"><em>OFF</em><span>주유소</span></button> <!-- 활성화 active 추가 -->
 										</div>
 										<!-- //자동차 -->
 										
 										<!-- 도보 -->
 										<div class="work">
-											<button type="button" class="feature store active"><i></i><span>편의점</span></button>
-											<button type="button" class="feature cctv"><i></i><span>CCTV</span></button>
-											<button type="button" class="feature streetLamp"><i></i><span>가로등</span></button>
+											<button type="button" class="feature store active"><em>ON</em><span>편의점</span></button>
+											<button type="button" class="feature cctv"><em>OFF</em><span>CCTV</span></button>
+											<button type="button" class="feature streetLamp"><em>OFF</em><span>가로등</span></button>
 										</div>
 										<!-- //도보 -->
 									</div>

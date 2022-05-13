@@ -69,18 +69,14 @@ body { --vh: 1px;}
 .map .mapInfoLayer .myArea h3 { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: 4rem; padding: 1rem 0; font-size: 1.6rem;}
 .map .mapInfoLayer .myArea section ~ section { margin-top: 1.6rem;}
 .map .mapInfoLayer .myArea.paddingDefault { padding: 0 2rem;}
-.map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -5.6rem;}
-.map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.3rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
-.map .mapInfoLayer .convenience .feature i { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; background: #CDD0D8 url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem; border-radius: 50%;}
-.map .mapInfoLayer .convenience .feature.gasStation i { background-position: -21.6rem -4.8rem;}
-.map .mapInfoLayer .convenience .feature.store i { background-position: -24rem -4.8rem;}
-.map .mapInfoLayer .convenience .feature.cctv i { background-position: -26.4rem -4.8rem;}
-.map .mapInfoLayer .convenience .feature.streetLamp i { background-position: -28.8rem -4.8rem;}
-.map .mapInfoLayer .convenience .feature span::after { content: '켜기'; margin-left: 0.3rem;}
-.map .mapInfoLayer .convenience .feature.active i { background-color: #6684EA;}
-.map .mapInfoLayer .convenience .feature.active span::after { content: '끄기';}
-.map .mapInfoLayer .convenience .car { display: flex; justify-content: flex-end; padding: 0 0.8rem;}
-.map .mapInfoLayer .convenience .work { display: flex; padding: 0 0.8rem;}
+.map .mapInfoLayer .convenience { position: absolute; width: 100%; top: -4.8rem;}
+.map .mapInfoLayer .convenience .feature { display: flex; align-items: center; height: 3.6rem; margin: 0 0.4rem; padding: 0 1.2rem 0 0.6rem; font-size: 1.3rem; color: #777; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.8rem;}
+.map .mapInfoLayer .convenience .feature em { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; font-size: 1rem; font-weight: 700; color: #777; background-color: #EAEAEA; border-radius: 50%;}
+.map .mapInfoLayer .convenience .feature.active { color: #111;}
+.map .mapInfoLayer .convenience .feature.active em { color: #fff; background-color: #6684EA;}
+
+.map .mapInfoLayer .convenience .car { display: flex; justify-content: flex-end; padding: 0 6rem;}
+.map .mapInfoLayer .convenience .work { display: flex; padding: 0 6rem;}
 .map .mapInfoLayer .convenience .work .feature { width: calc(1000% / 3 - 0.4rem);}
 .mapInfoLayer.open { transform: translateY(0);}
 .mapInfoLayer.default { height: calc(37rem + var(--vh)); border-radius: 2.4rem 2.4rem 0 0;}

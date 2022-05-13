@@ -202,7 +202,7 @@
 .mainArea .weatherBox.active .weatherLink .toggleBtn { display: none;}
 .mainArea .weatherBox.active .weatherLink .location { display: block;}
 .mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}
-.mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.3rem; vertical-align: middle; background-position: -45.6rem 0;}
+.mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.3rem; vertical-align: middle; background-position: -33.6rem -24rem;}
 .mainArea .weatherBox.active .weatherLink .location .myLocation { margin-left: 0.4rem;}
 .mainArea .weatherBox.active .weatherLink .val { margin-left: 0;}
 .mainArea .weatherBox.active .weatherLink .floatText { width: inherit !important;}
