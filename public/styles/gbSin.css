@@ -365,7 +365,7 @@
 .mainArea .playground .chartBox .arrow.right i { background-position-x: -40.8rem;}
 .mainArea .visitorGroup { margin-top: 2.7rem;}
 .mainArea .visitorGroup h3 .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.4rem; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
-.mainArea .visitorGroup .visitor { margin-top: 2.5rem;}
+.mainArea .visitorGroup .visitor { margin-top: 0.5rem;}
 .mainArea .visitorGroup .visitorDetail { margin-top: 2.5rem; padding: 1.8rem 2rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
 .mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 1.8rem;}
 .mainArea .visitorGroup .visitorDetail >div { display: flex; align-items: center; justify-content: space-between;}
