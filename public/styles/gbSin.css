@@ -384,7 +384,7 @@
 .mainArea .visitorGroup .tabCount .combo { display: flex; align-items: center;}
 .mainArea .visitorGroup .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .mainArea .visitorGroup .tabCount .combo .switch input:checked + label:before { background-color: #4EC457;}
-.mainArea .visitorGroup .chartBox { position: relative; margin-top: 2.8rem;}
+.mainArea .visitorGroup .chartBox { position: relative;}
 .mainArea .visitorGroup .chartBox .chart img { width: 100%; height: auto;}
 .mainArea .visitorGroup .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 3rem;}
 .mainArea .visitorGroup .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
@@ -400,7 +400,7 @@
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .bike i { background-position: -7.2rem -24rem;}
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .conBtn.active { border-color: #6684EA;}
 .mainArea .visitorGroup .chartBox .chartControl .chart { flex: 1;}
-.mainArea .visitorGroup .slideBody { position: relative; margin-top: 3rem;}
+.mainArea .visitorGroup .slideBody { position: relative; margin-top: 2rem;}
 .mainArea .visitorGroup .slideBody .slideContainer { position: relative; margin: 0 -1.6rem; padding: 0 2rem;}
 .mainArea .visitorGroup .slideBody li { width: 15.6rem;}
 .mainArea .visitorGroup .slideBody li a { display: block; overflow: hidden; height: 9.4rem;}
@@ -418,7 +418,7 @@
 .mainArea .visitorGroup .ingBody .toggleBtn.active { background: #EAEDF2 url(../image/common/split_48.png) no-repeat -16.8rem -21.6rem/48rem 28.8rem; animation: none;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active .lineBox { display: none;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active ~ span { display: none;}
-
+.mainArea .visitorGroup .colDate { margin-top: 1rem; font-size: 1.4rem; color: #555; text-align: right;}
 
 .mainArea .visitorGroup .targetHeight { overflow: hidden;	height: 0; transition: height 0.3s ease-in-out;}
 .mainArea .visitorGroup .targetHeight.active { height: 38.5rem;}
