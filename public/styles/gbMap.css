@@ -83,6 +83,11 @@ body { --vh: 1px;}
 .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
 .map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));}
 
+.mapIcons .headerWrap { padding: 1.2rem 1.2rem 0;}
+.mapIcons .subHeader { height: 4.8rem;}
+.mapIcons .subHeader .icoPrev { height: 4.8rem;}
+.mapIcons .subHeader .btnHeader .icoMic { padding: 1.2rem;}
+
 .mapIcons .btnView { position: absolute; left: 0; right: 0; bottom: 0;}
 .mapIcons .btnView button { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; bottom: -4rem; z-index: 102; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 10%); transform: translateX(-50%); transition: bottom .2s .3s ease-in-out;}
 .mapIcons .btnView button i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
@@ -109,11 +114,6 @@ body { --vh: 1px;}
 .mapIcons .satelliteMap i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -8rem -8rem/40rem 16rem;}
 .mapIcons .satelliteMap.active { background-color: #6684EA;}
 .mapIcons .satelliteMap.active i { background-position-y: -10rem;}
-
-
-
-
-
 
 .mapIcons .markerMy { position: absolute; z-index: 1;}
 .mapIcons .markerMy div { display: flex; align-items: center; justify-content: center; position: absolute; width: 2rem; height: 2rem; background-color: #fff; border-radius: 50%;}
@@ -280,6 +280,12 @@ body { --vh: 1px;}
 .mapIcons .communication { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .mapIcons .communication i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -14rem -8rem/40rem 16rem;}
 .mapIcons .communication.active i { background-position-y: -10rem;}
+.mapIcons .iAround { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
+.mapIcons .iAround i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -36rem -24rem/48rem 28.8rem;}
+.mapIcons .iAround.active { background-color: #6684EA;}
+.mapIcons .iAround.active i { background-position-y: -26.4rem;}
+
+
 
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}
@@ -304,12 +310,11 @@ span.M { background-color: #FD2020;}
 .map .mapSearch .mapSearchBtns .items-wordList { flex: 1; margin-left: 0;}
 .map .mapSearch .mapSearchBtns .items-wordList .slideContainer { padding: 0 0 1rem;}
 .map .mapSearch .mapheader { display: flex; align-items: center; justify-content: space-between;}
+.map .mapSearch .mapheader .btnHomeLink { width: 4.8rem; height: 4.8rem; background-color: #6684EA;}
+.map .mapSearch .mapheader .btnHomeLink i { background-position: 0 -7.2rem;}
 .map .mapSearch .mapheader .mapBody { display: flex; align-items: center; flex: 1; padding: 0 0.8rem; border: 1px solid #F8F8F8; background-color: #fff;}
 .map .mapSearch .mapheader .mapBody .btnPlace { position: relative; width: 3rem; height: 3rem;}
-.map .mapSearch .mapheader .mapBody .btnPlace span { display: block; position: absolute; left: 0.7rem; width: 2rem; height: 0.2rem; background-color: #000; border-radius: 0.2rem; transition: all .3s ease-in-out;}
-.map .mapSearch .mapheader .mapBody .btnPlace span.t { top: 0.9rem;}
-.map .mapSearch .mapheader .mapBody .btnPlace span.c { top: 1.4rem;}
-.map .mapSearch .mapheader .mapBody .btnPlace span.b { bottom: 0.9rem;}
+.map .mapSearch .mapheader .mapBody .btnPlace i { background-position: -22.4rem 0;}
 .map .mapSearch .mapheader .mapBody .searchHeader { flex: 1;}
 .map .mapSearch .mapheader .mapBody .searchHeader input { height: 4.8rem; padding: 0 1rem; border: none;}
 .map .mapSearch .mapheader .mapBody .searchHeader input::placeholder { color: #ddd;}
@@ -619,7 +624,14 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.M { color: #FD2020; border: 1px solid #FD2020; background-color: #fff;}
 .map .mapInfoLayer .busRouteList li .icon { position: relative; width: 6rem;}
 .map .mapInfoLayer .busRouteList li .icon .general { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover; transform: translate(-50%, -50%);}
-.map .mapInfoLayer .busRouteList li .icon .bathchair { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:#CDD0D8 url(../image/common/split_48.png) no-repeat -43.2rem -9.6rem/48rem 28.8rem; transform: translate(-50%, -50%); border-radius: 50%;}
+.map .mapInfoLayer .busRouteList li .icon .normal,
+.map .mapInfoLayer .busRouteList li .icon .bathchair { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 2rem; height: 2.6rem; text-indent: -9999rem; transform: translate(-50%, -50%);}
+.map .mapInfoLayer .busRouteList li .icon .normal.blue { background: url(../image/map/ico_normal_blue.png) no-repeat center/cover;}
+.map .mapInfoLayer .busRouteList li .icon .normal.green { background: url(../image/map/ico_normal_green.png) no-repeat center/cover;}
+.map .mapInfoLayer .busRouteList li .icon .normal.red { background: url(../image/map/ico_normal_red.png) no-repeat center/cover;}
+.map .mapInfoLayer .busRouteList li .icon .bathchair.blue { background: url(../image/map/ico_bathchair_blue.png) no-repeat center/cover;}
+.map .mapInfoLayer .busRouteList li .icon .bathchair.green { background: url(../image/map/ico_bathchair_green.png) no-repeat center/cover;}
+.map .mapInfoLayer .busRouteList li .icon .bathchair.red { background: url(../image/map/ico_bathchair_red.png) no-repeat center/cover;}
 .map .mapInfoLayer .busRouteList li .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busRouteList li .favorite.active { background-position-y: -2.4rem;}
 
@@ -663,11 +675,19 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideList li .int span { margin-right: 0.4rem;}
 .map .mapInfoLayer .busGuideList li.promote { background-color: #f4f9fd;}
 .map .mapInfoLayer .busGuideArea .busGuideList li { margin: 0;}
+.map .mapInfoLayer .busGuideList.style .flexLeft { display: flex;}
+.map .mapInfoLayer .busGuideList.style .flexLeft h4 { flex: 1;}
+.map .mapInfoLayer .busGuideList.style .flexLeft .dispatchTil { width: 10.4rem;}
+
 
 
 .map .mapInfoLayer .accordionRoute { display: flex; align-items: baseline; justify-content: space-between; padding: 1.2rem 2rem; border-top: 1px solid #EAEAEA; background-color: #F4F5F7;}
 .map .mapInfoLayer .accordionRoute .routeHead span { display: block; font-size: 1.4rem; font-weight: 700; color: #FD2020;}
 .map .mapInfoLayer .accordionRoute .routeHead b { display: block; margin-top: 0.4rem; font-family: var(--fontRoboto); font-size: 1.8rem; font-weight: 700;}
+.map .mapInfoLayer .accordionRoute.style .routeHead { display: flex; align-items: center;}
+.map .mapInfoLayer .accordionRoute.style .routeHead b { flex: 1; margin: 0 0 0 0.8rem;}
+.map .mapInfoLayer .accordionRoute.style .routeHead b.not { color: #777;}
+
 .map .mapInfoLayer .busGuideArea2 { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .busGuideArea2 .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busGuideArea2 .favorite.active { background-position-y: -2.4rem;}
@@ -682,6 +702,10 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc { margin-top: 0.4rem;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
+.map .mapInfoLayer .busGuideArea2.style {}
+.map .mapInfoLayer .busGuideArea2.style ul li .etc span { display: block; padding-left: 3rem; font-size: 1.4rem; color: #777;}
+.map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span { margin-left: 0;}
+.map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span::after { display: none;}
 
 .settingList >li { padding: 1rem 2rem;}
 .settingList >li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
