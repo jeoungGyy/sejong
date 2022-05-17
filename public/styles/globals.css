@@ -1899,6 +1899,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul li .icon.nc { background-position-x: -24rem;} /* nc */
 .items-placeList ul.inline { display: flex; align-items: center;}
 .items-placeList ul.inline li { margin-right: 0.8rem;}
+.items-placeList ul.inline li .linkBlankBtn { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1.2rem; color: #6684EA; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 
 .items-mapInfo { margin-top: 0.8rem;}
 .items-mapInfo li { clear: left; overflow: hidden; position: relative; min-height: 7.2rem;}

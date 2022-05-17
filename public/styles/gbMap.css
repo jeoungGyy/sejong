@@ -554,6 +554,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .headFlex.flex-end { justify-content: flex-end;}
 
 /* UI-SJN-32-110L */
+.map .mapInfoLayer .headFlex .tgUpdate { text-align: left;}
 .map .mapInfoLayer .headFlex .tgUpdate span { display: block; margin: -0.2rem 0; font-size: 1.3rem; color: #aaa;}
 
 /* UI-SJN-33-005L */
