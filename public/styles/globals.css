@@ -1475,6 +1475,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
+.button-twins { display: flex; align-items: center; position: fixed; bottom: 3.5rem; margin-left: 20.5rem; height: 4.8rem; padding: 0.3rem;  transform: translateX(-50%); background-color: #6684EA; border-radius: 2.4rem;}
+.button-twins .btn { display: flex; align-items: center; justify-content: center; width: 7rem; height: 4.2rem; font-weight: 700; color: #fff;}
+.button-twins .btn:first-child { border-radius: 2.4rem 0 0 2.4rem;}
+.button-twins .btn:last-child { border-radius: 0 2.4rem 2.4rem 0;}
+.button-twins .btn.active { color: #6684EA; background-color: #fff;}
+
 
 /* nav- 모음 */
 .nav-notice { display: flex; align-items: center; justify-content: flex-end; height: 4rem; margin-right: -0.8rem;}
