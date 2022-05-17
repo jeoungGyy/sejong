@@ -556,6 +556,8 @@ span.M { background-color: #FD2020;}
 /* UI-SJN-32-110L */
 .map .mapInfoLayer .headFlex .tgUpdate { text-align: left;}
 .map .mapInfoLayer .headFlex .tgUpdate span { display: block; margin: -0.2rem 0; font-size: 1.3rem; color: #aaa;}
+.map .mapInfoLayer .headFlex .tgUpdate span i { margin-top: -0.4rem; vertical-align: middle; background-position: -24rem -8rem;}
+.map .mapInfoLayer .headFlex .tgUpdate .tgDate { margin-top: 0.3rem; font-family: var(--fontRoboto);}
 
 /* UI-SJN-33-005L */
 .map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between;}
