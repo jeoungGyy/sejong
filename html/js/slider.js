@@ -5,7 +5,15 @@ const slider = {
 		let option = slideOpt.merge(id);
 		if(opt) option = {...option, initialSlide: opt}
 		if(document.querySelector(sliderObj)) slider.obj[id] = new Swiper(sliderObj + ' .slideContainer', option);
-	}
+	},
+	destroy : (id, opt) => {
+		let sliderObj = id;
+
+
+
+		slider.popularSwiper.destroy();
+		
+	},
 }
 
 const slideOpt = {

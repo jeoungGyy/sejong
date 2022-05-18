@@ -499,8 +499,14 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .swiper { overflow: initial;}
 
-
-
+/* 메인 공통 정보 없을 경우 */
+.commEmpty { text-align: center;}
+.commEmpty .icon { display: inline-block; width: 7.2rem; height: 7.2rem; background: url(../image/common/ico_404_round.png) no-repeat center/cover;}
+.commEmpty .empText { margin-top: 1.8rem; font-size: 1.6rem; color: #777;}
+.commEmpty .subEmpText { margin-top: 2rem; padding: 0 1.6rem; text-align: left;}
+.commEmpty .subEmpText li { position: relative; padding-left: 0.8rem; font-size: 1.4rem; color: #777;}
+.commEmpty .subEmpText li::after { content: ''; display: block; position: absolute; left: 0; top: 0.8rem; width: 4px; height: 4px; background-color: #777; border-radius: 50%;}
+.commEmpty .subEmpText li ~ li { margin-top: 0.8rem;}
 
 
 /* 레이어
