@@ -1844,10 +1844,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-wordList ul li button img { width: 2.4rem; height: 2.4rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle;}
 .items-wordList ul li button.active { color: #fff; background-color: #6684EA;}
 
-.items-placeList { display: flex; align-items: center; overflow: hidden; height: 6.4rem; margin: 0 -2rem 1.6rem;}
+.items-placeList { display: flex; align-items: center; overflow: hidden; position: relative;  height: 6.4rem; margin: 0 0 1.6rem;}
 .items-placeList >ul,
-.items-placeList >div { padding: 0 2rem;}
-.items-placeList .swiper-wrapper { padding-bottom: 1.4rem; border-bottom: 1px solid #F4F5F7;}
+/* .items-placeList >div { padding: 0 2rem;} */
+.items-placeList .swiper-wrapper { padding-bottom: 1.4rem;}
 .items-placeList ul li { width: auto;}
 .items-placeList ul li button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 0.1rem solid #EAEAEA; background-color: #fff; border-radius: 1.8rem;}
 .items-placeList ul li button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
@@ -1905,6 +1905,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-placeList ul.inline { display: flex; align-items: center;}
 .items-placeList ul.inline li { margin-right: 0.8rem;}
 .items-placeList ul.inline li .linkBlankBtn { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 0.8rem 0 1.2rem; font-size: 1.4rem; color: #333; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.oil .items-placeList::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 0.1rem; background-color: #F4F5F7;}
+.myArea .items-placeList::after { content: ''; position: absolute; left: 0; bottom: 0.6rem; width: 100%; height: 0.1rem; background-color: #F4F5F7;}
 
 .items-mapInfo { margin-top: 0.8rem;}
 .items-mapInfo li { clear: left; overflow: hidden; position: relative; min-height: 7.2rem;}
@@ -2007,7 +2009,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation >span.charge { color: #555;}
 .items-gasStation li .infomation >span.charge .paid { color: #FD2020;}
 .items-gasStation li .infomation >span.charge .free { color: #6684EA;}
-.items-gasStation li .infomation .link { margin-left: 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
+.items-gasStation li .infomation .link { margin: -0.2rem 0 0 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #6684ea; border: 1px solid #6684ea; border-radius: 1.2rem;}
 .items-gasStation li .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
 .items-gasStation li .infomation .oper { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #4EC457;}
 .items-gasStation li .infomation .ready { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #6684EA;}
