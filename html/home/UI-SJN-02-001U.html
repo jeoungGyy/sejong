@@ -27,7 +27,7 @@
 						
 						<div class="homeWrap">
 							<div class="boderTopGray">
-								<div class="popularHeader active">
+								<div class="popularHeader">
 									<div class="popularBody ">
 										<span class="cBlue">인기검색</span>
 										<div class="tem">
@@ -56,9 +56,18 @@
 							</div>
 							<script>
 								const tooggleWord = document.querySelector('.tooggleWord');
-								const popularBody = document.querySelector('.popularBody');
+								const popularHeader = document.querySelector('.popularHeader');
+								const popularBody  = document.querySelector('.popularBody ');
+								const populara = document.querySelector('.populara');
+
 								tooggleWord.addEventListener('click', (e)=>{
-									// popularBody.classList.add('active');
+									popularHeader.classList.toggle('active');
+									if(popularHeader.classList.contains('active')) {
+										var targetheight = Math.floor(populara.getBoundingClientRect().height);
+										popularBody.style.height = (targetheight/10)+0.8+'rem';
+									} else {
+										popularBody.style.height = '';
+									}
 								});
 							</script>
 			
