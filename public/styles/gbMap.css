@@ -82,7 +82,7 @@ body { --vh: 1px;}
 .mapInfoLayer.open { transform: translateY(0);}
 .mapInfoLayer.default { height: calc(37rem + var(--vh)); border-radius: 2.4rem 2.4rem 0 0;}
 .mapInfoLayer.up { height: calc((100% - 7.2rem) + var(--vh));}
-.map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));}
+/* .map .mapArea.subStyle .mapInfoLayer.up { height: calc((100% - 5.6rem) + var(--vh));} */
 
 .mapIcons .headerWrap { padding: 1.2rem 1.2rem 0;}
 .mapIcons .subHeader { height: 4.8rem;}
