@@ -1959,6 +1959,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-wayGuide >li .time.turnLeft i { background-position: -3.2rem -3.2rem;}
 .items-wayGuide >li .time.turnRight i { background-position: -6.4rem -3.2rem;}
 .items-wayGuide >li .time.crosswalk i { background-position: -9.6rem -3.2rem;}
+.items-wayGuide >li .time.stRaight i { background-position: 0 0;}
+.items-wayGuide >li .time.carRight i { background-position: -3.2rem 0;}
 .items-wayGuide >li .time.depart { background-color: #FD2020;}
 .items-wayGuide >li .time.arrival { background-color: #292D32;}
 .items-wayGuide >li .time.depart i,
