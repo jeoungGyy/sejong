@@ -443,7 +443,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .centerSec .infomation span .paid { color: #FD2020;}
 .map .mapInfoLayer .centerSec .etc { margin-top: 0.8rem;}
 .map .mapInfoLayer .centerSec .etc >span { color: #555;}
-.map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; margin: 1.6rem -2rem 0; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
+.map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; margin: 1rem -2rem 0; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
 .map .mapInfoLayer .centerSec .btns a,
 .map .mapInfoLayer .centerSec .btns button { display: flex; align-items: center; flex-direction: column; justify-content: center; min-width: 6rem; height: 6rem; color: #777; text-align: center;}
 .map .mapInfoLayer .centerSec .btns i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}

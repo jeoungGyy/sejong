@@ -2103,6 +2103,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .reportGroup figure { width: 7.2rem; height: 7.2rem; margin-top: 1rem;}
 .items-gasStation li .reportGroup figure .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; bottom: 0.4rem; height: 2.4rem; padding: 0 0.8rem; font-size: 1.2rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
 .items-gasStation li .reportGroup figure .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
+.items-gasStation li.one { border-bottom: none;}
 .icons.tool { display: flex; align-items: center; margin-top: 0.8rem;}
 .icons.tool i ~ i { margin-left: 0.4rem;}
 .icons.tool i.iToilet { background-position: -19.2rem -24rem;}
@@ -2142,6 +2143,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-LocalCurrency li .etc .sale .discount { color: #FD2020;}
 .items-LocalCurrency li button.view { display: none; align-items: center; justify-content: flex-end; position: absolute; left: 0; bottom: 0; width: 100%; height: 3.4rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-LocalCurrency li button.view.active { display: flex;}
+.items-LocalCurrency li.one { padding: 1.2rem 1.2rem 1.2rem 10.8rem; border-bottom: none}
 .items-LocalCurrency li.promote { background-color: #f4f9fd;}
 
 .item-mapSearch { display: flex; flex-wrap: wrap; border-left: 1px solid #F2F2F2; border-top: 1px solid #F2F2F2;}
