@@ -578,7 +578,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerService .serviceBody .pGroup p { margin-top: 1.6rem; font-size: 1.8rem; font-weight: 700;}
 
 /* 투표 레이어 */
-.layerVote .title { margin: -1.6rem -2rem 0; padding: 2.7rem 2.5rem; text-align: left; background-color: #6684EA;}
+.layerVote .title { margin: -1.6rem -2rem 0; padding: 2.7rem 2.5rem; text-align: left; background: #6684EA url(../image/map/map_vote_bg.png) no-repeat right 2.5rem bottom -1.5rem/11rem 15rem;}
 .layerVote .title h4 { font-size: 1.8rem; color: #fff;}
 .layerVote .title h4 .voteDate { font-family: var(--fontRoboto); font-weight: 400; font-size: 1.4rem;}
 .layerVote .title a { display: block; color: #fff;}
