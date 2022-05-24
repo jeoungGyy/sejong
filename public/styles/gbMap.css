@@ -652,14 +652,15 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busRouteList li::after { content: ''; position: absolute; right: 2.9rem; top: 0; width: 0.2rem; height: 100%; background-color: #EAEDF2;}
 .map .mapInfoLayer .busRouteList li .routeBody { display: flex; align-items: center; justify-content: space-between; flex: 1; padding: 0.8rem 0 0.8rem 2rem; border-bottom: 1px solid #F4F5F7;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .station { display: flex; align-items: center;}
-.map .mapInfoLayer .busRouteList li .routeBody .head .station h4 { margin-left: 0.6rem; font-size: 1.6rem;}
+.map .mapInfoLayer .busRouteList li .routeBody .head .station h4 { flex: 1; margin-left: 0.6rem; font-size: 1.6rem;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .sDate { display: block; margin-top: 0.4rem; padding-left: 3.4rem; font-size: 1.4rem; color: #555;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span { display: flex; align-items: center; justify-content: center; padding: 0.7rem 0.8rem; font-size: 1.4rem; color: #fff;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.B { color: #6684EA; border: 1px solid #6684EA; background-color: #fff;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.G { color: #32BBED; border: 1px solid #32BBED; background-color: #fff;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.Y { color: #4EC457; border: 1px solid #4EC457; background-color: #fff;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.R { color: #FD2020; border: 1px solid #FD2020; background-color: #fff;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.M { color: #FD2020; border: 1px solid #FD2020; background-color: #fff;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate { padding-left: 3.4rem;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span { display: flex; align-items: center; padding: 0; font-size: 1.2rem; color: #fff; letter-spacing: 0;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.B { color: #6684EA; background-color: #fff;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.G { color: #32BBED; background-color: #fff;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.Y { color: #4EC457; background-color: #fff;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.R { color: #FD2020; background-color: #fff;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.M { color: #FD2020; background-color: #fff;}
 .map .mapInfoLayer .busRouteList li .icon { position: relative; width: 6rem;}
 .map .mapInfoLayer .busRouteList li .icon .general { display: block; position: absolute; left: 50%; top: 50%; z-index: 1; width: 1.6rem; height: 1.6rem; text-indent: -9999rem; background: url(../image/map/ico_route.png) no-repeat center/cover; transform: translate(-50%, -50%);}
 .map .mapInfoLayer .busRouteList li .icon .normal,
