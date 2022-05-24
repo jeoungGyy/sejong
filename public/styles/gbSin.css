@@ -374,8 +374,8 @@
 .mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 1.8rem;}
 .mainArea .visitorGroup .visitorDetail >div { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .visitorGroup .visitorDetail >div .title { display: flex; align-items: center; width: 11rem; font-size: 1.6rem; color: #555;}
-.mainArea .visitorGroup .visitorDetail >div .walking i { margin-right: 0.4rem; background-position: -4.8rem -24rem;}
-.mainArea .visitorGroup .visitorDetail >div .bike i { margin-right: 0.4rem; background-position: -7.2rem -24rem;}
+.mainArea .visitorGroup .visitorDetail >div .walking i { margin-right: 0.4rem; background: url(../image/home/ico_walking.svg) no-repeat center/cover;}
+.mainArea .visitorGroup .visitorDetail >div .bike i { margin-right: 0.4rem; background: url(../image/home/ico_bike.svg) no-repeat center/cover;}
 .mainArea .visitorGroup .visitorDetail .visitorToday { text-align: right;}
 .mainArea .visitorGroup .visitorDetail .visitorToday b { display: block;}
 .mainArea .visitorGroup .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}

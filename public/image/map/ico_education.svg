@@ -1,0 +1,10 @@
+<svg id="ico_32_category_education" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_4848" data-name="사각형 4848" width="32" height="32" fill="none"/>
+  <g id="그룹_5437" data-name="그룹 5437" transform="translate(-2564.5 -906.813)">
+    <path id="합치기_28" data-name="합치기 28" d="M3.749,22.625H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0H18.995V22.625Z" transform="translate(2571 910.999)" fill="#81c172"/>
+    <path id="사각형_4871" data-name="사각형 4871" d="M3,0H3A3,3,0,0,1,6,3V19a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(2571 933.624) rotate(-90)" fill="#cdd0d8"/>
+    <line id="선_241" data-name="선 241" x2="6" transform="translate(2575.2 916.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="패스_9852" data-name="패스 9852" d="M4,0H0V3.232L4,5Z" transform="translate(2574.5 929.624)" fill="#32bbed"/>
+    <path id="패스_9853" data-name="패스 9853" d="M0,0H4V3.232L0,5Z" transform="translate(2574.5 929.624)" fill="#6684ea"/>
+  </g>
+</svg>

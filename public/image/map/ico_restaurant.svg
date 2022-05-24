@@ -1,0 +1,12 @@
+<svg id="ico_32_category_food" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_4848" data-name="사각형 4848" width="32" height="32" fill="none"/>
+  <circle id="타원_288" data-name="타원 288" cx="14" cy="14" r="14" transform="translate(2 2)" fill="#eceef4"/>
+  <g id="그룹_5419" data-name="그룹 5419" transform="translate(7.075 10)">
+    <g id="그룹_5417" data-name="그룹 5417" transform="translate(1.277 1.277)">
+      <line id="선_236" data-name="선 236" y2="11.937" transform="translate(2.895 6.481)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="선_237" data-name="선 237" y2="18.418" transform="translate(12.487 0)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <ellipse id="타원_287" data-name="타원 287" cx="2.83" cy="3.929" rx="2.83" ry="3.929" fill="#fd2020" stroke="#fd2020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="패스_9814" data-name="패스 9814" d="M31.334,2V7.417A2.233,2.233,0,0,1,29.1,9.65h-1.16a2.233,2.233,0,0,1-2.233-2.233V2" transform="translate(-16.034 -2)" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

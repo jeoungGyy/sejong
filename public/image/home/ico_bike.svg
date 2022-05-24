@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.44" height="24" viewBox="0 0 24.44 24">
+  <g id="그룹_10556" data-name="그룹 10556" transform="translate(-105 -612)">
+    <rect id="사각형_6712" data-name="사각형 6712" width="24" height="24" transform="translate(105 612)" fill="#fff"/>
+    <g id="그룹_10554" data-name="그룹 10554" transform="translate(105.348 617.348)">
+      <path id="패스_39472" data-name="패스 39472" d="M25.939,10.723H18.98l2.954-6.607Z" transform="translate(-6.602 -1.432)" fill="#fff" stroke="#6684ea" stroke-width="1"/>
+      <path id="패스_39473" data-name="패스 39473" d="M25.939,10.723H18.98l2.954-6.607Z" transform="translate(-6.602 -1.432)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_39474" data-name="패스 39474" d="M19.5,4.116l-2.954,6.607L11.987,4.116Z" transform="translate(-4.169 -1.432)" fill="#fff" stroke="#6684ea" stroke-width="1"/>
+      <path id="패스_39475" data-name="패스 39475" d="M19.5,4.116l-2.954,6.607L11.987,4.116Z" transform="translate(-4.169 -1.432)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_10553" data-name="그룹 10553" transform="translate(0 0)">
+        <g id="그룹_10555" data-name="그룹 10555">
+          <path id="패스_39476" data-name="패스 39476" d="M7.14,9.639,10.3,3.032,11.144,1h-1.3A1.967,1.967,0,0,0,7.927,3.393" transform="translate(-2.483 -0.348)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+          <circle id="타원_863" data-name="타원 863" cx="4.004" cy="4.004" r="4.004" transform="translate(15.333 5.287)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+          <circle id="타원_864" data-name="타원 864" cx="4.004" cy="4.004" r="4.004" transform="translate(0.652 5.287)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_512" data-name="선 512" y1="2.032" transform="translate(15.333 0.652)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_513" data-name="선 513" x1="3.806" transform="translate(13.769 0.652)" fill="none" stroke="#6684ea" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
