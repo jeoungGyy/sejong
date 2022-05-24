@@ -420,11 +420,12 @@ span.M { background-color: #FD2020;}
 
 /* 장소 카테고리 - UI-SJN-22-002L */
 .map .petrolInformation { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem; font-size: 1.4rem;}
-.map .gsCost { flex: 1;}
-.map .gsCost span { position: relative; margin-left: 0.8rem; padding-left: 2.3rem; font-weight: 700;}
+.map .gsCost { display: flex; flex-wrap: wrap; flex: 1;}
+.map .gsCost span { position: relative; margin: 0 0 0.4rem 0.8rem; padding-left: 2.3rem; font-weight: 700;}
 .map .gsCost span::before { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 50%; width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; font-size: 1.1rem; border-radius: 50%;}
 .map .gsCost span.gasoline::before { content: '휘'; background-color: #FFEB52;}
 .map .gsCost span.oil::before { content: '경'; color: #fff; background-color: #32BBED;}
+.map .gsCost span.lpg::before { content: '부'; color: #fff; background-color: #4ec457;}
 .map .gsCost span::after { content: '원';}
 
 /* 장소상세 탬플릿 - UI-SJN-24-001L */
