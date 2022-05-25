@@ -194,7 +194,8 @@ table td { vertical-align: middle;}
 .ls0 { letter-spacing: 0;}
 
 /* 마진 */
-.mt8 { margin-top: 0.8rem;}
+#pcRoot .mt0 { margin-top: 0;}
+#pcRoot .mt8 { margin-top: 0.8rem;}
 
 /* 색상 */
 .cBlue { color: #6684EA !important;}
@@ -1100,6 +1101,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .parkingSpaceBody .empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777;}
 
 /* UI-SJN-35-002L */
+.locationLayer .icoChecking { display: flex; align-items: center; justify-content: center; flex-direction: column; padding-bottom: 1.6rem;}
+.locationLayer .icoChecking span { margin-top: 1.8rem; color: #777;}
 .locationLayer .dustTransition { padding: 1.6rem 2rem 2.4rem;}
 .locationLayer .dustTransition .graph { margin-top: 1.6rem;}
 .locationLayer .pollutant { padding: 0.2rem 2rem 2.4rem;}
