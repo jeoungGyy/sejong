@@ -421,12 +421,11 @@ span.M { background-color: #FD2020;}
 
 /* 장소 카테고리 - UI-SJN-22-002L */
 .map .petrolInformation { display: flex; align-items: center; height: 4rem; margin-top: 0.8rem; font-size: 1.4rem;}
-.map .gsCost { display: flex; flex-wrap: wrap; flex: 1;}
-.map .gsCost span { position: relative; margin: 0 0 0.4rem 0.8rem; padding-left: 2.3rem; font-weight: 700;}
+.map .gsCost { flex: 1;}
+.map .gsCost span { position: relative; margin-left: 0.8rem; padding-left: 2.3rem; font-weight: 700;}
 .map .gsCost span::before { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 50%; width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; font-size: 1.1rem; border-radius: 50%;}
 .map .gsCost span.gasoline::before { content: '휘'; background-color: #FFEB52;}
 .map .gsCost span.oil::before { content: '경'; color: #fff; background-color: #32BBED;}
-.map .gsCost span.lpg::before { content: '부'; color: #fff; background-color: #4ec457;}
 .map .gsCost span::after { content: '원';}
 
 /* 장소상세 탬플릿 - UI-SJN-24-001L */
@@ -647,14 +646,14 @@ span.M { background-color: #FD2020;}
 .dispatchTil { display: flex; align-items: center;}
 .dispatchTil .dTime { font-size: 1.4rem; color: #777;}
 .dispatchTil .refresh { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-left: 0.6rem; padding-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.1rem; background: url(../image/map/ico_refresh.png) no-repeat center/cover;}
-.dispatchTil button i { margin-top: -0.2rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
 .map .mapInfoLayer .busRouteArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .mapInfoLayer .busRouteList li { display: flex; align-items: center; position: relative; width: 100%;}
 .map .mapInfoLayer .busRouteList li::after { content: ''; position: absolute; right: 2.9rem; top: 0; width: 0.2rem; height: 100%; background-color: #EAEDF2;}
 .map .mapInfoLayer .busRouteList li .routeBody { display: flex; align-items: center; justify-content: space-between; flex: 1; padding: 0.8rem 0 0.8rem 2rem; border-bottom: 1px solid #F4F5F7;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .station { display: flex; align-items: center;}
-.map .mapInfoLayer .busRouteList li .routeBody .head .station h4 { margin-left: 0.6rem; font-size: 1.6rem;}
+.map .mapInfoLayer .busRouteList li .routeBody .head .station h4 { flex: 1; margin-left: 0.6rem; font-size: 1.6rem;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .sDate { display: block; margin-top: 0.4rem; padding-left: 3.4rem; font-size: 1.4rem; color: #555;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate { position: absolute; right: 5.5rem;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span { display: flex; align-items: center; justify-content: center; padding: 0.7rem 0.8rem; font-size: 1.4rem; color: #fff;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.B { color: #6684EA; border: 1px solid #6684EA; background-color: #fff;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.G { color: #32BBED; border: 1px solid #32BBED; background-color: #fff;}
