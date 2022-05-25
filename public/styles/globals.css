@@ -2032,6 +2032,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .infomation .usually { margin-left: 0.4rem; color: #4EC457;}
 .items-gasStation li .infomation .bad { margin-left: 0.4rem; color: #FF940E;}
 .items-gasStation li .infomation .veryBad { margin-left: 0.4rem; color: #FD2020;}
+.items-gasStation li .infomation .checking { margin-left: 0.4rem; color: #838fac;}
 .items-gasStation li .infomation .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li .infomation .txtBox { margin-left: 0.8rem; padding: 0.2rem 0.4rem; font-size: 1.2rem; color: #fff; background-color: #6684EA;}
 .items-gasStation li .infomation2 { margin-top: 0.4rem;}

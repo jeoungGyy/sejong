@@ -1,0 +1,1068 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+
+					<div class="headerWrap">
+						<div class="headerClear">
+							<!-- 각각 헤드 들 -->
+							<header class="header global bgBlue">
+								<div class="subHeader">
+									<div class="globalLogo"><i>세종엔 로고</i><i class="beta">beta</i></div>
+									<div class="btnGlobal">
+										<button type="button" class="icoSearch"><i class="split24">검색</i></button>
+										<button type="button" class="icoAlert"><i class="split24">알림</i><span class="round">N</span></button>
+										<button type="button" class="icoMy">
+											<!-- <i class="split24">내정보</i> -->
+											<span class="img"><img src="../../public/image/temp/temp011.png" alt="" /></span>
+											<span class="icon"><i class="icoProfile profile1">프로필1</i></span>
+											<!-- profile1 ~ profile5 -->
+										</button>
+									</div>
+								</div>
+							</header>
+							<!-- //각각 헤드 들 -->
+						</div>
+					</div>
+
+					
+			
+					<!-- 본문 -->
+					<main class="contents home"> <!-- [통합검색 Class] home-->
+						<div class="homeWrap">
+							<div class="mainMenuFixed">
+								<div class="mainArea">
+									<div class="boxWrap mainPromotion">
+										<div id="mainPromotionSwiper" class="promotionList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<div class="empty">
+															글자가 들어갑니다.
+														</div>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img01.png" alt="소담·반곡동 크린넷 시범서비스">
+														</a>
+													</li>
+													<!-- 
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img02.png" alt="세종 안심이">
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img03.png" alt="생생버스">
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img04.png" alt="미세먼지">
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img05.png" alt="예약허브">
+														</a>
+													</li>
+													<li class="swiper-slide">
+														<a href="#">
+															<img src="../../public/image/home/main_top_img06.png" alt="사전투표소 위치, 혼잡도 안내">
+														</a>
+													</li> -->
+												</ul>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<script>
+											slider.active('mainPromotionSwiper');
+										</script>
+									</div>
+
+									<div class="boxWrap serviceGroup">
+										<h3><img src="../../public/image/home/text_serviceGroup.png" alt="슬기로운 세종 생활+"></h3>
+										<ul>
+											<li>
+												<a href="#">
+													<img src="../../public/image/home/ico_serviceGroup.png" alt="">
+													<span>안심이</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../../public/image/home/ico_serviceGroup2.png" alt="">
+													<span>예약허브</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../../public/image/home/ico_serviceGroup3.png" alt="">
+													<span>생생버스</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../../public/image/home/ico_serviceGroup4.png" alt="">
+													<span>미세먼지</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+			
+									<div class="recentService">
+										<h3>최근 이용한 서비스</h3>
+										<div>
+											<nav id="homeNavSwiper" class="items-wordList"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events slideContainer swiper-backface-hidden"><ul class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"><li class="swiper-slide swiper-slide-active" style="margin-right: 10px;"><button type="button"><img alt="">교통정보</button></li><li class="swiper-slide swiper-slide-next" style="margin-right: 10px;"><button type="button"><img src="/image/common/ico24/@2x/ico_24_culture.png" alt="">문화행사</button></li></ul></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></nav>
+											<script>
+												slider.active('homeNavSwiper')
+											</script>
+										</div>
+									</div>
+			
+									<div class="boxWrap weatherBox accordionContainer">
+										<div class="cautionText">
+											<div class="hiddenBox">
+												<!-- 
+													s5, s10, s15, s20, s25
+													기본 30초 
+												-->
+												<p class="s10">건조주의보 발표 : 세종, 대전, 충청남도(아산, 공주, 천안)</p>
+											</div>
+										</div>
+										<div class="boxArea">
+											<a href="javascript:void(0);" class="weatherLink">
+												<div class="weather">
+													<!--
+														* 날씨 아이콘 종류 이름을 지을수 없어 숫자로 넘버링 했습니다.
+														- /public/image/common/weather_sample.png 에 도움이미지 넣었습니다.
+													-->
+													<i class="icon weather1"></i>
+													<b class="temperature"><em class="import">-40</em><span>구름많음</span></b>
+													<div class="floatText" style="width: 10rem;"> <!-- 가로 크기를 넣어주세요. -->
+														<div class="val">
+															<p>미세 <span class="caution">매우높음</span></p>
+															<p>초미세 <span class="highness">매우높음</span></p>
+														</div>
+													</div>
+												</div>
+												<div class="poa">
+													<div class="location"><span>세종시 보람동</span><button type="button" class="myLocation"><i class="split24"></i></button></div>
+													<span class="toggleBtn"><i class="split24">현재위치</i></span>
+												</div>
+											</a>
+											<div class="accordionTarget">
+												<div class="boxTab">
+													<ul class="nav_side btnTab">
+														<li class="itemBtn"><button type="button" class="active">시간별 날씨</button></li>
+														<li class="itemBtn"><button type="button">주간 날씨</button></li>
+														<li class="itemBtn"><button type="button">미세먼지</button></li>
+													</ul>
+			
+													<div class="tabContent">
+														<!-- 시간별 날씨 -->
+														<div class="active">
+															<!--
+															<div class="overflowX"><ul class="items-weatherInfo weather wh24"><li class=""><span class="time">00시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">01시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">02시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">03시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">04시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">05시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">06시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">07시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">08시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">09시</span><i class="icon weather1">맑음</i></li><li class=""><span class="time">10시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">11시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">12시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">13시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">14시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">15시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">16시</span><i class="icon weather13">구름많음</i></li><li class=""><span class="time">17시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">18시</span><i class="icon weather9">흐림</i></li><li class="now"><span class="time">19시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">20시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">21시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">22시</span><i class="icon weather9">흐림</i></li><li class=""><span class="time">23시</span><i class="icon weather9">흐림</i></li></ul><ul class="items-weatherInfo"><h3 class="invisible">시간별 날씨</h3><div class="graph" style="width: 1270px; height: 50px;"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1270" height="50" role="img"><rect width="1270" height="50" fill="transparent"></rect><g transform="translate(23,20)"><g transform="translate(0,0)"><line x1="0" x2="0" y1="0" y2="20" style="stroke: transparent; stroke-width: 1;"></line></g><path d="M0,18L53.78260869565217,18L107.56521739130434,20L161.3478260869565,18L215.1304347826087,20L268.9130434782609,20L322.695652173913,20L376.4782608695652,20L430.2608695652174,18L484.04347826086956,11L537.8260869565217,7L591.6086956521739,5L645.391304347826,2L699.1739130434783,2L752.9565217391304,0L806.7391304347826,2L860.5217391304348,4L914.3043478260869,5L968.0869565217391,7L1021.8695652173913,9L1075.6521739130435,9L1129.4347826086955,11L1183.2173913043478,11L1237,11" fill="none" stroke-width="2" stroke="#3366CC"></path><g><g transform="translate(1237, 11)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">4</text></g><g transform="translate(1183.2173913043478, 11)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">4</text></g><g transform="translate(1129.4347826086955, 11)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">4</text></g><g transform="translate(1075.6521739130435, 9)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">5</text></g><g transform="translate(1021.8695652173913, 9)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">5</text></g><g transform="translate(968.0869565217391, 7)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">6</text></g><g transform="translate(914.3043478260869, 5)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">7</text></g><g transform="translate(860.5217391304348, 4)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">8</text></g><g transform="translate(806.7391304347826, 2)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">9</text></g><g transform="translate(752.9565217391304, 0)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">10</text></g><g transform="translate(699.1739130434783, 2)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">9</text></g><g transform="translate(645.391304347826, 2)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">9</text></g><g transform="translate(591.6086956521739, 5)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">7</text></g><g transform="translate(537.8260869565217, 7)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">6</text></g><g transform="translate(484.04347826086956, 11)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">4</text></g><g transform="translate(430.2608695652174, 18)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(376.4782608695652, 20)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(322.695652173913, 20)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(268.9130434782609, 20)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(215.1304347826087, 20)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(161.3478260869565, 18)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(107.56521739130434, 20)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(53.78260869565217, 18)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0, 18)" style="pointer-events: none;"><circle r="4" fill="#ffffff" stroke="#3366CC" stroke-width="2" style="pointer-events: none;"></circle><text text-anchor="middle" y="-12" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g></g><rect x="0" y="0" width="26.891304347826086" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="26.891304347826086" y="0" width="53.78260869565217" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="80.67391304347825" y="0" width="53.78260869565217" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="134.45652173913044" y="0" width="53.78260869565216" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="188.2391304347826" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="242.02173913043478" y="0" width="53.78260869565216" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="295.80434782608694" y="0" width="53.78260869565216" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="349.5869565217391" y="0" width="53.78260869565216" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="403.36956521739125" y="0" width="53.782608695652215" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="457.1521739130435" y="0" width="53.78260869565216" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="510.9347826086956" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="564.7173913043478" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="618.5" y="0" width="53.78260869565213" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="672.2826086956521" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="726.0652173913043" y="0" width="53.78260869565224" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="779.8478260869565" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="833.6304347826087" y="0" width="53.78260869565207" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="887.4130434782608" y="0" width="53.78260869565224" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="941.195652173913" y="0" width="53.782608695652186" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="994.9782608695652" y="0" width="53.78260869565213" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="1048.7608695652175" y="0" width="53.782608695652016" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="1102.5434782608695" y="0" width="53.78260869565213" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="1156.3260869565215" y="0" width="53.78260869565236" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect><rect x="1210.108695652174" y="0" width="26.891304347826008" height="20" stroke="red" stroke-width="0" stroke-opacity="0.75" fill="red" fill-opacity="0"></rect></g></svg></div></div></div></ul></div>
+															-->
+															<div class="commEmpty">
+																<i class="icon"></i>
+																<p class="empText">날씨 정보가 없습니다.</p>
+															</div>
+														</div>
+														<!-- //시간별 날씨 -->
+			
+														<!-- 주간 날씨 -->
+														<div>
+															<!--
+															<ul class="items-weatherInfo weather wh24">
+																<li>
+																	<span class="time">월</span>
+																	<i class="icon weather1">맑음</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li>
+																	<span class="time">화</span>
+																	<i class="icon weather2">흐림</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li>
+																	<span class="time">수</span>
+																	<i class="icon weather3">비</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li>
+																	<span class="time">목</span>
+																	<i class="icon weather1">맑음</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li class="now">
+																	<span class="time">오늘</span>
+																	<i class="icon weather1">맑음</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li>
+																	<span class="time">토</span>
+																	<i class="icon weather1">맑음</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+																<li>
+																	<span class="time">일</span>
+																	<i class="icon weather1">맑음</i>
+																	<div class="temperature">
+																		<div><span>7</span></div>
+																		<div><span>10</span></div>
+																	</div>
+																</li>
+															</ul>
+															-->
+															<div class="commEmpty">
+																<i class="icon"></i>
+																<p class="empText">날씨 정보가 없습니다.</p>
+															</div>
+														</div>
+														<!-- //주간 날씨 -->
+			
+														<!-- 미세먼지 -->
+														<div>
+															<!--
+																<div class="particulates">
+															
+																	lowness: 낮음
+																	normal: 보통
+																	caution: 주의
+																	highness: 높음
+																	4가지가 있습니다.
+															
+																<div class="body">
+																	<div>
+																		<h4>미세먼지</h4>
+																		<span class="round lowness">낮음</span>
+																	</div>
+																	<div>
+																		<h4>초미세먼지</h4>
+																		<span class="round normal">보통</span>
+																	</div>
+																</div>
+																<div class="offerer">
+																	<span>제공 : 에어코리아 2021-12-22 23:00</span>
+																</div>
+															</div>
+																-->
+
+															<div class="commEmpty">
+																<i class="icon"></i>
+																<p class="text">날씨 정보가 없습니다.</p>
+															</div>
+														</div>
+														<!-- //미세먼지 -->
+													</div>
+													
+												</div>
+			
+												<div class="anniversary">
+													<b>기념일</b> <span>3월 9일은 제 20회 대통령선거 3월 9일은 제 20회 대통령선거 3월 9일은</span>
+												</div>
+											</div>
+										</div>
+									</div>
+			
+									<div class="boxWrap covid19">
+										<div class="boxArea">
+											<h3>코로나19 현황</h3>
+											<div class="body">
+												<div class="title">
+													<i></i>
+													<div>
+														<b class="cRed">일상회복 잠시 멈춤</b>
+														<span>사적모임 <em class="cRed">10명</em> 12시까지(4.4~)</span>
+													</div>
+												</div>
+												<div class="boxTab menu">
+													<ul class="btnTab">
+														<li class="itemBtn"><button type="button" class="active"><i class="split20 clinic"></i>선별진료소</button></li>
+														<li class="itemBtn"><button type="button"><i class="split20 situation"></i>확진현황</button></li>
+													</ul>
+													<div class="tabContent">
+														<!-- 선별진료소 -->
+														<div class="clinic active">
+															<div class="lineBox">
+																<div class="operation">
+																	<span class="round operation"><i class="split20"></i> 운영중</span> <button type="button" class="name"><span>세종시청 임시선별진료소임시선별진료소<i class="split20"></i></span></button>
+																</div>
+																<div class="infomation veryCrowd">
+																	<b>매우혼잡</b>
+																	<span>200명이상(90분 이상)</span>
+																</div>
+															</div>
+															<div class="lineBox">
+																<div class="operation">
+																	<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
+																</div>
+															</div>
+															<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
+															<div class="button-more">
+																<a href="#" class="btn"><span>선별진료소 방문전 <b class="blue">전자문진표 작성하기</b></span></a>
+															</div>
+														</div>
+														<!-- //선별진료소 -->
+			
+														<!-- 확진현황 -->
+														<div class="situation">
+															<p class="sDate">12.20 00:00 기준</p>
+															<div>
+																<img src="../../public/image/temp/tesm041.png" alt="확진현황 그래프 모양 샘플">
+															</div>
+														</div>
+														<!-- //확진현황 -->
+													</div>
+												</div>
+												
+												<div class="offerer">
+													<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="boxWrap covid19">
+										<div class="boxArea">
+											<h3>선별진료소 현황</h3>
+											<div class="body">
+												<div class="clinic active">
+													<div class="lineBox">
+														<div class="operation">
+															<button type="button" class="name">세종시청 임시선별진료소</button>
+														</div>
+														<div class="infomation">
+															<b>즉시</b>
+															<span class="cBlue">10명이내(3분 이내)</span>
+														</div>
+													</div>
+													<div class="lineBox">
+														<div class="operation">
+															<button type="button" class="round closed" onclick="layerPopup.open('layerAlram');"><i class="split20"></i>휴무</button> <button type="button" class="name"><span>임시선별진료소<i class="split20"></i></span></button>
+														</div>
+													</div>
+													<p>실제 대기시간은 현장상황에 따라 달라질 수 있습니다.</p>
+													<ul class="btnLists">
+														<li>
+															<div class="button-more">
+																<a href="#" class="btn"><span>세종시 선별진료소 <span class="blue">운영안내</span></span></a>
+															</div>
+														</li>
+														<li>
+															<div class="button-more">
+																<a href="#" class="btn"><span>신속항원검사 <span class="blue">지정의료기관 (유료)</span></span></a>
+															</div>
+														</li>
+														<li>
+															<div class="button-more">
+																<a href="#" class="btn"><span>PCR검사 방문전 <span class="blue">전자문진표 작성</span></span></a>
+															</div>
+														</li>
+													</ul>
+												</div>
+												
+												<div class="offerer">
+													<button type="button">업데이트 : 2022.2.6 13:55 <i class="split24"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="boxWrap playground">
+										<div class="boxArea">
+											<!-- 놀이터 -->
+											<div>
+												<div class="flex">
+													<h3 class="noneFlex">몸도 마음도 <span class="cGreen">쑤~욱 쑥</span><br />테마 놀이터</h3>
+													<button type="button" class="playgroundBtn"><img src="../../public/image/home/ico_playground.png" alt="놀이터 혼잡도 보기"></button>
+												</div>
+												<div>
+													<span class="byDate">기준 2022년 4월 12일</span>
+													<ul class="listForm">
+														<li class="off">
+															<a href="/m/playgrounds">
+																<div class="title">
+																	<b>땀범벅놀이터 땀범벅놀이터 땀범벅놀이터</b>
+																</div>
+																<!-- <div class="bodyArea">
+																	<span class="lowness">여유</span>
+																	<span class="orMore">00명 이상</span>
+																</div> -->
+																<div class="offArea">
+																	<i></i>
+																	<div class="offFlextBody">
+																		<span class="offTime">09:00~18:00</span>
+																		<span class="offText">내일 놀아요~</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="/m/playgrounds">
+																<div class="title">
+																	<b>모두의놀이터</b>
+																</div>
+																<div class="bodyArea">
+																	<span class="normal">보통</span>
+																	<span class="orMore">00명 이상</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="/m/playgrounds">
+																<div class="title">
+																	<b>세종놀이터</b>
+																</div>
+																<div class="bodyArea schedule">
+																	<span></span>
+																	<span class="orMore">22년 12월 오픈 예정</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="/m/playgrounds">
+																<div class="title">
+																	<b>중앙놀이터</b>
+																</div>
+																<div class="bodyArea">
+																	<span class="danger">혼잡</span>
+																	<span class="orMore">00명 이상</span>
+																</div>
+															</a>
+														</li>
+													</ul>
+													<div class="guideText">
+														<i class="split20"></i> <span>혼잡도는 현장상황에 따라 다를 수 있습니다</span>
+													</div>
+													<div class="btn">
+														<button type="button"><i class="split20"></i>지도에서보기</button>
+													</div>
+												</div>
+											</div>
+											<!-- //놀이터 -->
+
+											<!-- 혼잡도 -->
+											<div>
+												<div class="flex">
+													<h3>놀이터 혼잡도</h3>
+													<button type="button" class="playgroundBtn"><img src="../../public/image/home/ico_playground_cong.png" alt="놀이터 보기"></button>
+												</div>
+												<div>
+													<ul class="listBtns">
+														<li>
+															<button type="button" class="active">땀범벅놀이터</button>
+														</li>
+														<li>
+															<button type="button">모두의놀이터</button>
+														</li>
+														<li>
+															<button type="button">세종놀이터</button>
+														</li>
+														<li>
+															<button type="button">중앙놀이터</button>
+														</li>
+													</ul>
+													<div class="chartBox">
+														<div class="text">
+															<!--
+																여유 : background-color: #6684EA
+																보통 : background-color: #4EC457
+																주의 : background-color: #FF940E
+																혼잡 : background-color: #FD2020
+															-->
+															<span class="roundBox" style="background-color: #FD2020;">혼잡</span>
+															<b>30명이상 (평소보다 혼잡)</b>
+														</div>
+													
+														<div class="chart" style="display: none;">
+															<!--	
+															회색: #EAEAEA
+															파란색: #6684EA
+															빨간색: #FD2020
+															-->
+															<img src="../../public/image/temp/tesm043.png" alt="샘플 이미지">
+														</div>
+														
+														<div class="commEmpty">
+															<i class="icon"></i>
+															<p class="empText">놀이터 혼잡도 정보가 없습니다.</p>
+															<ul class="subEmpText">
+																<li>한솔동 모두의 놀이터 : 22년 6월중 오픈</li>
+																<li>고운동 모두의 놀이터 : (공사중)7월 중순 재개장</li>
+															</ul>
+														</div>
+														<button type="button" class="arrow left"><i class="split24">왼쪽 이동</i></button>
+														<button type="button" class="arrow right"><i class="split24">오른쪽 이동</i></button>
+													</div>
+												</div>
+											</div>
+											<!-- //혼잡도 -->
+										</div>
+									</div>
+
+									<div class="boxWrap visitorGroup">
+										<div class="boxArea">
+											<div class="flex">
+												<h3>금강보행교 <i class="icon"></i></h3>
+												<div class="ingBody">
+													<p class="oper"><i class="split20"></i><b>운영중</b></p>
+													<!--
+													<p class="ready"><i class="split20"></i><b>준비중</b></p>
+													<p class="end"><i class="split20"></i><b>운영종료</b></p>
+													-->
+													<!-- <button type="button" class="toggleBtn bridge">
+														<i class="split24">토글 버튼</i>
+													</button> -->
+													<div class="anyBox">
+														 <button type="button" class="toggleBtn bridge">
+															<span class="lineBox">
+																<span class="line1"></span>
+																<span class="line2"></span>
+															</span>
+														</button>
+														<span class="deco deco1"></span>
+														<span class="deco deco2"></span>
+														<span class="deco deco3"></span>
+														<span class="deco deco4"></span>
+														<span class="deco deco5"></span>
+														<span class="deco deco6"></span>
+														<span class="deco deco7"></span>
+														<span class="deco deco8"></span> 
+													</div>
+												</div>
+											</div>
+											<div>
+												<div class="visitor">
+													어제까지 총 <span class="cBlue">1천</span>명이 방문하셨네요~
+												</div>
+												<div class="visitorDetail">
+													<div>
+														<span class="title walking"><i class="split24"></i>걸어서</span>
+														<div class="visitorToday">
+															<b>총 2만 4,450명</b>
+															<span class="today">오늘 <span class="cBlue">+10,000명</span></span>
+														</div>
+													</div>
+													<div>
+														<span class="title bike"><i class="split24"></i>자전거타고</span>
+														<div class="visitorToday">
+															<b>총 2만 4,450명</b>
+															<span class="today">오늘 <span class="cBlue">+00명</span></span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="targetHeight">
+												<div class="tabCount">
+													<div class="tabBtns">
+														<button type="button" class="active">전체</button>
+														<button type="button">남측</button>
+														<button type="button">북측</button>
+													</div>
+													<div class="combo">
+														<span>시간별</span>
+														<div class="switch">
+															<input type="checkbox" id="switch1" title="길안내 설정">
+															<label for="switch1"></label>
+														</div>
+													</div>
+												</div>
+												<div class="chartBox">
+													<div class="chartControl">
+														<div class="cBtns">
+															<button type="button" class="conBtn walking active"><i class="split24"></i><span>도보</span></button> <!-- 활성화 시 active 추가 -->
+															<button type="button" class="conBtn bike"><i class="split24"></i><span>자전거</span></button>
+														</div>
+														<div class="chart">
+															<img src="../../public/image/temp/tesm042.png" alt="샘플 이미지">
+														</div>
+													</div>
+												</div>
+
+												<div id="mapToVisitSwiper" class="slideBody mt">
+													<div class="slideContainer">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/info/info_toVisit_img.png" alt="">
+																	</figure>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/temp/temp003.png" alt="">
+																	</figure>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/info/info_toVisit_img.png" alt="">
+																	</figure>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#" class="empty">
+																	더보기 &gt;
+																</a>
+															</li>
+														</ul>
+
+														<div class="swiper-pagination"></div>
+													</div>
+												</div>
+												<script>
+													slider.active('mapToVisitSwiper')
+												</script>
+											</div>
+										</div>
+									</div>
+									<script>
+										const bridge = document.querySelector(".visitorGroup .bridge");
+										const targetHeight = document.querySelector(".visitorGroup .targetHeight");
+
+										bridge.addEventListener('click', function(event) {
+											this.classList.toggle('active');
+											targetHeight.classList.toggle('active');
+										});
+									</script>
+
+									<div class="boxWrap tourGroup">
+										<a href="#" class="tourLink">
+											<span>세종시티투어 안내 <i class="split20"></i></span>
+										</a>
+									</div>
+
+									<div class="boxWrap eduGroup">
+										<div class="boxArea">
+											<div class="bookBox">
+												<div>
+													<span>세종에서<br />꿈을 탐하다!</span>
+													<p class="cSkyBlue">행복교육<br />
+														체험터</p>
+												</div>
+												<div>
+													<span>알수록<br />알찬~</span>
+													<p class="cBlue">교육자원<br />
+														지도</p>
+												</div>
+												<span class="eduLine"></span>
+												<span class="eduDeco"></span>
+											</div>
+											<div class="button-more">
+												<a href="#" class="btn"><span><b class="blue">세종행복교육지원센터에서</b> 더보기</span></a>
+											</div>
+										</div>
+									</div>
+			
+									<div class="boxWrap mainNews">
+										<div class="boxArea">
+											<h3>세종소식</h3>
+											<div>
+												<div class="flex">
+													<h4>공지사항</h4>
+													<a href="#" class="more">+ 더보기</a>
+												</div>
+												<div id="mainNewsSwiper" class="mainNewsList">
+													<div class="slideContainer">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<a href="#">
+																	<span class="label black">시청</span>
+																	<p>2022년 청년친화강소기업 명단 게시(고용노동부 지정)</p>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure style="position: initial;"><span class="label black">시청</span><img referrerpolicy="no-referrer" src="https://www.sejong.go.kr/thumbnail/R0071/920_BBS_202203170944512030.png" alt="[남세종종합청소년센터] '스튜디오 NSJ' 참가자 모집"></figure>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-pagination"></div>
+												</div>
+												<script>
+													slider.active('mainNewsSwiper');
+												</script>
+											
+												<div class="flex">
+													<h4>세종시블로그</h4>
+													<a href="#" class="more">+ 더보기</a>
+												</div>
+												<div id="mainNewsPieceSwiper" class="mainNewsPiece">
+													<div class="slideContainer">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/temp/temp041.png" alt="">
+																	</figure>
+																	<p class="lineBreake">드디어 개관한 고운동 세종시립 도서관 탐방</p>
+																	<span>세종시 블로그</span>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/temp/temp042.png" alt="">
+																	</figure>
+																	<p class="lineBreake">세종호수공원의 가을</p>
+																	<span>세종시 블로그</span>
+																</a>
+															</li>
+															<li class="swiper-slide">
+																<a href="#">
+																	<figure>
+																		<img src="../../public/image/temp/temp041.png" alt="">
+																	</figure>
+																	<p class="lineBreake">금강수목원 단뭉길 행복나들이</p>
+																	<span>세종시 블로그</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-pagination"></div>
+												</div>
+												<script>
+													slider.active('mainNewsPieceSwiper');
+												</script>
+												<div class="button-more">
+													<a href="#" class="btn"><span><b class="blue">#세종시, #행복도시</b> 뉴스보기</span></a>
+												</div>
+											</div>
+										</div>
+										<span class="roundDeco"></span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="293.277" height="307.141" viewBox="0 0 293.277 307.141" class="roundDeco">
+											<path d="M127.742,49.744C191.255,49.744,230,51.487,230,115A115,115,0,0,1,115,230c-54.748,0-92.546-25.675-104.213-77.2-1.792-7.914-24.568-60.759-24.568-69.523C-13.781,19.761,64.229,49.744,127.742,49.744Z" transform="matrix(0.574, -0.819, 0.819, 0.574, -27.051, 163.929)"/>
+										</svg>
+									</div>
+
+									<div class="boxWrap trafficInformation mt">
+										<div class="boxArea pbNon">
+											<div class="flex">
+												<h3>내버스</h3>
+												<div class="flexReflash">
+													<div class="dispatchTil">
+														<span class="dTime">오후 12:23</span>
+														<button type="button" class="refresh"><i></i>15</button>
+													</div>
+												</div>
+											</div>
+											<div class="body">
+												<!-- 즐겨찾기 한 버스가 없는 경우 -->
+												<a href="#" class="favoriteBus" style="display: none">
+													<p>자주 이용하는 버스의 위치정보를<br /> 빠르게 확인해보세요</p>
+													<i class="split32"></i>
+												</a>
+												<!-- //즐겨찾기 한 버스가 없는 경우 -->
+
+												<!-- 즐겨찾기 한 버스가 있는 경우 -->
+												<div>
+													
+													<ul class="settingList noPadding">
+														<li>
+															<div class="slBody">
+																<div>
+																	<h3>다정동(대성고등학교) 다정동(대성고등학교)</h3>
+																	<span>51016</span>
+																</div>
+																<span>정부세종청사남측방면</span>
+															</div>
+															<ul class="settingListSub">
+																<li>
+																	<div class="subHead">
+																		<div>
+																			<h3 class="name">601</h3>
+																		</div>
+																		<button type="button" class="getOffLayerBtn"><i class="split20"></i>승하차</button>
+																	</div>
+																	<div class="subInfo">
+																		<div>
+																			<b>곧 도착</b>
+																			<span>1 정류장</span>
+																		</div>
+																		<div>
+																			<b>곧 도착</b>
+																			<span>12 정류장</span>
+																		</div>
+																	</div>
+																	<button type="button" class="guidance"><i></i><b>주행</b></button>
+																</li>
+																<li>
+																	<div class="subHead">
+																		<div>
+																			<h3 class="name">601</h3>
+																		</div>
+																		<button type="button" class="getOffLayerBtn active"><i class="split20"></i>승하차</button>
+																	</div>
+																	<div class="subInfo">
+																		<div>
+																			<span>도착예정정보없음</span>
+																		</div>
+																	</div>
+																	<button type="button" class="guidance active"><i></i><b>주행</b></button>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<div class="slBody">
+																<div>
+																	<h3>세종시청.교육청.시의회 세종시청.교육청.시의회</h3>
+																	<span>51-097</span>
+																</div>
+																<span>보람동(호러울마을)방면 보람동(호러울마을)방면</span>
+															</div>
+															<ul class="settingListSub">
+																<li>
+																	<div class="subHead">
+																		<div>
+																			<h3 class="name">601</h3>
+																		</div>
+																		<button type="button" class="getOffLayerBtn"><i class="split20"></i>승하차</button>
+																	</div>
+																	<div class="subInfo">
+																		<div>
+																			<b>곧 도착</b>
+																			<span>1 정류장</span>
+																		</div>
+																		<div>
+																			<b>곧 도착</b>
+																			<span>12 정류장</span>
+																		</div>
+																	</div>
+																	<button type="button" class="guidance"><i></i><b>주행</b></button>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<div class="button-more">
+														<a href="#" class="btn"><span class="blue">전체보기</span></a>
+													</div>
+												</div>
+												<!-- //즐겨찾기 한 버스가 있는 경우 -->
+											</div>
+										</div>
+									</div>
+
+									<div class="boxWrap trafficInformation mt">
+										<div class="boxArea">
+											<h3>주변 교통정보</h3>
+											<div class="body">
+												<ul class="iconLinks space3 mt24">
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img.png" alt="" /></span>
+															<p>어울링</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img2.png" alt="" /></span>
+															<p>일레클</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img3.png" alt="" /></span>
+															<p>전기차충전소</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img4.png" alt="" /></span>
+															<p>주차장</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img5.png" alt="" /></span>
+															<p>주유소</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="round"><img src="../../public/image/info/info_trafficInformation_img6.png" alt="" /></span>
+															<p>교통정보</p>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+			
+									<div class="boxWrap oilPrice">
+										<div class="boxArea">
+											<div class="titleFlex">
+												<h3>오늘의 유가</h3>
+												<select title="유늘의 유가 종류 선택">
+													<option>휘발유</option>
+													<option>경유</option>
+													<option>LPG</option>
+												</select>
+											</div>
+											
+											<div>
+												<div class="average">
+													<div class="title">
+														<b>세종평균</b> <span>(원/리터)</span>
+													</div>
+													<span class="baseDate">2020.02.25 기준</span>
+												</div>
+												<div class="price">
+													<div class="t">
+														<div class="tBox">
+															<b>1717.04</b> <span class="up">▲ 3.66</span><!--<span class="down">▼ 3.66</span><span class="equal">0.0</span>-->
+														</div>
+														<div class="u">
+															<span>최저가 <b class="down">1560</b></span>
+															<span>최고가 <b class="up">15</b></span>
+														</div>
+													</div>
+													<div class="offerer">
+														<span>제공: 오피넷(한국석유공사)</span>
+													</div>
+													<div class="button-more">
+														<a href="#" class="btn"><span><b class="blue">주유소</b> 더보기</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<svg xmlns="http://www.w3.org/2000/svg" width="184.671" height="198.556" viewBox="0 0 184.671 198.556" class="roundDeco">
+											<path d="M90,0c49.706,0,99.658,57.56,99.658,107.266,0,18.391-61.5.04-71.135,14.545-15.952,24.009-10.422,53.174-41.736,53.174C27.081,174.984,0,139.706,0,90A90,90,0,0,1,90,0Z" transform="translate(0 189.398) rotate(-87)"/>
+										</svg>
+									</div>
+			
+									<div class="boxWrap hospital">
+										<div class="boxArea">
+											<h3><span>휴일 야간운영</span> 병원ㆍ약국</h3>
+											<div>
+												<p>운영 시간은 방문 전 병원ㆍ약국에 확인하세요</p>
+												<ul>
+													<li><a href="#" class="hospitalLink"><i class="split24"></i> 병원찾기</a></li>
+													<li><a href="#" class="pharmacyLink"><i class="split24"></i> 약국찾기</a></li>
+												</ul>
+											</div>
+										</div>
+										<span class="roundDeco"></span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="254.578" height="230" viewBox="0 0 254.578 230" class="roundDeco">
+											<path d="M115,0a115,115,0,0,1,0,230C51.487,230-24.578,187.038-24.578,123.525c0-33.344,54.8-30.977,77.684-52.178C73.406,52.539,84.831,0,115,0Z" transform="translate(24.578)"/>
+										</svg>
+									</div>
+			
+									<div class="boxWrap weekClosed">
+										<div class="boxArea">
+											<h3>이번 주 <span class="cRed">4.3 (일) 휴무</span>인 마트</h3>
+											<div class="body">
+												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_emart.png" alt="이마트 세종점" /><span class="text">이마트<span>(세종점)</span></span></a>
+												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_costco.png" alt="코스트코 세종점" /><span class="text">코스트코<span>(세종점)</span></span></a>
+												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_homeplus.png" alt="홈플러스 세종점" /><span class="text">홈플러스<span>(세종점)</span></span></a>
+												<a href="#" target="_blank"><img src="../../public/image/home/main_mart_homeplus.png" alt="홈플러스 조치원점" /><span class="text">홈플러스<span>(조치원점)</span></span></a>
+											</div>
+											<div class="open">
+												<img src="../../public/image/home/main_mart_icon.png" alt="">
+												<span>영업합니다</span>
+											</div>
+										</div>
+									</div>
+			
+									<div class="boxWrap sejong">
+										<div class="boxArea">
+											<h3>어제, 그리고 오늘</h3>
+											<a href="#" class="body">
+												<div><span>10살 세종</span><i></i></div>
+												<span>도시 변화를 위성영상으로 확인하세요</span>
+											</a>
+										</div>
+										<span class="roundDeco"></span>
+									</div>
+			
+									<div class="anchorTop">
+										<a href="#" class="anchorTopBtn"><i class="split24"></i>위로</a>
+									</div>
+								</div>
+								<footer class="footer">
+									<div>
+										<a href="#" class="cBlack">개인정보처리방침</a>
+										<a href="#">저작권정책</a>
+										<a href="#">이메일무단수집거부</a>
+										<a href="#">영상정보처리기기운영방침</a>
+									</div>
+									<p>세종특별자치시 도시통합정보센터</p>
+								</footer>
+							</div>
+							<script>
+								mainWeather.init();
+							</script>
+						</div>
+					</main>
+					<!-- //본문 -->
+
+					<div class="mainMenu">
+						<nav id="mainMenuSwiper" class="mainMenuList">
+							<ul>
+								<li>
+									<a href="javascript:void(0);" class="infoMenu"><span><i class="icon"></i><em class="name">생활<br />정보</em></span><i class="deco"></i></a>
+								</li>
+								<li class="active"> <!-- 활성화 시 active 추가 -->
+									<a href="javascript:void(0);" class="homeMenu"><span><i class="icon"></i><em class="name">오늘 <br />세종엔</em></span><i class="deco"></i></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="mapMenu"><span><i class="icon"></i><em class="name">스마<br />트맵</em></span><i class="deco"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="chatbot second3"> <!-- second3 ~ second10 : 3초 부터 10초 까지 있습니다. -->
+						<button type="button" class="chatbotBtn"><b>세종엔앱에 대한 의견을 듣습니다!</b><i class="chatbotIcon"></i></button>
+					</div>
+			
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
