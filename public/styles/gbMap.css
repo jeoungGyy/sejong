@@ -594,7 +594,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .headFlex .tgUpdate .tgDate { margin-top: 0.3rem; font-family: var(--fontRoboto);}
 
 /* UI-SJN-33-005L */
-.map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between;}
+.map .mapInfoLayer .headFlex { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem;}
 .map .mapInfoLayer .headFlex .note { color: #777;}
 .map .mapInfoLayer .headFlex .note i { margin:  -0.3rem 0.4rem 0 0; vertical-align: middle; background-position: -38rem 0;}
 
