@@ -905,10 +905,9 @@ function openCurrAccordion(e) {
 }
 
 function setScreenSize() {
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	let zh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${zh}px`);
 }
-
 setScreenSize();
 window.addEventListener('resize', () => setScreenSize());
 
