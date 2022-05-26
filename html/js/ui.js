@@ -904,6 +904,15 @@ function openCurrAccordion(e) {
 	}
 }
 
+function setScreenSize() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setScreenSize();
+window.addEventListener('resize', () => setScreenSize());
+
+
 if(typeof _lazy === 'undefined' || _lazy !== true) {
   window.addEventListener('DOMContentLoaded', function () {
     _lazyLoad();
