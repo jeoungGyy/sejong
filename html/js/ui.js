@@ -904,12 +904,12 @@ function openCurrAccordion(e) {
 	}
 }
 
-function setScreenSize() {
-	let zh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${zh}px`);
-}
-setScreenSize();
-window.addEventListener('resize', () => setScreenSize());
+// function setScreenSize() {
+// 	let zh = window.innerHeight * 0.01;
+// 	document.documentElement.style.setProperty('--vh', `${zh}px`);
+// }
+// setScreenSize();
+// window.addEventListener('resize', () => setScreenSize());
 
 
 if(typeof _lazy === 'undefined' || _lazy !== true) {

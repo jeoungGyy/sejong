@@ -62,7 +62,7 @@
 }
 
 /* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) {
+/* @media (hover: none) and (pointer: coarse) {
 	body, html {
 		overflow: hidden; width:100%; height:100%;
 	}
@@ -74,7 +74,7 @@
 		min-height: calc(var(--vh, 1zh) * 100); 
 		-webkit-overflow-scrolling: touch;
 	}
-}
+} */
 
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,code,del,dfn,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file], input[type=tel], input[type=search], input[type=url]  {
