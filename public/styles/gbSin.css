@@ -138,7 +138,7 @@
 .mainArea .weatherBox .weatherLink .toggleBtn { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; background-color: #F3F5F7; border-radius: 50%;}
 .mainArea .weatherBox .weatherLink .toggleBtn i { background-position: -16.8rem -19.2rem;}
 .mainArea .weatherBox .nav_side { margin: 0.8rem 0 0.6rem;}
-.mainArea .weatherBox .accordionTarget { overflow: hidden; height: 0; transition: height 0.3s 0.3s ease-in-out;}
+.mainArea .weatherBox .accordionTarget { overflow: hidden; height: 0; transition: height 0.3s 0.3s linear;}
 .mainArea .weatherBox .accordionTarget img { width: 100%; height: auto;}
 .mainArea .weatherBox .accordionTarget .tabContent { height: 13rem;}
 .mainArea .weatherBox .accordionTarget .tabContent >div { display: none;}
