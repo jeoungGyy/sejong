@@ -1,7 +1,7 @@
 var str = '';
 
 str += '<meta http-equiv="X-UA-Compatible" content="IE=edge" />';
-str += '<meta name="viewport" content="width=device-width, viewport-fit=cover" />';
+str += '<meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />';
 str += '<meta name="theme-color" content="#6684EA" />';
 str += '<meta name="author" content="세종엔" />';
 str += '<title>세종엔</title>';

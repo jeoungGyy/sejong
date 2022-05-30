@@ -636,6 +636,22 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerVote .voteCrowd .vcNotice span { display: block; width:100%;}
 
 
+/* 레이어 - layerExp01 */
+.layerExp01 { margin: -1.6rem -2rem 0;}
+.layerExp01 .mgt { height: 18rem; padding-top: 8rem; background: #5783e6 url(../image/common/layer_exp01_bg.png) no-repeat center top/40rem 18rem;}
+.layerExp01 .mgt .t { display: inline-flex; align-items: center; justify-content: center; padding: 0.3rem 0.4rem; font-size: 2.2rem; font-weight: bold; color: #fff; background-color: #5783e6; border-radius: 0.8rem;}
+.layerExp01 .mgt .s { display: block; margin-top: 1rem; font-size: 2.2rem; font-weight: bold;}
+.layerExp01 .mgb { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
+.layerExp01 .mgb .mgbl img { width: 8.85rem; height: auto;}
+.layerExp01 .mgb .mgbr { margin-left: 0.6rem; text-align: left;}
+.layerExp01 .mgb .mgbrT { font-size: 1.6rem; font-weight: bold; line-height: 2.4rem;}
+.layerExp01 .mgb .mgbrB { margin-top: 1rem; font-size: 1.2rem; color: #666; line-height: 1.8rem;}
+.layerExp01 .mgb .mgbrB .ml { margin-left: 0.8rem;}
+.layerExp01 .noticeCheck { padding-right: 2rem;}
+
+
+
+
 
 
 /* UI-SJN-01-001U */
@@ -655,9 +671,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerNotice a .contexte p .img { float: right; overflow: hidden; width: auto; width: 12rem; height: 12rem; margin-left: 0.4rem; border-radius: 50%;}
 .layerNotice a .more { display: block; margin-top: 1.6rem; font-size: 1.4rem; color: #6684EA;}
 .layerNotice a .full { width: 100%; height: auto;}
-.layerNotice .noticeCheck { display: flex; justify-content: flex-end; align-items: baseline; margin: 1rem 0 -2rem;}
-.layerNotice .noticeCheck .radioSet label { zoom: 0.8;}
-.layerNotice .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
+.noticeCheck { display: flex; justify-content: flex-end; align-items: baseline; margin: 1rem 0 -2rem;}
+.noticeCheck .radioSet label { zoom: 0.8;}
+.noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}

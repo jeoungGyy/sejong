@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ko">
+<html lang="ko" class="mapWrap">
 <head>
 	<meta charset="utf-8" />
 	<script src="../include/head.js"></script>
@@ -17,173 +17,355 @@
 			<!-- 모바일 내용 -->
 			<div id="root">
 				<div class="container">
-					<!-- 공통: 서브 헤더 -->
-					<script src="../include/header_sub.js"></script>
-					<!-- //공통: 서브 헤더 -->
-			
 					<!-- 본문 -->
 					<main class="contents map"> <!-- [생활정보 Class] map-->
-						<h2 class="visible"><span class="headerClone">전체 카테고리</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						<h2 class="visible"><span class="headerClone">지도</span></h2> <!-- [헤더에 넣어줄 제목] -->
 						
 						<div class="mapWrap">
-							<nav class="navCategory">
-								<ul class="accordionBox items-category">
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu corona">
-											<span>코로나19</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-											</ul>
+							<div class="mapArea">
+								<!-- 맵 검색 -->
+								<div class="mapSearch">
+									<div class="mapheader">
+										<button type="button" class="btnHomeLink"><i class="split24">홈으로 이동</i></button>
+										<div class="mapBody">
+											<button type="button" class="btnPlace"><i class="split32">지도 카테고리</i></button>
+											<div class="searchHeader">
+												<input type="text" title="장소, 버스 검색" placeholder="장소, 버스 검색">    
+											</div>
+											<div class="btnHeader">
+												<button type="button" class="icoMic"><i>마이크</i></button>
+											</div>
 										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu traffic">
-											<span>교통</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">버스정류장</a></li>
-												<li><a href="#">주차장</a></li>
-												<li><a href="#">주유소</a></li>
-												<li><a href="#">전기차충전소</a></li>
-												<li><a href="#">자전거대여소</a></li>
-											</ul>
+									</div>
+									<div class="mapSearchBtns">
+										<button type="button" class="favicon"><i class="split24">즐겨찾기</i></button> <!-- 활성화 시 active 클래스 및 파일명 추가 -->
+										<nav id="mapWordListSwiper" class="items-wordList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_24store.png" alt="">코로나19</button></li> <!-- 활성화 시 active 클래스 및 파일명 추가 -->
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_cafe.png" alt="">교통</button></li>
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_culturecenter.png" alt="">건강</button></li>
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_education.png" alt="">소통</button></li>
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_event.png" alt="">편의시설</button></li>
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_light.png" alt="">교통</button></li>
+													<li class="swiper-slide"><button type="button"><img src="../../public/image/common/ico24/@2x/ico_24_issuer.png" alt="">건강</button></li>
+												</ul>
+											</div>
+										</nav>
+										<script>
+											slider.active('mapWordListSwiper')
+										</script>
+									</div>
+								</div>
+								<!-- //맵 검색 -->
+			
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									<ul class="sideBtns">
+										<li><button type="button" class="btnPin"><i>핀</i></button></li>
+									</ul>
+			
+									<!-- 마커 -->
+									<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
+										<div><span></span></div>
+									</div>
+									<!-- //마커 -->
+
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
 										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu restaurant">
-											<span>맛집</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-											</ul>
+									</div>
+			
+								</div>
+								<!-- //기타 아이콘들 -->
+			
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer default">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+										<div class="mapUpDown">
+											<button type="button" class="btnMapUp" onclick="mapInfo.active('infoUp');">정보영역 위로</button>
+											<button type="button" class="btnMapDown" onclick="mapInfo.active('infoDown');">정보영역 아래로</button>
+											<button type="button" class="btnBottom" onclick="mapInfo.active('infoBottom');">정보영역 닫기</button>
 										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu convenience">
-											<span>편의</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-											</ul>
+			
+										<div class="area">
+											<div class="region">
+												<p>세종특별자치시 나성동 세종특별자치시 나성동</p>
+												<div class="val">
+													<p>미세 <span class="lowness">낮음</span></p>
+													<p>초미세 <span class="normal">보통</span><!--<span class="caution">높음</span><span class="highness">매우높음</span>--></p>
+												</div>
+											</div>
+											<div class="weather">
+												<!--
+													* 날씨 아이콘 종류 이름을 지을수 없어 숫자로 넘버링 했습니다.
+													- /public/image/common/weather_sample.png 에 도움이미지 넣었습니다.
+												-->
+												<div class="weatherIcons">
+													<i class="icon weather1"></i>
+													<b class="temperature">-88</b>
+												</div>
+											</div>
 										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu health">
-											<span>건강</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
+									</div>
+			
+									<div class="myArea">
+										<section>
+											<nav id="mapPlaceListSwiper" class="items-placeList">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><button type="button" class="active">음식점</button></li> <!-- 활성화시 active -->
+														<li class="swiper-slide"><button type="button">세종명소</button></li>
+														<li class="swiper-slide"><button type="button">문화행사</button></li>
+														<li class="swiper-slide"><button type="button">블로그</button></li>
+														<li class="swiper-slide"><button type="button">주차장</button></li>
+													</ul>
+												</div>
+											</nav>
+											
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<img src="../../public/image/temp/temp030.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종시 미스터피자 세종시 미스터피자 세종시 미스터피자 세종시 미스터피자 세종시 미스터피자</h4>
+														<p class="st">세종시에서 가장 맛난 피자집</p>
+														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+														<button type="button" class="favorite">즐겨찾기</button>
+													</div>
+												</li>
+												<li>
+													<figure>
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종시 미스터피자</h4>
+														<p class="st">세종시에서 가장 맛난 피자집</p>
+														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
+														<button type="button" class="favorite active">즐겨찾기</button>
+													</div>
+												</li>
+												<!-- 내용이 없을경우 -->
+												<li class="full">
+													<div class="empty">
+														<p>현재 등록된 게시물이 없습니다.</p>
+													</div>
+												</li>
+												<!-- //내용이 없을경우 -->
 											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu education">
-											<span>교육</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
+										</section>
+			
+										<section>
+											<nav id="mapPlaceListSwiper" class="items-placeList">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><button type="button">음식점</button></li> <!-- 활성화시 active -->
+														<li class="swiper-slide"><button type="button" class="active">세종명소</button></li>
+														<li class="swiper-slide"><button type="button">문화행사</button></li>
+														<li class="swiper-slide"><button type="button">블로그</button></li>
+														<li class="swiper-slide"><button type="button">주차장</button></li>
+													</ul>
+												</div>
+											</nav>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<img src="../../public/image/temp/temp031.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>세종호수공원</h4>
+														<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
+														<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
+													</div>
+												</li>
+												<!-- 내용이 없을경우 -->
+												<li class="full">
+													<div class="empty">
+														<p>현재 등록된 게시물이 없습니다.</p>
+													</div>
+												</li>
+												<!-- //내용이 없을경우 -->
 											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu culture">
-											<span>문화</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
+										</section>
+			
+										<section>
+											<nav id="mapPlaceListSwiper" class="items-placeList">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><button type="button">음식점</button></li> <!-- 활성화시 active -->
+														<li class="swiper-slide"><button type="button">세종명소</button></li>
+														<li class="swiper-slide"><button type="button" class="active">문화행사</button></li>
+														<li class="swiper-slide"><button type="button">블로그</button></li>
+														<li class="swiper-slide"><button type="button">주차장</button></li>
+													</ul>
+												</div>
+											</nav>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+														<span class="label wood">공연</span>
+														<img src="../../public/image/temp/temp032.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>국제 핸드메이드 & 리빙페어</h4>
+														<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
+													</div>
+												</li>
+												<li>
+													<figure>
+														<span class="label green">이웃</span>
+														<img src="../../public/image/temp/temp033.png" alt="">
+													</figure>
+													<div class="mapInfoBody">
+														<h4>사랑의 김장 나눔 행사</h4>
+														<p class="st">세종시 블로그에서 소개한 시립도서관</p>
+													</div>
+												</li>
 											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu tourism">
-											<span>관광</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
+										</section>
+			
+										<section>
+											<nav id="mapPlaceListSwiper" class="items-placeList">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><button type="button">음식점</button></li> <!-- 활성화시 active -->
+														<li class="swiper-slide"><button type="button">세종명소</button></li>
+														<li class="swiper-slide"><button type="button">문화행사</button></li>
+														<li class="swiper-slide"><button type="button" class="active">블로그</button></li>
+														<li class="swiper-slide"><button type="button">주차장</button></li>
+													</ul>
+												</div>
+											</nav>
+											<ul class="items-mapInfo">
+												<li>
+													<figure>
+													</figure>
+													<div class="mapInfoBody">
+														<h4>블로그 제목</h4>
+														<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
+													</div>
+												</li>
 											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu safety">
-											<span>안전</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
+										</section>
+			
+										<section>
+											<nav id="mapPlaceListSwiper" class="items-placeList">
+												<div class="slideContainer">
+													<ul class="swiper-wrapper">
+														<li class="swiper-slide"><button type="button">음식점</button></li> <!-- 활성화시 active -->
+														<li class="swiper-slide"><button type="button">세종명소</button></li>
+														<li class="swiper-slide"><button type="button">문화행사</button></li>
+														<li class="swiper-slide"><button type="button">블로그</button></li>
+														<li class="swiper-slide"><button type="button" class="active">주차장</button></li>
+													</ul>
+												</div>
+											</nav>
+											<script>
+												slider.active('mapPlaceListSwiper')
+											</script>
+											<ul class="items-parking">
+												<li>
+													<div class="time active"><i></i></div> <!-- 실시간 주차 정보 제공 주차장 active 추가 -->
+													<div class="head">
+														<h4 class="title">주차장#01</h4>
+														<span class="date">갱신 : 2021-12-30 09:00</span>
+													</div>
+													<div class="subContent">
+														<div class="subText">
+															<b>총 165대</b>
+															<div class="spaceBetween">
+																<span>공영</span>
+																<span>부설</span>
+																<span class="free">무료</span>
+															</div>
+														</div>
+														<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+														<div class="ovflowX">
+															<table>
+																<caption>주차장 : 일반, 경차, 대형, 긴급, 장애인, 여성, 기타 목록</caption>
+																<thead>
+																	<tr>
+																		<th>일반</th>
+																		<th>경차</th>
+																		<th>대형</th>
+																		<th>긴급</th>
+																		<th>장애인</th>
+																		<th>여성</th>
+																		<th>기타</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>165</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="time"><i></i></div>
+													<div class="head">
+														<h4 class="title">주차장#02</h4>
+														<span class="date">갱신 : 2021-12-30 09:00</span>
+													</div>
+													<div class="subContent">
+														<div class="subText">
+															<b>총 165대</b>
+															<div class="spaceBetween">
+																<span>공영</span>
+																<span>부설</span>
+																<span class="free">무료</span>
+															</div>
+														</div>
+														<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+													</div>
+												</li>
+												<li>
+													<div class="time"><i></i></div>
+													<div class="head">
+														<h4 class="title">주차장#03</h4>
+														<span class="date">갱신 : 2021-12-30 09:00</span>
+													</div>
+													<div class="subContent">
+														<div class="subText">
+															<b>총 165대</b>
+															<div class="spaceBetween">
+																<span>공영</span>
+																<span>부설</span>
+																<span class="pay">유료</span>
+															</div>
+														</div>
+														<p class="duration">평일 : 08:00 ~ 20:00 / 공휴일 : 08:00 ~ 24:00</p>
+													</div>
+												</li>
 											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu communication">
-											<span>소통</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu environment">
-											<span>환경</span>
-										</button>
-										<div class="accordionTarget">
-											<ul class="subMenu">
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-												<li><a href="#">메뉴가 들어옵니다</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</nav>
+										</section>
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+								
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
+
+								<script>
+									mapInfo.click();
+								</script>
+							</div>
 						</div>
 					</main>
 					<!-- //본문 -->
@@ -194,15 +376,5 @@
 		</div>
 	</div>
 </div>
-
-<script>
-	function setScreenSize() {
-		let zh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${zh}px`);
-	}
-
-	setScreenSize();
-	window.addEventListener('resize', () => setScreenSize());
-</script>
 </body>
 </html>
