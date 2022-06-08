@@ -513,10 +513,10 @@
 
 .mainArea .mainPromotion { padding-bottom: 2.8rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
-.mainArea .mainPromotion .promotionList .prop { display: flex; align-items: flex-end; justify-content: center;}
-.mainArea .mainPromotion .promotionList .prop .swiper-pagination { position: inherit; width: inherit;}
+.mainArea .mainPromotion .promotionList .prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
+.mainArea .mainPromotion .promotionList .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control {}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 16px; height: 16px; text-indent: -99999px;}
+.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../public/image/common/ico_play_indi.svg) no-repeat center/cover;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../public/image/common/ico_stop.svg) no-repeat center/cover;}
 
