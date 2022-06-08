@@ -73,6 +73,25 @@ const slideOpt = {
 		pagination: {
 			el: ".swiper-pagination",
 		},
+		on: {
+			init: function() {
+				thisSlide = this;
+
+				autoPlayBtn = document.querySelector('.wrap-autoplay-control > button');
+				autoPlayBtn.addEventListener('click', function (e) {
+					autoPlayState = autoPlayBtn.getAttribute('aria-pressed');
+					if (autoPlayState === 'false') {
+						autoPlayBtn.innerText='시작';
+						autoPlayBtn.setAttribute('aria-pressed', 'true');
+						thisSlide.autoplay.stop();
+					} else if (autoPlayState === 'true') {
+						autoPlayBtn.innerText='일시정지';
+						autoPlayBtn.setAttribute('aria-pressed', 'false');
+						thisSlide.autoplay.start();
+					};
+				});
+			},
+		},
 	},
 	/* UI-SJN-03-001U */
 	infoNavSwiper: {

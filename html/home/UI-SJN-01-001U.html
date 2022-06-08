@@ -51,22 +51,22 @@
 										<div id="mainPromotionSwiper" class="promotionList">
 											<div class="slideContainer">
 												<ul class="swiper-wrapper">
-													<li class="swiper-slide">
+													<li class="swiper-slide" tabindex="0">
 														<div class="empty">
 															글자가 들어갑니다.
 														</div>
 													</li>
-													<li class="swiper-slide">
+													<li class="swiper-slide" tabindex="0">
 														<a href="#">
 															<img src="../../public/image/home/main_top_img01.png" alt="소담·반곡동 크린넷 시범서비스">
 														</a>
 													</li>
-													<!-- 
-													<li class="swiper-slide">
+													<li class="swiper-slide" tabindex="0">
 														<a href="#">
 															<img src="../../public/image/home/main_top_img02.png" alt="세종 안심이">
 														</a>
 													</li>
+													<!-- 
 													<li class="swiper-slide">
 														<a href="#">
 															<img src="../../public/image/home/main_top_img03.png" alt="생생버스">
@@ -89,7 +89,12 @@
 													</li> -->
 												</ul>
 											</div>
-											<div class="swiper-pagination"></div>
+											<div class="prop">
+												<div class="swiper-pagination"></div>
+												<div class="wrap-autoplay-control">
+													<button type="button" aria-pressed="false">일시정지</button>
+												</div>
+											</div>
 										</div>
 										<script>
 											slider.active('mainPromotionSwiper');
