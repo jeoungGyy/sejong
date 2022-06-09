@@ -150,6 +150,11 @@
 	.mainArea .weatherBox .accordionTarget .tabContent >div .overflowX::-webkit-scrollbar-thumb { background-color: #ddd; border-radius: 10px;}
 }
 .mainArea .weatherBox .accordionTarget .tabContent >div .items-weatherInfo li { width: auto;}
+
+.mainArea .weatherBox .items-weatherInfo { display: flex; margin-top: 0; align-items: center; text-align: center;}
+.mainArea .weatherBox .items-weatherInfo li { flex: 1; width: 5rem;}
+.mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #777;}
+
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
 .mainArea .weatherBox .anniversary span { flex: 1; font-size: 1.4rem;}
@@ -538,7 +543,7 @@
 .mainMenu { position: fixed; bottom: 0; z-index: 350; width: 100%; height: 7rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 -0.2rem 0.6rem rgba(0 0 0 / 5%);}
 .mainMenu .mainMenuList ul { display: flex;}
 .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
-.mainMenu .mainMenuList ul li a { display: block; width: 100%; text-align: center; cursor: pointer;}
+.mainMenu .mainMenuList ul li a { display: block; width: 100%; height: 100%; text-align: center; cursor: pointer;}
 .mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #777;}
 .mainMenu .mainMenuList ul li a >span .name { display: block; margin-top: 0.5rem;}
 .mainMenu .mainMenuList ul li a br { display: none;}

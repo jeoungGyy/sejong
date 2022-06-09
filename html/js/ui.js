@@ -461,11 +461,14 @@ const mainWeather = {
 	},
 	scroll : () => {
 		const weatherBox = document.querySelector(".weatherBox");
+		const weatherLink = document.querySelector(".weatherLink");
 		
 		if(window.scrollY > mainWeather.weatherBoxHeight) {
 			weatherBox.classList.add('active');
+			weatherLink.setAttribute("title", "");
 		} else {
 			weatherBox.classList.remove('active');
+			weatherLink.setAttribute("title", "도움말 열림");
 		}
 	},
 }
@@ -538,12 +541,20 @@ class Tab {
 	active(idx, aria) {
 		[].forEach.call(this.btn, (_this)=>{
 			_this.classList.remove('active');
+			_this.querySelector('.invisible') && _this.querySelector('.invisible').remove();
+			
 		});
 		this.btn[idx].classList.add('active');
+    const tag = document.createElement('span')
+		tag.classList.add('invisible');
+		const tagText = document.createTextNode("현재메뉴");
+		tag.appendChild(tagText);
+		this.btn[idx].appendChild(tag);
 
 		if(this.tabCont) {
 			if(this.selType) {
 				[].forEach.call(this.tabCont, (_this)=>{
+					console.log(_this)
 					_this.classList.remove('active');
 					if(_this.getAttribute('id') == aria) {
 						_this.classList.add('active');
