@@ -7,6 +7,11 @@
 
 <body>
 <div id="pcRoot">
+	<nav class="skipnav">  
+		<a href="#menuLink">메뉴 바로가기</a>
+		<a href="#root">본문 바로가기</a>
+	</nav>
+	
 	<div class="pcContainer">
 		<!-- 공통: PC 내용 -->
 		<script src="../include/pc_deco.js"></script>
@@ -152,7 +157,7 @@
 											</div>
 										</div>
 										<div class="boxArea">
-											<a href="javascript:void(0);" class="weatherLink" title="메뉴 열기">
+											<a href="javascript:void(0);" class="weatherLink" title="상세정보 열기">
 												<div class="weather">
 													<!--
 														* 날씨 아이콘 종류 이름을 지을수 없어 숫자로 넘버링 했습니다.
@@ -1039,7 +1044,7 @@
 					</main>
 					<!-- //본문 -->
 
-					<div class="mainMenu">
+					<div id="menuLink" class="mainMenu">
 						<nav id="mainMenuSwiper" class="mainMenuList">
 							<ul>
 								<li>

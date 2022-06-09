@@ -233,6 +233,16 @@ const layerPopup = {
 		layer.wrap.classList.add('ready');
 		document.querySelector('html').classList.add('scrollLock');
 
+		layer['wrap'].querySelector('.btnClose').addEventListener("keydown", (e) => {
+			var _keyCode = e.keyCode || e.which;
+			if(_keyCode === 9) {
+				if(!e.shiftKey) {
+					e.preventDefault();
+					layer.wrap.focus();
+				}
+			}
+		});
+
 		setTimeout(()=>{
 			layer.wrap.classList.add('show');
 			layer.wrap.focus();
@@ -246,10 +256,16 @@ const layerPopup = {
 		}
 		layer = layerPopup.obj[id];
 		layer.wrap.classList.remove('show');
+
+
+		
+
 		setTimeout(()=>{
 			if(layer.btn && layer.btn.tagName) layer.btn.focus();
 			layer.wrap.classList.remove('ready');
 			document.querySelector('html').classList.remove('scrollLock');
+
+			console.log(1)
 
 			if(layer.loadState == true) {
 				setTimeout(function(){
@@ -468,7 +484,7 @@ const mainWeather = {
 			weatherLink.setAttribute("title", "");
 		} else {
 			weatherBox.classList.remove('active');
-			weatherLink.setAttribute("title", "도움말 열림");
+			weatherLink.setAttribute("title", "상세정보 열기");
 		}
 	},
 }
