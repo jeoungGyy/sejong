@@ -359,7 +359,7 @@
 .mainArea .playground .listBtns li {  width: calc(50% - 0.4rem);}
 .mainArea .playground .listBtns li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
 .mainArea .playground .listBtns li button.active { font-weight: 700; color: #fff; border-color: #6684EA; background-color: #6684EA;}
-.mainArea .playground .chartBox { position: relative; margin-top: 3.2rem; padding-bottom: 3rem;}
+.mainArea .playground .chartBox { position: relative; margin-top: 3.2rem;}
 .mainArea .playground .chartBox .chart img { width: 100%; height: auto;}
 .mainArea .playground .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 2.4rem;}
 .mainArea .playground .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}

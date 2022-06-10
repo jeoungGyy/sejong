@@ -168,7 +168,7 @@ table td { vertical-align: middle;}
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
 .header.bgGreen h2 { color: #000;}
-.subHeader { display: flex; align-items: center; justify-content: center; position: relative; height: 5.6rem;}
+.subHeader { display: flex; flex-wrap: wrap; align-items: center; align-content: center; position: relative; height: 5.6rem; padding: 0 5rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
@@ -177,8 +177,10 @@ table td { vertical-align: middle;}
 .subHeader .icoClose i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 -9.6rem/32rem 12.8rem;}
 .subHeader .icoNext { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoNext i { display: inline-block; width: 1.725rem; height: 1.325rem; text-indent: -9999rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
-.subHeader h2 { font-size: 1.9rem; font-weight: 700;}
+.subHeader h2 { width: 100%; font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
+.subHeader .offerer { width: 100%;}
+.subHeader .offerer span { font-size: 1.3rem; color: #777;}
 .subHeader .searchHeader { width: 74%;}
 .subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
 .subHeader .searchHeader input::placeholder { color: #ddd;}
@@ -188,6 +190,7 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
+.subHeader.offererAdd h2 { font-size: 1.6rem;}
 
 /* .stickyHeader .header.bgGreen { top: -5.6rem} */
 /* .stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);} */
@@ -2135,6 +2138,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+.items-gasStation li .appImg { position: absolute; right: 2rem; top: 1.4rem;}
+.items-gasStation li .appImg img { width: 5rem; height: 5rem;}
 .items-gasStation li .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; background-color: #CCD2E3;}
 .items-gasStation li .movieBox img { width: 100%; height: 100%; vertical-align: top;}
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
