@@ -179,7 +179,7 @@ table td { vertical-align: middle;}
 .subHeader .icoNext i { display: inline-block; width: 1.725rem; height: 1.325rem; text-indent: -9999rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
 .subHeader h2 { width: 100%; font-size: 1.9rem; font-weight: 700;}
 .subHeader h2 .number { color: #6684EA;}
-.subHeader .offerer { width: 100%;}
+.subHeader .offerer { display: none; width: 100%;}
 .subHeader .offerer span { font-size: 1.3rem; color: #777;}
 .subHeader .searchHeader { width: 74%;}
 .subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
@@ -191,6 +191,7 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
 .subHeader.offererAdd h2 { font-size: 1.6rem;}
+.subHeader.offererAdd .offerer { display: block;}
 
 /* .stickyHeader .header.bgGreen { top: -5.6rem} */
 /* .stickyHeader .headerWrap { box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.05);} */
