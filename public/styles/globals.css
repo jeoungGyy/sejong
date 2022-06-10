@@ -95,6 +95,8 @@ body {
 	letter-spacing: -0.04em;
 }
 
+a { cursor: pointer;}
+/* #root a:hover { text-decoration: underline;} */
 a:link,
 a:visited { text-decoration:none;}
 select { width: 100%; height: 4.8rem; padding:0 3.5rem 0 2rem; font-size:100%; letter-spacing: -0.04em; vertical-align:middle; border:1px solid #ddd; background: #fff url(../image/common/ico_select.png) no-repeat right 1.2rem top 1.2rem/2rem 6rem; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
@@ -118,6 +120,7 @@ input[type=url]::placeholder,
 input[type=tel]::placeholder,
 textarea::placeholder { font-weight: 400; letter-spacing: -0.04em;}
 button { border:0 none; padding:0; margin:0; font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Noto Sans KR", "Microsoft NeoGothic ", sans-serif; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+/* #root button:hover { text-decoration: underline;} */
 button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
 textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.4rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
@@ -685,10 +688,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
-.layerSetting .items-label .tootipBtn i { margin: -0.2rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
+.layerSetting .items-label .tootipBtn i { margin: -0.5rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
 .layerSetting .items-label .labelForm { display: block;}
-.layerSetting .settingMenuBody { overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
-.layerSetting .items-label input:checked +label +button + .settingMenuBody { height: inherit; opacity: 1;}
+/* .layerSetting .settingMenuBody { overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
+.layerSetting .items-label input:checked +label +button + .settingMenuBody { height: inherit; opacity: 1;} */
+.layerSetting .settingMenuBody { display: none; overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
+.layerSetting .items-label input:checked +label +button + .settingMenuBody { display: block; height: inherit; opacity: 1;}
 .layerSetting .settingMenu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 1.6rem;}
 .layerSetting .settingMenu li button { display: flex; align-items: center; position: relative; width: 100%; min-height: 4.8rem; padding: 0 2rem 0 1.2rem; border: 1px solid #EAEDF2;}
 .layerSetting .settingMenu li button::after { content: ''; position: absolute; right: 0.4rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/split_40.png) no-repeat 0 -8rem/40rem 16rem;}

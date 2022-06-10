@@ -43,7 +43,7 @@
 .mainArea .iconLinks.mt32 { margin-top: 3.2rem;}
 .mainArea .boxLinks { display: grid;}
 .mainArea .boxLinks li { display: flex; align-items: center; justify-content: center; margin: -0.1rem 0 0 -0.1rem; border: 1px solid #EAEDF2;}
-.mainArea .boxLinks li a { display: block; padding: 1.6rem 0.4rem; font-size: 1.3rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .boxLinks li a { display: block; width: 100%; padding: 1.6rem 0.4rem; font-size: 1.3rem; color: #333; text-align: center; letter-spacing: -0.1em;}
 .mainArea .boxLinks li a .img24 { width: 7.2rem; height: 2.6rem;}
 .mainArea .boxLinks.space2 { grid-template-columns: repeat(2, 1fr);}
 .mainArea .boxLinks.space3 { grid-template-columns: repeat(3, 1fr);}
@@ -219,7 +219,7 @@
 .mainArea .sejongAbout .body .other .excursion i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -36rem -4rem;}
 .mainArea .sejongAbout .body .btns { display: flex; align-items: center; justify-content: space-between; margin: 2rem -0.4rem 0;}
 .mainArea .sejongAbout .body .btns a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin: 0 0.4rem; color: #111; border: 1px solid #EAEDF2; background-color: #F3F5F7; border-radius: 0.8rem;}
-.mainArea .sejongAbout .body .btns a i { margin: -0.3rem 0 0 0.4rem; vertical-align: middle; background-position: -36rem -6rem; opacity: 0.8;}
+.mainArea .sejongAbout .body .btns a i { margin: 0.1rem 0 0 0.4rem; vertical-align: middle; background-position: -36rem -6rem; opacity: 0.8;}
 
 .mainArea .usefulService { margin-top: 2.7rem; padding-bottom: 8rem;}
 .mainArea .usefulService .roundDeco { display: block; position: absolute; right: -6.5rem; top: -12.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #6684EA; border-radius: 50%;}

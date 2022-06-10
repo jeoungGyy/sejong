@@ -233,15 +233,17 @@ const layerPopup = {
 		layer.wrap.classList.add('ready');
 		document.querySelector('html').classList.add('scrollLock');
 
-		layer['wrap'].querySelector('.btnClose').addEventListener("keydown", (e) => {
-			var _keyCode = e.keyCode || e.which;
-			if(_keyCode === 9) {
-				if(!e.shiftKey) {
-					e.preventDefault();
-					layer.wrap.focus();
+		if(layer['wrap'].querySelector('.btnClose')) {
+			layer['wrap'].querySelector('.btnClose').addEventListener("keydown", (e) => {
+				var _keyCode = e.keyCode || e.which;
+				if(_keyCode === 9) {
+					if(!e.shiftKey) {
+						e.preventDefault();
+						layer.wrap.focus();
+					}
 				}
-			}
-		});
+			});
+		}
 
 		setTimeout(()=>{
 			layer.wrap.classList.add('show');
@@ -257,15 +259,10 @@ const layerPopup = {
 		layer = layerPopup.obj[id];
 		layer.wrap.classList.remove('show');
 
-
-		
-
 		setTimeout(()=>{
 			if(layer.btn && layer.btn.tagName) layer.btn.focus();
 			layer.wrap.classList.remove('ready');
 			document.querySelector('html').classList.remove('scrollLock');
-
-			console.log(1)
 
 			if(layer.loadState == true) {
 				setTimeout(function(){
@@ -317,14 +314,16 @@ const tooltip = {
 		let left = _this.left + _this.width;
 
 		_thisTarget.classList.add('active');
-		
-		// event.currentTarget.setAttribute("title", "도움말 열림");
+
+		event.currentTarget.setAttribute("title", "도움말 열림");
 		if(tooltip.showEl) tooltip.showEl.classList.remove('show');
 		tooltip.showEl = document.querySelector('#'+id);
-
+		
 		if(tooltip.showEl) {
 			tooltip.showEl.classList.add('show');
-			let elWidth = tooltip.showEl.getBoundingClientRect().width;
+
+			
+			// let elWidth = tooltip.showEl.getBoundingClientRect().width;
 
 			switch (dir) {
 				case 'right' :
@@ -342,6 +341,8 @@ const tooltip = {
 					tooltip.showEl.style.cssText = `top: ${top}px;`
 					break;
 			}
+
+			tooltip.showEl.focus();
 			
 			tooltip.showEl.addEventListener('click',()=>{
 				event.stopPropagation();
@@ -349,27 +350,41 @@ const tooltip = {
 		
 			let btnClose = tooltip.showEl.querySelector('.btnClose');
 			btnClose.addEventListener('click',()=>{
-				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				closeStep();
 			}, {once : true});
+			btnClose.addEventListener("keydown", (e) => {
+				var _keyCode = e.keyCode || e.which;
+				if(_keyCode === 9) {
+					if(!e.shiftKey) {
+						e.preventDefault();
+						tooltip.showEl.focus();
+					}
+				}
+			});
+		}
+		function closeStep() {
+			if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				_thisTarget.focus();
+				_thisTarget.setAttribute("title", "도움말 닫힘");
 		}
 		if(id == 'layerTooltip') {
 			window.addEventListener('resize', ()=>{
-				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				closeStep();
 			});
 			window.addEventListener('scroll', ()=>{
-				if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+				closeStep();
 			});
 			tooltip.winClose = true;
 		} else {
 			if(tooltip.winClose === false) {
 				window.addEventListener('click', (e)=>{
-					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+					closeStep();
 				});
 				window.addEventListener('resize', ()=>{
-					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+					closeStep();
 				});
 				window.addEventListener('scroll', ()=>{
-					if(tooltip.showEl) tooltip.showEl.classList.remove('show');
+					closeStep();
 				});
 				tooltip.winClose = true;
 			}

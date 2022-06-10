@@ -36,7 +36,7 @@
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.6rem;}
 .recentService .items-wordList { margin: 1.2rem -2rem 0;}
 .recentService .items-wordList .slideContainer { padding: 0 2rem 1rem;}
-.recentService .homeNav { position: relative; z-index: 2; margin: 1rem -2rem 2rem; padding: 0 2rem;}
+.recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 1rem 2rem 2rem;}
 .recentService .homeNav ul li { width: auto; min-width: 9.2rem;}
 .recentService .homeNav ul li a { display: block; position: relative; color: #111; text-align: center;}
 .recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2.4rem; height: 2.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
@@ -520,7 +520,6 @@
 .mainArea .mainPromotion .boxArea { padding: 0;}
 .mainArea .mainPromotion .promotionList .prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
 .mainArea .mainPromotion .promotionList .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control {}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../public/image/common/ico_play_indi.svg) no-repeat center/cover;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../public/image/common/ico_stop.svg) no-repeat center/cover;}
@@ -604,7 +603,6 @@
 .home .popularHeader .popularBody .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .home .popularHeader .popularBody .favorite.active i { background-position-y: -2.4rem;}
 .home .popularHeader .wordCloud { padding: 2rem 0; background-color: #F8F8F8;}
-.home .popularHeader.active .popularBody {}
 .home .popularHeader.active .popularBody { align-items: baseline; padding: 1rem 2rem; border-bottom: 1px solid #F2F2F2;}
 .home .popularHeader.active .popularBody .tooggleWord i { transform: rotate(-180deg);}
 .home .popularHeader.active .swiper-wrapper { transform: none !important}
