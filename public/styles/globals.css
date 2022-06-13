@@ -361,8 +361,8 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute; left: 0; top: 0; width: 5rem; height: 2.8rem; margin-top: -0.5rem;}
-.switch input:focus { outline: 2px solid #000 !important;}
+.switch input { position: absolute;}
+.switch input:focus + label::before { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
 .switch label::after { content: ""; position: absolute; display: block; left: 0.6rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
@@ -372,8 +372,8 @@ table td { vertical-align: middle;}
 /* 라디오박스 */
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; width: 1.6rem; height: 1.6rem; margin: 0.3rem 0 0 0.3rem;}
-.radioSet input:focus { outline: 2px solid #000 !important;}
+.radioSet input { position: absolute; margin: 0.3rem 0 0 0.3rem;}
+.radioSet input:focus + label::after { outline: 2px solid #000 !important;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
 .radioSet label + input { margin-left: 0.9rem;}
 .radioSet label + input + label { margin-left: 0.6rem;}
@@ -1652,7 +1652,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-form >li .fileForm .pictureList li input { position: absolute; opacity: 0;}
+.items-form >li .fileForm .pictureList li input { position: absolute; margin: 0.5rem 0 0 0.5rem;}
+.items-form >li .fileForm .pictureList li input:focus + label::after { outline: 2px solid #000 !important;}
 .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #6684EA;}
 .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
 .items-form >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
