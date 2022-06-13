@@ -361,7 +361,8 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute; margin: 0.6rem 0 0 1.6rem;}
+.switch input { position: absolute; left: 0; top: 0; width: 5rem; height: 2.8rem; margin-top: -0.5rem;}
+.switch input:focus { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
 .switch label::after { content: ""; position: absolute; display: block; left: 0.6rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
@@ -371,10 +372,10 @@ table td { vertical-align: middle;}
 /* 라디오박스 */
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; width: 1.6rem; height: 1.6rem; margin: 0.4rem 0 0 0.4rem;}
+.radioSet input { position: absolute; width: 1.6rem; height: 1.6rem; margin: 0.3rem 0 0 0.3rem;}
 .radioSet input:focus { outline: 2px solid #000 !important;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
-.radioSet label + input { margin-left: 1rem;}
+.radioSet label + input { margin-left: 0.9rem;}
 .radioSet label + input + label { margin-left: 0.6rem;}
 
 /* 툴팁 */
