@@ -125,6 +125,12 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .map .mapInfoLayer .btnMapInfo { display: block;}
 .map .mapInfoLayer .mapIHead .mapUpDown { display: none;}
 /* .boxTooltipLayer { left: 0; width: 100%; transform: inherit;} */
+
+.chatbot { display: inherit; justify-content: inherit; right: 2rem; width: inherit; padding-right: 0;}
+
+
+
+
 }
 @media screen and (max-width: 1190px) {
 .pcContainer { width: 100%;}
