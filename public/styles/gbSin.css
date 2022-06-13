@@ -159,13 +159,19 @@
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
 .mainArea .weatherBox .anniversary span { flex: 1; font-size: 1.4rem;}
 .mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
-.mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center;}
+.mainArea .weatherBox .particulates .body >a,
+.mainArea .weatherBox .particulates .body >div { flex: 1; text-align: center; color: #333;}
+.mainArea .weatherBox .particulates .body >a ~ a,
 .mainArea .weatherBox .particulates .body >div ~ div { position: relative;}
+.mainArea .weatherBox .particulates .body >a ~ a::after,
 .mainArea .weatherBox .particulates .body >div ~ div::after { content: ''; position: absolute; left: 0; top: 50%; width: 0.1rem; height: 8rem; margin-top: -4rem; background-color: #EAEDF2;}
-/* .mainArea .weatherBox .particulates .body >div >span { display: block; height: 2.2rem; font-size: 1.4rem;} */
+.mainArea .weatherBox .particulates .body >a h4,
 .mainArea .weatherBox .particulates .body >div h4 { font-size: 1.6rem;}
+.mainArea .weatherBox .particulates .body >a .number,
 .mainArea .weatherBox .particulates .body >div .number { margin: 0.7rem 0 0.5rem;}
+.mainArea .weatherBox .particulates .body >a .number .pm10,
 .mainArea .weatherBox .particulates .body >div .number .pm10 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -19.2rem;}
+.mainArea .weatherBox .particulates .body >a .number .pm25,
 .mainArea .weatherBox .particulates .body >div .number .pm25 { margin: -0.5rem 0.4rem 0 0; vertical-align: middle; background-position: -21.6rem -21.6rem;}
 .mainArea .weatherBox .particulates .round { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0.8rem auto 0; padding: 0 1rem; color: #fff; border-radius: 50%;}
 .mainArea .weatherBox .particulates .round.lowness { background-color: #32A2FF;}
