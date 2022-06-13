@@ -371,10 +371,10 @@ table td { vertical-align: middle;}
 /* 라디오박스 */
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; width: 2.2rem; height: 2.2rem; margin: 0;}
+.radioSet input { position: absolute; width: 1.6rem; height: 1.6rem; margin: 0.4rem 0 0 0.4rem;}
 .radioSet input:focus { outline: 2px solid #000 !important;}
 .radioSet input:checked + label::after { background-color: #6684EA;}
-.radioSet label + input { margin-left: 0.8rem;}
+.radioSet label + input { margin-left: 1rem;}
 .radioSet label + input + label { margin-left: 0.6rem;}
 
 /* 툴팁 */
