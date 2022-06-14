@@ -596,6 +596,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerSelect { overflow-y: auto; max-height: 37rem;}
 .layerSelect .items-label li { padding: 0 2rem;}
 .layerSelect .items-label li ~ li { border-top: 1px solid #EAEAEA;}
+.layerSelect.layerSelectBtn { display: flex; align-items: center; width: 100%;}
 
 /* 우편번호 찾기 닫기 */
 .postCode_btn { display: block; position: absolute; right: 1rem; top: 1.5rem;width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
