@@ -674,7 +674,7 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busRouteList li .favorite.active { background-position-y: -2.4rem;}
 
 /* UI-SJN-40-004L */
-.map .busInfoFooter { display: flex; align-items: center; justify-content: space-between; position: absolute; left: 1rem; right: 1rem; bottom: calc(3.2rem + env(safe-area-inset-bottom)); z-index: 100; height: 12rem; padding: 0 1.6rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem;}
+.map .busInfoFooter { display: flex; align-items: center; justify-content: space-between; position: absolute; left: 1rem; right: 1rem; bottom: calc(env(safe-area-inset-bottom) + 3.2rem); z-index: 100; padding: 1.4rem 1.6rem; background-color: #fff; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); border-radius: 0.8rem; transition: bottom .3s;}
 .map .busInfoFooter .bifBody .title { display: flex; align-items: center; height: 2.4rem;}
 .map .busInfoFooter .bifBody .title span { color: #fff;}
 .map .busInfoFooter .bifBody .title .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
@@ -692,6 +692,8 @@ span.M { background-color: #FD2020;}
 .map .busInfoFooter .guidance { display: flex; align-items: center; flex-direction: column; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #FFD800; box-shadow: 0 1rem 2rem rgba(102 132 234 / 50%); border-radius: 50%;}
 .map .busInfoFooter .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/ico_arrow_24_bk.png) no-repeat 0/2.4rem;}
 .map .busInfoFooter .guidance b { display: block; font-size: 1.2rem; color: #111;}
+.map .busInfoFooter.up { bottom: calc(env(safe-area-inset-bottom) + 9rem);}
+
 
 /* UI-SJN-40-005L */
 .map .mapInfoLayer .busGuidePopup { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 7.6rem; padding: 0 2rem; background-color: #EAEDF2;}
