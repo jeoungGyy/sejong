@@ -272,6 +272,9 @@
 .info .newStoreBody ul li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
 .info .newStoreBody ul li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
 .info .newStoreBody ul li a.text p { line-height: 2.2rem;}
+.info .newStoreBody ul li a figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
+.info .newStoreBody ul li a figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.info .newStoreBody ul li a figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 
 /* 홍보/행사 UI-SJN-04-007U */
 .info .promote { padding: 1.6rem 2rem 6rem;}

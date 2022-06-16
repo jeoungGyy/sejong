@@ -1819,6 +1819,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-newStore li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
 .items-newStore li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
 .items-newStore li a.text p { line-height: 2.2rem;}
+.items-newStore li a figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
+.items-newStore li a figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.items-newStore li a figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .items-newStore li.full { width: 100%;}
 .items-newStore.inline { flex-wrap: nowrap;}
 .items-newStore.inline,
