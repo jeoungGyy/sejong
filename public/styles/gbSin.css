@@ -226,16 +226,18 @@
 .mainArea .tourGroup .tourLink i { margin: -0.3rem 0 0 0.4rem; vertical-align: middle; background-position: -24rem -4rem;}
 
 .mainArea .eduGroup { z-index: 2; margin-top: 2.7rem;}
-.mainArea .eduGroup .bookBox { display: flex; position: relative; height: 16.8rem; margin: 2.2rem 0 11rem; padding: 3.6rem 2.4rem 0; border: 1px solid #EAEDF2;}
+.mainArea .eduGroup .bookBox { display: flex; position: relative; margin: 0.5rem 0 3rem; padding: 2.4rem 2.4rem 0; border: 1px solid #EAEDF2;}
 .mainArea .eduGroup .bookBox::before { content: ''; display: block; position: absolute; left: 50%; top: -0.1rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book.png) no-repeat center/cover;}
 .mainArea .eduGroup .bookBox::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.5rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
-.mainArea .eduGroup .bookBox >div { width: 50%;}
-.mainArea .eduGroup .bookBox >div + div { padding-left: 1.2rem;}
+.mainArea .eduGroup .bookBox a { display: block; width: 50%; padding-bottom: 2.6rem; color: #333;}
+.mainArea .eduGroup .bookBox .bbLeft p { padding-bottom: 0.8rem; background: url(../image/home/ico_bookBox_left.svg) no-repeat left bottom/7.3rem 1.5rem;}
+.mainArea .eduGroup .bookBox .bbRight { padding-left: 1.2rem;}
+.mainArea .eduGroup .bookBox .bbRight p { padding-bottom: 0.8rem; background: url(../image/home/ico_bookBox_right.svg) no-repeat left bottom/7.3rem 1.5rem;}
 .mainArea .eduGroup .bookBox span { font-size: 1.4rem;}
 .mainArea .eduGroup .bookBox p { margin-top: 0.4rem; font-size: 1.8rem; font-weight: 700;}
 .mainArea .eduGroup .bookBox .eduLine { position: absolute; left: 0; bottom: -0.9rem; width: 100%; height: 0.1rem; background-color: #EAEDF2;}
 .mainArea .eduGroup .bookBox .eduLine::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.4rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
-.mainArea .eduGroup .bookBox .eduDeco { position: absolute; right: 0; bottom: -8.3rem; width: 10.4rem; height: 12.9rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
+.mainArea .eduGroup .bookBox .eduDeco { position: absolute; right: 0; bottom: -3.7rem; width: 6.6rem; height: 8.1rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
 .mainArea .eduGroup .button-more { margin-top: 0.4rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
 .mainArea .eduGroup .button-more .btn { color: #333;}
 
