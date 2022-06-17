@@ -237,7 +237,7 @@
 .mainArea .eduGroup .bookBox p { margin-top: 0.4rem; font-size: 1.8rem; font-weight: 700;}
 .mainArea .eduGroup .bookBox .eduLine { position: absolute; left: 0; bottom: -0.9rem; width: 100%; height: 0.1rem; background-color: #EAEDF2;}
 .mainArea .eduGroup .bookBox .eduLine::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.4rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
-.mainArea .eduGroup .bookBox .eduDeco { position: absolute; right: 0; bottom: -3.7rem; width: 6.6rem; height: 8.1rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
+.mainArea .eduGroup .bookBox .eduDeco { position: absolute; left: 50%; bottom: -3.7rem; width: 6.6rem; height: 8.1rem; margin-left: 7rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
 .mainArea .eduGroup .button-more { margin-top: 0.4rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
 .mainArea .eduGroup .button-more .btn { color: #333;}
 
