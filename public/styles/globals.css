@@ -2157,6 +2157,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .appImg img { width: 5rem; height: 5rem;}
 .items-gasStation li .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; background-color: #CCD2E3;}
 .items-gasStation li .movieBox img { width: 100%; height: 100%; vertical-align: top;}
+.items-gasStation li .movieBox .moviePlay { position: absolute; left: 50%; top: 50%; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/map/ico_movie.svg) no-repeat center/cover; transform: translate(-50%, -50%);}
+
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation li button.view.active { display: flex;}

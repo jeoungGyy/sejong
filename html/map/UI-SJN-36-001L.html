@@ -85,20 +85,20 @@
 											<div class="items-placeList">
 												<ul class="inline">
 													<li>
-														<select title="읍면동 선택" style="width: 9rem;"> <!-- 활성화 시 active 추가 -->
+														<select title="읍면동 선택" style="width: 8rem;"> <!-- 활성화 시 active 추가 -->
 															<option>읍면동</option>
 														</select>
 													</li>
 													<li>
-														<select title="세종형 학력 선택" style="width: 14rem;">
+														<select title="세종형 학력 선택" style="width: 9.5rem;">
 															<option>지성ㆍ심성ㆍ시민성</option>
 														</select>
 													</li>
 												</ul>
 											</div>
 											<div class="BtnT">
-												<button type="button" class="note" onclick="tooltip.show('tooltip1', 'bottom');"><i class="split20">도움말</i></button>
 												<button type="button" class="fostSmall" onclick="layerPopup.open('layerLifeStory');"><span class="cBlue">생활권이야기</span></button>
+												<button type="button" class="note" onclick="tooltip.show('tooltip1', 'bottom');">(범례)</button>
 											</div>
 										</div>
 									</div>
@@ -124,7 +124,8 @@
 														<span class="txtBox">60~120분</span>
 													</div>
 													<div class="movieBox">
-														썸네일 72*72
+														<button type="button" class="moviePlay">동영상 플레이</button>
+														<img src="../../public/image/temp/temp000.png" alt="테스트용 이미지">
 													</div>
 													<button type="button" class="view active" onclick="layerPopup.open('layerEduResource');">상세보기 &gt;</button> <!-- 상세보기 버튼 노출 시 active 추가 -->
 												</li>

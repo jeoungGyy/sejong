@@ -615,8 +615,9 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .fineDustList li .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 
 /* UI-SJN-36-001L */
-.map .mapInfoLayer .headFlex .BtnT { float: left; align-items: center;}
-.map .mapInfoLayer .headFlex .fostSmall { margin-left: -0.4rem;}
+.map .mapInfoLayer .headFlex .BtnT { display: flex; align-items: center;}
+.map .mapInfoLayer .headFlex .BtnT .note { margin-left: 0.6rem; font-size: 1.4rem; color: #A9B0C1;}
+.map .mapInfoLayer .headFlex .fostSmall { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1rem; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 .map .mapInfoLayer .headFlex .fostSmall span { font-size: 1.4rem;}
 
 /* UI-SJN-36-004L */
