@@ -104,17 +104,15 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						layerPopup.open('UI-SJN-70-002L');
-					</script>
+					
 
 					<div id="layerTimeChoice" class="layerPopup">
 						<div class="layerWrap typeBot">
 							<h4>시간 선택</h4>
 							<div class="layerTime">
 								<div class="radioSet">
-									<input type="radio" id="list0" checked="checked"><label for="list0">영업일</label>
-									<input type="radio" id="list1"><label for="list1">휴무일</label>
+									<input type="radio" id="list0" name="radioCheck"><label for="list0">영업일</label>
+									<input type="radio" id="list1" name="radioCheck"><label for="list1">휴무일</label>
 								</div>
 								<div class="timeHead">
 									<div class="title">
@@ -178,6 +176,10 @@
 							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
 						</div>
 					</div>
+
+					<script>
+						layerPopup.open('layerTimeChoice');
+					</script>
 					<!-- //레이어 -->
 				</div>
 			</div>
