@@ -20,59 +20,162 @@
 			
 					<!-- 레이어 -->
 					<div id="UI-SJN-98-001L" class="layerPopup">
-						<div class="layerWrap full">
+						<div class="layerWrap full alramLayer">
 							<div class="headerBtn">
 								<button type="button" class="btnCloseArrow" onclick="layerPopup.close();"><i>창닫기</i></button>
 								<h2>알림</h2>
-								<button type="button" class="btnAllRemove">전체삭제</button>
 							</div>
 							<div class="fullFlex">
-								<ul class="accordionBox items-alram">
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu active"> <!-- 읽은 알림에 active 넣어주세요. -->
-											<span class="icon"><i class="split24"></i></span><b>개인알림</b><span class="alramDate">2022-03-30</span>
-										</button>
-										<div class="accordionTarget">
-											<p>
-												세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
-												한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
-											</p>
+								<div class="boxTab">
+									<ul class="btnTab">
+										<li class="itemBtn"><button class="active" type="button">안내(PUSH)</button></li>
+										<li class="itemBtn"><button type="button">공지</button></li>
+									</ul>
+								
+
+									<div class="fullFlex">
+										<div class="tabContent">
+											<!-- 안내(PUSH) -->
+											<div class="active">
+												<div class="flexDelBtn">
+													<button type="button" class="cBlue"><b>전체삭제</b></button>
+												</div>
+												<ul class="items-alram">
+													<li>
+														<div class="empty">
+															<p>새로운 알림 내역이 없습니다.</p>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>
+																세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
+																한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
+															</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>첫번째</p>
+															<p>두번째</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>
+																사용자에게 전송된 알림 문구를 확인 할 수 있습니다. PUSH 알림을 확인하는 용도라고 할 수 있습니다.
+															</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>
+																세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
+																한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
+															</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>첫번째</p>
+															<p>두번째</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+													<li>
+														<span class="icon"><i class="split24"></i></span>
+														<div class="paragraphGroup">
+															<p>
+																사용자에게 전송된 알림 문구를 확인 할 수 있습니다. PUSH 알림을 확인하는 용도라고 할 수 있습니다.
+															</p>
+														</div>
+														<div class="subData">
+															<span>2022-03-30</span>
+															<span>hh:mm</span>
+															<span class="cBlue">안심이</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //안내(PUSH) -->
+
+											<!-- 공지 -->
+											<div>
+												<div class="header-formSearch">
+													<select title="검색 조건선택">
+														<option>전체</option>
+													</select>
+													<div class="send">
+														<input type="text" placeholder="검색어를 입력하세요">
+														<button type="button" class="btnSend"><i>검색</i></button>
+													</div>
+												</div>
+												<div class="newsBody">
+													<ul class="items-news">
+														<li>
+															<div class="empty">
+																<p>등록된 게시물이 없습니다.</p>
+															</div>
+														</li>
+														<li>
+															<a href="UI-SJN-11-002U.html">
+																<h4 class="lineBreake">2022년도 진흥원 평생교육 보조금 지원사업 통합설명회 개최 안내</h4>
+																<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+															</a>
+														</li>
+														<li>
+															<a href="UI-SJN-11-002U.html">
+																<h4 class="lineBreake">언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면 언론보도 제목 두 줄로 입력, 제목이 길어 영역을 벗나면</h4>
+																<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+															</a>
+														</li>
+														<li>
+															<a href="UI-SJN-11-002U.html">
+																<h4 class="lineBreake">공지사항, 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면 뉴스 제목을 두 줄 처리로 보여주고, 제목이 길어 영역을 벗나면</h4>
+																<div class="headerSub"><span>2021-12-22</span><span>세종시 공지</span></div>
+															</a>
+														</li>
+													</ul>
+							
+													<div class="button-moreNews">
+														<button type="button" class="btn"><span>더보기</span></button>
+													</div>
+												</div>
+											</div>
+											<!-- //공지 -->
 										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu active"> <!-- 읽은 알림에 active 넣어주세요. -->
-											<span class="icon"><i class="split24"></i></span><b>개인알림</b><span class="alramDate">2022-03-30</span>
-										</button>
-										<div class="accordionTarget">
-											<p>
-												세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
-												한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
-											</p>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu">
-											<span class="icon"><i class="split24"></i></span><b>개인알림</b><span class="alramDate">2022-03-30</span>
-										</button>
-										<div class="accordionTarget">
-											<p>
-												세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
-												한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
-											</p>
-										</div>
-									</li>
-									<li class="accordionContainer">
-										<button type="button" class="accordionMenu">
-											<span class="icon"><i class="split24"></i></span><b>개인알림</b><span class="alramDate">2022-03-30</span>
-										</button>
-										<div class="accordionTarget">
-											<p>
-												세종엔은 세종특별자치시청 홈페이지와 통합회원제로 운영됩니다. 
-												한 번 인증으로 세종특별자치시의 다양한 홈페이지 서비스를 이용하실 수 있습니다.
-											</p>
-										</div>
-									</li>
-								</ul>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>

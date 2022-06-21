@@ -743,7 +743,6 @@ span.M { background-color: #FD2020;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc { margin-top: 0.4rem;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .map .mapInfoLayer .busGuideArea2 ul li .etc span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
-.map .mapInfoLayer .busGuideArea2.style {}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span { display: block; padding-left: 3rem; font-size: 1.4rem; color: #777;}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span { margin-left: 0;}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span::after { display: none;}
