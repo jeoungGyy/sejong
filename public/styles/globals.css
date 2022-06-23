@@ -2386,12 +2386,13 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 
-.items-alram >li { padding: 2.4rem 0; border-bottom: 1px solid #F4F5F7;}
-.items-alram >li .icon { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #6684EA; border-radius: 50%;}
-.items-alram >li .icon i { background-position: -12rem -14.4rem;}
-.items-alram >li .icon { background-color: #6684EA;}
-.items-alram >li .paragraphGroup p { margin-top: 0.8rem;}
-.items-alram >li .subData { margin-top: 0.7rem; font-size: 1.3rem;}
+.items-alram >li a { display: block; padding: 2.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
+.items-alram >li a .icon { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #CCD2E3; border-radius: 50%;}
+.items-alram >li a .icon i { background-position: -12rem -14.4rem;}
+.items-alram >li a.active .icon { background-color: #6684EA;}
+.items-alram >li a .paragraphGroup p { margin-top: 0.8rem;}
+.items-alram >li a .subData { display: flex; align-items: center; margin-top: 0.7rem; font-size: 1.3rem;}
+.items-alram >li a .subData span ~ span { margin-left: 0.4rem;}
 .items-alram >li .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .items-alram >li .empty p { position: relative; font-size: 1.6rem; color: #777;}
 .items-alram >li .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty2.png) no-repeat center/3.2rem 3.2rem; border-radius: 50%;}
