@@ -1410,7 +1410,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profile5 { background: url(../image/home/ico_profile5.png) no-repeat center/cover;}
 
 /* UI-SJN-98-001L */
-.alramLayer {}
 .alramLayer .btnTab { display: flex; height: 4.8rem;}
 .alramLayer .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
 .alramLayer .btnTab .itemBtn button { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
@@ -1551,7 +1550,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-moreNews .btn span { color: #777;}
 .button-moreNews .btn span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
 
-.button-write { position: fixed; bottom: 3.5rem; margin-left: 20.5rem; transform: translateX(-50%);}
+#root .button-write { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -1.75rem;}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
@@ -1606,12 +1605,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 
 .items-default li { margin: 1.6rem 0 2.4rem;}
-.items-default li figure { height: 18rem;}
+.items-default li figure { position: relative; height: 18rem;}
+.items-default li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
+.items-default li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.items-default li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .items-default li a { display: block;}
 .items-default li a h4 { margin-top: 0.9rem; font-size: 1.6rem; font-weight: 700; color: #111; line-height: 2.2rem;}
 .items-default li a h4 .allTime { display: inline-block; height: 1.8rem; margin-left: 0.3rem; padding: 0 0.3rem; font-size: 1.3rem; font-weight: 400; color: #fff; line-height: 1.8rem; background-color: #D69630;}
 .items-default li a h4 .me { display: inline-block; width:2rem; height: 2rem; margin-left: 0.2rem; font-size: 1.1rem; font-weight: 400; color: #fff; text-align: center; line-height: 2rem; border-radius:1rem; background-color: #6684EA;}
-.items-default li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
+.items-default li a >p { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; margin-top: 0.6rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
 .items-default li .hashTag { margin-top: 0.6rem;}
 .items-default li .hashTag span { display: inline-block; margin: 0.5rem 0.3rem 0 0; padding: 0.4rem; font-size: 1.4rem; color: #777; background-color: #F8F8F8;}
 .items-default li .hashTag span::before { content: '#';}
