@@ -193,6 +193,11 @@ table td { vertical-align: middle;}
 .subHeader .btnHeader .icoMic i { display: block; background-position-x: -28.8rem;}
 .subHeader .btnHeader .icoReset { display: block; padding: 1.5rem; }
 .subHeader .btnHeader .icoReset i { display: block; background-position-x: -31.2rem;}
+
+
+.subHeader .btnHeader .icoSearch { width: 5.6rem; height: 5.6rem;}
+.subHeader .btnHeader .icoSearch i { display: block; width:3.2rem; height:3.2rem; margin:0 auto;  background:url(../image/map/icon_map_header_search.png) no-repeat center/cover;}
+
 .subHeader.offererAdd h2 { font-size: 1.6rem;}
 .subHeader.offererAdd .offerer { display: block;}
 
@@ -2357,11 +2362,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .item-place li .icoDirection .keyword::after { background: url(../image/common/split_40.png) no-repeat -18rem -8rem/40rem 16rem;}
 .item-place li .icoStation .keyword::after { background: url(../image/common/split_40.png) no-repeat -20rem -8rem/40rem 16rem;}
 .item-place li .icoCategory .keyword::after { background: url(../image/common/split_40.png) no-repeat -22rem -8rem/40rem 16rem;}
-
-
 .item-place li .date { font-size: 1.4rem; color: #777;}
 .item-place li .btnRemove { display: block;}
 .item-place li .btnRemove i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
+
+.searchPlaceBody { position: absolute;	top: 15.7rem;	left: 2rem;	right: 2rem;}
 
 .items-term { padding: 4rem 2rem;}
 .items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
