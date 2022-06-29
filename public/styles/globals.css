@@ -2250,8 +2250,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .rbCC .ccBot .bgOrange { background-color: #FF940E;}
 .items-gasStation li .rbCC .ccBot .bgBlack { background-color: #555;}
 .items-gasStation li .rbCC .ccBot .partition { display: flex; align-items: center;}
-.items-gasStation li .rbCC .ccBot .partition button ~ button { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
-.items-gasStation li .rbCC .ccBot .partition button ~ button::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.items-gasStation li .rbCC .ccBot .partition >button ~ button { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
+.items-gasStation li .rbCC .ccBot .partition >button ~ button::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
 .items-gasStation li .rbCC .ccbtnBody button { display: flex; align-items: center;}
 .items-gasStation li .rbCC .ccbtnBody button i { background-position: -32rem -4rem;}
 
