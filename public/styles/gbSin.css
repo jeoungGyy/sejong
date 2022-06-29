@@ -193,7 +193,8 @@
 .mainArea .weatherBox .highness { color: #FD7803;}
 .mainArea .weatherBox .cautionText { height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
 .mainArea .weatherBox .cautionText .hiddenBox { display: flex; overflow: hidden;}
-.mainArea .weatherBox .cautionText p { padding-left: 100%; white-space: nowrap;	animation: marquee 30s forwards linear infinite;}
+.mainArea .weatherBox .cautionText p { display: flex; align-items: center; padding-left: 100%; white-space: nowrap;	animation: marquee 30s forwards linear infinite;}
+.mainArea .weatherBox .cautionText p img { width: 2.4rem; height: 2.4rem; margin-right: 0.2rem;}
 .mainArea .weatherBox .cautionText p.s5 { animation-duration: 5s;}
 .mainArea .weatherBox .cautionText p.s10 { animation-duration: 10s;}
 .mainArea .weatherBox .cautionText p.s15 { animation-duration: 15s;}
@@ -203,6 +204,8 @@
   from   { transform: translate(0%);}
   to { transform: translate(-100%);}
 }
+
+.mainArea .weatherBox .cautionText.noAnimation p { padding-left: 0; animation: none;}
 
 .mainArea .weatherBox.active .accordionTarget { height: 26rem;}
 .mainArea .weatherBox.active .weatherLink .weather { display: block; height: 5.2rem; margin-top: -0.4rem; padding-left: 6rem;}

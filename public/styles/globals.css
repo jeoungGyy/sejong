@@ -361,7 +361,7 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute;}
+.switch input { position: absolute; top: -9999rem;}
 .switch input:focus + label::before { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
@@ -855,6 +855,25 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .myInfoLayer .sevieceBox .flex .tooltipBtn { width: 2rem; height: 2rem; margin: -0.3rem 0 0 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
 .myInfoLayer .sevieceBox .flex .switch label { zoom: 0.8;}
 .myInfoLayer .sevieceBox .guide { margin: 0.9rem 0 1.5rem; font-size: 1.4rem; color: #555;}
+.myInfoLayer .sevieceBox .fontSize {}
+.myInfoLayer .sevieceBox .fontSize { display: flex; align-items: center; padding: 0 2.4rem;}
+.myInfoLayer .sevieceBox .fontSize .small { margin-right: 2.3rem; font-size: 3.1rem;}
+.myInfoLayer .sevieceBox .fontSize .big { margin-left: 2.3rem; font-size: 4.1rem;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup { flex: 1;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup { display: flex; align-items: center; position: relative;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup button { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 1; width: 1rem; height: 1rem;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup button i { display: block; width: 1rem; height: 1rem; text-indent: -9999rem; background-color: #EAEDF2; border-radius: 50%;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontSmall { left: 0;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontNormal { left: 33%;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontLarge { left: 66%;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontBig { right: 0;}
+
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup button.active i { background-color: #6684EA;}
+
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .lineGray { display: block; position: absolute; top: -0.1rem; width: 100%; height: 0.2rem; background-color: #EAEDF2;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .lineBlue { display: block; position: absolute; top: -0.1rem; height: 0.2rem; background-color: #6684EA; transition: width .2s}
+
+
 .myInfoLayer .membershipBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
 .myInfoLayer .membershipBox .text { margin-top: 1.6rem;}
 .myInfoLayer .membershipBox .radioSet { margin: 1.4rem 0;}
@@ -2081,6 +2100,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-category >li .accordionMenu.safety::before { background: url(../image/map/ico_safety.svg) no-repeat center/cover;}
 .items-category >li .accordionMenu.communication::before { background-position: -28.8rem -6.4rem;}
 .items-category >li .accordionMenu.environment::before { background-position: -28.8rem -3.2rem;}
+.items-category >li .accordionMenu.interaction::before { background-position: -19.2rem -3.2rem;}
 .items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 28.8rem;}
 .items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
 .items-category >li .subMenu li a { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding-left: 4rem; font-size: 1.6rem; font-weight: 700; color: #111;}
@@ -2210,7 +2230,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .rbCC .ccTop .ccTopBtn { display: flex; align-items: center; position: absolute; right: 0; bottom: 0; color: #6684EA;}
 .items-gasStation li .rbCC .ccTop .ccTopBtn i { margin-left: 0.4rem; background-position: -38rem -8rem;}
 .items-gasStation li .rbCC .ccTop.active .ccTopBtn i { background-position-y: -10rem;}
-.items-gasStation li .rbCC .ccMid {}
 .items-gasStation li .rbCC .ccMid { display: flex; align-items: center; margin-top: 1rem;}
 
 .items-gasStation li .rbCC .ccMid .box { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 2rem; margin-right: 0.6rem; font-size: 1.3rem; color: #fff;}
