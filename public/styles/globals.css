@@ -1574,7 +1574,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-moreNews .btn span { color: #777;}
 .button-moreNews .btn span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
 
-#root .button-write { position: fixed; bottom: 3.5rem; transform: translateX(357%);}
+#root .button-write { position: fixed; bottom: 3.5rem; width: inherit; transform: translateX(357%);}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
