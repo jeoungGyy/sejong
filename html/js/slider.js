@@ -118,7 +118,10 @@ const slideOpt = {
 	infoStoreSwiper: {
     slidesPerView: 'auto',
 		spaceBetween: 8,
-		slidesPerView: 2,
+	},
+	infoLifeSwiper: {
+    slidesPerView: 'auto',
+		spaceBetween: 8,
 	},
 	/* UI-SJN-04-009 */
 	infoReviewSwiper: {

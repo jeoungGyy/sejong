@@ -127,7 +127,7 @@ body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 /* .boxTooltipLayer { left: 0; width: 100%; transform: inherit;} */
 
 .chatbot { display: inherit; justify-content: inherit; right: 2rem; width: inherit; padding-right: 0;}
-
+#root .button-write { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -2.4rem; transform: inherit;}
 
 
 

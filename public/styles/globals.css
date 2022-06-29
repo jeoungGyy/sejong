@@ -552,6 +552,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerPopup.show .layerWrap { transform: translateY(0);}
 .layerPopup.top { z-index: 900;}
 .layerPopup .contents { padding: 0;}
+.layerPopup .paragraphGroup p ~ p { margin-top: 1.6rem;}
 
 .layerAlert { display: none; position: fixed; z-index: 901; top: 5.6rem; width: 100%; padding: 0 2rem 3.7rem; text-align: center; opacity: 0; transition: opacity .3s;}
 .layerAlert .alertWrap { display: flex; align-items: center; justify-content: center; min-height: 4.8rem; color: #fff; background-color: #111;}
@@ -1550,7 +1551,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-moreNews .btn span { color: #777;}
 .button-moreNews .btn span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
 
-#root .button-write { position: fixed; left: 50%; bottom: 3.5rem; margin-left: -1.75rem;}
+#root .button-write { position: fixed; bottom: 3.5rem; transform: translateX(357%);}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
@@ -1644,6 +1645,14 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .phoneForm { display: flex;}
 .items-form >li .phoneForm span { margin: 0 0.2rem;}
 .items-form >li .adressForm input { margin-top: 0.8rem;}
+.items-form >li .adressForm2 .flex { display: flex; align-items: center;}
+.items-form >li .adressForm2 .flex input { flex: 1;}
+.items-form >li .adressForm2 .flex .btnOpen { width: 7.2rem; background-color: #6684EA;}
+.items-form >li .adressForm2 .flex .btnOpen span { padding-left: 0; font-size: 1.4rem; font-weight: 700; color: #fff;}
+.items-form >li .adressForm2 .flex .btnOpen span::after { display: none;}
+.items-form >li .adressForm2 >input { margin-top: 0.8rem;}
+.items-form >li .checkboxForm .items-label { margin-top: 1.6rem;}
+.items-form >li .checkboxForm .items-label .labelForm { padding: 0 2rem;}
 .items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #6684EA;}
 .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 16rem;}
@@ -1671,7 +1680,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-form >li .fileForm .pictureList li input { position: absolute; margin: 0.5rem 0 0 0.5rem;}
+.items-form >li .fileForm .pictureList li input { position: absolute; top: -9999rem; margin: 0.5rem 0 0 0.5rem;}
 .items-form >li .fileForm .pictureList li input:focus + label::after { outline: 2px solid #000 !important;}
 .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #6684EA;}
 .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
@@ -1696,7 +1705,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .inputForm .por input { padding-right: 4rem;}
 .items-form >li .inputForm .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #6684EA;}
 .items-form >li .inputForm .pnAdd i { margin-right: 0.4rem; vertical-align: middle; background-position: -6rem -4rem;}
-
 .items-form >li .serviceList { display: flex; margin: 0 -0.4rem;}
 .items-form >li .serviceList li { width: calc(20% - 0.4rem); margin: 0 0.4rem;}
 .items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; cursor: pointer;}
@@ -1720,7 +1728,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .period .pList li button.readonly span { color: #aaa;}
 .items-form >li .period .pList li button.readonly::after { background-position-y: -21.6rem;}
 .items-form >li .period .pList li ~ li { margin-top: 0.8rem;}
-
 .items-form >li .agree { display: flex; justify-content: flex-end; align-items: center; height: 4.8rem;}
 .items-form >li .agree label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
@@ -1728,7 +1735,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .agree input:checked + label::after { background-color: #6684EA;}
 .items-form >li .agreeForm { padding: 1.6rem; font-size: 1.6rem; color: #aaa; border: 1px solid #ddd;}
 .items-form >li .radioSpace { margin: 0.8em 0;}
-
 .items-form >li .tagForm .boxLine { display: flex; align-items: center; position: relative; min-height: 4.8rem; padding: 0.4rem 0.9rem; border: 1px solid #ddd;}
 .items-form >li .tagForm .boxLine .placeholder { position: absolute; left: 1.3rem; top: 50%; font-size: 1.4rem; color: #aaa; transform: translateY(-50%);}
 .items-form >li .tagForm .boxLine ul { display: flex; align-items: center; flex-wrap: wrap;}
@@ -1737,6 +1743,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .tagForm .boxLine ul li .tagBtn button i { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem -4rem/40rem 16rem;}
 .items-form >li .tagForm .boxLine ul li .tagInput { overflow:hidden; min-width: 10rem; width: 100%; height: 2rem; padding: 1rem 0.4rem; vertical-align: middle; line-height: 2rem; border: none; resize: none;}
 .items-form >li .tagForm .boxLine ul li.textInput { flex: 1; }
+
+.items-form >li .guideIconTxt { display: flex; align-items: center; height: 4.8rem;}
+.items-form >li .guideIconTxt i { margin-right: 0.4rem; background-position-x: -38rem;}
 
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
 .textareaForm textarea { height: 11rem; border: none;}
@@ -2164,10 +2173,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .voteIcon >div .ramp { background-position: -32rem -8rem;}
 .items-gasStation li .voteIcon >div .braille { background-position: -34rem -8rem;}
 .items-gasStation li .voteIcon >div .toilet { background-position: -36rem -8rem;}
-
-
-
-
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
@@ -2176,11 +2181,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; background-color: #CCD2E3;}
 .items-gasStation li .movieBox img { width: 100%; height: 100%; vertical-align: top;}
 .items-gasStation li .movieBox .moviePlay { position: absolute; left: 50%; top: 50%; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/map/ico_movie.svg) no-repeat center/cover; transform: translate(-50%, -50%);}
-
 .items-gasStation li .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
 .items-gasStation li button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation li button.view.active { display: flex;}
-.items-gasStation li.promote { background-color: #f4f9fd;}
 .items-gasStation li .pinDelete { position: absolute; right: 2rem; top: 50%; width: 3.4rem; margin-top: -1.7rem; padding: 0.5rem;}
 .items-gasStation li .pinDelete i { background-position: -38.4rem -14.4rem;}
 .items-gasStation li .reportGroup { display: flex; }
@@ -2202,7 +2205,55 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .reportGroup figure { width: 7.2rem; height: 7.2rem; margin-top: 1rem;}
 .items-gasStation li .reportGroup figure .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; bottom: 0.4rem; height: 2.4rem; padding: 0 0.8rem; font-size: 1.2rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
 .items-gasStation li .reportGroup figure .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
-.items-gasStation li.one { border-bottom: none;}
+.items-gasStation li .rbCC { margin-right: 1.6rem;}
+.items-gasStation li .rbCC .ccTop { position: relative; min-height: 5rem; padding-top: 0.8rem; color: #555;}
+.items-gasStation li .rbCC .ccTop .ccTopBtn { display: flex; align-items: center; position: absolute; right: 0; bottom: 0; color: #6684EA;}
+.items-gasStation li .rbCC .ccTop .ccTopBtn i { margin-left: 0.4rem; background-position: -38rem -8rem;}
+.items-gasStation li .rbCC .ccTop.active .ccTopBtn i { background-position-y: -10rem;}
+.items-gasStation li .rbCC .ccMid {}
+.items-gasStation li .rbCC .ccMid { display: flex; align-items: center; margin-top: 1rem;}
+
+.items-gasStation li .rbCC .ccMid .box { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 2rem; margin-right: 0.6rem; font-size: 1.3rem; color: #fff;}
+.items-gasStation li .rbCC .ccMid .bgRed { background-color: #FD2020;}
+.items-gasStation li .rbCC .ccMid .bgWood { background-color: #D69630;}
+.items-gasStation li .rbCC .ccMid .bgGreen { background-color: #4EC457;}
+.items-gasStation li .rbCC .ccMid .bgBlue { background-color: #32BBED;}
+.items-gasStation li .rbCC .ccMid .bgGray { color: #555 !important; background-color: #EAEDF2;}
+
+.items-gasStation li .rbCC .ccMid .partition { color: #555;}
+.items-gasStation li .rbCC .ccMid .partition span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
+.items-gasStation li .rbCC .ccMid .partition span ~ span::after { content: ''; position: absolute; top: 0.5rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.items-gasStation li .rbCC .ccBot { display: flex; align-items: center; justify-content: space-between; margin: 0.8rem -8.8rem 0 0;}
+.items-gasStation li .rbCC .ccBot button { font-size: 1.4rem;}
+.items-gasStation li .rbCC .ccBot .header-icons { margin: -0.2rem 0 0 0.8rem;}
+.items-gasStation li .rbCC .ccBot .sapn { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 2rem; margin-left: 0.8rem; font-size: 1.3rem; color: #fff;}
+.items-gasStation li .rbCC .ccBot .bgBlue { background-color: #6684EA;}
+.items-gasStation li .rbCC .ccBot .bgOrange { background-color: #FF940E;}
+.items-gasStation li .rbCC .ccBot .bgBlack { background-color: #555;}
+.items-gasStation li .rbCC .ccBot .partition { display: flex; align-items: center;}
+.items-gasStation li .rbCC .ccBot .partition button ~ button { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
+.items-gasStation li .rbCC .ccBot .partition button ~ button::after { content: ''; position: absolute; top: 0.3rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.items-gasStation li .rbCC .ccbtnBody button { display: flex; align-items: center;}
+.items-gasStation li .rbCC .ccbtnBody button i { background-position: -32rem -4rem;}
+
+.items-gasStation li .commentList { margin-top: 2.8rem;}
+.items-gasStation li .commentList .clBox { position: relative; padding: 1.2rem 1.6rem; border: 1px solid #6684EA; box-shadow: 0 1rem 1rem rgb(0 0 0 / 5%);}
+.items-gasStation li .commentList .clBox ~ .clBox { margin-top: 2rem;}
+.items-gasStation li .commentList .clBox .text { color: #555;}
+.items-gasStation li .commentList .clBox .partition { display: flex; align-items: center; margin-top: 1rem;}
+.items-gasStation li .commentList .clBox .partition button { font-size: 1.4rem; color: #6684EA;}
+.items-gasStation li .commentList .clBox .partition span { font-size: 1.4rem; color: #555;}
+.items-gasStation li .commentList .clBox .partition span ~ span,
+.items-gasStation li .commentList .clBox .partition button ~ button { position: relative; margin-left: 0.7rem; padding-left: 0.7rem;}
+.items-gasStation li .commentList .clBox .partition span ~ span::after,
+.items-gasStation li .commentList .clBox .partition button ~ button::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.2rem; background-color: #e1e1e1;}
+.items-gasStation li .commentList .clBox .partition button + span { margin-left: 1.6rem;}
+.items-gasStation li .commentList .clBox::after { content: ''; position: absolute; right: 4rem; top: -2rem; width: 0; height: 0; border-style: solid; border-width: 1.1rem 0.7rem; border-color: transparent transparent #fff transparent;}
+.items-gasStation li .commentList .clBox::before { content: ''; position: absolute; right: 4rem; top: -2.2rem; width: 0; height: 0; border-style: solid; border-width: 1.1rem 0.7rem; border-color: transparent transparent #6684EA transparent;}
+
+
+
+
 .icons.tool { display: flex; align-items: center; margin-top: 0.8rem;}
 .icons.tool i ~ i { margin-left: 0.4rem;}
 .icons.tool i.iToilet { background-position: -19.2rem -24rem;}
@@ -2216,6 +2267,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .icons.tool.wrap .txtBox { margin: 1rem 0 0 0;}
 .icons.tool.wrap.mt0 { margin-top: 0;}
 
+.items-gasStation li.promote { background-color: #f4f9fd;}
+.items-gasStation li.one { border-bottom: none;}
 .items-gasStation li.full { padding: 1.2rem 2rem;}
 .items-gasStation li.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full li { padding: 1.2rem 2rem;}

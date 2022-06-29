@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+			
+					<!-- 본문 -->
+					<main class="contents map"> <!-- [생활정보 Class] map-->
+						<h2 class="visible"><span class="headerClone">똑똑생활 소통지도</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapArea">
+			
+								<!-- 기타 아이콘들 -->
+								<div class="mapIcons">
+									
+									<div class="controlPannel"> <!-- 활성화 시 active 추가 -->
+										<button type="button" class="controlFilterBtn" title="작성글 표시 필터 열기"><i class="split24">작성글 표시 필터 지도 마커</i></button> <!-- 활성화 시 title="작성글 표시 필터 닫기" 로 변경해주세요. -->
+										<div class="cfBtns">
+											<button type="button" class="active">
+												전체
+												<span class="invisible">선택 메뉴</span> <!-- 활성화 된 메뉴에 넣어주세요. -->
+											</button>
+											<button type="button">위험</button>
+											<button type="button">불편</button>
+											<button type="button">나눔</button>
+											<button type="button">교통</button>
+											<button type="button">기타</button>
+										</div>
+									</div>
+									
+									
+									<div class="communicationMaker" style="left: 6rem; top: 15rem;">
+										<span class="box bgRed">위험</span>
+										<div class="cmRow">
+											<p class="text">common_mapicons.html 참고</p>
+											<div class="cmrFelx">
+												<span class="name">세종엔</span>
+												<span class="date">2020.2.23</span>
+											</div>
+										</div>
+										<b class="roundBox bgRed">44</b>
+									</div>
+
+									<div class="communicationMaker active" style="left: 6rem; top: 25rem;"> <!-- 활성 화 -->
+										<span class="box bgRed">위험</span>
+										<div class="cmRow">
+											<p class="text">common_mapicons.html 참고</p>
+											<div class="cmrFelx">
+												<span class="name">세종엔</span>
+												<span class="date">2020.2.23</span>
+											</div>
+										</div>
+										<b class="roundBox bgRed">44</b>
+										<span class="invisible">활성화</span> <!-- 활성화 시 넣어주세요. -->
+									</div>
+
+									<div class="button-write">
+										<a href="#" class="btn"><i>글작성</i></a>
+									</div>
+									
+			
+									<div class="btnView">
+										<button type="button" class="mapView" onclick="mapInfo.active('close');"><i></i>지도보기</button>
+										<button type="button" class="listView" onclick="mapInfo.click('sub');"><i></i>목록보기</button>
+									</div>
+			
+									<div class="location">
+										<button type="button" class="myLocation"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
+										<div class="scaleBtn">
+											<button type="button" class="scaleUp"><i>확대</i></button>
+											<button type="button" class="scaleDown"><i>축소</i></button>
+										</div>
+									</div>
+								</div>
+								<!-- //기타 아이콘들 -->
+								
+								<!-- 정보 영역 -->
+								<div class="mapInfoLayer default">
+									<div class="mapIHead">
+										<button type="button" class="btnMapInfo">정보영역</button>
+										<div class="mapUpDown">
+											<button type="button" class="btnMapUp" onclick="mapInfo.active('infoUp');">정보영역 위로</button>
+											<button type="button" class="btnMapDown" onclick="mapInfo.active('infoDown');">정보영역 아래로</button>
+											<button type="button" class="btnBottom" onclick="mapInfo.active('infoBottom');">정보영역 닫기</button>
+										</div>
+			
+										<div class="reportHead">
+											<div class="guide">
+												<i class="split20"></i> 
+												<span>이미지 첨부 시 <br /><span class="cBlue">관리자 승인 후</span> 게시됩니다.</span>
+											</div>
+											<button type="button" class="reportBtn">
+												<i class="split24"></i> <span>작성하기</span>
+											</button>
+										</div>
+									</div>
+									
+									<div class="myArea paddingDefault">
+										<section>
+											<ul class="items-gasStation">
+												<li class="full one">
+													<div class="reportGroup">
+														<div class="reportBody">
+															<div class="rbCC">
+																<div class="ccMid">
+																	<span class="box bgRed">위험</span>
+																	<!--
+																	<span class="box bgWood">불편</span>
+																	<span class="box bgGreen">나눔</span>
+																	<span class="box bgBlue">교통</span>
+																	<span class="box bgGray">기타</span>
+																	-->
+																	<div class="partition">
+																		<span>2020.02.23</span>
+																		<span>이*녕</span>
+																	</div>
+																</div>
+																<div class="ccTop">
+																	<p class="text">변경이 되었습니다. 댓글은 사진 등 첨부 불가 처리로 관리자사진 등 첨부 불가 처리로 관리자 …</p>
+																	<button type="button" class="ccTopBtn">더보기<i class="split20"></i></button>
+																</div>
+																<!-- 전체 글 보기
+																	<div class="ccTop active">
+																	<p class="text">변경이 되었습니다. 댓글은 사진 등 첨부 불가 처리로 관리자댓글은 사진 등 첨부 불가 처리로 관리자 변경이 되었습니다. 댓글은 사진 등 첨부 불가 처리로 관리자</p>
+																	<button type="button" class="ccTopBtn">간략히<i class="split20"></i></button>
+																</div>
+																-->
+																<div class="ccBot">
+																	<div class="partition">
+																		<button type="button" class="cBlue">편집</button>
+																		<button type="button" class="cBlue">삭제</button>
+																		<span class="sapn bgBlue">접수</span>
+																		<!--
+																		<span class="sapn bgOrange">반려</span>
+																		<span class="sapn bgBlack">승인</span>
+																		-->
+																		<div class="header-icons">
+																			<div>
+																				<button type="button" class="good" title="추천 수">12</button>
+																				<button type="button" class="comment" title="댓글 수">1,234</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="ccbtnBody">
+																		<button type="button" class="cBlue">댓글쓰기<i class="split20"></i></button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<figure class="wFirst">
+															<img src="../../public/image/temp/temp004.png" alt="">
+															<div class="blind">
+																<span>3</span>
+															</div>
+														</figure>
+													</div>
+
+													<div class="commentList">
+														<div class="clBox">
+															<p class="text lineBreake">변경이 되었습니다. 댓글은 사진 등 첨부 불가 처리로 관리자 승인 없이 즉시 댓글은 사진 등 첨부 불가 처리로 관리자 승인 없이 즉시</p>
+															<div class="partition">
+																<button type="button">편집</button>
+																<button type="button">삭제</button>
+																<span>2020.02.23</span>
+																<span>이*녕</span>
+															</div>
+														</div>
+														<div class="clBox">
+															<p class="text lineBreake">변경이 되었습니다. 댓글은 사진 등 첨부 불가</p>
+															<div class="partition">
+																<button type="button">편집</button>
+																<button type="button">삭제</button>
+																<span>2020.02.23</span>
+																<span>이*녕</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</section>
+									</div>
+								</div>
+								<!-- //정보 영역 -->
+			
+								<div id="naver-map" class="mapBg"></div> <!-- map 이미지 -->
+							</div>
+						</div>
+					</main>
+					<!-- <script>
+						mapInfo.click('sub');
+					</script> -->
+					<!-- //본문 -->
+			
+				
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+			
+					<!-- 본문 -->
+					<main class="contents map">
+						<h2 class="visible"><span class="headerClone">똑똑생활 소통지도 작성</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mapWrap">
+							<div class="mapAreaEtc" style="background-color: pink;">
+								<div class="targetIco" style="left: 10rem; top: 20rem;">
+									<i class="split24">타켓 이름이 들어갑니다.</i>
+								</div>
+							</div>
+
+							<fieldset class="form-default">
+								<legend>똑똑생활 소통지도 작성 폼</legend>
+								<ul class="items-form">
+									<li>
+										<div class="adressForm2">
+											<div class="flex">
+												<input type="text" required="required" title="주소 입력" placeholder="주소 찾기">
+												<button type="button" class="btnOpen"><span>주소 찾기</span></button>
+											</div>
+											<input type="text" required="required" title="상세주소 입력" placeholder="상세 주소를 입력해주세요">
+										</div>
+									</li>
+									<li>
+										<div class="labelH">
+											<label>유형 선택</label> <span class="required">필수</span>
+										</div>
+										<div class="checkboxForm">
+											<ul class="items-label">
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list0">
+														<label for="list0">도로,시설물 파손 및 고장</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list1">
+														<label for="list1">건설, (해체)공사장 위험</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list2">
+														<label for="list2">쓰레기ㆍ폐기물ㆍ유독물 투기, 유출, 방치</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list3">
+														<label for="list3">지하수 미등록 시설ㆍ방치공</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list4">
+														<label for="list4">대기오염(미세먼지 불법배출포함)</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list5">
+														<label for="list5">수질오염</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list6">
+														<label for="list6">불법광고물</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list7">
+														<label for="list7">자전거ㆍ이륜차 방치 및 불편</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list8">
+														<label for="list8">청소년 유해업소</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list9">
+														<label for="list9">에너지 과소비</label>
+													</div>
+												</li>
+												<li>
+													<div class="labelForm">
+														<input type="checkbox" name="checkbox" id="list10">
+														<label for="list10">기타</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="btnGroup">
+									<button type="button" class="button blue">다음(1/2)</button>
+								</div>
+							</fieldset>
+						</div>
+					</main>
+					<!-- //본문 -->
+			
+					<!-- 레이어 -->
+					<div id="layerAlram" class="layerPopup">
+						<div class="layerWrap typeBot layerAlram">
+							<h4>안전신문고에 신고하기 안내</h4>
+							<div class="layerBody">
+								<div class="paragraphGroup">
+									<p>안전신문고에 안전신고 또는 <br />생활불편신고로 접수할 수 있습니다.</p>
+									<p>안전신문고에 신고하시겠습니까?</p>
+									<p class="cRed">※ 취소 시 이웃과의 소통글로 단순 등록됩니다.</p>
+								</div>
+								<div class="twins">
+									<button type="button" class="button whiteLine">취소</button>
+									<button type="button" class="button blue">확인</button>
+								</div>
+							</div>
+							<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+						</div>
+					</div>
+					<!-- //레이어 -->
+
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

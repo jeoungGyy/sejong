@@ -279,6 +279,27 @@ body { --vh: 1px;}
 .mapIcons .stressMarker.active p { color: #fff;}
 .mapIcons .stressMarker.active::after { border-color: #6684EA transparent transparent transparent;}
 
+.mapIcons .communicationMaker { display: flex; align-items: center; position: absolute; z-index: 10; width: 20rem; padding: 0.8rem; border: 1px solid #A9B0C1; background-color: #fff; border-radius: 1rem;}
+.mapIcons .communicationMaker .box { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3rem; font-size: 1.3rem; color: #fff; border-radius: 0.4rem;}
+.mapIcons .communicationMaker .bgRed { background-color: #FD2020;}
+.mapIcons .communicationMaker .bgWood { background-color: #D69630;}
+.mapIcons .communicationMaker .bgGreen { background-color: #4EC457;}
+.mapIcons .communicationMaker .bgBlue { background-color: #32BBED;}
+.mapIcons .communicationMaker .bgGray { color: #555 !important; background-color: #EAEDF2;}
+.mapIcons .communicationMaker .cmRow { width: calc(100% - 4rem); margin-left: 0.8rem;}
+.mapIcons .communicationMaker .cmRow .text { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size: 1.4rem;}
+.mapIcons .communicationMaker .cmrFelx { display: flex; align-items: center; justify-content: space-between; margin-top: 0.6rem;}
+.mapIcons .communicationMaker .cmrFelx .name { color: #555;}
+.mapIcons .communicationMaker .cmrFelx .date { color: #555;}
+.mapIcons .communicationMaker .roundBox { display: flex; align-items: center; justify-content: center; position: absolute; right: -0.9rem; top: -0.9rem; width: 2.4rem; height: 2.4rem; font-size: 1.4rem; color: #fff; border-radius: 50%;}
+.mapIcons .communicationMaker::after { content: ''; position: absolute; left: 4rem; bottom: -1.9rem; width: 0; height: 0; border-style: solid; border-width: 1rem 0.6rem; border-color: #fff transparent transparent transparent;}
+.mapIcons .communicationMaker::before { content: ''; position: absolute; left: 4rem; bottom: -2.1rem; width: 0; height: 0; border-style: solid; border-width: 1rem 0.6rem; border-color: #A9B0C1 transparent transparent transparent;}
+.mapIcons .communicationMaker.active { background-color: #6684EA;}
+.mapIcons .communicationMaker.active .cmRow .text { color: #fff;}
+.mapIcons .communicationMaker.active .cmrFelx .name { color: #fff;}
+.mapIcons .communicationMaker.active .cmrFelx .date { color: #fff;}
+.mapIcons .communicationMaker.active::after { border-color: #6684EA transparent transparent transparent;}
+
 .mapIcons .storeName { position: relative;}
 .mapIcons .storeName span { display: block; overflow: hidden; position: absolute; left: 50%; bottom: 0; width: 10rem; height: 3.7rem; font-size: 14px; transform: translate(-50% , 100%);}
 .mapIcons .communication { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
@@ -289,7 +310,17 @@ body { --vh: 1px;}
 .mapIcons .iAround.active { background-color: #6684EA;}
 .mapIcons .iAround.active i { background-position-y: -26.4rem;}
 
+#root .mapIcons .button-write { bottom: 11rem;}
 
+.mapIcons .controlPannel { display: flex; align-items: flex-start; position: absolute; left: 2rem; top: 7.2rem; z-index: 20;}
+.mapIcons .controlPannel .controlFilterBtn { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; border-radius: 50%; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 16%);}
+.mapIcons .controlPannel .controlFilterBtn i { background-position: -12rem 0;}
+.mapIcons .controlPannel .cfBtns { display: none; flex-wrap: wrap; flex: 1; margin-left: 2.2rem; gap: 8px 6px;}
+.mapIcons .controlPannel .cfBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 3rem; font-size: 1.4rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.mapIcons .controlPannel .cfBtns button.active { color: #fff; background-color: #6684EA;}
+
+.mapIcons .controlPannel.active { left: 0; top: 5.6rem; width: 100%; padding: 1.6rem 2rem; background-color: #fff;}
+.mapIcons .controlPannel.active .cfBtns { display: flex;}
 
 span.busInt { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 span.B { background-color: #6684EA;}
@@ -965,6 +996,20 @@ span.M { background-color: #FD2020;}
 .map .explain-default { padding-top: 3.2rem;}
 .map .explain-default .text { padding: 0 2rem 2.8rem; color: #555; line-height: 2.3rem;}
 .map .explain-default .promote .body img { max-width: 100%; height: auto; vertical-align: top;}
+
+/* UI-SJN-42-102L */
+.map .mapAreaEtc { position: relative; height: 34.5rem;}
+.targetIco { position: absolute;}
+.targetIco i { background-position: -38.4rem -24rem;}
+
+/* UI-SJN-42-103L */
+.map .explain-default.bgGray { padding: 3.2rem 2rem; background-color: #F4F5F7;}
+.map .explain-default.bgGray .text { padding: 0; line-height: 2.3rem;}
+
+
+
+
+
 
 /* 윤사랑 추가 */
 /* 공통 */
