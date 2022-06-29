@@ -855,7 +855,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .myInfoLayer .sevieceBox .flex .tooltipBtn { width: 2rem; height: 2rem; margin: -0.3rem 0 0 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
 .myInfoLayer .sevieceBox .flex .switch label { zoom: 0.8;}
 .myInfoLayer .sevieceBox .guide { margin: 0.9rem 0 1.5rem; font-size: 1.4rem; color: #555;}
-.myInfoLayer .sevieceBox .fontSize {}
 .myInfoLayer .sevieceBox .fontSize { display: flex; align-items: center; padding: 0 2.4rem;}
 .myInfoLayer .sevieceBox .fontSize .small { margin-right: 2.3rem; font-size: 3.1rem;}
 .myInfoLayer .sevieceBox .fontSize .big { margin-left: 2.3rem; font-size: 4.1rem;}
@@ -2226,12 +2225,15 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .reportGroup figure .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.4rem; bottom: 0.4rem; height: 2.4rem; padding: 0 0.8rem; font-size: 1.2rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
 .items-gasStation li .reportGroup figure .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
 .items-gasStation li .rbCC { margin-right: 1.6rem;}
-.items-gasStation li .rbCC .ccTop { position: relative; min-height: 5rem; padding-top: 0.8rem; color: #555;}
-.items-gasStation li .rbCC .ccTop .ccTopBtn { display: flex; align-items: center; position: absolute; right: 0; bottom: 0; color: #6684EA;}
+.items-gasStation li .rbCC .ccTop { position: relative; padding-top: 0.8rem; color: #555;}
+.items-gasStation li .rbCC .ccTop p { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.items-gasStation li .rbCC .ccTop .ccTopBtn { display: flex; align-items: center; margin-top: 0.8rem; color: #6684EA;}
 .items-gasStation li .rbCC .ccTop .ccTopBtn i { margin-left: 0.4rem; background-position: -38rem -8rem;}
+.items-gasStation li .rbCC .ccTop.active p { display: block;}
 .items-gasStation li .rbCC .ccTop.active .ccTopBtn i { background-position-y: -10rem;}
-.items-gasStation li .rbCC .ccMid { display: flex; align-items: center; margin-top: 1rem;}
 
+
+.items-gasStation li .rbCC .ccMid { display: flex; align-items: center; margin-top: 1rem;}
 .items-gasStation li .rbCC .ccMid .box { display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 2rem; margin-right: 0.6rem; font-size: 1.3rem; color: #fff;}
 .items-gasStation li .rbCC .ccMid .bgRed { background-color: #FD2020;}
 .items-gasStation li .rbCC .ccMid .bgWood { background-color: #D69630;}
