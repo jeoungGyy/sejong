@@ -1579,7 +1579,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .button-moreNews .btn span { color: #777;}
 .button-moreNews .btn span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover;}
 
-#root .button-write { position: fixed; bottom: 3.5rem; transform: translateX(357%);}
+#root .button-write { position: fixed; bottom: 3.5rem; width: inherit; transform: translateX(357%);}
 .button-write .btn { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; background-color: #6684EA; border-radius: 50%;}
 .button-write .btn i { width: 2.3rem; height: 2.3rem; text-indent: -9999rem; background: url(../image/info/ico_more_big.png) no-repeat center/auto 100%;}
 
@@ -2205,6 +2205,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation li .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #6684EA; border-radius: 50%;}
 .items-gasStation li .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation li .guidance b { display: block; font-size: 1.2rem; color: #fff;}
+
+.items-gasStation li .choose { display: flex; align-items: center; justify-content: center; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; color: #fff; background-color: #6684EA; border-radius: 0.8rem;}
+
 .items-gasStation li .appImg { position: absolute; right: 2rem; top: 1.4rem;}
 .items-gasStation li .appImg img { width: 5rem; height: 5rem;}
 .items-gasStation li .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; background-color: #CCD2E3;}
@@ -2371,7 +2374,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .item-place li .btnRemove { display: block;}
 .item-place li .btnRemove i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
 
-.searchPlaceBody { position: absolute;	top: 15.7rem;	left: 2rem;	right: 2rem;}
+#root .searchPlaceBody { position: absolute;	top: 11rem;	left: 2rem;	right: 2rem; margin: 0;}
+#root .searchPlaceBody .header-default { justify-content: flex-end;}
 
 .items-term { padding: 4rem 2rem;}
 .items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
