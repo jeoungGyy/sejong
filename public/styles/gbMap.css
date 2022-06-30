@@ -294,11 +294,13 @@ body { --vh: 1px;}
 .mapIcons .communicationMaker .roundBox { display: flex; align-items: center; justify-content: center; position: absolute; right: -9px; top: -9px; width: 24px; height: 24px; font-size: 14px; color: #fff; border-radius: 50%;}
 .mapIcons .communicationMaker::after { content: ''; position: absolute; left: 40px; bottom: -19px; width: 0; height: 0; border-style: solid; border-width: 10px 6px; border-color: #fff transparent transparent transparent;}
 .mapIcons .communicationMaker::before { content: ''; position: absolute; left: 40px; bottom: -21px; width: 0; height: 0; border-style: solid; border-width: 10px 6px; border-color: #A9B0C1 transparent transparent transparent;}
-.mapIcons .communicationMaker.active { background-color: #6684EA;}
+.mapIcons .communicationMaker.active { border-color: #6684EA;  background-color: #6684EA;}
 .mapIcons .communicationMaker.active .cmRow .text { color: #fff;}
 .mapIcons .communicationMaker.active .cmrFelx .name { color: #fff;}
 .mapIcons .communicationMaker.active .cmrFelx .date { color: #fff;}
 .mapIcons .communicationMaker.active::after { border-color: #6684EA transparent transparent transparent;}
+.mapIcons .communicationMaker.active::before { border-color: #6684EA transparent transparent transparent;}
+
 
 .mapIcons .storeName { position: relative;}
 .mapIcons .storeName span { display: block; overflow: hidden; position: absolute; left: 50%; bottom: 0; width: 10rem; height: 3.7rem; font-size: 14px; transform: translate(-50% , 100%);}
