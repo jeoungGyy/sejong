@@ -189,9 +189,11 @@ table td { vertical-align: middle;}
 .subHeader h2 .number { color: #6684EA;}
 .subHeader .offerer { display: none; width: 100%;}
 .subHeader .offerer span { font-size: 1.3rem; color: #777;}
-.subHeader .searchHeader { width: 74%;}
-.subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0 0.5rem; border: none;}
+.subHeader .searchHeader { position: relative; width: 100%;}
+.subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0  3.5rem 0 0.4rem; border: none;}
 .subHeader .searchHeader input::placeholder { color: #ddd;}
+.subHeader .searchHeader .icoSearchBtn { position: absolute; right: 0; top: 0; width: 4rem; height: 4.8rem;}
+.subHeader .searchHeader .icoSearchBtn i { background-position: -9.6rem -14.4rem;}
 .subHeader .btnHeader { position: absolute; right: 0; top: 0;}
 .subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .subHeader .btnHeader .icoMic { display: block; padding: 1.5rem; }
