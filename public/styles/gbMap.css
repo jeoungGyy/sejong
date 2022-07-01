@@ -4,6 +4,8 @@
 body { --vh: 1px;}
 
 #naver-map { transition: all .3s ease-in-out;}
+#root .leaflet-tooltip p { text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
+
 
 /* 공통 */
 .mapArea.fixed .mapInfoLayer { height: 23rem; transform: inherit;}
