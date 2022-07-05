@@ -11,7 +11,7 @@
 .decoBgRight { position: absolute; right: -0.1rem; top: 0; width: 100rem; height: 10rem; background: url(../image/info/main_bg_right.png) no-repeat right bottom/10rem 10rem;} */
 
 .infoNav { display: flex; overflow: hidden; position: fixed; top: 0; z-index: 200; width: 100%; background-color: #F3F5F7; box-shadow: 0 1rem 3rem rgb(102 132 234 / 20%);}
-.infoNav .infoNavBody { display: flex; width: 100%; background-color: #4EC457;}
+.infoNav .infoNavBody { display: flex; width: 100%; background-color: #29863b;}
 .infoNav .slideContainer { overflow: hidden; display: flex; flex: 1; margin-left: 1px; padding-right: 0.8rem;}
 .infoNav li { width: auto;}
 .infoNav li a { display: flex; align-items: center; position: relative; height: 5.6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
@@ -19,14 +19,14 @@
 .infoNav li a.active { font-weight: 700; color: #fff;}
 .infoNav li a.active span { background-color: #35B13F;}
 /* .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;} */
-.menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 5.6rem; padding-left: 1rem; background-color: #4EC457;}
+.menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 5.6rem; padding-left: 1rem; background-color: #29863b;}
 .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
 
 /* .infoNav.active +.swiper { padding-top: 6rem;} */
 
 .info .mainArea { min-height: calc(100vh - 18.6rem); background: #F3F5F7;}
 .mainArea .flex { display: flex; align-items: center; justify-content: space-between;}
-.mainArea .flex .mapLink { color: #6684EA;}
+.mainArea .flex .mapLink { color: #5D68E6;}
 .mainArea .flex .mapLink i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -26.4rem -19.2rem;}
 .mainArea .iconLinks li a { display: block; text-align: center;}
 .mainArea .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
@@ -53,7 +53,7 @@
 .mainArea .together .textLinks { margin-top: 2.5rem; border-top: 1px solid #F4F5F7;}
 .mainArea .together .textLinks li a { display: flex; align-items: center; min-height: 4.8rem; padding: 1rem 0;}
 .mainArea .together .textLinks li a span { flex: 1; font-size: 1.4rem; color: #555;}
-.mainArea .together .textLinks li a b { display: flex; align-items: flex-end; font-size: 1.6rem; color: #4EC457; text-align: right;}
+.mainArea .together .textLinks li a b { display: flex; align-items: flex-end; font-size: 1.6rem; color: #29863b; text-align: right;}
 .mainArea .together .textLinks li a b .ico { display: block; width: 2rem; height: 2rem; background:  url(../image/info/ico_arrow_green.svg) no-repeat center/cover;}
 .mainArea .together .boxArea .newStoreBody { margin: 0 -1.6rem; padding: 0 1.6rem;}
 .mainArea .together .boxArea .newStoreBody li { overflow: hidden; width: 15.6rem !important; min-height: 23rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
@@ -90,11 +90,11 @@
 .mainArea .complaint .body .citizen .issue >div { position: relative; min-height: 5.2rem; padding: 1.2rem 1.6rem 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div { margin-top: 0.8rem;}
 .mainArea .complaint .body .citizen .issue >div ~ div a b { color: #111;}
-.mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #777;}
+.mainArea .complaint .body .citizen .issue >div span { display: block; font-size: 1.4rem; color: #767676;}
 .mainArea .complaint .body .citizen .issue >div b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
 .mainArea .complaint .body .citizen .issue >div >b { margin-top: 0.4rem;}
 .mainArea .complaint .body .citizen .issue >div a { display: block;}
-.mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 0.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .complaint .body .citizen .issue >div .phone { position: absolute; right: 0.8rem; bottom: 0.6rem; display: flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; background-color: #29863b; border-radius: 50%;}
 .mainArea .complaint .body .citizen .issue >div .phone i { background-position: -24rem -19.2rem;}
 .mainArea .complaint .roundDeco { display: block; position: absolute; left: -11.6rem; top: -8.6rem; z-index: 1; width: 22rem; height: 22rem; background-color: #4EC457; border-radius: 50%;}
 .mainArea .complaint .roundDeco2 { display: none; position: absolute; right: -8.6rem; bottom: -3.7rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
@@ -109,23 +109,23 @@
 .mainArea .popular .body ul li a .icon { display: block; width: 5.6rem; height: 5.6rem; border-radius: 1.6rem;}
 .mainArea .popular .body ul li a.setup1 .icon { background-color: #32BBED;}
 .mainArea .popular .body ul li a.setup2 .icon { background-color: #D69630;}
-.mainArea .popular .body ul li a.setup3 .icon { background-color: #4EC457;}
+.mainArea .popular .body ul li a.setup3 .icon { background-color: #29863b;}
 .mainArea .popular .body ul li a.setup4 .icon { background-color: #5FA9FF;}
-.mainArea .popular .body ul li a.setup5 .icon { background-color: #777;}
+.mainArea .popular .body ul li a.setup5 .icon { background-color: #767676;}
 .mainArea .popular .body ul li a h4 { margin-top: 0.8rem; font-size: 1.6rem;}
-.mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #777;}
+.mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #767676;}
 .mainArea .reservation .roundDeco { display: block; position: absolute; right: -8.5rem; bottom: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
 .mainArea .healthFacility { margin-top: 2.7rem;}
 .mainArea .healthFacility .boxArea { padding: 2rem 1.6rem;}
 .mainArea .dataConnect { margin-top: 2.7rem; padding-bottom: 8rem;}
 .mainArea .dataConnect .boxArea { padding: 3.2rem 1.6rem;}
-.mainArea .dataConnect .cleanNetBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.2rem; margin-top: 3.2rem; font-size: 1.6rem; font-weight: 700; color: #6684EA; background-color: #F3F5F7; border-radius: 0.8rem;}
+.mainArea .dataConnect .cleanNetBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.2rem; margin-top: 3.2rem; font-size: 1.6rem; font-weight: 700; color: #5D68E6; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .dataConnect .cleanNetBtn i { margin-left: 0.4rem; background-position-x: -38rem;}
 .mainArea .dataConnect .textLinks { margin-top: 2.7rem;}
 .mainArea .dataConnect .textLinks li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .mainArea .dataConnect .textLinks li >div { display: flex; align-items: center;}
-.mainArea .dataConnect .textLinks li >div .link { color: #6684EA;}
-.mainArea .dataConnect .textLinks li >div span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #4EC457; border-radius: 50%;}
+.mainArea .dataConnect .textLinks li >div .link { color: #5D68E6;}
+.mainArea .dataConnect .textLinks li >div span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #29863b; border-radius: 50%;}
 .mainArea .dataConnect .textLinks li >div span i { background-position: -24rem -19.2rem;}
 .mainArea .dataConnect .textLinks li ~ li { border-top: 1px solid #F2F2F2;}
 .mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
@@ -135,7 +135,7 @@
 .mainArea .trafficInformation .boxArea { padding-bottom: 3rem;}
 .mainArea .trafficInformation .boxArea.pbNon { padding-bottom: 0.4rem;}
 .mainArea .trafficInformation .flexReflash { display: flex; justify-content: flex-end; margin-bottom: 1rem;}
-.mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 0.2rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #6684EA; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
+.mainArea .trafficInformation .vividBus { display: flex; flex-direction: column; position: relative; margin-top: 0.2rem; padding: 1.7rem 2rem; color: #333; border: 1px solid #5D68E6; background: url(../image/info/info_trafficInformation_ico.png) no-repeat right 2.2rem center/4.3rem 4.2rem; border-radius: 0.8rem;}
 .mainArea .trafficInformation .vividBus span { font-size: 1.4rem;}
 .mainArea .trafficInformation .vividBus b { margin-top: 1rem; font-size: 1.6rem;}
 .mainArea .trafficInformation .vividBus b i { margin: -0.1rem 0 0 0.8rem; vertical-align: middle; background-position: -36rem -4rem;}
@@ -163,7 +163,7 @@
 .mainArea .safetyInfo .safetyUse .icon .whiteRound { display: flex; align-items: center; justify-content: center; width: 8.4rem; height: 8.4rem; background-color: #fff; border-radius: 50%;}
 .mainArea .safetyInfo .safetyUse .icon .whiteRound i { width: 4.7rem; height: 5.9rem; background: url(../image/map/sejongN_img.png) no-repeat center/cover;}
 .mainArea .safetyInfo .safetyUse .icon .blackRound { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-top: -0.4rem; font-size: 1.4rem; background-color: #111; border-radius: 1.8rem;}
-.mainArea .safetyInfo .roundDeco { display: block; position: absolute; left: -6.2rem; top: -12.3rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #6684EA; border-radius: 50%;}
+.mainArea .safetyInfo .roundDeco { display: block; position: absolute; left: -6.2rem; top: -12.3rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #5D68E6; border-radius: 50%;}
 
 .mainArea .improvement { margin-top: 2.7rem; padding-bottom: 8rem;}
 .mainArea .improvement .boxArea { padding-top: 2rem;}
@@ -177,7 +177,7 @@
 .mainArea .eduProgram .textLinks li { border-bottom: 1px solid #F4F5F7;}
 .mainArea .eduProgram .textLinks li a { display: flex; align-items: center; justify-content: space-between; min-height: 4.8rem; padding: 1rem 0;}
 .mainArea .eduProgram .textLinks li a span { color: #555;}
-.mainArea .eduProgram .textLinks li a b { font-size: 1.6rem; color: #4EC457; text-align: right;}
+.mainArea .eduProgram .textLinks li a b { font-size: 1.6rem; color: #29863b; text-align: right;}
 .mainArea .eduProgram .roundDeco { display: block; position: absolute; left: -5.2rem; bottom: -18rem; z-index: 1; width: 22.2rem; height: 22.2rem; background-color: #CCD2E3; border-radius: 50%;}
 .mainArea .donation { position: relative; margin-top: 2.7rem;}
 .mainArea .donation a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 0 2.4rem; color: #fff; background: #D69630 url(../image/info/info_donation_img.png) no-repeat right 4.8rem center/4.425rem 6rem; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
@@ -209,7 +209,7 @@
 .mainArea .toVisit li a { display: block; color: #111; text-align: center;}
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
 .mainArea .toVisit li a p { margin-top: 1.6rem;}
-.mainArea .toVisit .roundDeco { display: block; position: absolute; right: -7.1rem; bottom: -8.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #4EC457; border-radius: 50%;}
+.mainArea .toVisit .roundDeco { display: block; position: absolute; right: -7.1rem; bottom: -8.4rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #29863b; border-radius: 50%;}
 .mainArea .dullegil a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.7rem; padding-left: 3.2rem; color: #fff; background: url(../image/info/info_dullegil_bg.png) no-repeat center/cover; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
 .mainArea .dullegil a div { font-size: 1.5rem;}
 .mainArea .dullegil a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
@@ -236,14 +236,14 @@
 .mainArea .sejongAbout .body .other .brain { color: #111;}
 .mainArea .sejongAbout .body .other .brain span { font-size: 1.4rem; color: #555;}
 .mainArea .sejongAbout .body .other .brain b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
-.mainArea .sejongAbout .body .other .excursion { padding-bottom: 0.2rem; color: #6684EA;}
+.mainArea .sejongAbout .body .other .excursion { padding-bottom: 0.2rem; color: #5D68E6;}
 .mainArea .sejongAbout .body .other .excursion i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -36rem -4rem;}
 .mainArea .sejongAbout .body .btns { display: flex; align-items: center; justify-content: space-between; margin: 2rem -0.4rem 0;}
 .mainArea .sejongAbout .body .btns a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin: 0 0.4rem; color: #111; border: 1px solid #EAEDF2; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .sejongAbout .body .btns a i { margin: 0.1rem 0 0 0.4rem; vertical-align: middle; background-position: -36rem -6rem; opacity: 0.8;}
 
 .mainArea .usefulService { margin-top: 2.7rem; padding-bottom: 8rem;}
-.mainArea .usefulService .roundDeco { display: block; position: absolute; right: -6.5rem; top: -12.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #6684EA; border-radius: 50%;}
+.mainArea .usefulService .roundDeco { display: block; position: absolute; right: -6.5rem; top: -12.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #5D68E6; border-radius: 50%;}
 .mainArea .usefulService .roundDeco2 { display: block; position: absolute; left: -6.5rem; bottom: 4.2rem; z-index: 1; width: 12rem; height: 12rem; background-color: #CDD0D8; border-radius: 50%;}
 
 
@@ -301,8 +301,8 @@
 .info .newStoreBody ul li .addItems { display: flex; align-items: center; margin-top: 0.8rem; padding: 0 0.8rem;}
 .info .newStoreBody ul li .addItems span { display: flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem;}
 .info .newStoreBody ul li .addItems span ~ span { margin-left: 0.4rem;}
-.info .newStoreBody ul li .addItems .tag { color: #fff; background-color: #4EC457;}
-.info .newStoreBody ul li .addItems .sale { color: #FD2020; border: 1px solid #FD2020;}
+.info .newStoreBody ul li .addItems .tag { color: #fff; background-color: #29863b;}
+.info .newStoreBody ul li .addItems .sale { color: #E61E1E; border: 1px solid #E61E1E;}
 
 /* 홍보/행사 UI-SJN-04-007U */
 .info .promote { padding: 1.6rem 2rem 6rem;}
@@ -310,7 +310,7 @@
 /* 리뷰 목록 UI-SJN-04-009U */
 .info .pictureReview { padding: 1.6rem 2rem;}
 .info .pictureReview .pictureBody { overflow: hidden; margin: 0.8rem -2rem 0; padding: 0 2rem;}
-.info .pictureReview .pictureBody .empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #777;}
+.info .pictureReview .pictureBody .empty { display: flex; align-items: center; justify-content: center; width: 100% !important; height: 6.7rem; font-size: 1.6rem; color: #767676;}
 .info .pictureReview .pictureBody a { display: block; position: relative;}
 .info .pictureReview .pictureBody a img { width: 100%; height: auto; vertical-align: top;}
 .info .pictureReview .pictureBody .lastMore .blind { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
@@ -319,11 +319,11 @@
 .info .textReview { padding: 1.6rem 2rem 6rem;}
 .info .textReview .locationHeader { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .info .textReview .locationHeader h3 { display: flex; align-items: center; font-size: 1.8rem;}
-.info .textReview .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #777;}
-.info .textReview .locationHeader .write { display: block; font-size: 1.6rem; color: #6684EA;}
+.info .textReview .locationHeader h3 .cGray { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #767676;}
+.info .textReview .locationHeader .write { display: block; font-size: 1.6rem; color: #5D68E6;}
 .info .textReview .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
 .info .textReview .locationHeader button { margin-left: 0.6rem;}
-.info .textReview .locationHeader button.active { color: #6684EA;}
+.info .textReview .locationHeader button.active { color: #5D68E6;}
 
 
 /* 리뷰 등록 UI-SJN-04-010P */
@@ -392,7 +392,7 @@
 .info .environment .weatherBottom >div .swIco b { margin-left: 0.6rem;}
 .info .environment h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.6rem;}
 .info .environment .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem;}
-.info .environment .offerer span { font-size: 1.4rem; color: #777;}
+.info .environment .offerer span { font-size: 1.4rem; color: #767676;}
 .info .environment .offerer span ~ span { position: relative; margin-left: 0.7rem; padding-left: 0.6rem;}
 .info .environment .offerer span ~ span::after { content: ''; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.2rem; background-color: #ddd;}
 
@@ -406,14 +406,14 @@
 .info .weatherSubTab { margin: 0 -2rem; padding: 1.6rem 0 2.4rem;}
 .info .weatherSubTab .boxTab.roundStyle .btnTab { display: flex; align-items: center; height: 4.8rem; padding: 0 1.8rem;}
 .info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn { flex: 1; margin: 0 0.4rem;}
-.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
-.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button.active { color: #fff; background-color: #6684EA; border-color: #6684EA;}
+.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.info .weatherSubTab .boxTab.roundStyle .btnTab .itemBtn button.active { color: #fff; background-color: #5D68E6; border-color: #5D68E6;}
 .info .boxTab.roundStyle .tabContent { margin-top: 0.8rem; padding: 0;}
 .info .weeklyWeather { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySunrise { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySunrise .titleBox { display: flex; justify-content: space-between;}
-.info .weeklySunrise .titleBox .wState { display: flex; align-items: center; justify-content: center; width: 5rem; height: 3rem; font-size: 1.2rem; color: #777; border-radius: 1.5rem;}
-.info .weeklySunrise .titleBox .wSunrise { margin-left: 18%; color: #777; border: 1px solid #CDD0D8;}
+.info .weeklySunrise .titleBox .wState { display: flex; align-items: center; justify-content: center; width: 5rem; height: 3rem; font-size: 1.2rem; color: #767676; border-radius: 1.5rem;}
+.info .weeklySunrise .titleBox .wSunrise { margin-left: 18%; color: #767676; border: 1px solid #CDD0D8;}
 .info .weeklySunrise .titleBox .wSunset { margin-right: 5%; color: #fff; background-color: #A9B0C1;}
 .info .weeklyIndex { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySatellite { margin: 0 -2rem; padding: 1.6rem 2rem;}
@@ -429,10 +429,10 @@
 .info .weeklySatellite .controlBar .play { background-position-y: 0;}
 .info .weeklySatellite .controlBar .stop { background-position-y: -2.6rem;}
 .info .weeklySatellite .controlBar .bar { flex: 1; position: relative; height: 0.2rem; margin-left: 2rem; background-color: #EAEDF2;}
-.info .weeklySatellite .controlBar .bar .line { display: block; position: absolute; left: 0; top: 0; height: 0.2rem; background-color: #6684EA;}
+.info .weeklySatellite .controlBar .bar .line { display: block; position: absolute; left: 0; top: 0; height: 0.2rem; background-color: #5D68E6;}
 .info .weeklySatellite .controlBar .bar .time { display: flex; justify-content: center; position: absolute; right: -2.2rem; top: -2.8rem; width: 4.4rem; height: 2.4rem; padding-top: 0.1rem; font-size: 1.3rem; font-weight: 700; color: #fff; background: url(../image/info/ico_comment.png) no-repeat center/4.4rem 2.4rem;}
 .info .weeklySatellite .sumText { margin-top: 1.4rem;}
-.info .weeklySatellite .sumText p { font-size: 1.4rem; color: #777;}
+.info .weeklySatellite .sumText p { font-size: 1.4rem; color: #767676;}
 
 
 
@@ -445,7 +445,7 @@
 .info .boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
 .info .boxTab .btnTab .itemBtn button,
 .info .boxTab .btnTab .itemBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
-.info .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+.info .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #5D68E6;}
 .info .tabContent { padding: 0.8rem 2rem 4rem;}
 .info .tabContent >div { display: none;}
 .info .tabContent >div.active { display: block;}
@@ -485,9 +485,9 @@
 .info .viewBody .viewCite { margin-top: 1.6rem;}
 .info .viewBody .viewCite span { color: #555;}
 .info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 16rem;}
-.info .viewBody .viewCite a { color: #6684EA; border-bottom: 1px solid #6684EA;}
+.info .viewBody .viewCite a { color: #5D68E6; border-bottom: 1px solid #5D68E6;}
 .info .viewBody .copyRight { margin-top: 2rem;}
-.info .viewBody .copyRight p { font-size: 1.4rem; color: #777;}
+.info .viewBody .copyRight p { font-size: 1.4rem; color: #767676;}
 .info .articleList { padding: 1.6rem 2rem 4rem;}
 
 
@@ -497,7 +497,7 @@
 **********************************************/
 
 /* 견학신청 UI-SJN-13-002U */
-.info .tripHead .intro { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem; color: #fff; background-color: #6684EA;}
+.info .tripHead .intro { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem; color: #fff; background-color: #5D68E6;}
 .info .tripHead .intro::after { content: ''; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
 .info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #A9B0C1;}
 .info .tripHead .reserve .t { font-size: 1.6rem;}
@@ -512,12 +512,12 @@
 .info .tripCalendar .notes {display: flex; align-items: center; height: 4.8rem;}
 .info .tripCalendar .notes .slideContainer {  overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
 .info .tripCalendar .notes .swiper-slide { width: 7.6rem;}
-.info .tripCalendar .notes .swiper-slide span { display: inline-block; position: relative; padding-left: 2rem; font-size: 1.4rem; color: #777;}
+.info .tripCalendar .notes .swiper-slide span { display: inline-block; position: relative; padding-left: 2rem; font-size: 1.4rem; color: #767676;}
 .info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
 .info .tripCalendar .notes .swiper-slide span.complete::after { background-color: #555;}
 .info .tripCalendar .notes .swiper-slide span.wait::after { background-color: #CDD0D8;}
-.info .tripCalendar .notes .swiper-slide span.possible::after { background-color: #6684EA;}
-.info .tripCalendar .notes .swiper-slide span.impossible::after { background-color: #FD2020;}
+.info .tripCalendar .notes .swiper-slide span.possible::after { background-color: #5D68E6;}
+.info .tripCalendar .notes .swiper-slide span.impossible::after { background-color: #E61E1E;}
 .info .tripCalendar .notes .swiper-slide span.companion::after { background-color: #32BBED;}
 .info .tripCalendar .notes .swiper-slide span.modify::after { background-color: #D69630;}
 
@@ -536,7 +536,7 @@
 .info .introduce .introduceGuide .data { position: absolute; left: 0; top: -1rem; width: 100%; height: 31rem;}
 .info .introduce .introduceGuide .data .dataPosition { position: relative; width: 32rem; height: 100%; margin: 0 auto;}
 .info .introduce .introduceGuide .data .dataPosition >div { position: absolute; text-align: center; border-radius: 50%;}
-.info .introduce .introduceGuide .data .dataPosition .dataWhite { display: flex; align-items: center; justify-content: center; left: 50%; top: 50%; z-index: 1; width: 13.2rem; height: 13.2rem; font-size: 1.6rem; color: #6684EA; background-color: #fff; transform: translate(-50%, -50%);}
+.info .introduce .introduceGuide .data .dataPosition .dataWhite { display: flex; align-items: center; justify-content: center; left: 50%; top: 50%; z-index: 1; width: 13.2rem; height: 13.2rem; font-size: 1.6rem; color: #5D68E6; background-color: #fff; transform: translate(-50%, -50%);}
 .info .introduce .introduceGuide .data .dataPosition .dataWhite .t { font-size: 1.6rem;}
 .info .introduce .introduceGuide .data .dataPosition .dataWhite sup { display: inline-block; width: 0.7rem; height: 0.7rem; margin: -1.3rem 0.2rem 0 0.2rem; vertical-align: middle; background: url(../image/info/ico_deco_keypoint.png) no-repeat center bottom/contain;}
 .info .introduce .introduceGuide .data .dataPosition .other { width: 18.2rem; height: 18.2rem; color: #fff;}
@@ -545,7 +545,7 @@
 .info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; padding: 10rem 0 0 2.6rem; background-color: rgba(50, 187, 237, 0.8);}
 .info .introduce .introduceGuide .data .dataPosition .t { font-size: 1.8rem; font-weight: 700;}
 .info .introduce .introduceGuide .data .dataPosition .st { margin-top: 0.4rem; font-size: 1.1rem; letter-spacing: 0;}
-.info .introduce .introduceGuide >p { position: absolute; z-index: 1; font-size: 1.3rem; color: #777; word-break: keep-all; letter-spacing: -0.1em; line-height: 2.2rem;}
+.info .introduce .introduceGuide >p { position: absolute; z-index: 1; font-size: 1.3rem; color: #767676; word-break: keep-all; letter-spacing: -0.1em; line-height: 2.2rem;}
 .info .introduce .introduceGuide >p::after { content: ''; display: block; position: absolute; width: 1.5rem; height: 1.5rem; background-color: #CCD2E3; border-radius: 50%;}
 .info .introduce .introduceGuide >p::before { content: ''; display: block; position: absolute; width: 0.1rem; background-color: #CCD2E3;}
 .info .introduce .introduceGuide .textPoa_a { left: 0; right: 0; top: -9rem; text-align: center;}
@@ -583,7 +583,7 @@
 .info .goal .goalBgList li .goalIcons.calamity i { background-position-x: -9.6rem;}
 .info .goal .goalBgList li .goalIcons.energy i { background-position-x: -12.8rem;}
 .info .goal .goalBgList li .goalIcons.convenience i { background-position-x: -16rem;}
-.info .goal .goalBgList li p { margin-top: 0.8rem; font-size: 1.4rem; color: #777;}
+.info .goal .goalBgList li p { margin-top: 0.8rem; font-size: 1.4rem; color: #767676;}
 .info .keyPoint { margin-top: 4rem;}
 .info .keyPoint .keyPointArea { padding: 3.2rem 2rem 4rem;}
 .info .keyPoint .keyPointHeader { display: flex; align-items: center; height: 7.2rem;}
@@ -592,9 +592,9 @@
 .info .keyPoint .keyPointHeader h4 .cBlue { display: block;}
 .info .keyPoint .keyPointBody { margin-top: 2rem;}
 .info .keyPoint .keyPointBody li dl { padding: 1.7rem 2rem 2rem; color: #fff;}
-.info .keyPoint .keyPointBody li:nth-child(1) { background-color: #6684EA;}
+.info .keyPoint .keyPointBody li:nth-child(1) { background-color: #5D68E6;}
 .info .keyPoint .keyPointBody li:nth-child(2) { background-color: #4EC4AD;}
-.info .keyPoint .keyPointBody li:nth-child(3) { background-color: #4EC457;}
+.info .keyPoint .keyPointBody li:nth-child(3) { background-color: #29863b;}
 .info .keyPoint .keyPointBody li dl dt span { display: block; font-size: 1.3rem;}
 .info .keyPoint .keyPointBody li dl dt strong { display: block; font-size: 1.8rem;}
 .info .keyPoint .keyPointBody li dl dd { margin-top: 2rem;}

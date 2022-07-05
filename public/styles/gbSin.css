@@ -16,7 +16,7 @@
 .mainArea .mainPromotion::before,
 .mainArea .repMenu::before { content: ''; position: absolute; left: -2rem; top: -1.6rem; width: 350rem; height: 10rem; background: url(../image/home/main_bg_left.png) no-repeat left bottom/350rem 10rem;}
 .mainArea .mainPromotion::after,
-.mainArea .repMenu::after { content: ''; position: absolute; right: -2.1rem; top: -1.6rem; width: 10rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
+.mainArea .repMenu::after { content: ''; position: absolute; right: -2rem; top: -1.6rem; width: 10rem; height: 10rem; background: url(../image/home/main_bg_right.png) no-repeat right bottom/10rem 10rem;}
 .mainArea .boxWrap.repMenu .boxArea { padding: 1.4rem 2.4rem 2.2rem;}
 .mainArea .repMenu h2 { font-size: 2.2rem;}
 .mainArea .repMenu .body { display: flex; justify-content: space-between; margin-top: 1.6rem;}
@@ -39,7 +39,7 @@
 .recentService .homeNav { overflow: hidden; position: relative; z-index: 2; margin: 0 -2rem; padding: 1rem 2rem 2rem;}
 .recentService .homeNav ul li { width: auto; min-width: 9.2rem;}
 .recentService .homeNav ul li a { display: block; position: relative; color: #111; text-align: center;}
-.recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2.4rem; height: 2.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #fff; background-color: #4EC457; border-radius: 50%;}
+.recentService .homeNav ul li a .poa { display: flex; align-items: center; justify-content: center; position: absolute; left: -0.4rem; top: -0.4rem; width: 2.4rem; height: 2.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; color: #fff; background-color: #29863b; border-radius: 50%;}
 .recentService .homeNav ul li a .text { font-size: 1.6rem;}
 .recentService .homeNav ul li a .roundBox { width: 100%; height: 10.2rem; padding: 2.4rem 1.6rem 0; text-align: center; white-space: nowrap; background-color: #fff; box-shadow: 0 1rem 2rem rgba(102 132 234 / 10%); border-radius: 2rem;}
 .recentService .homeNav ul li a .roundBox img { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem;}
@@ -48,9 +48,9 @@
 .recentService.typeB { margin-top: 2rem; padding: 0;}
 .mainArea .boxWrap { position: relative;}
 .mainArea .boxWrap .boxArea { position: relative; z-index: 2; padding: 1rem 1.6rem 2rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
-.mainArea .serviceGroup { overflow: hidden; position: relative; margin-top: 2.7rem; padding: 1.1rem 2rem 1.8rem; background-color: #6684ea; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
-.mainArea .serviceGroup::before { content: ''; display: block; position: absolute; left: -3.8rem; top: -10.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
-.mainArea .serviceGroup::after { content: ''; display: block; position: absolute; right: -8.8rem; bottom: -7.5rem; width: 20.9rem; height: 20.9rem; background-color: #7D98F4; border-radius: 50%;}
+.mainArea .serviceGroup { overflow: hidden; position: relative; margin-top: 2.7rem; padding: 1.1rem 2rem 1.8rem; background-color: #5D68E6; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+.mainArea .serviceGroup::before { content: ''; display: block; position: absolute; left: -3.8rem; top: -10.5rem; width: 20.9rem; height: 20.9rem; background-color: #4c58e5; border-radius: 50%;}
+.mainArea .serviceGroup::after { content: ''; display: block; position: absolute; right: -8.8rem; bottom: -7.5rem; width: 20.9rem; height: 20.9rem; background-color: #4c58e5; border-radius: 50%;}
 .mainArea .serviceGroup h3 { position: relative; z-index: 1; align-items: flex-end; font-size: 2rem; color: #fff;}
 .mainArea .serviceGroup h3 img { width: 16.725rem; height: auto; margin: 0 0 0.4rem 0.6rem;}
 .mainArea .serviceGroup ul { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; margin-top: 1.6rem;}
@@ -68,32 +68,32 @@
 .mainArea .covid19 .menu .btnTab { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .mainArea .covid19 .menu .btnTab li { width: calc(50% - 0.4rem);}
 .mainArea .covid19 .menu .btnTab li button,
-.mainArea .covid19 .menu .btnTab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.mainArea .covid19 .menu .btnTab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.6rem; padding: 0 1rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
 .mainArea .covid19 .menu .btnTab li .clinic { margin-right: 0.2rem; background-position: -10rem -8rem;}
 .mainArea .covid19 .menu .btnTab li .situation { margin-right: 0.2rem; background-position: -12rem -8rem;}
-.mainArea .covid19 .menu .btnTab li button.active { color: #fff; border-color: #D57298; background-color: #D57298;}
+.mainArea .covid19 .menu .btnTab li button.active { color: #fff; border-color: #932f55; background-color: #B25377;}
 .mainArea .covid19 .menu .btnTab li .active i { background-position-y: -10rem;}
 .mainArea .covid19 .menu .tabContent >div { display: none;}
 .mainArea .covid19 .menu .tabContent >div.active { display: block;}
 .mainArea .covid19 .menu .tabContent .clinic { padding: 0.7rem 0;}
-.mainArea .covid19 .menu .tabContent .clinic >p { margin-top: 0.6rem; font-size: 1.4rem; color: #777;}
+.mainArea .covid19 .menu .tabContent .clinic >p { margin-top: 0.6rem; font-size: 1.4rem; color: #767676;}
 .mainArea .covid19 .situation .sDate { display: flex; align-items: center; justify-content: flex-end; height: 3.4rem; font-size: 1.3rem; letter-spacing: 0;}
 .mainArea .covid19 .situation img { width: 100%; height: auto;}
 .mainArea .covid19 .lineBox { margin-top: 1rem; padding: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .covid19 .lineBox:first-child { margin-top: 0;}
 .mainArea .covid19 .lineBox .operation { display: flex; align-items: center;}
 .mainArea .covid19 .lineBox .operation .round { display: flex; align-items: center; justify-content: center; height: 2.4rem; margin-right: 0.8rem; padding: 0 0.8rem 0 0.4rem; font-size: 1.4rem; color: #fff; border-radius: 1.2rem;}
-.mainArea .covid19 .lineBox .operation .round.operation { background-color: #4EC457;}
-.mainArea .covid19 .lineBox .operation .round.closed { width: 6.8rem; background-color: #777;}
+.mainArea .covid19 .lineBox .operation .round.operation { background-color: #29863b;}
+.mainArea .covid19 .lineBox .operation .round.closed { width: 6.8rem; background-color: #757575;}
 .mainArea .covid19 .lineBox .operation .round i { background-position: -4rem -8rem;}
 .mainArea .covid19 .lineBox .operation .name { flex: 1; font-size: 1.5rem; font-weight: 700; text-align: left;}
 .mainArea .covid19 .lineBox .operation .name span i { margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background-position-x: -30rem;}
 .mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; margin-top: 0.6rem;}
-.mainArea .covid19 .lineBox .infomation b { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #fff; background-color: #6684EA; border-radius: 1.2rem;}
+.mainArea .covid19 .lineBox .infomation b { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #fff; background-color: #5D68E6; border-radius: 1.2rem;}
 .mainArea .covid19 .lineBox .infomation span { display: block; margin-left: 0.8rem; font-size: 1.6rem;}
-.mainArea .covid19 .lineBox .infomation.veryCrowd { color: #FD2020;}
-.mainArea .covid19 .lineBox .infomation.veryCrowd b::after { background-color: #FD2020;}
-.mainArea .covid19 .clinic >p { margin-top: 0.4rem; font-size: 1.3rem; color: #777;}
+.mainArea .covid19 .lineBox .infomation.veryCrowd { color: #E61E1E;}
+.mainArea .covid19 .lineBox .infomation.veryCrowd b::after { background-color: #E61E1E;}
+.mainArea .covid19 .clinic >p { margin-top: 0.4rem; font-size: 1.3rem; color: #767676;}
 .mainArea .covid19 .btnLists { margin-top: 1.6rem;}
 .mainArea .covid19 .btnLists li { position: relative; border-top: 1px solid #F4F5F7;}
 .mainArea .covid19 .btnLists li .button-more { justify-content: flex-start; margin-top: 0;}
@@ -102,7 +102,7 @@
 .mainArea .covid19 .button-more { margin-top: 0.6rem;}
 .mainArea .covid19 .button-more .btn { color: #333;}
 .mainArea .covid19 .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.mainArea .covid19 .offerer button { font-size: 1.4rem; color: #777;}
+.mainArea .covid19 .offerer button { font-size: 1.4rem; color: #767676;}
 .mainArea .covid19 .offerer button i { margin: -0.2rem 0 0 0.4rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
 .mainArea .covid19 .infectionBtn { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 6rem; margin-top: 2.4rem; padding: 0 1.6rem; background-color: #F4F5F7; border-radius: 0.8rem;}
 .mainArea .covid19 .infectionBtn span { display: flex; align-items: center; font-size: 1.4rem; color: #333;}
@@ -111,7 +111,7 @@
 .mainArea .weatherBox { margin-top: 2rem;}
 .mainArea .weatherBox .boxArea { padding: 1.8rem;}
 .mainArea .weatherBox .roundDeco { display: none; position: absolute; left: -16rem; top: -13rem; z-index: 1;}
-.mainArea .weatherBox .roundDeco path { fill: #6684ea}
+.mainArea .weatherBox .roundDeco path { fill: #5D68E6}
 /* .mainArea .weatherBox.active .accordionTarget { height: 0;}
 .mainArea .weatherBox.active .weatherLink .weather { display: flex; align-items: center;}
 .mainArea .weatherBox.active .weatherLink .location { display: none;}
@@ -153,7 +153,7 @@
 
 .mainArea .weatherBox .items-weatherInfo { display: flex; margin-top: 0; align-items: center; text-align: center;}
 .mainArea .weatherBox .items-weatherInfo li { flex: 1; width: 5rem;}
-.mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #777;}
+.mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #767676;}
 
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
 .mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
@@ -181,7 +181,7 @@
 
 .mainArea .weatherBparticulatesox .particulates .body >div .number b { font-size: 1.8rem;}
 .mainArea .weatherBox .offerer { display: flex; align-items: center; justify-content: flex-end; margin-top: 0.8rem;}
-.mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #777;}
+.mainArea .weatherBox .offerer span { font-size: 1.4rem; color: #767676;}
 .mainArea .weatherBox .weatherLink .location { display: none;}
 .mainArea .weatherBox .weatherLink .weather .temperature { display: flex; align-items: baseline; font-size: 1.8rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature .import { position: relative; font-weight: 700;}
@@ -191,7 +191,7 @@
 .mainArea .weatherBox .normal { color: #01C73D;}
 .mainArea .weatherBox .caution { color: #FFA60E;}
 .mainArea .weatherBox .highness { color: #FD7803;}
-.mainArea .weatherBox .cautionText { height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #FD2020; border-radius: 1.6rem 1.6rem 0 0;}
+.mainArea .weatherBox .cautionText { height: 5.2rem; margin-bottom: -1.5rem; padding: 1rem 1rem 0; font-size: 1.4rem; color: #fff; background-color: #E61E1E; border-radius: 1.6rem 1.6rem 0 0;}
 .mainArea .weatherBox .cautionText .hiddenBox { display: flex; overflow: hidden;}
 .mainArea .weatherBox .cautionText p { display: flex; align-items: center; padding-left: 100%; white-space: nowrap;	animation: marquee 30s forwards linear infinite;}
 .mainArea .weatherBox .cautionText p img { width: 2.4rem; height: 2.4rem; margin-right: 0.2rem;}
@@ -216,7 +216,7 @@
 .mainArea .weatherBox.active .weatherLink .weather .temperature span { font-size: 1.6rem;}
 .mainArea .weatherBox.active .weatherLink .toggleBtn { display: none;}
 .mainArea .weatherBox.active .weatherLink .location { display: block;}
-.mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #777;}
+.mainArea .weatherBox.active .weatherLink .location span { font-size: 1.3rem; color: #767676;}
 .mainArea .weatherBox.active .weatherLink .location i { margin-top: -0.3rem; vertical-align: middle; background-position: -33.6rem -24rem;}
 .mainArea .weatherBox.active .weatherLink .location .myLocation { margin-left: 0.4rem;}
 .mainArea .weatherBox.active .weatherLink .val { margin-left: 0;}
@@ -249,13 +249,13 @@
 .mainArea .mainNews .boxArea >div .flex:first-child { margin-top: 0;}
 .mainArea .mainNews .flex { margin-top: 1rem; margin-bottom: 1rem;}
 .mainArea .mainNews .flex h4 { font-size: 1.7rem; font-weight: 400;}
-.mainArea .mainNews .flex .more { font-size: 1.5rem; color: #6684EA;}
+.mainArea .mainNews .flex .more { font-size: 1.5rem; color: #5D68E6;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -19rem; z-index: 1;}
 .mainArea .mainNews .roundDeco path { fill: #32bbed;}
 .mainArea .mainNews .mainNewsList { overflow: hidden; position: relative; padding-bottom: 2.8rem;}
 .mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
-.mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #6684EA;}
+.mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #5D68E6;}
 .mainArea .mainNews .mainNewsList .slideContainer { overflow: hidden; height: 16rem; border-radius: 0.8rem;}
 .mainArea .mainNews .mainNewsList .slideContainer li { overflow: hidden; height: 100%; border-radius: 0.8rem;}
 .mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; position: relative; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
@@ -268,17 +268,17 @@
 .mainArea .mainNews .mainNewsPiece li a { display: block; color: #111;}
 .mainArea .mainNews .mainNewsPiece li a figure { width: 14rem; height: 9.2rem; border-radius: 0.8rem;}
 .mainArea .mainNews .mainNewsPiece li a p { height: 4.8rem; margin-top: 1.2rem; line-height: 2.4rem;}
-.mainArea .mainNews .mainNewsPiece li a span { display: block; margin-top: 0.9rem; font-size: 1.4rem; color: #777;}
+.mainArea .mainNews .mainNewsPiece li a span { display: block; margin-top: 0.9rem; font-size: 1.4rem; color: #767676;}
 .mainArea .mainNews .button-more { margin-top: 2.5rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
 .mainArea .mainNews .button-more .btn { color: #333;}
 .mainArea .oilPrice { margin-top: 2.7rem;}
 .mainArea .oilPrice .boxArea { padding-bottom: 1.2rem;}
 .mainArea .oilPrice .roundDeco { display: block; position: absolute; left: -7rem; top: -13.8rem; z-index: 1;}
-.mainArea .oilPrice .roundDeco path { fill: #4ec457;}
+.mainArea .oilPrice .roundDeco path { fill: #29863b;}
 .mainArea .oilPrice .average { display: flex; align-items: center; justify-content: space-between; margin-top: 0.6rem;}
 .mainArea .oilPrice .average .title b { font-size: 1.6rem;}
-.mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #777;}
-.mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .average .title span { font-size: 1.4rem; color: #767676;}
+.mainArea .oilPrice .average .baseDate { font-family: var(--fontRoboto); font-size: 1.4rem; color: #767676;}
 .mainArea .oilPrice .price { margin-top: 1rem;}
 .mainArea .oilPrice .price .t { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .oilPrice .price .t .tBox { display: flex; align-items: center;}
@@ -286,22 +286,22 @@
 .mainArea .oilPrice .price .t .tBox span { margin-left: 1.4rem; font-family: var(--fontRoboto); font-size: 1.4rem; font-weight: 700; letter-spacing: 0;}
 .mainArea .oilPrice .price .t .tBox span.equal { position: relative; padding-left: 1.2rem;}
 .mainArea .oilPrice .price .t .tBox span.equal::after { content: ''; position: absolute; left: 0; top: 0.8rem; width: 0.8rem; height: 0.2rem; background-color: #111;}
-.mainArea .oilPrice .price .up { color: #FD2020;}
-.mainArea .oilPrice .price .down { color: #6684EA;}
+.mainArea .oilPrice .price .up { color: #E61E1E;}
+.mainArea .oilPrice .price .down { color: #5D68E6;}
 .mainArea .oilPrice .price .u { text-align: right;}
 .mainArea .oilPrice .price .u span { display: block; font-family: var(--fontRoboto); font-size: 1.4rem; letter-spacing: 0;}
 .mainArea .oilPrice .offerer { display: flex; align-items: center; justify-content: flex-end; height: 3.8rem;}
-.mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #777;}
+.mainArea .oilPrice .offerer span { font-size: 1.4rem; color: #767676;}
 .mainArea .oilPrice .button-more { margin-top: 0.4rem; border: 1px solid #F4F5F7; border-radius: 0 0 1.4rem 1.4rem;}
 .mainArea .oilPrice .button-more .btn { color: #333;}
 .mainArea .hospital { margin-top: 2.7rem;}
-.mainArea .hospital h3 span { margin-right: 0.6rem; color: #4EC457;}
+.mainArea .hospital h3 span { margin-right: 0.6rem; color: #29863b;}
 .mainArea .hospital .roundDeco { display: block; position: absolute; right: -15rem; top: -6rem; z-index: 1;}
 .mainArea .hospital .roundDeco path { fill: #a9b0c1;}
-.mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #777;}
+.mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #767676;}
 .mainArea .hospital ul { margin-top: 3.3rem; border-top: 1px solid #F4F5F7;}
 .mainArea .hospital ul li { border-bottom: 1px solid #F4F5F7;}
-.mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; font-size: 1.6rem; color: #6684EA;}
+.mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; font-size: 1.6rem; color: #5D68E6;}
 .mainArea .hospital ul li a.hospitalLink i { margin-right: 0.8rem; background-position: -2.4rem -19.2rem;}
 .mainArea .hospital ul li a.pharmacyLink i { margin-right: 0.8rem; background-position: -4.8rem -19.2rem;}
 .mainArea .hospital ul li a::after { content: ''; }
@@ -312,7 +312,7 @@
 .mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; margin-top: 1rem;}
 .mainArea .weekClosed .body a { display: block; width: 7rem; color: #111; text-align: center;}
 .mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
-.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #777;}
+.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #767676;}
 .mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
 .mainArea .weekClosed .open { padding: 1.5rem 0 1rem; text-align: center;}
 .mainArea .weekClosed .open img { width: 8rem; height: auto;}
@@ -334,7 +334,7 @@
 .mainArea .playground .playgroundBtn img { width: 4.9rem; height: 4.9rem; vertical-align: top;}
 .mainArea .playground .byDate { display: block; margin-top: 1rem; font-size: 1.3rem; color: #555;}
 .mainArea .playground .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4.8rem; padding-top: 0.8rem;}
-.mainArea .playground .offerer button { font-size: 1.4rem; color: #777;}
+.mainArea .playground .offerer button { font-size: 1.4rem; color: #767676;}
 .mainArea .playground .offerer button i { margin: -0.2rem 0 0 0.4rem; vertical-align: middle; background-color: #EAEDF2; background-position: -19.2rem -19.2rem; border-radius: 50%;}
 .mainArea .playground .listForm { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem;}
 .mainArea .playground .listForm li { display: flex; justify-content: center; align-items: center; width: calc(50% - 0.4rem); padding: 1.8rem 0.8rem 1.6rem; background-color: #F4F5F7; border-radius: 0.4rem;}
@@ -345,11 +345,11 @@
 .mainArea .playground .listForm li .title .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin-top: -0.5rem; vertical-align: middle; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
 .mainArea .playground .listForm li .bodyArea { display: flex; justify-content: center; align-items: center; margin-top: 1rem;}
 .mainArea .playground .listForm li .bodyArea span:first-child { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.8rem; margin-right: 0.8rem; font-weight: 700; color: #fff; border-radius: 1.4rem;}
-.mainArea .playground .listForm li .bodyArea span.lowness { background-color: #6684EA;}
-.mainArea .playground .listForm li .bodyArea span.normal { background-color: #4EC457;}
+.mainArea .playground .listForm li .bodyArea span.lowness { background-color: #5D68E6;}
+.mainArea .playground .listForm li .bodyArea span.normal { background-color: #29863b;}
 .mainArea .playground .listForm li .bodyArea span.caution { background-color: #FF940E;}
-.mainArea .playground .listForm li .bodyArea span.danger { background-color: #FD2020;}
-.mainArea .playground .listForm li .bodyArea .orMore { color: #777;}
+.mainArea .playground .listForm li .bodyArea span.danger { background-color: #E61E1E;}
+.mainArea .playground .listForm li .bodyArea .orMore { color: #767676;}
 .mainArea .playground .listForm li .bodyArea.schedule span:first-child { width: 0; margin-right: 0;}
 .mainArea .playground .listForm li .bodyArea.schedule .orMore { text-align: center;}
 .mainArea .playground .listForm li.off { background-color: rgb(0 0 0 / 60%);}
@@ -364,12 +364,12 @@
 .mainArea .playground .guideText i { background-position-x: -38rem;}
 .mainArea .playground .guideText span { margin-left: 0.4rem; font-size: 1.3rem; color: #555;}
 .mainArea .playground .btn { display: flex; align-items: center; justify-content: center; margin-top: 1.6rem;}
-.mainArea .playground .btn button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #6684EA; border-radius: 1.8rem;}
+.mainArea .playground .btn button { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1.2rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6; border-radius: 1.8rem;}
 .mainArea .playground .btn button i { margin-right: 0.4rem; background-position-y: -4rem;}
 .mainArea .playground .listBtns { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.3rem;}
 .mainArea .playground .listBtns li {  width: calc(50% - 0.4rem);}
 .mainArea .playground .listBtns li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
-.mainArea .playground .listBtns li button.active { font-weight: 700; color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.mainArea .playground .listBtns li button.active { font-weight: 700; color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .mainArea .playground .chartBox { position: relative; margin-top: 3.2rem;}
 .mainArea .playground .chartBox .chart img { width: 100%; height: auto;}
 .mainArea .playground .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 2.4rem;}
@@ -400,10 +400,10 @@
 .mainArea .visitorGroup .tabCount .tabBtns { display: flex; align-items: center;}
 .mainArea .visitorGroup .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 3rem; color: #555; border: 1px solid #EAEAEA;}
 .mainArea .visitorGroup .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
-.mainArea .visitorGroup .tabCount .tabBtns button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.mainArea .visitorGroup .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .mainArea .visitorGroup .tabCount .combo { display: flex; align-items: center;}
 .mainArea .visitorGroup .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
-.mainArea .visitorGroup .tabCount .combo .switch input:checked + label:before { background-color: #4EC457;}
+.mainArea .visitorGroup .tabCount .combo .switch input:checked + label:before { background-color: #29863b;}
 .mainArea .visitorGroup .chartBox { position: relative; margin-top: 1.8rem;}
 .mainArea .visitorGroup .chartBox .chart img { width: 100%; height: auto;}
 .mainArea .visitorGroup .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 3rem;}
@@ -418,19 +418,19 @@
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .walking i { background-position: -4.8rem -24rem;}
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .bike { margin-top: 0.8rem;}
 .mainArea .visitorGroup .chartBox .chartControl .cBtns .bike i { background-position: -7.2rem -24rem;}
-.mainArea .visitorGroup .chartBox .chartControl .cBtns .conBtn.active { border-color: #6684EA;}
+.mainArea .visitorGroup .chartBox .chartControl .cBtns .conBtn.active { border-color: #5D68E6;}
 .mainArea .visitorGroup .chartBox .chartControl .chart { flex: 1;}
 .mainArea .visitorGroup .slideBody { position: relative; margin-top: 2rem;}
 .mainArea .visitorGroup .slideBody .slideContainer { position: relative; margin: 0 -1.6rem; padding: 0 2rem;}
 .mainArea .visitorGroup .slideBody li { width: 15.6rem;}
 .mainArea .visitorGroup .slideBody li a { display: block; overflow: hidden; height: 9.4rem;}
-.mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #6684EA; border: 1px solid #eaedf2;}
+.mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #5D68E6; border: 1px solid #eaedf2;}
 .mainArea .visitorGroup .slideBody .swiper-pagination { bottom: -28px;}
 .mainArea .visitorGroup .ingBody { display: flex; align-items: center;}
 .mainArea .visitorGroup .ingBody p { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 0.8rem 0 0.4em; color: #fff; border-radius: 1.2rem;}
 .mainArea .visitorGroup .ingBody p i { vertical-align: middle; background-position: -4rem -8rem;}
-.mainArea .visitorGroup .ingBody p.oper { background-color: #4EC457;}
-.mainArea .visitorGroup .ingBody p.ready { background-color: #6684EA;}
+.mainArea .visitorGroup .ingBody p.oper { background-color: #29863b;}
+.mainArea .visitorGroup .ingBody p.ready { background-color: #5D68E6;}
 .mainArea .visitorGroup .ingBody p.end { background-color: #555;}
 .mainArea .visitorGroup .ingBody p b { font-size: 1.4rem; font-weight: 400;}
 /* .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
@@ -444,7 +444,7 @@
 .mainArea .visitorGroup .targetHeight.active { height: 36rem;}
 
 
-.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 2.4rem; height: 2.4rem; background-color: #6684EA; border-radius: 50%; animation: anyToggle1 3s infinite linear;}
+.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 2.4rem; height: 2.4rem; background-color: #5D68E6; border-radius: 50%; animation: anyToggle1 3s infinite linear;}
 .mainArea .visitorGroup .ingBody .toggleBtn .lineBox { position: absolute; left: 0; animation: anyToggleChech1 3s infinite linear;}
 .mainArea .visitorGroup .ingBody .toggleBtn .line1 { position: absolute; left: 0.6rem; top: 1.1rem; width: 0.8rem; height: 0.3rem; background-color: #fff; border-radius: 0.2rem; transform: rotate(45deg); }
 .mainArea .visitorGroup .ingBody .toggleBtn .line2 { position: absolute; left: 1rem; top: 1.1rem; width: 0.8rem; height: 0.3rem; background-color: #fff; border-radius: 0.2rem; transform: rotate(-45deg);}
@@ -545,7 +545,7 @@
 
 .home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
 .home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
-.home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #777; text-align: center;}
+.home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #767676; text-align: center;}
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 
 /* .mainMenuFixed { overflow: hidden; position: relative; margin-bottom: -2rem; padding-bottom: 7rem;} */
@@ -554,7 +554,7 @@
 .mainMenu .mainMenuList ul { display: flex;}
 .mainMenu .mainMenuList ul li { flex: 1; position: relative; height: auto; padding-top: 1.18rem;}
 .mainMenu .mainMenuList ul li a { display: block; width: 100%; height: 100%; text-align: center; cursor: pointer;}
-.mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #777;}
+.mainMenu .mainMenuList ul li a >span { display: inline-block; font-size: 1.2rem; color: #767676;}
 .mainMenu .mainMenuList ul li a >span .name { display: block; margin-top: 0.5rem;}
 .mainMenu .mainMenuList ul li a br { display: none;}
 .mainMenu .mainMenuList ul li a .deco { position: absolute; left: 50%; top: 0; z-index: -1; width: 7.875rem; height: 1.9rem; margin-left: -3.9rem; background: url(../image/common/main_manubg.png) no-repeat center/cover; opacity: 0; transition: top .2s ease;}
@@ -564,8 +564,8 @@
 .mainMenu .mainMenuList ul li a.mapMenu .icon { background-position: -14.4rem -19.2rem;}
 .mainMenu .mainMenuList ul li.active a br { display: block;}
 .mainMenu .mainMenuList ul li.active a >span { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: -0.6rem; z-index: 2; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
-.mainMenu .mainMenuList ul li:nth-child(1).active a >span { border: 1px solid #40B549; background-color: #4EC457;}
-.mainMenu .mainMenuList ul li:nth-child(2).active a >span { border: 1px solid #5575E2; background-color: #6684EA;}
+.mainMenu .mainMenuList ul li:nth-child(1).active a >span { border: 1px solid #40B549; background-color: #29863b;}
+.mainMenu .mainMenuList ul li:nth-child(2).active a >span { border: 1px solid #5575E2; background-color: #5D68E6;}
 .mainMenu .mainMenuList ul li:nth-child(3).active a >span { border: 1px solid #D69630; background-color: #D69630;}
 .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
 .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
@@ -625,20 +625,20 @@
 
 .home .recentSearch { padding: 1.6rem 2rem;}
 .home .recentSearch .rsTabs { display: flex; align-items: center; height: 4.8rem; margin-left: -0.8rem;}
-.home .recentSearch .rsTabs button { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-left: 0.8rem; padding: 0 1.1rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
-.home .recentSearch .rsTabs button.active { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.home .recentSearch .rsTabs button { display: flex; align-items: center; justify-content: center; height: 3.6rem; margin-left: 0.8rem; padding: 0 1.1rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 1.8rem;}
+.home .recentSearch .rsTabs button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .home .recentSearch .emptySearch { display: flex; align-items: center; justify-content: center; height: 19.2rem;}
-.home .recentSearch .emptySearch p { position: relative; margin-top: 9rem; font-size: 1.6rem; color: #777;}
+.home .recentSearch .emptySearch p { position: relative; margin-top: 9rem; font-size: 1.6rem; color: #767676;}
 .home .recentSearch .emptySearch p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty_search.png) no-repeat center/2.4rem 2.4rem; border-radius: 50%;}
 
 #root .home .mapSearch { position: inherit; left: inherit; right: inherit; top: inherit; z-index: inherit; padding: 1.6rem 2rem;}
 
 /* UI-SJN-02-010U */
-.home .homeSearchArea .afterSearch { color: #6684EA;}
+.home .homeSearchArea .afterSearch { color: #5D68E6;}
 .home .homeSearchArea .hcList li { position: relative; padding: 1.7rem 0 1.5rem 4rem;}
 .home .homeSearchArea .hcList li .label { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 1.8rem; height: 2rem; font-size: 1.3rem; color: #fff;}
 .home .homeSearchArea .hcList li .label.wood { width: 3rem; background-color: #D69630;}
-.home .homeSearchArea .hcList li .label.green { width: 5.1rem; background-color: #4EC457;}
+.home .homeSearchArea .hcList li .label.green { width: 5.1rem; background-color: #29863b;}
 .home .homeSearchArea .hcList li h4 { font-size: 1.6rem;}
 .home .homeSearchArea .hcList li .text { margin-top: 0.6rem;}
 .home .homeSearchArea .hcList li .text p { font-size: 1.6rem; color: #555;}
@@ -665,16 +665,16 @@
 .home .homeStation .hsList { display: flex; flex-wrap: wrap; margin: -0.8rem -0.4rem 0;}
 .home .homeStation .hsList li { width: calc(50% - 0.8rem); margin: 0.8rem 0.4rem 0; padding: 2.3rem 1.6rem; border: 1px solid #EAEAEA;}
 .home .homeStation .hsList li .label { display: flex; align-items: center; justify-content: center; width: 3rem; height: 2rem; font-size: 1.3rem; color: #fff;}
-.home .homeStation .hsList li .label.normal { background-color: #6684EA;}
-.home .homeStation .hsList li .label.wide { background-color: #FD2020;}
+.home .homeStation .hsList li .label.normal { background-color: #5D68E6;}
+.home .homeStation .hsList li .label.wide { background-color: #E61E1E;}
 .home .homeStation .hsList li .busNum { margin-top: 0.8rem; font-style: 1.6rem; font-weight: 700;}
-.home .homeStation .hsList li .busNum span { font-style: 1.4rem; color: #777;}
+.home .homeStation .hsList li .busNum span { font-style: 1.4rem; color: #767676;}
 .home .homeStation .hsList li .station { margin-top: 2.7rem;}
 .home .homeStation .hsList li .station span { position: relative; font-size: 1.4rem;}
 .home .homeStation .hsList li .station span:last-child { padding-left: 2rem;}
 .home .homeStation .hsList li .station span:last-child::after { content: ''; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 0.1rem; width: 1.6rem; height: 1.6rem; background: #B8BCC9 url(../image/common/split_40.png) no-repeat -20.2rem -0.2rem/40rem 16rem; border-radius: 50%;}
 .home .homeStation .hsList li .train { margin-top: 0.6rem;}
-.home .homeStation .hsList li .train p { font-size: 1.4rem; color: #777; line-height: 2.2rem;}
+.home .homeStation .hsList li .train p { font-size: 1.4rem; color: #767676; line-height: 2.2rem;}
 .home .homeCulture { padding: 1.6rem 2rem;}
 .home .homeEducation { padding: 1.6rem 2rem;}
 .home .homeSearchArea .homeEducation .hcList li { padding-left: 5.8rem;}
@@ -683,18 +683,18 @@
 .home .homeNuri .menu li { display: flex; align-items: center; width: 50%; min-height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
 .home .homeNuri .menu li span { margin-left: 0.8rem; font-size: 1.4rem;}
 .home .homeNuri h4 { display: flex; align-items: center; height: 4rem; margin-top: 1.6rem;}
-.home .homeNuri .stepMenu li { display: flex; align-items: center; height: 4.8rem; font-size: 1.6rem; color: #777; border-bottom: 1px solid #F2F2F2;}
+.home .homeNuri .stepMenu li { display: flex; align-items: center; height: 4.8rem; font-size: 1.6rem; color: #767676; border-bottom: 1px solid #F2F2F2;}
 .home .homeNuri .stepMenu li span { margin-right: 0.8rem;}
 .home .homeEmployee { padding: 1.6rem 2rem;}
 .home .homeEmployee .heList { display: flex; flex-wrap: wrap; border-left: 1px solid #EAEAEA; border-top: 1px solid #EAEAEA;}
 .home .homeEmployee .heList li { display: flex; align-items: center; width: 100%; border-right: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;}
 .home .homeEmployee .heList li .eHead { width: 8.4rem; padding-left: 1.6rem; font-size: 1.6rem;}
-.home .homeEmployee .heList li .eContent { flex: 1; padding: 0.5rem 0 0.5rem 1.6rem; font-size: 1.6rem; color: #777; border-left: 1px solid #EAEAEA;}
+.home .homeEmployee .heList li .eContent { flex: 1; padding: 0.5rem 0 0.5rem 1.6rem; font-size: 1.6rem; color: #767676; border-left: 1px solid #EAEAEA;}
 .home .homeSite { padding: 1.6rem 2rem;}
 .home .homeSite .hsList { display: flex; align-items: center; flex-wrap: wrap;}
 .home .homeSite .hsList li { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 4.8rem; border-bottom: 1px solid #EAEAEA;}
 .home .homeSite .hsList li p { font-size: 1.6rem;}
-.home .homeSite .hsList li a { display: block; font-size: 1.6rem; color: #6684EA;}
+.home .homeSite .hsList li a { display: block; font-size: 1.6rem; color: #5D68E6;}
 
 
 
@@ -708,11 +708,11 @@
 .openingList li { display: flex; align-items: center; height: 4.8rem;}
 .openingList li .chechbox { position: relative; width: 6rem;}
 .openingList li .chechbox input { position: absolute; opacity: 0;}
-.openingList li .chechbox input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.openingList li .chechbox input:checked + label { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .openingList li .chechbox label { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.2rem; font-weight: 700; border: 1px solid #ddd; border-radius: 0.4rem; transition: all .3s ease-in-out; cursor: pointer;}
 .openingList li .timeInput { flex: 1;}
 .openingList li .timeInput span { display: flex; align-items: center; width: 100%; height: 4.8rem; color: #aaa; border-bottom: 1px solid #ddd;}
-.openingList li .timeInput span.active { color: #111; border-color: #6684EA;}
+.openingList li .timeInput span.active { color: #111; border-color: #5D68E6;}
 .menuAddList { margin-top: 1.6rem;}
 .menuAddList li { display: flex; align-items: center; position: relative; padding-right: 3.2rem;}
 .menuAddList li ~ li { margin-top: 0.8rem;}
@@ -720,7 +720,7 @@
 .menuAddList li .pnRemove { position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background-color: #EAEDF2; border-radius: 50%;}
 .menuAddList li .pnRemove i { text-indent: -9999rem; background-position: -26.4rem -2.4rem;}
 .pnAddGroup .pnAdd  i { margin-right: 0.4rem; vertical-align: middle; background-position: -6rem -4rem;}
-.pnAddGroup .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; font-size: 1.6rem; border: 1px solid #6684EA;}
+.pnAddGroup .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; margin-top: 1.6rem; font-size: 1.6rem; border: 1px solid #5D68E6;}
 
 /* UI-SJN-70-004L */
 .menuSelectList { margin-top: 1.6rem;}
@@ -729,7 +729,7 @@
 .menuSelectList li >div { display: flex; align-items: center;}
 .menuSelectList li >div .por { position: relative;}
 .menuSelectList li >div .por input { position: absolute; opacity: 0;}
-.menuSelectList li >div .por input:checked + label { color: #fff; border-color: #6684EA; background-color: #6684EA;}
+.menuSelectList li >div .por input:checked + label { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .menuSelectList li >div .por label { display: flex; align-items: center; justify-content: center; width: 5.6rem; height: 3.6rem; margin-left: -0.1rem; font-size: 1.4rem; font-weight: 700; color: #aaa; border: 1px solid #ddd; transition: all .3s ease-in-out; cursor: pointer;}
 
 /* 잠금설정 - UI-SJN-80-003 */
@@ -757,13 +757,13 @@
 .mypage .mypageArea .section .securityList li label i.ico.icoC { background: url(../image/home/ico_security3.png) no-repeat center/cover;}
 .mypage .mypageArea .section .securityList li label span { display: block; margin-top: 0.8rem; color: #555;}
 .mypage .mypageArea .section .securityList li input { position: absolute; opacity: 0;}
-.mypage .mypageArea .section .securityList li input:checked + label::after { background-color: #6684EA;}
-.mypage .mypageArea .section .securityList li input:checked + label { z-index: 1; border-color: #6684EA;}
+.mypage .mypageArea .section .securityList li input:checked + label::after { background-color: #5D68E6;}
+.mypage .mypageArea .section .securityList li input:checked + label { z-index: 1; border-color: #5D68E6;}
 .mypage .mypageArea .section .securityList li ~ li label { margin-left: -0.1rem;}
 .mypage .mypageSpace .boxTab .btnTab { display: flex; height: 4.8rem;}
 .mypage .mypageSpace .boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
 .mypage .mypageSpace .boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
-.mypage .mypageSpace .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+.mypage .mypageSpace .boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #5D68E6;}
 .mypage .mypageSpace .tabContent { padding: 0.8rem 0 4rem;}
 .mypage .mypageSpace .tabContent >div { display: none;}
 .mypage .mypageSpace .tabContent >div.active { display: block;}
@@ -781,7 +781,7 @@
 
 /* 저작권 정책 - UI-SJN-83-002U */
 .mypage .twinBtn { display: flex; align-items: center; padding: 0 1.6rem;}
-.mypage .twinBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; margin: 0 0.4rem; background-color: #6684EA;}
+.mypage .twinBtn a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4rem; margin: 0 0.4rem; background-color: #5D68E6;}
 .mypage .twinBtn a span { display: inline-block; font-size: 1.4rem; color: #fff; letter-spacing: -0.1em;}
 .mypage .twinBtn a span::after { content: ''; display: inline-block; width: 2rem; height: 2rem; margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 16rem;}
 
@@ -804,8 +804,8 @@
 .openApi .explainApi .numStep li { display: flex; align-items: center; position: relative; height: 4.8rem; padding: 0 1.2rem; color: #333; background-color: #fff;}
 .openApi .explainApi .numStep li ~ li { margin-top: 1.6rem;}
 .openApi .explainApi .numStep li ~ li::after { content: ''; display: block; position: absolute; left: 2.3rem; top: -1.6rem; width: 0.1rem; height: 1.6rem; background-color: #ddd;}
-.openApi .explainApi .numStep li .square { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; color: #fff; background-color: #6684EA;}
-.openApi .explainApi .numStep li .cBlue { margin-left: 0.4rem; color: #6684EA;}
+.openApi .explainApi .numStep li .square { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem; color: #fff; background-color: #5D68E6;}
+.openApi .explainApi .numStep li .cBlue { margin-left: 0.4rem; color: #5D68E6;}
 .openApi .explainApi .items-blet { margin-top: 2.4rem;}
 
 /* 오픈API 상세 내용 - UI-SJN-91-003U */
@@ -819,23 +819,23 @@
 .openApi .whiteBox ul li ~ li { border-top: 1px solid #F4F5F7;}
 .openApi .whiteBox ul li strong { width: 8rem;}
 .openApi .whiteBox ul li .detail { flex: 1; word-break : break-word;}
-.openApi .whiteBox ul li .detail a { color: #6684EA;}
+.openApi .whiteBox ul li .detail a { color: #5D68E6;}
 .openApi .whiteBox ul li .detail a .icon { display: inline-block; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -43.2rem -4.8rem/48rem 28.8rem;}
 .openApi .whiteBox ul li .short { width: 3.8rem;}
 .openApi .whiteBox ul li .large { width: 9.6rem;}
 .openApi .whiteBox h4 { display: flex; align-items: center; height: 5.2rem; font-size: 1.6rem;}
-.openApi .whiteBox h4 .required { margin-left: 0.8rem; font-size: 1.1rem; color: #FD2020;}
+.openApi .whiteBox h4 .required { margin-left: 0.8rem; font-size: 1.1rem; color: #E61E1E;}
 .openApi .whiteBox .radiogroupBody { padding-bottom: 1.6rem;}
 .openApi .whiteBox .radiogroup { padding: 0 0 1.6rem;}
 .openApi .whiteBox .radiogroup input { position: absolute; opacity: 0;}
-.openApi .whiteBox .radiogroup label { display: inline-flex; align-items: center; height: 3.6rem; margin: 0.8rem 0.8rem 0 0; padding: 0 0.8rem; font-size: 1.4rem; color: #777; border: 1px solid #EAEAEA; border-radius: 1.8rem; transition: all .2s ease-in-out; cursor: pointer;}
-.openApi .whiteBox .radiogroup input:checked + label { color: #fff; border: 1px solid #6684EA; background-color: #6684EA;}
+.openApi .whiteBox .radiogroup label { display: inline-flex; align-items: center; height: 3.6rem; margin: 0.8rem 0.8rem 0 0; padding: 0 0.8rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 1.8rem; transition: all .2s ease-in-out; cursor: pointer;}
+.openApi .whiteBox .radiogroup input:checked + label { color: #fff; border: 1px solid #5D68E6; background-color: #5D68E6;}
 .openApi .whiteBox .normal { font-weight: 400;}
 .openApi .whiteBox .agree { display: flex; align-items: center; justify-content: flex-end; height: 5.2rem;}
 .openApi .whiteBox .agree span { margin-right: 1.2rem;}
 
 /* 오픈API 신청 목록 - UI-SJN-91-005U */
-.openApi .serviceKey { display: flex; align-items: center; min-height: 4.8rem; padding: 0.5rem 2rem; color: #fff; background-color: #6684EA;}
+.openApi .serviceKey { display: flex; align-items: center; min-height: 4.8rem; padding: 0.5rem 2rem; color: #fff; background-color: #5D68E6;}
 .openApi .serviceKey h3 { width: 6.6rem; margin-right: 1rem; font-size: 1.6rem; font-weight: 400;}
 .openApi .serviceKey .key { flex: 1; font-size: 1.6rem; text-align: right; word-break : break-word;}
 .openApi .listArea { padding: 1.6rem 2rem;}
@@ -862,7 +862,7 @@
 .header.global .subHeader .icoMy i.icoProfile { width: 2.4rem; height: 2.4rem; background-position: 0 0 !important;}
 .header.global .subHeader .icoMy .img { display: inline-block; overflow: hidden; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
 .header.global .subHeader .icoMy .img img { width: 100%; height: 100%;}
-.header.global.bgBlue { background-color: #6684EA;}
+.header.global.bgBlue { background-color: #5D68E6;}
 .header.global.bgBlue .subHeader .globalLogo { display: flex; align-items: flex-start;}
 .header.global.bgBlue .subHeader .globalLogo i { background-position-y: -2rem;}
 .header.global .subHeader .globalLogo i.beta,
@@ -876,14 +876,14 @@
 .openApi .loginWrap .loginType .pattern li { width: calc(100% / 3);}
 .openApi .loginWrap .loginType .pattern li button { display: block; position: relative; width: 6.8rem; height: 6.8rem; text-indent: -9999rem;}
 .openApi .loginWrap .loginType .pattern li button::after { content: ''; position: absolute; left: 50%; top: 50%; width: 1.2rem; height: 1.2rem; margin: -0.6rem 0 0 -0.6rem; background-color: #292D32; border-radius: 50%;}
-.openApi .loginWrap .loginType .pattern li button.active::after { background-color: #6684EA;}
+.openApi .loginWrap .loginType .pattern li button.active::after { background-color: #5D68E6;}
 .openApi .loginWrap .loginType .guide {display: flex; align-items: center; justify-content: center; flex-direction: column; height: 5.2rem; color:#555;}
 .openApi .loginWrap .loginType .loginFingerprint {width:100%; height:4.8rem; text-align: center; font-size:1.9rem; font-weight:700;}
 .openApi .loginWrap .loginType .radioSet {display: flex; align-items: center; justify-content: center; flex-direction: column; height: 5.2rem; font-weight:700;}
 .openApi .loginWrap .bottomGuide {padding:2.4rem 2rem; color:#555; margin-top:2.7rem; border-top:1px solid #F4F5F7;}
 .openApi .loginWrap .h2Text { position: relative; z-index: 1; padding: 0.8rem 0 1.2rem; font-size: 1.8rem;}
 .openApi .loginWrap .h2Text .blet { position: relative;}
-.openApi .loginWrap .h2Text .blet::before { content: ''; display: block; position: absolute; left: 0.7rem; top: -0.3rem; width: 0.4rem; height: 0.4rem; background-color: #6684EA; border-radius: 50%;}
+.openApi .loginWrap .h2Text .blet::before { content: ''; display: block; position: absolute; left: 0.7rem; top: -0.3rem; width: 0.4rem; height: 0.4rem; background-color: #5D68E6; border-radius: 50%;}
 .openApi .loginWrap .h3Text { font-size: 1.6rem;}
 .openApi .loginWrap .h3Text.mt { margin-top: 2.4rem;}
 .openApi .loginWrap p { margin-top: 1.6rem; color: #555; line-height: 2.3rem;}
@@ -895,12 +895,12 @@
 .openApi .loginWrap .logo { margin-top: 3.2rem; text-align: center;}
 .openApi .loginWrap .logo i { display: inline-block; width:9.6rem; height:5.2rem; text-indent: -9999rem; background:url(../image/home/logo_sejong.png) no-repeat center/cover;}
 .openApi .loginWrap .font15p { margin-top: 0;}
-.openApi .loginWrap .font14p { margin-top: 2.4rem; font-size: 1.4rem; color: #777;}
+.openApi .loginWrap .font14p { margin-top: 2.4rem; font-size: 1.4rem; color: #767676;}
 .openApi .loginWrap .memberBody { margin: -3.6rem -2rem 0;}
 .openApi .loginWrap .memberBody .loginBg { width: 100%; vertical-align: top;}
 .openApi .loginWrap .memberBtnsGroup { padding: 0 2rem;}
 .openApi .loginWrap .memberBtnsGroup button { display: flex; align-items: center; width: 100%; height: 4.8rem; margin-right: 2rem; padding-left: 3.2rem; font-size: 1.6rem; color: #fff;}
-.openApi .loginWrap .memberBtnsGroup button.hLogin { background-color: #6684EA;}
+.openApi .loginWrap .memberBtnsGroup button.hLogin { background-color: #5D68E6;}
 .openApi .loginWrap .memberBtnsGroup button.oLogn { margin-top: 1.6rem; background-color: #1C2674;}
 .openApi .loginWrap .memberBtnsGroup button img { margin-right: 1.6rem;}
 
@@ -908,7 +908,7 @@
 .mypage .bookmarkWrap.boxTab .btnTab { display: flex; height: 4.8rem;}
 .mypage .bookmarkWrap.boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
 .mypage .bookmarkWrap.boxTab .btnTab .itemBtn button { display: block; width: 100%; height: 100%; font-size: 1.6rem; color: #555; border-bottom: 1px solid #F2F2F2;}
-.mypage .bookmarkWrap.boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #6684EA;}
+.mypage .bookmarkWrap.boxTab .btnTab .itemBtn button.active { font-weight: 700; color: #111; border-bottom: 2px solid #5D68E6;}
 .mypage .bookmarkWrap .tabContent { padding: 0 0 4rem;}
 .mypage .bookmarkWrap .tabContent >div { display: none;}
 .mypage .bookmarkWrap .tabContent >div.active { display: block;}
@@ -918,7 +918,7 @@
 .mypage .bookmarkWrap .bookmarkUpload .formBlock {display: flex; align-items: center; justify-content: space-between; height:4.8rem; border:1px solid #DDD; margin-top:0.8rem; padding:0 1.6rem; background-color:#fff; }
 .mypage .bookmarkWrap .bookmarkUpload .formBlock:first-child {margin-top:0; }
 .mypage .bookmarkWrap .bookmarkUpload .formBlock strong {padding-left:3.2rem; font-size:1.6rem;}
-.mypage .bookmarkWrap .bookmarkUpload .formBlock .btnUpload {color:#6684EA;}
+.mypage .bookmarkWrap .bookmarkUpload .formBlock .btnUpload {color:#5D68E6;}
 .mypage .bookmarkWrap .bookmarkUpload .formBlock .modifyText {width:2.4rem; height:2.4rem; background:url(../image/common/ico_24_pen.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 .mypage .bookmarkWrap .bookmarkUpload .formBlock .btnDelete {width:2.4rem; height:2.4rem; background:url(../image/common/ico_24_close.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 .mypage .bookmarkWrap .bookmarkUpload .formBlock.home strong {background:url(../image/common/ico_24_home.png) no-repeat left center/2.4rem;}
@@ -929,7 +929,7 @@
 
 .mypage .bookmarkWrap .searchType {margin:0.8rem 0; height:4rem; display: flex; align-items: center; justify-content: flex-end; padding:0 2rem; text-align: right;}
 .mypage .bookmarkWrap .searchType button {color:#777; margin-left:0.4rem; }
-.mypage .bookmarkWrap .searchType button.active {color:#6684EA;}
+.mypage .bookmarkWrap .searchType button.active {color:#5D68E6;}
 
 .mypage .bookmarkWrap .bookmarkList ul li {display: flex; align-items: center; justify-content: space-between; padding:1.3rem 2rem; border-top:1px solid #F4F5F7; }
 .mypage .bookmarkWrap .bookmarkList ul li .list { flex: 1;}
@@ -937,19 +937,19 @@
 .mypage .bookmarkWrap .bookmarkList ul li .list .title strong {font-size:1.6rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .title .modifyText {width:2.4rem; height:2.4rem; margin-left: 0.6rem; background:url(../image/common/ico_24_pen.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .address {font-size:1.4rem; color:#555; margin-top:1.1rem;}
-.mypage .bookmarkWrap .bookmarkList ul li .list input { flex: 1; height: 4rem; padding: 0; font-size: 1.6rem; font-weight: 700; color: #6684EA; border: none; border-bottom: 1px solid #ddd;}
-.mypage .bookmarkWrap .bookmarkList ul li .list .modifyBtn { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; font-size: 1.4rem; color: #fff; background-color: #6684EA;}
+.mypage .bookmarkWrap .bookmarkList ul li .list input { flex: 1; height: 4rem; padding: 0; font-size: 1.6rem; font-weight: 700; color: #5D68E6; border: none; border-bottom: 1px solid #ddd;}
+.mypage .bookmarkWrap .bookmarkList ul li .list .modifyBtn { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6;}
 .mypage .bookmarkWrap .bookmarkList ul li .btnDelete { width:2.4rem; height:2.4rem; margin-left: 2rem; background:url(../image/common/ico_24_close.png) no-repeat left center/2.4rem; text-indent: -9999rem;}
 
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus {padding-left:3.2rem; background:url(../image/common/ico_24_bus.png) no-repeat left top/2.4rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt + span { margin-left:0.8rem;}
-.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.R + span { color:#FD2020;}
-.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.Y + span { color:#4EC457;}
+.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.R + span { color:#E61E1E;}
+.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.Y + span { color:#29863b;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.G + span { color:#32BBED;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.busstop {padding-left:3.2rem; background:url(../image/common/ico_24_busstop2.png) no-repeat left top/2.4rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation {font-size:1.4rem; color:#555; margin-top:0.9rem; overflow:hidden; }
-.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.R {color:#FD2020; }
-.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.Y {color:#4EC457; }
+.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.R {color:#E61E1E; }
+.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.Y {color:#29863b; }
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation.G {color:#32BBED; }
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.6rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
