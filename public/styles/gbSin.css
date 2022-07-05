@@ -881,7 +881,7 @@
 .openApi .loginWrap .loginType .loginFingerprint {width:100%; height:4.8rem; text-align: center; font-size:1.9rem; font-weight:700;}
 .openApi .loginWrap .loginType .radioSet {display: flex; align-items: center; justify-content: center; flex-direction: column; height: 5.2rem; font-weight:700;}
 .openApi .loginWrap .bottomGuide {padding:2.4rem 2rem; color:#555; margin-top:2.7rem; border-top:1px solid #F4F5F7;}
-.openApi .loginWrap .h2Text { padding: 0.8rem 0 1.2rem; font-size: 1.8rem;}
+.openApi .loginWrap .h2Text { position: relative; z-index: 1; padding: 0.8rem 0 1.2rem; font-size: 1.8rem;}
 .openApi .loginWrap .h2Text .blet { position: relative;}
 .openApi .loginWrap .h2Text .blet::before { content: ''; display: block; position: absolute; left: 0.7rem; top: -0.3rem; width: 0.4rem; height: 0.4rem; background-color: #6684EA; border-radius: 50%;}
 .openApi .loginWrap .h3Text { font-size: 1.6rem;}
@@ -894,7 +894,15 @@
 .openApi .loginWrap .nonMember { padding: 3.2rem 2rem;}
 .openApi .loginWrap .logo { margin-top: 3.2rem; text-align: center;}
 .openApi .loginWrap .logo i { display: inline-block; width:9.6rem; height:5.2rem; text-indent: -9999rem; background:url(../image/home/logo_sejong.png) no-repeat center/cover;}
-
+.openApi .loginWrap .font15p { margin-top: 0;}
+.openApi .loginWrap .font14p { margin-top: 2.4rem; font-size: 1.4rem; color: #777;}
+.openApi .loginWrap .memberBody { margin: -3.6rem -2rem 0;}
+.openApi .loginWrap .memberBody .loginBg { width: 100%; vertical-align: top;}
+.openApi .loginWrap .memberBtnsGroup { padding: 0 2rem;}
+.openApi .loginWrap .memberBtnsGroup button { display: flex; align-items: center; width: 100%; height: 4.8rem; margin-right: 2rem; padding-left: 3.2rem; font-size: 1.6rem; color: #fff;}
+.openApi .loginWrap .memberBtnsGroup button.hLogin { background-color: #6684EA;}
+.openApi .loginWrap .memberBtnsGroup button.oLogn { margin-top: 1.6rem; background-color: #1C2674;}
+.openApi .loginWrap .memberBtnsGroup button img { margin-right: 1.6rem;}
 
 /* 즐겨찾기 - UI-SJN-84-001U */
 .mypage .bookmarkWrap.boxTab .btnTab { display: flex; height: 4.8rem;}
