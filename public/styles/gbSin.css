@@ -426,7 +426,7 @@
 .mainArea .visitorGroup .slideBody li a { display: block; overflow: hidden; height: 9.4rem;}
 .mainArea .visitorGroup .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #5D68E6; border: 1px solid #eaedf2;}
 .mainArea .visitorGroup .slideBody .swiper-pagination { bottom: -28px;}
-.mainArea .visitorGroup .ingBody { display: flex; align-items: center;}
+.mainArea .visitorGroup .ingBody { display: flex; align-items: center; margin-right: 3.2rem;}
 .mainArea .visitorGroup .ingBody p { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 0.8rem 0 0.4em; color: #fff; border-radius: 1.2rem;}
 .mainArea .visitorGroup .ingBody p i { vertical-align: middle; background-position: -4rem -8rem;}
 .mainArea .visitorGroup .ingBody p.oper { background-color: #29863b;}
@@ -435,94 +435,16 @@
 .mainArea .visitorGroup .ingBody p b { font-size: 1.4rem; font-weight: 400;}
 /* .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
 .mainArea .visitorGroup .ingBody .toggleBtn i { text-indent: -9999rem; background-position: -16.8rem -19.2rem;} */
-.mainArea .visitorGroup .ingBody .toggleBtn.active { background: #EAEDF2 url(../image/common/split_48.png) no-repeat -16.8rem -21.6rem/48rem 28.8rem; animation: none;}
-.mainArea .visitorGroup .ingBody .toggleBtn.active .lineBox { display: none;}
-.mainArea .visitorGroup .ingBody .toggleBtn.active ~ span { display: none;}
+.mainArea .visitorGroup .ingBody .toggleBtn.active { right: 1.6rem; top: 2.2rem;}
+.mainArea .visitorGroup .ingBody .toggleBtn.active i { width: 2.4rem; height: 2.4rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -16.8rem -21.6rem/48rem 28.8rem; border-radius: 50%;}
 .mainArea .visitorGroup .colDate { margin-top: 1rem; font-size: 1.4rem; color: #555; text-align: right;}
 
 .mainArea .visitorGroup .targetHeight { overflow: hidden;   height: 0; transition: height 0.3s ease-in-out; margin-top: 10px;}
 .mainArea .visitorGroup .targetHeight.active { height: 36rem;}
 
 
-.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 2.4rem; height: 2.4rem; background-color: #5D68E6; border-radius: 50%; animation: anyToggle1 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .toggleBtn .lineBox { position: absolute; left: 0; animation: anyToggleChech1 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .toggleBtn .line1 { position: absolute; left: 0.6rem; top: 1.1rem; width: 0.8rem; height: 0.3rem; background-color: #fff; border-radius: 0.2rem; transform: rotate(45deg); }
-.mainArea .visitorGroup .ingBody .toggleBtn .line2 { position: absolute; left: 1rem; top: 1.1rem; width: 0.8rem; height: 0.3rem; background-color: #fff; border-radius: 0.2rem; transform: rotate(-45deg);}
-.mainArea .visitorGroup .ingBody .anyBox { position: relative; width: 2.4rem; height: 2.4rem; margin-left: 0.8rem;}
-.mainArea .visitorGroup .ingBody .anyBox .deco { display: block; position: absolute; left: 50%; top: 50%;}
-.mainArea .visitorGroup .ingBody .deco1 { width: 0; height: 0.2rem; margin: -0.8rem 0 0 -0.8rem; background-color: #faa431; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(45deg); animation: anyToggleline1 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco2 { width: 0; height: 0.2rem; margin: -0.8rem 0 0 0.8rem; background-color: #69dd7d; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(135deg); animation: anyToggleline2 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco3 { width: 0; height: 0.2rem; margin: 0.8rem 0 0 -0.8rem; background-color: #7bcef7; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(-45deg); animation: anyToggleline3 3s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco4 { width: 0; height: 0.2rem; margin: 0.8rem 0 0 0.8rem; background-color: #7bcef7; border-radius: 0.1rem; transform: translate(-50%, -50%) rotate(-135deg); animation: anyToggleline4 3s infinite linear;}
-
-.mainArea .visitorGroup .ingBody .deco5 { width: 0.3rem; height: 0.3rem; margin-left: -1.4rem; background-color: #7bcef7; border-radius: 50%; transform: translate(-50%, -50%); animation: anyToggleCircle1 3s 0.6s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco6 { width: 0.3rem; height: 0.3rem; margin: -1.4rem 0 0 -0.1rem; border: 1px solid #faa431; border-radius: 50%; transform: translate(-50%, -50%); animation: anyToggleCircle2 3s 0.6s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco7 { width: 0.3rem; height: 0.3rem; margin-left: 1.4rem; background-color: #fb4d44; border-radius: 50%; transform: translate(-50%, -50%); animation: anyToggleCircle3 3s 0.6s infinite linear;}
-.mainArea .visitorGroup .ingBody .deco8 { width: 0.3rem; height: 0.3rem; margin: 1.4rem -0.1rem; background-color: #69dd7d; border-radius: 50%; transform: translate(-50%, -50%); animation: anyToggleCircle4 3s 0.6s infinite linear;}
-
-@keyframes anyToggleChech1 {
-	0% { top: -0.4rem; opacity: 0;}
-	30% { top: -0.4rem; opacity: 0;}
-	31% { top: -0.4rem; opacity: 1;}
-	37% { top: 0; opacity: 1;}
-	75% { top: 0; opacity: 1;}
-	85% { top: 1.8rem; opacity: 0;}
-	100% { top: 1.8rem; opacity: 0;}
-}
-
-
-@keyframes anyToggle1 {
-	0% { transform: scale(0);}
-	10% { transform: scale(1.2);}
-	20% { transform: scale(1);}
-	30% { transform: scale(1.1);}
-	40% { transform: scale(1);}
-}
-
-@keyframes anyToggleline1 {
-	20% { width: 0;}
-	25% { width: 0.8rem;}
-	30% { width: 0.8rem;}
-	35% { left: calc(50% - 8px); top: calc(50% - 8px); width: 0;}
-}
-@keyframes anyToggleline2 {
-	20% { width: 0;}
-	25% { width: 0.8rem;}
-	35% { width: 0.8rem;}
-	35% { left: calc(50% + 8px); top: calc(50% - 8px); width: 0;}
-}
-@keyframes anyToggleline3 {
-	20% { width: 0;}
-	25% { width: 0.8rem;}
-	30% { width: 0.8rem;}
-	35% { left: calc(50% - 8px); top: calc(50% + 8px); width: 0;}
-}
-@keyframes anyToggleline4 {
-	20% { width: 0;}
-	25% { width: 0.8rem;}
-	30% { width: 0.8rem;}
-	35% { left: calc(50% + 8px); top: calc(50% + 8px); width: 0;}
-}
-@keyframes anyToggleCircle1 {
-	10% { left: calc(50% - 6px); opacity: 1;}
-	12% { left: calc(50% - 6px); opacity: 0;}
-	100% { left: calc(50% - 6px); opacity: 0;}
-}
-@keyframes anyToggleCircle2 {
-	10% { top: calc(50% - 6px); opacity: 1;}
-	12% { top: calc(50% - 6px); opacity: 0;}
-	100% { top: calc(50% - 6px); opacity: 0;}
-}
-@keyframes anyToggleCircle3 {
-	10% { left: calc(50% + 8px); opacity: 1;}
-	12% { left: calc(50% + 8px); opacity: 0;}
-	100% { left: calc(50% + 8px); opacity: 0;}
-}
-@keyframes anyToggleCircle4 {
-	10% { top: calc(50% + 8px); opacity: 1;}
-	12% { top: calc(50% + 8px); opacity: 0;}
-	100% { top: calc(50% + 8px); opacity: 0;}
-}
+.mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.6rem; top: 1.2rem;}
+.mainArea .visitorGroup .ingBody .toggleBtn i { display: block; width: 4.4rem; height: 4.4rem; text-indent: -9999rem; background: url(../image/home/main_visitorGroupBtn.gif) no-repeat center/cover;}
 
 
 
