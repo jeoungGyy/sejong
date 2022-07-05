@@ -56,10 +56,14 @@
 .mainArea .together .textLinks li a b { display: flex; align-items: flex-end; font-size: 1.6rem; color: #4EC457; text-align: right;}
 .mainArea .together .textLinks li a b .ico { display: block; width: 2rem; height: 2rem; background:  url(../image/info/ico_arrow_green.svg) no-repeat center/cover;}
 .mainArea .together .boxArea .newStoreBody { margin: 0 -1.6rem; padding: 0 1.6rem;}
-.mainArea .together .boxArea .newStoreBody li { overflow: hidden; width: 15.6rem !important; min-height: 21rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .together .boxArea .newStoreBody li { overflow: hidden; width: 15.6rem !important; min-height: 23rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .together .boxArea .newStoreBody li .empty { display: flex; align-items: center; justify-content: center; min-height: 23rem; color: #111; background-color: #eaeaea;}
+.mainArea .together .boxArea .newStoreBody li .empty i { margin-top: 0.3rem; background-position: -31.2rem -24rem;}
 
 .mainArea .together .infoLifeBody { overflow: hidden; margin: 0 -1.6rem; padding: 0 1.6rem;}
-.mainArea .together .infoLifeBody ul li { width: 26rem !important; padding: 1.2rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .together .infoLifeBody ul li { width: 26rem !important; min-height: 15.2rem; padding: 1.2rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .together .infoLifeBody ul li .empty { display: flex; align-items: center; justify-content: center; min-height: 15.2rem; margin: -1.2rem; color: #111; background-color: #eaeaea;}
+.mainArea .together .infoLifeBody ul li .empty i { margin-top: 0.3rem; background-position: -31.2rem -24rem;}
 .mainArea .together .infoLifeBody ul li .profile { display: flex; align-items: center;}
 .mainArea .together .infoLifeBody ul li .profile .name { margin-left: 0.4rem; font-size: 1.5rem;}
 .mainArea .together .infoLifeBody ul li .profile .date { margin-left: 0.4rem; font-size: 1.5rem; color: #aaa;}
@@ -68,7 +72,7 @@
 .mainArea .together .infoLifeBody ul li .profile .img { overflow: hidden; width: 2.4rem; height: 2.4rem; border-radius: 50%;}
 .mainArea .together .infoLifeBody ul li .profile .img img { width: 100%; height: 100%;}
 
-.mainArea .together .infoLifeBody ul li .text { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 0.8rem; color: #555;}
+.mainArea .together .infoLifeBody ul li .text { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; min-height: 6.4rem; margin-top: 0.8rem; color: #555;}
 
 .mainArea .complaint { margin-top: 2.7rem; padding-bottom: 8rem;}
 .mainArea .complaint .boxArea { padding-bottom: 4rem;}
@@ -286,7 +290,8 @@
 .info .newStoreBody ul li a.picture { display: block; overflow: hidden;}
 .info .newStoreBody ul li a.picture figure { display: block; height: 10rem;}
 .info .newStoreBody ul li a.text { display: block; margin-top: 1.2rem; color: #555;}
-.info .newStoreBody ul li a.text h4 { padding: 0 0.8rem; font-size: 1.6rem; font-weight: 700; color: #111;}
+.info .newStoreBody ul li a.text h4 {}
+.info .newStoreBody ul li a.text h4 { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 4.4rem; padding: 0 0.8rem; font-size: 1.5rem; font-weight: 700; color: #111;}
 .info .newStoreBody ul li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
 .info .newStoreBody ul li a.text p { line-height: 2.2rem;}
 .info .newStoreBody ul li a figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }

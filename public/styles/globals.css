@@ -1773,9 +1773,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .tagForm .boxLine ul li .tagBtn button i { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem -4rem/40rem 16rem;}
 .items-form >li .tagForm .boxLine ul li .tagInput { overflow:hidden; min-width: 10rem; width: 100%; height: 2rem; padding: 1rem 0.4rem; vertical-align: middle; line-height: 2rem; border: none; resize: none;}
 .items-form >li .tagForm .boxLine ul li.textInput { flex: 1; }
-
 .items-form >li .guideIconTxt { display: flex; align-items: center; height: 4.8rem;}
 .items-form >li .guideIconTxt i { margin-right: 0.4rem; background-position-x: -38rem;}
+.items-form >li .salesPlus { display: flex; align-items: center; margin-top: 1rem;}
+.items-form >li .salesPlus input { width: 7rem; height: 4rem; margin-left: 1rem; padding: 0 1rem;}
 
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
 .textareaForm textarea { height: 11rem; border: none;}
