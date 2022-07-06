@@ -51,6 +51,7 @@ const slideOpt = {
 		spaceBetween: 16,
 		pagination: {
 			el: ".swiper-pagination",
+			clickable: true,
 		},
 	},
 	mainNewsPieceSwiper: {
@@ -72,6 +73,7 @@ const slideOpt = {
 		spaceBetween: 12,
 		pagination: {
 			el: ".swiper-pagination",
+			clickable: true,
 		},
 		on: {
 			init: function() {

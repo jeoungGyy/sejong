@@ -572,6 +572,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .swiper-slide-thumb-active figure {	border: 1px solid #000;}
 
 .swiper { overflow: initial;}
+.swiper-pagination-bullet:focus { outline: 2px solid #000; background-color: #cbcbcb; opacity: 1;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active:focus { background-color: #007aff; opacity: inherit;}
 
 /* 메인 공통 정보 없을 경우 */
 .commEmpty { text-align: center;}
