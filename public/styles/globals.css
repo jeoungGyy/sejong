@@ -1824,7 +1824,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .items-news li { padding: 1.6rem 0;}
 .items-news li a { display: block; color: #111;}
-.items-news li h4 { height: 5.2rem; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem;}
+.items-news li h4 { max-height: 5.2rem; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem;}
 .items-news li .headerSub { margin-top: 0.5rem;}
 .items-news li ~ li { border-top: 1px solid #F4F5F7;}
 .items-news li .flex { display: flex;}
