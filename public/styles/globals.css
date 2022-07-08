@@ -355,7 +355,7 @@ table td { vertical-align: middle;}
 .split24 { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .split32 { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
 
-.ico16 { display: inline-block; width: 1.6rem; height: 1.6rem; margin-left: 0.2rem; text-indent: -9999rem; background: url(../image/common/ico16_arrow_right.png) no-repeat center/cover;}
+.ico16 { display: inline-block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/ico16_arrow_right.png) no-repeat center/cover;}
 
 /* 버튼 */
 .button { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.6rem; font-size: 1.8rem; font-weight: 700; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);}
@@ -2210,9 +2210,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation >div .hos { margin: 0.8rem -5.3rem 0 0;}
 .items-gasStation >div .hos >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-gasStation >div .hos >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
-.items-gasStation >div .hos .facilities { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
+.items-gasStation >div .hos .facilities { display: flex; align-items: center; flex: 1; flex-wrap: wrap; gap: 0.5rem 1rem;}
 .items-gasStation >div .hos .facilities span { display: flex; height: 2rem; padding-left: 2.4rem; font-size: 1.3rem; color: #767676; line-height: 2rem;}
-.items-gasStation >div .hos .facilities span  ~ span { margin-left: 1rem;}
 .items-gasStation >div .hos .facilities span.holiday { color: #E61E1E; background: url(../image/map/ico_20_holiday.png) no-repeat left center/2rem;}
 .items-gasStation >div .hos .facilities span.hospital { background: url(../image/map/ico_20_hospital.png) no-repeat left center/2rem;}
 .items-gasStation >div .hos .facilities span.night { background: url(../image/map/ico_20_night.png) no-repeat left center/2rem;}
@@ -2237,7 +2236,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation >div .voteIcon >div .ramp { background-position: -32rem -8rem;}
 .items-gasStation >div .voteIcon >div .braille { background-position: -34rem -8rem;}
 .items-gasStation >div .voteIcon >div .toilet { background-position: -36rem -8rem;}
-.items-gasStation >div .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; padding-top: 0.3rem; background-color: #5D68E6; border-radius: 50%;}
+.items-gasStation >div .guidance { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 2rem; width: 5.2rem; height: 5.2rem; padding-top: 0.3rem; background-color: #5D68E6; border-radius: 50%;}
 .items-gasStation >div .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-gasStation >div .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-gasStation >div .choose { display: flex; align-items: center; justify-content: center; position: absolute; right: 2rem; top: 50%; width: 5.2rem; height: 5.2rem; margin-top: -2.6rem; color: #fff; background-color: #5D68E6; border-radius: 0.8rem;}
@@ -2247,8 +2246,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation >div .movieBox img { width: 100%; height: 100%; vertical-align: top;}
 .items-gasStation >div .movieBox .moviePlay { position: absolute; left: 50%; top: 50%; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/map/ico_movie.svg) no-repeat center/cover; transform: translate(-50%, -50%);}
 .items-gasStation >div .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
-.items-gasStation >div button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
-.items-gasStation >div button.view.active { display: flex;}
+.items-gasStation >div button.view {}
+.items-gasStation >div button.view { display: flex; align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.2rem 0 0.8rem; font-size: 1.4rem; color: #5D68E6; border: 1px solid #5D68E6; border-radius: 1.6rem;}
 .items-gasStation >div .pinDelete { position: absolute; right: 2rem; top: 50%; width: 3.4rem; margin-top: -1.7rem; padding: 0.5rem;}
 .items-gasStation >div .pinDelete i { background-position: -38.4rem -14.4rem;}
 .items-gasStation >div .reportGroup { display: flex; }
@@ -2313,10 +2312,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation >div .commentList .clBox .partition button + span { margin-left: 1.6rem;}
 .items-gasStation >div .commentList .clBox::after { content: ''; position: absolute; right: 4rem; top: -2rem; width: 0; height: 0; border-style: solid; border-width: 1.1rem 0.7rem; border-color: transparent transparent #fff transparent;}
 .items-gasStation >div .commentList .clBox::before { content: ''; position: absolute; right: 4rem; top: -2.2rem; width: 0; height: 0; border-style: solid; border-width: 1.1rem 0.7rem; border-color: transparent transparent #5D68E6 transparent;}
+.items-gasStation >div .space-between { display: flex; align-items: center; justify-content: space-between; margin-top: 0.8rem;}
 .items-gasStation >div.promote { background-color: #f4f9fd;}
 .items-gasStation >div.one { border-bottom: none;}
 .items-gasStation >div.full { padding: 1.2rem 2rem;}
-.items-gasStation >div.full button.view { width: calc(100% + 4rem);}
 .items-gasStation.full >div { padding: 1.2rem 2rem;}
 
 
