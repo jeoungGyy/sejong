@@ -17,7 +17,7 @@
 .infoNav li a { display: flex; align-items: center; position: relative; height: 5.6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
 .infoNav li a span { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1rem; border-radius: 0.8rem;}
 .infoNav li a.active { font-weight: 700; color: #fff;}
-.infoNav li a.active span { background-color: #35B13F;}
+.infoNav li a.active span { background-color: #1a7021;}
 /* .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;} */
 .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 5.6rem; padding-left: 1rem; background-color: #29863b;}
 .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
