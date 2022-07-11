@@ -490,7 +490,8 @@ figure.wFirst img { position: absolute; left: 50%; width: auto; height: 100%; tr
 figure img { width: 100%; height: auto; vertical-align: top;}
 .mainNewsList .label,
 figure .label { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
-.mainNewsList .label.blue,
+
+/* .mainNewsList .label.blue,
 figure .label.blue { background-color: rgba(102, 132, 234, 0.9);}
 .mainNewsList .label.skyBlue,
 figure .label.skyBlue { background-color: rgba(50, 187, 237, 0.9);}
@@ -503,7 +504,21 @@ figure .label.black { background-color: rgba(51, 51, 51, 0.9);}
 .mainNewsList .label.green,
 figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
 .mainNewsList .label.red,
-figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
+figure .label.red { background-color: rgba(253, 32, 32, 0.9);} */
+.mainNewsList .label.blue,
+figure .label.blue { background-color: #5D68E6;}
+.mainNewsList .label.skyBlue,
+figure .label.skyBlue { background-color: #137ea5;}
+.mainNewsList .label.darkBlue,
+figure .label.darkBlue { background-color: #5D68E6;}
+.mainNewsList .label.wood,
+figure .label.wood { background-color: #9d6916;}
+.mainNewsList .label.black,
+figure .label.black { background-color: #111;}
+.mainNewsList .label.green,
+figure .label.green { background-color: #29863b;}
+.mainNewsList .label.red,
+figure .label.red { background-color: #E61E1E;}
 
 /* 페이지 풀사이즈 */
 .fullFlexDefault { background-color: #F4F5F7;}
@@ -1576,7 +1591,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .header-formSort { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .header-formSort div { display: flex;}
-.header-formSort div select { height: 4rem; padding-left: 0; border: none;}
+.header-formSort div select { height: 4rem; padding-left: 0; border: none; background-position: right 1.2rem top 1rem;}
 .header-formSort div select:nth-child(1) { width: 12rem;}
 .header-formSort div select:nth-child(2) { width: 10rem;}
 .header-formSort .btnSort i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -12rem 0/48rem 28.8rem;}
@@ -1879,7 +1894,6 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li ~ li { margin-top: 3.5rem;}
 .items-edu >li figure { height: 18rem;}
 .items-edu >li figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
-.items-edu >li figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
 .items-edu >li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
 .items-edu >li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .items-edu >li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
@@ -1891,11 +1905,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
 .items-edu >li .title { display: flex; padding: 1.2rem 0 0.9rem;}
 .items-edu >li .title h4 { flex: 1; font-size: 1.6rem; color: #111; vertical-align: middle;}
-.items-edu >li .title .sub { margin-right: 0.6rem; vertical-align: middle;}
+.items-edu >li .title .sub { margin: 0 0.6rem 0.4rem 0; vertical-align: middle;}
 .items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
 .items-edu >li .title .sub span.ing { background-color: #137ea5;}
 .items-edu >li .title .sub span.schedule { background-color: #29863b;}
-.items-edu >li .title .sub span.closing { background-color: #aaa;}
+.items-edu >li .title .sub span.closing { background-color: #666;}
 .items-edu >li .title .sub span.blue { background-color: #5D68E6;}
 .items-edu >li .title .sub span.wood { background-color: #9d6916;}
 .items-edu.boxStyle >li { padding: 1rem 1.6rem 1.6rem; border: 1px solid #EAEAEA;}
