@@ -17,7 +17,7 @@
 .infoNav li a { display: flex; align-items: center; position: relative; height: 5.6rem; font-size: 1.6rem; color: rgb(255 255 255 / 75%); cursor: pointer;}
 .infoNav li a span { display: flex; align-items: center; justify-content: center; height: 3.6rem; padding: 0 1rem; border-radius: 0.8rem;}
 .infoNav li a.active { font-weight: 700; color: #fff;}
-.infoNav li a.active span { background-color: #35B13F;}
+.infoNav li a.active span { background-color: #106817;}
 /* .infoNav li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.4rem; background-color: #35B13F;} */
 .menuSetting { display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; width: 5rem; height: 5.6rem; padding-left: 1rem; background-color: #29863b;}
 .menuSetting i { text-indent: -9999rem; background-position: -36rem -19.2rem;}
@@ -47,12 +47,13 @@
 .mainArea .boxLinks li a .img24 { width: 7.2rem; height: 2.6rem;}
 .mainArea .boxLinks.space2 { grid-template-columns: repeat(2, 1fr);}
 .mainArea .boxLinks.space3 { grid-template-columns: repeat(3, 1fr);}
+.mainArea .boxLinks.space4 { grid-template-columns: repeat(4, 1fr);}
 .mainArea .boxLinks.mt24 { margin-top: 2.4rem;}
 .mainArea .boxLinks.mt40 { margin-top: 4rem;}
 .mainArea .together .boxArea { padding-bottom: 4rem;}
 .mainArea .together .textLinks { margin-top: 2.5rem; border-top: 1px solid #F4F5F7;}
 .mainArea .together .textLinks li a { display: flex; align-items: center; min-height: 4.8rem; padding: 1rem 0;}
-.mainArea .together .textLinks li a span { flex: 1; font-size: 1.4rem; color: #555;}
+.mainArea .together .textLinks li a span { flex: 1; font-size: 1.6rem; color: #555;}
 .mainArea .together .textLinks li a b { display: flex; align-items: flex-end; font-size: 1.6rem; color: #29863b; text-align: right;}
 .mainArea .together .textLinks li a b .ico { display: block; width: 2rem; height: 2rem; background:  url(../image/info/ico_arrow_green.svg) no-repeat center/cover;}
 .mainArea .together .boxArea .newStoreBody { margin: 0 -1.6rem; padding: 0 1.6rem;}
@@ -115,19 +116,42 @@
 .mainArea .popular .body ul li a h4 { margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .popular .body ul li a h4 + span { display: block; margin-top: 0.3rem; font-size: 1.4rem; color: #767676;}
 .mainArea .reservation .roundDeco { display: block; position: absolute; right: -8.5rem; bottom: -8.2rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #32BBED; border-radius: 50%;}
+.mainArea .reservation .boxArea { padding-bottom: 2.4rem;}
+.mainArea .reservation.style2 { margin-top: 2.7rem;}
+
+
+.mainArea .whiteText { position: relative; margin-top: 3.2rem;}
+.mainArea .whiteText .boxArea { padding: 1.7rem 1.6rem;}
+.mainArea .whiteText .naverLink { display: flex; align-items: center; justify-content: center; position: absolute; right: 1.6rem; top: 50%; width: 8rem; height: 3.6rem; margin-top: -1.8rem; font-size: 1.8rem; font-weight: 700; color: #fff; background-color: #1CBF21; border-radius: 0.6rem;}
+.mainArea .whiteText .text .fontSize18 { display: block; font-size: 1.8rem; font-weight: 700;}
+.mainArea .whiteText .subText { display: flex; align-items: center; margin-top: 1rem; color: #FD2020;}
+.mainArea .whiteText .subText i { margin-right: 0.4rem; background-position: -2rem -12rem;}
+.mainArea .whiteText .subText2 { margin-top: 0.7rem;}
+.mainArea .whiteText .subText2 span { display: block;}
+.mainArea .whiteText .subText2 .textIndent { padding-left: 3.7rem;} 
+
+.mainArea .garden { margin-top: 3.2rem;}
+.mainArea .garden .boxArea { display: flex; align-items: center; gap: 3.2rem; padding: 1.6rem 2.4rem 1.6rem 3.2rem;}
+.mainArea .garden .boxArea img { width: 8rem; height: 7.2rem;}
+.mainArea .garden .btnBody { flex: 1;}
+.mainArea .garden .btnBody a { display: flex; align-items: center; position: relative; width: 100%; height: 3rem; padding: 0 1.6rem; border-radius: 1.5rem;}
+.mainArea .garden .btnBody a ~ a { margin-top: 0.8rem;}
+.mainArea .garden .btnBody a i { position: absolute; right: 0.8rem; top: 50%; margin-top: -1rem; background-position: -32rem -4rem;}
+.mainArea .garden .btnBody .cBlue { border: 1px solid #5D68E6;}
+.mainArea .garden .btnBody .cGreen { border: 1px solid #29863b;}
+
+
 .mainArea .healthFacility { margin-top: 2.7rem;}
 .mainArea .healthFacility .boxArea { padding: 2rem 1.6rem;}
 .mainArea .dataConnect { margin-top: 2.7rem; padding-bottom: 8rem;}
-.mainArea .dataConnect .boxArea { padding: 3.2rem 1.6rem;}
+.mainArea .dataConnect .boxArea { padding: 2.4rem 1.6rem;}
 .mainArea .dataConnect .cleanNetBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5.2rem; margin-top: 3.2rem; font-size: 1.6rem; font-weight: 700; color: #5D68E6; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .dataConnect .cleanNetBtn i { margin-left: 0.4rem; background-position-x: -38rem;}
-.mainArea .dataConnect .textLinks { margin-top: 2.7rem;}
-.mainArea .dataConnect .textLinks li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.mainArea .dataConnect .textLinks li { display: flex; align-items: center; justify-content: space-between; height: 4.8rem; border-top: 1px solid #F2F2F2;}
 .mainArea .dataConnect .textLinks li >div { display: flex; align-items: center;}
 .mainArea .dataConnect .textLinks li >div .link { color: #5D68E6;}
 .mainArea .dataConnect .textLinks li >div span { display: inline-flex; align-items: center; justify-content: center; width: 3.2rem; height: 3.2rem; margin-left: 2.2rem; vertical-align: middle; background-color: #29863b; border-radius: 50%;}
 .mainArea .dataConnect .textLinks li >div span i { background-position: -24rem -19.2rem;}
-.mainArea .dataConnect .textLinks li ~ li { border-top: 1px solid #F2F2F2;}
 .mainArea .dataConnect .roundDeco { display: block; position: absolute; left: -7.7rem; top: -9.4rem; z-index: 1; width: 18.6rem; height: 18.6rem; background-color: #CDD0D8; border-radius: 50%;}
 
 /* UI-SJN-03-003U */
@@ -172,13 +196,28 @@
 .mainArea .improvement .roundDeco { display: block; position: absolute; right: -8.5rem; top: -10.5rem; z-index: 1; width: 14.7rem; height: 14.7rem; background-color: #D57298; border-radius: 50%;}
 
 /* UI-SJN-03-004U */
-.mainArea .eduProgram .boxArea { padding-bottom: 4rem;}
-.mainArea .eduProgram .textLinks { margin-top: 1.7rem; border-top: 1px solid #F4F5F7;}
-.mainArea .eduProgram .textLinks li { border-bottom: 1px solid #F4F5F7;}
+.mainArea .eduProgram .textLinks { margin-top: 1.7rem;}
+.mainArea .eduProgram .textLinks li { border-top: 1px solid #F4F5F7;}
 .mainArea .eduProgram .textLinks li a { display: flex; align-items: center; justify-content: space-between; min-height: 4.8rem; padding: 1rem 0;}
 .mainArea .eduProgram .textLinks li a span { color: #555;}
 .mainArea .eduProgram .textLinks li a b { font-size: 1.6rem; color: #29863b; text-align: right;}
 .mainArea .eduProgram .roundDeco { display: block; position: absolute; left: -5.2rem; bottom: -18rem; z-index: 1; width: 22.2rem; height: 22.2rem; background-color: #CCD2E3; border-radius: 50%;}
+.mainArea .eduProgram .imgDreem { display: flex; align-items: center; justify-content: center;}
+.mainArea .eduProgram .imgDreem img { max-width: 100%; vertical-align: top;}
+.mainArea .eduProgram .arrowBtnT { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem;}
+.mainArea .eduProgram .arrowBtnT a { display: block; position: relative; width: 50%; height: 5.2rem; padding: 1rem 1.4rem; border-radius: 0.8rem; font-size: 1.6rem;}
+.mainArea .eduProgram .arrowBtnT a.green { color: #29863B; border: 1px solid #29863B;}
+.mainArea .eduProgram .arrowBtnT a.blue { color: #5D68E6; border: 1px solid #5D68E6;}
+.mainArea .eduProgram .arrowBtnT a img { position: absolute; right: 0.8rem; bottom: 0.9rem; width: 7.3rem; height: 1.5rem;}
+.mainArea .eduProgram .button-more { margin-top: 1.6rem;}
+.mainArea .eduProgram .button-more a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
+.mainArea .eduProgram.style2 { margin-top: 2.7rem;}
+
+
+
+.mainArea .nanumPotal { margin-top: 2.7rem;}
+.mainArea .nanumPotal a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 1.6rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+
 .mainArea .donation { position: relative; margin-top: 2.7rem;}
 .mainArea .donation a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 0 2.4rem; color: #fff; background: #D69630 url(../image/info/info_donation_img.png) no-repeat right 4.8rem center/4.425rem 6rem; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
 .mainArea .donation a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
@@ -195,9 +234,9 @@
 .mainArea .culturalLife .links li a { display: block; color: #333;}
 .mainArea .culturalLife .links li a figure { overflow: hidden; border-radius: 0.4rem;}
 .mainArea .culturalLife .links li a p { margin-top: 1.2rem; font-size: 1.4rem; letter-spacing: -0.1em; text-align: center;}
-.mainArea .culturalLife .publicityEvents { display: flex; flex-direction: column; justify-content: center; height: 7.8rem; margin-top: 4rem; padding-left: 2rem; color: #fff; background: url(../image/info/info_culturalLife_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
-.mainArea .culturalLife .publicityEvents div { font-size: 1.3rem;}
-.mainArea .culturalLife .publicityEvents b { display: block; margin-top: 0.4rem; font-size: 1.6rem;}
+.mainArea .culturalLife .publicityEvents { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 7.8rem; margin-top: 4rem; color: #fff; background: url(../image/info/info_culturalLife_bg.png) no-repeat center/cover; border-radius: 0.8rem;}
+.mainArea .culturalLife .publicityEvents div { font-size: 1.3rem; color: #555;}
+.mainArea .culturalLife .publicityEvents b { display: block; margin-top: 0.4rem; font-size: 1.6rem; color: #A0481C;}
 .mainArea .culturalLife .publicityEvents b i { margin: -0.5rem 0 0 0.8rem; vertical-align: middle; background-position: -24rem -4rem;}
 .mainArea .culturalLife .roundDeco { display: block; position: absolute; right: -8.2rem; bottom: 3.7rem; z-index: 1; width: 18.8rem; height: 18.8rem; background-color: #D69630; border-radius: 50%;}
 
@@ -220,6 +259,11 @@
 .mainArea .campingSite ul li a { display: block; text-align: center; color: #333;}
 .mainArea .campingSite ul li a figure { overflow: hidden; border-radius: 0.4rem;}
 .mainArea .campingSite ul li a p { margin-top: 1.2rem;}
+.mainArea .campingSite .fullImg { margin-top: 1.6rem; text-align: center;}
+.mainArea .campingSite .fullImg img { max-width: 100%;}
+.mainArea .campingSite .fullImg p { margin-top: 1.2rem;}
+.mainArea .campingSite .fullImg span { display: block; margin-top: 0.9rem; font-size: 1.3rem; line-height: 1.7rem;}
+
 .mainArea .gourmetTravel a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; margin-top: 2.7rem; padding-left: 2rem; color: #111; background: url(../image/info/info_gourmetTravel_bg.png) no-repeat center/cover; border-radius: 0.8rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
 .mainArea .gourmetTravel a div { color: #555;}
 .mainArea .gourmetTravel a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
@@ -290,7 +334,6 @@
 .info .newStoreBody ul li a.picture { display: block; overflow: hidden;}
 .info .newStoreBody ul li a.picture figure { display: block; height: 10rem;}
 .info .newStoreBody ul li a.text { display: block; margin-top: 1.2rem; color: #555;}
-.info .newStoreBody ul li a.text h4 {}
 .info .newStoreBody ul li a.text h4 { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 4.4rem; padding: 0 0.8rem; font-size: 1.5rem; font-weight: 700; color: #111;}
 .info .newStoreBody ul li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
 .info .newStoreBody ul li a.text p { line-height: 2.2rem;}
