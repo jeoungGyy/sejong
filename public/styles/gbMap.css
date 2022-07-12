@@ -89,11 +89,11 @@ body { --vh: 1px;}
 /* 신규 items-gasStation 리스트 */
 #root .map .mapInfoLayer .newHeight { height: 100%; padding: 0;}
 .newHeight .items-gasStation { height: 100%;}
+.newHeight .items-gasStation li { padding: 0;}
 .newHeight .items-gasStation .nhList { padding: 0 2rem;}
-
-
-
-
+.newHeight .items-gasStation .nhList li >div { padding: 1.2rem 7.3rem 1.2rem 2rem;}
+.newHeight .items-gasStation .nhList .full { padding: 1.2rem 2rem;}
+.newHeight .items-gasStation .nhList .full button.view { width: calc(100% + 4rem);}
 
 
 
@@ -501,7 +501,7 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .centerSec .infomation span .paid { color: #E61E1E;}
 .map .mapInfoLayer .centerSec .etc { margin-top: 0.8rem;}
 .map .mapInfoLayer .centerSec .etc >span { color: #555;}
-.map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; margin: 1rem -2rem 0; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
+.map .mapInfoLayer .centerSec .btns { display: flex; align-items: center; justify-content: space-around; height: 8rem; border-top: 1px solid #F4F5F7;}
 .map .mapInfoLayer .centerSec .btns a,
 .map .mapInfoLayer .centerSec .btns button { display: flex; align-items: center; flex-direction: column; justify-content: center; min-width: 6rem; height: 6rem; color: #767676; text-align: center;}
 .map .mapInfoLayer .centerSec .btns i { display: block; width: 2.4rem; height: 2.4rem; margin: 0 auto; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
