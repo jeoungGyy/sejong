@@ -86,7 +86,7 @@ body { --vh: 1px;}
 
 
 
-/* 신규 items-gasStation 리스트 */
+/* 신규 newHeight리스트 */
 #root .map .mapInfoLayer .newHeight { height: 100%; padding: 0;}
 .newHeight .items-gasStation { height: 100%;}
 .newHeight .items-gasStation li { padding: 0;}
@@ -96,8 +96,17 @@ body { --vh: 1px;}
 .newHeight .items-gasStation .nhList .full button.view { width: calc(100% + 4rem);}
 
 
-
-
+.newHeight .items-LocalCurrency { height: 100%;}
+.newHeight .items-LocalCurrency li { padding: 0;}
+.newHeight .items-LocalCurrency .title,
+.newHeight .items-LocalCurrency .infomation,
+.newHeight .items-LocalCurrency .etc { padding-left: 8.6rem;}
+.newHeight .items-LocalCurrency .nhList { padding: 0 2rem;}
+.newHeight .items-LocalCurrency .nhList { padding: 0 2rem;}
+.newHeight .items-LocalCurrency .nhList li >div { padding: 1.2rem 7.3rem 1.2rem 2rem;}
+.newHeight .items-LocalCurrency .nhList .promote { padding-bottom: 4.6rem;}
+.newHeight .items-LocalCurrency .nhList .full { padding: 1.2rem 2rem;}
+.newHeight .items-LocalCurrency .nhList .full button.view { width: calc(100% + 4rem);}
 
 
 
