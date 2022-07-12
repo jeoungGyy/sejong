@@ -24,7 +24,7 @@ body { --vh: 1px;}
 /* .mapArea.subStyle .mapIcons .location .myLocation,
 .mapArea.subStyle .mapIcons .location .scaleBtn { bottom: 2rem;} */
 
-.mapInfoLayer { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 101; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
+.mapInfoLayer { touch-action: pan-x; display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 101; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
 .map .mapInfoLayer .update { display: flex; align-items: center; justify-content: flex-end; height: 4rem; font-size: 1.4rem; color: #aaa; text-align: right;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
