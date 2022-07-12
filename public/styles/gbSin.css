@@ -156,7 +156,7 @@
 .mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #767676;}
 
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #137ea5;}
+.mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #32BBED;}
 .mainArea .weatherBox .anniversary span { flex: 1; font-size: 1.4rem;}
 .mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
 .mainArea .weatherBox .particulates .body >a,
@@ -251,7 +251,7 @@
 .mainArea .mainNews .flex h4 { font-size: 1.7rem; font-weight: 400;}
 .mainArea .mainNews .flex .more { font-size: 1.5rem; color: #5D68E6;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -19rem; z-index: 1;}
-.mainArea .mainNews .roundDeco path { fill: #137ea5;}
+.mainArea .mainNews .roundDeco path { fill: #32bbed;}
 .mainArea .mainNews .mainNewsList { overflow: hidden; position: relative; padding-bottom: 2.8rem;}
 .mainArea .mainNews .mainNewsList .swiper-pagination { bottom: 0;} 
 .mainArea .mainNews .mainNewsList .swiper-pagination .swiper-pagination-bullet { background-color: #EAEAEA; opacity: 1;}
@@ -318,7 +318,7 @@
 .mainArea .weekClosed .open img { width: 8rem; height: auto;}
 .mainArea .weekClosed .open span { display: block; margin-top: 0.8rem; font-size: 1.6rem;}
 .mainArea .sejong { margin-top: 2.7rem;}
-.mainArea .sejong .roundDeco { display: block; position: absolute; left: -6rem; top: -7rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #9d6916; border-radius: 50%;}
+.mainArea .sejong .roundDeco { display: block; position: absolute; left: -6rem; top: -7rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
 .mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 7.5rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
 .mainArea .sejong .body >div { display: flex; align-items: center;}
 .mainArea .sejong .body >div span { margin-right: 0.9rem; font-size: 2.4rem; font-weight: 700; color: #fff;}
@@ -488,7 +488,7 @@
 .mainMenu .mainMenuList ul li.active a >span { display: flex; align-items: center; justify-content: center; position: absolute; left: 50%; top: -0.6rem; z-index: 2; width: 4.8rem; height: 4.8rem; margin-left: -2.4rem; color: #fff; line-height: 1.4rem; box-shadow: 0 0.3rem 0.8rem rgba(0 0 0 / 20%); border-radius: 50%;}
 .mainMenu .mainMenuList ul li:nth-child(1).active a >span { border: 1px solid #40B549; background-color: #29863b;}
 .mainMenu .mainMenuList ul li:nth-child(2).active a >span { border: 1px solid #5575E2; background-color: #5D68E6;}
-.mainMenu .mainMenuList ul li:nth-child(3).active a >span { border: 1px solid #9d6916; background-color: #9d6916;}
+.mainMenu .mainMenuList ul li:nth-child(3).active a >span { border: 1px solid #D69630; background-color: #D69630;}
 .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
 .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenu .mainMenuList ul li.active a .icon { display: none;}
@@ -559,7 +559,7 @@
 .home .homeSearchArea .afterSearch { color: #5D68E6;}
 .home .homeSearchArea .hcList li { position: relative; padding: 1.7rem 0 1.5rem 4rem;}
 .home .homeSearchArea .hcList li .label { display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top: 1.8rem; height: 2rem; font-size: 1.3rem; color: #fff;}
-.home .homeSearchArea .hcList li .label.wood { width: 3rem; background-color: #9d6916;}
+.home .homeSearchArea .hcList li .label.wood { width: 3rem; background-color: #D69630;}
 .home .homeSearchArea .hcList li .label.green { width: 5.1rem; background-color: #29863b;}
 .home .homeSearchArea .hcList li h4 { font-size: 1.6rem;}
 .home .homeSearchArea .hcList li .text { margin-top: 0.6rem;}
@@ -867,12 +867,12 @@
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt + span { margin-left:0.8rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.R + span { color:#E61E1E;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.Y + span { color:#29863b;}
-.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.G + span { color:#137ea5;}
+.mypage .bookmarkWrap .bookmarkList ul li .list.bus .title .busInt.G + span { color:#32BBED;}
 .mypage .bookmarkWrap .bookmarkList ul li .list.busstop {padding-left:3.2rem; background:url(../image/common/ico_24_busstop2.png) no-repeat left top/2.4rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation {font-size:1.4rem; color:#555; margin-top:0.9rem; overflow:hidden; }
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation.R {color:#E61E1E; }
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation.Y {color:#29863b; }
-.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.G {color:#137ea5; }
+.mypage .bookmarkWrap .bookmarkList ul li .list .infomation.G {color:#32BBED; }
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.6rem;}
 .mypage .bookmarkWrap .bookmarkList ul li .list .infomation span ~ span::after { content: ''; position: absolute; top: 0.4rem; left: 0; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
 
