@@ -242,7 +242,8 @@ table td { vertical-align: middle;}
 .cBlue { color: #6684EA !important;}
 .cGreen { color: #4EC457 !important;}
 .cRed { color: #FD2020 !important;}
-.cOrange { color: #FD2020 !important;} */
+.cOrange { color: #FD2020 !important;}
+.cSkyBlue { color: #32BBED !important;} */
 .cBlue { color: #5D68E6 !important;}
 .cRed { color: #E61E1E !important;}
 .cGreen { color: #29863b !important;}
@@ -252,7 +253,7 @@ table td { vertical-align: middle;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
 .cOrange { color: #E61E1E !important;}
-.cSkyBlue { color: #32BBED !important;}
+.cSkyBlue { color: #237FA2 !important;}
 
 /* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
@@ -1574,7 +1575,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .header-formSort { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .header-formSort div { display: flex;}
-.header-formSort div select { height: 4rem; padding-left: 0; border: none;}
+.header-formSort div select { height: 4rem; padding-left: 0; border: none; background-position: right 1.2rem top 1rem;}
 .header-formSort div select:nth-child(1) { width: 12rem;}
 .header-formSort div select:nth-child(2) { width: 10rem;}
 .header-formSort .btnSort i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -12rem 0/48rem 28.8rem;}
@@ -1883,14 +1884,14 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .items-edu >li .text .center p { position: relative; padding-left: 1.2rem; font-size: 1.4rem; color: #767676;}
 .items-edu >li .text .center p::after { content: ''; position: absolute; left: 0.4rem; top: 0.9rem; width: 0.3rem; height: 0.1rem; background-color: #535353;}
-.items-edu >li .text .center p.skyblue { color: #32BBED;}
+.items-edu >li .text .center p.skyblue { color: #237FA2;}
 .items-edu >li .text .items { margin-top: 1.3rem;}
 .items-edu >li .text .items li { position: relative; padding-left: 1.2rem; color: #555; line-height: 2.4rem;}
 .items-edu >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
 .items-edu >li .title { display: flex; padding: 1.2rem 0 0.9rem;}
-.items-edu >li .title h4 { flex: 1; font-size: 1.6rem; color: #111; vertical-align: middle;}
+.items-edu >li .title h4 { flex: 1; margin-top: 1rem; font-size: 1.6rem; color: #111; vertical-align: middle;}
 .items-edu >li .title .sub { margin-right: 0.6rem; vertical-align: middle;}
-.items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
+.items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.3rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
 .items-edu >li .title .sub span.ing { background-color: #32BBED;}
 .items-edu >li .title .sub span.schedule { background-color: #29863b;}
 .items-edu >li .title .sub span.closing { background-color: #aaa;}
@@ -1923,7 +1924,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .wwDay .aDay.today { border: 1px solid #32BBED; border-radius: 1.2rem;}
 .items-weeklyWeather li .wwDay .wwDate { display: block; width: 4rem; margin-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #aaa; letter-spacing: 0;}
 .items-weeklyWeather li .t { display: block; font-size: 1.2rem; color: #767676;}
-.items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #32BBED;}
+.items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #237FA2;}
 .items-weeklyWeather li .pm { margin-left: 0.6rem;}
 .items-weeklyWeather li .weather { margin-left: 0.6rem;}
 .items-weeklyWeather li .weather .icon { margin-right: 0;}
@@ -1931,7 +1932,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .smallBody span { font-size: 1.2rem;}
 .items-weeklyWeather li .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
 .items-weeklyWeather li .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #5D68E6; border-radius: 50%;}
-.items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #32BBED;}
+.items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #237FA2;}
 .items-weeklyWeather li .smallBody .cWood { display: inline-block; position: relative; width: 4.4rem; margin-left: 0.4rem; color: #D37398;}
 .items-weeklyWeather li .smallBody .cWood::before { content: '/'; position: absolute; left: 0; top: 0; color: #ddd;}
 .items-weeklyWeather li .smallBody .cWood sup::before { border-color: #D37398;}
@@ -1964,7 +1965,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weatherInfo li i.humidity { background-position-x: -2.4rem;}
 .items-weatherInfo li i.precipitation { background-position-x: -4.8rem;}
 .items-weatherInfo li i.wind { background-position-x: -7.2rem;}
-.items-weatherInfo li b { display: block; font-size: 1.3rem; color: #32BBED;}
+.items-weatherInfo li b { display: block; font-size: 1.3rem; color: #237FA2;}
 .items-weatherInfo li b.force { color: #8D9ABA;}
 .items-weatherInfo li.now .time { border: 1px solid #32BBED; border-radius: 1.2rem;}
 /* .items-weatherInfo.weather li { flex: 1; width: auto;} */
@@ -2146,11 +2147,12 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-category >li .accordionMenu.environment::before { background-position: -28.8rem -3.2rem;}
 .items-category >li .accordionMenu.interaction::before { background-position: -19.2rem -3.2rem;}
 .items-category >li .accordionMenu::after { content: ''; position: absolute; right: 0; top: 1.4rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -38.4rem 0/48rem 28.8rem;}
-.items-category >li .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
+.items-category >li .accordionTarget { display: none; overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
 .items-category >li .subMenu li a { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding-left: 4rem; font-size: 1.6rem; font-weight: 700; color: #111;}
 .items-category >li .subMenu li a::after { content: ''; position: absolute; right: 0; top: 1.2rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 28.8rem;}
 .items-category >li .subMenu li:first-child { padding-top: 0.8rem;}
 .items-category >li .subMenu li:last-child { padding-bottom: 0.8rem;}
+.items-category >li.open .accordionTarget { display: block;}
 .items-category >li.open .accordionMenu::after { background-position-y: -2.4rem;}
 
 .items-gasStation { position: relative;}
