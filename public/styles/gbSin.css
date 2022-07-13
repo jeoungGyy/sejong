@@ -813,14 +813,19 @@
 .openApi .loginWrap .btnGroup { margin-top: 1.6rem;}
 .openApi .loginWrap .btnGroup li ~ li { margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid #F4F5F7;}
 .openApi .loginWrap .member { padding: 1rem 2rem 3.2rem;}
+.openApi .loginWrap .member.style2 { padding-bottom: 5.3rem;}
 .openApi .loginWrap .nonMember { padding: 3.2rem 2rem;}
+.openApi .loginWrap .bgShadow { margin: 0 -1rem; padding: 1.6rem 3rem; background-color: #F4F5F7; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 16%) inset;}
 .openApi .loginWrap .logo { margin-top: 3.2rem; text-align: center;}
 .openApi .loginWrap .logo i { display: inline-block; width:9.6rem; height:5.2rem; text-indent: -9999rem; background:url(../image/home/logo_sejong.png) no-repeat center/cover;}
 .openApi .loginWrap .font15p { margin-top: 0;}
 .openApi .loginWrap .font14p { margin-top: 2.4rem; font-size: 1.4rem; color: #767676;}
 .openApi .loginWrap .memberBody { margin: -3.6rem -2rem 0;}
 .openApi .loginWrap .memberBody .loginBg { width: 100%; vertical-align: top;}
-.openApi .loginWrap .memberBtnsGroup { padding: 0 2rem;}
+.openApi .loginWrap .textGroup { padding: 0 2rem;}
+.openApi .loginWrap .textGroup p { margin-top: 1.6rem; line-height: 2.3rem;}
+.openApi .loginWrap .textGroup span { display: block; margin-top: 0.7rem; font-size: 1.4rem; color: #111;}
+.openApi .loginWrap .memberBtnsGroup { margin-top: 2.4rem; padding: 0 2rem;}
 .openApi .loginWrap .memberBtnsGroup button { display: flex; align-items: center; width: 100%; height: 4.8rem; margin-right: 2rem; padding-left: 3.2rem; font-size: 1.6rem; color: #fff;}
 .openApi .loginWrap .memberBtnsGroup button.hLogin { background-color: #5D68E6;}
 .openApi .loginWrap .memberBtnsGroup button.oLogn { margin-top: 1.6rem; background-color: #1C2674;}

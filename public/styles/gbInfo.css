@@ -38,7 +38,7 @@
 .mainArea .iconLinks.space4 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(4, 1fr);}
 .mainArea .iconLinks.space4 li a img { width: 6rem; height: 6rem;}
 .mainArea .iconLinks.space4 li a p { font-size: 1.4rem;}
-.mainArea .iconLinks.space4 li a .round { width: 6rem; height: 6rem; border-radius: 1.6rem;}
+.mainArea .iconLinks.space4 li a .round { overflow: hidden; width: 6rem; height: 6rem; border-radius: 1.6rem;}
 .mainArea .iconLinks.mt24 { margin-top: 1.4rem;}
 .mainArea .iconLinks.mt32 { margin-top: 3.2rem;}
 .mainArea .boxLinks { display: grid;}
