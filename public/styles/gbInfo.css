@@ -523,8 +523,10 @@
 
 /* 공지/뉴스 UI-SJN-11-001U, UI-SJN-11-002U */
 .info .newsArea { padding: 0 2rem 2.4rem;}
+.info .viewBody .paragraph figure { background: inherit !important;}
 .info .viewBody .paragraph img { max-width: 100%; height: auto; margin-top: 2.4rem;}
 .info .viewBody .paragraph p { margin-top: 2.4rem; font-size: 1.6rem; color: #555; line-height: 2.4rem;}
+.info .viewBody .paragraph a { word-wrap: break-word;}
 .info .viewBody .viewCite { margin-top: 1.6rem;}
 .info .viewBody .viewCite span { color: #555;}
 .info .viewBody .viewCite span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: sub; background: url(../image/common/split_40.png) no-repeat -2rem 0/40rem 16rem;}

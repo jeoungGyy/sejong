@@ -492,7 +492,7 @@
 .mainMenu .mainMenuList ul li.active a >span .name { margin-top: 0;}
 .mainMenu .mainMenuList ul li.active a .deco { top: -1.9rem; z-index: 1; opacity: 1;}
 .mainMenu .mainMenuList ul li.active a .icon { display: none;}
-.chatbot { display: flex; justify-content: flex-end; position: fixed; bottom: calc(10rem + env(safe-area-inset-bottom)); z-index: 53; width: 100%; padding-right: 2rem; transition: bottom .3s ease-in-out;}
+.chatbot { display: flex; justify-content: flex-end; position: fixed; bottom: calc(8rem + env(safe-area-inset-bottom)); z-index: 53; width: 100%; padding-right: 2rem; transition: bottom .3s ease-in-out;}
 .chatbot .chatbotBtn { display: flex; align-items: center; justify-content: flex-end; width: 28.5rem; height: 5.4rem; padding: 0 1rem 0 2rem; background-color: #fff; box-shadow: 0 0.3rem 1rem rgba(0 0 0 / 15%); border-radius: 2.7rem; animation: chatbotAni 0.5s forwards ease; transition: all .3s ease-in-out;}
 .chatbot .chatbotBtn b { display: flex; align-items: center; flex: 1; overflow: hidden; white-space: nowrap; width: 100%; height: 5.4rem; animation: chatbotAniText 0.5s forwards ease; transition: all .3s ease-in-out; opacity: 1;}
 .chatbot .chatbotBtn .chatbotIcon { display: inline-block; width: 3.3rem; height: 4rem; vertical-align: middle; background: url(../image/common/sub010301_character23.jpg) no-repeat center/cover;}
