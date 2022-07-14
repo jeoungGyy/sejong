@@ -236,6 +236,7 @@ table td { vertical-align: middle;}
 #pcRoot .mt0 { margin-top: 0;}
 #pcRoot .mt8 { margin-top: 0.8rem;}
 #pcRoot .mt15 { margin-top: 1.5rem;}
+#pcRoot .mt30 { margin-top: 3rem;}
 
 /* 색상 */
 /* 기존 색상 빽업
@@ -2414,10 +2415,14 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 #root .searchPlaceBody { position: absolute;	top: 11rem;	left: 2rem;	right: 2rem; margin: 0;}
 #root .searchPlaceBody .header-default { justify-content: flex-end;}
 
-.items-term { padding: 4rem 2rem;}
-.items-term >li h3 { font-size: 1.6rem; line-height: 2.4rem;}
-.items-term >li ~ li { margin-top: 4rem;}
-.items-term >li .paragraphGroup p { margin-top: 1.6rem; color: #333; line-height: 2.3rem;}
+.items-term { padding: 2rem;}
+.items-term >ol >li h3,
+.items-term >li h3 { font-size: 1.5rem; line-height: 2.4rem;}
+.items-term >ol >li ~ li,
+.items-term >li ~ li { margin-top: 3rem;}
+.items-term >ol >li li,
+.items-term >li li { margin-top: 1.6rem; line-height: 2.3rem;}
+.items-term .paragraphGroup p { margin-top: 0.6rem; color: #333; line-height: 2.3rem;}
 .items-term >li .link { display: inline-flex; align-items: center; justify-content: center; height: 4rem; padding: 0 1.6rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6;}
 .items-term >li .link span { display: inline-block; position: relative; padding-right: 2rem;}
 .items-term >li .link span::after { content: ''; position: absolute; right: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -28rem 0/40rem 16rem;}
@@ -2442,9 +2447,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-term >li table tr td li:first-child { margin-top: 0;}
 .items-term >li table tr td img { vertical-align: middle;}
 .items-term >li table.markTable { width: 100%; margin-top: 1.6rem;}
-.items-term >li li { margin-top: 1.6rem; line-height: 2.3rem;}
 .items-term .bletList >li { position: relative; margin-top: 0.8rem; padding-left: 1.6rem;}
-.items-term .bletList >li:first-child { margin-top: 2rem;}
+.items-term .bletList >li:first-child { margin-top: 1rem;}
 .items-term .bletList >li::after { content: ''; position: absolute; left: 0.6rem; top: 0.9rem; width: 0.4rem; height: 0.4rem; background-color: #292D32; border-radius: 50%;}
 
 .items-faq { margin-top: 1.6rem;}
