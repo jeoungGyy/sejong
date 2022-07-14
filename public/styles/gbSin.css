@@ -30,7 +30,6 @@
 
 .mainArea .titleFlex { display: flex; align-items: center; justify-content: space-between;}
 .mainArea .titleFlex select { width: auto; margin-left: 1rem; padding: 0 2.5rem 0 0; font-size: 1.4rem; border: none; background-position: right 0 top 1.4rem;}
-.recentService { padding: 1.5rem 0 0;}
 .infoWrap .recentService { padding: 2rem 2rem 0; background: #F3F5F7;}
 .infoWrap .recentService.active { padding-top: 8rem;}
 .recentService h3 { display: flex; align-items: center; height: 3.4rem; font-size: 1.6rem;}
@@ -449,13 +448,13 @@
 
 
 
-.mainArea .mainPromotion { padding-bottom: 2.8rem;}
+.mainArea .mainPromotion { padding-bottom: 1rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
 .mainArea .mainPromotion .promotionList .prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
 .mainArea .mainPromotion .promotionList .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../public/image/common/ico_play_indi.svg) no-repeat center/cover;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../public/image/common/ico_stop.svg) no-repeat center/cover;}
+.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../image/common/ico_play_indi.svg) no-repeat center/cover;}
+.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../image/common/ico_stop.svg) no-repeat center/cover;}
 
 
 .mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; margin: -1rem;}
