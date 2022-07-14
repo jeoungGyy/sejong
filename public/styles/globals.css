@@ -1889,7 +1889,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li .text .items { margin-top: 1.3rem;}
 .items-edu >li .text .items li { position: relative; padding-left: 1.2rem; color: #555; line-height: 2.4rem;}
 .items-edu >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
-.items-edu >li .title { display: flex; padding: 1.2rem 0 0.9rem;}
+.items-edu >li .title { display: flex; flex-direction: column; padding: 1.2rem 0 0.9rem;}
 .items-edu >li .title h4 { flex: 1; margin-top: 1rem; font-size: 1.6rem; color: #111; vertical-align: middle;}
 .items-edu >li .title .sub { margin-right: 0.6rem; vertical-align: middle;}
 .items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.3rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
