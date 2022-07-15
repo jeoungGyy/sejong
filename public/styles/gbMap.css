@@ -129,6 +129,9 @@ body { --vh: 1px;}
 .mapIcons .btnView button.listView i { background-position: -2rem -4rem;}
 .mapIcons .btnView.up button.mapView { bottom: 4rem;}
 .mapIcons .btnView.open button.listView { bottom: -4rem;}
+
+.mapIcons .btnView.open.up { display: block;}
+.mapIcons .btnView.open { display: none;}
 .mapIcons .btnPin { display: flex; align-items: center; justify-content: center; width: 4rem; height: 4rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .mapIcons .btnPin i { display: block; width: 2rem; height: 2rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -20rem -4rem/40rem 16rem;}
 .mapIcons .btnPin.active { background-color: #5D68E6;}
