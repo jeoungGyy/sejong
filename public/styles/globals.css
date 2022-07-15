@@ -1447,8 +1447,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .profileLayer .myHead .my .icon .icoProfile { width: 8rem; height: 8rem;}
 .profileLayer .myHead .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 3.2rem; height: 3.2rem; background-color: #292D32; border-radius: 50%;}
 .profileLayer .myHead .my .profileBtn i { background-position: -43.2rem -14.4rem;}
-.profileLayer .myHead .profileResetBtn { display: flex; align-items: center; justify-content: center; position: absolute; left: 6rem; top: 1.5rem; border: 1px solid #bbb; background-color: #fff; box-shadow: 0 0 2px #ddd; border-radius: 50%;}
-.profileLayer .myHead .profileResetBtn i { background-position: -2rem -8rem;}
+.profileLayer .myHead .profileResetBtn { display: flex; align-items: center; justify-content: center; position: absolute; left: 5.8rem; top: 1.2rem; width: 2.8rem; height: 2.8rem; border: 1px solid #4a55c9; background-color: #5D68E6; border-radius: 50%;}
+.profileLayer .myHead .profileResetBtn i { background-position: -14.4rem -2.4rem;}
 .profileLayer .myHead .myName { flex: 1;}
 .profileLayer .myHead .myName .write { position: relative;}
 .profileLayer .myHead .myName .write input { padding: 0 3.6rem 0 0; font-size: 1.8rem; font-weight: 700; border: none; border-bottom: 1px solid #ddd;}
