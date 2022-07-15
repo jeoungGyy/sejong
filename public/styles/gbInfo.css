@@ -57,7 +57,7 @@
 .mainArea .together .textLinks li a span { flex: 1; font-size: 1.6rem; color: #555;}
 .mainArea .together .textLinks li a b { display: flex; align-items: flex-end; font-size: 1.6rem; color: #29863b; text-align: right;}
 .mainArea .together .textLinks li a b .ico { display: block; width: 2rem; height: 2rem; background:  url(../image/info/ico_arrow_green.svg) no-repeat center/cover;}
-.mainArea .together .boxArea .newStoreBody { margin: 0 -1.6rem; padding: 0 1.6rem;}
+.mainArea .together .boxArea .newStoreBody { margin: 0 -1.6rem 2.5rem; padding: 0 1.6rem;}
 .mainArea .together .boxArea .newStoreBody li { overflow: hidden; width: 15.6rem !important; min-height: 23rem; border: 1px solid #EAEDF2; border-radius: 0.8rem;}
 .mainArea .together .boxArea .newStoreBody li .empty { display: flex; align-items: center; justify-content: center; min-height: 23rem; color: #111; background-color: #eaeaea;}
 .mainArea .together .boxArea .newStoreBody li .empty i { margin-top: 0.3rem; background-position: -31.2rem -24rem;}
