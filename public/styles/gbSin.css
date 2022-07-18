@@ -452,6 +452,7 @@
 .mainArea .mainPromotion .boxArea { padding: 0;}
 .mainArea .mainPromotion .promotionList .prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
 .mainArea .mainPromotion .promotionList .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
+.mainArea .mainPromotion .promotionList .prop .swiper-pagination span { text-indent: -9999rem;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../image/common/ico_play_indi.svg) no-repeat center/cover;}
 .mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../image/common/ico_stop.svg) no-repeat center/cover;}
