@@ -579,7 +579,7 @@
 .info .introduce .introduceHeader { display: flex; align-items: center; height: 7.2rem;}
 .info .introduce .introduceHeader h3 { font-size: 2rem;}
 .info .introduce .introduceHeader h3 .cBlue { display: block;}
-.info .introduce .introduceGuide { position: relative; z-index: 1; height: 48rem; margin-top: 21rem;}
+.info .introduce .introduceGuide { position: relative; z-index: 1; height: 48rem; margin-top: 13rem;}
 .info .introduce .introduceGuide .data { position: absolute; left: 0; top: -1rem; width: 100%; height: 31rem;}
 .info .introduce .introduceGuide .data .dataPosition { position: relative; width: 32rem; height: 100%; margin: 0 auto;}
 .info .introduce .introduceGuide .data .dataPosition >div { position: absolute; text-align: center; border-radius: 50%;}
