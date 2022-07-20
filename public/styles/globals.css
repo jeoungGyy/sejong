@@ -287,28 +287,28 @@ table td { vertical-align: middle;}
 .weather .windDirec.direc5 { background: url(../image/common/icon-wind-direc-05.png) no-repeat center/cover;}
 .weather .windDirec.direc6 { background: url(../image/common/icon-wind-direc-06.png) no-repeat center/cover;}
 
-.weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 7.2rem;}
-.weather.wh24 .icon.weather1 { background-position: 0 0;}
-.weather.wh24 .icon.weather2 { background-position: -2.4rem 0;}
-.weather.wh24 .icon.weather3 { background-position: -4.8rem 0;}
-.weather.wh24 .icon.weather4 { background-position: -7.2rem 0;}
-.weather.wh24 .icon.weather5 { background-position: -9.6rem 0;}
-.weather.wh24 .icon.weather6 { background-position: -12rem 0;}
-.weather.wh24 .icon.weather7 { background-position: -14.4rem 0;}
-.weather.wh24 .icon.weather8 { background-position: -16.8rem 0;}
-.weather.wh24 .icon.weather9 { background-position: -19.2rem  0;}
-.weather.wh24 .icon.weather10 { background-position: -21.6rem 0;}
-.weather.wh24 .icon.weather11 { background-position: 0 -2.4rem;}
-.weather.wh24 .icon.weather12 { background-position: -2.4rem -2.4rem;}
-.weather.wh24 .icon.weather13 { background-position: -4.8rem -2.4rem;}
-.weather.wh24 .icon.weather14 { background-position: -7.2rem -2.4rem;}
-.weather.wh24 .icon.weather15 { background-position: -9.6rem -2.4rem;}
-.weather.wh24 .icon.weather16 { background-position: -12rem -2.4rem;}
-.weather.wh24 .icon.weather17 { background-position: -14.4rem -2.4rem;}
-.weather.wh24 .icon.weather18 { background-position: -16.8rem -2.4rem;}
-.weather.wh24 .icon.weather19 { background-position: -19.2rem -2.4rem;}
-.weather.wh24 .icon.weather20 { background-position: -21.6rem -2.4rem;}
-.weather.wh24 .icon.weather21 { background-position: 0 -4.8rem;}
+#root .weather.wh24 .icon { width: 2.4rem; height: 2.4rem; background-size: 24rem 7.2rem;}
+#root .weather.wh24 .icon.weather1 { background-position: 0 0;}
+#root .weather.wh24 .icon.weather2 { background-position: -2.4rem 0;}
+#root .weather.wh24 .icon.weather3 { background-position: -4.8rem 0;}
+#root .weather.wh24 .icon.weather4 { background-position: -7.2rem 0;}
+#root .weather.wh24 .icon.weather5 { background-position: -9.6rem 0;}
+#root .weather.wh24 .icon.weather6 { background-position: -12rem 0;}
+#root .weather.wh24 .icon.weather7 { background-position: -14.4rem 0;}
+#root .weather.wh24 .icon.weather8 { background-position: -16.8rem 0;}
+#root .weather.wh24 .icon.weather9 { background-position: -19.2rem  0;}
+#root .weather.wh24 .icon.weather10 { background-position: -21.6rem 0;}
+#root .weather.wh24 .icon.weather11 { background-position: 0 -2.4rem;}
+#root .weather.wh24 .icon.weather12 { background-position: -2.4rem -2.4rem;}
+#root .weather.wh24 .icon.weather13 { background-position: -4.8rem -2.4rem;}
+#root .weather.wh24 .icon.weather14 { background-position: -7.2rem -2.4rem;}
+#root .weather.wh24 .icon.weather15 { background-position: -9.6rem -2.4rem;}
+#root .weather.wh24 .icon.weather16 { background-position: -12rem -2.4rem;}
+#root .weather.wh24 .icon.weather17 { background-position: -14.4rem -2.4rem;}
+#root .weather.wh24 .icon.weather18 { background-position: -16.8rem -2.4rem;}
+#root .weather.wh24 .icon.weather19 { background-position: -19.2rem -2.4rem;}
+#root .weather.wh24 .icon.weather20 { background-position: -21.6rem -2.4rem;}
+#root .weather.wh24 .icon.weather21 { background-position: 0 -4.8rem;}
 
 .mainArea .weatherBox.active .weather .icon.weather1,
 .weather .weatherTop .icon.weather1 { background-position: 0 0;}
