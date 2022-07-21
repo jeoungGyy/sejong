@@ -418,6 +418,17 @@ span.M { background-color: #E61E1E;}
 .map .mapFooter button.active i { background-position-y: -7.2rem;}
 .map .mapFooter button.active span { font-weight: 700; color: #fff;}
 
+.mainListGroup {}
+.mainListGroup .mlgBody { display: flex; }
+.mainListGroup .mlgBody .mbL { display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 5.2rem; background-color: #F8F8F8;}
+.mainListGroup .mbL .mbLBtn { width: 2.4rem; height: 2.4rem; text-indent: -9999rem; border-radius: 50%;}
+.mainListGroup .mbL .mbLBtn.bgBlue { background-color: #000;}
+.mainListGroup .mbL .mbLBtn.bgWood { background-color: #000;}
+.mainListGroup .mbL .mbLBtn.bgGreen { background-color: #000;}
+.mainListGroup .mbL .mbLBtn.bgGray { background-color: #000;}
+.mainListGroup .mlgBody .mbR { flex: 1; width: 100%;}
+
+
 /* 길찾기 - UI-SJN-21-002L, UI-SJN-21-003L */
 .map .wayArea.btnTab { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 2rem;}
 .map .wayArea.btnTab li { width: calc(50% - 0.2rem);}

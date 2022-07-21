@@ -476,6 +476,7 @@ table td { vertical-align: middle;}
 .headTitle .text { overflow: hidden; margin-top: 1.2rem; font-size: 1.6rem; line-height: 2.4rem;}
 .headTitle .text.show { -webkit-line-clamp: inherit;}
 .headTitle .text.short { margin-top: 0.4rem;}
+.headTitle .text.secretTxt { color: #9e9e9e;}
 .headTitle .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
 .headTitle .tlControls .more { color: #767676;}
 .headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover; transition: transform .2s ease;}
@@ -1698,6 +1699,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .labelH.between { justify-content: space-between;}
 .items-form >li .labelH.between >div { display: flex; align-items: center;}
 .items-form >li .labelH.between >span { font-size: 1.4rem; color: #aaa;}
+.items-form >li .labelH.between .checkboxG input { width: 1.4rem; height: 1.4rem; margin: 0.2rem 0.4rem 0 0;}
+.items-form >li .labelH.between .checkboxG label { font-size: 1.5rem; font-weight: 400;}
 .items-form >li .labelH.highlight { height: 7.2rem; font-size: 1.8rem;}
 .items-form >li .myLocation { display: flex; align-items: center; justify-content: center; height: 18rem; margin-bottom: 1.6rem;}
 .items-form >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa;}

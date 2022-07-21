@@ -1,0 +1,9 @@
+<svg id="ico_24_parking_active" xmlns="http://www.w3.org/2000/svg" width="24" height="24.75" viewBox="0 0 24 24.75">
+  <rect id="사각형_5031" data-name="사각형 5031" width="24" height="24" fill="none"/>
+  <g id="타원_399" data-name="타원 399" transform="translate(2)" fill="none" stroke="#fff" stroke-width="1.5">
+    <circle cx="10" cy="10" r="10" stroke="none"/>
+    <circle cx="10" cy="10" r="9.25" fill="none"/>
+  </g>
+  <path id="패스_9923" data-name="패스 9923" d="M-4.333-11.142v3.221H-6.217v-9.141h3.566a4.126,4.126,0,0,1,1.811.377,2.776,2.776,0,0,1,1.2,1.07,2.985,2.985,0,0,1,.421,1.579,2.625,2.625,0,0,1-.92,2.119,3.831,3.831,0,0,1-2.546.775Zm0-1.526h1.683a1.654,1.654,0,0,0,1.139-.352,1.279,1.279,0,0,0,.392-1,1.508,1.508,0,0,0-.4-1.086,1.477,1.477,0,0,0-1.092-.427H-4.333Z" transform="translate(15.717 22.492)" fill="#fff"/>
+  <line id="선_441" data-name="선 441" y2="4" transform="translate(12 20)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+</svg>

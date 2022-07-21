@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ico_24_sights_active" transform="translate(-242 -1759)">
+    <rect id="사각형_5889" data-name="사각형 5889" width="24" height="24" transform="translate(242 1759)" fill="none"/>
+    <g id="사각형_7734" data-name="사각형 7734" transform="translate(252 1771.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+      <rect width="4" height="10" rx="1" stroke="none"/>
+      <rect x="0.75" y="0.75" width="2.5" height="8.5" rx="0.25" fill="none"/>
+    </g>
+    <g id="패스_42948" data-name="패스 42948" transform="translate(244 1762)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,0H17.208L20,2.416,17.208,5H2Z" stroke="none"/>
+      <path d="M 3.5 1.5 L 3.5 3.5 L 16.6203727722168 3.5 L 17.75103187561035 2.453721046447754 L 16.64898490905762 1.5 L 3.5 1.5 M 2 0 L 17.20792007446289 0 L 20 2.416290044784546 L 17.20792007446289 5 L 2 5 L 2 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="패스_42949" data-name="패스 42949" transform="translate(244 1768)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18,0H2.792L0,2.416,2.792,5H18Z" stroke="none"/>
+      <path d="M 3.351016044616699 1.5 L 2.248969078063965 2.453721046447754 L 3.379627227783203 3.5 L 16.5 3.5 L 16.5 1.5 L 3.351016044616699 1.5 M 2.792079925537109 0 L 18 0 L 18 5 L 2.792079925537109 5 L 0 2.416290044784546 L 2.792079925537109 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="사각형_7735" data-name="사각형 7735" transform="translate(252 1759.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+      <rect width="4" height="4" rx="1" stroke="none"/>
+      <rect x="0.75" y="0.75" width="2.5" height="2.5" rx="0.25" fill="none"/>
+    </g>
+    <g id="사각형_7736" data-name="사각형 7736" transform="translate(252 1765.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+      <rect width="4" height="4" rx="1" stroke="none"/>
+      <rect x="0.75" y="0.75" width="2.5" height="2.5" rx="0.25" fill="none"/>
+    </g>
+  </g>
+</svg>

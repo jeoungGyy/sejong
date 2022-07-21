@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ico_24_food" transform="translate(-44 -512)">
+    <rect id="사각형_6338" data-name="사각형 6338" width="24" height="24" transform="translate(44 512)" fill="none"/>
+    <circle id="타원_745" data-name="타원 745" cx="6" cy="6" r="6" transform="translate(50 518)" fill="none"/>
+    <g id="그룹_9945" data-name="그룹 9945" transform="translate(-1 -2)">
+      <g id="타원_746" data-name="타원 746" transform="translate(57 517)" fill="none" stroke="#f8f8f8" stroke-width="1.5">
+        <ellipse cx="4" cy="4.5" rx="4" ry="4.5" stroke="none"/>
+        <ellipse cx="4" cy="4.5" rx="3.25" ry="3.75" fill="none"/>
+      </g>
+      <g id="사각형_6342" data-name="사각형 6342" transform="translate(60.25 524.5)" fill="#fff" stroke="#f8f8f8" stroke-width="1.5">
+        <rect width="1.5" height="11.5" rx="0.75" stroke="none"/>
+        <rect x="0.75" y="0.75" height="10" fill="none"/>
+      </g>
+      <g id="사각형_6343" data-name="사각형 6343" transform="translate(51.25 517.5)" fill="#fff" stroke="#f8f8f8" stroke-width="1.5">
+        <rect width="1.5" height="18.5" rx="0.75" stroke="none"/>
+        <rect x="0.75" y="0.75" height="17" fill="none"/>
+      </g>
+      <path id="Vector" d="M5.953,0H3A3,3,0,0,0,3,6H5.953" transform="translate(49 524) rotate(-90)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
