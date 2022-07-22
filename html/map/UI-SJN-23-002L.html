@@ -194,110 +194,234 @@
 									</header>
 			
 									<div class="myArea">
-										<section>
-											<nav id="mapPlaceListSwiper" class="items-placeList">
-												<div class="slideContainer">
-													<ul class="swiper-wrapper">
-														<li class="swiper-slide"><button type="button" class="active">음식점</button></li>
-														<li class="swiper-slide"><button type="button">세종명소</button></li>
-														<li class="swiper-slide"><button type="button">문화행사</button></li>
-														<li class="swiper-slide"><button type="button">블로그</button></li>
-														<li class="swiper-slide"><button type="button">주차장</button></li>
-														<li class="swiper-slide"><button type="button">버스</button></li>
-													</ul>
+										<nav id="mapPlaceListSwiper" class="items-placeList">
+											<div class="slideContainer">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide"><button type="button" class="active">주차장 30</button></li> <!-- 활성화시 active -->
+													<li class="swiper-slide"><button type="button">식당 20</button></li>
+													<li class="swiper-slide"><button type="button">카페 10</button></li>
+													<li class="swiper-slide"><button type="button">가볼만한 곳 99</button></li>
+												</ul>
+											</div>
+										</nav>
+										<script>
+											slider.active('mapPlaceListSwiper')
+										</script>
+
+										<div class="mainListGroup">
+											<div class="mlgBody">
+												<div class="mbL">
+													<div class="mblR bgBlue">
+														<img src="../../public/image/map/ico_24_parking_active.svg" alt="">
+														<span class="round">10</span>
+													</div>
+													<button type="button" class="mbLBtn" title="주차장 전체 목록 열기">주차장 목록</button>
+													<span class="line"></span>
 												</div>
-											</nav>
-											<ul class="items-mapInfo">
-												<li>
-													<figure>
-														<img src="../../public/image/temp/temp030.png" alt="">
-													</figure>
-													<div class="mapInfoBody">
-														<h4>세종시 미스터피자</h4>
-														<p class="st">세종시에서 가장 맛난 피자집</p>
-														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-														<button type="button" class="favorite">즐겨찾기</button>
+												<div class="mbR">
+													<div class="items-rightList">
+														<div>
+															<h3 class="name">하리크린파킹 리버피크닉 주차장 하리크린파킹 리버피크닉 주차장 하리크린파킹 리버피크닉 주차장</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
 													</div>
-												</li>
-												<li>
-													<figure>
-													</figure>
-													<div class="mapInfoBody">
-														<h4>세종시 미스터피자</h4>
-														<p class="st">세종시에서 가장 맛난 피자집</p>
-														<p class="other"><span class="cBlue">2.3km</span><span>리뷰 23건</span></p>
-														<button type="button" class="favorite active">즐겨찾기</button>
-													</div>
-												</li>
-											</ul>
-										</section>
-			
-										<section>
-											<nav id="mapPlaceListSwiper" class="items-placeList">
-												<div class="slideContainer">
-													<ul class="swiper-wrapper">
-														<li class="swiper-slide"><button type="button">음식점</button></li>
-														<li class="swiper-slide"><button type="button" class="active">세종명소</button></li>
-														<li class="swiper-slide"><button type="button">문화행사</button></li>
-														<li class="swiper-slide"><button type="button">블로그</button></li>
-														<li class="swiper-slide"><button type="button">주차장</button></li>
-														<li class="swiper-slide"><button type="button">버스</button></li>
-													</ul>
 												</div>
-											</nav>
-											<ul class="items-mapInfo">
-												<li>
-													<figure>
-														<img src="../../public/image/temp/temp031.png" alt="">
-													</figure>
-													<div class="mapInfoBody">
-														<h4>세종호수공원</h4>
-														<p class="st">세종시 블로그에서 소개한 시립도서관 세종시 블로그에서 소개한 시립도서관</p>
-														<p class="other"><span class="cBlue">1.3km</span><span>리뷰 2,333건</span></p>
+											</div>
+
+											<div class="mlgBody">
+												<div class="mbL">
+													<div class="mblR bgWood">
+														<img src="../../public/image/map/ico_24_food.svg" alt="">
+														<span class="round">10</span>
 													</div>
-												</li>
-											</ul>
-										</section>
-			
-										<section>
-											<nav id="mapPlaceListSwiper" class="items-placeList">
-												<div class="slideContainer">
-													<ul class="swiper-wrapper">
-														<li class="swiper-slide"><button type="button">음식점</button></li>
-														<li class="swiper-slide"><button type="button">세종명소</button></li>
-														<li class="swiper-slide"><button type="button" class="active">문화행사</button></li>
-														<li class="swiper-slide"><button type="button">블로그</button></li>
-														<li class="swiper-slide"><button type="button">주차장</button></li>
-														<li class="swiper-slide"><button type="button">버스</button></li>
-													</ul>
+													<button type="button" class="mbLBtn" title="식당 전체 목록 열기">식당 목록</button>
+													<span class="line"></span>
 												</div>
-											</nav>
-											<script>
-												slider.active('mapPlaceListSwiper')
-											</script>
-											<ul class="items-mapInfo">
-												<li>
-													<figure>
-														<span class="label wood">공연</span>
-														<img src="../../public/image/temp/temp032.png" alt="">
-													</figure>
-													<div class="mapInfoBody">
-														<h4>국제 핸드메이드 & 리빙페어</h4>
-														<p class="st">2021 국제 핸드메이드 &리빙페어행사에 초대합니다</p>
+												<div class="mbR">
+													<div class="items-rightList">
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite active" title="즐겨찾기 비활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite active" title="즐겨찾기 비활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite active" title="즐겨찾기 비활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite active" title="즐겨찾기 비활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite active" title="즐겨찾기 비활성화"><i>즐겨찾기</i></button>
+														</div>
 													</div>
-												</li>
-												<li>
-													<figure>
-														<span class="label green">이웃</span>
-														<img src="../../public/image/temp/temp033.png" alt="">
-													</figure>
-													<div class="mapInfoBody">
-														<h4>사랑의 김장 나눔 행사</h4>
-														<p class="st">세종시 블로그에서 소개한 시립도서관</p>
+												</div>
+											</div>
+
+											<div class="mlgBody">
+												<div class="mbL">
+													<div class="mblR bgGreen">
+														<img src="../../public/image/map/ico_24_cafe.svg" alt="">
+														<span class="round">10</span>
 													</div>
-												</li>
-											</ul>
-										</section>
+													<button type="button" class="mbLBtn active" title="카페 목록 닫기">카페 목록</button>
+													<span class="line"></span>
+												</div>
+												<div class="mbR">
+													<div class="items-rightList active">
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="mlgBody">
+												<div class="mbL">
+													<div class="mblR bgGray">
+														<img src="../../public/image/map/ico_24_sights_active.svg" alt="">
+														<span class="round">10</span>
+													</div>
+													<button type="button" class="mbLBtn" title="가볼만한 곳 전체 목록 열기">가볼만한 곳 목록</button>
+													<span class="line"></span>
+												</div>
+												<div class="mbR">
+													<div class="items-rightList">
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+														<div>
+															<h3 class="name">GS칼텍스 연기면점</h3>
+															<div class="infomation">
+																<span>3.9km</span>
+															</div>
+															<button type="button" class="favorite" title="즐겨찾기 활성화"><i>즐겨찾기</i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 내용이 없을 경우 -->
+											<div class="empty">
+												<p>현 위치에 주변정보가 없습니다.</p>
+											</div>
+											<!-- 내용이 없을 경우 -->
+										</div>
 									</div>
 								</section>
 			

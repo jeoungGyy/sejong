@@ -1652,7 +1652,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-default li .empty,
 .items-news .empty,
 .items-review .empty,
-.items-apiList .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
+.items-apiList .empty,
+.mainListGroup .empty { display: flex; align-items: center; justify-content: center; height: 19.2rem; padding-top: 9rem;}
 .items-mapInfo .empty p,
 .items-edu .empty p,
 .line-default .empty p,
@@ -1660,7 +1661,8 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-apiListBox li .empty p,
 .items-default li .empty p,
 .items-news .empty p,
-.items-review .empty p { position: relative; font-size: 1.6rem; color: #767676;}
+.items-review .empty p,
+.mainListGroup .empty p { position: relative; font-size: 1.6rem; color: #767676;}
 .items-mapInfo li .empty p::after,
 .items-edu li .empty p::after,
 .line-default li .empty p::after,
@@ -1669,6 +1671,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-news .empty p::after,
 .items-review .empty p::after,
 .items-apiList .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_empty.png) no-repeat center/3.2rem 3.2rem; border-radius: 50%;}
+.mainListGroup .empty p::after { content: ''; position: absolute; left: 50%; top: -9rem; width: 7.2rem; height: 7.2rem; margin-left: -3.6rem; background: #F4F5F7 url(../image/common/ico_24_shareloc.png) no-repeat center/3.2rem 3.2rem; border-radius: 50%;}
 
 
 .items-default li { margin: 1.6rem 0 2.4rem;}
