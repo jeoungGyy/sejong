@@ -382,7 +382,7 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute; top: -9999rem;}
+.switch input { position: absolute; left: -9999rem;}
 .switch input:focus + label::before { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
