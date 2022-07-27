@@ -452,7 +452,7 @@
 .mainArea .visitorGroup .chartBtnGroup .chartBtn.active { z-index: 1; color: #fff; border-color: #00539C; background-color: #00539C;}
 
 .mainArea .visitorGroup .targetHeight { overflow: hidden; height: 0; transition: height 0.3s ease-in-out;}
-.mainArea .visitorGroup .targetHeight.active { height: 41rem;}
+.mainArea .visitorGroup .targetHeight.active { height: 44rem;}
 
 
 .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.6rem; top: 1.2rem;}
