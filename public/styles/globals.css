@@ -254,7 +254,7 @@ table td { vertical-align: middle;}
 .cLinghtGray { color: #aaa !important;}
 .cWood { color: #D69630 !important;}
 .cOrange { color: #E61E1E !important;}
-.cSkyBlue { color: #237FA2 !important;}
+.cSkyBlue { color: #00539C !important;}
 
 /* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
@@ -738,6 +738,17 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .noticeCheck .radioSet label { zoom: 0.8;}
 .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
+/* UI-SJN-01-900L */
+.layerLock .lock { margin-top: 0.8rem;}
+.layerLock .unlock { margin-top: 2.4rem; padding-bottom: 2rem !important;}
+.layerLock .unlock button i { position: absolute; right: 1.6rem; top: 1.1rem; width: 2.4rem; height: 2.4rem; background-position: -45.6rem -19.2rem;}
+.layerLock .squareBox { padding: 0 2rem;}
+.layerLock .squareBox button { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; font-weight: 700; border: 1px solid #ddd;}
+.layerLock .squareBox button ~ button { margin-top: 0.8rem;}
+.layerLock .squareBox button.break { margin-bottom: 8rem;}
+.layerLock .squareBox button.break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: -4.4rem; height: 0.6rem; background-color: #F4F5F7;}
+.layerLock .squareBox button.break::after { content: '위 순서로 홈 화면에 보입니다.'; display: block; position: absolute; left: 50%; bottom: -5rem; width: 19rem; font-size: 1.4rem; font-weight: 400; color: #aaa; background-color: #fff; transform: translateX(-50%);}
+
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
 .layerSetting .items-label .tootipBtn i { margin: -0.5rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
@@ -1138,7 +1149,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .slideBody li a { display: block;}
 .locationLayer .detail .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #5D68E6; border: 1px solid #eaedf2;}
 .locationLayer .detail .slideBody.mt { margin-top: 3.2rem;}
-.locationLayer .detail .chartBox { position: relative; margin-top: 2.8rem;}
+.locationLayer .detail .chartBox { position: relative; padding-bottom: 2.4rem;}
 .locationLayer .detail .chartBox .chartControl { display: flex;}
 .locationLayer .detail .chartBox .chartControl .cBtns { width: 4.8rem; margin-right: 0.8rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .conBtn { display: flex; align-items: center; flex-direction: column; justify-content: center; width: 4.8rem; height: 6rem; border: 1px solid #EAEAEA; border-radius: 0.4rem;}
@@ -1147,7 +1158,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .chartBox .chartControl .cBtns .bike { margin-top: 0.8rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .bike i { background-position: -7.2rem -24rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .conBtn.active { border-color: #5D68E6;}
-.locationLayer .detail .chartBox .chart img { width: 100%; height: auto;}
+.locationLayer .detail .chartBox img { width: 100%; height: auto; vertical-align: top;}
 .locationLayer .detail .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 2.4rem;}
 .locationLayer .detail .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
 .locationLayer .detail .chartBox .text .nod ~ .nod { margin-left: 1.6rem;}
@@ -1169,14 +1180,28 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .visitorDetail .visitorToday b { display: block;}
 .locationLayer .detail .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
 .locationLayer .detail .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
-.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
+/* .locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
 .locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
 .locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
-.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;} */
 .locationLayer .detail .tabCount .combo { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .locationLayer .detail .tabCount .combo .switch input:checked + label:before { background-color: #29863b;}
+.locationLayer .detail .visTit { display: flex; justify-content: space-between; padding-top: 2.4rem;}
+.locationLayer .detail .visTit .left { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6; border-radius: 0.6rem;}
+.locationLayer .detail .visTit .right { font-size: 1.3rem; color: #767676;}
+.locationLayer .detail .roundBox { margin-top: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
+.locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center; padding: 0.4rem; border: 1px solid #EAEAEA; border-radius: 0.7rem;}
+.locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.4rem; font-size: 1.4rem; color: #767676;}
+.locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.4rem;}
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #00539C; background-color: #00539C; border-radius: 0.6rem;}
+.locationLayer .detail .chartBtnGroup { display: flex; align-items: center;}
+.locationLayer .detail .chartBtnGroup .chartBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 25%; height: 3.6rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-top: none; border-radius: 0 0 0.8rem 0.8rem;}
+.locationLayer .detail .chartBtnGroup .chartBtn ~ .chartBtn { border-left: none;}
+.locationLayer .detail .chartBtnGroup .chartBtn.active { z-index: 1; color: #fff; border-color: #00539C; background-color: #00539C;}
+
 
 
 .locationLayer .app { padding: 0 2rem 2.4rem;}
@@ -1892,7 +1917,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .items-edu >li .text .center p { position: relative; padding-left: 1.2rem; font-size: 1.4rem; color: #767676;}
 .items-edu >li .text .center p::after { content: ''; position: absolute; left: 0.4rem; top: 0.9rem; width: 0.3rem; height: 0.1rem; background-color: #535353;}
-.items-edu >li .text .center p.skyblue { color: #237FA2;}
+.items-edu >li .text .center p.skyblue { color: #00539C;}
 .items-edu >li .text .items { margin-top: 1.3rem;}
 .items-edu >li .text .items li { position: relative; padding-left: 1.2rem; color: #555; line-height: 2.4rem;}
 .items-edu >li .text .items li::after { content: ''; position: absolute; left: 0.4rem; top: 1.1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
@@ -1932,7 +1957,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .wwDay .aDay.today { border: 1px solid #32BBED; border-radius: 1.2rem;}
 .items-weeklyWeather li .wwDay .wwDate { display: block; width: 4rem; margin-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #aaa; letter-spacing: 0;}
 .items-weeklyWeather li .t { display: block; font-size: 1.2rem; color: #767676;}
-.items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #237FA2;}
+.items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #00539C;}
 .items-weeklyWeather li .pm { margin-left: 0.6rem;}
 .items-weeklyWeather li .weather { margin-left: 0.6rem;}
 .items-weeklyWeather li .weather .icon { margin-right: 0;}
@@ -1940,7 +1965,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .smallBody span { font-size: 1.2rem;}
 .items-weeklyWeather li .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
 .items-weeklyWeather li .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #5D68E6; border-radius: 50%;}
-.items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #237FA2;}
+.items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #00539C;}
 .items-weeklyWeather li .smallBody .cWood { display: inline-block; position: relative; width: 4.4rem; margin-left: 0.4rem; color: #D37398;}
 .items-weeklyWeather li .smallBody .cWood::before { content: '/'; position: absolute; left: 0; top: 0; color: #ddd;}
 .items-weeklyWeather li .smallBody .cWood sup::before { border-color: #D37398;}
@@ -1975,7 +2000,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weatherInfo li i.wind { background-position-x: -7.2rem;}
 .items-weatherInfo li i.etcIconMt { margin-top: 2rem;}
 .items-weatherInfo li i.etcIconMt2 { margin-top: 1.7rem;}
-.items-weatherInfo li b { display: block; font-size: 1.3rem; color: #237FA2;}
+.items-weatherInfo li b { display: block; font-size: 1.3rem; color: #00539C;}
 .items-weatherInfo li b.force { margin-top: 1rem; color: #8D9ABA;}
 .items-weatherInfo li b.etcMt { margin-top: 1rem;}
 .items-weatherInfo li.now .time { border: 1px solid #32BBED; border-radius: 1.2rem;}

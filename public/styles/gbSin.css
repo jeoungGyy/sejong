@@ -5,7 +5,7 @@
 .boderTopGray { border-top: 1px solid #EAEAEA;}
 
 /* UI-SJN-01-001U */
-.mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background: linear-gradient(to bottom,  #fff 0%, #f3f5f7 40%);}
+.mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background-color: #fff;}
 .mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
 .mainArea h3 .small { margin-right: 0.8rem; font-size: 1.5rem; font-weight: 400; color: #555;}
 .mainArea h3.noneFlex { display: block;}
@@ -155,7 +155,7 @@
 .mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #767676;}
 
 .mainArea .weatherBox .anniversary { display: flex; align-items: center; min-height: 4.8rem; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #F4F5F7;}
-.mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #237FA2;}
+.mainArea .weatherBox .anniversary b { margin-right: 0.8rem; font-size: 1.6rem; color: #00539C;}
 .mainArea .weatherBox .anniversary span { flex: 1; font-size: 1.4rem;}
 .mainArea .weatherBox .particulates .body { display: flex; align-items: center; height: 11.2rem;}
 .mainArea .weatherBox .particulates .body >a,
@@ -325,8 +325,9 @@
 .mainArea .sejong .body >div span { margin-right: 0.9rem; font-size: 2.4rem; font-weight: 700; color: #fff;}
 .mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
 .mainArea .sejong .body >span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
-.mainArea .anchorTop { margin-top: 1rem;}
-.mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
+.mainArea .anchorTop { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;}
+.mainArea .anchorTop .anchorBtn { display: flex; align-items: center; justify-content: center; width: 7.8rem; height: 3rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 0.8rem;}
+.mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa;}
 .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 .mainArea .playground { margin-top: 2.7rem;}
 .mainArea .playground .boxArea > div { padding-top: 1rem;}
@@ -386,6 +387,17 @@
 .mainArea .playground .chartBox .arrow.right i { background-position-x: -40.8rem;}
 .mainArea .visitorGroup { margin-top: 2.7rem;}
 .mainArea .visitorGroup h3 .icon { display: inline-block; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.4rem; background: url(../image/home/ico_location_black.png) no-repeat right top/cover;}
+
+.mainArea .visitorGroup {}
+.mainArea .visitorGroup .visTit { display: flex; justify-content: space-between; padding-top: 2.4rem;}
+.mainArea .visitorGroup .visTit .left { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6; border-radius: 0.6rem;}
+.mainArea .visitorGroup .visTit .right { font-size: 1.3rem; color: #767676;}
+.mainArea .visitorGroup .roundBox { margin-top: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.mainArea .visitorGroup .tabCount { display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
+.mainArea .visitorGroup .tabCount .tabBtns { display: flex; align-items: center; padding: 0.4rem; border: 1px solid #EAEAEA; border-radius: 0.7rem;}
+.mainArea .visitorGroup .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.4rem; font-size: 1.4rem; color: #767676;}
+.mainArea .visitorGroup .tabCount .tabBtns button ~ button { margin-left: 0.4rem;}
+.mainArea .visitorGroup .tabCount .tabBtns button.active { color: #fff; border-color: #00539C; background-color: #00539C; border-radius: 0.6rem;}
 .mainArea .visitorGroup .visitor { margin-top: 0.5rem;}
 .mainArea .visitorGroup .visitorDetail { margin-top: 2.5rem; padding: 1.8rem 2rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
 .mainArea .visitorGroup .visitorDetail >div ~ div { margin-top: 1.8rem;}
@@ -397,16 +409,11 @@
 .mainArea .visitorGroup .visitorDetail .visitorToday b { display: block;}
 .mainArea .visitorGroup .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
 .mainArea .visitorGroup .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
-.mainArea .visitorGroup .tabCount { display: flex; align-items: center; justify-content: space-between; height: 3.6rem; margin-top: 0.7rem;}
-.mainArea .visitorGroup .tabCount .tabBtns { display: flex; align-items: center;}
-.mainArea .visitorGroup .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 3rem; color: #555; border: 1px solid #EAEAEA;}
-.mainArea .visitorGroup .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
-.mainArea .visitorGroup .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .mainArea .visitorGroup .tabCount .combo { display: flex; align-items: center;}
 .mainArea .visitorGroup .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .mainArea .visitorGroup .tabCount .combo .switch input:checked + label:before { background-color: #29863b;}
-.mainArea .visitorGroup .chartBox { position: relative; margin-top: 1.8rem;}
-.mainArea .visitorGroup .chartBox .chart img { width: 100%; height: auto;}
+.mainArea .visitorGroup .chartBox { position: relative; padding-bottom: 2.4rem;}
+.mainArea .visitorGroup .chartBox img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .visitorGroup .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 3rem;}
 .mainArea .visitorGroup .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
 .mainArea .visitorGroup .chartBox .text .nod ~ .nod { margin-left: 1.6rem;}
@@ -439,9 +446,13 @@
 .mainArea .visitorGroup .ingBody .toggleBtn.active { right: 1.6rem; top: 2.2rem;}
 .mainArea .visitorGroup .ingBody .toggleBtn.active i { width: 2.4rem; height: 2.4rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -16.8rem -21.6rem/48rem 28.8rem; border-radius: 50%;}
 .mainArea .visitorGroup .colDate { margin-top: 1rem; font-size: 1.4rem; color: #555; text-align: right;}
+.mainArea .visitorGroup .chartBtnGroup { display: flex; align-items: center;}
+.mainArea .visitorGroup .chartBtnGroup .chartBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 25%; height: 3.6rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-top: none; border-radius: 0 0 0.8rem 0.8rem;}
+.mainArea .visitorGroup .chartBtnGroup .chartBtn ~ .chartBtn { border-left: none;}
+.mainArea .visitorGroup .chartBtnGroup .chartBtn.active { z-index: 1; color: #fff; border-color: #00539C; background-color: #00539C;}
 
-.mainArea .visitorGroup .targetHeight { overflow: hidden;   height: 0; transition: height 0.3s ease-in-out; margin-top: 10px;}
-.mainArea .visitorGroup .targetHeight.active { height: 36rem;}
+.mainArea .visitorGroup .targetHeight { overflow: hidden; height: 0; transition: height 0.3s ease-in-out;}
+.mainArea .visitorGroup .targetHeight.active { height: 41rem;}
 
 
 .mainArea .visitorGroup .ingBody .toggleBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.6rem; top: 1.2rem;}
@@ -467,8 +478,8 @@
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
 .mainArea .mainPromotion .promotionList .empty { display: flex; align-items: center; justify-content: center; height: 31.41rem; padding: 2rem; font-size: 1.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 
-.home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background-color: #f3f5f7;}
-.home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background: linear-gradient(to bottom,  #fff 0%, #F3F5F7 100%);}
+.home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; padding: 0 2.2rem;}
 .home .footer >div a { display: block; min-width: calc(100% / 3); margin-top: 1rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #767676; text-align: center;}
 .home .footer p { margin-top: 4.2rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #aaa; text-align: center;}
 

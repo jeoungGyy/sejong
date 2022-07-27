@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+
+					<!-- 레이어 -->
+					<div id="layerTemp" class="layerPopup">
+						<div class="layerWrap full">
+							<header class="header">
+								<div class="subHeader">
+									<h2 class="textCenter"><span>화면편집</span></h2>
+									<button type="button" class="icoClose"><i>창닫기</i></button>
+								</div>
+							</header>
+							<div class="layerLock fullFlex">
+								<div class="lock squareBox">
+									<button type="button">배너</button>
+									<button type="button">날씨</button>
+									<button type="button">슬기로운 세종생활</button>
+								</div>
+								<div class="unlock squareBox">
+									<button type="button">선별진료소 현황 <i class="split24"></i></button>
+									<button type="button">테마놀이터 <i class="split24"></i></button>
+									<button type="button">금강보행교 <i class="split24"></i></button>
+									<button type="button" class="break">행복교육체험터ㆍ교육자원지도 <i class="split24"></i></button> <!-- break -->
+									<button type="button">내 버스 <i class="split24"></i></button>
+									<button type="button">오늘의 유가 <i class="split24"></i></button>
+									<button type="button">병원ㆍ약국 <i class="split24"></i></button>
+									<button type="button">대형마트 휴무일 <i class="split24"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<script>
+						layerPopup.open('layerTemp');
+					</script>
+					<!-- //레이어 -->
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

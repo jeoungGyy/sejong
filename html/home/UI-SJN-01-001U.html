@@ -577,32 +577,40 @@
 												</div>
 											</div>
 											<div class="targetHeight">
-												<div class="tabCount">
-													<div class="tabBtns">
-														<button type="button" class="active">전체</button>
-														<button type="button">남측</button>
-														<button type="button">북측</button>
-													</div>
-													<div class="combo">
-														<span>시간별</span>
-														<div class="switch">
-															<input type="checkbox" id="switch1" title="길안내 설정">
-															<label for="switch1"></label>
-														</div>
+												<div class="visTit">
+													<span class="left">방문객수</span>
+													<div class="right">
+														<span>22.05.11[어제] 총0,000명</span>
 													</div>
 												</div>
-												<div class="chartBox">
-													<div class="chartControl">
-														<div class="cBtns">
-															<button type="button" class="conBtn walking active"><i class="split24"></i><span>도보</span></button> <!-- 활성화 시 active 추가 -->
-															<button type="button" class="conBtn bike"><i class="split24"></i><span>자전거</span></button>
+												<div class="roundBox">
+													<div class="tabCount">
+														<div class="tabBtns">
+															<button type="button" class="active">전체 <span class="invisible">선택 됨</span></button>
+															<button type="button">남측</button>
+															<button type="button">북측</button>
 														</div>
-														<div class="chart">
-															<img src="../../public/image/temp/tesm042.png" alt="샘플 이미지">
+														<div class="combo">
+															<span>시간별</span>
+															<div class="switch">
+																<input type="checkbox" id="switch1" title="길안내 설정">
+																<label for="switch1"></label>
+															</div>
 														</div>
 													</div>
+
+													<div class="chartBox">
+														<img src="../../public/image/temp/tesm042.png" alt="샘플 이미지">
+													</div>
+												</div>
+												<div class="chartBtnGroup">
+													<button type="button" class="chartBtn active">어제 <span class="invisible">선택 됨</span></button>
+													<button type="button" class="chartBtn">일</button>
+													<button type="button" class="chartBtn">주</button>
+													<button type="button" class="chartBtn">월</button>
 												</div>
 
+												<!--
 												<div id="mapToVisitSwiper" class="slideBody mt">
 													<div class="slideContainer">
 														<ul class="swiper-wrapper">
@@ -640,6 +648,7 @@
 												<script>
 													slider.active('mapToVisitSwiper')
 												</script>
+												-->
 											</div>
 										</div>
 									</div>
@@ -1003,6 +1012,7 @@
 									</div>
 			
 									<div class="anchorTop">
+										<button type="button" class="anchorBtn">화면편집</button>
 										<a href="#root" class="anchorTopBtn"><i class="split24"></i>위로</a>
 									</div>
 								</div>
