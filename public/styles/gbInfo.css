@@ -218,7 +218,8 @@
 
 
 .mainArea .nanumPotal { margin-top: 2.7rem;}
-.mainArea .nanumPotal a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 1.6rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+.mainArea .nanumPotal a { overflow: hidden; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 1.6rem; background-color: #fff; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
+.mainArea .nanumPotal a img { height: auto; vertical-align: top;}
 
 .mainArea .donation { position: relative; margin-top: 2.7rem;}
 .mainArea .donation a { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; height: 10rem; padding: 0 2.4rem; color: #fff; background: #D69630 url(../image/info/info_donation_img.png) no-repeat right 4.8rem center/4.425rem 6rem; border-radius: 1.6rem; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);}
