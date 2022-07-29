@@ -312,10 +312,14 @@
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
 .mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;}
 .mainArea .weekClosed .body a { display: block; width: calc(50% - 1rem); color: #111; text-align: center;}
-.mainArea .weekClosed .body a span.text { display: block; margin-top: 1rem; font-size: 1.6rem;}
-.mainArea .weekClosed .body a span.text i { margin: -0.6rem 0 0 0.2rem; vertical-align: middle; background-position-x: -30rem;}
-.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #767676;}
-.mainArea .weekClosed .body a img { width: 7rem; height: 7rem;}
+.mainArea .weekClosed .body a span.text { display: inline-block; position: relative; margin: 1rem 0 0 -1.5rem; font-size: 1.7rem;}
+.mainArea .weekClosed .body a span.text i { position: absolute; right: -2rem; top: 0.2rem; background-position-x: -30rem;}
+.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.6rem; font-weight: 400; color: #767676;}
+.mainArea .weekClosed .body a .img { text-align: center; border-radius: 0.6rem;}
+.mainArea .weekClosed .body a .img.bgYellow { background-color: #fdb417;}
+.mainArea .weekClosed .body a .img.bgGray { background-color: #f4f5f7;}
+.mainArea .weekClosed .body a .img.bgRed { background-color: #ec1d24;}
+.mainArea .weekClosed .body a .img img { display: block; width: 7.8rem; height: 7.8rem; margin: 0 auto;}
 .mainArea .weekClosed .open { padding: 1.5rem 0 1rem; text-align: center;}
 .mainArea .weekClosed .open img { width: 8rem; height: auto;}
 .mainArea .weekClosed .open span { display: block; margin-top: 0.8rem; font-size: 1.6rem;}
