@@ -749,9 +749,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerLock .squareBox .btnWrap ~ .btnWrap { margin-top: 0.8rem;} 
 .dragged button,
 .layerLock .squareBox .btnWrap button { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; font-weight: 700; border: 1px solid #ddd;}
-.layerLock .squareBox .break { position: relative; margin-bottom: 8rem;}
-.layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: -4.4rem; height: 0.6rem; background-color: #F4F5F7;}
-.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; bottom: -5rem; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #aaa; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
+.layerLock .squareBox .break { display: flex; align-items: center; justify-content: center; position: relative; height: 8rem;}
+.layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: 3.6rem; height: 0.6rem; background-color: #F4F5F7;}
+.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #aaa; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
 
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
