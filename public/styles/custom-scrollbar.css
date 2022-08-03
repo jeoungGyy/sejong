@@ -1,3 +1,45 @@
+/* 자동 완성 */
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.autocomplete .autocomplete-input {
+    width: 100%;
+}
+
+.autocomplete .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 5.6rem;
+    left: 0;
+    right: 0;
+    max-height: 32.5rem;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.autocomplete .autocomplete-items > div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete .autocomplete-items div.grid-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+@media (hover: hover) {
+  .autocomplete-items::-webkit-scrollbar { width: 4px;}
+  .autocomplete-items::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+}
+
+
 /* 지도 부채꼴  */
 .mapMenuLayer.ready {
     z-index: 90;
