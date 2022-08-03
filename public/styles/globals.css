@@ -124,7 +124,7 @@ input[type=password]::placeholder,
 input[type=search]::placeholder,
 input[type=url]::placeholder,
 input[type=tel]::placeholder,
-textarea::placeholder { font-weight: 400; letter-spacing: -0.04em;}
+textarea::placeholder { color: #767676 !important; font-weight: 400; letter-spacing: -0.04em;}
 button { border:0 none; padding:0; margin:0; font: 1.5rem/1.4 "Apple SD Gothic Neo", "Droid sans", "Noto Sans KR", "Microsoft NeoGothic ", sans-serif; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 /* #root button:hover { text-decoration: underline;} */
 button::-moz-focus-inner { margin: -1px; padding: 0;}
@@ -192,7 +192,6 @@ table td { vertical-align: middle;}
 .subHeader .offerer span { font-size: 1.3rem; color: #767676;}
 .subHeader .searchHeader { position: relative; width: 100%;}
 .subHeader .searchHeader input { font-size: 1.8rem; font-weight: 700; padding: 0  3.5rem 0 0.4rem; border: none;}
-.subHeader .searchHeader input::placeholder { color: #ddd;}
 .subHeader .btnHeader { position: absolute; right: 0; top: 0;}
 .subHeader .btnHeader i { content: ''; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
 .subHeader .btnHeader .icoMic { display: block; padding: 1.5rem;}
@@ -493,19 +492,19 @@ figure img { width: 100%; height: auto; vertical-align: top;}
 .mainNewsList .label,
 figure .label { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .mainNewsList .label.blue,
-figure .label.blue { background-color: rgba(102, 132, 234, 0.9);}
+figure .label.blue { background-color: #5D68E6;}
 .mainNewsList .label.skyBlue,
-figure .label.skyBlue { background-color: rgba(50, 187, 237, 0.9);}
+figure .label.skyBlue { background-color: #00539C;}
 .mainNewsList .label.darkBlue,
-figure .label.darkBlue { background-color: rgba(104, 49, 255, 0.9);}
+figure .label.darkBlue { background-color: #4651c9;}
 .mainNewsList .label.wood,
 figure .label.wood { background-color: #D69630;}
 .mainNewsList .label.black,
-figure .label.black { background-color: rgba(51, 51, 51, 0.9);}
+figure .label.black { background-color: #111;}
 .mainNewsList .label.green,
-figure .label.green { background-color: rgba(78, 196, 87, 0.9);}
+figure .label.green { background-color: #29863b;}
 .mainNewsList .label.red,
-figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
+figure .label.red { background-color: #E61E1E;}
 
 /* 페이지 풀사이즈 */
 .fullFlexDefault { background-color: #F4F5F7;}
@@ -1930,11 +1929,11 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-edu >li .title h4 { flex: 1; margin-top: 1rem; font-size: 1.6rem; color: #111; vertical-align: middle;}
 .items-edu >li .title .sub { margin-right: 0.6rem; vertical-align: middle;}
 .items-edu >li .title .sub span { display: inline-flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.3rem; padding: 0 0.5rem; font-size: 1.3rem; font-weight: 400; color: #fff;}
-.items-edu >li .title .sub span.ing { background-color: #32BBED;}
+.items-edu >li .title .sub span.ing { background-color: #00539C;}
 .items-edu >li .title .sub span.schedule { background-color: #29863b;}
-.items-edu >li .title .sub span.closing { background-color: #aaa;}
+.items-edu >li .title .sub span.closing { background-color: #666;}
 .items-edu >li .title .sub span.blue { background-color: #5D68E6;}
-.items-edu >li .title .sub span.wood { background-color: #D69630;}
+.items-edu >li .title .sub span.wood { background-color: #9D6D20;}
 .items-edu.boxStyle >li { padding: 1rem 1.6rem 1.6rem; border: 1px solid #EAEAEA;}
 .items-edu.boxStyle >li ~ li { margin-top: 1.6rem;}
 .items-edu.boxStyle >li .title .sub { display: block;}
