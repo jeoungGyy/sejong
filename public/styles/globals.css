@@ -131,7 +131,7 @@ button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
 textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.4rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
 textarea[disabled],
-textarea[readonly] { color: #aaa; background-color:#F4F5F7;}
+textarea[readonly] { color: #767676; background-color:#F4F5F7;}
 fieldset,
 img { border:0;}
 i { font-style: normal;}
@@ -364,7 +364,7 @@ table td { vertical-align: middle;}
 .button.middle { height: 4.8rem; font-size: 1.6rem;}
 .button.noShadow { box-shadow: none;}
 .button.blue { color: #fff; background-color: #5D68E6;}
-.button.gray { color: #aaa; background-color: #EAEDF2;}
+.button.gray { color: #767676; background-color: #EAEDF2;}
 .button.lightGray { font-weight: 400; color: #000; background-color: #EAEDF2;}
 .button.whiteLine { color: #555; border: 1px solid #ddd;}
 .button.lineBlue { font-weight: 400; border: 1px solid #5D68E6; box-shadow: none;}
@@ -420,12 +420,12 @@ table td { vertical-align: middle;}
 .legendTooltipLayer .legendTooltipBody .numerical li { flex: 1;}
 .legendTooltipLayer .legendTooltipBody .numerical li ~ li { margin-left: 0.4rem;}
 .legendTooltipLayer .legendTooltipBody .numerical li i { display: block; height: 0.4rem;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.lowness { background-color: #32a2ff;}
-.legendTooltipLayer .legendTooltipBody .numerical li i.normal { background-color: #01c73d;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.lowness { background-color: #5D68E6;}
+.legendTooltipLayer .legendTooltipBody .numerical li i.normal { background-color: #29863b;}
 .legendTooltipLayer .legendTooltipBody .numerical li i.caution { background-color: #ffa60e;}
 .legendTooltipLayer .legendTooltipBody .numerical li i.highness { background-color: #fd7803;}
 .legendTooltipLayer .legendTooltipBody .numerical li i.danger { background-color: #e84548;}
-.legendTooltipLayer .legendTooltipBody .numerical li span { display: block; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 700; color: #aaa;}
+.legendTooltipLayer .legendTooltipBody .numerical li span { display: block; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 700; color: #767676;}
 .legendTooltipLayer.show { display: block;}
 
 .dustTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 301; width: 100%; padding: 0 1.2rem;}
@@ -464,8 +464,8 @@ table td { vertical-align: middle;}
 .headTitle .tlHead { display: flex; align-items: center; height: 4rem;}
 .headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -19.2rem 0/48rem 28.8rem; border-radius: 50%;}
 .headTitle .tlHead strong { margin-left: 0.4rem;}
-.headTitle .tlHead span { margin-left: 0.8rem; color: #aaa;}
-.headTitle .tlHead .report { position: relative; color: #aaa;}
+.headTitle .tlHead span { margin-left: 0.8rem; color: #767676;}
+.headTitle .tlHead .report { position: relative; color: #767676;}
 .headTitle .tlHead .report::before { content: 'ㆍ';}
 .headTitle .tlHead.my strong::after { content: '나'; display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.5rem; font-size: 1.1rem; font-weight: 700; color: #fff; vertical-align: middle; background-color: #5D68E6; border-radius: 50%;}
 .headTitle .tlHead.my span::after,
@@ -480,7 +480,7 @@ table td { vertical-align: middle;}
 .headTitle .tlControls { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 1.2rem;}
 .headTitle .tlControls .more { color: #767676;}
 .headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover; transition: transform .2s ease;}
-.headTitle .tlControls .guide { font-size: 1.4rem; color: #aaa;}
+.headTitle .tlControls .guide { font-size: 1.4rem; color: #767676;}
 .headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
 .headTitle .tlControls .more.active::after { transform: rotate(180deg);}
 
@@ -659,7 +659,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 /* 투표 레이어 */
 .layerVote .update { display: flex; justify-content: flex-end; padding: 1.5rem 2rem 1.2rem; text-align: right;}
-.layerVote .update .updateBtn { display: flex; align-items: center; font-size: 1.3rem; color: #aaa;}
+.layerVote .update .updateBtn { display: flex; align-items: center; font-size: 1.3rem; color: #767676;}
 .layerVote .update .updateBtn i { margin-left: 0.4rem; background-position: -24rem -8rem;}
 .layerVote .title { margin: -1.6rem -2rem 0; padding: 2.7rem 2.5rem; text-align: left; background: #5D68E6 url(../image/map/map_vote_bg.png) no-repeat right 2.5rem bottom -1.5rem/11.5rem 15.6rem;}
 .layerVote .title h4 { font-size: 1.8rem; color: #fff;}
@@ -751,7 +751,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerLock .squareBox .btnWrap button { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; font-weight: 700; border: 1px solid #ddd;}
 .layerLock .squareBox .break { display: flex; align-items: center; justify-content: center; position: relative; height: 8rem;}
 .layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: 3.6rem; height: 0.6rem; background-color: #F4F5F7;}
-.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #aaa; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
+.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #767676; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
 
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
@@ -1020,7 +1020,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
-.locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #aaa; text-align: left;}
+.locationLayer .basic .bbInfo button { display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #767676; text-align: left;}
 .locationLayer .basic .bbInfo button .con { flex: 1; display: flex; align-items: center; overflow: hidden;}
 .locationLayer .basic .bbInfo button .ellipsis { display: inline-block; max-width: calc(100% - 3rem); padding-right: 0.6rem;}
 .locationLayer .basic .bbInfo .div i,
@@ -1074,7 +1074,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .basic .dustBody >div .legend i { margin: -0.6rem 0 0 0.4rem; vertical-align: middle; background-position-x: -38rem;}
 .locationLayer .basic .dustBody >div .level strong { display: flex; align-items: center; justify-content: center; height: 4.4rem; margin-top: 0.5rem; font-family: var(--fontRoboto); font-size: 3.2rem;}
 .locationLayer .basic .dustBody >div .level span { font-size: 1.6rem; font-weight: 700;}
-.locationLayer .basic .offerer { margin-bottom: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+.locationLayer .basic .offerer { margin-bottom: 1.6rem; font-size: 1.4rem; color: #767676; text-align: right;}
 .locationLayer .detail { padding: 0.2rem 2rem 2.4rem;}
 .locationLayer .detail h4 { display: flex; align-items: center; height: 3.6rem; margin-top: 0.4rem;}
 .locationLayer .detail h4 .cBlue { margin-left: 0.8rem; font-weight: 400;}
@@ -1122,7 +1122,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .detail .parkingList li span { font-size: 1.4rem; color: #767676;}
 .locationLayer .detail .parkingList li b { position: relative; margin-left: 0.1rem; padding-left: 0.8rem; font-size: 1.4rem;}
 .locationLayer .detail .parkingList li b::before { content: ''; position: absolute; left: 0; top: 0.3rem; width: 0.1rem; height: 1.4rem; background-color: #ddd;}
-.locationLayer .detail .offerer { display: flex; align-items: center;	justify-content: flex-end; height: 3.6rem; margin-top: 0.6rem; font-size: 1.4rem; color: #aaa;}
+.locationLayer .detail .offerer { display: flex; align-items: center;	justify-content: flex-end; height: 3.6rem; margin-top: 0.6rem; font-size: 1.4rem; color: #767676;}
 .locationLayer .detail .infomation { display: flex; align-items: center; min-height: 3.6rem;}
 .locationLayer .detail .infomation >span { font-size: 1.4rem; color: #555;}
 .locationLayer .detail .infomation >span ~ span { position: relative; margin-left: 0.8rem; padding-left: 0.8rem;}
@@ -1231,7 +1231,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .streetLampInfo .slInfoBody { padding: 3.2rem 2rem;}
 .locationLayer .streetLampInfo .slInfoBody table th { padding: 1rem; border: 1px solid #EAEAEA; background-color: #F8F8F8;}
 .locationLayer .streetLampInfo .slInfoBody table td { padding: 1rem; border: 1px solid #EAEAEA;}
-.locationLayer .streetLampInfo .slInfoBody .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; color: #aaa;}
+.locationLayer .streetLampInfo .slInfoBody .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; color: #767676;}
 
 /* 건강 - UI-SJN-33-005L */
 .layerCare { padding-bottom: 6rem; text-align: left;}
@@ -1239,7 +1239,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerCare dl dt { font-size: 1.6rem; font-weight: 700;}
 .layerCare dl dd { margin-top: 0.8rem; color: #555; line-height: 2.4rem;}
 .layerCare dl dd + dt { margin-top: 1.6rem;}
-.layerCare .offerer { margin-top: 1.6rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+.layerCare .offerer { margin-top: 1.6rem; font-size: 1.4rem; color: #767676; text-align: right;}
 
 /* 지역화폐 - UI-SJN-34-002L */
 .locationLayer .parkingSpaceBody .slideContainer {  overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
@@ -1304,7 +1304,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerBusInfo dl dd + dd { margin-top: 0.4rem;}
 .layerBusInfo .guide { display: flex; margin-top: 1.8rem;}
 .layerBusInfo .guide i { vertical-align: middle; background-position-x: -38rem;}
-.layerBusInfo .guide span { flex: 1; margin-left: 0.4rem; font-size: 1.4rem; color: #aaa;}
+.layerBusInfo .guide span { flex: 1; margin-left: 0.4rem; font-size: 1.4rem; color: #767676;}
 
 /* UI-SJN-40-005L */
 .layerMapInfo .headTitle { padding: 2.7rem 2rem 2.3rem;}
@@ -1727,20 +1727,20 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .labelH { display: flex; align-items: center; height: 4rem;}
 .items-form >li .labelH label { font-size: 1.6rem; font-weight: 700; color: #111;}
 .items-form >li .labelH .required { margin-left: 0.8rem; font-size: 1.1rem; color: #E61E1E;}
-.items-form >li .labelH .sub { margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
+.items-form >li .labelH .sub { margin-left: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-form >li .labelH.between { justify-content: space-between;}
 .items-form >li .labelH.between >div { display: flex; align-items: center;}
-.items-form >li .labelH.between >span { font-size: 1.4rem; color: #aaa;}
+.items-form >li .labelH.between >span { font-size: 1.4rem; color: #767676;}
 .items-form >li .labelH.between .checkboxG input { width: 1.4rem; height: 1.4rem; margin: 0.2rem 0.4rem 0 0;}
 .items-form >li .labelH.between .checkboxG label { font-size: 1.5rem; font-weight: 400;}
 .items-form >li .labelH.highlight { height: 7.2rem; font-size: 1.8rem;}
 .items-form >li .myLocation { display: flex; align-items: center; justify-content: center; height: 18rem; margin-bottom: 1.6rem;}
-.items-form >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #aaa;}
+.items-form >li .hWord { margin-top: 0.9rem; font-size: 1.4rem; color: #767676;}
 .items-form >li .btnOpen { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #5D68E6;}
 .items-form >li .btnOpen span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .btnOpen span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -4rem 0/40rem 16rem;}
 .items-form >li .btnLink { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 4.8rem; padding: 0 0.8rem 0 1.6rem; border: 1px solid #ddd;}
-.items-form >li .btnLink span { color: #aaa;}
+.items-form >li .btnLink span { color: #767676;}
 .items-form >li .btnLink i { background-position-x: -40.8rem;}
 .items-form >li .phoneForm { display: flex;}
 .items-form >li .phoneForm span { margin: 0 0.2rem;}
@@ -1757,7 +1757,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 16rem;}
 .items-form >li .fileForm .upload.add span::after { background-position: -6rem -4rem;}
-.items-form >li .fileForm .condition { margin: 0.9rem 0; color: #aaa;}
+.items-form >li .fileForm .condition { margin: 0.9rem 0; color: #767676;}
 .items-form >li .fileForm .ffH { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .items-form >li .fileForm .ffH .all { color: #5D68E6;}
 .items-form >li .fileForm .ffH .delete {display:inline-block; line-height:2.4rem; color: #555;}
@@ -1783,7 +1783,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .fileForm .pictureList li input { position: absolute; top: -9999rem; margin: 0.5rem 0 0 0.5rem;}
 .items-form >li .fileForm .pictureList li input:focus + label::after { outline: 2px solid #000 !important;}
 .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #5D68E6;}
-.items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #aaa; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
+.items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #767676; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
 .items-form >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
 .items-form >li .selectForm .target ul { display: flex; flex-wrap: wrap; overflow: auto; height: 19.5rem; margin: -0.4rem 0 0 -0.4rem;}
 .items-form >li .selectForm .target ul li { width: calc(25% - 0.4rem); margin: 0.4rem 0 0 0.4rem;}
@@ -1825,7 +1825,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .period .pList li button::after { content: ''; position: absolute; left: -4rem; top: 1.1rem; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -33.6rem -19.2rem/48rem 28.8rem;}
 .items-form >li .period .pList li button span:first-child { color: #5D68E6;}
 .items-form >li .period .pList li button.readonly { cursor: default;}
-.items-form >li .period .pList li button.readonly span { color: #aaa;}
+.items-form >li .period .pList li button.readonly span { color: #767676;}
 .items-form >li .period .pList li button.readonly::after { background-position-y: -21.6rem;}
 .items-form >li .period .pList li ~ li { margin-top: 0.8rem;}
 .items-form >li .agree { display: flex; justify-content: flex-end; align-items: center; height: 4.8rem;}
@@ -1833,10 +1833,10 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .agree input { position: absolute; opacity: 0;}
 .items-form >li .agree input:checked + label::after { background-color: #5D68E6;}
-.items-form >li .agreeForm { padding: 1.6rem; font-size: 1.6rem; color: #aaa; border: 1px solid #ddd;}
+.items-form >li .agreeForm { padding: 1.6rem; font-size: 1.6rem; color: #767676; border: 1px solid #ddd;}
 .items-form >li .radioSpace { margin: 0.8em 0;}
 .items-form >li .tagForm .boxLine { display: flex; align-items: center; position: relative; min-height: 4.8rem; padding: 0.4rem 0.9rem; border: 1px solid #ddd;}
-.items-form >li .tagForm .boxLine .placeholder { position: absolute; left: 1.3rem; top: 50%; font-size: 1.4rem; color: #aaa; transform: translateY(-50%);}
+.items-form >li .tagForm .boxLine .placeholder { position: absolute; left: 1.3rem; top: 50%; font-size: 1.4rem; color: #767676; transform: translateY(-50%);}
 .items-form >li .tagForm .boxLine ul { display: flex; align-items: center; flex-wrap: wrap;}
 .items-form >li .tagForm .boxLine ul li { margin: 0.2rem 0.4rem;}
 .items-form >li .tagForm .boxLine ul li .tagBtn { display: flex; align-items: center; justify-content: center; height: 3.2rem; padding: 0 1rem; font-size: 1.4rem; color: #555; border-radius: 1.6rem; border: 1px solid #ddd; background-color: #F4F5F7;}
@@ -1850,7 +1850,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 
 .textareaForm { display: flex; flex-direction: column; border: 0.1rem solid #ddd;}
 .textareaForm textarea { height: 11rem; border: none;}
-.textareaForm .byte { padding: 0 1.2rem 1.2rem 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+.textareaForm .byte { padding: 0 1.2rem 1.2rem 0; font-size: 1.4rem; color: #767676; text-align: right;}
 .textareaForm .byte span { color: #111;}
 
 .items-label .labelForm { display: flex; align-items: center; overflow: hidden; position: relative; padding-right: 0.2rem;}
@@ -1897,7 +1897,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-trip >li ul li { position: relative; padding-left: 1.2rem; color: #555; line-height: 2.4rem;}
 .items-trip >li ul li::after { content: ''; display: block; position: absolute; left: 0.5rem; top: 1rem; width: 0.2rem; height: 0.2rem; background-color: #535353; border-radius: 50%;}
 .items-trip >li .facility { margin-top: 0.7rem; text-align: right;}
-.items-trip >li .facility p { font-size: 1.4rem; color: #aaa;}
+.items-trip >li .facility p { font-size: 1.4rem; color: #767676;}
 
 .items-thumb { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem;}
 .items-thumb li { position: relative;}
@@ -1959,7 +1959,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weeklyWeather li .wwDay {  width: 6.8rem;}
 .items-weeklyWeather li .wwDay .aDay { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-weight: 700;}
 .items-weeklyWeather li .wwDay .aDay.today { border: 1px solid #32BBED; border-radius: 1.2rem;}
-.items-weeklyWeather li .wwDay .wwDate { display: block; width: 4rem; margin-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #aaa; letter-spacing: 0;}
+.items-weeklyWeather li .wwDay .wwDate { display: block; width: 4rem; margin-top: 0.3rem; font-family: var(--fontRoboto); font-size: 1.2rem; font-weight: 700; color: #767676; letter-spacing: 0;}
 .items-weeklyWeather li .t { display: block; font-size: 1.2rem; color: #767676;}
 .items-weeklyWeather li .s { display: block; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.3rem;  color: #00539C;}
 .items-weeklyWeather li .pm { margin-left: 0.6rem;}
@@ -1986,7 +1986,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .uvIcons i.lowness { background-position: -12.8rem -9.6rem;}
 .uvIcons i.caution { background-position: -16rem -9.6rem;}
 .uvIcons i.noDate { background-position: -25.6rem -3.2rem;}
-.uvIcons span { display: block; margin-top: 0.6rem; font-size: 1.3rem; font-weight: 700; color: #aaa; white-space: nowrap;}
+.uvIcons span { display: block; margin-top: 0.6rem; font-size: 1.3rem; font-weight: 700; color: #767676; white-space: nowrap;}
 .uvBody { display: flex; flex-direction: column; justify-content: center; flex: 1;}
 .uvBody >div { display: flex; align-items: center;}
 .uvBody >div h4 { font-size: 1.6rem;}
@@ -1997,7 +1997,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-weatherInfo li { flex: 1 1 auto; width: 5rem;}
 .items-weatherInfo li ~ li { margin-left: 0.4rem;}
 .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.2rem; color: #767676;}
-.items-weatherInfo li .state { display: block; margin-top: 0.4rem; font-size: 1.2rem; color: #aaa; letter-spacing: -0.1em;}
+.items-weatherInfo li .state { display: block; margin-top: 0.4rem; font-size: 1.2rem; color: #767676; letter-spacing: -0.1em;}
 .items-weatherInfo li i { overflow: hidden; display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem;}
 .items-weatherInfo li i.humidity { background-position-x: -2.4rem;}
 .items-weatherInfo li i.precipitation { background-position-x: -4.8rem;}
@@ -2127,7 +2127,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-parking >li .time.active { background-color: #5D68E6;}
 .items-parking >li .head { display: flex; align-items: center; justify-content: space-between;}
 .items-parking >li .head .title { font-size: 1.6rem;}
-.items-parking >li .head .date { font-size: 1.4rem; color: #aaa;}
+.items-parking >li .head .date { font-size: 1.4rem; color: #767676;}
 .items-parking >li .subContent { margin-top: 0.8rem;}
 .items-parking >li .subContent .subText { display: flex; align-items: center; justify-content: space-between;}
 .items-parking >li .subContent .subText .spaceBetween span { font-size: 1.4rem; color: #555;}
@@ -2168,7 +2168,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #CDD0D8 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem; border-radius: 50%;}
 .items-route li >i.car { background-position-x: -3.2rem;}
 .items-route li p { flex: 1;}
-.items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #aaa;}
+.items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-route li button { display: flex; align-items: center; justify-content: center; margin-left: 0.4rem;}
 .items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
 
@@ -2224,7 +2224,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation .infomation .bad { margin-left: 0.4rem; color: #FF940E;}
 .items-gasStation .infomation .veryBad { margin-left: 0.4rem; color: #E61E1E;}
 .items-gasStation .infomation .checking { margin-left: 0.4rem; color: #838fac;}
-.items-gasStation .infomation .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+.items-gasStation .infomation .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #767676; text-align: right;}
 .items-gasStation .infomation .txtBox { margin-left: 0.8rem; padding: 0.2rem 0.4rem; font-size: 1.2rem; color: #fff; background-color: #5D68E6;}
 .items-gasStation .infomation2 { margin-top: 0.4rem;}
 .items-gasStation .infomation2 span { font-size: 1.4rem;}
@@ -2290,7 +2290,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-gasStation .movieBox { display: flex; align-items: center; flex-direction: column; position: absolute; right: 2rem; top: 50%; width: 7.2rem; height: 7.2rem; margin-top: -3.6rem; background-color: #CCD2E3;}
 .items-gasStation .movieBox img { width: 100%; height: 100%; vertical-align: top;}
 .items-gasStation .movieBox .moviePlay { position: absolute; left: 50%; top: 50%; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/map/ico_movie.svg) no-repeat center/cover; transform: translate(-50%, -50%);}
-.items-gasStation .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #aaa; text-align: right;}
+.items-gasStation .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #767676; text-align: right;}
 .items-gasStation button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation button.view.active { display: flex;}
 .items-gasStation .pinDelete { position: absolute; right: 2rem; top: 50%; width: 3.4rem; margin-top: -1.7rem; padding: 0.5rem;}
@@ -2497,7 +2497,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-faq li .btn { display: flex; width: 100%; padding: 1.5rem 2rem; text-align: left; border-bottom: 1px solid #F4F5F7;}
 .items-faq li .btn .head { width: 2.8rem; padding-top: 0.2rem; font-size: 1.6rem; font-weight: 700;}
 .items-faq li .btn .div { width: 6.4rem; padding-top: 0.1rem; letter-spacing: -0.1em;}
-.items-faq li .btn .div.cGray { color: #aaa;}
+.items-faq li .btn .div.cGray { color: #767676;}
 .items-faq li .btn .title { flex: 1; font-size: 1.6rem; color: #111;}
 .items-faq li .btn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -36rem 0/48rem 28.8rem;}
 

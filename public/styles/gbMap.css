@@ -26,7 +26,7 @@ body { --vh: 1px;}
 
 .mapInfoLayer { touch-action: pan-x; display: flex; flex-direction: column; position: absolute; left: 0; right: 0; bottom: 0; z-index: 101; background-color: #fff; transform: translateY(100%); box-shadow: 0 0 1rem rgb(0 0 0 / 16%); transition: all .3s ease-in-out;}
 .mapInfoLayer.easeNone { transition:none}
-.map .mapInfoLayer .update { display: flex; align-items: center; justify-content: flex-end; height: 4rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+.map .mapInfoLayer .update { display: flex; align-items: center; justify-content: flex-end; height: 4rem; font-size: 1.4rem; color: #767676; text-align: right;}
 .map .mapInfoLayer .mapIHead { padding: 0 2rem;}
 .map .mapInfoLayer .mapIHead.noContent { height: auto;}
 .map .mapInfoLayer .mapIHead .locationFlex { display: flex; align-items: center;}
@@ -53,8 +53,8 @@ body { --vh: 1px;}
 .map .mapInfoLayer .area .val p .good { color: #29863b;}
 .map .mapInfoLayer .area .val p .bed { color: #E61E1E;}
 
-.map .mapInfoLayer .area .val p .lowness { color: #32A2FF;}
-.map .mapInfoLayer .area .val p .normal { color: #01C73D;}
+.map .mapInfoLayer .area .val p .lowness { color: #5D68E6;}
+.map .mapInfoLayer .area .val p .normal { color: #29863b;}
 .map .mapInfoLayer .area .val p .caution { color: #FFA60E;}
 .map .mapInfoLayer .area .val p .highness { color: #FD7803;}
 
@@ -521,7 +521,7 @@ span.M { background-color: #E61E1E;}
 .map .guideArea { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
 .map .guideArea  .stepNav { padding: 0 0 0 2rem;}
 .map .offerer { display: flex; align-items: center; justify-content: flex-end; height: 4rem; padding: 0 2rem; border-top: 1px solid #F4F5F7;}
-.map .offerer p { font-size: 1.4rem; color: #aaa;}
+.map .offerer p { font-size: 1.4rem; color: #767676;}
 .map .shortestPath { display: flex; position: absolute; left: 1.2rem; right: 0; top: calc(1.2rem + env(safe-area-inset-top)); z-index: 100;}
 .map .shortestPath .btnPrev { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 50%;}
 .map .shortestPath .btnPrev i { display: block; width: 0.85rem; height: 1.4rem; text-indent: -9999rem; background: url(../image/map/ico_prev.png) no-repeat center/cover;}
@@ -701,7 +701,7 @@ span.M { background-color: #E61E1E;}
 
 /* UI-SJN-32-110L */
 .map .mapInfoLayer .headFlex .tgUpdate { text-align: left;}
-.map .mapInfoLayer .headFlex .tgUpdate span { display: block; margin: -0.2rem 0; font-size: 1.3rem; color: #aaa;}
+.map .mapInfoLayer .headFlex .tgUpdate span { display: block; margin: -0.2rem 0; font-size: 1.3rem; color: #767676;}
 .map .mapInfoLayer .headFlex .tgUpdate span i { margin-top: -0.4rem; vertical-align: middle; background-position: -24rem -8rem;}
 .map .mapInfoLayer .headFlex .tgUpdate .tgDate { margin-top: 0.3rem; font-family: var(--fontRoboto);}
 
@@ -724,7 +724,7 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .fineDustList li .usually { margin-left: 0.4rem; color: #29863b;}
 .map .mapInfoLayer .fineDustList li .bad { margin-left: 0.4rem; color: #FF940E;}
 .map .mapInfoLayer .fineDustList li .veryBad { margin-left: 0.4rem; color: #E61E1E;}
-.map .mapInfoLayer .fineDustList li .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; text-align: right;}
+.map .mapInfoLayer .fineDustList li .offeror { margin-top: 0.8rem; font-size: 1.4rem; color: #767676; text-align: right;}
 
 /* UI-SJN-36-001L */
 .map .mapInfoLayer .headFlex .BtnT { display: flex; align-items: center;}
@@ -1008,8 +1008,8 @@ span.M { background-color: #E61E1E;}
 .map .satelliteBody .satelliteList ul li input { position: absolute; opacity: 0;}
 .map .satelliteBody .satelliteList ul li input:checked + label::after { background-color: #5D68E6;}
 .map .satelliteBody .satelliteList ul li .sTime { display: flex; align-items: center; justify-content: center; height: 2.2rem; margin-top: 0.8rem; font-size: 1.6rem; color: #555;}
-.map .satelliteBody .satelliteList ul li .empty { display: flex; align-items: center; justify-content: center; height: 10rem; padding: 0 1.2rem 0 4.4rem; font-size: 1.3rem; color: #aaa; background: #F4F5F7 url(../image/map/ico_satellite.png) no-repeat left 1.5rem top 1.5rem/1.825rem 2.275rem;}
-.map .satelliteBody .offerer { margin-top: 0.8rem; font-size: 1.4rem; color: #aaa; border-top: none;}
+.map .satelliteBody .satelliteList ul li .empty { display: flex; align-items: center; justify-content: center; height: 10rem; padding: 0 1.2rem 0 4.4rem; font-size: 1.3rem; color: #767676; background: #F4F5F7 url(../image/map/ico_satellite.png) no-repeat left 1.5rem top 1.5rem/1.825rem 2.275rem;}
+.map .satelliteBody .offerer { margin-top: 0.8rem; font-size: 1.4rem; color: #767676; border-top: none;}
 
 /* UI-SJN-41-002L */
 .map .transformBody .head { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem;}
