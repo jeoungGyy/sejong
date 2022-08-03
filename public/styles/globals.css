@@ -244,7 +244,8 @@ table td { vertical-align: middle;}
 .cGreen { color: #4EC457 !important;}
 .cRed { color: #FD2020 !important;}
 .cOrange { color: #FD2020 !important;}
-.cSkyBlue { color: #32BBED !important;} */
+.cSkyBlue { color: #32BBED !important;}
+.cWood { color: #D69630 !important;} */
 .cBlue { color: #5D68E6 !important;}
 .cRed { color: #E61E1E !important;}
 .cGreen { color: #29863b !important;}
@@ -252,7 +253,7 @@ table td { vertical-align: middle;}
 .cLightBlack { color: #555 !important;}
 .cGray { color: #767676 !important;}
 .cLinghtGray { color: #aaa !important;}
-.cWood { color: #D69630 !important;}
+.cWood { color: #9D6D20 !important;}
 .cOrange { color: #E61E1E !important;}
 .cSkyBlue { color: #00539C !important;}
 
@@ -481,7 +482,7 @@ table td { vertical-align: middle;}
 .headTitle .tlControls .more { color: #767676;}
 .headTitle .tlControls .more::after { content: ''; display: inline-block; width: 2rem; height: 2rem; vertical-align: text-bottom; background: url(../image/info/ico_more_small.png) no-repeat center/cover; transition: transform .2s ease;}
 .headTitle .tlControls .guide { font-size: 1.4rem; color: #767676;}
-.headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #D69630; border: 1px solid #D69630; border-radius: 1.6rem;}
+.headTitle .tlControls .recommend { display: flex;  align-items: center; justify-content: center; height: 3.2rem; padding: 0 0.8rem; font-size: 1.4rem; color: #9D6D20; border: 1px solid #D69630; border-radius: 1.6rem;}
 .headTitle .tlControls .more.active::after { transform: rotate(180deg);}
 
 /* 피규어 마커 */
@@ -1025,9 +1026,9 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .locationLayer .basic .bbInfo button .ellipsis { display: inline-block; max-width: calc(100% - 3rem); padding-right: 0.6rem;}
 .locationLayer .basic .bbInfo .div i,
 .locationLayer .basic .bbInfo button i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: 0 0.8rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat 0 0/48rem 28.8rem;}
-.locationLayer .basic .bbInfo .homepage i { background-position: -31.2rem -4.8rem;}
+.locationLayer .basic .bbInfo .homepage i { text-indent: -9999rem; background-position: -31.2rem -4.8rem;}
 .locationLayer .basic .bbInfo .homepage i.tw { background-position: -36rem 0;}
-.locationLayer .basic .bbInfo .phone i { background-position: -33.6rem -4.8rem;}
+.locationLayer .basic .bbInfo .phone i { text-indent: -9999rem; background-position: -33.6rem -4.8rem;}
 .locationLayer .basic .bbInfo i.write { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo .location i { background-position: -9.6rem -9.6rem;}
 .locationLayer .basic .bbInfo .time i { background-position: -12rem -9.6rem;}
@@ -1372,7 +1373,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .layerReplace .replaceList li .title .name { flex: 1; margin-left: 0.8rem; font-size: 1.8rem; text-align: left;}
 .layerReplace .replaceList li .etc { display: flex; align-items: flex-end; flex-direction: column; width: 17rem;}
 .layerReplace .replaceList li .etc .cGray { color: #767676;}
-.layerReplace .replaceList li .etc .cWood { color: #D69630;}
+.layerReplace .replaceList li .etc .cWood { color: #9D6D20;}
 .layerReplace .replaceList li .etc span { font-size: 1.4rem;}
 .layerReplace .replaceList li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
 .layerReplace .replaceList li .etc span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0.4rem; width: 0.1rem; height: 1.4rem; background-color: #e1e1e1;}
@@ -1552,7 +1553,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 /* header- 모음 */
 .header-default { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
 .header-default h3 { display: flex; align-items: center; font-size: 1.8rem; color: #000;}
-.header-default h3 .cWood { color: #D69630;}
+.header-default h3 .cWood { color: #9D6D20;}
 .header-default h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
 .header-default a,
 .header-default .labelType { display: flex; align-items: center; color: #5D68E6;}
@@ -1580,7 +1581,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .header-list .sel + .num { color: #555;}
 .header-list .num { min-width: 5rem; color: #000;}
 .header-list h3 { display: flex; align-items: center; font-size: 1.8rem; color: #000;}
-.header-list h3 .cWood { color: #D69630;}
+.header-list h3 .cWood { color: #9D6D20;}
 .header-list h3 .num { margin-left: 0.8rem; font-size: 1.4rem; font-weight: 400; color: #555;}
 .header-list button { color: #767676;}
 .header-list button.active { color: #5D68E6;}
@@ -1945,7 +1946,7 @@ figure .label.red { background-color: rgba(253, 32, 32, 0.9);}
 .items-newStore li a.picture figure { display: block; height: 10rem;}
 .items-newStore li a.text { display: block; margin-top: 1.2rem; color: #555;}
 .items-newStore li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
-.items-newStore li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #D69630;}
+.items-newStore li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #9D6D20;}
 .items-newStore li a.text p { line-height: 2.2rem;}
 .items-newStore li a figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
 .items-newStore li a figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}

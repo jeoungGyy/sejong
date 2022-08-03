@@ -429,7 +429,7 @@ span.M { background-color: #E61E1E;}
 .mainListGroup .mlgBody .bgBlue +.mbLBtn.active,
 .mainListGroup .mlgBody .bgBlue +.mbLBtn +.line { background-color: #024FB8;}
 .mainListGroup .mlgBody .mblR.bgWood { background-color: #D69630;}
-.mainListGroup .mlgBody .mblR.bgWood .round { color: #D69630;}
+.mainListGroup .mlgBody .mblR.bgWood .round { color: #9D6D20;}
 .mainListGroup .mlgBody .bgWood +.mbLBtn { border: 1px solid #D69630; background-image: url(../image/map/ico_arrow_path_wood.png);}
 .mainListGroup .mlgBody .bgWood +.mbLBtn.active,
 .mainListGroup .mlgBody .bgWood +.mbLBtn +.line { background-color: #D69630;}
