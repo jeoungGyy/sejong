@@ -738,21 +738,6 @@ figure .label.red { background-color: #E61E1E;}
 .noticeCheck .radioSet label { zoom: 0.8;}
 .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
-/* UI-SJN-01-900L */
-.layerLock .lock { margin-top: 0.8rem;}
-.layerLock .unlock { margin-top: 2.4rem; padding-bottom: 2rem !important;}
-.dragged button i,
-.layerLock .unlock button i { position: absolute; right: 1.6rem; top: 1.1rem; width: 2.4rem; height: 2.4rem; background-position: -45.6rem -19.2rem;}
-.layerLock .squareBox { padding: 0 2rem;}
-.dragged { position: relative; z-index: 20; background-color: #fff;}
-.layerLock .squareBox .btnWrap { flex-shrink: 0; display: flex; justify-content: center; align-items: center; position: relative;  z-index: 20; color: white; cursor: grab;}
-.layerLock .squareBox .btnWrap ~ .btnWrap { margin-top: 0.8rem;} 
-.dragged button,
-.layerLock .squareBox .btnWrap button { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; font-weight: 700; border: 1px solid #ddd;}
-.layerLock .squareBox .break { display: flex; align-items: center; justify-content: center; position: relative; height: 8rem;}
-.layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: 3.6rem; height: 0.6rem; background-color: #F4F5F7;}
-.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #767676; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
-
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
 .layerSetting .items-label .tootipBtn i { margin: -0.5rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
@@ -1153,7 +1138,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .detail .slideBody li a { display: block;}
 .locationLayer .detail .slideBody li a.empty { display: flex; align-items: center; justify-content: center; height: 9.4rem; color: #5D68E6; border: 1px solid #eaedf2;}
 .locationLayer .detail .slideBody.mt { margin-top: 3.2rem;}
-.locationLayer .detail .chartBox { position: relative; padding-bottom: 2.4rem;}
+.locationLayer .detail .chartBox { position: relative; margin-top: 2.8rem;}
 .locationLayer .detail .chartBox .chartControl { display: flex;}
 .locationLayer .detail .chartBox .chartControl .cBtns { width: 4.8rem; margin-right: 0.8rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .conBtn { display: flex; align-items: center; flex-direction: column; justify-content: center; width: 4.8rem; height: 6rem; border: 1px solid #EAEAEA; border-radius: 0.4rem;}
@@ -1162,7 +1147,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .detail .chartBox .chartControl .cBtns .bike { margin-top: 0.8rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .bike i { background-position: -7.2rem -24rem;}
 .locationLayer .detail .chartBox .chartControl .cBtns .conBtn.active { border-color: #5D68E6;}
-.locationLayer .detail .chartBox img { width: 100%; height: auto; vertical-align: top;}
+.locationLayer .detail .chartBox .chart img { width: 100%; height: auto;}
 .locationLayer .detail .chartBox .text { display: flex; align-items: center; height: 2.8rem; margin-bottom: 2.4rem;}
 .locationLayer .detail .chartBox .text .roundBox { display: flex; align-items: center; justify-content: center; height: 2.8rem; margin-right: 0.8rem; padding: 0 0.8rem; color: #fff; border-radius: 1.4rem;}
 .locationLayer .detail .chartBox .text .nod ~ .nod { margin-left: 1.6rem;}
@@ -1184,28 +1169,14 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .detail .visitorDetail .visitorToday b { display: block;}
 .locationLayer .detail .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
 .locationLayer .detail .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
-/* .locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
+.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
 .locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
 .locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
-.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;} */
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .locationLayer .detail .tabCount .combo { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .locationLayer .detail .tabCount .combo .switch input:checked + label:before { background-color: #29863b;}
-.locationLayer .detail .visTit { display: flex; justify-content: space-between; padding-top: 2.4rem;}
-.locationLayer .detail .visTit .left { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6; border-radius: 0.6rem;}
-.locationLayer .detail .visTit .right { font-size: 1.3rem; color: #767676;}
-.locationLayer .detail .roundBox { margin-top: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
-.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
-.locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center; padding: 0.4rem; border: 1px solid #EAEAEA; border-radius: 0.7rem;}
-.locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.4rem; font-size: 1.4rem; color: #767676;}
-.locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.4rem;}
-.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #00539C; background-color: #00539C; border-radius: 0.6rem;}
-.locationLayer .detail .chartBtnGroup { display: flex; align-items: center;}
-.locationLayer .detail .chartBtnGroup .chartBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 25%; height: 3.6rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-top: none; border-radius: 0 0 0.8rem 0.8rem;}
-.locationLayer .detail .chartBtnGroup .chartBtn ~ .chartBtn { border-left: none;}
-.locationLayer .detail .chartBtnGroup .chartBtn.active { z-index: 1; color: #fff; border-color: #00539C; background-color: #00539C;}
-
 
 
 .locationLayer .app { padding: 0 2rem 2.4rem;}
