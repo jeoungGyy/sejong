@@ -1969,6 +1969,8 @@ figure .label.red { background-color: #E61E1E;}
 .items-weatherInfo li ~ li { margin-left: 0.4rem;}
 .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.2rem; color: #767676;}
 .items-weatherInfo li .state { display: block; margin-top: 0.4rem; font-size: 1.2rem; color: #767676; letter-spacing: -0.1em;}
+.items-weatherInfo li .tempe { display: inline-flex; align-items: center; justify-content: center; width: 4rem; height: 2.4rem; font-size: 1.4rem; color: #555;}
+.items-weatherInfo li .tempe sup { margin: -0.2rem 0 0 0.2rem;}
 .items-weatherInfo li i { overflow: hidden; display: inline-block; width: 2.4rem; height: 2.4rem; margin: 1rem 0; text-indent: -9999rem;}
 .items-weatherInfo li i.humidity { background-position-x: -2.4rem;}
 .items-weatherInfo li i.precipitation { background-position-x: -4.8rem;}

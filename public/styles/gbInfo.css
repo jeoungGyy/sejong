@@ -460,7 +460,7 @@
 .info .weeklySunrise .titleBox { display: flex; justify-content: space-between;}
 .info .weeklySunrise .titleBox .wState { display: flex; align-items: center; justify-content: center; width: 5rem; height: 3rem; font-size: 1.2rem; color: #767676; border-radius: 1.5rem;}
 .info .weeklySunrise .titleBox .wSunrise { margin-left: 18%; color: #767676; border: 1px solid #CDD0D8;}
-.info .weeklySunrise .titleBox .wSunset { margin-right: 5%; color: #fff; background-color: #A9B0C1;}
+.info .weeklySunrise .titleBox .wSunset { margin-right: 5%; color: #fff; background-color: #555;}
 .info .weeklyIndex { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySatellite { margin: 0 -2rem; padding: 1.6rem 2rem;}
 .info .weeklySatellite .Radr a,
