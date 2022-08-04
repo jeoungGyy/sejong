@@ -246,7 +246,7 @@
 .mainArea .toVisit .body { margin: 1.6rem -1.6rem 0;}
 .mainArea .toVisit .boxArea { padding-bottom: 3rem;}
 .mainArea .toVisit .slideContainer { overflow: hidden; padding: 0 1.6rem;}
-.mainArea .toVisit li { width: 20rem;}
+.mainArea .toVisit li { width: 20rem; padding: 0.2rem 0;}
 .mainArea .toVisit li a { display: block; color: #111; text-align: center;}
 .mainArea .toVisit li a figure { border-radius: 0.8rem;}
 .mainArea .toVisit li a p { margin-top: 1.6rem;}
