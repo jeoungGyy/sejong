@@ -419,7 +419,6 @@ span.M { background-color: #E61E1E;}
 .map .mapFooter button.active i { background-position-y: -7.2rem;}
 .map .mapFooter button.active span { font-weight: 700; color: #fff;}
 
-.mainListGroup {}
 .mainListGroup { margin-top: -2.2rem;}
 .mainListGroup .mlgBody { display: flex; min-height: 130px; margin: 0 -2rem; padding: 0 2rem; border-bottom: 1px solid #F4F5F7;}
 .mainListGroup .mlgBody .mbL { display: flex; flex-direction: column; justify-content: space-between; align-items: center; position: relative; width: 5.2rem; padding: 0.8rem; background-color: #F8F8F8;}

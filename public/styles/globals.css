@@ -251,10 +251,10 @@ table td { vertical-align: middle;}
 .cBlack { color: #111 !important;}
 .cLightBlack { color: #555 !important;}
 .cGray { color: #767676 !important;}
-.cLinghtGray { color: #aaa !important;}
 .cWood { color: #9D6D20 !important;}
 .cOrange { color: #E61E1E !important;}
 .cSkyBlue { color: #00539C !important;}
+.cLinghtGray { color: #aaa !important;}
 
 /* Split 아이콘 */.weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
@@ -2208,7 +2208,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .etc >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-gasStation .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation .etc .facilities { display: flex; flex: 1;}
-.items-gasStation .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #767676; background-color: #F4F5F7;}
+.items-gasStation .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #555; background-color: #F4F5F7;}
 .items-gasStation .etc .facilities span.holiday { color: #E61E1E;}
 .items-gasStation .etc .grade { font-size: 1.4rem;}
 .items-gasStation .etc .lead { display: flex; align-items: center;}

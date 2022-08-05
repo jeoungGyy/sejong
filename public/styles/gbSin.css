@@ -157,7 +157,6 @@
 .mainArea .weatherBox .items-weatherInfo li .time { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 2.4rem; font-size: 1.2rem; color: #767676;}
 
 
-.mainArea .weatherBox .items-weatherInfo.etcP {}
 .mainArea .weatherBox .items-weatherInfo.etcP .icon { margin: 0.5rem 0 0;}
 .mainArea .weatherBox .etcP +.weatherBtnGroup { margin-top: 0.3rem;}
 
