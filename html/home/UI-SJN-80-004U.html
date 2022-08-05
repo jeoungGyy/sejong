@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<!-- 공통: 서브 헤더 -->
+					<script src="../include/header_sub.js"></script>
+					<!-- //공통: 서브 헤더 -->
+			
+					<!-- 본문 -->
+					<main class="contents mypage"> <!-- [내정보 Class] mypage-->
+						<h2 class="visible"><span class="headerClone">포인트 현황</span></h2> <!-- [헤더에 넣어줄 제목] -->
+						
+						<div class="mypageWrap">
+							<div class="explain-default">
+								<div class="pointBody">
+									<span class="pt"><img src="../../public/image/home/ico_point_p.svg" alt="">보유 포인트</span>
+									<div class="pp">
+										<b>100,000</b><span>P</span>
+									</div>
+								</div>
+								<button type="button" class="pointBtn cBlue"><b>세종시티앱</b>으로 통합 신청</button>
+							</div>
+							<div class="pointArea">
+								<select class="pointUse" title="포인트 적립ㆍ사용 선택">
+									<option>적립ㆍ사용</option>
+								</select>
+								<table class="pointTable">
+									<caption>보유 포인트 현황</caption>
+									<colgroup>
+										<col style="width: 6rem;" />
+										<col />
+										<col style="width: 10rem;" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td class="cGray">08.02</td>
+											<td><div class="text">장소공유</div></td>
+											<td class="textRight"><span class="cBlue">+200P</span></td>
+										</tr>
+										<tr>
+											<td class="cGray">08.02</td>
+											<td>
+												<div class="text">
+													포인트 통합 신청
+													<span class="scope cBlue">#세종시티앱</span>
+												</div>
+											</td>
+											<td class="textRight"><span class="cRed">-2,000,000P</span></td>
+										</tr>
+										<tr>
+											<td class="cGray">08.02</td>
+											<td><div class="text">장소공유</div></td>
+											<td class="textRight"><span class="cBlue">+200P</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</main>
+					<!-- //본문 -->
+			
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
