@@ -262,6 +262,7 @@
 .mainArea .campingSite ul li a figure { overflow: hidden; border-radius: 0.4rem;}
 .mainArea .campingSite ul li a p { margin-top: 1.2rem;}
 .mainArea .campingSite .fullImg { margin-top: 1.6rem; text-align: center;}
+.mainArea .campingSite .fullImg a { display: block;}
 .mainArea .campingSite .fullImg img { max-width: 100%;}
 .mainArea .campingSite .fullImg p { margin-top: 1.2rem;}
 .mainArea .campingSite .fullImg span { display: block; margin-top: 0.9rem; font-size: 1.3rem; line-height: 1.7rem;}
