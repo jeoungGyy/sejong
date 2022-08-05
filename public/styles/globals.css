@@ -891,7 +891,7 @@ figure .label.red { background-color: #E61E1E;}
 .myInfoLayer .myActivity li .review { display: flex; align-items: center; justify-content: space-between; position: relative; padding: 2rem 0; color: #111;}
 .myInfoLayer .myActivity li .review i { background-position-x: -3.2rem;}
 .myInfoLayer .myActivity li .review .cBlue { margin-left: 0.8rem;}
-.myInfoLayer .myActivity li .possess { position: relative; padding: 1.8rem 0;}
+.myInfoLayer .myActivity li .possess { position: relative; padding: 1.8rem 0 2.4rem;}
 .myInfoLayer .myActivity li .possess >i { background-position-x: 0;}
 .myInfoLayer .myActivity li .possess .buttonArrow { margin-top: 2.3rem;}
 .myInfoLayer .myActivity li .possess .buttonArrow i { position: inherit; display: inline-block; width: 2rem; height: 2rem; padding: 0 1rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -24rem -4rem/40rem 16rem;}
@@ -899,7 +899,9 @@ figure .label.red { background-color: #E61E1E;}
 .myInfoLayer .myActivity li .possess .pointBody .text { font-size: 1.6rem;}
 .myInfoLayer .myActivity li .possess .pointBody .cBlue { font-size: 1.4rem;}
 .myInfoLayer .myActivity li .possess .pointBody .point { font-size: 1.8rem; font-family: var(--fontRoboto);}
-.myInfoLayer .myActivity li .possess .guide { margin-top: 0.9rem; color: #555;}
+.myInfoLayer .myActivity li .possess .guide { margin-top: 0.6rem; font-size: 1.4rem; color: #555;}
+.myInfoLayer .myActivity li .possess .actPoint { margin: 2rem 0 0 -4rem; text-align: center;}
+.myInfoLayer .myActivity li .possess .actPoint b { font-family: var(--fontRoboto); font-size: 2.8rem;}
 .myInfoLayer .myActivity li .possess .currency { display: flex; align-items: center; justify-content: space-between; position: relative; width: 100%; height: 4.8rem; margin-top: 2rem; padding: 0 2rem; font-size: 1.6rem; color: #fff; background-color: #5D68E6;}
 .myInfoLayer .myActivity li .possess .currency::after { content: ''; display: block; position: absolute; right: 1rem; top: 2.5rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -24rem -4rem/40rem 16rem; transform: rotate(0);}
 .myInfoLayer .myActivity li .favorite { display: block; position: relative; padding: 2rem 0; color: #111;}
