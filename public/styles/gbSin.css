@@ -739,9 +739,9 @@
 .mypage .integrationArea .intGuide { display: flex; align-items: center; justify-content: space-between; margin-top: 2.4rem;}
 .mypage .integrationArea .intGuide .l { font-size: 1.4rem; color: #555;}
 .mypage .integrationArea .intGuide .r { font-size: 1.4rem; color: #555;}
-.mypage .integrationArea .intGuide .fontRobote { font-family: var(--fontRoboto);}
+.mypage .integrationArea .intGuide .fontRobote { font-family: var(--fontRoboto); letter-spacing: 0;}
 .mypage .integrationArea .range { position: relative; height: 3rem; margin-top: 1.6rem; background-color: #EAEDF2; border-radius: 1.5rem;}
-.mypage .integrationArea .range .pointValue { display: flex; align-items: center; justify-content: flex-end; position: absolute; left: 0; top: 0; height: 3rem; padding: 0.3rem 1.6rem 0 0; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.4rem; color: #fff; background-color: red; border-radius: 1.5rem; transition: width .3s 1s linear;}
+.mypage .integrationArea .range .pointValue { display: flex; align-items: center; justify-content: flex-end; position: absolute; left: 0; top: 0; height: 3rem; padding: 0.3rem 1.6rem 0 0; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.4rem; color: #fff; letter-spacing: 0; background-color: red; border-radius: 1.5rem; transition: width .3s 1s linear;}
 .mypage .integrationArea .condition .range .pointValue { background-color: #29863b;}
 .mypage .integrationArea .application .range .pointValue { background-color: #5D68E6;}
 
