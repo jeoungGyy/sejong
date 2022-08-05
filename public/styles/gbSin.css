@@ -707,12 +707,59 @@
 .mypage .mypageSpace .tabContent .economy { padding: 1.6rem 2rem 0;}
 .mypage .mypageSpace .tabContent .textReview { padding: 0 2rem;}
 
+/* 개인정보처리방침 - UI-SJN-80-004U */
+.mypage .explain-default {}
+.mypage .explain-default .pointBody { padding: 1.6rem 2rem 1.6rem 1.3rem; color: #fff; background-color: #5D68E6; border-radius: 0.8rem;}
+.mypage .explain-default .pointBody .pt { display: flex; align-items: center;}
+.mypage .explain-default .pointBody .pt img { margin-right: 0.8rem;}
+.mypage .explain-default .pointBody .pp { display: flex; align-items: center; justify-content: flex-end; margin-top: 1.4rem; font-family: var(--fontRoboto); font-size: 2.8rem;}
+.mypage .explain-default .pointBody .pp b { margin-right: 0.4rem;}
+.mypage .explain-default .pointBtn { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; margin-top: 1.6rem; padding-left: 2.4rem; border: 1px solid #5D68E6; background-color: #fff; border-radius: 0.6rem;} 
+.mypage .explain-default .pointBtn::after { content: ''; display: block; position: absolute; right: 1rem; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/map/arrow_right_blue.png) no-repeat center/cover;}
+
+.mypage .pointArea { padding: 2.4rem 2rem;}
+.mypage .pointArea .pointUse { width: 12rem; height: 4.2rem; padding-left: 1.2rem; color:#767676; background-color: #fff; border-radius: 2.1rem;}
+.mypage .pointArea .pointTable { margin-top: 1.6rem; border-top: 1px solid #333;} 
+.mypage .pointArea .pointTable td { font-size: 1.6rem; border-bottom: 1px solid #F2F2F2;}
+.mypage .pointArea .pointTable td .text { display: flex; flex-direction: column; justify-content: center; min-height: 5.6rem; padding: 1.1rem 0;}
+.mypage .pointArea .pointTable td .scope { display: block; margin-top: 0.2rem; font-size: 1.4rem;}
+.mypage .pointArea .pointTable td.cGray { font-family: var(--fontRoboto); font-size: 1.4rem;}
+.mypage .pointArea .pointTable td.textRight { font-family: var(--fontRoboto); font-size: 1.4rem;}
+
+/* 개인정보처리방침 - UI-SJN-80-005U */
+.mypage .explain-default h3 { font-size: 1.6rem;font-weight: 400;}
+.mypage .explain-default h3 .alertIco { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.2rem 0 0; vertical-align: middle;}
+.mypage .explain-default .insText { margin-top: 1.6rem; color: #555; line-height: 2.3rem;}
+
+.mypage .integrationArea .gard { padding: 2.4rem 2rem;}
+.mypage .integrationArea .gard.application { border-top: 6px solid #F4F5F7;}
+.mypage .integrationArea .title { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
+.mypage .integrationArea .title h3 { font-size: 1.6rem;}
+.mypage .integrationArea .title .inappBtn { display: flex; align-items: center; justify-content: center; width: 7.5rem; height: 2.8rem; font-size: 1.4rem; color: #fff; background-color: #E61E1E; border-radius: 2.4rem;}
+.mypage .integrationArea .intGuide { display: flex; align-items: center; justify-content: space-between; margin-top: 2.4rem;}
+.mypage .integrationArea .intGuide .l { font-size: 1.4rem; color: #555;}
+.mypage .integrationArea .intGuide .r { font-size: 1.4rem; color: #555;}
+.mypage .integrationArea .intGuide .fontRobote { font-family: var(--fontRoboto);}
+.mypage .integrationArea .range { position: relative; height: 3rem; margin-top: 1.6rem; background-color: #EAEDF2; border-radius: 1.5rem;}
+.mypage .integrationArea .range .pointValue { display: flex; align-items: center; justify-content: flex-end; position: absolute; left: 0; top: 0; height: 3rem; padding: 0.3rem 1.6rem 0 0; font-family: var(--fontRoboto); font-weight: 700; font-size: 1.4rem; color: #fff; background-color: red; border-radius: 1.5rem; transition: width .3s 1s linear;}
+.mypage .integrationArea .condition .range .pointValue { background-color: #29863b;}
+.mypage .integrationArea .application .range .pointValue { background-color: #5D68E6;}
+
+.mypage .integrationArea .intSub { margin-top: 2.3rem;}
+.mypage .integrationArea .intSub .isControls { position: relative;}
+.mypage .integrationArea .intSub .isControls b { position: absolute; left: 0; top: 1.2rem; font-size: 1.8rem;}
+.mypage .integrationArea .intSub .isControls .p { position: absolute; right: 0; top: 1.1rem; font-family: var(--fontRoboto); font-size: 1.8rem;}
+.mypage .integrationArea .intSub .isControls input { width: 100%; padding: 0 1.2rem 0 12rem; font-family: var(--fontRoboto); font-size: 1.8rem; color: #5D68E6; text-align: right; border: none; border-bottom: 1px solid #5D68E6;}
+.mypage .integrationArea .intSub .isBtns { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; margin-top: 0.8rem;}
+.mypage .integrationArea .intSub .isBtns button { display: flex; align-items: center; justify-content: center; flex: 1; height: 4rem; font-size: 1.4rem; background-color: #EAEAEA; border-radius: 0.8rem;}
+.mypage .integrationArea .button { margin-top: 4rem;}
 
 
 /* 개인정보처리방침 - UI-SJN-80-010U */
 .mypage .explain-default { padding: 2.4rem 2rem; background-color: #F4F5F7;}
 .mypage .explain-default .text { line-height: 2.3rem;}
 .mypage .approval { padding: 2.4rem 1.6rem; background-color: #fff;}
+
 
 /* 저작권 정책 - UI-SJN-83-002U */
 .mypage .twinBtn { display: flex; align-items: center; padding: 0 1.6rem;}
