@@ -30,11 +30,10 @@
 .mainArea .flex .mapLink i { margin: -0.4rem 0.4rem 0 0; vertical-align: middle; background-position: -26.4rem -19.2rem;}
 .mainArea .iconLinks { margin-bottom: 2.5rem;}
 .mainArea .iconLinks li a { display: block; text-align: center;}
-.mainArea .iconLinks li a p { margin-top: 0.6rem; font-size: 1.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
+.mainArea .iconLinks li a p { margin-top: 0.6rem; color: #333; text-align: center; letter-spacing: -0.1em;}
 .mainArea .iconLinks li a .round { display: flex; align-items: center; justify-content: center; margin: 0 auto; background-color: #F4F5F7;}
 .mainArea .iconLinks.space3 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(3, 1fr);}
 .mainArea .iconLinks.space3 li a img { width: 8rem; height: 8rem;}
-.mainArea .iconLinks.space3 li a p { font-size: 1.6rem;}
 .mainArea .iconLinks.space3 li a .round { width: 8rem; height: 8rem; border-radius: 2.4rem;}
 .mainArea .iconLinks.space4 { display: grid; gap: 2.4rem 0; grid-template-columns: repeat(4, 1fr);}
 .mainArea .iconLinks.space4 li a img { width: 6rem; height: 6rem;}

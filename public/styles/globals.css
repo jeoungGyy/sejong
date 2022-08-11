@@ -1997,8 +1997,11 @@ figure .label.red { background-color: #E61E1E;}
 .items-festival figure img { width: 100%; height: auto; vertical-align: top;}
 .items-festival .flFlex { display: flex; justify-content: space-between; flex: 1; margin-top: 1.6rem ;}
 .items-festival .flFlex .flHeader h4 { font-size: 1.6rem;}
-.items-festival .flFlex .flHeader p { margin-top: 0.8rem; color: #555;}
-.items-festival .flFlex .movie { width: 9.2rem; height: 5.2rem; margin-left: 1rem; background-color: #ddd;}
+.items-festival .flFlex .flHeader h4 +p { margin-top: 0.6rem;}
+.items-festival .flFlex .flHeader p { color: #555;}
+.items-festival .flFlex .movie { position: relative; width: 9.2rem; height: 5.2rem; margin-left: 1rem;}
+.items-festival .flFlex .movie img { width: 100%; height: 100%;}
+.items-festival .flFlex .movie .movieBtn { position: absolute; right: 0.4rem; bottom: 0.4rem;}
 
 .items-culture li a { display: flex; justify-content: space-between; color: #111;}
 .items-culture li ~ li { margin-top: 1.6rem;}

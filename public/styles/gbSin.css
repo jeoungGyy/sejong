@@ -6,7 +6,7 @@
 
 /* UI-SJN-01-001U */
 .mainArea { overflow: hidden; margin-top: -0.1rem; padding: 0 2rem; background-color: #fff;}
-.mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.8rem;}
+.mainArea h3 { display: flex; align-items: center; height: 4.8rem; font-size: 1.6rem;}
 .mainArea h3 .small { margin-right: 0.8rem; font-size: 1.5rem; font-weight: 400; color: #555;}
 .mainArea h3.noneFlex { display: block;}
 .mainArea .swiperHidden { margin: 0 -2rem;}
@@ -61,7 +61,7 @@
 .mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
 .mainArea .covid19 .title >div { flex: 1;}
-.mainArea .covid19 .title >div b { display: block; font-size: 1.6rem;}
+.mainArea .covid19 .title >div b { display: block;}
 .mainArea .covid19 .title >div span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #333;}
 .mainArea .covid19 .menu { margin-top: 0.6rem;}
 .mainArea .covid19 .menu .btnTab { display: flex; align-items: center; justify-content: space-between; height: 4.8rem;}
@@ -248,7 +248,7 @@
 .mainArea .eduGroup .bookBox .bbRight { padding-left: 1.2rem;}
 .mainArea .eduGroup .bookBox .bbRight p { padding-bottom: 0.8rem; background: url(../image/home/ico_bookBox_right.svg) no-repeat left bottom/7.3rem 1.5rem;}
 .mainArea .eduGroup .bookBox span { font-size: 1.4rem;}
-.mainArea .eduGroup .bookBox p { margin-top: 0.4rem; font-size: 1.8rem; font-weight: 700;}
+.mainArea .eduGroup .bookBox p { margin-top: 0.4rem; font-weight: 700;}
 .mainArea .eduGroup .bookBox .eduLine { position: absolute; left: 0; bottom: -0.9rem; width: 100%; height: 0.1rem; background-color: #EAEDF2;}
 .mainArea .eduGroup .bookBox .eduLine::after { content: ''; display: block; position: absolute; left: 50%; bottom: -1.4rem; width: 3.5rem; height: 1.5rem; margin-left: -1.75rem; background: url(../image/home/main_edu_book2.png) no-repeat center/cover;}
 .mainArea .eduGroup .bookBox .eduDeco { position: absolute; left: 50%; bottom: -3.7rem; width: 6.6rem; height: 8.1rem; margin-left: 7rem; background: url(../image/home/main_edu_deco.png) no-repeat center/cover;}
@@ -259,7 +259,7 @@
 .mainArea .mainNews .boxArea { padding-bottom: 1.6rem;}
 .mainArea .mainNews .boxArea >div .flex:first-child { margin-top: 0;}
 .mainArea .mainNews .flex { margin-top: 1rem; margin-bottom: 1rem;}
-.mainArea .mainNews .flex h4 { font-size: 1.7rem; font-weight: 400;}
+.mainArea .mainNews .flex h4 { font-weight: 400;}
 .mainArea .mainNews .flex .more { font-size: 1.5rem; color: #5D68E6;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -19rem; z-index: 1;}
 .mainArea .mainNews .roundDeco path { fill: #32bbed;}
@@ -272,7 +272,7 @@
 .mainArea .mainNews .mainNewsList .slideContainer li a { display: flex; align-items: center; justify-content: center; position: relative; height: 100%; font-size: 1.6rem; color: #111; background-color: #F4F5F7;}
 .mainArea .mainNews .mainNewsList .slideContainer li a figure { position: initial; background: inherit !important;}
 .mainArea .mainNews .mainNewsList .slideContainer li a img { width: 100%; height: auto; vertical-align: top;}
-.mainArea .mainNews .mainNewsList .slideContainer li a p { padding: 0 2rem; font-size: 1.8rem;}
+.mainArea .mainNews .mainNewsList .slideContainer li a p { padding: 0 2rem;}
 .mainArea .mainNews .mainNewsPiece { margin: 0 -1.6rem 0;}
 .mainArea .mainNews .mainNewsPiece .slideContainer { overflow: hidden; padding: 0 1.6rem;}
 .mainArea .mainNews .mainNewsPiece li { width: 14rem;}
@@ -309,10 +309,10 @@
 .mainArea .hospital h3 span { margin-right: 0.6rem; color: #29863b;}
 .mainArea .hospital .roundDeco { display: block; position: absolute; right: -15rem; top: -6rem; z-index: 1;}
 .mainArea .hospital .roundDeco path { fill: #a9b0c1;}
-.mainArea .hospital p { margin-top: 0.4rem; font-size: 1.6rem; color: #767676;}
-.mainArea .hospital ul { margin-top: 3.3rem; border-top: 1px solid #F4F5F7;}
+.mainArea .hospital p { margin-top: 0.4rem; color: #767676;}
+.mainArea .hospital ul { margin-top: 2rem; border-top: 1px solid #F4F5F7;}
 .mainArea .hospital ul li { border-bottom: 1px solid #F4F5F7;}
-.mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; font-size: 1.6rem; color: #5D68E6;}
+.mainArea .hospital ul li a { display: flex; align-items: center; height: 4.8rem; font-weight: 700; color: #5D68E6;}
 .mainArea .hospital ul li a.hospitalLink i { margin-right: 0.8rem; background-position: -2.4rem -19.2rem;}
 .mainArea .hospital ul li a.pharmacyLink i { margin-right: 0.8rem; background-position: -4.8rem -19.2rem;}
 .mainArea .hospital ul li a::after { content: ''; }
@@ -322,12 +322,12 @@
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
 .mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; margin-top: 1rem;}
 .mainArea .weekClosed .body a { display: block; width: 7rem; color: #111; text-align: center;}
-.mainArea .weekClosed .body a span.text { display: block; margin-top: 1.6rem; font-size: 1.6rem;}
+.mainArea .weekClosed .body a span.text { display: block; margin-top: 0.6rem; font-size: 1.4rem;}
 .mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #767676;}
 .mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
 .mainArea .weekClosed .open { padding: 1.5rem 0 1rem; text-align: center;}
 .mainArea .weekClosed .open img { width: 8rem; height: auto;}
-.mainArea .weekClosed .open span { display: block; margin-top: 0.8rem; font-size: 1.6rem;}
+.mainArea .weekClosed .open span { display: block; margin-top: 0.8rem;}
 .mainArea .sejong { margin-top: 2.7rem;}
 .mainArea .sejong .roundDeco { display: block; position: absolute; left: -6rem; top: -7rem; z-index: 1; width: 16.5rem; height: 16.5rem; background-color: #D69630; border-radius: 50%;}
 .mainArea .sejong .body { display: block; overflow: hidden; height: 16rem; margin-top: 0.8rem; padding: 7.5rem 2rem 0; background: url(../image/home/main_sejong_img.png) no-repeat center/cover; border-radius: 0.8rem;}
@@ -462,12 +462,12 @@
 
 .mainArea .mainPromotion { padding-bottom: 1rem;}
 .mainArea .mainPromotion .boxArea { padding: 0;}
-.mainArea .mainPromotion .promotionList .prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
-.mainArea .mainPromotion .promotionList .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
-.mainArea .mainPromotion .promotionList .prop .swiper-pagination span { text-indent: -9999rem;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../../image/common/ico_play_indi.svg) no-repeat center/cover;}
-.mainArea .mainPromotion .promotionList .prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../../image/common/ico_stop.svg) no-repeat center/cover;}
+.prop { display: flex; align-items: center; justify-content: center; margin-top: 1rem;}
+.prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
+.prop .swiper-pagination span { text-indent: -9999rem;}
+.prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
+.prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../image/common/ico_play_indi.svg) no-repeat center/cover;}
+.prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../image/common/ico_stop.svg) no-repeat center/cover;}
 
 
 .mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; margin: -1rem;}
