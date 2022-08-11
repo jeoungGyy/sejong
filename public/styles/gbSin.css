@@ -259,7 +259,7 @@
 .mainArea .mainNews .boxArea { padding-bottom: 1.6rem;}
 .mainArea .mainNews .boxArea >div .flex:first-child { margin-top: 0;}
 .mainArea .mainNews .flex { margin-top: 1rem; margin-bottom: 1rem;}
-.mainArea .mainNews .flex h4 { font-size: 1.7rem; font-weight: 400;}
+.mainArea .mainNews .flex h4 { font-weight: 400;}
 .mainArea .mainNews .flex .more { font-size: 1.5rem; color: #5D68E6;}
 .mainArea .mainNews .roundDeco { display: block; position: absolute; right: -12.4rem; top: -19rem; z-index: 1;}
 .mainArea .mainNews .roundDeco path { fill: #32bbed;}
