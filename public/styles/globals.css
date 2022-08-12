@@ -173,6 +173,10 @@ table td { vertical-align: middle;}
 .headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
 .headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
 .headerWrap .headerClear.add { transition-duration: 300ms;}
+.headerWrap .headerBtn { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 4rem;}
+.headerWrap .headerBtn h2 { font-size: 1.8rem;}
+.headerWrap .headerBtn .btnClose { display: block; position: absolute; right: 1.2rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
+
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
@@ -230,6 +234,7 @@ table td { vertical-align: middle;}
 .visible { display: none;}
 .invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 .ls0 { letter-spacing: 0;}
+.fowN { font-weight: 400 !important;}
 
 /* 마진 */
 #pcRoot .mt0 { margin-top: 0;}
@@ -403,11 +408,10 @@ table td { vertical-align: middle;}
 .boxTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 305; width: 100%; padding: 0 1.2rem;}
 .boxTooltipLayer .boxTooltipBody { position: relative; padding: 1.2rem 4rem 1.2rem 1.6rem; background-color: #fff; border: 1px solid #5D68E6; box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 5%);}
 .boxTooltipLayer .boxTooltipBody .paragraphGroup p { font-size: 1.4rem; line-height:2.2rem;}
-
-
 .boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
 .boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
 .boxTooltipLayer.show { display: block;}
+.boxTooltipLayer.short { width: calc(100% - 6rem);}
 
 .legendTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
 .legendTooltipLayer .legendTooltipBody { position: relative; padding: 1.2rem 2rem 3.2rem; background-color: #fff; border: 1px solid #5D68E6;}

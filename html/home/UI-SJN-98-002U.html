@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+					<div class="headerWrap">
+						<div class="headerBtn">
+							<h2>휴대폰 간편인증 로그인</h2>
+							<button type="button" class="btnClose">창닫기</button>
+						</div>
+					</div>
+			
+					<!-- 본문 -->
+					<main class="contents openApi"> <!-- [오픈API Class] openApi-->
+						<div class="loginWrap">
+							<div class="bgGray">
+								<b class="p1 cBlue">세종엔의 정보 이용!</b><br />
+								<b class="p2 cRed">안심서비스 긴급 도움 요청</b><br />
+								<span class="s1">휴대폰 문자 인증만으로도 할 수 있어요!</span><br />
+								<b class="s2">전체 기능 사용에는 제한이 있습니다.</b>
+							</div>
+
+							<div class="nonMember">
+								<h3 class="h3Text">휴대전화 번호를 입력해주세요.</h3>
+								<div class="listOrder">
+									<div>
+										<input type="tel" title="휴대전화 번호 입력" placeholder="-없이 숫자만 입력해주세요">
+										<button type="button" class="button middle noShadow blue fowN">인증받기</button>
+									</div>
+									<div>
+										<input type="tel" title="휴대전화 인증 번호 입력">
+										<button type="button" class="button middle noShadow whiteLine fowN">인증확인</button>
+									</div>
+								</div>
+								<div class="listBtn">
+									<button type="button" class="button blue">로그인</button>
+								</div>
+								<p class="listText">
+									로그인하면 세종특별자치시 ‘세종엔’의<br />
+									<span class="cRed">서비스 약관</span> 및 <span class="cRed">개인정보 보호정책</span>에<br />
+									동의하는 것으로 간주됩니다.
+								</p>
+							</div>
+						</div>
+					</main>
+					<!-- //본문 -->
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

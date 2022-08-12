@@ -31,19 +31,33 @@
 								<!-- 기타 아이콘들 -->
 								<div class="mapIcons">
 									
-									<div class="controlPannel"> <!-- 활성화 시 active 추가 -->
+									<div class="controlPannel active"> <!-- 활성화 시 active 추가 -->
 										<button type="button" class="controlFilterBtn" title="작성글 표시 필터 열기"><i class="split24">작성글 표시 필터 지도 마커</i></button> <!-- 활성화 시 title="작성글 표시 필터 닫기" 로 변경해주세요. -->
-										<div class="cfBtns">
+										
+										<!-- 필터 -->
+										<!-- <div class="cfBtns">
 											<button type="button" class="active">
 												전체
-												<span class="invisible">선택 됨</span> <!-- 활성화 된 메뉴에 넣어주세요. -->
+												<span class="invisible">선택 됨</span>
 											</button>
 											<button type="button">위험</button>
 											<button type="button">불편</button>
 											<button type="button">나눔</button>
 											<button type="button">교통</button>
 											<button type="button">기타</button>
+										</div> -->
+										<!-- //필터 -->
+
+										<!-- 유형 -->
+										<div class="cfBtns">
+											<select title="유형 선택" class="active" style="width: 9rem;">
+												<option>유형</option>
+											</select>
+											<select title="읍면동 선택" style="width: 10rem;">
+												<option>읍면동</option>
+											</select>
 										</div>
+										<!-- //유형 -->
 									</div>
 									
 									
