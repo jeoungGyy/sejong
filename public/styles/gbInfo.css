@@ -561,13 +561,14 @@
 .info .tripCalendar .notes .slideContainer {  overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
 .info .tripCalendar .notes .swiper-slide { width: 7.6rem;}
 .info .tripCalendar .notes .swiper-slide span { display: inline-block; position: relative; padding-left: 2rem; font-size: 1.4rem; color: #767676;}
-.info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;}
-.info .tripCalendar .notes .swiper-slide span.complete::after { background-color: #555;}
-.info .tripCalendar .notes .swiper-slide span.wait::after { background-color: #CDD0D8;}
-.info .tripCalendar .notes .swiper-slide span.possible::after { background-color: #5D68E6;}
-.info .tripCalendar .notes .swiper-slide span.impossible::after { background-color: #E61E1E;}
-.info .tripCalendar .notes .swiper-slide span.companion::after { background-color: #32BBED;}
-.info .tripCalendar .notes .swiper-slide span.modify::after { background-color: #D69630;}
+.info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
+.info .tripCalendar .notes .swiper-slide span.complete::after { background-position: -4rem -12rem;}
+.info .tripCalendar .notes .swiper-slide span.wait::after { background-position: -4rem -14rem;}
+.info .tripCalendar .notes .swiper-slide span.possible::after { background-position: -6rem -12rem;}
+.info .tripCalendar .notes .swiper-slide span.impossible::after { background-position: -6rem -14rem;}
+.info .tripCalendar .notes .swiper-slide span.companion::after { background-position: -8rem -12rem;}
+.info .tripCalendar .notes .swiper-slide span.modify::after { background-position: -8rem -14rem;}
+
 
 /* 포토갤러리 UI-SJN-13-006U */
 .info .galleryView figure { min-height: 16rem;}

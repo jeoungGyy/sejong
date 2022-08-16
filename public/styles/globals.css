@@ -109,7 +109,8 @@ select { width: 100%; height: 4.8rem; padding:0 3.5rem 0 2rem; font-size:100%; l
 select[disabled] { background-color: #F4F5F7;}
 input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
 input[type=checkbox] { border:1px solid #ddd;}
-input[type=checkbox], input[type=radio] { margin-top:-1px; vertical-align:middle;}
+input[type=checkbox], input[type=radio] { vertical-align:middle;}
+/* input[type=checkbox], input[type=radio] { margin-top:-1px; vertical-align:middle;} */
 input[type=file], 
 input[type=text], 
 input[type=password],
@@ -131,7 +132,7 @@ button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
 textarea { width:100%; padding: 1.6rem 2rem; font: 1.5rem "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; font-size:100%; line-height: 2.4rem; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none; -webkit-border-radius:0;}
 textarea[disabled],
-textarea[readonly] { color: #767676; background-color:#F4F5F7;}
+textarea[readonly] { color: #555; background-color:#F4F5F7;}
 fieldset,
 img { border:0;}
 i { font-style: normal;}
@@ -221,6 +222,8 @@ table td { vertical-align: middle;}
 .skipnav a:focus { top: 0;}
 
 /* 정렬 */
+.flexNeLeft { display: flex; align-items: center;}
+.flexNeLeft .etc { margin-left: 2rem;}
 .textLeft { text-align:left !important;}
 .textCenter { text-align:center !important;}
 .textRight { text-align:right !important;}
@@ -382,18 +385,19 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute; left: -9999rem;}
+.switch input { position: absolute; left: 0.2rem; width: 4.4rem; height: 2rem;}
 .switch input:focus + label::before { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
-.switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #EAEDF2; transition: all 0.3s;}
+.switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #949494; transition: all 0.3s;}
 .switch label::after { content: ""; position: absolute; display: block; left: 0.6rem; top: 0.4rem; width: 2.4rem; height: 2.4rem; border-radius: 1.6rem; background-color: #fff; box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); transition: margin-left 0.3s;}
 .switch input:checked + label:after { margin-left: 2.1rem;}
 .switch input:checked + label:before { background-color: #5D68E6;}
 
 /* 라디오박스 */
+.radioSet { position: relative;}
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
-.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; top: -9999rem; margin: 0.3rem 0 0 0.3rem;}
+.radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radioSet input { position: absolute; width: 1.6rem; height: 1.6rem;}
 .radioSet input:focus + label::after { outline: 2px solid #000 !important;}
 .radioSet input:checked + label::after { background-color: #5D68E6;}
 .radioSet label + input { margin-left: 0.9rem;}
@@ -1436,7 +1440,7 @@ figure .label.red { background-color: #E61E1E;}
 .layerTime .titleBody li span { display: block; width: 100%;}
 .layerTime .titleBody li span + span { position: relative; margin-left: 2.4rem;}
 .layerTime .titleBody li span + span::after { content: ''; display: block; position: absolute; left: -1.4rem; top: 2.4rem; width: 0.6rem; height: 0.1rem; background-color: #aaa;}
-.layerTime .titleBody li .pnRemove { width: 2.4rem; height: 2.4rem; margin-left: 0.8rem; background-color: #EAEDF2; border-radius: 50%;}
+.layerTime .titleBody li .pnRemove { width: 2.4rem; height: 2.4rem; margin-left: 0.8rem; background-color: #949494; border-radius: 50%;}
 .layerTime .titleBody li .pnRemove i { text-indent: -9999rem; background-position: -26.4rem -2.4rem;}
 
 /* UI-SJN-80-002U */
@@ -1723,7 +1727,6 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .adressForm2 .flex .btnOpen span::after { display: none;}
 .items-form >li .adressForm2 >input { margin-top: 0.8rem;}
 .items-form >li .checkboxForm .items-label { margin-top: 1.6rem;}
-.items-form >li .checkboxForm .items-label .labelForm { padding: 0 2rem;}
 .items-form >li .fileForm .upload { display: block; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #5D68E6;}
 .items-form >li .fileForm .upload span { display: inline-block; position: relative; padding-left: 2.4rem;}
 .items-form >li .fileForm .upload span::after { content: ''; position: absolute; left: 0; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -14rem 0/40rem 16rem;}
@@ -1733,7 +1736,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .fileForm .ffH .all { color: #5D68E6;}
 .items-form >li .fileForm .ffH .delete {display:inline-block; line-height:2.4rem; color: #555;}
 .items-form >li .fileForm .ffH .delete span { display: flex; position: relative; padding-left: 2.8rem;}
-.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%;}
+.items-form >li .fileForm .ffH .delete span::after { content: ''; position: absolute; left: 0; top: -0.1rem; width: 2.4rem; height: 2.4rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%;}
 /* .items-form >li .fileForm .ffH .delete label {position:relative; padding-left:3rem; line-height:2.4rem;}
 .items-form >li .fileForm .ffH .delete label::after { content: ''; position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; background:#EAEDF2 url(../image/common/ico_chk_wh.png) no-repeat center/1.2rem auto; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .fileForm .ffH .delete input { position: absolute; opacity: 0;}
@@ -1747,13 +1750,13 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .fileForm .pictureList li.one { width: 100%;}
 .items-form >li .fileForm .pictureList li.two { width: calc(50% - 0.4rem);}
 .items-form >li .fileForm .pictureList li.three { width: calc(33.33% - 0.4rem);}
-.items-form >li .fileForm .pictureList li { float: left; margin: 0.4rem 0 0 0.4rem;}
-.items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
+.items-form >li .fileForm .pictureList li { position: relative; float: left; margin: 0.4rem 0 0 0.4rem;}	
+.items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; z-index: 1; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
 .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-form >li .fileForm .pictureList li input { position: absolute; top: -9999rem; margin: 0.5rem 0 0 0.5rem;}
+.items-form >li .fileForm .pictureList li input { position: absolute; right: 1rem; top: 1rem;}
 .items-form >li .fileForm .pictureList li input:focus + label::after { outline: 2px solid #000 !important;}
-.items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #5D68E6;}
+.items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #5D68E6; background-position: -16rem -2rem;}
 .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #767676; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
 .items-form >li .selectForm .selectBtn::after { content: ''; position: absolute; right: 1.2rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/ico_select.png) no-repeat center/2rem; transition: transform .3s;}
 .items-form >li .selectForm .target ul { display: flex; flex-wrap: wrap; overflow: auto; height: 19.5rem; margin: -0.4rem 0 0 -0.4rem;}
@@ -1768,10 +1771,13 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .businessForm ul li button { min-width: 5rem; margin-left: 0.8rem; padding: 0 1rem; border: 1px solid #ddd;}
 .items-form >li .businessForm ul li button.blue { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
 .items-form >li .businessForm ul li button.pink { color: #fff; border-color: #D57298; background-color: #D57298;}
+.items-form >li .businessForm ul li .inpor { position: relative;}
+.items-form >li .businessForm ul li .inpor .inpTime { position: absolute; right: 1rem; top: 1.4rem; font-size: 1.3rem;}
+.items-form >li .businessForm ul li .inpor ~ button { width: 6rem;}
 .items-form >li .businessForm ul li ~ li { margin-top: 0.8rem;}
 .items-form >li .inputForm > * { margin-top: 0.8rem;}
 .items-form >li .inputForm .por { position: relative;}
-.items-form >li .inputForm .por .pnRemove { position: absolute; right: 0.8rem; top: 1.2rem; width: 2.4rem; height: 2.4rem; background-color: #EAEDF2; border-radius: 50%;}
+.items-form >li .inputForm .por .pnRemove { position: absolute; right: 0.8rem; top: 1.2rem; width: 2.4rem; height: 2.4rem; background-color: #949494; border-radius: 50%;}
 .items-form >li .inputForm .por .pnRemove i { text-indent: -9999rem; background-position: -26.4rem -2.4rem;}
 .items-form >li .inputForm .por input { padding-right: 4rem;}
 .items-form >li .inputForm .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #5D68E6;}
@@ -1801,7 +1807,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .period .pList li ~ li { margin-top: 0.8rem;}
 .items-form >li .agree { display: flex; justify-content: flex-end; align-items: center; height: 4.8rem;}
 .items-form >li .agree label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
-.items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.items-form >li .agree label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .items-form >li .agree input { position: absolute; opacity: 0;}
 .items-form >li .agree input:checked + label::after { background-color: #5D68E6;}
 .items-form >li .agreeForm { padding: 1.6rem; font-size: 1.6rem; color: #767676; border: 1px solid #ddd;}
@@ -1826,8 +1832,8 @@ figure .label.red { background-color: #E61E1E;}
 
 .items-label .labelForm { display: flex; align-items: center; overflow: hidden; position: relative; padding-right: 0.2rem;}
 .items-label .labelForm label { display: flex; align-items: center; position: relative; width: 100%; min-height: 5.2rem; padding: 1.2rem 4rem 1.2rem 0; font-size: 1.6rem; cursor: pointer;}
-.items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #EAEDF2 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-label .labelForm input { position: absolute; top: -5rem;}
+.items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.items-label .labelForm input { position: absolute; right: 0.3rem; top: 50%; margin-top: -0.7rem; width: 1.4rem; height: 1.4rem;}
 .items-label .labelForm input:checked + label::after { background-color: #5D68E6;}
 .items-label .labelForm input:focus + label::after { outline: 2px solid #000 !important;}
 
@@ -2141,7 +2147,7 @@ figure .label.red { background-color: #E61E1E;}
 
 .items-route { margin-top: 0.8rem;}
 .items-route li { display: flex; align-items: center; padding: 1.6rem 2rem; border-bottom: 1px solid #F4F5F7;}
-.items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #CDD0D8 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem; border-radius: 50%;}
+.items-route li >i { display: block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; background: #949494 url(../image/common/split_64.png) no-repeat 0rem 0/32rem 12.8rem; border-radius: 50%;}
 .items-route li >i.car { background-position-x: -3.2rem;}
 .items-route li p { flex: 1;}
 .items-route li span { display: block; width: 3rem; margin-left: 0.8rem; font-size: 1.4rem; color: #767676;}
