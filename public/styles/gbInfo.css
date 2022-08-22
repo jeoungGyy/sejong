@@ -339,9 +339,9 @@
 .info .newStoreBody ul li a.text h4 { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 4.4rem; padding: 0 0.8rem; font-size: 1.5rem; font-weight: 700; color: #111;}
 .info .newStoreBody ul li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #9D6D20;}
 .info .newStoreBody ul li a.text p { line-height: 2.2rem;}
-.info .newStoreBody ul li a figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
-.info .newStoreBody ul li a figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
-.info .newStoreBody ul li a figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
+.info .newStoreBody ul li figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
+.info .newStoreBody ul li figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
+.info .newStoreBody ul li figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
 .info .newStoreBody ul li .header-icons { padding: 0 0.8rem;}
 .info .newStoreBody ul li .addItems { display: flex; align-items: center; margin-top: 0.8rem; padding: 0 0.8rem;}
 .info .newStoreBody ul li .addItems span { display: flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.5rem; font-size: 1.3rem;}

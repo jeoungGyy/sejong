@@ -259,6 +259,9 @@ table td { vertical-align: middle;}
 .cSkyBlue { color: #00539C !important;}
 .cLinghtGray { color: #aaa !important;}
 
+/* 추가 */
+.btnBlock { display: block; width: 100%;}
+
 /* Split 아이콘 */
 .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
 .weather .icon.weather1 { background-position: 0 0;}
@@ -1921,7 +1924,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-newStore { display: flex; flex-wrap: wrap; margin: 0.8rem 0 0 -0.8rem;}
 .items-newStore li { width: calc(100% / 2 - 0.8rem); min-height: 20.4rem; margin: 0.8rem 0 0 0.8rem;}
 .items-newStore li a.picture { display: block; overflow: hidden;}
-.items-newStore li a.picture figure { display: block; height: 10rem;}
+.items-newStore li figure { display: block; height: 10rem;}
 .items-newStore li a.text { display: block; margin-top: 1.2rem; color: #555;}
 .items-newStore li a.text h4 { font-size: 1.6rem; font-weight: 700; color: #111;}
 .items-newStore li a.text h4 .cWood { font-size: 1.4rem; font-weight: 400; color: #9D6D20;}
