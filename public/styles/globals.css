@@ -218,7 +218,7 @@ table td { vertical-align: middle;}
 **********************************************/
 
 /* skipnav */
-.skipnav a { display: block; position: fixed; left: 0; top: -100px; z-index: 300; width: 100%; padding: 10px 0; color: #fff; text-align: center; background-color: #111;}
+.skipnav a { display: block; position: fixed; left: 0; top: -100px; z-index: 999; width: 100%; padding: 10px 0; color: #fff; text-align: center; background-color: #111;}
 .skipnav a:focus { top: 0;}
 
 /* 정렬 */
