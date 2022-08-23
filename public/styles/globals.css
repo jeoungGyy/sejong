@@ -7,10 +7,11 @@ html.fontLarge { font-size: 65%;}
 html.fontBig { font-size: 68%;}
 
 @media screen and (min-width: 0) { html {font-size: 48%;}}
-@media screen and (min-width: 300px) { html {font-size: 53.33%;}}
-@media screen and (min-width: 350px) { html {font-size: 62.5%;}}
-@media screen and (min-width: 420px) { html {font-size: 67%;}}
-@media screen and (min-width: 1190px) { html {font-size: 67%;}}
+@media screen and (min-width: 270px) { html {font-size: 53.33%;}}
+@media screen and (min-width: 390px) { html {font-size: 62.5%;}}
+@media screen and (min-width: 430px) { html {font-size: 67%;}}
+@media screen and (min-width: 500px) { html {font-size: 69%;}}
+@media screen and (min-width: 1190px) { html {font-size: 72%;}}
 
 
 /* Fonts */
