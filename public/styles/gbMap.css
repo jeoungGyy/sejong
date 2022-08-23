@@ -766,7 +766,7 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .station { display: flex; align-items: center;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .station h4 { flex: 1; margin-left: 0.6rem; font-size: 1.6rem;}
 .map .mapInfoLayer .busRouteList li .routeBody .head .sDate { display: block; margin-top: 0.4rem; padding-left: 3.4rem; font-size: 1.4rem; color: #555;}
-.map .mapInfoLayer .busRouteList li .routeBody .licensePlate { position: absolute; right: 5.5rem;}
+.map .mapInfoLayer .busRouteList li .routeBody .licensePlate { position: absolute; right: -1rem;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span { display: flex; align-items: center; justify-content: center; padding: 0.7rem 0.8rem; font-size: 1.4rem; color: #fff;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.B { color: #5D68E6; border: 1px solid #5D68E6; background-color: #fff;}
 .map .mapInfoLayer .busRouteList li .routeBody .licensePlate span.G { color: #00539C; border: 1px solid #32BBED; background-color: #fff;}
