@@ -466,8 +466,8 @@
 .prop .swiper-pagination { display: flex; align-items: center; position: inherit; width: inherit;}
 .prop .swiper-pagination span { text-indent: -9999rem;}
 .prop .wrap-autoplay-control button { display: block; width: 18px; height: 18px; text-indent: -99999px;}
-.prop .wrap-autoplay-control button[aria-pressed="true"] { background: url(../image/common/ico_play_indi.svg) no-repeat center/cover;}
-.prop .wrap-autoplay-control button[aria-pressed="false"] { background: url(../image/common/ico_stop.svg) no-repeat center/cover;}
+.prop .wrap-autoplay-control button.true { background: url(../image/common/ico_play_indi.svg) no-repeat center/cover;}
+.prop .wrap-autoplay-control button.false{ background: url(../image/common/ico_stop.svg) no-repeat center/cover;}
 
 
 .mainArea .mainPromotion .promotionList .slideContainer { overflow: hidden; margin: -1rem;}
