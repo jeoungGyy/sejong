@@ -784,7 +784,7 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .busRouteList li .icon .bathchair.blue { background: url(../image/map/ico_bathchair_blue.png) no-repeat center/cover;}
 .map .mapInfoLayer .busRouteList li .icon .bathchair.green { background: url(../image/map/ico_bathchair_green.png) no-repeat center/cover;}
 .map .mapInfoLayer .busRouteList li .icon .bathchair.red { background: url(../image/map/ico_bathchair_red.png) no-repeat center/cover;}
-.map .mapInfoLayer .busRouteList li .favorite  { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
+.map .mapInfoLayer .busRouteList li .favorite  { position: relative; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busRouteList li .favorite.active { background-position-y: -2.4rem;}
 
 /* UI-SJN-40-004L */
