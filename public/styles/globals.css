@@ -2187,7 +2187,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation { position: relative;}
 .items-gasStation li { position: relative; margin: 0 -2rem; padding: 1.2rem 7.3rem 1.2rem 2rem; border-bottom: 1px solid #F4F5F7;}
 .items-gasStation .title { display: flex; align-items: center;}
-.items-gasStation .title .favorite { margin-right: 0.4rem;}
+.items-gasStation .title .favorite { position: relative; margin-right: 0.4rem;}
 .items-gasStation .title .favorite i { content: ''; display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .items-gasStation .title .favorite.active i { background-position-y: -2.4rem;}
 .items-gasStation .title h3.name { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: inherit; font-size: 1.6rem;}
@@ -2280,7 +2280,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .movieBox img { width: 100%; height: 100%; vertical-align: top;}
 .items-gasStation .movieBox .moviePlay { position: absolute; left: 50%; top: 50%; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/map/ico_movie.svg) no-repeat center/cover; transform: translate(-50%, -50%);}
 .items-gasStation .update { margin: 0.8rem -5.3rem 0 0; font-size: 1.4rem; color: #767676; text-align: right;}
-.items-gasStation button.view { display: none; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
+.items-gasStation button.view { display: none; position: relative; align-items: center; justify-content: flex-end; width: calc(100% + 9.3rem); height: 3.4rem; margin: 1.6rem 0 -1.2rem -2rem; padding-right: 2rem; background-color: #eaedf2;}
 .items-gasStation button.view.active { display: flex;}
 .items-gasStation .pinDelete { position: absolute; right: 2rem; top: 50%; width: 3.4rem; margin-top: -1.7rem; padding: 0.5rem;}
 .items-gasStation .pinDelete i { background-position: -38.4rem -14.4rem;}
