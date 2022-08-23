@@ -892,7 +892,7 @@ span.M { background-color: #E61E1E;}
 .settingListSub li .guidance.active i { background-position-y: -2.4rem;}
 .settingListSub li .guidance.active b { color: #111;}
 
-.getOffBtn { display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #949494; border-radius: 50%;}
+.getOffBtn { position: relative; display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; flex-wrap: wrap; width: 5.2rem; height: 5.2rem; background-color: #949494; border-radius: 50%;}
 .getOffBtn i { background-position-y: -14.4rem;}
 .getOffBtn b { font-size: 1.2rem; color: #fff; letter-spacing: -0.1em;}
 .getOffBtn.active { background-color: #5D68E6;}
