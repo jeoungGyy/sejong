@@ -1837,7 +1837,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-label .labelForm { display: flex; align-items: center; overflow: hidden; position: relative; padding-right: 0.2rem;}
 .items-label .labelForm label { display: flex; align-items: center; position: relative; width: 100%; min-height: 5.2rem; padding: 1.2rem 4rem 1.2rem 0; font-size: 1.6rem; cursor: pointer;}
 .items-label .labelForm label::after { content: ''; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-label .labelForm input { position: absolute; right: 0.3rem; top: 50%; margin-top: -0.7rem; width: 1.4rem; height: 1.4rem;}
+.items-label .labelForm input { position: absolute; right: 0.3rem; top: 1.6rem; width: 1.4rem; height: 1.4rem;}
 .items-label .labelForm input:checked + label::after { background-color: #5D68E6;}
 .items-label .labelForm input:focus + label::after { outline: 2px solid #000 !important;}
 
@@ -2148,7 +2148,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-wayGuide >li .wayCon { display: flex; padding: 0.4rem 0 1.6rem; border-bottom: 1px solid #F4F5F7;}
 .items-wayGuide >li .wayCon span { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; margin-right: 0.6rem; font-size: 1.3rem; color: #555; border: 1px solid #ddd; border-radius: 50%;}
 .items-wayGuide >li .wayCon p { flex: 1; font-size: 1.6rem; color: #555;}
-.items-wayGuide >li .wayCon.active span { color: #fff; border-color: #32BBED; background-color: #32BBED;}
+.items-wayGuide >li .wayCon.active span { color: #fff; border-color: #00539C; background-color: #00539C;}
 .items-wayGuide >li:last-child { background: none;}
 .items-wayGuide >li:last-child .wayCon { border: none;}
 
@@ -2546,7 +2546,7 @@ figure .label.red { background-color: #E61E1E;}
 
 
 .items-alram >li a { display: block; padding: 2.4rem 0; color: #555; border-bottom: 1px solid #F4F5F7;}
-.items-alram >li a .icon { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #CCD2E3; border-radius: 50%;}
+.items-alram >li a .icon { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; margin-right: 0.8rem; background-color: #949494; border-radius: 50%;}
 .items-alram >li a .icon i { background-position: -12rem -14.4rem;}
 .items-alram >li a.active .icon { background-color: #5D68E6;}
 .items-alram >li a .paragraphGroup p { margin-top: 0.8rem;}
