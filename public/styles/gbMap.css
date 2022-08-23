@@ -843,9 +843,10 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .accordionRoute.style .routeHead b.not { color: #767676;}
 
 .map .mapInfoLayer .busGuideArea2 { flex: 1; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;}
-.map .mapInfoLayer .busGuideArea2 .favorite { width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
+.map .mapInfoLayer .busGuideArea2 .favorite { position: relative; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -33.6rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busGuideArea2 .favorite.active { background-position-y: -2.4rem;}
-.map .mapInfoLayer .busGuideArea2 ul li { display: flex; align-items: center; padding: 0.8rem 2rem;}
+.map .mapInfoLayer .busGuideArea2 ul li { display: flex; align-items: center; position: relative; padding: 0.8rem 2rem;}
+.map .mapInfoLayer .busGuideArea2 ul li .igasBtn { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .map .mapInfoLayer .busGuideArea2 ul li ~ li { border-top: 1px solid #F4F5F7;}
 .map .mapInfoLayer .busGuideArea2 ul li .arSub { flex: 1;}
 .map .mapInfoLayer .busGuideArea2 ul li .arSub .title { display: flex; align-items: center;}
@@ -859,6 +860,8 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span { display: block; padding-left: 3rem; font-size: 1.4rem; color: #767676;}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span { margin-left: 0;}
 .map .mapInfoLayer .busGuideArea2.style ul li .etc span ~ span::after { display: none;}
+
+
 
 .settingList >li { padding: 1rem 2rem;}
 .settingList >li .slBody { display: flex; align-items: baseline; justify-content: space-between;}
