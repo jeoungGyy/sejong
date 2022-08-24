@@ -2395,7 +2395,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-LocalCurrency .guidance i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem 0/48rem 28.8rem;}
 .items-LocalCurrency .guidance b { display: block; font-size: 1.2rem; color: #fff;}
 .items-LocalCurrency .etc { display: flex; align-items: center; height: 2.4rem; margin: 0.8rem -5.3rem 0 0;}
-.items-LocalCurrency .etc >a { display: block; width: 8.5rem; font-size: 1.4rem; color: #767676;}
+.items-LocalCurrency .etc >a { display: block; position: relative; width: 8.5rem; font-size: 1.4rem; color: #767676;}
 .items-LocalCurrency .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.4rem; vertical-align: middle; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-LocalCurrency .etc .sale i { margin: -0.2rem 0 0 0; vertical-align: middle; background-position: -36rem -9.6rem;}
 .items-LocalCurrency .etc .sale .discount { color: #E61E1E;}
