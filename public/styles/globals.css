@@ -181,7 +181,8 @@ table td { vertical-align: middle;}
 .header.bgGreen h2 { color: #000;}
 .subHeader { display: flex; flex-wrap: wrap; align-items: center; align-content: center; position: relative; height: 5.6rem; padding: 0 5rem;}
 .subHeader .icoPrev { position: absolute; left: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
-.subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; background: url(../image/common/header_prev.png) no-repeat center/cover;}
+.subHeader .icoPrev i { display: inline-block; width: 3.2rem; height: 3.2rem; text-indent: -9999rem; vertical-align: middle; background: url(../image/common/header_prev.png) no-repeat center/cover;}
+.subHeader .icoPrevHome i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; vertical-align: middle; background: url(../image/common/ico_24_home.png) no-repeat center/cover;}
 .subHeader .icoPicture { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
 .subHeader .icoPicture i { display: inline-block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -9.6rem 0/48rem 28.8rem;}
 .subHeader .icoClose { position: absolute; right: 0; top: 0; width: 5rem; height: 5.6rem; text-align: center;}
