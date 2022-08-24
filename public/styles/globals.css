@@ -482,7 +482,7 @@ table td { vertical-align: middle;}
 .headTitle .tlHead.my .report { display: none;}
 .headTitle figure { overflow: hidden; position: relative; height: 18rem; margin-top: 0.8rem;}
 .headTitle figure img { width: 100%; height: auto; vertical-align: top;}
-.headTitle figure .zoom { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -16.8rem 0/48rem 28.8rem;}
+.headTitle figure .zoom { display: inline-block; position: absolute; right: 0.8rem; bottom: 0.8rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -16.8rem 0/48rem 28.8rem;}
 .headTitle .text { overflow: hidden; margin-top: 1.2rem; font-size: 1.6rem; line-height: 2.4rem;}
 .headTitle .text.show { -webkit-line-clamp: inherit;}
 .headTitle .text.short { margin-top: 0.4rem;}
@@ -2015,11 +2015,13 @@ figure .label.red { background-color: #E61E1E;}
 .items-festival .flFlex .flHeader h4 +p { margin-top: 0.6rem;}
 .items-festival .flFlex .flHeader p { color: #555;}
 .items-festival .flFlex .movie { position: relative; width: 9.2rem; height: 5.2rem; margin-left: 1rem;}
+.items-festival .flFlex .movie a { display: block;}
 .items-festival .flFlex .movie img { width: 100%; height: 100%;}
 .items-festival .flFlex .movie .movieBtn { position: absolute; right: 0.4rem; bottom: 0.4rem;}
 
-.items-culture li a { display: flex; justify-content: space-between; color: #111;}
+.items-culture li { display: flex; justify-content: space-between;}
 .items-culture li ~ li { margin-top: 1.6rem;}
+.items-culture li a { color: #111;}
 .items-culture li figure { width: 12rem; height: 16rem; margin-right: 1.2rem;}
 .items-culture li .text { flex: 1; color: #111;}
 .items-culture li .text h4 { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size: 1.6rem;}
