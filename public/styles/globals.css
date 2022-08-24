@@ -262,7 +262,7 @@ table td { vertical-align: middle;}
 .cLinghtGray { color: #aaa !important;}
 
 /* 추가 */
-.btnBlock { display: block; width: 100%;}
+.btnBlock { position: relative; display: block; width: 100%;}
 
 /* Split 아이콘 */
 .weather .icon { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 0.4rem; text-indent: -9999rem; background: url(../image/common/split_weather.png) no-repeat 0 0/32rem 9.6rem;}
@@ -2350,6 +2350,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .commentList .clBox::before { content: ''; position: absolute; right: 4rem; top: -2.2rem; width: 0; height: 0; border-style: solid; border-width: 1.1rem 0.7rem; border-color: transparent transparent #5D68E6 transparent;}
 
 .items-gasStation .igasBtn { position:absolute; left:0; top:0; width:100%; height:100%;}
+.nhList .igasBtn { position:absolute; left:0; top:0; width:100%; height:100%;}
 
 
 .icons.tool { display: flex; align-items: center; margin-top: 0.8rem;}
