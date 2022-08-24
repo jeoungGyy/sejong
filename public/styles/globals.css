@@ -390,7 +390,7 @@ table td { vertical-align: middle;}
 
 /* 체크박스, 라디오박스 */
 .switch { position: relative;}
-.switch input { position: absolute; left: 0.2rem; width: 4.4rem; height: 2rem;}
+.switch input { position: absolute; left: 0.2rem; width: 3.4rem; height: 1.8rem;}
 .switch input:focus + label::before { outline: 2px solid #000 !important;}
 .switch label { position: relative; padding: 0.6rem 0 0.6rem 5.6rem; cursor: pointer;}
 .switch label::before { content: ""; position: absolute; display: block; left: 0; top: 0; width: 5.6rem; height: 3.2rem; border-radius: 1.6rem; background-color: #949494; transition: all 0.3s;}
@@ -402,7 +402,7 @@ table td { vertical-align: middle;}
 .radioSet { position: relative;}
 .radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; width: 1.3rem; height: 1.3rem;}
+.radioSet input { position: absolute; width: 1.4rem; height: 1.4rem;}
 .radioSet input:focus + label::after { outline: 2px solid #000 !important;}
 .radioSet input:checked + label::after { background-color: #5D68E6;}
 .radioSet label + input { margin-left: 0.9rem;}
@@ -2203,7 +2203,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .infomation >span.charge { color: #555;}
 .items-gasStation .infomation >span.charge .paid { color: #E61E1E;}
 .items-gasStation .infomation >span.charge .free { color: #5D68E6;}
-.items-gasStation .infomation .link { margin: -0.2rem 0 0 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #5D68E6; border: 1px solid #5D68E6; border-radius: 1.2rem;}
+.items-gasStation .infomation .link { position: relative; margin: -0.2rem 0 0 0.6rem; padding: 0 0.4rem 0 1rem; font-size: 1.4rem; color: #5D68E6; border: 1px solid #5D68E6; border-radius: 1.2rem;}
 .items-gasStation .infomation .link i { margin-top: -0.2rem; vertical-align: middle; background-position: -32rem -4rem;}
 .items-gasStation .infomation .oper { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #29863b;}
 .items-gasStation .infomation .ready { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #5D68E6;}
@@ -2222,7 +2222,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .infomation2 .ava.possible { background-color: #5D68E6;}
 .items-gasStation .infomation2 .ava.impossible { background-color: #555;}
 .items-gasStation .etc { display: flex; align-items: center; margin: 0.8rem 0 0 0;}
-.items-gasStation .etc >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
+.items-gasStation .etc >a { position: relative; display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-gasStation .etc >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation .etc .facilities { display: flex; flex: 1;}
 .items-gasStation .etc .facilities span { display: flex; align-items: center; justify-content: center; height: 2rem; margin-right: 0.4rem; padding: 0 0.4rem; font-size: 1.3rem; color: #555; background-color: #F4F5F7;}
@@ -2239,10 +2239,10 @@ figure .label.red { background-color: #E61E1E;}
 .items-gasStation .etc .cleanNet.normal { background-color: #5D68E6; background-position: -8rem -4rem;}
 .items-gasStation .etc .cleanNet.totalBreakdown { background-color: #555; background-position: -8rem -6rem;}
 .items-gasStation .etc .cleanNet.partialBreakdown { background-color: #A9B0C1; background-position: -8rem -4rem;}
-.items-gasStation .call a { display: flex; align-items: center; margin-top: 1rem; font-size: 1.4rem; color: #767676;}
+.items-gasStation .call a { position: relative; display: flex; align-items: center; margin-top: 1rem; font-size: 1.4rem; color: #767676;}
 .items-gasStation .call a i { display: inline-block; width: 2rem; height: 2rem; margin-right: 0.6rem; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation .hos { margin: 0.8rem -5.3rem 0 0;}
-.items-gasStation .hos >a { display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
+.items-gasStation .hos >a { position: relative; display: block; margin-right: 0.8rem; font-size: 1.4rem; color: #767676;}
 .items-gasStation .hos >a i { display: inline-block; width: 2rem; height: 2rem; margin: -0.2rem 0.4rem 0 0; vertical-align: middle; background: #29863b url(../image/common/split_40.png) no-repeat -34rem 0/40rem 16rem; border-radius: 50%;}
 .items-gasStation .hos .facilities { display: flex; align-items: center; height: 2.4rem; margin-top: 0.8rem;}
 .items-gasStation .hos .facilities span { display: flex; height: 2rem; padding-left: 2.4rem; font-size: 1.3rem; color: #767676; line-height: 2rem;}
