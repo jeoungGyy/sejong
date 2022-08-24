@@ -1052,6 +1052,10 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbBtns >a p { margin-top: 0.8rem;}
 .locationLayer .basic .bbBtns >a .switch { margin-top: 1.6rem;}
 .locationLayer .basic .bbBtns .div .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem;}
+
+.locationLayer .basic .etcButton { display: flex; align-items: center; gap: 1rem; margin-top: 2.5rem;}
+.locationLayer .basic .etcButton a { font-size: 1.4rem;}
+
 .locationLayer .basic .bbGuide { display: flex; align-items: center; height: 7.6rem; margin: 3.2rem -2rem 0; padding: 0 2rem; background-color: #EAEDF2;}
 .locationLayer .basic .bbGuide >div { flex: 1;}
 .locationLayer .basic .bbGuide >div h4 { font-size: 1.4rem; color: #333;}
