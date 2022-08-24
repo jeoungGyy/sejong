@@ -1053,8 +1053,10 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbBtns >a .switch { margin-top: 1.6rem;}
 .locationLayer .basic .bbBtns .div .tip { display: flex; align-items: center; justify-content: center; width: 4rem; height: 2.6rem;}
 
-.locationLayer .basic .etcButton { display: flex; align-items: center; gap: 1rem; margin-top: 2.5rem;}
-.locationLayer .basic .etcButton a { font-size: 1.4rem;}
+.locationLayer .basic .etcButton { display: flex; align-items: center; gap: 1rem; margin-top: 3.5rem;}
+.locationLayer .basic .etcButton .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.5rem; background-color: #EAEDF2; border-radius: 0.5rem;}
+.locationLayer .basic .etcButton .btn b { font-size: 1.8rem; color: #686868;}
+.locationLayer .basic .etcButton .btn img { display: inline-block; margin-right: 0.8rem; vertical-align: middle;}
 
 .locationLayer .basic .bbGuide { display: flex; align-items: center; height: 7.6rem; margin: 3.2rem -2rem 0; padding: 0 2rem; background-color: #EAEDF2;}
 .locationLayer .basic .bbGuide >div { flex: 1;}
