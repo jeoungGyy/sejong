@@ -381,7 +381,7 @@
 .info .pictureArea { padding: 1.6rem 2rem 4rem;}
 .info .pictureArea .pictureList { overflow: hidden; margin: 1.6rem -2rem 0; padding: 0 2rem;}
 .info .pictureArea .pictureList li { width: 10rem;}
-.info .pictureArea .pictureList li figure { height: 5.6rem;}
+.info .pictureArea .pictureList li a { height: 5.6rem;}
 .info .pictureArea .headTitle { margin-top: 1.6rem;}
 .info .pictureArea .swiper-button-next,
 .info .pictureArea .swiper-button-prev { text-indent: -9999rem;}
@@ -571,7 +571,7 @@
 
 
 /* 포토갤러리 UI-SJN-13-006U */
-.info .galleryView figure { min-height: 16rem;}
+.info .galleryView a { display: block; min-height: 16rem;}
 
 /* 포토갤러리 UI-SJN-13-006U */
 .info .pictureNewsArea { padding-top: 1.5rem;}
