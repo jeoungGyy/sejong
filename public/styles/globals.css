@@ -1020,7 +1020,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
-.locationLayer .basic .bbInfo a { display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #767676; text-align: left;}
+.locationLayer .basic .bbInfo a { display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #555; text-align: left;}
 .locationLayer .basic .bbInfo a .con { flex: 1; display: flex; align-items: center; overflow: hidden;}
 .locationLayer .basic .bbInfo a .ellipsis { display: inline-block; max-width: calc(100% - 3rem); padding-right: 0.6rem;}
 .locationLayer .basic .bbInfo .div i,
@@ -1033,16 +1033,14 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbInfo .location i { background-position: -9.6rem -9.6rem;}
 .locationLayer .basic .bbInfo .time i { background-position: -12rem -9.6rem;}
 .locationLayer .basic .bbInfo a.active { color: #000;}
-.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}
+.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}ㅊㄴ
 .locationLayer .basic .bbInfo .offerer { display: flex;	justify-content: flex-end;}
 .locationLayer .basic .bbInfo .offerer .write { color: #555;}
 .locationLayer .basic .bbInfo .offerer .write::after { display: none;}
 .locationLayer .basic .bbInfo .offerer .write i { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo.bdt { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid #F4F5F7;}
 .locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
-.locationLayer .basic .accordionTarget a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; padding: 0.2rem 0; color: #555;}
-.locationLayer .basic .accordionTarget a:first-child { padding-top: 1.4rem;}
-.locationLayer .basic .accordionTarget a:last-child { padding-bottom: 1.4rem;}
+.locationLayer .basic .accordionTarget a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; padding: 1rem 0; color: #555;}
 .locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
 .locationLayer .basic .bbBtns .div,
 .locationLayer .basic .bbBtns .flex { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
