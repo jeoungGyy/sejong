@@ -255,7 +255,7 @@
 .mainArea .dullegil a b { display: block; margin-top: 0.2rem; font-size: 1.8rem;}
 .mainArea .campingSite { margin-top: 2.7rem;}
 .mainArea .campingSite .boxArea { padding-bottom: 3rem;}
-.mainArea .campingSite ul { display: flex; justify-content: space-between; margin: 1.6rem -0.4rem 0;}
+.mainArea .campingSite ul { display: flex; justify-content: space-between; margin: 0.6rem -0.4rem 0;}
 .mainArea .campingSite ul li { margin: 0 0.4rem;}
 .mainArea .campingSite ul li a { display: block; text-align: center; color: #333;}
 .mainArea .campingSite ul li figure { overflow: hidden; border-radius: 0.4rem;}
