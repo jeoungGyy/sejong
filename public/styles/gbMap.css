@@ -823,8 +823,8 @@ span.M { background-color: #E61E1E;}
 .map .mapInfoLayer .busGuideList li .acco { display: block; padding: 0.8rem 0 1.2rem 5.2rem; color: #111;}
 .map .mapInfoLayer .busGuideList li .acco .prevBtn,
 .map .mapInfoLayer .busGuideList li .acco .nextBtn { display: flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-right: 0.4rem; border: 1px solid #eee; border-radius: 0.3rem;}
-.map .mapInfoLayer .busGuideList li .acco .prevBtn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 28.8rem;}
-.map .mapInfoLayer .busGuideList li .acco .nextBtn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -2.4rem/48rem 28.8rem;}
+.map .mapInfoLayer .busGuideList li .acco .prevBtn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem -2.4rem/48rem 28.8rem;}
+.map .mapInfoLayer .busGuideList li .acco .nextBtn i { display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -40.8rem 0/48rem 28.8rem;}
 .map .mapInfoLayer .busGuideList li h4 { font-size: 1.6rem;}
 .map .mapInfoLayer .busGuideList li .etc span { font-size: 1.4rem; color: #555;}
 .map .mapInfoLayer .busGuideList li .etc span ~ span { position: relative; margin-left: 0.3rem; padding-left: 0.8rem;}
