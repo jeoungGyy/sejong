@@ -585,7 +585,7 @@
 .home .homeSubmenu .hsList li a .decoArrow { display: block;}
 .home .homeSubmenu .hsList li a .decoArrow i { display: block; width: 1.725rem; height: 1.325rem; background: url(../image/home/icon_arrow_right.png) no-repeat center/cover;}
 .home .homePlace { padding: 1.6rem 2rem;}
-.home .homePlace .hpList li { display: flex; justify-content: space-between; padding: 1.2rem 0; border-bottom: 1px solid #F2F2F2;}
+.home .homePlace .hpList li { display: flex; justify-content: space-between; padding: 1.2rem 0; border-bottom: 1px solid #F2F2F2; cursor: pointer;}
 .home .homePlace .hpList li .ipBody { flex: 1;}
 .home .homePlace .hpList li .ipBody .st { font-size: 1.4rem; color: #555;}
 .home .homePlace .hpList li .ipBody h4 { margin-top: 0.6rem; font-size: 1.6rem;}
