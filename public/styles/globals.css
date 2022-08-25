@@ -1438,7 +1438,8 @@ figure .label.red { background-color: #E61E1E;}
 .layerCCTVBody .cctvList li { position: relative; width: calc(100% / 3); margin: -0.1rem 0 0 -0.1rem;}
 .layerCCTVBody .cctvList li input { position: absolute; left: 0; top: 0; width: 90%; height: 90%;}
 .layerCCTVBody .cctvList li label { display: flex; align-items: center; justify-content: center; position: relative; height: 4.8rem; font-size: 1.6rem; border: 1px solid #EAEAEA; background-color: #fff; cursor: pointer;}
-.layerCCTVBody .cctvList li input:checked + label { z-index: 1; color: #fff; outline: 2px solid #000; border-color: #5D68E6; background-color: #5D68E6;}
+.layerCCTVBody .cctvList li input:checked + label { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
+.layerCCTVBody .cctvList li input:focus + label { z-index: 1; outline: 2px solid #000;}
 .layerCCTVBody .guide { display: flex; align-items: flex-start; margin-top: 2rem;}
 .layerCCTVBody .guide i { width: 2.6rem; vertical-align: middle; background-position-x: -38rem;}
 .layerCCTVBody .guide >span { font-size: 1.4rem; color: #767676;}
