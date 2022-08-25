@@ -7,11 +7,14 @@ html.fontLarge { font-size: 65%;}
 html.fontBig { font-size: 68%;}
 
 @media screen and (min-width: 0) { html {font-size: 48%;}}
-@media screen and (min-width: 270px) { html {font-size: 53.33%;}}
-@media screen and (min-width: 390px) { html {font-size: 62.5%;}}
-@media screen and (min-width: 430px) { html {font-size: 67%;}}
-@media screen and (min-width: 500px) { html {font-size: 69%;}}
-@media screen and (min-width: 1190px) { html {font-size: 72%;}}
+@media screen and (min-width: 270px) { html {font-size: 63%;}}
+@media screen and (min-width: 355px) { html {font-size: 58%;}}
+@media screen and (min-width: 400px) { html {font-size: 65%;}}
+@media screen and (min-width: 480px) { html {font-size: 69%;}}
+@media screen and (min-width: 1190px) { html {font-size: 70%;}}
+
+
+
 
 
 /* Fonts */
@@ -498,6 +501,7 @@ table td { vertical-align: middle;}
 figure { overflow: hidden; position: relative; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}
 figure.wFirst img { position: absolute; left: 50%; width: auto; height: 100%; transform: translateX(-50%);}
 figure a:focus { border: 2px solid #000;}
+figure button:focus { outline: 2px solid #000;}
 
 figure img { width: 100%; height: auto; vertical-align: top;}
 .mainNewsList .label,
@@ -1432,9 +1436,9 @@ figure .label.red { background-color: #E61E1E;}
 .layerCCTVBody { padding: 2.4rem 1.6rem;}
 .layerCCTVBody .cctvList { display: flex; align-items: center; flex-wrap: wrap;}
 .layerCCTVBody .cctvList li { position: relative; width: calc(100% / 3); margin: -0.1rem 0 0 -0.1rem;}
-.layerCCTVBody .cctvList li input { position: absolute; opacity: 0;}
-.layerCCTVBody .cctvList li label { display: flex; align-items: center; justify-content: center; height: 4.8rem; font-size: 1.6rem; border: 1px solid #EAEAEA; cursor: pointer;}
-.layerCCTVBody .cctvList li input:checked + label { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
+.layerCCTVBody .cctvList li input { position: absolute; left: 0; top: 0; width: 90%; height: 90%;}
+.layerCCTVBody .cctvList li label { display: flex; align-items: center; justify-content: center; position: relative; height: 4.8rem; font-size: 1.6rem; border: 1px solid #EAEAEA; background-color: #fff; cursor: pointer;}
+.layerCCTVBody .cctvList li input:checked + label { z-index: 1; color: #fff; outline: 2px solid #000; border-color: #5D68E6; background-color: #5D68E6;}
 .layerCCTVBody .guide { display: flex; align-items: flex-start; margin-top: 2rem;}
 .layerCCTVBody .guide i { width: 2.6rem; vertical-align: middle; background-position-x: -38rem;}
 .layerCCTVBody .guide >span { font-size: 1.4rem; color: #767676;}
