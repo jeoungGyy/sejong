@@ -812,13 +812,13 @@ figure .label.red { background-color: #E61E1E;}
 .calendarBody .calendar .cList.reservation li { height: 8rem; padding: 0 0.3rem; align-items: flex-start; flex-wrap: wrap;}
 .calendarBody .calendar .cList.reservation li button { width: 100%;}
 .calendarBody .calendar .cList.reservation li .spans { display: flex; flex-wrap: wrap; height: 5rem; justify-content: center; align-items: flex-start; margin-top: 1rem;}
-.calendarBody .calendar .cList.reservation li .spans span { display: flex; align-items: center; justify-content: center; width: 100%; height: 2rem; margin-top: -0.8rem; padding: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #fff; letter-spacing: 0; border-radius: 1rem;}
-.calendarBody .calendar .cList.reservation li .spans span.complete { background-color: #555;}
-.calendarBody .calendar .cList.reservation li .spans span.wait { background-color: #CDD0D8;}
-.calendarBody .calendar .cList.reservation li .spans span.possible { background-color: #5D68E6;}
-.calendarBody .calendar .cList.reservation li .spans span.impossible { background-color: #E61E1E;}
-.calendarBody .calendar .cList.reservation li .spans span.companion { background-color: #32BBED;}
-.calendarBody .calendar .cList.reservation li .spans span.modify { background-color: #D69630;}
+.calendarBody .calendar .cList.reservation li .spans button { display: flex; align-items: center; justify-content: center; width: 100%; height: 2rem; margin-top: -0.8rem; padding: 0 0.4rem; font-family: var(--fontRoboto); font-size: 1.3rem; color: #fff; letter-spacing: 0; border-radius: 1rem;}
+.calendarBody .calendar .cList.reservation li .spans button.complete { background-color: #555;}
+.calendarBody .calendar .cList.reservation li .spans button.wait { background-color: #CDD0D8;}
+.calendarBody .calendar .cList.reservation li .spans button.possible { background-color: #5D68E6;}
+.calendarBody .calendar .cList.reservation li .spans button.impossible { background-color: #E61E1E;}
+.calendarBody .calendar .cList.reservation li .spans button.companion { background-color: #32BBED;}
+.calendarBody .calendar .cList.reservation li .spans button.modify { background-color: #D69630;}
 .calendarBody .time { display: flex;}
 .calendarBody .time .slideContainer { height: 5.6rem;}
 .calendarBody .time .apmBody { flex: 1; overflow: hidden; position: relative; padding: 5.6rem 0;}
