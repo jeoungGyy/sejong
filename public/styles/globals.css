@@ -476,9 +476,9 @@ table td { vertical-align: middle;}
 /* 게시판 일반 */
 .headTitle .tlHead { display: flex; align-items: center; height: 4rem;}
 .headTitle .tlHead .profile { overflow: hidden; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background:  url(../image/common/split_48.png) no-repeat -19.2rem 0/48rem 28.8rem; border-radius: 50%;}
-.headTitle .tlHead strong { margin-left: 0.4rem;}
-.headTitle .tlHead span { margin-left: 0.8rem; color: #767676;}
-.headTitle .tlHead .report { position: relative; color: #767676;}
+.headTitle .tlHead strong { flex: 1; margin-left: 0.4rem;}
+.headTitle .tlHead span { width: 8rem; margin-left: 0.8rem; color: #767676;}
+.headTitle .tlHead .report { position: relative; width: 8rem; color: #767676;}
 .headTitle .tlHead .report::before { content: 'ㆍ';}
 .headTitle .tlHead.my strong::after { content: '나'; display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; margin: -0.2rem 0 0 0.5rem; font-size: 1.1rem; font-weight: 700; color: #fff; vertical-align: middle; background-color: #5D68E6; border-radius: 50%;}
 .headTitle .tlHead.my span::after,
