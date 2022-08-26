@@ -1061,7 +1061,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .etcButton { display: flex; align-items: center; gap: 1rem; margin-top: 3.5rem;}
 .locationLayer .basic .etcButton .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.5rem; background-color: #EAEDF2; border-radius: 0.5rem;}
 .locationLayer .basic .etcButton .btn b { font-size: 1.8rem; color: #686868;}
-.locationLayer .basic .etcButton .btn img { display: inline-block; margin-right: 0.8rem; vertical-align: middle;}
+.locationLayer .basic .etcButton .btn img { display: inline-block; width: 3.5rem; height: 3.5rem; margin-right: 0.8rem; vertical-align: middle;}
 
 .locationLayer .basic .bbGuide { display: flex; align-items: center; height: 7.6rem; margin: 3.2rem -2rem 0; padding: 0 2rem; background-color: #EAEDF2;}
 .locationLayer .basic .bbGuide >div { flex: 1;}
@@ -1967,8 +1967,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-weeklyWeather li .weather .icon { margin-right: 0;}
 .items-weeklyWeather li .smallBody { width: 9.2rem; text-align: right;}
 .items-weeklyWeather li .smallBody span { font-size: 1.2rem;}
-.items-weeklyWeather li .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
-.items-weeklyWeather li .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #5D68E6; border-radius: 50%;}
+.items-weeklyWeather li .smallBody span sup { position: relative; padding-left: 0.3rem; font-size: 1.3rem;}
 .items-weeklyWeather li .smallBody .cBlue { display: inline-block; color: #00539C;}
 .items-weeklyWeather li .smallBody .cWood { display: inline-block; position: relative; width: 4.4rem; margin-left: 0.4rem; color: #D37398;}
 .items-weeklyWeather li .smallBody .cWood::before { content: '/'; position: absolute; left: 0; top: 0; color: #ddd;}
@@ -2016,7 +2015,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-weatherInfo.weather li .temperature div ~ div { position: relative; margin-top: 1.4rem;}
 .items-weatherInfo.weather li .temperature div ~ div::after { content: ''; display: block; position: absolute; left: 50%; top: -1.2rem; width: 0.1rem; height: 1rem; background-color: #EAEDF2;}
 .items-weatherInfo.weather li .temperature span { position: relative; font-size: 1.2rem; color: #767676;}
-.items-weatherInfo.weather li .temperature span::after { content: ''; position: absolute; right: -0.8rem; top: 0.3rem; width: 0.3rem; height: 0.3rem; border: 1px solid #777; border-radius: 50%;}
+.items-weatherInfo.weather li .temperature span sup { margin-left: 0.2rem; font-size: 1.6rem;}
 .items-weatherInfo.weather .icon { margin-right: 0;}
 
 .items-review li { padding-top: 0.8rem;}

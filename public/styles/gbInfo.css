@@ -413,12 +413,10 @@
 .info .environment .weatherTop { display: flex; align-items: center; justify-content: center; height: 7.6rem;}
 .info .environment .weatherTop .icon { width: 5.2rem; height: 5.2rem; margin-right: 1.2rem; background-size: 52rem 15.6rem;}
 .info .environment .weatherTop .big { font-family: var(--fontRoboto); font-size: 4.3rem;}
-.info .environment .weatherTop .big sup { display: inline-block; position: relative; margin-left: 0.1rem; padding-left: 1rem; font-size: 2rem; font-weight: 700; vertical-align: super;}
-.info .environment .weatherTop .big sup::before { content: ''; display: block; position: absolute; left: 0; top: 0.9rem; width: 0.4rem; height: 0.4rem; border: 2px solid #111; border-radius: 50%;}
+.info .environment .weatherTop .big sup { display: inline-block; position: relative; margin-left: 0.5rem; font-size: 2rem; font-weight: 700; vertical-align: super;}
 .info .environment .weatherTop .smallBody { display: flex; align-items: center; justify-content: center; margin-top: -0.3rem;}
 .info .environment .weatherTop .smallBody span { font-size: 1.3rem;}
-.info .environment .weatherTop .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
-.info .environment .weatherTop .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #00539C; border-radius: 50%;}
+.info .environment .weatherTop .smallBody span sup { position: relative; padding-left: 0.3rem; font-size: 1.3rem;}
 .info .environment .weatherTop .smallBody .cBlue { color: #00539C !important;}
 .info .environment .weatherTop .smallBody .cWood { margin-left: 0.4rem; color: #D37398;}
 .info .environment .weatherTop .smallBody .cWood::before { content: '/'; margin-right: 0.4rem; color: #ddd;}
