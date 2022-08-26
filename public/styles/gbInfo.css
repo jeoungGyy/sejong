@@ -418,7 +418,7 @@
 .info .environment .weatherTop .smallBody { display: flex; align-items: center; justify-content: center; margin-top: -0.3rem;}
 .info .environment .weatherTop .smallBody span { font-size: 1.3rem;}
 .info .environment .weatherTop .smallBody span sup { position: relative; padding-left: 0.6rem; font-size: 1.3rem;}
-.info .environment .weatherTop .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #32BBED; border-radius: 50%;}
+.info .environment .weatherTop .smallBody span sup::before { content: ''; display: inline-block; position: absolute; left: 0.1rem; top: 0.4rem; width: 0.2rem; height: 0.2rem; border: 1px solid #00539C; border-radius: 50%;}
 .info .environment .weatherTop .smallBody .cBlue { color: #00539C !important;}
 .info .environment .weatherTop .smallBody .cWood { margin-left: 0.4rem; color: #D37398;}
 .info .environment .weatherTop .smallBody .cWood::before { content: '/'; margin-right: 0.4rem; color: #ddd;}
@@ -507,7 +507,7 @@
 /* 문화행사캘린더 UI-SJN-09-001P */
 .info .character { background-color: #34384E;}
 .info .character a { display: flex; justify-content: center; flex-direction: column; position: relative; height: 7.2rem; padding-left: 6.4rem;}
-.info .character a .t { font-size: 1.4rem; color: #9D6D20;}
+.info .character a .t { font-size: 1.4rem; color: #ffad2a;}
 .info .character a .st { margin-top: 0.4rem; font-size: 1.4rem; color: #fff;}
 .info .character a .link { position: absolute; right: 1.8rem; top: 50%; margin-top: -1.1rem; font-size: 1.6rem; font-weight: bold; color: #fff;}
 .info .character a .link::after { content: ''; display: inline-block; width: 0.7rem; height: 1.15rem; margin-left: 0.5rem; background: url(../image/info/ico_arrow_right.png) no-repeat center/cover;}
@@ -548,7 +548,7 @@
 /* 견학신청 UI-SJN-13-002U */
 .info .tripHead .intro { display: flex; align-items: center; height: 4.8rem; padding: 0 2rem; color: #fff; background-color: #5D68E6;}
 .info .tripHead .intro::after { content: ''; width: 2.4rem; height: 2.4rem; margin-left: 0.4rem; background:  url(../image/common/split_48.png) no-repeat -4.8rem 0/48rem 28.8rem;}
-.info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #A9B0C1;}
+.info .tripHead .reserve { position: relative; padding: 2.4rem 2rem 2rem; color: #fff; background-color: #828da9;}
 .info .tripHead .reserve .t { font-size: 1.6rem;}
 .info .tripHead .reserve .st { position: relative; margin-top: 1.2rem; padding-left: 2.8rem;}
 .info .tripHead .reserve .st::after { content: ''; position: absolute; left: 0.2rem; top: 0.1rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
@@ -562,7 +562,7 @@
 .info .tripCalendar .notes .slideContainer {  overflow: hidden; margin: 0 -2rem; padding: 0 2rem;}
 .info .tripCalendar .notes .swiper-slide { width: 7.6rem;}
 .info .tripCalendar .notes .swiper-slide span { display: inline-block; position: relative; padding-left: 2rem; font-size: 1.4rem; color: #767676;}
-.info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
+.info .tripCalendar .notes .swiper-slide span::after { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/split_40.png) no-repeat 0 0/40rem 16rem;}
 .info .tripCalendar .notes .swiper-slide span.complete::after { background-position: -4rem -12rem;}
 .info .tripCalendar .notes .swiper-slide span.wait::after { background-position: -4rem -14rem;}
 .info .tripCalendar .notes .swiper-slide span.possible::after { background-position: -6rem -12rem;}
@@ -591,9 +591,9 @@
 .info .introduce .introduceGuide .data .dataPosition .dataWhite .t { font-size: 1.6rem;}
 .info .introduce .introduceGuide .data .dataPosition .dataWhite sup { display: inline-block; width: 0.7rem; height: 0.7rem; margin: -1.3rem 0.2rem 0 0.2rem; vertical-align: middle; background: url(../image/info/ico_deco_keypoint.png) no-repeat center bottom/contain;}
 .info .introduce .introduceGuide .data .dataPosition .other { width: 18.2rem; height: 18.2rem; color: #fff;}
-.info .introduce .introduceGuide .data .dataPosition .dataBlue { left: 50%; top: 0; padding-top: 3.4rem; background-color: rgba(102, 132, 234, 0.8); transform: translateX(-50%);}
-.info .introduce .introduceGuide .data .dataPosition .dataGreen { left: 0; bottom: 0; padding: 10rem 2.6rem 0 0; background-color: rgba(78, 196, 87, 0.8);}
-.info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; padding: 10rem 0 0 2.6rem; background-color: rgba(50, 187, 237, 0.8);}
+.info .introduce .introduceGuide .data .dataPosition .dataBlue { left: 50%; top: 0; padding-top: 3.4rem; background-color: rgb(74 105 207 / 80%); transform: translateX(-50%);}
+.info .introduce .introduceGuide .data .dataPosition .dataGreen { left: 0; bottom: 0; padding: 10rem 2.6rem 0 0; background-color: rgb(19 106 25 / 80%);}
+.info .introduce .introduceGuide .data .dataPosition .dataSkyblue { right: 0; bottom: 0; padding: 10rem 0 0 2.6rem; background-color: rgb(34 133 169 / 80%);}
 .info .introduce .introduceGuide .data .dataPosition .t { font-size: 1.8rem; font-weight: 700;}
 .info .introduce .introduceGuide .data .dataPosition .st { margin-top: 0.4rem; font-size: 1.1rem; letter-spacing: 0;}
 .info .introduce .introduceGuide >p { position: absolute; z-index: 1; font-size: 1.3rem; color: #767676; word-break: keep-all; letter-spacing: -0.1em; line-height: 2.2rem;}
@@ -627,14 +627,14 @@
 .info .goal .goalBgBody { margin-top: 4.3rem;}
 .info .goal .goalBgList { display: flex; align-items: center;}
 .info .goal .goalBgList li { flex: 1; text-align: center;}
-.info .goal .goalBgList li .goalIcons { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0 auto; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.3rem;}
+.info .goal .goalBgList li .goalIcons { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; margin: 0 auto; padding: 0; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); border-radius: 1.3rem;}
 .info .goal .goalBgList li .goalIcons i { display: block; width: 3.2rem; height: 3.2rem; background: url(../image/info/split_goal.png) no-repeat 0 0/cover;}
 .info .goal .goalBgList li .goalIcons.health i { background-position-x: -3.2rem;}
 .info .goal .goalBgList li .goalIcons.environment i { background-position-x: -6.4rem;}
 .info .goal .goalBgList li .goalIcons.calamity i { background-position-x: -9.6rem;}
 .info .goal .goalBgList li .goalIcons.energy i { background-position-x: -12.8rem;}
 .info .goal .goalBgList li .goalIcons.convenience i { background-position-x: -16rem;}
-.info .goal .goalBgList li p { margin-top: 0.8rem; font-size: 1.4rem; color: #767676;}
+.info .goal .goalBgList li p { margin-top: 0.8rem; font-size: 1.4rem; color: #555;}
 .info .keyPoint { margin-top: 4rem;}
 .info .keyPoint .keyPointArea { padding: 3.2rem 2rem 4rem;}
 .info .keyPoint .keyPointHeader { display: flex; align-items: center; height: 7.2rem;}
@@ -644,7 +644,7 @@
 .info .keyPoint .keyPointBody { margin-top: 2rem;}
 .info .keyPoint .keyPointBody li dl { padding: 1.7rem 2rem 2rem; color: #fff;}
 .info .keyPoint .keyPointBody li:nth-child(1) { background-color: #5D68E6;}
-.info .keyPoint .keyPointBody li:nth-child(2) { background-color: #4EC4AD;}
+.info .keyPoint .keyPointBody li:nth-child(2) { background-color: #379b87;}
 .info .keyPoint .keyPointBody li:nth-child(3) { background-color: #29863b;}
 .info .keyPoint .keyPointBody li dl dt span { display: block; font-size: 1.3rem;}
 .info .keyPoint .keyPointBody li dl dt strong { display: block; font-size: 1.8rem;}

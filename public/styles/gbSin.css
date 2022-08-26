@@ -708,7 +708,6 @@
 .mypage .mypageSpace .tabContent .textReview { padding: 0 2rem;}
 
 /* 개인정보처리방침 - UI-SJN-80-004U */
-.mypage .explain-default {}
 .mypage .explain-default .pointBody { padding: 1.6rem 2rem 1.6rem 1.3rem; color: #fff; background-color: #5D68E6; border-radius: 0.8rem;}
 .mypage .explain-default .pointBody .pt { display: flex; align-items: center;}
 .mypage .explain-default .pointBody .pt img { margin-right: 0.8rem;}

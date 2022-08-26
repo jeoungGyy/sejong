@@ -1020,7 +1020,9 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .locationHeader .write i { display: inline-block; width: 2.4rem; height: 2.4rem; margin: -0.1rem 0.4rem 0 0; vertical-align: middle; background: url(../image/common/split_48.png) no-repeat -36rem -4.8rem/48rem 28.8rem;}
 .locationLayer .basic { margin-top: 1.6rem; padding: 0 2rem;}
 .locationLayer .basic .bbInfo .div,
-.locationLayer .basic .bbInfo a { overflow: hidden; display: flex; align-items: center; position: relative; width: 100%; height: 4rem; color: #555; text-align: left;}
+.locationLayer .basic .bbInfo a { overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; display: block; align-items: center; position: relative; width: 100%; height: 4rem; color: #555; text-align: left; line-height: 3.6rem;}
 .locationLayer .basic .bbInfo a .con { flex: 1; display: flex; align-items: center; overflow: hidden;}
 .locationLayer .basic .bbInfo a .ellipsis { display: inline-block; max-width: calc(100% - 3rem); padding-right: 0.6rem;}
 .locationLayer .basic .bbInfo .div i,
@@ -1040,7 +1042,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbInfo .offerer .write i { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo.bdt { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid #F4F5F7;}
 .locationLayer .basic .accordionTarget { overflow: hidden; max-height: 0; margin: 0 -2rem; padding: 0 2rem; background-color: #F4F5F7; transition: min-height 0.3s ease-in-out;}
-.locationLayer .basic .accordionTarget a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; padding: 1rem 0; color: #555;}
+.locationLayer .basic .accordionTarget a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display: block; color: #555;}
 .locationLayer .basic .bbBtns { display: flex; align-items: flex-start; margin-top: 2.4rem; padding: 0 2.4rem;}
 .locationLayer .basic .bbBtns .div,
 .locationLayer .basic .bbBtns .flex { display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1; font-size: 1.6rem; font-weight: 700; color: #111;}
@@ -1595,7 +1597,7 @@ figure .label.red { background-color: #E61E1E;}
 .header-news .headerSub { margin-top: 0.8rem;}
 .header-news .mapView { margin-top: 1.5rem;}
 .header-news .mapView a { display: flex; align-items: center; justify-content: flex-end; color: #5D68E6;}
-.header-news .mapView a i { margin-right: 0.4rem; background-position: -2.4rem -4.8rem;}
+.header-news .mapView a i { margin-right: 0.4rem; background-position: -38.4rem -4.8rem;}
 
 .header-formSort { display: flex; align-items: center; justify-content: space-between; height: 4rem; margin-top: 0.8rem;}
 .header-formSort div { display: flex;}
@@ -1912,6 +1914,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-edu >li .figure { overflow: hidden; position: relative; height: 18rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem !important;}
 .items-edu >li .figure span { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; min-width: 4rem; height: 2.4rem; padding: 0 0.7rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .items-edu >li .figure span.blue { background-color: rgba(102, 132, 234, 0.9);}
+.items-edu >li .figure span.green { background-color: #29863b;}
 .items-edu >li .figure figcaption { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; right: 0; bottom: 0; height: 3rem; background-color: rgba(0, 0, 0, 0.8); }
 .items-edu >li .figure figcaption p { position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; padding-top: 0.5rem; font-size: 1.4rem; color: #fff; text-align: center;}
 .items-edu >li .figure figcaption .blur { display: block; width: 100%; height: 100%; /*backdrop-filter: blur(5px);*/}
@@ -2177,7 +2180,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-route li button i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
 
 .items-category >li .accordionMenu { display: flex; align-items: center; position: relative; width: 100%; height: 5.2rem; padding-left: 4rem; font-size: 1.6rem;}
-.items-category >li .accordionMenu::before { content: ''; display: block; position: absolute; left: 0; top: 1.2rem; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
+.items-category >li .accordionMenu::before { content: ''; display: block; position: absolute; left: 0; top: 1rem; width: 3.2rem; height: 3.2rem; background: url(../image/common/split_64.png) no-repeat 0 0/32rem 12.8rem;}
 .items-category >li .accordionMenu.corona::before { background-position: 0 -6.4rem;}
 .items-category >li .accordionMenu.traffic::before { background-position: -3.2rem -6.4rem;}
 .items-category >li .accordionMenu.restaurant::before { background: url(../image/map/ico_restaurant.svg) no-repeat center/cover;}
