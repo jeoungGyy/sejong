@@ -88,7 +88,7 @@
 .mainArea .covid19 .lineBox .operation .name { flex: 1; font-size: 1.5rem; font-weight: 700; text-align: left;}
 .mainArea .covid19 .lineBox .operation .name span i { margin: -0.5rem 0 0 0.2rem; vertical-align: middle; background-position-x: -30rem;}
 .mainArea .covid19 .lineBox .infomation { display: flex; align-items: center; margin-top: 0.6rem;}
-.mainArea .covid19 .lineBox .infomation b { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 0.5rem; font-size: 1.4rem; font-weight: 400; color: #fff; background-color: #5D68E6; border-radius: 1.2rem;}
+.mainArea .covid19 .lineBox .infomation b { display: flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 1.5rem; font-size: 1.4rem; font-weight: 400; color: #fff; background-color: #5D68E6; border-radius: 1.2rem;}
 .mainArea .covid19 .lineBox .infomation span { display: block; margin-left: 0.8rem; font-size: 1.6rem;}
 .mainArea .covid19 .lineBox .infomation.veryCrowd { color: #E61E1E;}
 .mainArea .covid19 .lineBox .infomation.veryCrowd b::after { background-color: #E61E1E;}
