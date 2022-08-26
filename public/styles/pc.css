@@ -5,17 +5,18 @@
 
 body { overflow-x: hidden; overflow-y: auto; background-color: #F4F5F7;}
 .pcContainer { position: relative; width: 1190px; height: 100vh; margin: 0 auto;}
-.pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px;}
+.pcContainer .pcContents { position: fixed; left: 50%; z-index: 10; margin-left: -580px; height: 100%;}
 .pcContainer .pcView { position: absolute; right: 0; z-index: 10; width: 420px; height: 100vh; margin: 0 auto;}
 .pcContainer .pch1 { padding-top: 38px;}
 .pcContainer .pch1 img { vertical-align: top;}
-.pcContainer .pch2 { margin-top: 124px; font-size: 52px; line-height: 67px;}
+.pcContainer .pch2 { margin-top: 124px; font-size: 45px; line-height: 67px; font-weight: 400;}
+.pcContainer .pch2 span { font-weight: 700;}
 .pcContainer .pch3 { font-size: 18px;}
 .pcInfomation { margin-top: 73px;}
 .pcInfomation ul { display: flex; align-items: center; margin-top: 21px;}
 .pcInfomation ul li { width: 5rem; margin-right: 16px;}
 .pcInfomation ul li a { display: block; text-align: center;}
-.pcApp { margin-top: 53px;}
+.pcApp { margin-top: 53px; position: absolute; bottom: 40px;}
 .pcApp .links { display: flex; align-items: center; margin-top: 21px;}
 .pcApp .links a { display: flex; align-items: center; justify-content: center; width: 174px; height: 72px; margin-right: 12px; background-color: #fff; box-shadow: 0 10px 20px rgba(102 132 234 / 16%); border-radius: 20px;}
 .pcDeco { position: fixed; left: 50%; border-radius: 50%;}
