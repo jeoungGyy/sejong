@@ -404,7 +404,7 @@ table td { vertical-align: middle;}
 
 /* 라디오박스 */
 .radioSet { position: relative;}
-.radioSet label { display: inline-block; position: relative; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
+.radioSet label { display: inline-block; position: relative; z-index: 1; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .radioSet input { position: absolute; width: 1.4rem; height: 1.4rem;}
 .radioSet input:focus + label::after { outline: 2px solid #000 !important;}
