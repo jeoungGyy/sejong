@@ -802,9 +802,9 @@ figure .label.red { background-color: #E61E1E;}
 .calendarBody .cbHead .year select { padding-left: 0; font-family: var(--fontRoboto); font-weight: 700; border: none;}
 .calendarBody .cbHead .year select:nth-child(1) { width: 7rem;}
 .calendarBody .cbHead .year select:nth-child(2) { width: 7rem; margin-left: 1rem;}
-.calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(7, 1fr); height: 4rem;}
+.calendarBody .calendar .cHead { display: grid; grid-template-columns: repeat(5, 1fr); height: 4rem;}
 .calendarBody .calendar .cHead li { display: flex; align-items: center; justify-content: center; color: #767676;}
-.calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(7, 1fr);}
+.calendarBody .calendar .cList { display: grid; grid-template-columns: repeat(5, 1fr);}
 .calendarBody .calendar .cList li { display: flex; align-items: center; justify-content: center; height: 3.6rem;}
 .calendarBody .calendar .cList li .ac { display: block; width: 3.2rem; height: 3rem; font-family: var(--fontRoboto); font-size: 1.6rem; color: #767676; text-align: center;}
 .calendarBody .calendar .cList li .ac.today { font-weight: 700; color: #5D68E6;}
