@@ -1825,10 +1825,10 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .inputForm .pnAdd { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-size: 1.6rem; border: 1px solid #5D68E6;}
 .items-form >li .inputForm .pnAdd i { margin-right: 0.4rem; vertical-align: middle; background-position: -6rem -4rem;}
 .items-form >li .serviceList { display: flex; margin: 0 -0.4rem;}
-.items-form >li .serviceList li { width: calc(20% - 0.4rem); margin: 0 0.4rem;}
+.items-form >li .serviceList li { position: relative; width: calc(20% - 0.4rem); margin: 0 0.4rem;}
 .items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; cursor: pointer;}
 .items-form >li .serviceList li label img { width: 100%; height: auto; vertical-align: top;}
-.items-form >li .serviceList li input { position: absolute; opacity: 0;}
+.items-form >li .serviceList li input { position: absolute; width: 90%; height: 5rem;}
 .items-form >li .serviceList li input:focus + label { border: 2px solid #000;}
 .items-form >li .serviceList li input:checked + label { border:1px solid #5D68E6; background-color:#fff;}
 .items-form >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; text-align: center;}
