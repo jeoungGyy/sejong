@@ -15,62 +15,77 @@
 		<div class="pcView">
 
 			<!-- 모바일 내용 -->
-			<div id="root">
-				<div class="container">
-					<!-- 공통: 세종 안심서비스 헤더 -->
-					<script src="../include/header_map_search.js"></script>
-					<!-- //공통: 세종 안심서비스 헤더 -->
-			
-					<!-- 본문 -->
-					<main class="contents map"> <!-- [생활정보 Class] map-->
-						<h2 class="visible"><span class="headerClone">안심이 서비스</span></h2> <!-- [헤더에 넣어줄 제목] -->
-						
-						<div class="mapWrap">
-							<div class="mapTabPor">
-								<div class="mapTabBody">
-									<div class="mapTab">
-										<button type="button">최근 기록</button>
-										<button type="button" class="active">지도 지정</button><!-- 활성화시 버튼에 active 추가 -->
+			<div id="popup-portal">
+				<div id="layerInfoAddress" class="layerPopup ready show" role="dialog" aria-modal="true" style="z-index: 900;">
+					<div class="layerWrap full ">
+						<div class="headerWrap">
+							<div class="headerClear">
+								<header class="header">
+								<div class="subHeader">
+									<button type="button" class="icoPrev" title="이전 페이지"><i></i></button>
+									<div class="searchHeader">
+										<input id="srchHeaderInputBox" type="text" title="장소 검색" placeholder="장소 검색" value="">
+									</div>
+									<div class="btnHeader">
+										<button type="button" class="icoMic" title="마이크"><i></i></button>
 									</div>
 								</div>
-							</div>
-			
-							<div class="mapArea">
-			
-								<!-- 현재 내 위치표시 -->
-								<div class="mapIcons">
-									<div class="markerMy" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-										<div><span></span></div>
-									</div>
-								</div>
-								<!-- //현재 내 위치표시 -->
-			
-								<!-- 위치 설정 마커 -->
-								<div class="markerMoveIcon" style="left: 20rem; top: 25rem;"> <!-- rem 단위로 넣어야 합니다. 10px = 1rem  -->
-									<div class="text">지도를 움직여 위치를 설정하세요</div>
-									<i></i>
-								</div>
-								<!-- //위치 설정 마커 -->
-			
-								<div class="mapMoveData">
-									<!-- 현재위치 버튼 표시 -->
-									<button type="button" class="myLocation active"><i>현재위치</i></button> <!-- 활성화시 버튼에 active 추가 -->
-									<!-- 현재위치 버튼 표시 -->
-			
-									<div class="locationText">
-										<div class="address">
-											세종특별자치시 한누리대로 328 (도시통합정보센터)
-										</div>
-			
-										<button type="button" class="button blue">이 위치를 안심장소로 설정</button>
-									</div>
-								</div>
-			
-								<div class="mapBg"></div> <!-- map 이미지 -->
+								</header>
 							</div>
 						</div>
-					</main>
-					<!-- //본문 -->
+						<div class="fullFlex">
+							<div class="contents map">
+								<h2 class="visible">
+								<div class="headerClone">
+									검색
+								</div>
+								</h2>
+								<div class="mapWrap">
+									<div class="mapTabPor">
+										<div class="mapTabBody">
+											<div class="mapTab">
+												<button type="button" class="active">최근 기록</button><button type="button" class="">지도 지정</button>
+											</div>
+										</div>
+									</div>
+									<div class="mapArea searchPlaceBody" style="margin: 0px;">
+										<div class="recentSearch">
+											<div class="header-default">
+												<button type="button" class="cBlue">전체삭제</button>
+											</div>
+											<div>
+												<ul class="item-place">
+													<li>
+													<div class="icoLocation">
+														<span class="keyword">세종호수공원 중앙광장</span><span class="date">08.29</span>
+													</div>
+													<button type="button" class="btnRemove" title="삭제"><i></i></button></li>
+													<li>
+													<div class="icoSearch">
+														<span class="keyword">중앙공원</span><span class="date">08.29</span>
+													</div>
+													<button type="button" class="btnRemove" title="삭제"><i></i></button></li>
+													<li>
+													<div class="icoSearch">
+														<span class="keyword">놀이터</span><span class="date">08.29</span>
+													</div>
+													<button type="button" class="btnRemove" title="삭제"><i></i></button></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layerAlert">
+							<div class="alertWrap">
+								<p id="start" aria-live="assertive" tabindex="-1">
+								</p>
+								<p id="end" aria-live="assertive">
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- //모바일 내용 -->

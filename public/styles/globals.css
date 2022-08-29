@@ -2478,8 +2478,8 @@ figure .label.red { background-color: #E61E1E;}
 .item-place li .btnRemove { display: block;}
 .item-place li .btnRemove i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -26.4rem 0/48rem 28.8rem;}
 
-#root .searchPlaceBody { position: absolute;	top: 11rem;	left: 2rem;	right: 2rem; margin: 0;}
-#root .searchPlaceBody .header-default { justify-content: flex-end;}
+#pcRoot .searchPlaceBody { position: absolute;	top: 11rem;	left: 2rem;	right: 2rem; margin: 0;}
+#pcRoot .searchPlaceBody .header-default { justify-content: flex-end;}
 
 .items-term { padding: 2rem;}
 .items-term >ol >li h3,
