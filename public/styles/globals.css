@@ -2134,6 +2134,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-mapInfo li { clear: left; overflow: hidden; position: relative; min-height: 7.2rem;}
 .items-mapInfo li ~ li { margin-top: 1.6rem;}
 .items-mapInfo li figure { float: left; width: 7.2rem; height: 7.2rem; margin-right: 1.6rem;}
+.items-mapInfo li figure button:focus { overflow: hidden; border: 2px solid #000;}
 .items-mapInfo li .mapInfoBody { position: relative;}
 .items-mapInfo li .mapInfoBody h4 { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right: 2.8rem; font-size: 1.6rem;}
 .items-mapInfo li .mapInfoBody .st { overflow:hidden; margin-top: 0.8rem; font-size: 1.4rem; text-overflow:ellipsis; white-space:nowrap;}
