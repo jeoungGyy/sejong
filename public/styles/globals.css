@@ -1823,6 +1823,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .serviceList li label { display: block; overflow: hidden; position: relative; height: 6rem; cursor: pointer;}
 .items-form >li .serviceList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .serviceList li input { position: absolute; opacity: 0;}
+.items-form >li .serviceList li input:focus + label { border: 2px solid #000;}
 .items-form >li .serviceList li input:checked + label { border:1px solid #5D68E6; background-color:#fff;}
 .items-form >li .serviceList li p { margin-top: 0.9rem; padding-bottom: 0.8rem; font-size: 1.4rem; color: #555; text-align: center;}
 .items-form >li .serviceList li.coin label {background:#F4F5F7 url(../image/home/ico_service_coin.png) no-repeat center/2.4rem; }
