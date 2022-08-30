@@ -1793,10 +1793,10 @@ figure .label.red { background-color: #E61E1E;}
 .items-form >li .fileForm .pictureList li.two { width: calc(50% - 0.4rem);}
 .items-form >li .fileForm .pictureList li.three { width: calc(33.33% - 0.4rem);}
 .items-form >li .fileForm .pictureList li { position: relative; float: left; margin: 0.4rem 0 0 0.4rem;}	
-.items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; z-index: 1; height: 10.4rem; background: #F4F5F7 url(../image/info/info_mark.png) no-repeat center/5.8rem 2rem; cursor: pointer;}
+.items-form >li .fileForm .pictureList li label { display: block; overflow: hidden; position: relative; z-index: 1; height: 10.4rem;}
 .items-form >li .fileForm .pictureList li label img { width: 100%; height: auto; vertical-align: top;}
 .items-form >li .fileForm .pictureList li label::after { content: ''; position: absolute; right: 0.8rem; top: 0.8rem; width: 2rem; height: 2rem; background:#fff url(../image/common/split_40.png) no-repeat -16rem 0/40rem 16rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.items-form >li .fileForm .pictureList li input { position: absolute; right: 1rem; top: 1rem;}
+.items-form >li .fileForm .pictureList li input { position: absolute; right: 0.5rem; top: 0.5rem; width: 2rem; height: 2rem;}
 .items-form >li .fileForm .pictureList li input:focus + label::after { outline: 2px solid #000 !important;}
 .items-form >li .fileForm .pictureList li input:checked + label::after { background-color: #5D68E6; background-position: -16rem -2rem;}
 .items-form >li .selectForm .selectBtn { display: block; position: relative; width: 100%; height: 4.8rem; margin-bottom: 1.6rem; padding: 0 4rem 0 1.6rem; font-size: 1.6rem; color: #767676; text-align: left; border: 1px solid #ddd; background-color: #fff; transition: border-color .3s ease;}
