@@ -857,6 +857,10 @@ figure .label.red { background-color: #E61E1E;}
 .calendarBody .buttonFlex { display: flex; margin: 3.2rem -0.4rem 0;}
 .calendarBody .buttonFlex button { margin: 0 0.4rem;}
 
+.calendarBody .timeBox { display: flex; align-items: center; margin-top: 2rem;}
+.calendarBody .timeBox select { flex: 1; height: 3.8rem; background-position: right 1.2rem top 0.8rem;}
+.calendarBody .timeBox select.h { margin: 0 0.5rem;}
+
 /* 척척세종 UI-SJN-06-001L */
 .infoLayer .compArea { padding: 2rem; background-color: #F4F5F7;}
 .infoLayer .compArea .caCon { padding: 1.6rem 1.6rem 3.2rem; background-color: #fff;}
