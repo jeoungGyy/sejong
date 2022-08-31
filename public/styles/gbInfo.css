@@ -122,7 +122,7 @@
 
 .mainArea .whiteText { position: relative; margin-top: 3.2rem;}
 .mainArea .whiteText .boxArea { padding: 1.7rem 1.6rem;}
-.mainArea .whiteText .naverLink { display: flex; align-items: center; justify-content: center; position: absolute; right: 1.6rem; top: 50%; width: 8rem; height: 3.6rem; margin-top: -1.8rem; font-size: 1.7rem; font-weight: 700; color: #fff; background-color: #1CBF21; border-radius: 0.6rem;}
+.mainArea .whiteText .naverLink { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 50%; width: 8rem; height: 3.6rem; margin-top: -1.8rem; font-size: 1.7rem; font-weight: 700; color: #fff; background-color: #1CBF21; border-radius: 0.6rem;}
 .mainArea .whiteText .admissionLink { display: flex; align-items: center; justify-content: center; position: absolute; right: 1.6rem; top: 50%; width: 8rem; height: 3.6rem; margin-top: -1.8rem; font-size: 1.7rem; font-weight: 700; color: #fff; background-color: #5D68E6; border-radius: 0.6rem;}
 .mainArea .whiteText .text .fontSize18 { display: block; font-size: 1.8rem; font-weight: 700;}
 .mainArea .whiteText .subText { display: flex; align-items: center; margin-top: 1rem; color: #FD2020;}
