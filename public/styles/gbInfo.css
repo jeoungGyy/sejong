@@ -170,18 +170,27 @@
 .mainArea .trafficInformation .favoriteBus i { background-position: -22.4rem -3.2rem;}
 .mainArea .trafficInformation .settingList { margin-top: 0.8rem; padding-top: 2.4rem; border-top: 1px solid #F4F5F7;}
 .mainArea .trafficInformation .settingList >li { margin-bottom: 1.4rem; padding-bottom: 1.6rem; border-bottom: 1px solid #F4F5F7;}
+.mainArea .trafficInformation .settingList >li .slBody { display: block;}
 .mainArea .trafficInformation .settingList >li .slBody h3 { white-space: initial;}
-.mainArea .trafficInformation .settingList >li .slBody { position: relative;}
+.mainArea .trafficInformation .settingList >li .slBody >span { display: block; margin: 0.5rem 0 0 0;}
 .mainArea .trafficInformation .settingList >li .slBody >div { display: block; width: inherit;}
-.mainArea .trafficInformation .settingList >li .slBody >span { position: absolute; right: 0; bottom: 0; max-width: 17rem; text-align: right;}
 .mainArea .trafficInformation .settingList >li .slBody >div span { display: block; margin: 0.4rem 0 0 0;}
+.mainArea .trafficInformation .settingList >li .location { display: flex; align-items: center; flex-direction: column; justify-content: center; width: 5.2rem; height: 5.2rem; background-color: #CDD0D8; border-radius: 50%;}
+.mainArea .trafficInformation .settingList >li .location i { display: block; width: 2.4rem; height: 2.4rem; background: url(../image/common/split_48.png) no-repeat -43.2rem -24rem/48rem 28.8rem;}
+.mainArea .trafficInformation .settingList >li .location b { display: block; font-size: 1.2rem;}
+.mainArea .trafficInformation .settingList >li .location.active { background-color: #29863b;}
+.mainArea .trafficInformation .settingList >li .location.active i { background-position-y: -26.4rem;}
+.mainArea .trafficInformation .settingList >li .location.active b { color: #fff;}
 .mainArea .trafficInformation .settingList >li:last-child { margin-bottom: 0;}
-
 .mainArea .trafficInformation .settingListSub { margin-top: 0.2rem;}
-.mainArea .trafficInformation .settingListSub li { padding: 0; border: none;}
-.mainArea .trafficInformation .settingListSub li .subHead >div h3 { margin-left: 0;}
+.mainArea .trafficInformation .settingListSub li { margin-top: 1.2rem; padding: 0; border: none;}
+.mainArea .trafficInformation .settingListSub li .subHead >div h3 { height: inherit; margin-left: 0.4rem;}
 .mainArea .trafficInformation.mt { margin-top: 2.7rem;}
 
+.mainArea .trafficInformation .busWind { display: flex; align-items: center; justify-content: space-between; margin: 0.5rem 0 2rem;}
+.mainArea .trafficInformation .busWind .bwBody h4 { font-size: 1.6rem;}
+.mainArea .trafficInformation .busWind .bwBody p { margin-top: 0.2rem; font-size: 1.4rem;}
+.mainArea .trafficInformation .busWind img { display: block; width: 10rem; height: 5.6rem; vertical-align: top;}
 
 .mainArea .safetyInfo { margin-top: 2.7rem;}
 .mainArea .safetyInfo .safetyUse { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem; padding: 2.7rem 2rem 2.3rem; color: #fff; background-color: #FF940E; border-radius: 0.8rem;}

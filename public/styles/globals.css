@@ -406,9 +406,9 @@ table td { vertical-align: middle;}
 .radioSet { position: relative;}
 .radioSet label { display: inline-block; position: relative; z-index: 1; padding-left: 3.2rem; font-size: 1.6rem; cursor: pointer;}
 .radioSet label::after { content: ''; position: absolute; left: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.3rem; background: #949494 url(../image/common/split_48.png) no-repeat -24rem 0/48rem 28.8rem; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radioSet input { position: absolute; width: 1.4rem; height: 1.4rem;}
-.radioSet input:focus + label::after { outline: 2px solid #000 !important;}
-.radioSet input:checked + label::after { background-color: #5D68E6;}
+.radioSet input[type=radio] { position: absolute; width: 1.4rem; height: 1.4rem;}
+.radioSet input[type=radio]:focus + label::after { outline: 2px solid #000 !important;}
+.radioSet input[type=radio]:checked + label::after { background-color: #5D68E6;}
 .radioSet label + input { margin-left: 0.9rem;}
 .radioSet label + input + label { margin-left: 0.6rem;}
 
@@ -760,7 +760,7 @@ figure .label.red { background-color: #E61E1E;}
 /* .layerSetting .settingMenuBody { overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
 .layerSetting .items-label input:checked +label +button + .settingMenuBody { height: inherit; opacity: 1;} */
 .layerSetting .settingMenuBody { display: none; overflow: hidden; height: 0px; opacity: 0; transition: all .3s ease-in-out;}
-.layerSetting .items-label input:checked +label +button + .settingMenuBody { display: block; height: inherit; opacity: 1;}
+.layerSetting .items-label input:checked +label +.settingMenuBody { display: block; height: inherit; opacity: 1;}
 .layerSetting .settingMenu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 1.6rem;}
 .layerSetting .settingMenu li button { display: flex; align-items: center; position: relative; width: 100%; min-height: 4.8rem; padding: 0 2rem 0 1.2rem; border: 1px solid #EAEDF2;}
 .layerSetting .settingMenu li button::after { content: ''; position: absolute; right: 0.4rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/common/split_40.png) no-repeat 0 -8rem/40rem 16rem;}
