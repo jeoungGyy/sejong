@@ -57,6 +57,17 @@
 .mainArea .serviceGroup ul li a img { width: 6rem; height: 6rem;}
 .mainArea .serviceGroup ul li a span { display: block; margin-top: 1.2rem; color: #fff;}
 
+.mainArea .hospitalOper { margin: 0 -2rem; padding: 0 1.2rem; background-color: #5D68E6;}
+.mainArea .hospitalOper .hoBody { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1; height: 9rem; padding: 0 9rem 0 1.7rem; background-color: #2934B2; border-radius: 0.8rem;}
+.mainArea .hospitalOper .hoBody h4 { font-size: 1.8rem; color: #fff;}
+.mainArea .hospitalOper .hoBody p { margin-top: 0.2rem; font-size: 1.4rem; color: #fff;}
+.mainArea .hospitalOper .hoBody .sosHoBtn { display: block; position: absolute; right: 3rem; top: 50%; width: 5rem; height: 5rem; margin-top: -2.5rem; background: url(../image/home/img_hoper.png) no-repeat 0 0/5rem 12.5rem;}
+.mainArea .hospitalOper .hoBody .sosHoBtn.active { background-position-y: -7.5rem;}
+.mainArea .hospitalOper .hoBody .sosHoHelpBtn { display: block; position: absolute; right: 1.6rem; top: 50%; width: 2rem; height: 2rem; margin-top: -3rem; background: url(../image/home/img_hoper2.png) no-repeat center/cover;}
+
+
+
+
 .mainArea .covid19 { margin-top: 2.7rem;}
 .mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
@@ -194,6 +205,7 @@
 .mainArea .weatherBox .weatherLink .location { display: none;}
 .mainArea .weatherBox .weatherLink .weather .temperature { display: flex; align-items: baseline; font-size: 1.8rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature .import { position: relative; font-weight: 700;}
+.mainArea .weatherBox .weatherLink .weather .temperature .import::after { content: ''; position: absolute; right: -0.8rem; top: 0.2rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
 .mainArea .weatherBox .weatherLink .weather .temperature span { position: relative; margin-left: 1rem; font-size: 1.4rem;}
 .mainArea .weatherBox .lowness { color: #5D68E6;}
 .mainArea .weatherBox .normal { color: #29863b;}
@@ -319,11 +331,16 @@
 .mainArea .weekClosed .boxArea { padding-bottom: 2.4rem;}
 .mainArea .weekClosed h3 { display: block; height: inherit; padding: 0.9rem 0;}
 .mainArea .weekClosed h3 span { display: inline-block; vertical-align: top;}
-.mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; margin-top: 1rem;}
-.mainArea .weekClosed .body a { display: block; width: 7rem; color: #111; text-align: center;}
-.mainArea .weekClosed .body a span.text { display: block; margin-top: 0.6rem; font-size: 1.4rem;}
-.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.4rem; color: #767676;}
-.mainArea .weekClosed .body a img { width: 100%; height: 7rem;}
+.mainArea .weekClosed .body { display: flex; align-items: flex-start; justify-content: space-evenly; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;}
+.mainArea .weekClosed .body a { display: block; width: calc(50% - 1rem); color: #111; text-align: center;}
+.mainArea .weekClosed .body a span.text { display: inline-block; position: relative; margin: 1rem 0 0 -1.5rem;}
+.mainArea .weekClosed .body a span.text i { position: absolute; right: -2rem; top: 0; background-position-x: -30rem;}
+.mainArea .weekClosed .body a span.text span { display: block; font-size: 1.6rem; font-weight: 400; color: #767676;}
+.mainArea .weekClosed .body a .img { text-align: center; border-radius: 0.6rem;}
+.mainArea .weekClosed .body a .img.bgYellow { background-color: #fdb417;}
+.mainArea .weekClosed .body a .img.bgGray { background-color: #f4f5f7;}
+.mainArea .weekClosed .body a .img.bgRed { background-color: #ec1d24;}
+.mainArea .weekClosed .body a .img img { display: block; width: 7.8rem; height: 7.8rem; margin: 0 auto;}
 .mainArea .weekClosed .open { padding: 1.5rem 0 1rem; text-align: center;}
 .mainArea .weekClosed .open img { width: 8rem; height: auto;}
 .mainArea .weekClosed .open span { display: block; margin-top: 0.8rem;}
@@ -334,8 +351,9 @@
 .mainArea .sejong .body >div span { margin-right: 0.9rem; font-size: 2.4rem; font-weight: 700; color: #fff;}
 .mainArea .sejong .body >div i { display: inline-block; width: 15.2rem; height: 0.75rem; vertical-align: middle; background: url(../image/home/main_sejong_arrow.png) no-repeat right top/cover;}
 .mainArea .sejong .body >span { display: block; margin-top: 0.8rem; font-size: 1.4rem; color: #fff;}
-.mainArea .anchorTop { margin-top: 1rem;}
-.mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #767676;}
+.mainArea .anchorTop { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;}
+.mainArea .anchorTop .anchorBtn { display: flex; align-items: center; justify-content: center; width: 7.8rem; height: 3rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 0.8rem;}
+.mainArea .anchorTop .anchorTopBtn { display: flex; align-items: center; justify-content: center; height: 4.8rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #111;}
 .mainArea .anchorTop .anchorTopBtn i { margin-right: 0.4rem; background-position: -7.2rem -19.2rem;}
 .mainArea .playground { margin-top: 2.7rem;}
 .mainArea .playground .boxArea > div { padding-top: 1rem;}
@@ -896,6 +914,23 @@
 .openApi .loginWrap .memberBtnsGroup button.hLogin { background-color: #5D68E6;}
 .openApi .loginWrap .memberBtnsGroup button.oLogn { margin-top: 1.6rem; background-color: #1C2674;}
 .openApi .loginWrap .memberBtnsGroup button img { margin-right: 1.6rem;}
+
+/* UI-SJN-98-002U */
+.newH.headerBtn { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
+.newH.headerBtn h2 { font-size: 1.8rem;}
+.openApi .loginWrap .bgGray { padding: 2.9rem 0 2.4rem; text-align: center; background-color: #F4F5F7;}
+.openApi .loginWrap .bgGray .p1 { display: inline-block; font-size: 1.8rem;}
+.openApi .loginWrap .bgGray .p2 { display: inline-block; font-size: 1.8rem; line-height: 2.8rem;}
+.openApi .loginWrap .bgGray .s1 { display: inline-block; margin-top: 1.5rem; font-size: 1.4rem; color: #555;}
+.openApi .loginWrap .bgGray .s2 { display: inline-block; margin-top: 2rem; padding-bottom: 0.4rem; font-size: 1.4rem; color: #555; border-bottom: 1px solid #5D68E6;}
+.openApi .loginWrap .nonMember .listOrder { margin-top: 1rem;}
+.openApi .loginWrap .nonMember .listOrder >div { display: flex; align-items: center;}
+.openApi .loginWrap .nonMember .listOrder >div ~ div { margin-top: 0.8rem;}
+.openApi .loginWrap .nonMember .listOrder >div input { flex: 1;}
+.openApi .loginWrap .nonMember .listOrder >div .button { width: 9rem; margin-left: 0.8rem; font-size: 1.5rem;}
+.openApi .loginWrap .nonMember .listOrder >div .button.blue { border: 1px solid #5D68E6;}
+.openApi .loginWrap .nonMember .listBtn { margin-top: 3.2rem;}
+.openApi .loginWrap .listText { margin-top: 4.8rem; font-size: 1.4rem; text-align: center; line-height: 2rem;}
 
 /* 즐겨찾기 - UI-SJN-84-001U */
 .mypage .bookmarkWrap.boxTab .btnTab { display: flex; height: 4.8rem;}

@@ -355,6 +355,9 @@ body { --vh: 1px;}
 .mapIcons .controlPannel .cfBtns { display: none; flex-wrap: wrap; flex: 1; margin-left: 2.2rem; gap: 8px 6px;}
 .mapIcons .controlPannel .cfBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 3rem; font-size: 1.4rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
 .mapIcons .controlPannel .cfBtns button.active { color: #fff; background-color: #5D68E6;}
+.mapIcons .controlPannel .cfBtns select { height: 3.6rem; padding: 0 2.7rem 0 1.2rem; font-size: 1.4rem; color: #767676; border-color: #EAEAEA; background-color: #fff; border-radius: 1.8rem; background-position: right 0.9rem top 0.7rem;}
+.mapIcons .controlPannel .cfBtns select.active { color: #fff; border-color: #5D68E6; background-position-y: -3.3rem; background-color: #5D68E6;}
+
 
 .mapIcons .controlPannel.active { left: 0; top: 5.6rem; width: 100%; padding: 1.6rem 2rem; background-color: #fff;}
 .mapIcons .controlPannel.active .cfBtns { display: flex;}
