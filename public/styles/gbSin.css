@@ -57,6 +57,18 @@
 .mainArea .serviceGroup ul li a img { width: 6rem; height: 6rem;}
 .mainArea .serviceGroup ul li a span { display: block; margin-top: 1.2rem; color: #fff;}
 
+.mainArea {}
+.mainArea .hospitalOper { margin: 0 -2rem; padding: 0 1.2rem; background-color: #5D68E6;}
+.mainArea .hospitalOper .hoBody { display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1; height: 9rem; padding: 0 9rem 0 1.7rem; background-color: #2934B2; border-radius: 0.8rem;}
+.mainArea .hospitalOper .hoBody h4 { font-size: 1.8rem; color: #fff;}
+.mainArea .hospitalOper .hoBody p { margin-top: 0.2rem; font-size: 1.4rem; color: #fff;}
+.mainArea .hospitalOper .hoBody .sosHoBtn { display: block; position: absolute; right: 3rem; top: 50%; width: 5rem; height: 5rem; margin-top: -2.5rem; background: url(../image/home/img_hoper.png) no-repeat 0 0/5rem 12.5rem;}
+.mainArea .hospitalOper .hoBody .sosHoBtn.active { background-position-y: -7.5rem;}
+.mainArea .hospitalOper .hoBody .sosHoHelpBtn { display: block; position: absolute; right: 1.6rem; top: 50%; width: 2rem; height: 2rem; margin-top: -3rem; background: url(../image/home/img_hoper2.png) no-repeat center/cover;}
+
+
+
+
 .mainArea .covid19 { margin-top: 2.7rem;}
 .mainArea .covid19 .title { display: flex; align-items: center; height: 7.8rem; background-color: #F3F5F7; border-radius: 0.8rem;}
 .mainArea .covid19 .title i { display: inline-block; width: 4rem; height: 4rem; margin: 0 1.2rem 0 1.6rem; background: url(../image/home/main_ico_notice.png) no-repeat center/cover;}
