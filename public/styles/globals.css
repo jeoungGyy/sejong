@@ -1059,7 +1059,7 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbInfo .location i { background-position: -9.6rem -9.6rem;}
 .locationLayer .basic .bbInfo .time i { background-position: -12rem -9.6rem;}
 .locationLayer .basic .bbInfo a.active { color: #000;}
-.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}ㅊㄴ
+.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}
 .locationLayer .basic .bbInfo .offerer { display: flex;	justify-content: flex-end;}
 .locationLayer .basic .bbInfo .offerer .write { color: #555;}
 .locationLayer .basic .bbInfo .offerer .write::after { display: none;}
