@@ -190,7 +190,7 @@
 .mainArea .trafficInformation .busWind { display: flex; align-items: center; justify-content: space-between; margin: 0.5rem 0 2rem; padding-top: 2rem; border-top: 1px solid #F4F5F7;}
 .mainArea .trafficInformation .busWind .bwBody h4 { font-size: 1.6rem;}
 .mainArea .trafficInformation .busWind .bwBody p { margin-top: 0.2rem; font-size: 1.4rem;}
-.mainArea .trafficInformation .busWind img { display: block; width: 10rem; height: 5.6rem; vertical-align: top;}
+.mainArea .trafficInformation .busWind img { display: block; width: 10rem; height: 5.6rem;}
 
 .mainArea .safetyInfo { margin-top: 2.7rem;}
 .mainArea .safetyInfo .safetyUse { display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem; padding: 2.7rem 2rem 2.3rem; color: #fff; background-color: #FF940E; border-radius: 0.8rem;}
