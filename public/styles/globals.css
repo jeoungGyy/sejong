@@ -178,6 +178,10 @@ table td { vertical-align: middle;}
 .headerWrap { overflow: hidden; position: fixed; top:0; z-index: 200; width: 100%;}
 .headerWrap .headerClear { display: flex; width: 100%; box-sizing: content-box;}
 .headerWrap .headerClear.add { transition-duration: 300ms;}
+.headerWrap .headerBtn { display: flex; align-items: center; justify-content: center; height: 5.6rem; padding: 0 4rem;}
+.headerWrap .headerBtn h2 { font-size: 1.8rem;}
+.headerWrap .headerBtn .btnClose { display: block; position: absolute; right: 1.2rem; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
+
 /* .header {  float: left; position: fixed; top: env(safe-area-inset-top); z-index: 200; width: 100%; background-color: #fff;} */
 .header { flex-shrink: 0; width: 100%; background-color: #fff;}
 .header.bgGreen { position: relative; top: 0; background-color: #fff; transition: top .1s ease;}
@@ -238,6 +242,7 @@ table td { vertical-align: middle;}
 .visible { display: none;}
 .invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 .ls0 { letter-spacing: 0;}
+.fowN { font-weight: 400 !important;}
 
 /* 마진 */
 #pcRoot .mt0 { margin-top: 0;}
@@ -259,6 +264,7 @@ table td { vertical-align: middle;}
 .cBlack { color: #111 !important;}
 .cLightBlack { color: #555 !important;}
 .cGray { color: #767676 !important;}
+.cLinghtGray { color: #aaa !important;}
 .cWood { color: #9D6D20 !important;}
 .cOrange { color: #E61E1E !important;}
 .cSkyBlue { color: #00539C !important;}
@@ -421,6 +427,7 @@ table td { vertical-align: middle;}
 .boxTooltipLayer .btnClose { position: absolute; right: 1.2rem; top: 1.2rem; width: 2.4rem; height: 2.4rem;}
 .boxTooltipLayer .btnClose i { display: block; width: 2.4rem; height: 2.4rem; text-indent: -9999rem; background: url(../image/common/split_48.png) no-repeat -14.4rem 0/48rem 28.8rem;}
 .boxTooltipLayer.show { display: block;}
+.boxTooltipLayer.short { width: calc(100% - 6rem);}
 
 .legendTooltipLayer { display: none; position: absolute; left: 0; top: 0; z-index: 100; width: 100%; padding: 0 1.2rem;}
 .legendTooltipLayer .legendTooltipBody { position: relative; padding: 1.2rem 2rem 3.2rem; background-color: #fff; border: 1px solid #5D68E6;}
@@ -753,6 +760,21 @@ figure .label.red { background-color: #E61E1E;}
 .noticeCheck .radioSet label { zoom: 0.8;}
 .noticeCheck .checkBtn { display: flex; align-items: center; justify-content: center; margin-left: 0.6rem; padding: 0.2rem 0.5rem; font-size: 1.3rem; border: 1px solid #ddd; border-radius: 0.3rem;}
 
+/* UI-SJN-01-900L */
+.layerLock .lock { margin-top: 0.8rem;}
+.layerLock .unlock { margin-top: 2.4rem; padding-bottom: 2rem !important;}
+.dragged button i,
+.layerLock .unlock button i { position: absolute; right: 1.6rem; top: 1.1rem; width: 2.4rem; height: 2.4rem; background-position: -45.6rem -19.2rem;}
+.layerLock .squareBox { padding: 0 2rem;}
+.dragged { position: relative; z-index: 20; background-color: #fff;}
+.layerLock .squareBox .btnWrap { flex-shrink: 0; display: flex; justify-content: center; align-items: center; position: relative;  z-index: 20; color: white; cursor: grab;}
+.layerLock .squareBox .btnWrap ~ .btnWrap { margin-top: 0.8rem;} 
+.dragged button,
+.layerLock .squareBox .btnWrap button { display: flex; align-items: center; position: relative; width: 100%; height: 4.8rem; padding: 0 1.6rem; font-size: 1.6rem; font-weight: 700; border: 1px solid #ddd;}
+.layerLock .squareBox .break { display: flex; align-items: center; justify-content: center; position: relative; height: 8rem;}
+.layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: 3.6rem; height: 0.6rem; background-color: #F4F5F7;}
+.layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #767676; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
+
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
 .layerSetting .items-label .tootipBtn i { margin: -0.5rem 0 0 0.4rem; vertical-align: middle; text-indent: -9999rem; background-position-x: -38rem;}
@@ -898,7 +920,7 @@ figure .label.red { background-color: #E61E1E;}
 
 /* 내 정보 - UI-SJN-80-001U */
 .myInfoLayer { padding: 0 2rem 2rem;}
-.myInfoLayer .myLogin { display: flex; align-items: center; justify-content: space-between; height: 7.2rem; margin-top: 0.8rem;}
+.myInfoLayer .myLogin { display: flex; align-items: center; justify-content: space-between; height: 72px; margin-top: 8px;}
 .myInfoLayer .myLogin .text { font-size: 1.6rem; line-height: 2.3rem;}
 .myInfoLayer .myLogin .text span { color: #5D68E6;}
 .myInfoLayer .myLogin .my { position: relative; width: 4.8rem; height: 4.4rem;}
@@ -908,13 +930,14 @@ figure .label.red { background-color: #E61E1E;}
 .myInfoLayer .myLogin .my .icon .icoProfile { width: 4rem; height: 4rem;}
 .myInfoLayer .myLogin .my .profileBtn { display: block; position: absolute; right: 0; bottom: 0; width: 2.4rem; height: 2.4rem; background-color: #292D32; border-radius: 50%;}
 .myInfoLayer .myLogin .my .profileBtn i { background-position: -43.2rem -14.4rem;}
-.myInfoLayer .myActivity { margin-top: 4rem;}
+.myInfoLayer .myActivity { margin-top: 40px;}
 .myInfoLayer .myActivity li { padding-left: 4rem; border-top: 1px solid #EAEDF2;}
-.myInfoLayer .myActivity li i { display: block; position: absolute; left: -4rem; top: 1.4rem; width: 3.2rem; height: 3.2rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
-.myInfoLayer .myActivity li .review { display: flex; align-items: center; justify-content: space-between; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li i { display: block; position: absolute; left: -4rem; top: 50%; width: 3.2rem; height: 3.2rem; margin-top: -1.6rem; background: url(../image/home/split_my.png) no-repeat 0 0/16rem 3.2rem;}
+.myInfoLayer .myActivity li i.etc { top: 1.2rem; margin-top: 0;}
+.myInfoLayer .myActivity li .review { display: flex; align-items: center; justify-content: space-between; position: relative; height: 60px; color: #111;}
 .myInfoLayer .myActivity li .review i { background-position-x: -3.2rem;}
 .myInfoLayer .myActivity li .review .cBlue { margin-left: 0.8rem;}
-.myInfoLayer .myActivity li .possess { position: relative; padding: 1.8rem 0;}
+.myInfoLayer .myActivity li .possess { position: relative; height: 160px; padding: 1.8rem 0 0;}
 .myInfoLayer .myActivity li .possess >i { background-position-x: 0;}
 .myInfoLayer .myActivity li .possess .buttonArrow { margin-top: 2.3rem;}
 .myInfoLayer .myActivity li .possess .buttonArrow i { position: inherit; display: inline-block; width: 2rem; height: 2rem; padding: 0 1rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -24rem -4rem/40rem 16rem;}
@@ -922,21 +945,23 @@ figure .label.red { background-color: #E61E1E;}
 .myInfoLayer .myActivity li .possess .pointBody .text { font-size: 1.6rem;}
 .myInfoLayer .myActivity li .possess .pointBody .cBlue { font-size: 1.4rem;}
 .myInfoLayer .myActivity li .possess .pointBody .point { font-size: 1.8rem; font-family: var(--fontRoboto);}
-.myInfoLayer .myActivity li .possess .guide { margin-top: 0.9rem; color: #555;}
+.myInfoLayer .myActivity li .possess .guide { margin-top: 0.6rem; font-size: 1.4rem; color: #555;}
+.myInfoLayer .myActivity li .possess .actPoint { margin: 2rem 0 0 -4rem; text-align: center;}
+.myInfoLayer .myActivity li .possess .actPoint b { font-family: var(--fontRoboto); font-size: 2.8rem;}
 .myInfoLayer .myActivity li .possess .currency { display: flex; align-items: center; justify-content: space-between; position: relative; width: 100%; height: 4.8rem; margin-top: 2rem; padding: 0 2rem; font-size: 1.6rem; color: #fff; background-color: #5D68E6;}
 .myInfoLayer .myActivity li .possess .currency::after { content: ''; display: block; position: absolute; right: 1rem; top: 2.5rem; width: 2rem; height: 2rem; background: url(../image/common/split_40.png) no-repeat -24rem -4rem/40rem 16rem; transform: rotate(0);}
-.myInfoLayer .myActivity li .favorite { display: block; position: relative; padding: 2rem 0; color: #111;}
+.myInfoLayer .myActivity li .favorite { display: flex; align-items: center; position: relative; height: 60px; color: #111;}
 .myInfoLayer .myActivity li .favorite i { background-position-x: -6.4rem;}
 .myInfoLayer .myActivity li .favorite b { font-size: 1.6rem;}
 .myInfoLayer .myActivity li .arrowRight { position: relative; padding-right: 3rem;}
 .myInfoLayer .myActivity li .arrowRight::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
-.myInfoLayer h3 { display: flex; align-items: center; height: 3.2rem; margin-top: 2.4rem; font-size: 1.4rem; font-weight: 400; color: #5D68E6;}
-.myInfoLayer a.link { display: flex; align-items: center; position: relative; height: 4.8rem; font-size: 1.6rem; font-weight: 700; color: #111;}
+.myInfoLayer h3 { display: flex; align-items: center; height: 32px; margin-top: 24px; font-size: 1.4rem; font-weight: 400; color: #5D68E6;}
+.myInfoLayer a.link { display: flex; align-items: center; position: relative; height: 48px; font-size: 1.6rem; font-weight: 700; color: #111;}
 .myInfoLayer a.link::after { content: ''; display: block; position: absolute; right: 0; top: 50%; width: 2.4rem; height: 2.4rem; margin-top: -1.2rem; background: url(../image/home/ico_toggle_arrow_down.png) no-repeat center/cover; transform: rotate(-90deg);}
 .myInfoLayer a.link.between { justify-content: space-between; padding-right: 3.2rem;}
 .myInfoLayer a.link.noArrow::after { display: none;}
-.myInfoLayer .sevieceBox { margin: 2.4rem -2rem 0; padding: 0 2rem;}
-.myInfoLayer .sevieceBox .flex { display: flex; align-items: center; justify-content: space-between; height: 3.2rem;}
+.myInfoLayer .sevieceBox { margin: 24px -2rem 0; padding: 0 2rem;}
+.myInfoLayer .sevieceBox .flex { display: flex; align-items: center; justify-content: space-between; height: 32px;}
 .myInfoLayer .sevieceBox .flex .tooltipBtn { width: 2rem; height: 2rem; margin: -0.3rem 0 0 0.4rem; text-indent: -9999rem; background: url(../image/common/split_40.png) no-repeat -38rem 0/40rem 16rem;}
 .myInfoLayer .sevieceBox .flex .switch label { zoom: 0.8;}
 .myInfoLayer .sevieceBox .guide { margin: 0.9rem 0 1.5rem; font-size: 1.4rem; color: #555;}
@@ -945,12 +970,12 @@ figure .label.red { background-color: #E61E1E;}
 .myInfoLayer .sevieceBox .fontSize .big { margin-left: 2.3rem; font-size: 4.1rem;}
 .myInfoLayer .sevieceBox .fontSize .fontBtnGroup { flex: 1;}
 .myInfoLayer .sevieceBox .fontSize .fontBtnGroup { display: flex; align-items: center; position: relative;}
-.myInfoLayer .sevieceBox .fontSize .fontBtnGroup button { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 1; width: 1rem; height: 1rem;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup button { display: flex; align-items: center; justify-content: center; position: absolute; z-index: 1; width: 3rem; height: 3rem;}
 .myInfoLayer .sevieceBox .fontSize .fontBtnGroup button i { display: block; width: 1rem; height: 1rem; text-indent: -9999rem; background-color: #EAEDF2; border-radius: 50%;}
-.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontSmall { left: 0;}
-.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontNormal { left: 33%;}
-.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontLarge { left: 66%;}
-.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontBig { right: 0;}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontSmall { left: calc(0% - 1.4rem);}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontNormal { left: calc(33% - 1.4rem);}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontLarge { left: calc(66% - 1.4rem);}
+.myInfoLayer .sevieceBox .fontSize .fontBtnGroup .fontBig { right: calc(0% - 1.4rem);}
 
 .myInfoLayer .sevieceBox .fontSize .fontBtnGroup button.active i { background-color: #5D68E6;}
 
@@ -1058,8 +1083,8 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .basic .bbInfo i.write { background-position: -36rem -4.8rem;}
 .locationLayer .basic .bbInfo .location i { background-position: -9.6rem -9.6rem;}
 .locationLayer .basic .bbInfo .time i { background-position: -12rem -9.6rem;}
-.locationLayer .basic .bbInfo a.active { color: #000;}
-.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}ㅊㄴ
+.locationLayer .basic .bbInfo button.active { color: #000;}
+.locationLayer .basic .bbInfo .div span { font-size: 1.6rem; color: #111;}
 .locationLayer .basic .bbInfo .offerer { display: flex;	justify-content: flex-end;}
 .locationLayer .basic .bbInfo .offerer .write { color: #555;}
 .locationLayer .basic .bbInfo .offerer .write::after { display: none;}
@@ -1215,14 +1240,28 @@ figure .label.red { background-color: #E61E1E;}
 .locationLayer .detail .visitorDetail .visitorToday b { display: block;}
 .locationLayer .detail .visitorDetail .visitorToday .today { display: block; width: 10.5rem; margin-top: 0.2rem; font-size: 1.3rem; color: #555; text-align: right;}
 .locationLayer .detail .visitorDetail .visitorToday .today span { font-size: 1.5rem;}
-.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
+/* .locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; height: 5.6rem; margin-top: 3.2rem;}
 .locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 6rem; height: 4rem; color: #555; border: 1px solid #EAEAEA;}
 .locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.8rem;}
-.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;}
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #5D68E6; background-color: #5D68E6;} */
 .locationLayer .detail .tabCount .combo { display: flex; align-items: center;}
 .locationLayer .detail .tabCount .combo >span { margin: -0.4rem 0.8rem 0 0; color: #555;}
 .locationLayer .detail .tabCount .combo .switch input:checked + label:before { background-color: #29863b;}
+.locationLayer .detail .visTit { display: flex; justify-content: space-between; padding-top: 2.4rem;}
+.locationLayer .detail .visTit .left { display: flex; align-items: center; justify-content: center; width: 6.8rem; height: 2.4rem; font-size: 1.4rem; color: #fff; background-color: #5D68E6; border-radius: 0.6rem;}
+.locationLayer .detail .visTit .right { font-size: 1.3rem; color: #767676;}
+.locationLayer .detail .roundBox { margin-top: 1.6rem; border: 1px solid #EAEDF2; border-radius: 0.4rem;}
+.locationLayer .detail .tabCount { display: flex; align-items: center; justify-content: space-between; padding: 1rem;}
+.locationLayer .detail .tabCount .tabBtns { display: flex; align-items: center; padding: 0.4rem; border: 1px solid #EAEAEA; border-radius: 0.7rem;}
+.locationLayer .detail .tabCount .tabBtns button { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 3.4rem; font-size: 1.4rem; color: #767676;}
+.locationLayer .detail .tabCount .tabBtns button ~ button { margin-left: 0.4rem;}
+.locationLayer .detail .tabCount .tabBtns button.active { color: #fff; border-color: #00539C; background-color: #00539C; border-radius: 0.6rem;}
+.locationLayer .detail .chartBtnGroup { display: flex; align-items: center;}
+.locationLayer .detail .chartBtnGroup .chartBtn { display: flex; align-items: center; justify-content: center; position: relative; width: 25%; height: 3.6rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-top: none; border-radius: 0 0 0.8rem 0.8rem;}
+.locationLayer .detail .chartBtnGroup .chartBtn ~ .chartBtn { border-left: none;}
+.locationLayer .detail .chartBtnGroup .chartBtn.active { z-index: 1; color: #fff; border-color: #00539C; background-color: #00539C;}
+
 
 
 .locationLayer .app { padding: 0 2rem 2.4rem;}
