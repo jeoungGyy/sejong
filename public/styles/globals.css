@@ -1929,6 +1929,7 @@ figure .label.red { background-color: #E61E1E;}
 .items-thumb { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem;}
 .items-thumb li { position: relative;}
 .items-thumb li figure { height: 10.4rem;}
+.items-thumb li figure a { display: block;}
 .items-thumb li figure img { height: 100%;}
 .items-thumb li .blind span { display: flex; align-items: center; justify-content: center; position: absolute; right: 0.8rem; bottom: 0.8rem; height: 2.4rem; padding: 0 0.8rem; color: #333; background-color: #fff; border-radius: 1.2rem;}
 .items-thumb li .blind span::before { content: '+'; margin-top: -0.1rem; vertical-align: middle;}
