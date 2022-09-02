@@ -878,13 +878,13 @@ span.M { background-color: #E61E1E;}
 .settingListSub { margin-top: 1.2rem;}
 .settingListSub li { display: flex; align-items: center; padding: 0.8rem 1.6rem; border: 1px solid #F4F5F7;}
 .settingListSub li ~ li { border-top: none;}
-.settingListSub li .subHead { flex: 1;}
+.settingListSub li .subHead { width: 10rem;}
 .settingListSub li .subHead >div { display: flex; align-items: center;}
 .settingListSub li .subHead >div h3 { margin-left: 0.6rem; font-size: 1.6rem;}
 .settingListSub li .subHead .getOffLayerBtn { display: flex; align-items: center; justify-content: space-between; height: 2.8rem; margin-top: 0.6rem; padding: 0 0.8rem; font-size: 1.4rem; color: #767676; border: 1px solid #EAEAEA; border-radius: 1.4rem;}
 .settingListSub li .subHead .getOffLayerBtn i { margin-right: 0.4rem; background-position: -18rem -4rem;}
 .settingListSub li .subHead .getOffLayerBtn.active i { background-position-y: -6rem;}
-.settingListSub li .subInfo { width: 12rem; font-size: 1.4rem;}
+.settingListSub li .subInfo { flex: 1; font-size: 1.4rem; text-align: right;}
 .settingListSub li .subInfo b { color: #E61E1E;}
 .settingListSub li .subInfo span { color: #555;}
 .settingListSub li .subInfo >div ~ div { margin-top: 0.6rem;}
