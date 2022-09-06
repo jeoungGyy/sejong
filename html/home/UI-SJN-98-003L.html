@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+
+					<!-- 레이어 -->
+					<div id="UI-SJN-98-002L" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>휴대폰 간편인증 로그인</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex">
+								<div class="emergencyBody">
+									<h3>
+										<span class="cBlue">세종엔의 정보 이용!</span><br />
+										<span class="cRed">안심서비스 긴급 도움 요청</span>
+									</h3>
+									<p class="textR">휴대폰 문자 인증만으로도 할 수 있어요!</p>
+									<p class="textB"><b>전체 기능 사용에는 제한이 있습니다.</b></p>
+								</div>
+								<div class="emergencyList">
+									<ul class="items-form">
+										<li>
+											<div class="labelH between">
+												<div>
+													<label>휴대전화 번호를 입력해주세요.</label>
+												</div>
+											</div>
+											<div class="businessForm">
+												<ul>
+													<li>
+														<input type="tel" required="required" title="휴대전화 번호 입력" placeholder="- 없이 숫자만 입력해주세요">
+														<button type="button" class="blue">인증받기</button>
+													</li>
+													<li>
+														<input type="tel" required="required" title="휴대전화 번호 입력" value="01033240161">
+														<button type="button" class="blue">진행중</button>
+														<button type="button" class="pink">취소</button>
+													</li>
+													<li>
+														<div class="inpor">
+															<input type="tel" required="required" title="인증 번호 입력">
+															<div class="inpTime"><span role="timer">03:00</span></div>
+														</div>
+														<button type="button" class="blue">인증확인</button>
+														<button type="button">시간연장</button>
+													</li>
+												</ul>
+												<p class="hWord">휴대폰으로 발송된 인증번호를 입력해주세요.</p>
+												<p class="cBlue">인증완료 되었습니다.</p>
+											</div>
+										</li>
+									</ul>
+
+									<div class="eFooter">
+										<button type="button" class="button blue">로그인</button>
+										<p>
+											로그인하면 세종특별자치시 ‘세종엔’의<br />
+											<span class="cRed">서비스 약관</span> 및 <span class="cRed">개인정보 보호정책</span>에<br />
+											동의하는 것으로 간주됩니다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						layerPopup.open('UI-SJN-98-002L');
+					</script>
+					<!-- //레이어 -->
+
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -932,6 +932,17 @@
 .openApi .loginWrap .nonMember .listBtn { margin-top: 3.2rem;}
 .openApi .loginWrap .listText { margin-top: 4.8rem; font-size: 1.4rem; text-align: center; line-height: 2rem;}
 
+/* UI-SJN-98-003U */
+.emergencyBody { padding: 2.9rem 0 2.4rem; text-align: center; background-color: #F4F5F7;}
+.emergencyBody h3 { font-size: 1.8rem; line-height: 2.8rem;}
+.emergencyBody .textR { margin-top: 1.5rem; font-size: 1.4rem;}
+.emergencyBody .textB { margin-top: 2rem; font-size: 1.4rem;}
+.emergencyBody .textB b { border-bottom: 1px solid #5D68E6;}
+.emergencyList { padding: 3.2rem 2rem;}
+.eFooter { margin-top: 1.2rem;}
+.eFooter p { margin-top: 4.4rem; text-align: center;}
+
+
 /* 즐겨찾기 - UI-SJN-84-001U */
 .mypage .bookmarkWrap.boxTab .btnTab { display: flex; height: 4.8rem;}
 .mypage .bookmarkWrap.boxTab .btnTab .itemBtn { display: flex; align-items: center; justify-content: center; flex: 1;}
