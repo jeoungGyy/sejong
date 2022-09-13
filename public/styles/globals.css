@@ -240,7 +240,7 @@ table td { vertical-align: middle;}
 .lineBreake { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 .lineBreake3 { overflow: hidden; display: -webkit-box; word-break: break-all; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
 .visible { display: none;}
-.invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
+.invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial; border: none;}
 .ls0 { letter-spacing: 0;}
 .fowN { font-weight: 400 !important;}
 
