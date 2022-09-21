@@ -774,6 +774,7 @@ figure .label.red { background-color: #E61E1E;}
 .layerLock .squareBox .break { display: flex; align-items: center; justify-content: center; position: relative; height: 8rem;}
 .layerLock .squareBox .break::before { content: ''; display: block; position: absolute; left: -2rem; right: -2rem; bottom: 3.6rem; height: 0.6rem; background-color: #F4F5F7;}
 .layerLock .squareBox .break span { display: block; position: absolute; left: 50%; padding: 0 1rem; font-size: 1.4rem; font-weight: 400; color: #767676; text-align: center; white-space: nowrap; background-color: #fff; transform: translateX(-50%);}
+.layerLock .lockBtnGroup { padding: 2rem;}
 
 /* UI-SJN-03-100U–1 */
 .layerSetting { padding: 5.2rem 0 6rem;}
