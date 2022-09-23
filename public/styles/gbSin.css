@@ -205,7 +205,7 @@
 .mainArea .weatherBox .weatherLink .location { display: none;}
 .mainArea .weatherBox .weatherLink .weather .temperature { display: flex; align-items: baseline; font-size: 1.8rem;}
 .mainArea .weatherBox .weatherLink .weather .temperature .import { position: relative; font-weight: 700;}
-.mainArea .weatherBox .weatherLink .weather .temperature .import::after { content: ''; position: absolute; right: -0.8rem; top: 0.2rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;}
+/* .mainArea .weatherBox .weatherLink .weather .temperature .import::after { content: ''; position: absolute; right: -0.8rem; top: 0.2rem; width: 0.2rem; height: 0.2rem; border: 2px solid #111; border-radius: 50%;} */
 .mainArea .weatherBox .weatherLink .weather .temperature span { position: relative; margin-left: 1rem; font-size: 1.4rem;}
 .mainArea .weatherBox .lowness { color: #5D68E6;}
 .mainArea .weatherBox .normal { color: #29863b;}
@@ -495,7 +495,7 @@
 .mainArea .mainPromotion .promotionList li { padding: 1rem;}
 .mainArea .mainPromotion .promotionList a { display: block; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 .mainArea .mainPromotion .promotionList a img { width: 100%; height: auto; vertical-align: top;}
-.mainArea .mainPromotion .promotionList .empty { display: flex; align-items: center; justify-content: center; height: 31.41rem; padding: 2rem; font-size: 1.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
+.mainArea .mainPromotion .promotionList .empty { display: flex; align-items: center; justify-content: center; height: 26.375rem; padding: 2rem; font-size: 1.8rem; background-color: #fff; box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%); border-radius: 1.6rem;}
 
 .home .footer { padding: 2.2rem 0 9rem; border-top: 1px solid #EAEAEA; background: linear-gradient(to bottom,  #fff 0%, #F3F5F7 100%);}
 .home .footer >div { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
