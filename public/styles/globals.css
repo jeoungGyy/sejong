@@ -2098,10 +2098,10 @@ figure .label.red { background-color: #E61E1E;}
 .items-festival .flFlex .flHeader h4 { font-size: 1.6rem;}
 .items-festival .flFlex .flHeader h4 +p { margin-top: 0.6rem;}
 .items-festival .flFlex .flHeader p { color: #555;}
-.items-festival .flFlex .movie { position: relative; width: 9.2rem; height: 5.2rem; margin-left: 1rem;}
-.items-festival .flFlex .movie a { display: block;}
-.items-festival .flFlex .movie img { width: 100%; height: 100%;}
-.items-festival .flFlex .movie .movieBtn { position: absolute; right: 0.4rem; bottom: 0.4rem;}
+.items-festival .flFlex .movie { position: relative; width: 9.2rem; height: 7rem; margin-left: 1rem;}
+.items-festival .flFlex .movie >img { width: 100%; height: 100%;}
+.items-festival .flFlex .movie .movieBtn { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #5D68E6;}
+.items-festival .flFlex .movie .movieBtn img { position: absolute; left: 50%; top: 50%; width: 3.4rem; height: 3.4rem; transform: translate(-50%, -50%);}
 
 .items-culture li { display: flex; justify-content: space-between;}
 .items-culture li ~ li { margin-top: 1.6rem;}
