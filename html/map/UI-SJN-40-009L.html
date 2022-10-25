@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<script src="../include/head.js"></script>
+</head>
+
+<body>
+<div id="pcRoot">
+	<div class="pcContainer">
+		<!-- 공통: PC 내용 -->
+		<script src="../include/pc_deco.js"></script>
+		<!-- //공통: PC 내용 -->
+
+		<div class="pcView">
+
+			<!-- 모바일 내용 -->
+			<div id="root">
+				<div class="container">
+			
+					<!-- 레이어 -->
+					<div id="UI-SJN-40-009L" class="layerPopup">
+						<div class="layerWrap full">
+							<div class="headerBtn">
+								<h2>친구</h2>
+								<button type="button" class="btnClose" onclick="layerPopup.close();">창닫기</button>
+							</div>
+							<div class="fullFlex">
+								<div class="friendGroup">
+									<div class="friend-formSearch">
+										<input type="text" title="친구 이름 입력" placeholder="친구 이름을 입력하세요">
+										<button type="button" class="btnSend" title="검색"></button>
+									</div>
+
+									<div class="friend-refresh">
+										<p>친구 목록 새로고침</p>
+										<span>최종 추가시간 : 2022-08-12 12:00</span>
+										<button type="button" class="frBtn" title="친구 목록 새로고침"></button>
+									</div>
+
+									<div class="friend-list line-default">
+										<div class="frList">
+											<h4>최근 보낸 알림</h4>
+											<button type="button" class="flToggle" title="최근 보낸 알림 닫힘"></button>
+											<ul class="flToggleList">
+												<li>
+													<div class="my">
+														<span class="img"><img src="../../public/image/map/ico_f_default.png" alt="기본 이미지"></span>
+													</div>
+													<div class="flText">
+														<p class="ellipsis">세종실거주자 세종실거주자 세종실거주자 세종실거주자 세종실거주자</p>
+														<span>박새롬</span>
+													</div>
+													<span class="flDate">2022.09.19</span>
+													<button type="button" title="삭제" class="flCloseBtn"><i class="split20"></i></button>
+												</li>
+											</ul>
+										</div>
+
+										<div class="frList">
+											<h4>안심귀가 일림 친구 <span class="cBlue">2</span></h4>
+											<button type="button" class="flToggle active" title="최근 보낸 알림 닫힘"></button><!-- active 클래스 추가로 열림/닫힘 으로 변경해주세요 -->
+											<ul class="flToggleList height0"><!-- 접는 경우: height0 클래스 추가 -->
+												<li>
+													<div class="my">
+														<span class="img"><img src="../../public/image/temp/temp011.png" alt=""></span>
+													</div>
+													<div class="flText">
+														<p class="ellipsis">세종실거주자 세종실거주자 세종실거주자 세종실거주자 세종실거주자</p>
+														<span>박새롬</span>
+													</div>
+													<span class="flDate cBlue">안심귀가 알림</span>
+													<div class="flCloseBtn"><i class="split20"></i></div>
+												</li>
+												<li>
+													<div class="my">
+														<span class="img"><img src="../../public/image/temp/temp011.png" alt=""></span>
+													</div>
+													<div class="flText">
+														<p class="ellipsis">세종실거주자 세종실거주자 세종실거주자 세종실거주자 세종실거주자</p>
+														<span>박새롬</span>
+													</div>
+													<span class="flDate cBlue">안심귀가 알림</span>
+													<div class="flCloseBtn"><i class="split20"></i></div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="frList">
+											<h4>세종엔이 필요한 친구 <span class="cBlue">2</span></h4>
+											<button type="button" class="flToggle" title="최근 보낸 알림 닫힘"></button>
+											<ul class="flToggleList">
+												<li>
+													<div class="my">
+														<span class="icon"><i class="icoProfile profile1">프로필1</i></span>
+													</div>
+													<div class="flText">
+														<p class="ellipsis">세종실거주자 세종실거주자</p>
+														<span>010-0000-0000</span>
+													</div>
+													<span class="flDate cGreen">설치 요청</span>
+													<div class="flCloseBtn"><i class="split20"></i></div>
+												</li>
+												<li>
+													<div class="my">
+														<span class="icon"><i class="icoProfile profile5">프로필5</i></span>
+													</div>
+													<div class="flText">
+														<p class="ellipsis">세종실거주자</p>
+														<span>010-0000-0000</span>
+													</div>
+													<span class="flDate cGreen">설치 요청</span>
+													<div class="flCloseBtn"><i class="split20"></i></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						layerPopup.open('UI-SJN-40-009L');
+					</script>
+					<!-- //레이어 -->
+				</div>
+			</div>
+			<!-- //모바일 내용 -->
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

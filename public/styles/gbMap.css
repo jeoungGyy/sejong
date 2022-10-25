@@ -1010,6 +1010,42 @@ span.M { background-color: #E61E1E;}
 .map .gotOff .getOutNotice .getOutList >li ul li .replaceBtn .replaceFixed b { color: #111;}
 .map .gotOff .getOutNotice .getOutList >li ul li:last-child { padding-bottom: 0;}
 
+/* UI-SJN-40-009L */
+.friendGroup .friend-formSearch { position: relative; padding: 0 2rem;}
+.friendGroup .friend-formSearch input { height: 4rem; padding-left: 4rem; border: 1px solid #ddd; border-radius: 2rem;}
+.friendGroup .friend-formSearch .btnSend { position: absolute; left: 3.6rem; top: 1.2rem; width: 1.6rem; height: 1.6rem; background: url(../image/map/ico_f_search.png) no-repeat center/1.6rem 1.6rem;} 
+.friendGroup .friend-refresh { position: relative; padding: 2rem 2rem 1.6rem;}
+.friendGroup .friend-refresh p { font-size: 1.6rem; font-weight: 700;}
+.friendGroup .friend-refresh span { display: block; margin-top: 0.5rem; font-family: var(--fontPretendard); font-size: 1.3rem; color: #555;}
+.friendGroup .friend-refresh .frBtn { position: absolute; right: 2.4rem; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; background: url(../image/map/ico_f_refresh.png) no-repeat center/2rem 2rem;}
+.friendGroup .friend-list .frList { position: relative; padding: 2rem 2rem 1rem; border-bottom: 1px solid #f6f7f9;}
+.friendGroup .friend-list h4 { font-size: 1.3rem; color: #777;}
+.friendGroup .friend-list .flToggle { display: block; position: absolute; right: 1.4rem; top: 2.2rem; width: 1.5em; height: 1.5rem; background: url(../image/map/ico_f_toggleBtn.png) no-repeat left top/1.5rem 3rem;}
+.friendGroup .friend-list .flToggle.active { background-position-y: -1.5rem;}
+.friendGroup .flToggleList { overflow: hidden; margin-top: 1rem; transition: height 1.3s linear;}
+.friendGroup .flToggleList li { display: flex; align-items: center; padding: 1rem 0;}
+.friendGroup .flToggleList li .my { width: 4rem;}
+.friendGroup .flToggleList li .my .img,
+.friendGroup .flToggleList li .my .icon { display: block; overflow: hidden; width: 4rem; height: 4rem; border-radius: 50%;}
+.friendGroup .flToggleList li .my .img img { width: 100%; height: 100%;}
+.friendGroup .flToggleList li .my .icon .icoProfile { width: 4rem; height: 4rem;}
+.friendGroup .flToggleList li .flText { display: grid; flex: 1; margin-left: 0.6rem;}
+.friendGroup .flToggleList li .flText p { font-weight: 700;}
+.friendGroup .flToggleList li .flText span { display: block; margin-top: 0.5rem; font-size: 1.3rem; color: #555;}
+.friendGroup .flToggleList li .flText span a { color: #555;}
+.friendGroup .flToggleList li .flDate { width: 7rem; font-size: 1.3rem; font-family: var(--fontPretendard); color: #555; text-align: right;}
+.friendGroup .flToggleList li .flDate.cBlue,
+.friendGroup .flToggleList li .flDate.cGreen { margin-top: -1.8rem;}
+.friendGroup .flToggleList li button.flCloseBtn { width: 2rem; margin: 0.4rem 0 0 0.6rem;}
+.friendGroup .flToggleList li button.flCloseBtn i { background-position: -2rem -8rem;}
+.friendGroup .flToggleList li div.flCloseBtn { width: 2rem; margin: -1.5rem 0 0 0.5rem;}
+.friendGroup .flToggleList li div.flCloseBtn i { background-position: -34rem -4rem;}
+.friendGroup .flToggleList.height0 { height: 0;}
+
+
+
+
+
 /* UI-SJN-41-001L */
 .map .satelliteBody { padding-top: 0.8rem;}
 .map .satelliteBody .satelliteList { overflow: hidden; padding: 0 2rem;}
